@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Release 34da8ee0 (2026-10-09)
+
+This release adds 3,040 distinct word forms to fc34a9ed. The main table contains 897,138 entries; the 981,645-entry auto-reading table is unchanged. Main, auto-reading, and legacy tables contain 1,885,740 distinct strings in total. Existing dictionary bytes are preserved; reviewed expressions are appended with independently checked readings and assigned weights. Offline full-pinyin and nine-key conflict checks protect existing correct first candidates. Personal learning data is not included or reset.
+
+Use the same fixed upstream checkout described below, then run:
+
+```bash
+bash scripts/reproduce-34da8ee0.sh "$PWD/rime-ice" "$PWD/reproduced-34da8ee0"
+```
+
+The script reproduces the previous release, appends `inputs/2026-10-09-expansion/lexicon-expansion.txt`, and verifies both hashes against its expected manifest. These exact files were compiled successfully on iPhone and Fold before publication. Candidate and latency measurements made on a computer are not phone performance measurements.
+
 ## Release fc34a9ed (2026-10-09)
 
 The main table contains 894,098 entries. This release restores 2,922 missing readings of existing word forms and adds 849 common chat expressions. The 981,645-entry auto-reading table is unchanged. Existing hotwords, everyday phrases, and place-name additions are preserved.

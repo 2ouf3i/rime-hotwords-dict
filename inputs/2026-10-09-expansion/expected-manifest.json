@@ -1,0 +1,12 @@
+{
+  "version": "34da8ee0",
+  "sha256": "17552f6957f9f9d4e8df633fb8fd0f0272e7e895cbb817e9a2d325ef692a376f",
+  "bytes": 28427034,
+  "entries": 897138,
+  "upstreamRef": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
+  "auto": {
+    "sha256": "81e2b0d79b40d4a8f3d55e4084ccc7d0e9bf1fb8a5f9237e1c6380d4b8d903cc",
+    "bytes": 17341836,
+    "entries": 981645
+  }
+}

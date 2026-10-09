@@ -1,0 +1,3043 @@
+# Ninan 扩充词表；2026-10-09 经 iPhone／Fold 试用后纳入正式构建
+# 来源：本地微信、豆包词表及已审核日常表达；使用权由产品负责人处理
+# 读音独立交叉核对；初始权重为 50 / 2000，实际抢原首选的数字码或分段冲突经离线标定后为 5
+安环	50	an huan
+氨糖	50	an tang
+摆台	50	bai tai
+拌粉	50	ban fen
+板筋	50	ban jin
+版型	50	ban xing
+磅房	50	bang fang
+包材	50	bao cai
+报工	50	bao gong
+报货	50	bao huo
+保压	50	bao ya
+被芯	50	bei xin
+本甲	50	ben jia
+冰皮	50	bing pi
+冰丝	50	bing si
+冰袖	50	bing xiu
+补班	50	bu ban
+补单	50	bu dan
+补签	50	bu qian
+彩打	50	cai da
+财管	50	cai guan
+踩盘	50	cai pan
+餐吧	50	can ba
+拆单	50	chai dan
+拆旧	50	chai jiu
+产线	50	chan xian
+产证	50	chan zheng
+厂车	50	chang che
+场控	50	chang kong
+撤场	50	che chang
+城轨	50	cheng gui
+抽拉	50	chou la
+串休	50	chuan xiu
+春考	50	chun kao
+唇釉	50	chun you
+春招	50	chun zhao
+次卡	50	ci ka
+催单	50	cui dan
+催费	50	cui fei
+大夜	50	da ye
+带教	50	dai jiao
+带客	50	dai ke
+代账	50	dai zhang
+单台	50	dan tai
+道闸	50	dao zha
+底单	50	di dan
+地柜	50	di gui
+订饭	50	ding fan
+顶面	50	ding mian
+丢件	50	diu jian
+斗柜	50	dou gui
+端头	50	duan tou
+对私	50	dui si
+吨包	50	dun bao
+耳夹	50	er jia
+二面	50	er mian
+发改	50	fa gai
+返单	50	fan dan
+返费	50	fan fei
+返货	50	fan huo
+返款	50	fan kuan
+返图	50	fan tu
+房态	50	fang tai
+封层	50	feng ceng
+封窗	50	feng chuang
+改价	50	gai jia
+感统	50	gan tong
+高定	50	gao ding
+高弹	50	gao tan
+膏体	5	gao ti
+高质	50	gao zhi
+歌房	50	ge fang
+工费	50	gong fei
+公户	50	gong hu
+公屏	50	gong ping
+公区	50	gong qu
+公卫	50	gong wei
+公账	50	gong zhang
+挂耳	50	gua er
+关单	50	guan dan
+贵司	50	gui si
+柜体	50	gui ti
+桂鱼	50	gui yu
+合服	50	he fu
+花型	50	hua xing
+环创	50	huan chuang
+换款	50	huan kuan
+混油	50	hun you
+货期	50	huo qi
+货值	50	huo zhi
+级部	50	ji bu
+急单	50	ji dan
+寄付	50	ji fu
+积食	50	ji shi
+加单	50	jia dan
+加购	50	jia gou
+甲片	50	jia pian
+家委	50	jia wei
+煎包	50	jian bao
+角美	50	jiao mei
+交期	50	jiao qi
+胶枪	50	jiao qiang
+胶装	50	jiao zhuang
+截单	50	jie dan
+结课	50	jie ke
+结题	50	jie ti
+斤数	50	jin shu
+局麻	50	ju ma
+卡面	50	ka mian
+烤翅	50	kao chi
+课包	50	ke bao
+客单	50	ke dan
+客片	50	ke pian
+客情	50	ke qing
+客诉	50	ke su
+可研	50	ke yan
+库位	50	ku wei
+款号	50	kuan hao
+拉毛	50	la mao
+拉群	50	la qun
+揽件	50	lan jian
+镭雕	50	lei diao
+礼袋	50	li dai
+立杆	50	li gan
+料号	50	liao hao
+临工	50	lin gong
+留货	50	liu huo
+流心	50	liu xin
+留样	50	liu yang
+漏发	50	lou fa
+录单	50	lu dan
+撸铁	50	lu tie
+路亚	50	lu ya
+啰嗦	50	luo suo
+麻椒	50	ma jiao
+满房	50	man fang
+忙线	50	mang xian
+猫草	50	mao cao
+玫红	50	mei hong
+门幅	50	men fu
+米白	50	mi bai
+米糊	50	mi hu
+沐足	50	mu zu
+奶绿	50	nai lv
+泥膜	5	ni mo
+粘人	50	nian ren
+尿垫	50	niao dian
+暖宫	50	nuan gong
+暖贴	50	nuan tie
+排产	50	pai chan
+排单	50	pai dan
+排湿	50	pai shi
+排休	50	pai xiu
+胚布	50	pei bu
+陪打	50	pei da
+陪娃	50	pei wa
+皮料	50	pi liao
+平开	50	ping kai
+铺贴	50	pu tie
+气罐	50	qi guan
+起晚	50	qi wan
+签报	50	qian bao
+翘边	50	qiao bian
+清掉	50	qing diao
+请购	50	qing gou
+青笋	50	qing sun
+圈口	50	quan kou
+群规	50	qun gui
+群名	50	qun ming
+人资	50	ren zi
+融媒	50	rong mei
+软便	50	ruan bian
+软著	50	ruan zhu
+散粉	50	san fen
+上播	50	shang bo
+省赛	50	sheng sai
+升糖	50	sheng tang
+试色	50	shi se
+收单	50	shou dan
+首检	50	shou jian
+首重	50	shou zhong
+数媒	50	shu mei
+双早	50	shuang zao
+水单	50	shui dan
+说课	50	shuo ke
+丝杆	50	si gan
+私户	50	si hu
+私教	50	si jiao
+私账	50	si zhang
+送娃	50	song wa
+搜题	50	sou ti
+随货	50	sui huo
+台区	50	tai qu
+碳烤	50	tan kao
+糖耐	50	tang nai
+套门	50	tao men
+条线	50	tiao xian
+调账	50	tiao zhang
+通班	50	tong ban
+同担	50	tong dan
+筒灯	50	tong deng
+铜锅	50	tong guo
+头疗	50	tou liao
+团餐	50	tuan can
+团单	50	tuan dan
+团险	50	tuan xian
+退单	50	tui dan
+退件	50	tui jian
+退宿	50	tui su
+托班	50	tuo ban
+瓦数	50	wa shu
+外搭	50	wai da
+外发	50	wai fa
+外呼	50	wai hu
+外架	50	wai jia
+外协	50	wai xie
+晚修	50	wan xiu
+尾板	50	wei ban
+未拆	50	wei chai
+围兜	50	wei dou
+危废	50	wei fei
+微课	50	wei ke
+委外	50	wei wai
+无刷	50	wu shua
+吸顶	50	xi ding
+线椒	50	xian jiao
+现结	50	xian jie
+小面	50	xiao mian
+携转	50	xie zhuan
+秀禾	50	xiu he
+宣贯	50	xuan guan
+学委	50	xue wei
+巡线	50	xun xian
+鸭架	50	ya jia
+验机	50	yan ji
+研三	50	yan san
+样衣	50	yang yi
+椰浆	50	ye jiang
+迎检	50	ying jian
+邮储	50	you chu
+油碟	50	you die
+芋圆	50	yu yuan
+园服	50	yuan fu
+原箱	50	yuan xiang
+月休	50	yue xiu
+孕妈	50	yun ma
+早八	50	zao ba
+增项	50	zeng xiang
+增员	50	zeng yuan
+账期	50	zhang qi
+镇府	50	zhen fu
+正码	50	zheng ma
+置气	50	zhi qi
+直租	50	zhi zu
+中袖	50	zhong xiu
+主材	50	zhu cai
+驻村	50	zhu cun
+主灯	50	zhu deng
+驻店	50	zhu dian
+住建	50	zhu jian
+转保	50	zhuan bao
+专票	50	zhuan piao
+专送	50	zhuan song
+装柜	50	zhuang gui
+追评	50	zhui ping
+资管	50	zi guan
+坐便	50	zuo bian
+做单	50	zuo dan
+爱你了	50	ai ni le
+安排呢	2000	an pai ne
+办过了	50	ban guo le
+办理了	50	ban li le
+帮到你	50	bang dao ni
+帮你发	50	bang ni fa
+帮我发	50	bang wo fa
+帮我拿	50	bang wo na
+爆单了	50	bao dan le
+报完了	50	bao wan le
+报销吧	50	bao xiao ba
+报销了	50	bao xiao le
+报销吗	50	bao xiao ma
+背完了	50	bei wan le
+别撤回	50	bie che hui
+别吃饭	50	bie chi fan
+别等着	50	bie deng zhe
+别烦了	50	bie fan le
+憋坏了	50	bie huai le
+别回了	50	bie hui le
+别叫了	50	bie jiao le
+别买了	50	bie mai le
+别气了	50	bie qi le
+别上了	50	bie shang le
+别笑了	50	bie xiao le
+别要了	50	bie yao le
+驳回了	50	bo hui le
+不吃啦	50	bu chi la
+不抽了	50	bu chou le
+不出单	50	bu chu dan
+不打啦	50	bu da la
+不到了	50	bu dao le
+不多吧	50	bu duo ba
+不饿了	50	bu e le
+补发了	50	bu fa le
+不改了	50	bu gai le
+不该说	50	bu gai shuo
+不喊你	50	bu han ni
+不回我	50	bu hui wo
+不见我	50	bu jian wo
+不叫了	50	bu jiao le
+不叫他	50	bu jiao ta
+不叫我	50	bu jiao wo
+不开了	50	bu kai le
+不考了	50	bu kao le
+补课了	50	bu ke le
+补课呢	50	bu ke ne
+不练了	50	bu lian le
+不骂你	50	bu ma ni
+不忙吗	50	bu mang ma
+不跑了	50	bu pao le
+不请我	50	bu qing wo
+不少啊	50	bu shao a
+不是呢	50	bu shi ne
+不问你	50	bu wen ni
+不用上	50	bu yong shang
+不约了	50	bu yue le
+不早啦	50	bu zao la
+不租了	50	bu zu le
+才吃完	50	cai chi wan
+才到家	50	cai dao jia
+才发货	50	cai fa huo
+才搞完	50	cai gao wan
+才好玩	50	cai hao wan
+才考完	50	cai kao wan
+才能走	50	cai neng zou
+才起床	50	cai qi chuang
+才洗澡	50	cai xi zao
+才下课	50	cai xia ke
+才有课	50	cai you ke
+才有人	50	cai you ren
+车到了	50	che dao le
+吃饱咯	50	chi bao lo
+吃个药	50	chi ge yao
+吃了呀	50	chi le ya
+吃哪个	50	chi na ge
+吃吐了	50	chi tu le
+吃药了	50	chi yao le
+抽完了	50	chou wan le
+出单了	50	chu dan le
+出站了	50	chu zhan le
+打车了	50	da che le
+打款了	50	da kuan le
+打了没	50	da le mei
+打钱了	50	da qian le
+打扫了	50	da sao le
+打完卡	50	da wan ka
+打五排	50	da wu pai
+打一半	50	da yi ban
+打语音	50	da yu yin
+耽搁了	50	dan ge le
+耽误你	50	dan wu ni
+到点了	50	dao dian le
+到货了	50	dao huo le
+倒下了	50	dao xia le
+等你哦	2000	deng ni o
+等我吧	50	deng wo ba
+等我妈	50	deng wo ma
+等我哦	2000	deng wo o
+等我下	50	deng wo xia
+等下次	5	deng xia ci
+等着啊	50	deng zhe a
+点不到	50	dian bu dao
+电话呢	50	dian hua ne
+点开了	50	dian kai le
+点完名	50	dian wan ming
+都不饿	50	dou bu e
+都不发	50	dou bu fa
+都不高	50	dou bu gao
+都处理	50	dou chu li
+都带上	50	dou dai shang
+都发了	50	dou fa le
+都干了	5	dou gan le
+都干嘛	50	dou gan ma
+都关了	50	dou guan le
+都检查	50	dou jian cha
+都满了	50	dou man le
+都没电	50	dou mei dian
+都没交	50	dou mei jiao
+都没开	50	dou mei kai
+都没课	50	dou mei ke
+都没删	50	dou mei shan
+都没玩	50	dou mei wan
+都没写	50	dou mei xie
+都没学	50	dou mei xue
+都难受	50	dou nan shou
+都请假	50	dou qing jia
+都上了	50	dou shang le
+都睡觉	50	dou shui jiao
+都睡着	50	dou shui zhao
+都下雨	50	dou xia yu
+都醒了	50	dou xing le
+都一般	50	dou yi ban
+都用了	50	dou yong le
+都有课	50	dou you ke
+都在说	50	dou zai shuo
+都找了	50	dou zhao le
+读完了	50	du wan le
+恶心我	50	e xin wo
+嗯嗯对	2000	en en dui
+嗯是的	50	en shi de
+发错啦	50	fa cuo la
+发点钱	50	fa dian qian
+发多了	50	fa duo le
+发货吗	50	fa huo ma
+发来了	50	fa lai le
+发你了	50	fa ni le
+发钱了	50	fa qian le
+发啥了	50	fa sha le
+发完了	50	fa wan le
+反悔了	50	fan hui le
+放两天	50	fang liang tian
+服气了	50	fu qi le
+敷衍了	50	fu yan le
+该干啥	50	gai gan sha
+改好啦	50	gai hao la
+该省省	50	gai sheng sheng
+干饭了	50	gan fan le
+干活呢	50	gan huo ne
+干几天	50	gan ji tian
+感谢了	50	gan xie le
+刚吃好	50	gang chi hao
+刚打了	50	gang da le
+刚发完	50	gang fa wan
+刚搞完	50	gang gao wan
+刚看了	50	gang kan le
+刚买了	50	gang mai le
+刚申请	50	gang shen qing
+刚问完	50	gang wen wan
+刚下播	50	gang xia bo
+刚下课	50	gang xia ke
+刚下楼	50	gang xia lou
+刚想说	50	gang xiang shuo
+刚注册	50	gang zhu ce
+搞半天	50	gao ban tian
+搞懂了	50	gao dong le
+高考了	50	gao kao le
+搞完啦	50	gao wan la
+给你报	50	gei ni bao
+给你补	50	gei ni bu
+给你打	50	gei ni da
+给你点	50	gei ni dian
+给你发	50	gei ni fa
+给你放	50	gei ni fang
+给你改	50	gei ni gai
+给你喝	50	gei ni he
+给你交	50	gei ni jiao
+给你买	50	gei ni mai
+给你拿	5	gei ni na
+给你拍	50	gei ni pai
+给你钱	50	gei ni qian
+给你送	50	gei ni song
+给你退	50	gei ni tui
+给你玩	50	gei ni wan
+给你洗	50	gei ni xi
+给你用	50	gei ni yong
+给你做	50	gei ni zuo
+给您发	50	gei nin fa
+给钱了	50	gei qian le
+给他买	50	gei ta mai
+给他找	50	gei ta zhao
+给我报	50	gei wo bao
+给我喝	5	gei wo he
+给我开	5	gei wo kai
+给我来	50	gei wo lai
+给我了	50	gei wo le
+给我买	50	gei wo mai
+给我拿	50	gei wo na
+给我拍	50	gei wo pai
+给我送	50	gei wo song
+给我玩	50	gei wo wan
+给我整	50	gei wo zheng
+工作呢	50	gong zuo ne
+怪我了	50	guai wo le
+关了吗	50	guan le ma
+关一下	50	guan yi xia
+过去吗	50	guo qu ma
+还不饿	50	hai bu e
+还不发	50	hai bu fa
+还不敢	50	hai bu gan
+还不快	50	hai bu kuai
+还喝了	50	hai he le
+还骂我	50	hai ma wo
+还没背	50	hai mei bei
+还没打	50	hai mei da
+还没电	50	hai mei dian
+还没付	50	hai mei fu
+还没改	5	hai mei gai
+还没干	50	hai mei gan
+还没货	50	hai mei huo
+还没寄	50	hai mei ji
+还没加	50	hai mei jia
+还没考	5	hai mei kao
+还没录	50	hai mei lu
+还没拿	50	hai mei na
+还没取	5	hai mei qu
+还没删	50	hai mei shan
+还没填	50	hai mei tian
+还没修	50	hai mei xiu
+还没选	50	hai mei xuan
+还没学	50	hai mei xue
+还那样	50	hai na yang
+还能吃	50	hai neng chi
+还能睡	50	hai neng shui
+还欠我	50	hai qian wo
+还认识	50	hai ren shi
+还上课	50	hai shang ke
+还是啥	50	hai shi sha
+还挺高	5	hai ting gao
+还挺好	50	hai ting hao
+还挺快	50	hai ting kuai
+还休息	50	hai xiu xi
+还要上	5	hai yao shang
+还有车	50	hai you che
+还有电	50	hai you dian
+还有饭	50	hai you fan
+还有会	50	hai you hui
+还有货	50	hai you huo
+还有假	50	hai you jia
+还有课	50	hai you ke
+还有么	50	hai you me
+还有雨	50	hai you yu
+还在聊	50	hai zai liao
+还在说	50	hai zai shuo
+还在玩	50	hai zai wan
+还找你	50	hai zhao ni
+还找我	50	hai zhao wo
+还坐着	50	hai zuo zhe
+喊他们	50	han ta men
+喊一下	50	han yi xia
+好吃呢	50	hao chi ne
+好的哇	50	hao de wa
+好点的	50	hao dian de
+好高冷	50	hao gao leng
+好贵的	50	hao gui de
+好了呀	50	hao le ya
+喝饱了	50	he bao le
+喝好了	50	he hao le
+喝死了	50	he si le
+喝晕了	50	he yun le
+喝这个	50	he zhe ge
+很多吧	50	hen duo ba
+很烦啊	50	hen fan a
+很近了	50	hen jin le
+很早了	50	hen zao le
+哄好了	50	hong hao le
+忽悠我	50	hu you wo
+回答你	50	hui da ni
+回复吧	50	hui fu ba
+回复吗	50	hui fu ma
+回家没	50	hui jia mei
+回来么	5	hui lai me
+回来呢	50	hui lai ne
+回了没	50	hui le mei
+回去呀	50	hui qu ya
+会员吗	50	hui yuan ma
+记好了	50	ji hao le
+寄走了	50	ji zou le
+价格呢	50	jia ge ne
+加了吗	50	jia le ma
+加你了	50	jia ni le
+见不上	50	jian bu shang
+简单了	50	jian dan le
+减肥呢	50	jian fei ne
+检票了	50	jian piao le
+降温了	50	jiang wen le
+缴费了	50	jiao fei le
+交过了	50	jiao guo le
+叫你了	50	jiao ni le
+交钱了	50	jiao qian le
+叫啥名	50	jiao sha ming
+交完了	50	jiao wan le
+接单了	50	jie dan le
+结婚呢	50	jie hun ne
+借钱了	50	jie qian le
+接上你	50	jie shang ni
+截图了	50	jie tu le
+接完了	50	jie wan le
+静音了	50	jing yin le
+就不发	50	jiu bu fa
+就不喝	50	jiu bu he
+就不开	50	jiu bu kai
+就不玩	50	jiu bu wan
+就掉了	50	jiu diao le
+就给了	50	jiu gei le
+就挂了	50	jiu gua le
+就关了	50	jiu guan le
+就害怕	50	jiu hai pa
+就喊我	50	jiu han wo
+就回了	50	jiu hui le
+就记得	50	jiu ji de
+就几个	50	jiu ji ge
+就看了	50	jiu kan le
+就满了	50	jiu man le
+就明天	50	jiu ming tian
+就能到	50	jiu neng dao
+就能走	50	jiu neng zou
+就扔了	50	jiu reng le
+就睡了	50	jiu shui le
+就说我	50	jiu shuo wo
+就写了	5	jiu xie le
+就行啊	50	jiu xing a
+就要走	50	jiu yao zou
+就一会	50	jiu yi hui
+就早上	50	jiu zao shang
+就这点	50	jiu zhe dian
+就直说	50	jiu zhi shuo
+开店了	50	kai dian le
+看完啦	50	kan wan la
+看完呢	50	kan wan ne
+考虑了	50	kao lv le
+考试啊	50	kao shi a
+考试吗	50	kao shi ma
+考试呀	50	kao shi ya
+可爱了	5	ke ai le
+可以报	50	ke yi bao
+可以调	50	ke yi tiao
+可以哇	50	ke yi wa
+可以洗	50	ke yi xi
+空不空	50	kong bu kong
+哭死了	50	ku si le
+拉黑你	50	la hei ni
+来人了	50	lai ren le
+来学校	50	lai xue xiao
+浪费我	50	lang fei wo
+老多了	50	lao duo le
+老贵了	50	lao gui le
+老香了	50	lao xiang le
+理理我	50	li li wo
+理你了	50	li ni le
+离谱了	50	li pu le
+离职了	50	li zhi le
+联系啊	50	lian xi a
+联系吧	50	lian xi ba
+联系吗	50	lian xi ma
+聊过了	50	liao guo le
+聊啥了	50	liao sha le
+聊上了	50	liao shang le
+聊天了	50	liao tian le
+聊这个	50	liao zhe ge
+溜达了	50	liu da le
+留言了	50	liu yan le
+留着了	5	liu zhe le
+骂他们	50	ma ta men
+骂我了	50	ma wo le
+买少了	50	mai shao le
+没别的	50	mei bie de
+没出单	50	mei chu dan
+没打了	50	mei da le
+没打通	50	mei da tong
+没打完	50	mei da wan
+没等你	50	mei deng ni
+没付款	50	mei fu kuan
+没搞过	50	mei gao guo
+没喊你	50	mei han ni
+没回话	50	mei hui hua
+没回我	50	mei hui wo
+没货了	50	mei huo le
+没记录	50	mei ji lu
+没开了	50	mei kai le
+没考试	50	mei kao shi
+没客人	5	mei ke ren
+没来吧	50	mei lai ba
+没弄好	50	mei nong hao
+没弄完	50	mei nong wan
+没签收	50	mei qian shou
+没人的	50	mei ren de
+没人呢	50	mei ren ne
+没事呢	50	mei shi ne
+没事哦	2000	mei shi o
+没水了	50	mei shui le
+没说你	50	mei shuo ni
+没提交	50	mei ti jiao
+没问他	50	mei wen ta
+没下课	50	mei xia ke
+没有诶	50	mei you ei
+没有货	50	mei you huo
+没有假	50	mei you jia
+没有哇	50	mei you wa
+没早八	50	mei zao ba
+没找你	50	mei zhao ni
+没照片	50	mei zhao pian
+没这样	50	mei zhe yang
+没注册	50	mei zhu ce
+没做饭	50	mei zuo fan
+眯一下	50	mi yi xia
+明天打	50	ming tian da
+明天看	50	ming tian kan
+明天呢	50	ming tian ne
+摸到了	50	mo dao le
+那不吃	50	na bu chi
+那不急	50	na bu ji
+那不然	50	na bu ran
+拿到啦	50	na dao la
+那等我	50	na deng wo
+拿点药	50	na dian yao
+那还早	50	na hai zao
+那就等	50	na jiu deng
+那么慢	50	na me man
+那么热	50	na me re
+那你发	50	na ni fa
+那你回	50	na ni hui
+那你快	50	na ni kuai
+那你买	50	na ni mai
+那你去	50	na ni qu
+那你睡	50	na ni shui
+那你要	50	na ni yao
+哪天去	50	na tian qu
+那晚点	50	na wan dian
+那我买	50	na wo mai
+那下次	50	na xia ci
+那咋搞	50	na za gao
+能打吗	50	neng da ma
+能考上	50	neng kao shang
+能睡着	50	neng shui zhao
+能优惠	50	neng you hui
+你报的	50	ni bao de
+你不打	50	ni bu da
+你不饿	50	ni bu e
+你不开	50	ni bu kai
+你不找	50	ni bu zhao
+你吃药	50	ni chi yao
+你打的	50	ni da de
+你打开	50	ni da kai
+你打了	50	ni da le
+你打吗	50	ni da ma
+你当初	50	ni dang chu
+你多少	50	ni duo shao
+你发错	50	ni fa cuo
+你发货	50	ni fa huo
+你发来	50	ni fa lai
+你发完	50	ni fa wan
+你发我	50	ni fa wo
+你废了	50	ni fei le
+你付款	50	ni fu kuan
+你改完	50	ni gai wan
+你赶快	50	ni gan kuai
+你搞完	50	ni gao wan
+你故意	50	ni gu yi
+你乖乖	50	ni guai guai
+你喊他	50	ni han ta
+你喊我	50	ni han wo
+你喝的	50	ni he de
+你喝啥	50	ni he sha
+你会的	50	ni hui de
+你家的	50	ni jia de
+你加了	50	ni jia le
+你见我	50	ni jian wo
+你交了	50	ni jiao le
+你今年	50	ni jin nian
+你就睡	50	ni jiu shui
+你开吧	50	ni kai ba
+你开了	50	ni kai le
+你考完	50	ni kao wan
+你快去	50	ni kuai qu
+你困吗	50	ni kun ma
+你来的	50	ni lai de
+你老弟	50	ni lao di
+你老妈	50	ni lao ma
+你买了	50	ni mai le
+你没喝	50	ni mei he
+你没去	50	ni mei qu
+你没睡	50	ni mei shui
+你们有	50	ni men you
+你拿了	50	ni na le
+你平常	50	ni ping chang
+你平时	50	ni ping shi
+你起的	50	ni qi de
+你前任	50	ni qian ren
+你请我	50	ni qing wo
+你去过	5	ni qu guo
+你上课	50	ni shang ke
+你试下	50	ni shi xia
+你说了	50	ni shuo le
+你天天	50	ni tian tian
+你玩的	50	ni wan de
+你晚点	50	ni wan dian
+你玩过	50	ni wan guo
+你玩啥	50	ni wan sha
+你完事	50	ni wan shi
+你问的	50	ni wen de
+你问完	50	ni wen wan
+你洗完	50	ni xi wan
+你下单	50	ni xia dan
+你先打	50	ni xian da
+你先看	50	ni xian kan
+你闲了	50	ni xian le
+你想打	50	ni xiang da
+你想喝	50	ni xiang he
+你写了	50	ni xie le
+你研究	50	ni yan jiu
+你要睡	50	ni yao shui
+你要玩	50	ni yao wan
+你要找	50	ni yao zhao
+你用完	50	ni yong wan
+你有课	50	ni you ke
+你有了	50	ni you le
+你在打	50	ni zai da
+你再发	50	ni zai fa
+你早上	50	ni zao shang
+你早说	50	ni zao shuo
+你站着	50	ni zhan zhe
+你找人	50	ni zhao ren
+你住的	50	ni zhu de
+你走的	50	ni zou de
+您稍等	50	nin shao deng
+您说的	50	nin shuo de
+哦哦好	2000	o o hao
+拍哪个	50	pai na ge
+拍这个	50	pai zhe ge
+陪陪你	50	pei pei ni
+陪他们	50	pei ta men
+陪我们	50	pei wo men
+骗过你	50	pian guo ni
+评价了	50	ping jia le
+破费了	50	po fei le
+欺负了	50	qi fu le
+请我喝	50	qing wo he
+取到了	50	qu dao le
+去过吗	50	qu guo ma
+去了么	50	qu le me
+去买吧	50	qu mai ba
+让你吃	50	rang ni chi
+人满了	50	ren man le
+认真了	50	ren zhen le
+散步了	50	san bu le
+扫码了	50	sao ma le
+扫完了	50	sao wan le
+啥牌子	50	sha pai zi
+闪退了	50	shan tui le
+删完了	50	shan wan le
+伤感了	50	shang gan le
+上号吧	50	shang hao ba
+上课啊	5	shang ke a
+上课吗	50	shang ke ma
+上课呢	50	shang ke ne
+上完了	50	shang wan le
+上学吗	50	shang xue ma
+上学呢	50	shang xue ne
+上一下	5	shang yi xia
+升级了	50	sheng ji le
+生啥气	50	sheng sha qi
+是的哇	50	shi de wa
+是哪天	50	shi na tian
+视频呢	50	shi pin ne
+是啥啊	50	shi sha a
+实习了	50	shi xi le
+受罪了	50	shou zui le
+睡醒啦	50	shui xing la
+说不行	50	shuo bu xing
+说不要	50	shuo bu yao
+说个话	50	shuo ge hua
+说没说	50	shuo mei shuo
+送去了	50	song qu le
+送人了	50	song ren le
+算多少	50	suan duo shao
+他爸爸	50	ta ba ba
+他不要	50	ta bu yao
+他父母	50	ta fu mu
+他给你	50	ta gei ni
+他回家	50	ta hui jia
+他每次	50	ta mei ci
+他没钱	50	ta mei qian
+他问你	50	ta wen ni
+他以前	50	ta yi qian
+他早上	50	ta zao shang
+谈完了	50	tan wan le
+躺着了	50	tang zhe le
+体检了	50	ti jian le
+提交吧	50	ti jiao ba
+听错了	50	ting cuo le
+挺多了	50	ting duo le
+挺晚了	50	ting wan le
+痛死了	50	tong si le
+退游了	50	tui you le
+晚点吃	50	wan dian chi
+晚点回	50	wan dian hui
+晚点看	50	wan dian kan
+玩好了	50	wan hao le
+问过我	50	wen guo wo
+问你们	50	wen ni men
+我爱看	50	wo ai kan
+我不发	50	wo bu fa
+我不急	50	wo bu ji
+我不开	50	wo bu kai
+我不收	50	wo bu shou
+我充了	50	wo chong le
+我出门	50	wo chu men
+我出钱	50	wo chu qian
+我打的	50	wo da de
+我打完	50	wo da wan
+我订了	50	wo ding le
+我对象	50	wo dui xiang
+我二姐	50	wo er jie
+我发的	50	wo fa de
+我发货	50	wo fa huo
+我付款	50	wo fu kuan
+我父母	50	wo fu mu
+我改价	50	wo gai jia
+我干嘛	50	wo gan ma
+我刚开	5	wo gang kai
+我刚看	50	wo gang kan
+我刚来	50	wo gang lai
+我搞了	50	wo gao le
+我给钱	50	wo gei qian
+我公公	50	wo gong gong
+我闺蜜	50	wo gui mi
+我回你	50	wo hui ni
+我家的	50	wo jia de
+我见你	50	wo jian ni
+我讲的	50	wo jiang de
+我结婚	50	wo jie hun
+我尽快	50	wo jin kuai
+我今早	50	wo jin zao
+我就打	50	wo jiu da
+我就买	50	wo jiu mai
+我就怕	50	wo jiu pa
+我就睡	50	wo jiu shui
+我就走	50	wo jiu zou
+我看的	50	wo kan de
+我考试	50	wo kao shi
+我考完	50	wo kao wan
+我拉了	50	wo la le
+我来咯	50	wo lai lo
+我老弟	50	wo lao di
+我姥姥	50	wo lao lao
+我老姨	50	wo lao yi
+我留着	50	wo liu zhe
+我骂你	50	wo ma ni
+我没打	50	wo mei da
+我没懂	50	wo mei dong
+我没发	50	wo mei fa
+我没喝	50	wo mei he
+我没接	50	wo mei jie
+我没考	50	wo mei kao
+我没来	50	wo mei lai
+我没拿	50	wo mei na
+我没删	50	wo mei shan
+我没睡	50	wo mei shui
+我没问	50	wo mei wen
+我没学	50	wo mei xue
+我没要	50	wo mei yao
+我没做	50	wo mei zuo
+我明晚	50	wo ming wan
+我目前	50	wo mu qian
+我拿的	50	wo na de
+我哪敢	50	wo na gan
+我拿了	50	wo na le
+我拿去	50	wo na qu
+我拿走	50	wo na zou
+我偶尔	2000	wo ou er
+我拍了	50	wo pai le
+我前任	50	wo qian ren
+我去买	50	wo qu mai
+我去找	50	wo qu zhao
+我上课	50	wo shang ke
+我舍友	50	wo she you
+我室友	50	wo shi you
+我睡呀	50	wo shui ya
+我睡着	50	wo shui zhao
+我说他	50	wo shuo ta
+我算算	50	wo suan suan
+我提前	50	wo ti qian
+我听话	50	wo ting hua
+我退出	50	wo tui chu
+我外公	50	wo wai gong
+我外婆	50	wo wai po
+我外甥	50	wo wai sheng
+我玩的	50	wo wan de
+我问的	50	wo wen de
+我问了	50	wo wen le
+我媳妇	50	wo xi fu
+我洗完	50	wo xi wan
+我洗洗	50	wo xi xi
+我洗澡	50	wo xi zao
+我下次	50	wo xia ci
+我下课	50	wo xia ke
+我先回	50	wo xian hui
+我先买	50	wo xian mai
+我嫌弃	50	wo xian qi
+我先睡	50	wo xian shui
+我想好	50	wo xiang hao
+我小姨	50	wo xiao yi
+我写的	50	wo xie de
+我研究	50	wo yan jiu
+我也饿	50	wo ye e
+我也看	50	wo ye kan
+我也玩	50	wo ye wan
+我有课	50	wo you ke
+我约的	50	wo yue de
+我再睡	50	wo zai shui
+我在做	50	wo zai zuo
+我暂时	50	wo zan shi
+我早点	50	wo zao dian
+我站着	50	wo zhan zhe
+我找的	50	wo zhao de
+我侄女	50	wo zhi nv
+我侄子	50	wo zhi zi
+我注意	50	wo zhu yi
+我走的	50	wo zou de
+我做饭	50	wo zuo fan
+洗个漱	50	xi ge shu
+洗过了	50	xi guo le
+下好了	50	xia hao le
+下课咯	50	xia ke lo
+下课没	50	xia ke mei
+下一下	50	xia yi xia
+下雨没	50	xia yu mei
+先挂了	50	xian gua le
+嫌弃我	50	xian qi wo
+先收拾	50	xian shou shi
+先睡吧	50	xian shui ba
+先睡了	50	xian shui le
+嫌我烦	50	xian wo fan
+先下载	50	xian xia zai
+先用着	50	xian yong zhe
+现在睡	50	xian zai shui
+现在走	50	xian zai zou
+想见我	50	xiang jian wo
+想你哦	2000	xiang ni o
+辛苦咯	50	xin ku lo
+修改吗	50	xiu gai ma
+选不了	50	xuan bu liao
+延迟了	50	yan chi le
+要吃药	50	yao chi yao
+要几天	50	yao ji tian
+要开会	50	yao kai hui
+要看看	50	yao kan kan
+要没了	50	yao mei le
+要明天	50	yao ming tian
+要排队	50	yao pai dui
+要起床	50	yao qi chuang
+要签字	50	yao qian zi
+要去了	50	yao qu le
+要去吗	50	yao qu ma
+要上课	50	yao shang ke
+要上学	50	yao shang xue
+要睡觉	50	yao shui jiao
+要睡着	50	yao shui zhao
+要提交	50	yao ti jiao
+要洗澡	50	yao xi zao
+要下班	50	yao xia ban
+要早起	50	yao zao qi
+也不爱	50	ye bu ai
+也不低	50	ye bu di
+也不开	50	ye bu kai
+也不胖	50	ye bu pang
+也大了	50	ye da le
+也发了	50	ye fa le
+也回去	50	ye hui qu
+也开了	50	ye kai le
+也没发	5	ye mei fa
+也没货	50	ye mei huo
+也没加	50	ye mei jia
+也没写	50	ye mei xie
+也确实	50	ye que shi
+也想你	50	ye xiang ni
+衣服呢	50	yi fu ne
+一会睡	50	yi hui shui
+一样吧	50	yi yang ba
+阴阳我	50	yin yang wo
+赢了没	50	ying le mei
+有错吗	50	you cuo ma
+有电了	50	you dian le
+有点凉	50	you dian liang
+有点傻	50	you dian sha
+有饭吗	50	you fan ma
+有腹肌	50	you fu ji
+有个车	50	you ge che
+有几张	50	you ji zhang
+有精力	50	you jing li
+有就有	50	you jiu you
+又开了	50	you kai le
+有考试	50	you kao shi
+有空了	50	you kong le
+又骂我	50	you ma wo
+有人啊	50	you ren a
+有人带	50	you ren dai
+有人呢	50	you ren ne
+有啥啊	50	you sha a
+有司机	50	you si ji
+有太阳	50	you tai yang
+有图片	50	you tu pian
+有信息	50	you xin xi
+有休息	50	you xiu xi
+又走了	50	you zou le
+约会了	50	yue hui le
+约一个	50	yue yi ge
+晕车了	50	yun che le
+咋不接	50	za bu jie
+咋处理	50	za chu li
+咋挂了	50	za gua le
+咋没人	50	za mei ren
+咋样了	50	za yang le
+在仓库	50	zai cang ku
+在厂里	50	zai chang li
+在吃了	50	zai chi le
+在抖音	50	zai dou yin
+再发货	50	zai fa huo
+在干活	50	zai gan huo
+在工地	50	zai gong di
+在家没	50	zai jia mei
+再买吧	50	zai mai ba
+在哪买	50	zai na mai
+在你家	50	zai ni jia
+在寝室	50	zai qin shi
+再去吧	50	zai qu ba
+再问你	50	zai wen ni
+再问下	50	zai wen xia
+咱不是	50	zan bu shi
+咱就去	50	zan jiu qu
+脏死了	50	zang si le
+早安呀	50	zao an ya
+早没了	50	zao mei le
+早起了	50	zao qi le
+早上去	50	zao shang qu
+早走了	50	zao zou le
+找你去	50	zhao ni qu
+找我要	50	zhao wo yao
+这个吧	50	zhe ge ba
+这么会	50	zhe me hui
+这么卷	50	zhe me juan
+这么困	50	zhe me kun
+这么爽	50	zhe me shuang
+这些了	50	zhe xie le
+直播了	50	zhi bo le
+煮好了	50	zhu hao le
+转点钱	50	zhuan dian qian
+转多少	50	zhuan duo shao
+做饭了	50	zuo fan le
+坐满了	50	zuo man le
+做啥呢	50	zuo sha ne
+爱上我了	50	ai shang wo le
+爱咋咋吧	2000	ai za za ba
+爱怎么样	2000	ai zen me yang
+熬不动了	50	ao bu dong le
+熬出头了	2000	ao chu tou le
+把我带上	50	ba wo dai shang
+半年多了	50	ban nian duo le
+报名了吗	50	bao ming le ma
+报销一下	50	bao xiao yi xia
+抱着你睡	50	bao zhe ni shui
+被嫌弃了	50	bei xian qi le
+比较一下	50	bi jiao yi xia
+标记一下	50	biao ji yi xia
+别搭理他	50	bie da li ta
+别发错了	50	bie fa cuo le
+别发给我	50	bie fa gei wo
+别烦我了	50	bie fan wo le
+别放心上	50	bie fang xin shang
+别忘记了	50	bie wang ji le
+别问问题	2000	bie wen wen ti
+别这么想	50	bie zhe me xiang
+别这样说	50	bie zhe yang shuo
+不吃饭吗	50	bu chi fan ma
+不出来了	50	bu chu lai le
+不出来吗	50	bu chu lai ma
+不带我玩	50	bu dai wo wan
+不多说了	50	bu duo shuo le
+不烦你了	50	bu fan ni le
+不方便的	50	bu fang bian de
+不方便接	50	bu fang bian jie
+不敢吃了	50	bu gan chi le
+不敢看了	50	bu gan kan le
+不工作了	50	bu gong zuo le
+不关心我	50	bu guan xin wo
+不过来了	50	bu guo lai le
+不过没事	50	bu guo mei shi
+不过去了	50	bu guo qu le
+不好请假	50	bu hao qing jia
+不好说了	50	bu hao shuo le
+不好找了	50	bu hao zhao le
+不会玩的	50	bu hui wan de
+不会玩了	50	bu hui wan le
+不减肥了	50	bu jian fei le
+不健康的	50	bu jian kang de
+不见你了	50	bu jian ni le
+不见人了	50	bu jian ren le
+不就是了	50	bu jiu shi le
+不开心了	50	bu kai xin le
+不客气呢	2000	bu ke qi ne
+不可以了	50	bu ke yi le
+不来算了	50	bu lai suan le
+不来找我	50	bu lai zhao wo
+不离开你	50	bu li kai ni
+不了解你	50	bu liao jie ni
+不了解我	50	bu liao jie wo
+不聊这个	50	bu liao zhe ge
+不买不买	50	bu mai bu mai
+不满意了	50	bu man yi le
+不明白的	50	bu ming bai de
+不耐烦了	50	bu nai fan le
+不能要了	50	bu neng yao le
+不便宜啊	2000	bu pian yi a
+不便宜吧	50	bu pian yi ba
+不起来了	50	bu qi lai le
+不请假了	50	bu qing jia le
+不让我说	50	bu rang wo shuo
+不上班了	50	bu shang ban le
+不上来了	50	bu shang lai le
+不是很多	50	bu shi hen duo
+不是很想	50	bu shi hen xiang
+不舒服的	50	bu shu fu de
+不睡觉吗	50	bu shui jiao ma
+不说你了	50	bu shuo ni le
+不说一声	50	bu shuo yi sheng
+不习惯了	50	bu xi guan le
+不嫌弃我	50	bu xian qi wo
+不想处了	50	bu xiang chu le
+不想打字	50	bu xiang da zi
+不想搞了	50	bu xiang gao le
+不想来了	50	bu xiang lai le
+不想你了	50	bu xiang ni le
+不想去了	50	bu xiang qu le
+不想要了	50	bu xiang yao le
+不想做了	50	bu xiang zuo le
+不行就去	50	bu xing jiu qu
+不休息了	50	bu xiu xi le
+不许生气	50	bu xu sheng qi
+不要插队	50	bu yao cha dui
+不要我了	50	bu yao wo le
+不要吓我	50	bu yao xia wo
+不要找我	50	bu yao zhao wo
+不一定去	50	bu yi ding qu
+不用回了	50	bu yong hui le
+不用你说	50	bu yong ni shuo
+不用去了	50	bu yong qu le
+不用找了	50	bu yong zhao le
+不在这边	50	bu zai zhe bian
+不正常的	50	bu zheng chang de
+不直播了	50	bu zhi bo le
+不值当的	50	bu zhi dang de
+不知道么	50	bu zhi dao me
+不重要了	50	bu zhong yao le
+不尊重我	50	bu zun zhong wo
+才告诉我	50	cai gao su wo
+才跟我说	50	cai gen wo shuo
+才会这样	50	cai hui zhe yang
+才能到家	50	cai neng dao jia
+才洗完澡	50	cai xi wan zao
+才知道了	50	cai zhi dao le
+参加不了	50	can jia bu liao
+差不多呢	50	cha bu duo ne
+迟到了吗	50	chi dao le ma
+吃好了吗	50	chi hao le ma
+吃太饱了	50	chi tai bao le
+吃完饭没	5	chi wan fan mei
+吃完了么	50	chi wan le me
+吃药了没	50	chi yao le mei
+吃着吃着	50	chi zhe chi zhe
+吃这么久	50	chi zhe me jiu
+吃中午饭	50	chi zhong wu fan
+出来玩呀	50	chu lai wan ya
+处理完了	50	chu li wan le
+打把游戏	50	da ba you xi
+打不动了	50	da bu dong le
+打不开了	50	da bu kai le
+打不明白	50	da bu ming bai
+大概几点	50	da gai ji dian
+打个视频	50	da ge shi pin
+打过来了	50	da guo lai le
+搭进去了	50	da jin qu le
+打啥游戏	50	da sha you xi
+打一晚上	50	da yi wan shang
+打游戏嘛	50	da you xi ma
+打游戏呢	50	da you xi ne
+带个口罩	50	dai ge kou zhao
+带我们去	50	dai wo men qu
+倒霉死了	50	dao mei si le
+到学校了	50	dao xue xiao le
+等了半天	50	deng le ban tian
+等了一会	50	deng le yi hui
+等那么久	50	deng na me jiu
+等我到了	50	deng wo dao le
+等我找找	50	deng wo zhao zhao
+等一下吧	50	deng yi xia ba
+等一下下	50	deng yi xia xia
+等有钱了	50	deng you qian le
+第二天了	2000	di er tian le
+点评一下	50	dian ping yi xia
+都比不上	50	dou bi bu shang
+都不出门	50	dou bu chu men
+都不打了	50	dou bu da le
+都不好说	50	dou bu hao shuo
+都不好用	50	dou bu hao yong
+都不好找	50	dou bu hao zhao
+都不回复	2000	dou bu hui fu
+都不回来	50	dou bu hui lai
+都不联系	50	dou bu lian xi
+都不便宜	50	dou bu pian yi
+都不睡觉	50	dou bu shui jiao
+都不顺眼	50	dou bu shun yan
+都不想吃	50	dou bu xiang chi
+都不行吗	50	dou bu xing ma
+都不用说	50	dou bu yong shuo
+都不找我	50	dou bu zhao wo
+都不值钱	50	dou bu zhi qian
+都迟到了	50	dou chi dao le
+都出不来	50	dou chu bu lai
+都出汗了	50	dou chu han le
+都出门了	50	dou chu men le
+都打完了	50	dou da wan le
+都订好了	50	dou ding hao le
+都发货了	50	dou fa huo le
+都分手了	50	dou fen shou le
+都干不了	50	dou gan bu liao
+都搞定了	50	dou gao ding le
+都搞好了	50	dou gao hao le
+都告诉你	50	dou gao su ni
+都告诉我	50	dou gao su wo
+都搞完了	50	dou gao wan le
+都给你吃	50	dou gei ni chi
+都给他了	50	dou gei ta le
+都跟你说	2000	dou gen ni shuo
+都很便宜	50	dou hen pian yi
+都结婚了	50	dou jie hun le
+都看得到	50	dou kan de dao
+都看过了	50	dou kan guo le
+都看完了	50	dou kan wan le
+都考完了	50	dou kao wan le
+都可以去	50	dou ke yi qu
+都可以用	50	dou ke yi yong
+都买不起	50	dou mai bu qi
+都买好了	50	dou mai hao le
+都买完了	50	dou mai wan le
+都没人要	2000	dou mei ren yao
+都没上班	50	dou mei shang ban
+都没说过	50	dou mei shuo guo
+都没休息	50	dou mei xiu xi
+都没用过	50	dou mei yong guo
+都没有用	50	dou mei you yong
+都请假了	50	dou qing jia le
+都上来了	50	dou shang lai le
+都是错的	50	dou shi cuo de
+都是对的	50	dou shi dui de
+都试过了	50	dou shi guo le
+都是好的	50	dou shi hao de
+都是垃圾	50	dou shi la ji
+都说好了	50	dou shuo hao le
+都说一下	50	dou shuo yi xia
+都听不见	50	dou ting bu jian
+都完成了	50	dou wan cheng le
+都无语了	50	dou wu yu le
+都洗完了	50	dou xi wan le
+都下来了	50	dou xia lai le
+都休息了	50	dou xiu xi le
+都要上班	50	dou yao shang ban
+都要走了	50	dou yao zou le
+都一样的	50	dou yi yang de
+都一样吗	50	dou yi yang ma
+都用完了	50	dou yong wan le
+都在睡觉	50	dou zai shui jiao
+都在这边	50	dou zai zhe bian
+都涨价了	50	dou zhang jia le
+都这么晚	50	dou zhe me wan
+都这样吗	50	dou zhe yang ma
+都这样说	50	dou zhe yang shuo
+都做不了	50	dou zuo bu liao
+对胃不好	50	dui wei bu hao
+多大了呀	50	duo da le ya
+嗯嗯对的	2000	en en dui de
+嗯嗯好的	2000	en en hao de
+嗯嗯没事	2000	en en mei shi
+嗯嗯是的	2000	en en shi de
+嗯呢嗯呢	50	en ne en ne
+嗯我知道	2000	en wo zhi dao
+发出来吗	50	fa chu lai ma
+发的什么	50	fa de shen me
+发给我呀	50	fa gei wo ya
+发一下吧	50	fa yi xia ba
+放上去了	50	fang shang qu le
+放桌子上	50	fang zhuo zi shang
+改名字了	50	gai ming zi le
+改完了吗	2000	gai wan le ma
+该下班了	50	gai xia ban le
+干不完了	50	gan bu wan le
+感动死了	50	gan dong si le
+干活去了	50	gan huo qu le
+感冒了吧	50	gan mao le ba
+干起来了	50	gan qi lai le
+干什么去	50	gan shen me qu
+干完了吗	2000	gan wan le ma
+刚才有人	50	gang cai you ren
+刚吃了饭	50	gang chi le fan
+刚吃了药	50	gang chi le yao
+刚吃完药	50	gang chi wan yao
+刚刚看到	50	gang gang kan dao
+刚回宿舍	50	gang hui su she
+刚跑完步	2000	gang pao wan bu
+刚躺床上	50	gang tang chuang shang
+刚洗漱完	50	gang xi shu wan
+刚洗完漱	50	gang xi wan shu
+刚在吃饭	50	gang zai chi fan
+搞不懂了	50	gao bu dong le
+搞不了了	50	gao bu liao le
+搞起来了	50	gao qi lai le
+告诉我了	50	gao su wo le
+搞这么晚	50	gao zhe me wan
+给你打了	5	gei ni da le
+给你发过	50	gei ni fa guo
+给你看过	50	gei ni kan guo
+给我打了	50	gei wo da le
+给我多少	50	gei wo duo shao
+给我发过	2000	gei wo fa guo
+给我干嘛	50	gei wo gan ma
+够可以了	50	gou ke yi le
+沟通好了	50	gou tong hao le
+关心一下	50	guan xin yi xia
+过来找我	50	guo lai zhao wo
+过生日了	50	guo sheng ri le
+还不给我	50	hai bu gei wo
+还不回家	50	hai bu hui jia
+还不回我	50	hai bu hui wo
+还不乐意	50	hai bu le yi
+还不明显	50	hai bu ming xian
+还不如去	50	hai bu ru qu
+还不说话	50	hai bu shuo hua
+还不下课	2000	hai bu xia ke
+还不想睡	50	hai bu xiang shui
+还不休息	50	hai bu xiu xi
+还不知足	50	hai bu zhi zu
+还差不多	50	hai cha bu duo
+还没办法	50	hai mei ban fa
+还没搞定	50	hai mei gao ding
+还没搞好	50	hai mei gao hao
+还没搞完	50	hai mei gao wan
+还没恢复	50	hai mei hui fu
+还没回话	50	hai mei hui hua
+还没起来	50	hai mei qi lai
+还没上去	50	hai mei shang qu
+还没睡呀	50	hai mei shui ya
+还没睡着	50	hai mei shui zhao
+还没洗完	50	hai mei xi wan
+还没洗澡	50	hai mei xi zao
+还没用过	50	hai mei yong guo
+还没走吗	50	hai mei zou ma
+还没走呢	50	hai mei zou ne
+还能干啥	50	hai neng gan sha
+还能用吗	50	hai neng yong ma
+还是明天	50	hai shi ming tian
+还睡着呢	50	hai shui zhe ne
+还顺利吗	50	hai shun li ma
+还挺高的	50	hai ting gao de
+还挺好听	50	hai ting hao ting
+还挺好用	50	hai ting hao yong
+还挺快的	50	hai ting kuai de
+还挺冷的	50	hai ting leng de
+还要吃饭	50	hai yao chi fan
+还要开会	50	hai yao kai hui
+还要考试	50	hai yao kao shi
+还有多少	50	hai you duo shao
+还有几个	50	hai you ji ge
+还有联系	50	hai you lian xi
+还在读书	50	hai zai du shu
+还在家里	50	hai zai jia li
+还在聊天	50	hai zai liao tian
+还在那里	50	hai zai na li
+还在生气	50	hai zai sheng qi
+还在学校	50	hai zai xue xiao
+还这么多	50	hai zhe me duo
+还真不错	50	hai zhen bu cuo
+孩子大了	50	hai zi da le
+喊起来了	50	han qi lai le
+喊我一下	50	han wo yi xia
+好多次了	50	hao duo ci le
+好多了吧	50	hao duo le ba
+好多年了	50	hao duo nian le
+好好玩吧	50	hao hao wan ba
+好好洗洗	5	hao hao xi xi
+好很多了	50	hao hen duo le
+好几遍了	50	hao ji bian le
+好几年了	50	hao ji nian le
+好久没打	50	hao jiu mei da
+好久没喝	2000	hao jiu mei he
+好久没去	50	hao jiu mei qu
+好看点的	50	hao kan dian de
+好看多了	50	hao kan duo le
+好贴心啊	50	hao tie xin a
+好意思说	50	hao yi si shuo
+好一些了	50	hao yi xie le
+核对一下	50	he dui yi xia
+喝奶茶吗	50	he nai cha ma
+喝起来了	50	he qi lai le
+喝着喝着	50	he zhe he zhe
+喝这么多	50	he zhe me duo
+很简单的	50	hen jian dan de
+很厉害吗	50	hen li hai ma
+很便宜了	50	hen pian yi le
+很幸福了	50	hen xing fu le
+很正常嘛	2000	hen zheng chang ma
+后悔死了	50	hou hui si le
+后天晚上	2000	hou tian wan shang
+换成这个	50	huan cheng zhe ge
+换回来了	50	huan hui lai le
+换头像了	50	huan tou xiang le
+换做是我	50	huan zuo shi wo
+恢复好了	50	hui fu hao le
+回复了吗	50	hui fu le ma
+回复一下	50	hui fu yi xia
+回个信息	50	hui ge xin xi
+会好一些	50	hui hao yi xie
+回来一次	50	hui lai yi ci
+回来找你	50	hui lai zhao ni
+回了回了	50	hui le hui le
+回去了嘛	50	hui qu le ma
+回去试试	50	hui qu shi shi
+回去再说	50	hui qu zai shuo
+回学校了	50	hui xue xiao le
+活过来了	50	huo guo lai le
+货收到了	50	huo shou dao le
+活下来了	50	huo xia lai le
+寄出了吗	50	ji chu le ma
+几点的车	50	ji dian de che
+几点的票	50	ji dian de piao
+几点都行	50	ji dian dou xing
+几个快递	2000	ji ge kuai di
+计划一下	50	ji hua yi xia
+加急发货	50	jia ji fa huo
+加他微信	2000	jia ta wei xin
+见不到我	50	jian bu dao wo
+简单多了	50	jian dan duo le
+见面了吗	2000	jian mian le ma
+见面再说	50	jian mian zai shuo
+捡起来了	50	jian qi lai le
+叫过来了	50	jiao guo lai le
+叫回来了	50	jiao hui lai le
+交接一下	50	jiao jie yi xia
+叫你出来	50	jiao ni chu lai
+接电话吗	50	jie dian hua ma
+介绍给我	50	jie shao gei wo
+接我一下	50	jie wo yi xia
+今天不用	50	jin tian bu yong
+今天不在	50	jin tian bu zai
+今天几点	50	jin tian ji dian
+今天有风	2000	jin tian you feng
+今天有人	50	jin tian you ren
+今天在家	50	jin tian zai jia
+就不爱了	50	jiu bu ai le
+就不动了	50	jiu bu dong le
+就不干了	5	jiu bu gan le
+就不过来	50	jiu bu guo lai
+就不好吃	50	jiu bu hao chi
+就不好了	50	jiu bu hao le
+就不好说	50	jiu bu hao shuo
+就不回来	50	jiu bu hui lai
+就不开心	2000	jiu bu kai xin
+就不热了	50	jiu bu re le
+就不认识	50	jiu bu ren shi
+就不容易	50	jiu bu rong yi
+就不适合	50	jiu bu shi he
+就不舒服	50	jiu bu shu fu
+就不说话	50	jiu bu shuo hua
+就不说了	50	jiu bu shuo le
+就不疼了	50	jiu bu teng le
+就不要说	50	jiu bu yao shuo
+就不用了	50	jiu bu yong le
+就不这样	50	jiu bu zhe yang
+就差不多	50	jiu cha bu duo
+就吃个饭	50	jiu chi ge fan
+就吃完了	50	jiu chi wan le
+就出去了	50	jiu chu qu le
+就出去玩	2000	jiu chu qu wan
+就打电话	50	jiu da dian hua
+就放心了	50	jiu fang xin le
+就分手了	50	jiu fen shou le
+就感冒了	50	jiu gan mao le
+就搞定了	50	jiu gao ding le
+就跟我说	50	jiu gen wo shuo
+就过去了	50	jiu guo qu le
+就很不错	50	jiu hen bu cuo
+就很好了	50	jiu hen hao le
+就后悔了	50	jiu hou hui le
+就换一个	2000	jiu huan yi ge
+就回家了	50	jiu hui jia le
+就会这样	50	jiu hui zhe yang
+就记住了	50	jiu ji zhu le
+就结婚了	50	jiu jie hun le
+就看不到	50	jiu kan bu dao
+就看见了	50	jiu kan jian le
+就看一下	50	jiu kan yi xia
+就可以吧	2000	jiu ke yi ba
+就可以吗	2000	jiu ke yi ma
+就可以拿	50	jiu ke yi na
+就可以用	50	jiu ke yi yong
+就可以走	50	jiu ke yi zou
+就来找我	50	jiu lai zhao wo
+就满足了	50	jiu man zu le
+就没打了	50	jiu mei da le
+就没看了	50	jiu mei kan le
+就没钱了	50	jiu mei qian le
+就没事了	50	jiu mei shi le
+就那么点	50	jiu na me dian
+就能到了	50	jiu neng dao le
+就忍不住	50	jiu ren bu zhu
+就上课了	50	jiu shang ke le
+就上去了	50	jiu shang qu le
+就是不好	50	jiu shi bu hao
+就是看看	50	jiu shi kan kan
+就是问问	50	jiu shi wen wen
+就睡觉吧	50	jiu shui jiao ba
+就睡觉了	50	jiu shui jiao le
+就完成了	50	jiu wan cheng le
+就完美了	50	jiu wan mei le
+就想到了	50	jiu xiang dao le
+就消失了	50	jiu xiao shi le
+就要睡了	50	jiu yao shui le
+就要这样	50	jiu yao zhe yang
+就一个月	50	jiu yi ge yue
+就有可能	50	jiu you ke neng
+就在楼下	50	jiu zai lou xia
+就在旁边	50	jiu zai pang bian
+就这几个	50	jiu zhe ji ge
+就这么多	50	jiu zhe me duo
+就这么干	50	jiu zhe me gan
+就直接去	50	jiu zhi jie qu
+开不了了	50	kai bu liao le
+开个视频	2000	kai ge shi pin
+开什么会	2000	kai shen me hui
+开一下门	50	kai yi xia men
+看不起你	50	kan bu qi ni
+看出来吗	50	kan chu lai ma
+看得过去	50	kan de guo qu
+看见他了	50	kan jian ta le
+看看哪个	2000	kan kan na ge
+看他自己	50	kan ta zi ji
+考不考虑	50	kao bu kao lv
+犒劳一下	50	kao lao yi xia
+考完了吗	50	kao wan le ma
+可喜欢了	50	ke xi huan le
+可以不用	50	ke yi bu yong
+可以发了	50	ke yi fa le
+可以发我	50	ke yi fa wo
+可以开了	50	ke yi kai le
+可以晚点	2000	ke yi wan dian
+可以约吗	50	ke yi yue ma
+哭出来了	5	ku chu lai le
+快不行了	50	kuai bu xing le
+快吃饭了	2000	kuai chi fan le
+快过期了	50	kuai guo qi le
+快气死了	50	kuai qi si le
+快一个月	50	kuai yi ge yue
+拉完了吗	2000	la wan le ma
+来不来了	50	lai bu lai le
+来过一次	50	lai guo yi ci
+来上班了	50	lai shang ban le
+来我家吃	50	lai wo jia chi
+来我家了	50	lai wo jia le
+来我这里	50	lai wo zhe li
+来找你们	50	lai zhao ni men
+老厉害了	50	lao li hai le
+理解错了	50	li jie cuo le
+立起来了	50	li qi lai le
+联系到了	50	lian xi dao le
+聊起来了	50	liao qi lai le
+聊着聊着	50	liao zhe liao zhe
+流鼻血了	50	liu bi xue le
+流眼泪了	50	liu yan lei le
+旅游去了	50	lv you qu le
+麻烦了哈	50	ma fan le ha
+麻烦死了	50	ma fan si le
+骂起来了	50	ma qi lai le
+马上回去	50	ma shang hui qu
+骂我干啥	50	ma wo gan sha
+买了几个	50	mai le ji ge
+买了没有	50	mai le mei you
+买完了吗	50	mai wan le ma
+满足一下	50	man zu yi xia
+没迟到吧	5	mei chi dao ba
+没吃早餐	50	mei chi zao can
+没出门了	50	mei chu men le
+没搭理他	50	mei da li ta
+没带过来	50	mei dai guo lai
+没带回来	50	mei dai hui lai
+没地方去	2000	mei di fang qu
+没动静了	50	mei dong jing le
+没东西了	50	mei dong xi le
+没干嘛呀	2000	mei gan ma ya
+没告诉你	50	mei gao su ni
+没给你发	50	mei gei ni fa
+没给我看	2000	mei gei wo kan
+没工作了	50	mei gong zuo le
+没话说了	50	mei hua shuo le
+没开声音	50	mei kai sheng yin
+没看到你	50	mei kan dao ni
+没联系上	50	mei lian xi shang
+没联系我	50	mei lian xi wo
+没那么急	50	mei na me ji
+没其他人	2000	mei qi ta ren
+没人玩了	50	mei ren wan le
+没啥看的	50	mei sha kan de
+没啥时间	50	mei sha shi jian
+没啥胃口	50	mei sha wei kou
+没事干了	50	mei shi gan le
+没收到啊	50	mei shou dao a
+没睡好吧	50	mei shui hao ba
+没玩游戏	50	mei wan you xi
+没希望了	50	mei xi wang le
+没洗澡了	50	mei xi zao le
+没休息了	50	mei xiu xi le
+没有吃饭	50	mei you chi fan
+没有出门	50	mei you chu men
+没有事情	50	mei you shi qing
+没有为啥	50	mei you wei sha
+没有位置	50	mei you wei zhi
+没有下雨	50	mei you xia yu
+没有现货	50	mei you xian huo
+没有这种	50	mei you zhe zhong
+没找到你	2000	mei zhao dao ni
+没这么高	50	mei zhe me gao
+没注意过	50	mei zhu yi guo
+弥补一下	50	mi bu yi xia
+眯了一下	50	mi le yi xia
+明确一下	2000	ming que yi xia
+明天不去	50	ming tian bu qu
+明天过去	50	ming tian guo qu
+明天上课	50	ming tian shang ke
+明天也行	50	ming tian ye xing
+明天再打	50	ming tian zai da
+明天早八	50	ming tian zao ba
+那不对啊	50	na bu dui a
+那不好说	50	na bu hao shuo
+那不聊了	50	na bu liao le
+那不去了	50	na bu qu le
+那不玩了	50	na bu wan le
+那不要了	50	na bu yao le
+那不重要	50	na bu zhong yao
+哪都没去	2000	na dou mei qu
+那就不做	50	na jiu bu zuo
+那就够了	50	na jiu gou le
+那就回家	50	na jiu hui jia
+那就睡吧	50	na jiu shui ba
+那就晚点	50	na jiu wan dian
+那就晚上	50	na jiu wan shang
+那就这个	50	na jiu zhe ge
+那可惜了	2000	na ke xi le
+那么好了	2000	na me hao le
+那么积极	50	na me ji ji
+那么开心	50	na me kai xin
+那么清楚	50	na me qing chu
+那么突然	50	na me tu ran
+那你回家	2000	na ni hui jia
+那你去呗	50	na ni qu bei
+那你去找	2000	na ni qu zhao
+那你完了	50	na ni wan le
+那你先打	50	na ni xian da
+拿上来了	50	na shang lai le
+那是哪个	50	na shi na ge
+那太晚了	50	na tai wan le
+那挺好呀	50	na ting hao ya
+那我就买	2000	na wo jiu mai
+那我自己	50	na wo zi ji
+那无所谓	50	na wu suo wei
+那要不然	50	na yao bu ran
+那有机会	50	na you ji hui
+哪有哪有	50	na you na you
+那咋办呀	50	na za ban ya
+能不能换	5	neng bu neng huan
+能不能上	50	neng bu neng shang
+能开出来	2000	neng kai chu lai
+你安排吧	2000	ni an pai ba
+你别放弃	2000	ni bie fang qi
+你别睡了	50	ni bie shui le
+你别玩了	50	ni bie wan le
+你别笑我	50	ni bie xiao wo
+你不必急	2000	ni bu bi ji
+你不尴尬	2000	ni bu gan ga
+你不回复	2000	ni bu hui fu
+你不会玩	50	ni bu hui wan
+你不见我	50	ni bu jian wo
+你不结婚	50	ni bu jie hun
+你不来了	50	ni bu lai le
+你不乐意	50	ni bu le yi
+你不上课	2000	ni bu shang ke
+你不玩了	50	ni bu wan le
+你不要说	50	ni bu yao shuo
+你不早说	50	ni bu zao shuo
+你不找我	50	ni bu zhao wo
+你吃不了	50	ni chi bu liao
+你吃完饭	50	ni chi wan fan
+你打个车	50	ni da ge che
+你打给我	5	ni da gei wo
+你打过来	5	ni da guo lai
+你都不在	50	ni dou bu zai
+你多高呀	50	ni duo gao ya
+你发了吗	50	ni fa le ma
+你发我吧	2000	ni fa wo ba
+你方便吗	50	ni fang bian ma
+你给我打	2000	ni gei wo da
+你给我洗	2000	ni gei wo xi
+你过来拿	50	ni guo lai na
+你还不去	50	ni hai bu qu
+你还没买	50	ni hai mei mai
+你还玩吗	2000	ni hai wan ma
+你还要吗	2000	ni hai yao ma
+你还在家	50	ni hai zai jia
+你还这样	50	ni hai zhe yang
+你喝多了	50	ni he duo le
+你喝醉了	50	ni he zui le
+你会来吗	50	ni hui lai ma
+你继续说	50	ni ji xu shuo
+你接一下	50	ni jie yi xia
+你进不来	50	ni jin bu lai
+你就不会	2000	ni jiu bu hui
+你就到了	50	ni jiu dao le
+你就记住	50	ni jiu ji zhu
+你就直说	50	ni jiu zhi shuo
+你就走了	50	ni jiu zou le
+你看到的	50	ni kan dao de
+你看时间	50	ni kan shi jian
+你看着买	2000	ni kan zhe mai
+你考完了	50	ni kao wan le
+你考完试	2000	ni kao wan shi
+你可以说	50	ni ke yi shuo
+你来帮我	50	ni lai bang wo
+你量一下	50	ni liang yi xia
+你忙啥呢	50	ni mang sha ne
+你没必要	50	ni mei bi yao
+你没吃饭	50	ni mei chi fan
+你没看吗	2000	ni mei kan ma
+你们都在	50	ni men dou zai
+你们聊吧	50	ni men liao ba
+你们这样	50	ni men zhe yang
+你拿回来	2000	ni na hui lai
+你哪年的	50	ni na nian de
+你去不了	50	ni qu bu liao
+你去学校	2000	ni qu xue xiao
+你上来了	50	ni shang lai le
+你睡了么	50	ni shui le me
+你睡着啦	50	ni shui zhao la
+你睡着了	50	ni shui zhao le
+你说就行	50	ni shuo jiu xing
+你说晚了	50	ni shuo wan le
+你太慢了	2000	ni tai man le
+你讨厌我	50	ni tao yan wo
+你听过吗	2000	ni ting guo ma
+你同意了	50	ni tong yi le
+你问问呗	2000	ni wen wen bei
+你洗完了	50	ni xi wan le
+你下个月	50	ni xia ge yue
+你先打吧	50	ni xian da ba
+你先看吧	50	ni xian kan ba
+你先忙着	50	ni xian mang zhe
+你想好了	50	ni xiang hao le
+你想玩啥	50	ni xiang wan sha
+你消消气	50	ni xiao xiao qi
+你要吃饭	50	ni yao chi fan
+你要回家	50	ni yao hui jia
+你要去吗	50	ni yao qu ma
+你要想好	50	ni yao xiang hao
+你要休息	50	ni yao xiu xi
+你也不接	50	ni ye bu jie
+你也不听	50	ni ye bu ting
+你也没吃	2000	ni ye mei chi
+你也去吗	50	ni ye qu ma
+你也认识	50	ni ye ren shi
+你也睡吧	50	ni ye shui ba
+你也早睡	50	ni ye zao shui
+你一会儿	5	ni yi hui er
+你又不来	50	ni you bu lai
+你又不玩	50	ni you bu wan
+你又不在	50	ni you bu zai
+你又睡了	50	ni you shui le
+你又走了	50	ni you zou le
+你咋不接	50	ni za bu jie
+你再过来	50	ni zai guo lai
+你在哪住	50	ni zai na zhu
+你在寝室	50	ni zai qin shi
+你在深圳	50	ni zai shen zhen
+你在网上	50	ni zai wang shang
+你早点去	50	ni zao dian qu
+你找工作	50	ni zhao gong zuo
+你这么晚	5	ni zhe me wan
+你这样说	50	ni zhe yang shuo
+你自己打	50	ni zi ji da
+你自己找	50	ni zi ji zhao
+你自己住	50	ni zi ji zhu
+你走哪了	50	ni zou na le
+你做得对	50	ni zuo de dui
+你做过没	50	ni zuo guo mei
+哦哦好吧	2000	o o hao ba
+哦哦好的	2000	o o hao de
+判断一下	50	pan duan yi xia
+跑回去了	50	pao hui qu le
+培训完了	50	pei xun wan le
+便宜多少	50	pian yi duo shao
+起了起了	50	qi le qi le
+其他还好	50	qi ta hai hao
+签到了吗	50	qian dao le ma
+请不下来	50	qing bu xia lai
+清理一下	50	qing li yi xia
+请耐心点	2000	qing nai xin dian
+请深呼吸	50	qing shen hu xi
+请试试看	2000	qing shi shi kan
+求你们了	2000	qiu ni men le
+去吃早饭	50	qu chi zao fan
+去喝酒了	50	qu he jiu le
+去接孩子	50	qu jie hai zi
+去哪玩了	2000	qu na wan le
+去上班了	50	qu shang ban le
+去上课了	50	qu shang ke le
+去我那里	2000	qu wo na li
+去洗澡了	50	qu xi zao le
+取消不了	50	qu xiao bu liao
+取消一下	50	qu xiao yi xia
+全吃完了	50	quan chi wan le
+全新的吗	50	quan xin de ma
+人不见了	50	ren bu jian le
+人家说我	2000	ren jia shuo wo
+人太少了	50	ren tai shao le
+扫过去了	50	sao guo qu le
+啥都没有	50	sha dou mei you
+啥年代了	50	sha nian dai le
+啥时候发	50	sha shi hou fa
+啥时候回	50	sha shi hou hui
+啥时候开	50	sha shi hou kai
+上班了呀	50	shang ban le ya
+上到几点	50	shang dao ji dian
+商量好了	50	shang liang hao le
+上什么班	50	shang shen me ban
+上午没课	50	shang wu mei ke
+上学去了	50	shang xue qu le
+什么好处	50	shen me hao chu
+什么样了	50	shen me yang le
+生我的气	2000	sheng wo de qi
+识别不了	50	shi bie bu liao
+是别人的	50	shi bie ren de
+是不是他	50	shi bu shi ta
+是不行的	50	shi bu xing de
+是不一样	50	shi bu yi yang
+是差不多	50	shi cha bu duo
+是否方便	50	shi fou fang bian
+是肯定的	50	shi ken ding de
+是免费的	50	shi mian fei de
+是哪里人	2000	shi na li ren
+是那样的	50	shi na yang de
+是你本人	50	shi ni ben ren
+是你的事	50	shi ni de shi
+是你朋友	50	shi ni peng you
+是他们的	50	shi ta men de
+是我说的	50	shi wo shuo de
+是一起的	50	shi yi qi de
+是这个吧	50	shi zhe ge ba
+是这么说	50	shi zhe me shuo
+是这样吧	50	shi zhe yang ba
+是正常的	50	shi zheng chang de
+是正确的	50	shi zheng que de
+是自己的	50	shi zi ji de
+是做什么	50	shi zuo shen me
+受刺激了	50	shou ci ji le
+手机给我	50	shou ji gei wo
+帅死我了	50	shuai si wo le
+睡觉了吧	50	shui jiao le ba
+睡觉了么	50	shui jiao le me
+睡了睡了	50	shui le shui le
+睡那么久	2000	shui na me jiu
+睡太晚了	50	shui tai wan le
+睡太早了	50	shui tai zao le
+睡一晚上	50	shui yi wan shang
+睡着了啊	2000	shui zhao le a
+睡着了吧	50	shui zhao le ba
+睡这么晚	5	shui zhe me wan
+说不过我	50	shuo bu guo wo
+说不一定	50	shuo bu yi ding
+说错了吗	50	shuo cuo le ma
+说得出来	50	shuo de chu lai
+说点什么	50	shuo dian shen me
+说了半天	50	shuo le ban tian
+说了一顿	50	shuo le yi dun
+说了一嘴	50	shuo le yi zui
+说我坏话	50	shuo wo huai hua
+说这个事	50	shuo zhe ge shi
+说着说着	50	shuo zhe shuo zhe
+送给你了	50	song gei ni le
+送完了吗	50	song wan le ma
+搜了一下	50	sou le yi xia
+他不愿意	50	ta bu yuan yi
+他都说了	50	ta dou shuo le
+他过生日	50	ta guo sheng ri
+他还没回	50	ta hai mei hui
+他还没有	50	ta hai mei you
+他回家了	50	ta hui jia le
+他就那样	50	ta jiu na yang
+他就这样	50	ta jiu zhe yang
+他来找我	50	ta lai zhao wo
+他们不去	50	ta men bu qu
+他们吃饭	50	ta men chi fan
+他们出去	2000	ta men chu qu
+他们都在	50	ta men dou zai
+他们确认	50	ta men que ren
+他们上班	50	ta men shang ban
+他们说了	50	ta men shuo le
+他请假了	50	ta qing jia le
+他生气了	50	ta sheng qi le
+他睡觉了	50	ta shui jiao le
+他睡着了	50	ta shui zhao le
+他也不会	50	ta ye bu hui
+他在干嘛	50	ta zai gan ma
+他知道了	50	ta zhi dao le
+他自己说	50	ta zi ji shuo
+太烦人了	2000	tai fan ren le
+太煎熬了	50	tai jian ao le
+太可以了	50	tai ke yi le
+太磨叽了	50	tai mo ji le
+太恼火了	5	tai nao huo le
+太折磨了	50	tai zhe mo le
+踢出来了	50	ti chu lai le
+提交了吗	50	ti jiao le ma
+听不太清	50	ting bu tai qing
+挺好的呢	50	ting hao de ne
+挺可爱的	2000	ting ke ai de
+挺明显的	50	ting ming xian de
+挺舒服的	50	ting shu fu de
+推给你了	50	tui gei ni le
+推给我吧	2000	tui gei wo ba
+推荐哪个	50	tui jian na ge
+脱衣服了	50	tuo yi fu le
+玩不玩了	50	wan bu wan le
+晚点发你	50	wan dian fa ni
+晚点回去	50	wan dian hui qu
+完了完了	50	wan le wan le
+玩起来了	50	wan qi lai le
+晚上过去	50	wan shang guo qu
+晚上回去	50	wan shang hui qu
+晚上继续	50	wan shang ji xu
+玩一下午	50	wan yi xia wu
+玩这么久	50	wan zhe me jiu
+忘回你了	50	wang hui ni le
+为啥不能	50	wei sha bu neng
+问候一下	50	wen hou yi xia
+问你自己	50	wen ni zi ji
+问一下哦	2000	wen yi xia o
+我帮你问	50	wo bang ni wen
+我不担心	50	wo bu dan xin
+我不敢吃	50	wo bu gan chi
+我不管他	50	wo bu guan ta
+我不好说	50	wo bu hao shuo
+我不回你	2000	wo bu hui ni
+我不来了	50	wo bu lai le
+我不乐意	50	wo bu le yi
+我不理你	50	wo bu li ni
+我不骂你	2000	wo bu ma ni
+我不陪你	50	wo bu pei ni
+我不上班	50	wo bu shang ban
+我不睡觉	50	wo bu shui jiao
+我不说了	50	wo bu shuo le
+我不太敢	50	wo bu tai gan
+我不想打	50	wo bu xiang da
+我不想等	50	wo bu xiang deng
+我不想喝	50	wo bu xiang he
+我不想玩	50	wo bu xiang wan
+我才看到	50	wo cai kan dao
+我吃不了	50	wo chi bu liao
+我吃了饭	50	wo chi le fan
+我瞅一眼	50	wo chou yi yan
+我打出来	50	wo da chu lai
+我打给你	5	wo da gei ni
+我打过去	5	wo da guo qu
+我订好了	50	wo ding hao le
+我都不打	50	wo dou bu da
+我都不懂	50	wo dou bu dong
+我都不买	50	wo dou bu mai
+我都不玩	5	wo dou bu wan
+我都不要	50	wo dou bu yao
+我都给你	2000	wo dou gei ni
+我都给他	50	wo dou gei ta
+我都买了	50	wo dou mai le
+我都没打	50	wo dou mei da
+我都没回	50	wo dou mei hui
+我都没买	50	wo dou mei mai
+我都没睡	50	wo dou mei shui
+我都没玩	50	wo dou mei wan
+我肚子疼	50	wo du zi teng
+我放弃了	50	wo fang qi le
+我改完了	2000	wo gai wan le
+我赶时间	50	wo gan shi jian
+我刚到家	50	wo gang dao jia
+我刚考完	50	wo gang kao wan
+我刚完事	50	wo gang wan shi
+我刚洗好	50	wo gang xi hao
+我刚下车	50	wo gang xia che
+我刚想问	50	wo gang xiang wen
+我给你补	50	wo gei ni bu
+我给你放	50	wo gei ni fang
+我给你换	50	wo gei ni huan
+我给你开	50	wo gei ni kai
+我给你推	2000	wo gei ni tui
+我给你写	50	wo gei ni xie
+我还不困	50	wo hai bu kun
+我还不想	50	wo hai bu xiang
+我还没发	2000	wo hai mei fa
+我还没喝	50	wo hai mei he
+我还没看	2000	wo hai mei kan
+我还没去	2000	wo hai mei qu
+我还没下	50	wo hai mei xia
+我还在写	50	wo hai zai xie
+我还在找	50	wo hai zai zhao
+我好可怜	50	wo hao ke lian
+我好喜欢	50	wo hao xi huan
+我喝多了	50	wo he duo le
+我很担心	50	wo hen dan xin
+我很清楚	50	wo hen qing chu
+我很讨厌	50	wo hen tao yan
+我换一下	50	wo huan yi xia
+我记不住	50	wo ji bu zhu
+我记错了	50	wo ji cuo le
+我接电话	50	wo jie dian hua
+我就不敢	50	wo jiu bu gan
+我就不回	50	wo jiu bu hui
+我就不买	50	wo jiu bu mai
+我就不怕	50	wo jiu bu pa
+我就发了	50	wo jiu fa le
+我就开了	50	wo jiu kai le
+我就开心	50	wo jiu kai xin
+我就看你	50	wo jiu kan ni
+我就睡觉	50	wo jiu shui jiao
+我就说呢	50	wo jiu shuo ne
+我就说你	50	wo jiu shuo ni
+我就完了	5	wo jiu wan le
+我就要了	50	wo jiu yao le
+我就走了	50	wo jiu zou le
+我开过来	50	wo kai guo lai
+我开过去	2000	wo kai guo qu
+我看不了	50	wo kan bu liao
+我看到你	2000	wo kan dao ni
+我看看嘛	2000	wo kan kan ma
+我看什么	50	wo kan shen me
+我看着你	2000	wo kan zhe ni
+我扛不住	50	wo kang bu zhu
+我考完了	50	wo kao wan le
+我来联系	50	wo lai lian xi
+我理解你	50	wo li jie ni
+我脸皮厚	50	wo lian pi hou
+我联系你	50	wo lian xi ni
+我联系您	50	wo lian xi nin
+我量一下	50	wo liang yi xia
+我买房了	2000	wo mai fang le
+我买过了	50	wo mai guo le
+我买好了	50	wo mai hao le
+我忙完了	50	wo mang wan le
+我没回家	50	wo mei hui jia
+我没开过	2000	wo mei kai guo
+我没问过	50	wo mei wen guo
+我没想到	50	wo mei xiang dao
+我没找到	50	wo mei zhao dao
+我没注意	50	wo mei zhu yi
+我们回去	50	wo men hui qu
+我们也是	50	wo men ye shi
+我拿过来	2000	wo na guo lai
+我拿回去	50	wo na hui qu
+我能理解	2000	wo neng li jie
+我陪你去	2000	wo pei ni qu
+我请假了	50	wo qing jia le
+我请你喝	50	wo qing ni he
+我去不去	50	wo qu bu qu
+我去那边	50	wo qu na bian
+我去食堂	5	wo qu shi tang
+我去问问	50	wo qu wen wen
+我去问下	50	wo qu wen xia
+我让你看	2000	wo rang ni kan
+我认识的	50	wo ren shi de
+我上大学	50	wo shang da xue
+我上夜班	50	wo shang ye ban
+我生气的	50	wo sheng qi de
+我睡不好	50	wo shui bu hao
+我睡过了	50	wo shui guo le
+我睡觉呀	50	wo shui jiao ya
+我睡一下	50	wo shui yi xia
+我说不要	50	wo shuo bu yao
+我说了呀	50	wo shuo le ya
+我说一句	50	wo shuo yi ju
+我退给你	50	wo tui gei ni
+我玩不了	50	wo wan bu liao
+我晚点去	50	wo wan dian qu
+我问了问	50	wo wen le wen
+我洗个脸	50	wo xi ge lian
+我洗个澡	50	wo xi ge zao
+我洗完澡	50	wo xi wan zao
+我洗澡啦	50	wo xi zao la
+我洗澡了	50	wo xi zao le
+我洗澡去	50	wo xi zao qu
+我下去拿	50	wo xia qu na
+我下午去	50	wo xia wu qu
+我先撤了	50	wo xian che le
+我先上课	50	wo xian shang ke
+我先睡咯	50	wo xian shui lo
+我先问的	50	wo xian wen de
+我现在发	50	wo xian zai fa
+我现在回	50	wo xian zai hui
+我现在买	2000	wo xian zai mai
+我现在去	50	wo xian zai qu
+我想吃饭	50	wo xiang chi fan
+我想出国	2000	wo xiang chu guo
+我想错了	50	wo xiang cuo le
+我想喝水	50	wo xiang he shui
+我想看看	50	wo xiang kan kan
+我想去玩	2000	wo xiang qu wan
+我想休息	50	wo xiang xiu xi
+我想租房	50	wo xiang zu fang
+我要出去	50	wo yao chu qu
+我要那个	2000	wo yao na ge
+我要闹了	50	wo yao nao le
+我要努力	50	wo yao nu li
+我要晚点	50	wo yao wan dian
+我要先去	50	wo yao xian qu
+我要一下	50	wo yao yi xia
+我也不好	50	wo ye bu hao
+我也不忙	2000	wo ye bu mang
+我也担心	50	wo ye dan xin
+我也点了	50	wo ye dian le
+我也看到	50	wo ye kan dao
+我也累了	50	wo ye lei le
+我也没吃	50	wo ye mei chi
+我也没带	50	wo ye mei dai
+我也没回	50	wo ye mei hui
+我也没见	50	wo ye mei jian
+我也没买	50	wo ye mei mai
+我也没钱	2000	wo ye mei qian
+我也没说	50	wo ye mei shuo
+我也没做	50	wo ye mei zuo
+我也去了	50	wo ye qu le
+我也删了	50	wo ye shan le
+我也忘记	50	wo ye wang ji
+我也想打	50	wo ye xiang da
+我也想过	50	wo ye xiang guo
+我也想着	50	wo ye xiang zhe
+我也醒啦	50	wo ye xing la
+我也要睡	50	wo ye yao shui
+我也有课	50	wo ye you ke
+我也在想	50	wo ye zai xiang
+我一会儿	50	wo yi hui er
+我用电脑	50	wo yong dian nao
+我有点懵	50	wo you dian meng
+我有看到	50	wo you kan dao
+我又睡了	50	wo you shui le
+我在帮你	50	wo zai bang ni
+我在被窝	50	wo zai bei wo
+我在发呆	50	wo zai fa dai
+我在翻译	50	wo zai fan yi
+我在工作	50	wo zai gong zuo
+我再看下	50	wo zai kan xia
+我再联系	50	wo zai lian xi
+我在寝室	5	wo zai qin shi
+我在群里	50	wo zai qun li
+我在睡觉	50	wo zai shui jiao
+我在听歌	50	wo zai ting ge
+我在网上	50	wo zai wang shang
+我再问你	50	wo zai wen ni
+我在休假	50	wo zai xiu jia
+我在休息	50	wo zai xiu xi
+我在学习	50	wo zai xue xi
+我在学校	50	wo zai xue xiao
+我在研究	50	wo zai yan jiu
+我在医院	50	wo zai yi yuan
+我在这边	50	wo zai zhe bian
+我站起来	50	wo zhan qi lai
+我真不想	50	wo zhen bu xiang
+我真笑了	50	wo zhen xiao le
+我正在吃	50	wo zheng zai chi
+我只看了	50	wo zhi kan le
+我自己拿	50	wo zi ji na
+我走不开	50	wo zou bu kai
+我走回去	2000	wo zou hui qu
+我做的饭	50	wo zuo de fan
+我做完了	50	wo zuo wan le
+洗漱洗漱	50	xi shu xi shu
+洗完了没	5	xi wan le mei
+洗衣服了	50	xi yi fu le
+下班回去	50	xia ban hui qu
+下次记得	50	xia ci ji de
+下次一起	50	xia ci yi qi
+下个月了	50	xia ge yue le
+下课下课	50	xia ke xia ke
+先不管他	50	xian bu guan ta
+先不玩了	50	xian bu wan le
+先放着吧	50	xian fang zhe ba
+嫌弃我了	50	xian qi wo le
+先试一下	50	xian shi yi xia
+先睡觉吧	50	xian shui jiao ba
+嫌我烦了	50	xian wo fan le
+先用着吧	50	xian yong zhe ba
+现在不忙	50	xian zai bu mang
+现在不能	50	xian zai bu neng
+现在还好	50	xian zai hai hao
+现在没钱	50	xian zai mei qian
+现在有空	50	xian zai you kong
+现在在家	50	xian zai zai jia
+像不像你	50	xiang bu xiang ni
+想起我了	50	xiang qi wo le
+想太多了	50	xiang tai duo le
+协调一下	50	xie tiao yi xia
+写作业呢	50	xie zuo ye ne
+修复一下	50	xiu fu yi xia
+选哪一个	50	xuan na yi ge
+选一个吧	50	xuan yi ge ba
+要不就去	50	yao bu jiu qu
+要不晚上	50	yao bu wan shang
+要不要吃	50	yao bu yao chi
+要不要带	50	yao bu yao dai
+要不要看	50	yao bu yao kan
+要不要了	50	yao bu yao le
+要不要钱	50	yao bu yao qian
+要不要人	50	yao bu yao ren
+要吃东西	50	yao chi dong xi
+要吃饭了	50	yao chi fan le
+要出去吗	50	yao chu qu ma
+要到了吗	50	yao dao le ma
+要过来吗	50	yao guo lai ma
+要回家了	50	yao hui jia le
+要结婚了	50	yao jie hun le
+要开会了	50	yao kai hui le
+要考试了	50	yao kao shi le
+要起来了	50	yao qi lai le
+要去一趟	50	yao qu yi tang
+要上班了	50	yao shang ban le
+要上课了	50	yao shang ke le
+要睡觉了	50	yao shui jiao le
+要睡着了	50	yao shui zhao le
+要下班啦	50	yao xia ban la
+要休息了	50	yao xiu xi le
+也不出来	50	ye bu chu lai
+也不错了	50	ye bu cuo le
+也不干净	50	ye bu gan jing
+也不敢说	50	ye bu gan shuo
+也不好吃	50	ye bu hao chi
+也不好干	50	ye bu hao gan
+也不好喝	50	ye bu hao he
+也不好说	50	ye bu hao shuo
+也不回家	50	ye bu hui jia
+也不回了	50	ye bu hui le
+也不会有	50	ye bu hui you
+也不看看	2000	ye bu kan kan
+也不联系	50	ye bu lian xi
+也不便宜	50	ye bu pian yi
+也不算多	50	ye bu suan duo
+也不算远	50	ye bu suan yuan
+也不同意	50	ye bu tong yi
+也不小了	50	ye bu xiao le
+也不影响	50	ye bu ying xiang
+也不找我	50	ye bu zhao wo
+也吃完了	50	ye chi wan le
+也干不了	50	ye gan bu liao
+也很不错	50	ye hen bu cuo
+也很方便	50	ye hen fang bian
+也很好听	50	ye hen hao ting
+也很简单	50	ye hen jian dan
+也很麻烦	50	ye hen ma fan
+也很便宜	2000	ye hen pian yi
+也很奇怪	50	ye hen qi guai
+也很无聊	50	ye hen wu liao
+也进不去	50	ye jin bu qu
+也就算了	50	ye jiu suan le
+也看不到	50	ye kan bu dao
+也可以吧	50	ye ke yi ba
+也可以的	50	ye ke yi de
+也可以了	50	ye ke yi le
+也可以吗	50	ye ke yi ma
+也可以做	50	ye ke yi zuo
+也买不到	50	ye mai bu dao
+也没多大	50	ye mei duo da
+也没反应	2000	ye mei fan ying
+也没几天	2000	ye mei ji tian
+也没觉得	50	ye mei jue de
+也没人接	50	ye mei ren jie
+也没啥事	50	ye mei sha shi
+也没时间	50	ye mei shi jian
+也没问我	50	ye mei wen wo
+也没有吧	50	ye mei you ba
+也没注意	50	ye mei zhu yi
+也能接受	50	ye neng jie shou
+也起来了	50	ye qi lai le
+也说不清	50	ye shuo bu qing
+也太快了	50	ye tai kuai le
+也太难了	50	ye tai nan le
+也太少了	50	ye tai shao le
+也太晚了	50	ye tai wan le
+也听不懂	50	ye ting bu dong
+也挺好吃	50	ye ting hao chi
+也挺好的	50	ye ting hao de
+也遇到过	50	ye yu dao guo
+也做不了	50	ye zuo bu liao
+也做好了	50	ye zuo hao le
+一个就行	50	yi ge jiu xing
+一共多少	50	yi gong duo shao
+一会吃饭	50	yi hui chi fan
+一会儿去	50	yi hui er qu
+一会儿说	50	yi hui er shuo
+一会回家	50	yi hui hui jia
+一会就去	50	yi hui jiu qu
+一会就睡	50	yi hui jiu shui
+一会睡觉	50	yi hui shui jiao
+一会我去	50	yi hui wo qu
+一会下班	50	yi hui xia ban
+一会找你	50	yi hui zhao ni
+已经发货	50	yi jing fa huo
+已经买好	50	yi jing mai hao
+已经去了	50	yi jing qu le
+一起买了	50	yi qi mai le
+一起去了	50	yi qi qu le
+一下就行	50	yi xia jiu xing
+一小时了	50	yi xiao shi le
+用完了吗	50	yong wan le ma
+有变化吗	50	you bian hua ma
+又不吃了	50	you bu chi le
+又不给你	50	you bu gei ni
+又不困了	50	you bu kun le
+又不要了	50	you bu yao le
+有地方吗	50	you di fang ma
+有点饿了	50	you dian e le
+有点费劲	50	you dian fei jin
+有点累了	50	you dian lei le
+有点伤心	50	you dian shang xin
+有点危险	50	you dian wei xian
+有点早了	50	you dian zao le
+有副作用	50	you fu zuo yong
+有好几次	50	you hao ji ci
+又喝上了	50	you he shang le
+有机会吗	50	you ji hui ma
+有可能吧	50	you ke neng ba
+又没电了	50	you mei dian le
+有没有电	50	you mei you dian
+有没有我	50	you mei you wo
+又去哪了	50	you qu na le
+有人打吗	50	you ren da ma
+有人玩吗	50	you ren wan ma
+有人喜欢	50	you ren xi huan
+有人一起	50	you ren yi qi
+有人找我	2000	you ren zhao wo
+有人知道	50	you ren zhi dao
+有啥办法	50	you sha ban fa
+有啥好处	50	you sha hao chu
+有摄像头	50	you she xiang tou
+又刷到了	50	you shua dao le
+有现货吗	50	you xian huo ma
+有想法了	2000	you xiang fa le
+有一个月	50	you yi ge yue
+有意见了	50	you yi jian le
+有影响吗	50	you ying xiang ma
+有照片没	50	you zhao pian mei
+晕死我了	50	yun si wo le
+咋还没来	50	za hai mei lai
+咋啦咋啦	50	za la za la
+咋这么早	50	za zhe me zao
+在被窝里	50	zai bei wo li
+在不在家	50	zai bu zai jia
+在吃饭吗	50	zai chi fan ma
+在大街上	50	zai da jie shang
+在电脑上	50	zai dian nao shang
+再发我下	2000	zai fa wo xia
+再回去吧	50	zai hui qu ba
+在教室里	50	zai jiao shi li
+再看一下	50	zai kan yi xia
+再来找你	50	zai lai zhao ni
+在沙发上	50	zai sha fa shang
+在实验室	50	zai shi yan shi
+再睡会吧	50	zai shui hui ba
+在外面了	2000	zai wai mian le
+在我旁边	50	zai wo pang bian
+在我这边	50	zai wo zhe bian
+在想办法	50	zai xiang ban fa
+再也不去	50	zai ye bu qu
+再也不用	50	zai ye bu yong
+咱不知道	50	zan bu zhi dao
+早吃完了	50	zao chi wan le
+早点睡了	50	zao dian shui le
+早点洗澡	50	zao dian xi zao
+早回来了	50	zao hui lai le
+早就走了	50	zao jiu zou le
+早上几点	50	zao shang ji dian
+早下班了	50	zao xia ban le
+怎么办嘛	50	zen me ban ma
+怎么不敢	50	zen me bu gan
+怎么出去	50	zen me chu qu
+怎么翻译	50	zen me fan yi
+怎么说了	50	zen me shuo le
+怎么样嘛	50	zen me yang ma
+站不住了	50	zhan bu zhu le
+找不到吗	50	zhao bu dao ma
+找你们玩	50	zhao ni men wan
+找你玩去	50	zhao ni wan qu
+这不重要	50	zhe bu zhong yao
+这才几点	50	zhe cai ji dian
+这个好吃	50	zhe ge hao chi
+这个好看	50	zhe ge hao kan
+这个好听	50	zhe ge hao ting
+这个好玩	2000	zhe ge hao wan
+这还不好	50	zhe hai bu hao
+这还用问	50	zhe hai yong wen
+这很正常	50	zhe hen zheng chang
+这几天了	50	zhe ji tian le
+这么大方	50	zhe me da fang
+这么多话	50	zhe me duo hua
+这么多呀	50	zhe me duo ya
+这么多字	50	zhe me duo zi
+这么好了	50	zhe me hao le
+这么好笑	50	zhe me hao xiao
+这么可怜	50	zhe me ke lian
+这么明显	50	zhe me ming xian
+这么难听	50	zhe me nan ting
+这么幸福	50	zhe me xing fu
+这么自信	50	zhe me zi xin
+这是实话	50	zhe shi shi hua
+这样的呀	50	zhe yang de ya
+这样就行	50	zhe yang jiu xing
+真不好说	50	zhen bu hao shuo
+真不适合	50	zhen bu shi he
+争取一下	50	zheng qu yi xia
+准备睡了	50	zhun bei shui le
+自己不行	50	zi ji bu xing
+自己开了	50	zi ji kai le
+自己玩吧	50	zi ji wan ba
+租房子了	50	zu fang zi le
+最近咋样	50	zui jin za yang
+坐起来了	50	zuo qi lai le
+被认出来了	2000	bei ren chu lai le
+别那么着急	2000	bie na me zhao ji
+不好意思咯	50	bu hao yi si lo
+不好意思哇	5	bu hao yi si wa
+不会是我吧	2000	bu hui shi wo ba
+不紧不慢的	2000	bu jin bu man de
+不能再等了	50	bu neng zai deng le
+不能这么想	50	bu neng zhe me xiang
+不怕你笑话	2000	bu pa ni xiao hua
+不切实际的	2000	bu qie shi ji de
+不是我的事	2000	bu shi wo de shi
+不是我问的	2000	bu shi wo wen de
+不为人知的	2000	bu wei ren zhi de
+不想搭理他	2000	bu xiang da li ta
+不想工作了	2000	bu xiang gong zuo le
+不要错过了	2000	bu yao cuo guo le
+不要担心我	50	bu yao dan xin wo
+不要那样做	2000	bu yao na yang zuo
+不要怕犯错	2000	bu yao pa fan cuo
+不要生气嘛	2000	bu yao sheng qi ma
+不要说废话	2000	bu yao shuo fei hua
+不要太搞笑	2000	bu yao tai gao xiao
+不要太严格	2000	bu yao tai yan ge
+不用搭理他	2000	bu yong da li ta
+不用麻烦了	2000	bu yong ma fan le
+吃早饭了没	50	chi zao fan le mei
+打电话说吧	2000	da dian hua shuo ba
+打这个电话	2000	da zhe ge dian hua
+到底是哪个	2000	dao di shi na ge
+到哪里去了	2000	dao na li qu le
+都是一个样	2000	dou shi yi ge yang
+都要睡着了	50	dou yao shui zhao le
+都一个德行	2000	dou yi ge de xing
+对比了一下	2000	dui bi le yi xia
+多少钱一条	5	duo shao qian yi tiao
+嗯嗯可以的	2000	en en ke yi de
+嗯嗯那就好	2000	en en na jiu hao
+嗯嗯是的呢	2000	en en shi de ne
+嗯嗯我知道	2000	en en wo zhi dao
+嗯嗯知道啦	2000	en en zhi dao la
+嗯嗯知道了	2000	en en zhi dao le
+嗯我知道了	2000	en wo zhi dao le
+发不出来了	2000	fa bu chu lai le
+该睡觉睡觉	2000	gai shui jiao shui jiao
+感觉还行啊	2000	gan jue hai xing a
+感觉很好玩	50	gan jue hen hao wan
+刚打完电话	2000	gang da wan dian hua
+搞这么复杂	2000	gao zhe me fu za
+给你打视频	2000	gei ni da shi pin
+给我打视频	2000	gei wo da shi pin
+给我来一句	2000	gei wo lai yi ju
+过不下去了	50	guo bu xia qu le
+还好我机智	2000	hai hao wo ji zhi
+还没发出来	2000	hai mei fa chu lai
+还没发出去	2000	hai mei fa chu qu
+还没发货吗	2000	hai mei fa huo ma
+还没走出来	50	hai mei zou chu lai
+还是再等等	2000	hai shi zai deng deng
+还有别的么	50	hai you bie de me
+还有希望吗	50	hai you xi wang ma
+还有一个事	2000	hai you yi ge shi
+还有一个站	50	hai you yi ge zhan
+还有这事儿	2000	hai you zhe shi er
+好久不看了	2000	hao jiu bu kan le
+好久没去过	2000	hao jiu mei qu guo
+好玩是好玩	2000	hao wan shi hao wan
+好想见到你	2000	hao xiang jian dao ni
+很久不玩了	2000	hen jiu bu wan le
+回不去了吗	2000	hui bu qu le ma
+会越来越多	2000	hui yue lai yue duo
+加个好友呗	2000	jia ge hao you bei
+交个朋友啊	2000	jiao ge peng you a
+交个朋友嘛	5	jiao ge peng you ma
+今天风很大	50	jin tian feng hen da
+今天好热啊	2000	jin tian hao re a
+今天很冷啊	2000	jin tian hen leng a
+今天很凉快	2000	jin tian hen liang kuai
+今天太热了	2000	jin tian tai re le
+今天特别热	2000	jin tian te bie re
+今天天气热	2000	jin tian tian qi re
+今天我回家	2000	jin tian wo hui jia
+今天我休假	2000	jin tian wo xiu jia
+就不多说了	2000	jiu bu duo shuo le
+就不礼貌了	2000	jiu bu li mao le
+就不联系了	2000	jiu bu lian xi le
+就当减肥了	2000	jiu dang jian fei le
+就没办法了	2000	jiu mei ban fa le
+就没问题了	2000	jiu mei wen ti le
+就能看出来	50	jiu neng kan chu lai
+就像我一样	2000	jiu xiang wo yi yang
+看不出来么	2000	kan bu chu lai me
+看你自己咯	2000	kan ni zi ji lo
+考虑了一下	2000	kao lv le yi xia
+可爱死我了	2000	ke ai si wo le
+可以这样吗	2000	ke yi zhe yang ma
+快下班了吗	2000	kuai xia ban le ma
+快一个月了	2000	kuai yi ge yue le
+离谱到家了	2000	li pu dao jia le
+离他们远点	2000	li ta men yuan dian
+马上就有了	50	ma shang jiu you le
+没必要生气	2000	mei bi yao sheng qi
+没跟你说过	2000	mei gen ni shuo guo
+没那么贵吧	2000	mei na me gui ba
+没人理解我	2000	mei ren li jie wo
+没人支持我	2000	mei ren zhi chi wo
+没有结果的	2000	mei you jie guo de
+没有那么高	2000	mei you na me gao
+没有然后了	2000	mei you ran hou le
+没有听清楚	2000	mei you ting qing chu
+没有运费险	2000	mei you yun fei xian
+明天要开会	2000	ming tian yao kai hui
+明天有空吗	2000	ming tian you kong ma
+明天怎么样	2000	ming tian zen me yang
+那不就结了	50	na bu jiu jie le
+那倒不一定	2000	na dao bu yi ding
+那个是我的	50	na ge shi wo de
+哪个学校啊	2000	na ge xue xiao a
+哪个学校呀	2000	na ge xue xiao ya
+那就不懂了	2000	na jiu bu dong le
+那就好玩了	2000	na jiu hao wan le
+那就简单了	2000	na jiu jian dan le
+那就靠你了	2000	na jiu kao ni le
+那就慢慢来	2000	na jiu man man lai
+那就完蛋了	2000	na jiu wan dan le
+那可不好说	2000	na ke bu hao shuo
+那可不一样	2000	na ke bu yi yang
+那可太好了	2000	na ke tai hao le
+哪来的消息	50	na lai de xiao xi
+哪里奇怪了	2000	na li qi guai le
+那能一样么	2000	na neng yi yang me
+那你不早说	2000	na ni bu zao shuo
+那你赶紧睡	2000	na ni gan jin shui
+那你还不去	5	na ni hai bu qu
+那你继续吧	2000	na ni ji xu ba
+那你怎么看	2000	na ni zen me kan
+那是我的错	2000	na shi wo de cuo
+那太过分了	50	na tai guo fen le
+那太可惜了	2000	na tai ke xi le
+那天谢谢你	2000	na tian xie xie ni
+那挺不错的	2000	na ting bu cuo de
+那问题不大	2000	na wen ti bu da
+那问题来了	2000	na wen ti lai le
+那我不发了	2000	na wo bu fa le
+那我也认了	2000	na wo ye ren le
+哪有那么贵	2000	na you na me gui
+你把握不住	2000	ni ba wo bu zhu
+你别吓我们	50	ni bie xia wo men
+你别装蒜了	2000	ni bie zhuang suan le
+你不必紧张	2000	ni bu bi jin zhang
+你不必着急	2000	ni bu bi zhao ji
+你不会迟到	2000	ni bu hui chi dao
+你不就是吗	2000	ni bu jiu shi ma
+你不想去吗	2000	ni bu xiang qu ma
+你不用说了	2000	ni bu yong shuo le
+你不用着急	50	ni bu yong zhao ji
+你猜为什么	50	ni cai wei shen me
+你吃饱了吗	2000	ni chi bao le ma
+你吃药了吗	5	ni chi yao le ma
+你出门了吗	2000	ni chu men le ma
+你恶不恶心	2000	ni e bu e xin
+你发烧了吗	2000	ni fa shao le ma
+你分析一下	2000	ni fen xi yi xia
+你搞搞清楚	2000	ni gao gao qing chu
+你高看我了	2000	ni gao kan wo le
+你给我说过	2000	ni gei wo shuo guo
+你跟我说下	2000	ni gen wo shuo xia
+你还有理了	2000	ni hai you li le
+你好些了吗	2000	ni hao xie le ma
+你会成功的	2000	ni hui cheng gong de
+你会开车吗	2000	ni hui kai che ma
+你回信了吗	2000	ni hui xin le ma
+你会这样吗	2000	ni hui zhe yang ma
+你几点出发	2000	ni ji dian chu fa
+你几点回家	2000	ni ji dian hui jia
+你几点起床	2000	ni ji dian qi chuang
+你几点上班	50	ni ji dian shang ban
+你结婚了么	50	ni jie hun le me
+你今天忙吗	2000	ni jin tian mang ma
+你居然知道	2000	ni ju ran zhi dao
+你可别闹了	2000	ni ke bie nao le
+你可别忘了	2000	ni ke bie wang le
+你可算了吧	2000	ni ke suan le ba
+你可以回家	2000	ni ke yi hui jia
+你可以进来	2000	ni ke yi jin lai
+你可以骂我	2000	ni ke yi ma wo
+你冷静下来	2000	ni leng jing xia lai
+你没发现么	2000	ni mei fa xian me
+你没看到么	50	ni mei kan dao me
+你们是同事	2000	ni men shi tong shi
+你们说得对	2000	ni men shuo de dui
+你们在家吗	2000	ni men zai jia ma
+你们怎么办	2000	ni men zen me ban
+你去过哪里	2000	ni qu guo na li
+你啥时候走	2000	ni sha shi hou zou
+你什么想法	2000	ni shen me xiang fa
+你是几班的	2000	ni shi ji ban de
+你是哪的人	2000	ni shi na de ren
+你受伤了吗	2000	ni shou shang le ma
+你睡我就睡	2000	ni shui wo jiu shui
+你说的哪个	2000	ni shuo de na ge
+你太善良了	2000	ni tai shan liang le
+你听到没有	2000	ni ting dao mei you
+你听得见吗	2000	ni ting de jian ma
+你下周来吗	2000	ni xia zhou lai ma
+你也喜欢吗	2000	ni ye xi huan ma
+你也要去吗	2000	ni ye yao qu ma
+你意下如何	2000	ni yi xia ru he
+你又不高兴	2000	ni you bu gao xing
+你又想多了	2000	ni you xiang duo le
+你在等我吗	50	ni zai deng wo ma
+你再发一下	2000	ni zai fa yi xia
+你在说我么	2000	ni zai shuo wo me
+你在想啥呢	2000	ni zai xiang sha ne
+你在写什么	50	ni zai xie shen me
+你在学什么	50	ni zai xue shen me
+你直接过去	2000	ni zhi jie guo qu
+你中文真好	2000	ni zhong wen zhen hao
+你注意一下	2000	ni zhu yi yi xia
+你自己去找	2000	ni zi ji qu zhao
+你做到了吗	50	ni zuo dao le ma
+你做好了吗	2000	ni zuo hao le ma
+你做完了吗	2000	ni zuo wan le ma
+哦哦这样啊	2000	o o zhe yang a
+其他都还好	2000	qi ta dou hai hao
+请安静一点	2000	qing an jing yi dian
+请保持联系	2000	qing bao chi lian xi
+请不要挂断	2000	qing bu yao gua duan
+请不要客气	2000	qing bu yao ke qi
+请不要外放	2000	qing bu yao wai fang
+请大家安静	2000	qing da jia an jing
+请大声一点	2000	qing da sheng yi dian
+请到前面来	50	qing dao qian mian lai
+请等一会儿	2000	qing deng yi hui er
+请翻译这个	2000	qing fan yi zhe ge
+请给我看看	2000	qing gei wo kan kan
+请过来一趟	2000	qing guo lai yi tang
+请教你一下	2000	qing jiao ni yi xia
+请尽快发货	2000	qing jin kuai fa huo
+请尽快过来	2000	qing jin kuai guo lai
+请尽快回来	2000	qing jin kuai hui lai
+请了一天假	2000	qing le yi tian jia
+请联系我们	2000	qing lian xi wo men
+请你慢点讲	2000	qing ni man dian jiang
+请确认附件	2000	qing que ren fu jian
+请让开一下	2000	qing rang kai yi xia
+请让我下车	2000	qing rang wo xia che
+请稍等一会	50	qing shao deng yi hui
+请稍等一下	2000	qing shao deng yi xia
+请问多少钱	2000	qing wen duo shao qian
+请问可以吗	2000	qing wen ke yi ma
+请一定要来	2000	qing yi ding yao lai
+请再来一次	2000	qing zai lai yi ci
+请再说一次	50	qing zai shuo yi ci
+请在线稍候	2000	qing zai xian shao hou
+请早点回家	2000	qing zao dian hui jia
+去哪都一样	2000	qu na dou yi yang
+去洗澡了吗	2000	qu xi zao le ma
+人已经走了	2000	ren yi jing zou le
+上个星期六	2000	shang ge xing qi liu
+上个星期五	2000	shang ge xing qi wu
+什么都好说	2000	shen me dou hao shuo
+什么脑回路	2000	shen me nao hui lu
+是不是歧视	2000	shi bu shi qi shi
+是第一位的	2000	shi di yi wei de
+十几年前了	2000	shi ji nian qian le
+是哪个学校	2000	shi na ge xue xiao
+视频不见了	2000	shi pin bu jian le
+是我喜欢的	50	shi wo xi huan de
+是一个人吗	2000	shi yi ge ren ma
+是有好处的	50	shi you hao chu de
+是有区别的	2000	shi you qu bie de
+是又怎么样	50	shi you zen me yang
+是怎么想的	50	shi zen me xiang de
+是这样的呢	2000	shi zhe yang de ne
+是这意思么	50	shi zhe yi si me
+是真的喜欢	2000	shi zhen de xi huan
+说来也奇怪	2000	shuo lai ye qi guai
+他开心就好	2000	ta kai xin jiu hao
+他自己说的	2000	ta zi ji shuo de
+太不厚道了	2000	tai bu hou dao le
+太感谢你啦	2000	tai gan xie ni la
+太久没玩了	2000	tai jiu mei wan le
+玩不下去了	50	wan bu xia qu le
+晚点跟你说	2000	wan dian gen ni shuo
+晚点再说吧	2000	wan dian zai shuo ba
+万一不是呢	50	wan yi bu shi ne
+万一成了呢	50	wan yi cheng le ne
+万一有用呢	50	wan yi you yong ne
+为什么不打	2000	wei shen me bu da
+为什么不好	2000	wei shen me bu hao
+为什么不开	50	wei shen me bu kai
+为什么要加	2000	wei shen me yao jia
+为什么要删	2000	wei shen me yao shan
+问题就大了	2000	wen ti jiu da le
+我比你好点	2000	wo bi ni hao dian
+我不懂这些	50	wo bu dong zhe xie
+我不跟你吵	2000	wo bu gen ni chao
+我不够爱你	2000	wo bu gou ai ni
+我不理解你	50	wo bu li jie ni
+我不明白你	50	wo bu ming bai ni
+我不能出去	2000	wo bu neng chu qu
+我不能等你	2000	wo bu neng deng ni
+我不能离开	2000	wo bu neng li kai
+我不清楚诶	2000	wo bu qing chu ei
+我不说了么	50	wo bu shuo le me
+我不太明白	2000	wo bu tai ming bai
+我不太确定	2000	wo bu tai que ding
+我不喜欢的	2000	wo bu xi huan de
+我不想出去	2000	wo bu xiang chu qu
+我不想打了	2000	wo bu xiang da le
+我不想回去	2000	wo bu xiang hui qu
+我不想见你	2000	wo bu xiang jian ni
+我不想骂你	2000	wo bu xiang ma ni
+我不想睡觉	2000	wo bu xiang shui jiao
+我不要别的	2000	wo bu yao bie de
+我不要这个	2000	wo bu yao zhe ge
+我不知道啦	50	wo bu zhi dao la
+我不知道嘛	2000	wo bu zhi dao ma
+我不知道哇	5	wo bu zhi dao wa
+我打我自己	2000	wo da wo zi ji
+我带了一个	50	wo dai le yi ge
+我的好大哥	2000	wo de hao da ge
+我丢了钱包	2000	wo diu le qian bao
+我都不敢动	2000	wo dou bu gan dong
+我都快吐了	2000	wo dou kuai tu le
+我都能做到	50	wo dou neng zuo dao
+我逗你玩呢	2000	wo dou ni wan ne
+我告诉你哦	2000	wo gao su ni o
+我跟你讲哦	2000	wo gen ni jiang o
+我跟你们讲	2000	wo gen ni men jiang
+我跟你相反	2000	wo gen ni xiang fan
+我跟他说说	2000	wo gen ta shuo shuo
+我还不想睡	50	wo hai bu xiang shui
+我还没吃完	2000	wo hai mei chi wan
+我还没注意	2000	wo hai mei zhu yi
+我好喜欢他	5	wo hao xi huan ta
+我很喜欢啊	2000	wo hen xi huan a
+我很喜欢他	2000	wo hen xi huan ta
+我记错了么	2000	wo ji cuo le me
+我教你一招	50	wo jiao ni yi zhao
+我介绍一下	2000	wo jie shao yi xia
+我今天不忙	2000	wo jin tian bu mang
+我今天很忙	2000	wo jin tian hen mang
+我今天有空	2000	wo jin tian you kong
+我今晚有空	2000	wo jin wan you kong
+我就抱着你	2000	wo jiu bao zhe ni
+我就不回了	2000	wo jiu bu hui le
+我就不玩了	5	wo jiu bu wan le
+我觉得可行	2000	wo jue de ke xing
+我看不起你	2000	wo kan bu qi ni
+我看了一半	2000	wo kan le yi ban
+我可太爱了	2000	wo ke tai ai le
+我骂你了吗	2000	wo ma ni le ma
+我买衣服了	2000	wo mai yi fu le
+我没搭理他	2000	wo mei da li ta
+我没有骂你	2000	wo mei you ma ni
+我们别吵了	2000	wo men bie chao le
+我们吃什么	2000	wo men chi shen me
+我们刚认识	2000	wo men gang ren shi
+我们会帮你	2000	wo men hui bang ni
+我们会很忙	2000	wo men hui hen mang
+我们可以去	2000	wo men ke yi qu
+我们去吃饭	2000	wo men qu chi fan
+我们完成了	2000	wo men wan cheng le
+我们先吃饭	2000	wo men xian chi fan
+我们一起吃	2000	wo men yi qi chi
+我们在读书	2000	wo men zai du shu
+我们在哪儿	2000	wo men zai na er
+我们做不到	2000	wo men zuo bu dao
+我拿出来了	2000	wo na chu lai le
+我拿回来了	5	wo na hui lai le
+我是个男的	2000	wo shi ge nan de
+我是好宝宝	2000	wo shi hao bao bao
+我试了一下	2000	wo shi le yi xia
+我送你回家	2000	wo song ni hui jia
+我习惯熬夜	2000	wo xi guan ao ye
+我习惯晚睡	2000	wo xi guan wan shui
+我现在去拿	2000	wo xian zai qu na
+我想吃东西	2000	wo xiang chi dong xi
+我想换点钱	2000	wo xiang huan dian qian
+我想借一下	2000	wo xiang jie yi xia
+我想去外地	2000	wo xiang qu wai di
+我想去游泳	50	wo xiang qu you yong
+我想说再见	2000	wo xiang shuo zai jian
+我想再看看	2000	wo xiang zai kan kan
+我想找对象	2000	wo xiang zhao dui xiang
+我想自己做	50	wo xiang zi ji zuo
+我想坐下来	2000	wo xiang zuo xia lai
+我笑不出来	50	wo xiao bu chu lai
+我谢谢你哦	2000	wo xie xie ni o
+我要迟到了	5	wo yao chi dao le
+我要发火了	2000	wo yao fa huo le
+我要起来了	50	wo yao qi lai le
+我也帮忙了	2000	wo ye bang mang le
+我也不干了	2000	wo ye bu gan le
+我也不敢说	5	wo ye bu gan shuo
+我也不想喝	50	wo ye bu xiang he
+我也不要了	50	wo ye bu yao le
+我也才刚到	2000	wo ye cai gang dao
+我也很疑惑	2000	wo ye hen yi huo
+我也很意外	2000	wo ye hen yi wai
+我也没想好	2000	wo ye mei xiang hao
+我也能帮忙	2000	wo ye neng bang mang
+我也能帮你	2000	wo ye neng bang ni
+我也是笑了	50	wo ye shi xiao le
+我也喜欢啊	2000	wo ye xi huan a
+我也想问呢	2000	wo ye xiang wen ne
+我也这么干	2000	wo ye zhe me gan
+我已经看了	50	wo yi jing kan le
+我已经有了	2000	wo yi jing you le
+我有电子版	2000	wo you dian zi ban
+我有个建议	50	wo you ge jian yi
+我又没骂你	2000	wo you mei ma ni
+我有种预感	2000	wo you zhong yu gan
+我在吃东西	2000	wo zai chi dong xi
+我在打电话	2000	wo zai da dian hua
+我在等公交	50	wo zai deng gong jiao
+我在等火车	2000	wo zai deng huo che
+我再和你说	2000	wo zai he ni shuo
+我再买一个	2000	wo zai mai yi ge
+我再眯一会	2000	wo zai mi yi hui
+我在睡午觉	2000	wo zai shui wu jiao
+我再说一下	50	wo zai shuo yi xia
+我在听音乐	2000	wo zai ting yin yue
+我再想办法	2000	wo zai xiang ban fa
+我在阳台上	2000	wo zai yang tai shang
+我在找工作	2000	wo zai zhao gong zuo
+我真的不信	2000	wo zhen de bu xin
+我真的笑了	2000	wo zhen de xiao le
+我真是笑了	2000	wo zhen shi xiao le
+喜欢就好啦	2000	xi huan jiu hao la
+喜欢就好了	5	xi huan jiu hao le
+洗漱完了吗	2000	xi shu wan le ma
+吓都吓死了	2000	xia dou xia si le
+下个礼拜二	2000	xia ge li bai er
+下个礼拜六	2000	xia ge li bai liu
+下个礼拜天	2000	xia ge li bai tian
+下个礼拜五	2000	xia ge li bai wu
+下个星期六	2000	xia ge xing qi liu
+下个星期三	2000	xia ge xing qi san
+下个星期四	2000	xia ge xing qi si
+下午要出去	2000	xia wu yao chu qu
+先去吃个饭	2000	xian qu chi ge fan
+现在该你了	2000	xian zai gai ni le
+现在就做吧	2000	xian zai jiu zuo ba
+现在我懂了	2000	xian zai wo dong le
+现在下雨了	50	xian zai xia yu le
+现在有点慢	2000	xian zai you dian man
+想跟你聊聊	2000	xiang gen ni liao liao
+想加你微信	2000	xiang jia ni wei xin
+想钱想疯了	2000	xiang qian xiang feng le
+想象了一下	50	xiang xiang le yi xia
+心都要碎了	2000	xin dou yao sui le
+心满意足了	2000	xin man yi zu le
+也不便宜啊	2000	ye bu pian yi a
+也不一定哦	2000	ye bu yi ding o
+也从来没有	2000	ye cong lai mei you
+也感觉到了	2000	ye gan jue dao le
+也可能是我	2000	ye ke neng shi wo
+也没啥玩的	2000	ye mei sha wan de
+也没什么了	2000	ye mei shen me le
+也说不出来	2000	ye shuo bu chu lai
+也越来越多	50	ye yue lai yue duo
+已经很高了	2000	yi jing hen gao le
+已经看完了	2000	yi jing kan wan le
+应该不会啊	2000	ying gai bu hui a
+又不开心了	2000	you bu kai xin le
+又看到你了	2000	you kan dao ni le
+又看了一下	2000	you kan le yi xia
+又拉肚子了	2000	you la du zi le
+有利就有弊	2000	you li jiu you bi
+有没有资源	2000	you mei you zi yuan
+有啥不好的	50	you sha bu hao de
+有啥问题么	2000	you sha wen ti me
+有什么不敢	50	you shen me bu gan
+有什么联系	5	you shen me lian xi
+又试了一下	50	you shi le yi xia
+又找不到了	2000	you zhao bu dao le
+越来越近了	50	yue lai yue jin le
+再发我一下	2000	zai fa wo yi xia
+在你的心里	2000	zai ni de xin li
+早就不玩了	2000	zao jiu bu wan le
+早就不行了	2000	zao jiu bu xing le
+早就不用了	2000	zao jiu bu yong le
+怎么这么巧	50	zen me zhe me qiao
+这不就来了	2000	zhe bu jiu lai le
+这不是问题	2000	zhe bu shi wen ti
+这不是我么	2000	zhe bu shi wo me
+这不挺好么	2000	zhe bu ting hao me
+这倒无所谓	2000	zhe dao wu suo wei
+这倒也没错	2000	zhe dao ye mei cuo
+这个很重要	50	zhe ge hen zhong yao
+这个叫什么	50	zhe ge jiao shen me
+这个就很好	2000	zhe ge jiu hen hao
+这个怎么念	2000	zhe ge zen me nian
+这个怎么用	50	zhe ge zen me yong
+这个真好吃	2000	zhe ge zhen hao chi
+这还用你说	2000	zhe hai yong ni shuo
+这还真没有	2000	zhe hai zhen mei you
+这么快的吗	50	zhe me kuai de ma
+这么漂亮啊	2000	zhe me piao liang a
+这么巧的吗	2000	zhe me qiao de ma
+这你都不懂	2000	zhe ni dou bu dong
+这是哪里啊	2000	zhe shi na li a
+这是我小号	2000	zhe shi wo xiao hao
+这些不重要	2000	zhe xie bu zhong yao
+这些就够了	2000	zhe xie jiu gou le
+这样可以吧	2000	zhe yang ke yi ba
+这也没问题	2000	zhe ye mei wen ti
+这也太巧了	2000	zhe ye tai qiao le
+这也太像了	2000	zhe ye tai xiang le
+这与你无关	2000	zhe yu ni wu guan
+真的好搞笑	2000	zhen de hao gao xiao
+真的很好笑	5	zhen de hen hao xiao
+真的可惜了	2000	zhen de ke xi le
+质量太高了	2000	zhi liang tai gao le
+终于看完了	2000	zhong yu kan wan le
+字面意思啊	2000	zi mian yi si a
+走出来了吗	50	zou chu lai le ma
