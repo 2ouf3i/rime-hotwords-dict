@@ -1,0 +1,251 @@
+# Ninan 日常短语表 —— 上游词库里**没有**的日常短语,每次构建拼音词库时加进主表
+# (backend/scripts/build-pinyin-dict.mjs 的 --phrase-weights,可以给多次;这一份排在手写的 phrase-weights.txt 后面)。
+#
+# 写法(与 phrase-weights.txt 相同,这一份每行都带拼音):词<Tab>权重<Tab>拼音(小写,音节之间一个空格)
+#
+# 为什么要有这张表(2026-10-07):简拼评测的留出集里有 17% 的日常短语词库里根本没有(我在上班、我晚点到、下周再说 …)。
+# 没有整词时,纯首字母几乎从不出想要的那句(2.1%);连全拼都常拼错(wowandiandao 出「我玩颠倒」、haodeshoudaole 出「好的受到了」)。
+# 改权重救不了,只能补词。手写的权重表(phrase-weights.txt)只管「已有的词排第几」,新词放在这一份。
+#
+# ── 一、从 Tatoeba 的中文例句里数出来的(157 条)──
+# 来源与许可:Tatoeba(https://tatoeba.org)的中文例句导出,CC BY 2.0 FR。我们用的是从例句里数出来的
+# 「哪些短语单独成句、各出现在多少个句子里」和短语本身(日常用语),不收任何完整的例句。
+# 怎么来的:backend/scripts/mine-everyday-phrases.mjs(下载地址、校验和、数法都在它头部)数出
+# 「在 2 个以上的句子里单独成句、2 ~ 5 个字、词库里没有」的短语 401 条 —— 「单独成句」= 在别人写的句子里前后都是句读,
+# 不是从长句中间截出来的半截。然后人过了一遍(2026-10-07),留下 157 条。去掉的是:
+#   - 教科书式的陈述、带具体的人 / 国名 / 物件的(我是英国人、他不是诗人、我有两只猫);引文、谚语、宗教文本(太初有道、下雨天留客);
+#   - 从句开头或引语开头、后面必然还有话的(因为他病了、他对我说、天气预报说);不雅或沉重的(他自杀了);
+#   - 繁体转简体转坏了的(不是幺);
+#   - **加了会抢掉同音说法的**:把每条短语的全拼喂给引擎,现在出来的首选如果是另一句同样说得通的话,就不加
+#     (不坐了 / 不做了、他会来吗 / 他回来吗、你说的对 / 你说得对、你喜欢哪个 / 你喜欢那个);带「她」的一律不加
+#     (加了「她生病了」而没有「他生病了」,tashengbingle 就先出「她」)。留下的这些,要么引擎现在的首选就是它,
+#     要么现在的首选是拼错的(我恐高 / 我控告、我不饿 / 我不哦、你早点睡 / 你早点水)。
+#
+# ── 二、上一轮简拼评测量到「词库里没有」的那些(45 条)──
+# scripts/rime-abbr-cases.tsv 的 held 组(2026-10-07 中午写的日常短语,自己按常识写的)里,上游词库没有的那 47 条,
+# 去掉与上面重复的、后面必然还有话的(我今天去、我明天去)。这是「已知缺的先补上」,**不代表同一类短语都补了** ——
+# 这一类(人称 + 在 / 晚点 / 一会 + …、好的 + …、… + 一下)Tatoeba 里几乎没有(47 条里只找得到 3 条),
+# 要系统地补得另找聊天语体的来源;补之前新写的那批留出样本(held2)量的就是这个缺口。
+#
+# 权重:只按字数给 —— 三字 60000、四字 20000、五字 6000。字数越多,同一串简拼下的对手越少,给得越低越不容易挤到别人;
+# 这三个数是在上面第二部分那 45 条上试出来的「够用的最低档」(简拼命中 —— 三字:首选 55%、前八 100%;四字:首选 82%、前三 100%;
+# 五字:首选 100%。三字的对手最多:wzm 有「我怎么」、wws 有「往往是」,给到 6 万也只排第二,不再往上加;
+# 试过的几档见 scripts/rime-abbr-eval.sh 末尾「第二轮」)。
+# 读音:pinyin-pro(后端依赖)注的,再逐条让引擎按这个读音反拼一遍核对(202 条里有 36 条拼不出原词,逐条看过:
+# 都是引擎把它拼成了同音的另一串字 —— 正是要补这个词的原因 —— 不是读音错)。
+#
+# 加词:先确认上游没有这个词(有的话去 phrase-weights.txt 抬权重);按字数给数;带上拼音;量一遍 scripts/rime-abbr-eval.sh
+# 和 scripts/rime-typo-eval.sh 再提交。**每加一个整词,它的全拼就不再逐字造句、而是先出这个词** —— 加之前先看引擎现在出什么。
+#
+# 下面这一行「署名」会被构建脚本抄进下发的词库产物的头注释(build-pinyin-dict.mjs 的 parseCreditLines);不要删。
+# 它与 phrase-weights.txt 里的那一行要逐字相同(并进产物时相同的只留一条)。
+# 署名:部分日常短语是对照 Tatoeba(https://tatoeba.org)的中文例句挑选的,例句按 CC BY 2.0 FR 授权。
+#
+# ⚠️ 这张表会并进 GPL-3.0 词库产物公开下发:只许放公开的日常用语,绝不许放任何只来自单个用户的内容。
+# ⚠️ 改了这张表,要等下一次词库发布才到用户手上;发布前先本机构建、本机量。
+
+# ── 一、Tatoeba 例句里单独成句的(157 条;按出现的句子数从多到少)──
+我很累	60000	wo hen lei
+我吃饱了	20000	wo chi bao le
+我太累了	20000	wo tai lei le
+第二天早上	6000	di er tian zao shang
+他很聪明	20000	ta hen cong ming
+他很帅	60000	ta hen shuai
+他很生气	20000	ta hen sheng qi
+你受伤了	20000	ni shou shang le
+你有纸吗	20000	ni you zhi ma
+可能会下雨	6000	ke neng hui xia yu
+天气太热了	6000	tian qi tai re le
+如你所知	20000	ru ni suo zhi
+我不饿	60000	wo bu e
+我买不起	20000	wo mai bu qi
+我们该走了	6000	wo men gai zou le
+我去学校	20000	wo qu xue xiao
+我弄错了	20000	wo nong cuo le
+我很惊讶	20000	wo hen jing ya
+我恐高	60000	wo kong gao
+我正在洗澡	6000	wo zheng zai xi zao
+我没有车	20000	wo mei you che
+我现在很忙	6000	wo xian zai hen mang
+我累死了	20000	wo lei si le
+我胃痛	60000	wo wei tong
+我跟不上你	6000	wo gen bu shang ni
+现在几点钟	6000	xian zai ji dian zhong
+让您久等了	6000	rang nin jiu deng le
+这太贵了	20000	zhe tai gui le
+这很奇怪	20000	zhe hen qi guai
+下个星期二	6000	xia ge xing qi er
+不要讨厌我	6000	bu yao tao yan wo
+今天在下雨	6000	jin tian zai xia yu
+今天谁值班	6000	jin tian shui zhi ban
+今天非常热	6000	jin tian fei chang re
+他不在家	20000	ta bu zai jia
+他不在这里	6000	ta bu zai zhe li
+他不说话	20000	ta bu shuo hua
+他们赢了	20000	ta men ying le
+他会很生气	6000	ta hui hen sheng qi
+他刚走	60000	ta gang zou
+他同意了	20000	ta tong yi le
+他喝了酒	20000	ta he le jiu
+他很年轻	20000	ta hen nian qing
+他很忙	60000	ta hen mang
+他没有去	20000	ta mei you qu
+他生病了	20000	ta sheng bing le
+他还没有来	6000	ta hai mei you lai
+他还没来	20000	ta hai mei lai
+你们去哪里	6000	ni men qu na li
+你会游泳吗	6000	ni hui you yong ma
+你可以去了	6000	ni ke yi qu le
+你吸烟吗	20000	ni xi yan ma
+你喝咖啡吗	6000	ni he ka fei ma
+你在找谁	20000	ni zai zhao shui
+你想聊天吗	6000	ni xiang liao tian ma
+你有道理	20000	ni you dao li
+你真走运	20000	ni zhen zou yun
+你紧张吗	20000	ni jin zhang ma
+你能帮我吗	6000	ni neng bang wo ma
+别再说了	20000	bie zai shuo le
+别说谎	60000	bie shuo huang
+周二过来	20000	zhou er guo lai
+在这等着	20000	zai zhe deng zhe
+夏天的时候	6000	xia tian de shi hou
+多亏了你	20000	duo kui le ni
+就个人而言	6000	jiu ge ren er yan
+已经很晚了	6000	yi jing hen wan le
+很危险的	20000	hen wei xian de
+快点去吧	20000	kuai dian qu ba
+我不会反对	6000	wo bu hui fan dui
+我不想逼你	6000	wo bu xiang bi ni
+我不愿意做	6000	wo bu yuan yi zuo
+我不抽烟	20000	wo bu chou yan
+我不挑剔	20000	wo bu tiao ti
+我不舒服了	6000	wo bu shu fu le
+我也不去	20000	wo ye bu qu
+我从没想过	6000	wo cong mei xiang guo
+我们出去吧	6000	wo men chu qu ba
+我们是同事	6000	wo men shi tong shi
+我会开车	20000	wo hui kai che
+我会记下来	6000	wo hui ji xia lai
+我刚到	60000	wo gang dao
+我去学校了	6000	wo qu xue xiao le
+我吃不下了	6000	wo chi bu xia le
+我吃了药	20000	wo chi le yao
+我吃面	60000	wo chi mian
+我听不到你	6000	wo ting bu dao ni
+我咳嗽	60000	wo ke sou
+我在读书	20000	wo zai du shu
+我太高兴了	6000	wo tai gao xing le
+我头痛	60000	wo tou tong
+我完全赞同	6000	wo wan quan zan tong
+我已婚	60000	wo yi hun
+我已经走了	6000	wo yi jing zou le
+我很渴	60000	wo hen ke
+我必须走了	6000	wo bi xu zou le
+我想说话	20000	wo xiang shuo hua
+我拿不动	20000	wo na bu dong
+我搞错了	20000	wo gao cuo le
+我无意打扰	6000	wo wu yi da rao
+我明天再做	6000	wo ming tian zai zuo
+我是外国人	6000	wo shi wai guo ren
+我来晚了	20000	wo lai wan le
+我没吃早餐	6000	wo mei chi zao can
+我没零钱	20000	wo mei ling qian
+我渴死了	20000	wo ke si le
+我睡过头了	6000	wo shui guo tou le
+我累坏了	20000	wo lei huai le
+我能帮忙吗	6000	wo neng bang mang ma
+我要一杯水	6000	wo yao yi bei shui
+我认识他	20000	wo ren shi ta
+我该做什么	6000	wo gai zuo shen me
+我走不动了	6000	wo zou bu dong le
+我身体不适	6000	wo shen ti bu shi
+我还没决定	6000	wo hai mei jue ding
+我需要帮助	6000	wo xu yao bang zhu
+打扰你了	20000	da rao ni le
+把窗户关上	6000	ba chuang hu guan shang
+明天会下雪	6000	ming tian hui xia xue
+明天是晴天	6000	ming tian shi qing tian
+昨天下雨	20000	zuo tian xia yu
+昨天星期几	6000	zuo tian xing qi ji
+没人接电话	6000	mei ren jie dian hua
+火车晚点了	6000	huo che wan dian le
+照他说的做	6000	zhao ta shuo de zuo
+现在就做	20000	xian zai jiu zuo
+现在很晚了	6000	xian zai hen wan le
+现实点吧	20000	xian shi dian ba
+电话在响	20000	dian hua zai xiang
+相反地	60000	xiang fan di
+秋天的时候	6000	qiu tian de shi hou
+稍微等一下	6000	shao wei deng yi xia
+能帮帮我吗	6000	neng bang bang wo ma
+要我说的话	6000	yao wo shuo de hua
+说起来容易	6000	shuo qi lai rong yi
+请再试一次	6000	qing zai shi yi ci
+请再说一遍	6000	qing zai shuo yi bian
+请打给我	20000	qing da gei wo
+请考虑一下	6000	qing kao lv yi xia
+请让我知道	6000	qing rang wo zhi dao
+请讲慢一点	6000	qing jiang man yi dian
+请说慢一点	6000	qing shuo man yi dian
+请通知我	20000	qing tong zhi wo
+请问您贵姓	6000	qing wen nin gui xing
+请马上离开	6000	qing ma shang li kai
+跟我们来	20000	gen wo men lai
+轮到谁了	20000	lun dao shui le
+这个很便宜	6000	zhe ge hen pian yi
+这并不容易	6000	zhe bing bu rong yi
+这是对的	20000	zhe shi dui de
+这要花时间	6000	zhe yao hua shi jian
+这里很冷	20000	zhe li hen leng
+这里很热	20000	zhe li hen re
+那太糟糕了	6000	na tai zao gao le
+那就太好了	6000	na jiu tai hao le
+顺道一提	20000	shun dao yi ti
+麻烦您了	20000	ma fan nin le
+
+# ── 二、上一轮评测量到词库里没有的(45 条)──
+我晚点	60000	wo wan dian
+我在忙	60000	wo zai mang
+我晚上	60000	wo wan shang
+我周末	60000	wo zhou mo
+我后天	60000	wo hou tian
+你想吃	60000	ni xiang chi
+你到了	60000	ni dao le
+你吃了	60000	ni chi le
+你周末	60000	ni zhou mo
+他明天	60000	ta ming tian
+晚点说	60000	wan dian shuo
+我在上班	20000	wo zai shang ban
+我出发了	20000	wo chu fa le
+我想问下	20000	wo xiang wen xia
+我想一下	20000	wo xiang yi xia
+我问一下	20000	wo wen yi xia
+我晚点到	20000	wo wan dian dao
+你几点到	20000	ni ji dian dao
+你早点睡	20000	ni zao dian shui
+下周再说	20000	xia zhou zai shuo
+几点结束	20000	ji dian jie shu
+怎么过去	20000	zen me guo qu
+我今天有事	6000	wo jin tian you shi
+我明天有空	6000	wo ming tian you kong
+我晚点回你	6000	wo wan dian hui ni
+我一会回你	6000	wo yi hui hui ni
+我先去忙了	6000	wo xian qu mang le
+我考虑一下	6000	wo kao lv yi xia
+我确认一下	6000	wo que ren yi xia
+你今天有空	6000	ni jin tian you kong
+等我一下下	6000	deng wo yi xia xia
+稍等我一下	6000	shao deng wo yi xia
+有空一起吃	6000	you kong yi qi chi
+可以帮我吗	6000	ke yi bang wo ma
+麻烦你一下	6000	ma fan ni yi xia
+没关系的啦	6000	mei guan xi de la
+谢谢你帮忙	6000	xie xie ni bang mang
+明天几点见	6000	ming tian ji dian jian
+到了告诉我	6000	dao le gao su wo
+路上注意点	6000	lu shang zhu yi dian
+好的知道了	6000	hao de zhi dao le
+好的收到了	6000	hao de shou dao le
+好的谢谢你	6000	hao de xie xie ni
+那我先走了	6000	na wo xian zou le
+那明天见吧	6000	na ming tian jian ba

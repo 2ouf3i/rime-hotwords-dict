@@ -1,0 +1,3177 @@
+# Ninan 地名表 —— 每次构建拼音词库时与短语权重表一起套在上游词条上(backend/scripts/build-pinyin-dict.mjs 的 --phrase-weights,
+# 这一份排在手写的 phrase-weights.txt 后面;同一个词两份都有时以手写的为准)。
+#
+# ⚠️ 这个文件是生成的,不要手改:由 backend/scripts/gen-place-names.mjs 从下面几份公开数据生成(规则、下载地址与校验和在那份脚本的头部)。
+# 读音有问题的改 backend/dict/place-name-readings.txt 再重新生成。
+#
+# 来源与许可:
+#   清华大学开放中文词库 THUOCL · 地名(https://github.com/thunlp/THUOCL),MIT —— 用的是「词 + 文档频次」里的频次。
+#   中华人民共和国行政区划(https://github.com/modood/Administrative-divisions-of-China),WTFPL,数据整理自国家统计局公布的
+#   区划代码 —— 用的是县级、乡级区划的名称。
+#   地级行政区的名单是按常识写在生成脚本里的。读音来自上游词库 / 随包词库里的同名词条,以及手工核对的地名读音表。
+#
+# 下面两行「署名」会被构建脚本抄进下发的词库产物的头注释(build-pinyin-dict.mjs 的 parseCreditLines),不要删、不要改写法:
+# 署名:地名的权重参考了清华大学开放中文词库 THUOCL 的地名词频(https://github.com/thunlp/THUOCL,MIT License,THUNLP)。
+# 署名:县区与乡镇街道的名称取自 https://github.com/modood/Administrative-divisions-of-China(WTFPL,整理自国家统计局公布的区划代码)。
+#
+# 写法(与 phrase-weights.txt 相同):词<Tab>权重            ← 上游已经有这个词:把权重抬到这个数(这份表只抬不压)
+#                                  词<Tab>权重<Tab>拼音   ← 上游没有:加进主表
+#
+# 生成时的上游:rime-ice @3aea6d3694fb3d94ec663641f021f788822897ad;共 3147 行(加新词 1603,抬权重 1544)。
+# 各级的下限 ~ 上限:地级 5000~500000,县级简称 1000~40000,县级全称 300~40000,乡级简称 50~3000(乡级至少要有 100 的依据才收)。
+# ⚠️ 这张表会并进 GPL-3.0 词库产物公开下发。
+
+# ── 地级(地级市 / 自治州 / 地区 / 盟的简称)(160 行)──
+朝阳	255010
+南京	208435
+青岛	140645
+济南	121095
+西安	84325
+常州	82645
+汕头	49734
+太原	46439
+嘉兴	45720
+淄博	43800
+金华	41820	jin hua
+宜昌	41040
+江门	40010
+芜湖	37315
+惠州	36785
+黄山	34215
+湖州	32650	hu zhou
+镇江	32210
+邯郸	31895
+淮安	31830
+保定	31200
+临沂	30190
+盐城	29804
+新乡	28650
+湛江	28505
+鞍山	27740
+大庆	27670
+赣州	27485
+漳州	27460
+安庆	26375
+株洲	25882
+大同	24640
+凉山	24215
+济宁	24110
+阜阳	24045	fu yang
+丽水	23925	li shui
+湘潭	23562
+舟山	23370
+焦作	23345
+十堰	23020
+南阳	22260
+常德	22040
+安阳	21980
+泰安	21850
+黄石	21370
+潮州	20410
+新余	20320	xin yu
+郴州	19650
+营口	18350
+吉安	17640
+龙岩	17210
+滁州	17070
+邢台	17065
+泸州	16610
+赤峰	15380
+南平	14655	nan ping
+德州	14190
+锦州	13950	jin zhou
+揭阳	13565
+汉中	13395
+清远	13280	qing yuan
+滨州	13165
+抚州	12985
+六安	12575
+本溪	12340	ben xi
+天水	12130
+白山	11960
+怀化	11920
+信阳	11885
+玉溪	11500
+长治	11334
+菏泽	11295
+许昌	11040
+石嘴山	10730
+池州	10485
+辽源	10375	liao yuan
+达州	10150
+晋中	10070	jin zhong
+鹰潭	10045
+安顺	9910
+盘锦	9765
+阜新	9625	fu xin
+辽阳	9175
+甘孜	8970	gan zi
+忻州	8645
+昌吉	8535
+河池	8325
+百色	8290
+眉山	8190
+汕尾	7790
+保山	7560	bao shan
+楚雄	7495
+德宏	7390
+贺州	7300	he zhou
+鸡西	7185	ji xi
+松原	6620	song yuan
+张掖	6545	zhang ye
+吴忠	6300	wu zhong
+大理	6185
+林芝	5675
+武威	5655
+固原	5590	gu yuan
+资阳	5535
+锡林郭勒	5440
+鹤岗	5210
+韶关	5149
+三明	5000
+三沙	5000
+东营	5000
+临夏	5000
+乌兰察布	5000
+儋州	5000
+克孜勒苏	5000
+南通	5000
+博尔塔拉	5000
+哈密	5000
+塔城	5000
+娄底	5000
+定西	5000
+崇左	5000
+巴彦淖尔	5000
+广元	5000
+庆阳	5000
+延边	5000
+德阳	5000
+恩施	5000
+文山	5000
+昌都	5000
+晋城	5000
+朔州	5000
+果洛	5000	guo luo
+枣庄	5000
+梧州	5000
+榆林	5000
+毕节	5000
+海东	5000
+海西	5000
+玉林	5000
+玉树	5000
+白城	5000
+益阳	5000
+茂名	5000
+萍乡	5000	ping xiang
+衡水	5000
+襄阳	5000
+贵港	5000
+迪庆	5000	di qing
+通化	5000
+那曲	5000
+鄂州	5000
+金昌	5000	jin chang
+铜仁	5000	tong ren
+铜川	5000
+阳泉	5000
+阿坝	5000
+陇南	5000
+随州	5000
+鹤壁	5000	he bi
+黄南	5000
+黔西南	5000
+
+# ── 县级 · 简称(含去掉后缀只剩一个字、全称就是口头名字的:莘县)(1580 行)──
+丰台	40000
+北川	40000
+宝安	40000
+徐汇	40000
+海珠	40000
+集美	40000
+翔安	39855	xiang an
+海沧	39260
+思明	39189	si ming
+闵行	38645
+昌平	34880
+慈溪	28895	ci xi
+越秀	24230
+宜兴	23155	yi xing
+温岭	22695
+石景山	22620
+庐阳	22205
+包河	22050	bao he
+嘉定	21815
+番禺	21650
+房山	21510
+瑶海	21000
+顺义	19355
+萧山	18735	xiao shan
+荔湾	16045
+沈河	15845	shen he
+江岸	15735
+沙坪坝	15635
+永嘉	15300
+江汉	14740
+南安	14720
+平谷	14500
+巢湖	14420
+苍南	14365	cang nan
+诸暨	13925
+北仑	13730	bei lun
+奉贤	13405	feng xian
+泰兴	13200	tai xing
+海曙	12690
+芦山	12469	lu shan
+市北	12380
+沙河口	12315
+九龙坡	12225
+门头沟	12125
+巩义	12100	gong yi
+增城	11734	zeng cheng
+开平	11595	kai ping
+拱墅	11570
+皇姑	11375
+芝罘	11375
+沭阳	10995	shu yang
+西昌	10540
+溧阳	10305
+启东	10225	qi dong
+惠城	10170
+武侯	9940
+涪陵	9770
+吴中	9715	wu zhong
+丰泽	9465
+晋安	9350	jin an
+宝应	9175	bao ying
+安吉	9130	an ji
+济源	9130
+台江	9070	tai jiang
+北碚	8945	bei bei
+雨花	8845
+青羊	8690	qing yang
+福清	8615
+武进	8385	wu jin
+泊头	8385	bo tou
+青州	8345
+李沧	8310
+甘井子	8260
+历下	8140	li xia
+仓山	8030	cang shan
+崂山	8000
+惠安	7725	hui an
+新会	7720
+巴南	7710
+成华	7530
+鹤山	7510	he shan
+建邺	7180
+道外	7155
+华龙	7129
+德化	7045	de hua
+博罗	7025	bo luo
+德清	6935	de qing
+锡山	6890
+林州	6885
+兰溪	6870	lan xi
+东丽	6845	dong li
+兴化	6720
+于洪	6625
+相城	6565
+顺庆	6530
+长葛	6415
+西青	6380
+鲤城	6360	li cheng
+高邮	6265	gao you
+历城	6240	li cheng
+黄岩	6045
+香坊	6020
+新密	6000
+宁乡	5984
+博山	5955	bo shan
+霸州	5800
+新昌	5780	xin chang
+吉州	5695	ji zhou
+开福	5670	kai fu
+东西湖	5650
+莱西	5650
+吉首	5530	ji shou
+惠东	5520	hui dong
+海盐	5490
+芗城	5280	xiang cheng
+扬中	5240
+淳安	5160
+冷水滩	5135
+福鼎	5125	fu ding
+邗江	5100	han jiang
+武义	4995	wu yi
+秀洲	4975
+绩溪	4945	ji xi
+鲁甸	4913	lu dian
+兴义	4855
+青田	4855	qing tian
+碑林	4845
+丰都	4795
+津南	4795
+枝江	4770	zhi jiang
+嘉祥	4745	jia xiang
+定海	4730
+临淄	4720
+仙居	4655	xian ju
+利川	4555
+高淳	4535	gao chun
+新沂	4425	xin yi
+西市	4415
+福安	4345	fu an
+黄陂	4342	huang pi
+越城	4335
+景洪	4315	jing hong
+惠山	4280
+龙泉驿	4240
+凯里	4220
+巴州	4194
+阜宁	4155
+花溪	4095	hua xi
+磐安	4085	pan an
+瑞丽	4075
+临泉	4070	lin quan
+招远	4045	zhao yuan
+钟祥	4035
+平阴	4030	ping yin
+潮阳	4030
+高密	4025
+霞山	4005	xia shan
+桐庐	3990
+潮南	3975	chao nan
+巴东	3960
+郧西	3930	yun xi
+安丘	3920
+大邑	3910	da yi
+曾都	3910
+崇川	3840
+迎泽	3830	ying ze
+颍上	3795	ying shang
+遂昌	3770	sui chang
+广汉	3745	guang han
+章贡	3745	zhang gong
+崇州	3730
+斗门	3670
+海丰	3660	hai feng
+金湖	3650
+肥西	3630
+庆元	3625	qing yuan
+莱山	3600
+海陵	3575	hai ling
+蓬江	3570
+苏家屯	3565
+黄梅	3560
+邓州	3535
+金寨	3535	jin zhai
+咸丰	3520
+辰溪	3474	chen xi
+岐山	3460
+周村	3455
+舒城	3450	shu cheng
+廉江	3425	lian jiang
+湘乡	3409	xiang xiang
+大武口	3405
+霍山	3390	huo shan
+松阳	3385
+南川	3376	nan chuan
+信丰	3375	xin feng
+信州	3375	xin zhou
+槐荫	3365	huai yin
+闽侯	3360
+泗洪	3350	si hong
+五华	3345	wu hua
+温江	3340
+环翠	3340
+桂平	3330	gui ping
+武隆	3320	wu long
+盐山	3315	yan shan
+礼泉	3300	li quan
+红安	3290	hong an
+蔡甸	3290
+霍邱	3290	huo qiu
+宽城	3280
+金州	3265	jin zhou
+灌南	3255	guan nan
+城口	3253
+广饶	3240
+硚口	3240	qiao kou
+黄骅	3235	huang hua
+德兴	3230
+南漳	3220
+建始	3205	jian shi
+昌邑	3200	chang yi
+博兴	3195	bo xing
+常山	3190
+怀宁	3185
+青秀	3175
+博乐	3170	bo le
+漳平	3160	zhang ping
+化州	3140	hua zhou
+北流	3140
+澄迈	3133
+临澧	3105	lin li
+奎文	3085	kui wen
+云岩	3080	yun yan
+信宜	3080	xin yi
+连江	3075	lian jiang
+泗阳	3065	si yang
+灌云	3065
+丰城	3050	feng cheng
+萨尔图	3040
+沂源	3035	yi yuan
+酉阳	3035	you yang
+渝水	3015
+漳浦	3015	zhang pu
+旅顺口	3005
+赛罕	3000
+涟源	2997	lian yuan
+枞阳	2995
+涡阳	2995
+封开	2990	feng kai
+沂水	2990
+吴川	2980	wu chuan
+金堂	2975	jin tang
+黄岛	2965	huang dao
+无棣	2960	wu di
+武穴	2955	wu xue
+平江	2945
+永新	2935	yong xin
+竹溪	2925	zhu xi
+阳谷	2925	yang gu
+德惠	2900	de hui
+旺苍	2895
+海阳	2875	hai yang
+璧山	2872	bi shan
+沙市	2865
+裕华	2860	yu hua
+渝中	2843	yu zhong
+合浦	2835
+婺城	2835
+潍城	2830	wei cheng
+奉节	2827	feng jie
+长清	2827	chang qing
+新泰	2825	xin tai
+齐河	2820	qi he
+西乡	2791	xi xiang
+德庆	2780	de qing
+灵寿	2775	ling shou
+安源	2763	an yuan
+吴兴	2760	wu xing
+集安	2760
+新津	2751	xin jin
+福山	2740
+明光	2730
+金平	2730	jin ping
+柯城	2720	ke cheng
+涪城	2710	fu cheng
+永济	2695	yong ji
+监利	2688	jian li
+广宁	2680
+让胡路	2675
+赤坎	2675
+项城	2665	xiang cheng
+宜城	2660	yi cheng
+徐闻	2660
+平罗	2655
+大竹	2650	da zhu
+连云	2635	lian yun
+茶陵	2630
+贵溪	2615	gui xi
+长汀	2615	chang ting
+余干	2610	yu gan
+鼎城	2610
+分宜	2605
+平遥	2605
+开原	2580	kai yuan
+西陵	2580
+沈北	2575	shen bei
+尧都	2570	yao du
+万柏林	2565
+洛江	2555
+社旗	2550
+涵江	2545	han jiang
+凤台	2535	feng tai
+晋州	2530	jin zhou
+尤溪	2520	you xi
+翠屏	2520
+灵武	2505	ling wu
+罗定	2500	luo ding
+五莲	2495	wu lian
+大余	2495	da yu
+海林	2490
+宁都	2485
+开远	2485	kai yuan
+武陵	2485
+平度	2482
+峰峰	2480	feng feng
+浔阳	2480
+南陵	2475
+铅山	2475
+彝良	2471	yi liang
+德城	2470	de cheng
+沅陵	2470	yuan ling
+新干	2460	xin gan
+临清	2450
+纳溪	2440
+谷城	2435	gu cheng
+宜章	2425
+苍溪	2410	cang xi
+洪洞	2405
+西工	2395	xi gong
+韩城	2395	han cheng
+仁寿	2390
+简阳	2390
+南浔	2380	nan xun
+石泉	2380
+尉犁	2370
+保康	2345	bao kang
+江阳	2330	jiang yang
+宾阳	2310
+城步	2308	cheng bu
+长海	2305
+凌海	2300
+保靖	2277	bao jing
+嵊泗	2265
+孟州	2260
+沅江	2260
+永城	2255	yong cheng
+牟平	2255
+巫溪	2250	wu xi
+辉县	2245
+乌当	2240	wu dang
+古田	2236
+昌黎	2235
+浑源	2230	hun yuan
+湟源	2225	huang yuan
+营山	2220
+芦淞	2210	lu song
+小金	2205
+醴陵	2201
+石首	2200	shi shou
+西固	2192	xi gu
+东昌府	2190
+安义	2190	an yi
+且末	2180	qie mo
+井陉	2180	jing xing
+武陟	2180	wu zhi
+安福	2175	an fu
+延平	2175
+德安	2175
+荔城	2170	li cheng
+波密	2160	bo mi
+淅川	2155	xi chuan
+博白	2150
+康平	2145
+雨湖	2145	yu hu
+榆次	2140	yu ci
+西秀	2130	xi xiu
+中江	2120	zhong jiang
+精河	2120	jing he
+尚志	2115	shang zhi
+尼勒克	2115
+桂阳	2115	gui yang
+南靖	2100	nan jing
+黎平	2100	li ping
+卢氏	2095	lu shi
+桦甸	2090	hua dian
+宿城	2085
+五河	2080	wu he
+梅县	2076	mei xian
+武宁	2070
+西峡	2065	xi xia
+金东	2065	jin dong
+舞钢	2060	wu gang
+舒兰	2055	shu lan
+金乡	2055	jin xiang
+南沙	2050
+昌乐	2050
+红塔	2050
+安新	2045	an xin
+石峰	2045	shi feng
+岑溪	2040
+定远	2035	ding yuan
+贺兰	2035
+高唐	2035	gao tang
+丰顺	2030
+临沭	2025	lin shu
+乐东	2020	le dong
+呼图壁	2020
+府谷	2010	fu gu
+徽州	2010
+隆阳	2010	long yang
+船营	2005
+雷山	2005
+汉寿	2002	han shou
+上犹	2000
+上虞	2000	shang yu
+临桂	2000	lin gui
+乐都	2000	le du
+兖州	2000
+弥勒	2000
+恩阳	2000	en yang
+扶余	2000	fu yu
+昭化	2000	zhao hua
+淮阴	2000	huai yin
+溧水	2000
+福绵	2000	fu mian
+揭西	1995	jie xi
+威远	1990	wei yuan
+汉台	1990
+湘阴	1985	xiang yin
+靖宇	1985	jing yu
+夹江	1980	jia jiang
+平利	1980	ping li
+长阳	1980	chang yang
+鲁山	1980	lu shan
+德钦	1975	de qin
+鸠江	1955
+灵璧	1953
+杏花岭	1950
+夏邑	1945
+安图	1940	an tu
+连城	1940	lian cheng
+义马	1930	yi ma
+灞桥	1930
+贾汪	1930	jia wang
+华容	1925	hua rong
+清城	1925
+金湾	1925
+东光	1920
+广昌	1920	guang chang
+源汇	1920
+高青	1920	gao qing
+虞城	1915
+林口	1910
+鄯善	1905	shan shan
+商河	1902	shang he
+定襄	1900
+昌图	1900
+甘州	1900
+盐源	1900	yan yuan
+龙马潭	1895
+凌河	1885
+大荔	1885	da li
+迎江	1880
+和静	1875	he jing
+大悟	1875
+阜平	1870	fu ping
+崇义	1865
+肇东	1860
+舞阳	1860	wu yang
+鸡泽	1860
+兴隆台	1855
+东兰	1850
+芷江	1848	zhi jiang
+合江	1840
+屯昌	1835	tun chang
+涞水	1825
+西华	1820
+东源	1815	dong yuan
+蕉城	1815	jiao cheng
+诏安	1815	zhao an
+安溪	1805	an xi
+新野	1805
+衡山	1795
+禹城	1790
+利辛	1785	li xin
+榆中	1785	yu zhong
+滦南	1785
+上栗	1775
+凉州	1775
+湘桥	1775
+黄州	1775
+永吉	1760	yong ji
+旬邑	1755	xun yi
+颍州	1755
+樊城	1750	fan cheng
+邻水	1750	lin shui
+来凤	1745	lai feng
+安达	1740	an da
+博湖	1735	bo hu
+雷波	1735	lei bo
+东丰	1730	dong feng
+安乡	1730	an xiang
+溆浦	1729	xu pu
+襄城	1725
+阎良	1721	yan liang
+泸溪	1718	lu xi
+红花岗	1710
+井研	1705	jing yan
+剑阁	1705
+孝南	1705	xiao nan
+临湘	1699
+崇仁	1695
+江陵	1695
+霞浦	1690	xia pu
+哈巴河	1685
+合阳	1680	he yang
+建华	1680	jian hua
+海安	1676
+旌阳	1675	jing yang
+陈仓	1675
+古蔺	1670	gu lin
+泾阳	1670	jing yang
+洪江	1665
+利津	1660	li jin
+尖草坪	1660
+慈利	1658
+六枝	1655
+海原	1650	hai yuan
+颍泉	1650	ying quan
+柳北	1645	liu bei
+息烽	1640	xi feng
+英山	1640
+昌宁	1635
+桂东	1631
+宁陵	1630
+富平	1625	fu ping
+曲周	1625
+荔波	1625	li bo
+青原	1625	qing yuan
+伊吾	1610	yi wu
+台安	1610	tai an
+墨脱	1610
+方城	1610	fang cheng
+衡南	1610
+上林	1595
+深州	1595	shen zhou
+迁西	1595	qian xi
+盘山	1585
+鄢陵	1580	yan ling
+保亭	1576	bao ting
+靖远	1575	jing yuan
+常熟	1570
+张北	1565	zhang bei
+彰武	1560	zhang wu
+临猗	1555
+宁晋	1555
+秀英	1555
+青川	1549
+稷山	1540	ji shan
+北安	1535	bei an
+罗平	1535
+翼城	1530	yi cheng
+金安	1530	jin an
+青云谱	1530
+馆陶	1530	guan tao
+余庆	1525
+武冈	1525	wu gang
+江安	1525	jiang an
+泌阳	1525
+北票	1520	bei piao
+安岳	1520	an yue
+金塔	1520
+闻喜	1520	wen xi
+临邑	1515
+宜良	1515	yi liang
+新抚	1510	xin fu
+江都	1506	jiang du
+崇阳	1505	chong yang
+晋源	1505	jin yuan
+清镇	1505	qing zhen
+襄汾	1505	xiang fen
+龙文	1505	long wen
+孝昌	1500	xiao chang
+延寿	1490
+惠阳	1478	hui yang
+汉滨	1475	han bin
+赞皇	1475
+茅箭	1470
+临漳	1465
+任城	1465	ren cheng
+陆河	1465
+临武	1464	lin wu
+永泰	1455
+光山	1450	guang shan
+凤庆	1450	feng qing
+昔阳	1450	xi yang
+防城	1450	fang cheng
+行唐	1445
+凌源	1440	ling yuan
+郾城	1435
+汶上	1430	wen shang
+连平	1430
+巩留	1425	gong liu
+纳雍	1425
+临渭	1420	lin wei
+多伦	1420	duo lun
+汝南	1420
+织金	1420
+新和	1415	xin he
+旌德	1415	jing de
+江永	1415	jiang yong
+双牌	1413	shuang pai
+武山	1410	wu shan
+莎车	1410
+千阳	1405	qian yang
+新源	1400	xin yuan
+洛南	1400	luo nan
+源城	1400	yuan cheng
+颍东	1400	ying dong
+茂南	1395
+勃利	1390	bo li
+黄陵	1385	huang ling
+景泰	1380
+龙里	1375	long li
+郁南	1370	yu nan
+从江	1365
+叙永	1365	xu yong
+嘉陵	1365	jia ling
+濠江	1365
+和硕	1355	he shuo
+东辽	1350
+武川	1350	wu chuan
+澄城	1350	cheng cheng
+大姚	1345
+福海	1345
+绥德	1345	sui de
+宛城	1340
+邯山	1340	han shan
+隆德	1340	long de
+连南	1338
+巴彦	1335	ba yan
+德保	1330	de bao
+古交	1325	gu jiao
+左权	1325
+苍梧	1325	cang wu
+常宁	1315
+龙州	1315	long zhou
+城固	1310
+政和	1310	zheng he
+鸡东	1310	ji dong
+祁东	1305	qi dong
+钦北	1305
+黄平	1305	huang ping
+始兴	1300	shi xing
+岱岳	1300	dai yue
+阳山	1300	yang shan
+荥经	1295
+赫山	1295	he shan
+尉氏	1285	wei shi
+峡江	1285	xia jiang
+西丰	1285	xi feng
+涞源	1280	lai yuan
+田家庵	1280
+三原	1275
+东川	1275	dong chuan
+坊子	1275
+赫章	1275	he zhang
+沙依巴克	1265
+泸定	1265
+成武	1260	cheng wu
+谯城	1260
+霍城	1260	huo cheng
+黎城	1260	li cheng
+会东	1255	hui dong
+和龙	1255	he long
+泰来	1255
+秭归	1253
+娄星	1250
+富宁	1250
+沈丘	1245	shen qiu
+理塘	1245	li tang
+丛台	1240
+临泽	1235	lin ze
+广南	1235	guang nan
+罗山	1235	luo shan
+饶阳	1235
+元氏	1225
+清涧	1225	qing jian
+肇源	1225	zhao yuan
+泰顺	1223	tai shun
+安次	1220
+禹州	1220
+京山	1219	jing shan
+湘东	1212	xiang dong
+扶沟	1210	fu gou
+文圣	1210	wen sheng
+盐边	1210	yan bian
+裕民	1210	yu min
+嘉荫	1205	jia yin
+花垣	1200	hua yuan
+台山	1190
+天峨	1190
+洪雅	1190	hong ya
+海兴	1190	hai xing
+新邵	1187	xin shao
+麻阳	1187
+察隅	1185	cha yu
+延津	1185	yan jin
+中牟	1182
+嘉善	1181	jia shan
+古浪	1180	gu lang
+资溪	1180	zi xi
+海宁	1177
+托克托	1175
+松溪	1175
+麻章	1170	ma zhang
+富锦	1165	fu jin
+苏仙	1165	su xian
+阳新	1164	yang xin
+交城	1160	jiao cheng
+宝清	1160	bao qing
+望花	1155	wang hua
+高邑	1155	gao yi
+克山	1150
+垣曲	1150	yuan qu
+宜黄	1150	yi huang
+成安	1150
+掇刀	1150
+西充	1150	xi chong
+阜城	1150	fu cheng
+隆尧	1150	long yao
+宝兴	1145	bao xing
+雁峰	1145	yan feng
+德格	1135
+五通桥	1130
+召陵	1130
+兰西	1115	lan xi
+良庆	1115	liang qing
+镇原	1115	zhen yuan
+从化	1111
+晋宁	1111
+蚌山	1111	beng shan
+师宗	1110	shi zong
+正宁	1110	zheng ning
+原阳	1105	yuan yang
+吉木萨尔	1105
+忻城	1105
+平武	1095	ping wu
+武乡	1095	wu xiang
+镇巴	1095	zhen ba
+珠晖	1090
+米易	1090	mi yi
+邕宁	1090
+江华	1085	jiang hua
+泾源	1085	jing yuan
+皋兰	1085	gao lan
+陇西	1085
+柳南	1080	liu nan
+沁源	1080
+青河	1080	qing he
+伍家岗	1075
+蓬溪	1075	peng xi
+佛坪	1070
+渭源	1070	wei yuan
+平坝	1064
+建宁	1060	jian ning
+潘集	1060
+富源	1059	fu yuan
+安塞	1055
+甘洛	1055	gan luo
+石屏	1055	shi ping
+青神	1055
+林甸	1050	lin dian
+班戈	1045	ban ge
+立山	1045	li shan
+志丹	1040	zhi dan
+汉源	1035	han yuan
+牟定	1035
+盐津	1035	yan jin
+静宁	1035	jing ning
+兴宾	1030
+晴隆	1030
+石阡	1030	shi qian
+集贤	1030	ji xian
+乐昌	1028
+福泉	1025
+丰镇	1010	feng zhen
+沐川	1010
+贵定	1010	gui ding
+道孚	1010	dao fu
+临洮	1006
+平舆	1005	ping yu
+武邑	1005	wu yi
+繁峙	1005
+静乐	1005	jing le
+马关	1005
+长洲	1003
+丁青	1000	ding qing
+七星关	1000
+万秀	1000
+上党	1000
+上城	1000
+上思	1000	shang si
+上蔡	1000	shang cai
+下陆	1000	xia lu
+丘北	1000
+东宁	1000
+东洲	1000	dong zhou
+两当	1000	liang dang
+中阳	1000	zhong yang
+丰南	1000
+丰县	1000
+丰宁	1000
+丰林	1000	feng lin
+临安	1000
+临潭	1000
+临翔	1000	lin xiang
+临西	1000	lin xi
+临颍	1000
+丹寨	1000
+丹徒	1000	dan tu
+丹棱	1000
+乃东	1000	nai dong
+义县	1000
+义安	1000	yi an
+乌什	1000	wu shi
+乌兰	1000
+乌恰	1000
+乌翠	1000	wu cui
+乡城	1000
+乡宁	1000
+乾安	1000	qian an
+二道江	1000
+于田	1000
+于都	1000	yu du
+云州	1000	yun zhou
+云溪	1000
+亭湖	1000	ting hu
+仁化	1000
+仁布	1000	ren bu
+仁怀	1000
+代县	1000
+仲巴	1000	zhong ba
+任泽	1000	ren ze
+伊州	1000	yi zhou
+伊美	1000	yi mei
+会昌	1000	hui chang
+会泽	1000	hui ze
+会理	1000	hui li
+伽师	1000	jia shi
+余杭	1000
+佳县	1000	jia xian
+依兰	1000	yi lan
+依安	1000	yi an
+侯马	1000	hou ma
+保德	1000	bao de
+信都	1000	xin du
+修水	1000
+偃师	1000
+元江	1000
+八宿	1000	ba su
+兰坪	1000	lan ping
+兰山	1000	lan shan
+关岭	1000	guan ling
+兴县	1000
+兴和	1000	xing he
+兴山	1000	xing shan
+冀州	1000
+内丘	1000
+册亨	1000
+凉城	1000	liang cheng
+凤县	1000	feng xian
+凤泉	1000	feng quan
+凭祥	1000	ping xiang
+刚察	1000
+利州	1000	li zhou
+利通	1000	li tong
+务川	1000	wu chuan
+勉县	1000
+勐腊	1000
+化德	1000	hua de
+化隆	1000	hua long
+北塔	1000	bei ta
+北屯	1000
+北林	1000
+北镇	1000
+华亭	1000
+华坪	1000	hua ping
+华宁	1000
+华州	1000	hua zhou
+华池	1000
+华蓥	1000	hua ying
+华阴	1000	hua yin
+卓尼	1000
+卓资	1000	zhuo zi
+单县	1000
+南乐	1000
+南康	1000
+南木林	1000
+南涧	1000	nan jian
+南票	1000
+南芬	1000	nan fen
+南谯	1000	nan qiao
+南郑	1000	nan zheng
+博望	1000	bo wang
+博野	1000
+卡若	1000	ka ruo
+卫东	1000	wei dong
+卫滨	1000
+即墨	1000
+原州	1000
+原平	1000	yuan ping
+双台子	1000
+双柏	1000	shuang bai
+双滦	1000
+双辽	1000	shuang liao
+叙州	1000	xu zhou
+古冶	1000	gu ye
+句容	1000
+可克达拉	1000
+右玉	1000	you yu
+叶集	1000	ye ji
+合山	1000	he shan
+吉县	1000	ji xian
+吉木乃	1000
+吉水	1000
+吉阳	1000	ji yang
+吉隆	1000	ji long
+含山	1000	han shan
+吴堡	1000	wu bu
+吴江	1000
+吴起	1000	wu qi
+呈贡	1000	cheng gong
+周宁	1000
+呼中	1000	hu zhong
+呼玛	1000
+和县	1000	he xian
+和布克赛尔	1000
+和政	1000	he zheng
+和林格尔	1000
+咸安	1000	xian an
+唐县	1000
+商州	1000	shang zhou
+商水	1000
+商都	1000
+喀喇沁左翼	1000	ka la qin zuo yi
+嘉黎	1000	jia li
+囊谦	1000
+固始	1000	gu shi
+固镇	1000	gu zhen
+固阳	1000
+图木舒克	1000
+埇桥	1000
+城子河	1000
+堆龙德庆	1000
+塔什库尔干	1000
+塔河	1000	ta he
+墨江	1000
+夏县	1000
+大化	1000
+大埔	1000
+大洼	1000	da wa
+大箐山	1000
+天峻	1000
+天心	1000	tian xin
+天祝	1000	tian zhu
+天等	1000	tian deng
+天镇	1000	tian zhen
+太谷	1000	tai gu
+头屯河	1000
+夷陵	1000
+奉化	1000	feng hua
+奎屯	1000
+如东	1000	ru dong
+如皋	1000
+姜堰	1000
+威县	1000
+娄烦	1000
+子洲	1000	zi zhou
+子长	1000	zi chang
+孟津	1000
+孟连	1000	meng lian
+宁县	1000
+宁河	1000
+宁洱	1000	ning er
+宁蒗	1000
+安多	1000
+安州	1000	an zhou
+安泽	1000	an ze
+安远	1000	an yuan
+安陆	1000
+安龙	1000	an long
+宕昌	1000
+定兴	1000	ding xing
+定南	1000
+定州	1000
+定结	1000
+宜君	1000	yi jun
+宜秀	1000	yi xiu
+宜都	1000	yi du
+宜阳	1000	yi yang
+宝坻	1000
+宣化	1000
+容县	1000
+容城	1000	rong cheng
+宾县	1000
+宾川	1000
+宿豫	1000	su yu
+富县	1000
+富蕴	1000	fu yun
+富阳	1000	fu yang
+寒亭	1000	han ting
+察布查尔	1000
+察雅	1000
+寻甸	1000
+寿县	1000
+寿宁	1000
+寿阳	1000	shou yang
+封丘	1000	feng qiu
+将乐	1000	jiang le
+尖扎	1000	jian zha
+尼木	1000
+屯留	1000
+岑巩	1000
+岗巴	1000
+岚县	1000
+岚山	1000
+岚皋	1000
+岢岚	1000	ke lan
+岱山	1000
+岳普湖	1000
+峄城	1000	yi cheng
+峨边	1000	e bian
+崇信	1000	chong xin
+崇明	1000
+崇礼	1000
+崖州	1000	ya zhou
+嵩县	1000
+川汇	1000	chuan hui
+巴塘	1000	ba tang
+巴宜	1000	ba yi
+巴楚	1000
+巴青	1000
+巴马	1000
+布拖	1000	bu tuo
+平乡	1000	ping xiang
+平塘	1000	ping tang
+平果	1000
+平桂	1000	ping gui
+平泉	1000
+平远	1000	ping yuan
+平邑	1000	ping yi
+平鲁	1000
+广信	1000	guang xin
+广宗	1000	guang zong
+广德	1000
+广水	1000
+广河	1000	guang he
+应城	1000	ying cheng
+康保	1000	kang bao
+康定	1000	kang ding
+康巴什	1000
+康马	1000	kang ma
+延川	1000	yan chuan
+建昌	1000	jian chang
+建水	1000	jian shui
+建湖	1000	jian hu
+建阳	1000
+开州	1000	kai zhou
+开鲁	1000	kai lu
+弋阳	1000	yi yang
+弓长岭	1000
+彬州	1000	bin zhou
+徐水	1000	xu shui
+得荣	1000	de rong
+徽县	1000
+忻府	1000	xin fu
+怀仁	1000
+怀安	1000
+思南	1000	si nan
+思茅	1000	si mao
+恭城	1000	gong cheng
+息县	1000
+惠济	1000	hui ji
+成县	1000	cheng xian
+扎囊	1000
+扎赉诺尔	1000
+托克逊	1000
+托里	1000
+抚宁	1000
+抚松	1000	fu song
+抚远	1000
+拉孜	1000	la zi
+拜城	1000	bai cheng
+拜泉	1000	bai quan
+振安	1000
+措勤	1000	cuo qin
+措美	1000	cuo mei
+揭东	1000	jie dong
+播州	1000	bo zhou
+攸县	1000	you xian
+文县	1000	wen xian
+文安	1000	wen an
+新吴	1000	xin wu
+新宾	1000
+新平	1000	xin ping
+新绛	1000	xin jiang
+新邱	1000	xin qiu
+施甸	1000
+旬阳	1000	xun yang
+昂仁	1000
+昂昂溪	1000
+昆玉	1000	kun yu
+昆都仑	1000
+昌江	1000	chang jiang
+易县	1000
+昭平	1000	zhao ping
+普兰店	1000
+普定	1000
+景东	1000	jing dong
+景县	1000	jing xian
+景宁	1000	jing ning
+曲松	1000
+曲沃	1000
+曲阜	1000
+曲阳	1000	qu yang
+曲麻莱	1000
+月湖	1000
+朔城	1000	shuo cheng
+望奎	1000
+望谟	1000	wang mo
+望都	1000	wang du
+木里	1000
+札达	1000
+杜集	1000	du ji
+杞县	1000
+松岭	1000
+林周	1000
+林西	1000	lin xi
+枣强	1000
+柏乡	1000	bai xiang
+柘城	1000
+柘荣	1000	zhe rong
+柞水	1000
+柯坪	1000	ke ping
+柳江	1000
+柴桑	1000
+桃江	1000
+桐梓	1000
+桑日	1000
+桑珠孜	1000
+桓仁	1000
+桦南	1000	hua nan
+桦川	1000
+梁平	1000	liang ping
+梁河	1000
+梁溪	1000	liang xi
+梅里斯	1000
+榆阳	1000	yu yang
+榕城	1000
+榕江	1000
+横峰	1000
+横州	1000	heng zhou
+歙县	1000
+武平	1000	wu ping
+武江	1000
+武胜	1000	wu sheng
+武都	1000	wu du
+殷都	1000	yin du
+民丰	1000
+民和	1000
+水磨沟	1000
+永修	1000
+永年	1000
+永德	1000
+永靖	1000	yong jing
+汉南	1000
+汝州	1000
+江孜	1000	jiang zi
+江川	1000	jiang chuan
+江州	1000
+江津	1000
+江达	1000	jiang da
+汤原	1000	tang yuan
+汤旺	1000	tang wang
+汨罗	1000
+汾西	1000	fen xi
+沁县	1000
+沁阳	1000
+沙雅	1000	sha ya
+沧源	1000
+河曲	1000
+河津	1000	he jin
+河间	1000
+治多	1000
+沽源	1000	gu yuan
+沿滩	1000
+泗县	1000
+泸县	1000	lu xian
+泸西	1000	lu xi
+泽库	1000
+泾县	1000	jing xian
+洛扎	1000	luo zha
+洛隆	1000
+洛龙	1000	luo long
+洞头	1000	dong tou
+津市	1000
+洪泽	1000
+洮北	1000
+洱源	1000	er yuan
+浈江	1000
+浉河	1000	shi he
+浑江	1000
+浚县	1000
+浠水	1000
+浪卡子	1000
+浮山	1000	fu shan
+海勃湾	1000
+海晏	1000	hai yan
+涉县	1000	she xian
+润州	1000
+涧西	1000	jian xi
+淇县	1000
+淇滨	1000	qi bin
+淮上	1000	huai shang
+淮滨	1000
+淳化	1000	chun hua
+清丰	1000	qing feng
+清原	1000	qing yuan
+清江浦	1000
+清河门	1000
+清苑	1000	qing yuan
+渌口	1000	lu kou
+渑池	1000
+渝北	1000
+温县	1000	wen xian
+温宿	1000
+渭城	1000
+港北	1000	gang bei
+港南	1000	gang nan
+游仙	1000
+湄潭	1000	mei tan
+湖口	1000
+湛河	1000	zhan he
+湟中	1000
+湾沚	1000	wan zhi
+溪湖	1000
+滑县	1000
+滦平	1000
+滨城	1000
+滴道	1000	di dao
+漳县	1000	zhang xian
+漾濞	1000
+潜山	1000	qian shan
+潞州	1000	lu zhou
+潮安	1000
+潼南	1000
+澧县	1000
+濂溪	1000	lian xi
+瀍河	1000
+灌阳	1000	guan yang
+炉霍	1000	lu huo
+点军	1000	dian jun
+焉耆	1000	yan qi
+爱辉	1000	ai hui
+牧野	1000
+犍为	1000
+猇亭	1000	xiao ting
+献县	1000
+玉州	1000	yu zhou
+玉田	1000
+王益	1000	wang yi
+玛沁	1000
+环县	1000
+珙县	1000	gong xian
+珠山	1000
+班玛	1000	ban ma
+理县	1000
+琼中	1000
+琼结	1000
+瑞安	1000
+甘德	1000	gan de
+甘谷	1000	gan gu
+田东	1000	tian dong
+田林	1000
+田阳	1000	tian yang
+申扎	1000
+电白	1000
+留坝	1000	liu ba
+略阳	1000
+疏勒	1000
+疏附	1000
+白朗	1000	bai lang
+白碱滩	1000
+盂县	1000
+盐亭	1000
+盐都	1000	yan du
+盘州	1000	pan zhou
+相山	1000
+眉县	1000	mei xian
+石拐	1000
+石渠	1000
+砚山	1000	yan shan
+碌曲	1000
+碧江	1000
+磁县	1000
+磴口	1000
+礼县	1000
+祁县	1000
+祥符	1000	xiang fu
+禄劝	1000	lu quan
+福贡	1000	fu gong
+禹会	1000	yu hui
+禹王台	1000
+离石	1000	li shi
+秀屿	1000	xiu yu
+秦州	1000	qin zhou
+秦都	1000
+穆棱	1000
+突泉	1000
+竹山	1000	zhu shan
+策勒	1000	ce le
+筠连	1000
+管城	1000
+米东	1000	mi dong
+米林	1000	mi lin
+类乌齐	1000
+索县	1000
+綦江	1000
+繁昌	1000	fan chang
+红原	1000	hong yuan
+红古	1000
+红岗	1000	hong gang
+细河	1000
+绛县	1000	jiang xian
+绥中	1000
+绥棱	1000
+绥滨	1000
+绿春	1000	lv chun
+罗甸	1000	luo dian
+美姑	1000	mei gu
+耿马	1000
+聂荣	1000	nie rong
+肃北	1000
+肃南	1000
+肥乡	1000	fei xiang
+胡杨河	1000	hu yang he
+自流井	1000
+船山	1000	chuan shan
+色尼	1000	se ni
+芒市	1000	mang shi
+范县	1000	fan xian
+茄子河	1000
+茌平	1000
+荔浦	1000
+荣县	1000
+荣成	1000	rong cheng
+荣昌	1000
+莒县	1000
+莘县	1000
+莫力达瓦	1000
+莱阳	1000	lai yang
+莲池	1000
+莲都	1000	lian du
+萝北	1000	luo bei
+萨迦	1000
+蒙自	1000	meng zi
+蒸湘	1000	zheng xiang
+蓝山	1000
+蓟州	1000
+蓬安	1000
+蔚县	1000
+藁城	1000	gao cheng
+藤县	1000
+虎丘	1000
+虎林	1000
+融安	1000
+蠡县	1000
+衡东	1000	heng dong
+衢江	1000	qu jiang
+袁州	1000
+襄州	1000	xiang zhou
+襄都	1000	xiang du
+西乡塘	1000
+西吉	1000	xi ji
+西和	1000
+西塞山	1000
+西岗	1000	xi gang
+西畴	1000	xi chou
+覃塘	1000
+观山湖	1000
+谢家集	1000
+谢通门	1000
+贡井	1000	gong jing
+贡山	1000	gong shan
+贡觉	1000	gong jue
+贵南	1000	gui nan
+费县	1000
+资中	1000	zi zhong
+赣县	1000
+赣榆	1000	gan yu
+赵县	1000
+辉南	1000	hui nan
+边坝	1000	bian ba
+辽中	1000
+达孜	1000	da zi
+达川	1000	da chuan
+迁安	1000	qian an
+逊克	1000
+通川	1000	tong chuan
+通许	1000
+道真	1000
+道里	1000	dao li
+邱县	1000
+邵东	1000
+郏县	1000	jia xian
+郫都	1000	pi du
+郯城	1000	tan cheng
+郸城	1000
+都兰	1000	du lan
+都匀	1000	du yun
+都安	1000	du an
+都昌	1000	du chang
+鄂城	1000
+鄞州	1000	yin zhou
+鄠邑	1000	hu yi
+金口河	1000
+金台	1000	jin tai
+金坛	1000
+金林	1000	jin lin
+金秀	1000	jin xiu
+金阳	1000	jin yang
+钦南	1000
+铁山港	1000
+铁锋	1000
+铁门关	1000
+铜官	1000	tong guan
+银州	1000	yin zhou
+错那	1000	cuo na
+镇宁	1000
+镇安	1000
+镇沅	1000	zhen yuan
+镇赉	1000	zhen lai
+镇远	1000	zhen yuan
+镇雄	1000	zhen xiong
+长垣	1000	chang yuan
+长武	1000	chang wu
+长泰	1000	chang tai
+长白	1000
+长顺	1000
+门源	1000
+阜南	1000	fu nan
+阳东	1000	yang dong
+阳信	1000	yang xin
+阳原	1000	yang yuan
+阳明	1000
+阳曲	1000
+阳高	1000	yang gao
+阿克陶	1000
+阿合奇	1000
+阿城	1000
+陇川	1000
+陕州	1000	shan zhou
+陵城	1000	ling cheng
+隆子	1000	long zi
+隆安	1000	long an
+隆昌	1000
+隆林	1000	long lin
+随县	1000
+隰县	1000
+雁山	1000	yan shan
+雁江	1000	yan jiang
+集宁	1000
+雨山	1000	yu shan
+霍林郭勒	1000
+青冈	1000
+青县	1000	qing xian
+青山湖	1000
+靖江	1000	jing jiang
+靖西	1000	jing xi
+靖边	1000	jing bian
+静海	1000
+革吉	1000	ge ji
+额敏	1000
+香河	1000
+驿城	1000	yi cheng
+高县	1000	gao xian
+高昌	1000	gao chang
+高港	1000	gao gang
+高要	1000	gao yao
+高陵	1000	gao ling
+魏县	1000
+魏都	1000	wei du
+鱼台	1000
+鱼峰	1000	yu feng
+鲅鱼圈	1000
+鹤峰	1000	he feng
+鹤庆	1000	he qing
+鹿寨	1000	lu zhai
+鹿泉	1000	lu quan
+麟游	1000	lin you
+麦盖提	1000
+麦积	1000	mai ji
+黄石港	1000
+黎川	1000
+黔西	1000
+黟县	1000
+龙南	1000
+龙圩	1000	long xu
+龙子湖	1000
+龙川	1000
+龙海	1000
+龙胜	1000	long sheng
+东兴	50	dong xing
+东明	50	dong ming
+东胜	50	dong sheng
+乐安	50	le an
+五峰	50	wu feng
+兴仁	50	xing ren
+凤山	50	feng shan
+凤翔	50	feng xiang
+凤阳	50	feng yang
+南丰	50	nan feng
+南江	50	nan jiang
+南溪	50	nan xi
+双江	50	shuang jiang
+双阳	50	shuang yang
+合水	50	he shui
+城厢	50	cheng xiang
+大丰	50	da feng
+大新	50	da xin
+宁远	50	ning yuan
+安仁	50	an ren
+宝丰	50	bao feng
+岭东	50	ling dong
+平乐	50	ping le
+庆云	50	qing yun
+张店	50	zhang dian
+张湾	50	zhang wan
+新丰	50	xin feng
+新乐	50	xin le
+新化	50	xin hua
+新市	50	xin shi
+新林	50	xin lin
+新河	50	xin he
+新洲	50	xin zhou
+望城	50	wang cheng
+柳城	50	liu cheng
+柳河	50	liu he
+永丰	50	yong feng
+泉山	50	quan shan
+洪山	50	hong shan
+独山	50	du shan
+白河	50	bai he
+石城	50	shi cheng
+紫阳	50	zi yang
+罗庄	50	luo zhuang
+芦溪	50	lu xi
+辛集	50	xin ji
+金川	50	jin chuan
+金溪	50	jin xi
+钟山	50	zhong shan
+锦屏	50	jin ping
+长丰	50	chang feng
+青阳	50	qing yang
+顺河	50	shun he
+马村	50	ma cun
+高坪	50	gao ping
+高安	50	gao an
+高平	50	gao ping
+龙安	50	long an
+
+# ── 县级 · 全称(561 行)──
+常熟市	1570
+石狮市	591
+东台市	443
+临夏市	311
+七星关区	300
+万全区	300
+万山区	300
+三水区	300
+三江侗族自治县	300
+上党区	300
+上城区	300
+上蔡县	300
+东乡区	300
+东乡族自治县	300
+东兴区	300
+东兴市	300
+东宁市	300
+东方市	300
+东营区	300
+中牟县	300
+丰南区	300
+丰宁满族自治县	300
+丰林县	300	feng lin xian
+丰润区	300
+临安区	300
+临平区	300
+临洮县	300
+临湘市	300
+临翔区	300
+临西县	300
+临颍县	300
+丹徒区	300
+乃东区	300
+义安区	300
+乌审旗	300
+乌尔禾区	300
+乌翠区	300	wu cui qu
+乐业县	300
+乐昌市	300
+九台区	300
+习水县	300
+乾安县	300
+于都县	300
+云冈区	300
+云安区	300
+云州区	300
+互助土族自治县	300
+五大连池市	300
+京山市	300
+亭湖区	300
+仁化县	300
+仁怀市	300
+仲巴县	300
+任泽区	300
+伊州区	300
+伊美区	300
+会宁县	300
+会昌县	300
+会泽县	300
+会理市	300	hui li shi
+余杭区	300
+余江区	300
+依兰县	300
+侯马市	300
+信都区	300
+偃师区	300	yan shi qu
+光明区	300
+光泽县	300
+全南县	300
+兰州新区	300
+兰陵县	300
+共青城市	300
+兴仁市	300
+兴和县	300
+兴安区	300
+兴山区	300
+兴山县	300
+冀州区	300
+凤泉区	300
+凤翔区	300
+凭祥市	300
+勐腊县	300
+北川羌族自治县	300
+北戴河新区	300
+北林区	300
+华亭市	300
+华州区	300
+华蓥市	300
+华阴市	300
+华龙区	300
+南和区	300
+南城县	300
+南岔县	300
+南川区	300
+南康区	300
+南湖区	300
+南溪区	300
+南郑区	300
+南部县	300
+博望区	300
+卡若区	300
+卫滨区	300
+即墨区	300
+原州区	300
+原平市	300
+双城区	300
+双柏县	300
+双河市	300
+双流区	300
+双湖县	300
+双辽市	300
+叙州区	300
+古冶区	300
+可克达拉市	300
+叶集区	300
+吉水县	300
+吉阳区	300
+同仁市	300
+名山区	300
+含山县	300
+吴堡县	300
+吴起县	300
+呈贡区	300
+周宁县	300
+呼中区	300
+咸安区	300
+商城县	300
+商州区	300
+四方台区	300
+固始县	300
+固镇县	300
+坪山区	300
+垦利区	300
+堆龙德庆区	300
+塔城市	300
+增城区	300
+夏河县	300
+大丰区	300
+大化瑶族自治县	300
+大厂回族自治县	300
+大城县	300
+大埔县	300
+大安市	300
+大洼区	300
+大箐山县	300
+大足区	300
+天心区	300
+天涯区	300
+天祝藏族自治县	300
+天镇县	300
+太谷区	300
+奉化区	300
+如东县	300
+姑苏区	300
+姜堰区	300
+嫩江市	300
+子长市	300
+孟津区	300	meng jin qu
+宁乡市	300
+宁河区	300
+安国市	300
+安塞区	300
+安定区	300
+安州区	300
+安源区	300
+安远县	300
+安陆市	300
+安龙县	300
+定兴县	300
+定南县	300
+定陶区	300
+宜州区	300
+宜秀区	300
+宜阳县	300
+宣化区	300
+宽城满族自治县	300
+宿豫区	300
+密云区	300
+富川瑶族自治县	300
+富源县	300
+富蕴县	300
+富阳区	300
+寒亭区	300
+察雅县	300
+寿宁县	300
+射洪市	300
+将乐县	300
+屯留区	300
+山阴县	300
+岚山区	300
+岭东区	300
+岱山县	300
+崇明区	300
+崇礼区	300
+崖州区	300
+巴宜区	300
+巴马瑶族自治县	300
+市南区	300
+平乡县	300
+平原县	300
+平坝区	300
+平城区	300
+平安区	300
+平果市	300
+平桂区	300
+平泉市	300
+平远县	300
+广丰区	300
+广信区	300
+广德市	300
+广水市	300
+庐山市	300
+库车市	300
+康定市	300
+康巴什区	300
+延川县	300
+延庆区	300
+建安区	300
+建昌县	300
+建水县	300
+建湖县	300
+建阳区	300
+开州区	300
+开阳县	300
+开鲁县	300
+弋阳县	300
+彬州市	300
+彭山区	300
+徐水区	300
+怀仁市	300
+思南县	300
+思茅区	300
+恭城瑶族自治县	300
+惠济区	300
+惠阳区	300
+慈利县	300
+扎赉特旗	300
+扎赉诺尔区	300
+抚宁区	300
+抚松县	300
+抚远市	300
+拜城县	300
+振安区	300
+措勤县	300
+措美县	300
+揭东区	300
+播州区	300
+改则县	300
+文山市	300
+文登区	300
+新吴区	300
+新安县	300
+新宾满族自治县	300
+新建区	300
+新星市	300
+新津区	300
+新绛县	300
+新邱区	300
+新邵县	300
+新都区	300
+无为市	300
+无极县	300
+旬阳市	300
+昆玉市	300
+昆都仑区	300
+昭平县	300
+晋宁区	300
+普兰店区	300
+景东彝族自治县	300
+景宁畲族自治县	300
+曲江区	300
+曲阳县	300
+曹妃甸区	300
+月湖区	300
+望城区	300
+本溪满族自治县	300
+松岭区	300
+林西县	300
+枣强县	300
+柘城县	300
+柘荣县	300
+柞水县	300
+柳江区	300
+柴桑区	300
+栾城区	300
+桂东县	300
+桃江县	300
+桐梓县	300
+桑植县	300
+桑珠孜区	300
+桓仁满族自治县	300
+桓台县	300
+桦南县	300
+梁平区	300
+梁河县	300
+梁溪区	300
+榆阳区	300
+榕城区	300
+榕江县	300
+横山区	300
+横峰县	300
+横州市	300
+正安县	300
+武平县	300
+武胜县	300
+武隆区	300
+武鸣区	300
+殷都区	300
+水城区	300	shui cheng qu
+水富市	300
+永修县	300
+永兴县	300
+永宁县	300
+永年区	300
+永康市	300
+汉南区	300
+汉寿县	300
+汝州市	300
+江北区	300
+江川区	300
+江源区	300
+江都区	300
+汤旺县	300	tang wang xian
+汨罗市	300
+沙县区	300	sha xian qu
+沙坡头区	300
+沙河市	300
+沙湾市	300
+河口瑶族自治县	300
+河曲县	300
+河津市	300
+沾化区	300
+沾益区	300
+泰顺县	300
+泸水市	300
+洛扎县	300
+洛隆县	300
+洛龙区	300
+洞口县	300
+洞头区	300
+洪泽区	300
+洱源县	300
+浉河区	300
+济阳区	300
+浑南区	300
+浑江区	300
+浠水县	300
+海城区	300
+海安市	300
+海棠区	300
+海门区	300
+润州区	300
+涧西区	300
+淇滨区	300
+淮上区	300
+淮安区	300
+淮阳区	300
+清丰县	300
+清新区	300
+清江浦区	300
+清苑区	300
+渌口区	300
+渑池县	300
+渝北区	300
+湄潭县	300
+湖口县	300
+湟中区	300
+湾沚区	300
+满城区	300
+滦州市	300
+滦平县	300
+滨海县	300
+漠河市	300
+潜山市	300
+潞城区	300
+潞州区	300
+潮安区	300
+潼南区	300
+澄江市	300
+濂溪区	300
+瀍河回族区	300
+点军区	300
+焉耆回族自治县	300
+牧野区	300
+犍为县	300
+玉山县	300
+玉州区	300
+玉环市	300
+璧山区	300
+瓜州县	300
+甘谷县	300
+田东县	300
+田阳区	300
+申扎县	300
+电白区	300
+略阳县	300
+白朗县	300
+白杨市	300
+盐都区	300
+监利市	300
+盘州市	300
+石城县	300
+石拐区	300
+石林彝族自治县	300
+硚口区	300
+碧江区	300
+祁阳市	300	qi yang shi
+神木市	300
+祥符区	300
+禄丰市	300	lu feng shi
+禅城区	300
+禹会区	300
+禹王台区	300
+离石区	300
+秀屿区	300
+科尔沁左翼中旗	300
+秦州区	300
+秦都区	300
+秭归县	300
+穆棱市	300
+竞秀区	300
+章丘区	300
+筠连县	300
+管城回族区	300
+米东区	300
+米林市	300	mi lin shi
+类乌齐县	300
+綦江区	300
+繁昌区	300
+红寺堡区	300
+红河县	300
+红谷滩区	300
+绥中县	300
+罗江区	300
+罗甸县	300
+耀州区	300
+聂荣县	300
+肥乡区	300
+肥城市	300
+胡杨河市	300
+腾冲市	300
+色尼区	300	se ni qu
+英德市	300
+茌平区	300
+茫崖市	300
+荔浦市	300
+荣昌区	300
+莱芜区	300
+莲池区	300
+萝北县	300
+蒙自市	300
+蓝山县	300
+蓟州区	300
+蓬安县	300
+蓬莱区	300
+藁城区	300
+虎林市	300
+融安县	300
+融水苗族自治县	300
+衡东县	300
+衢江区	300
+袁州区	300
+襄州区	300
+襄都区	300
+西乡塘区	300
+西吉县	300
+西塞山区	300
+西安区	300
+西岗区	300
+西盟佤族自治县	300
+观山湖区	300
+调兵山市	300
+资中县	300
+赣县区	300
+赣榆区	300
+辉南县	300
+辽中区	300
+达坂城区	300
+达孜区	300
+达川区	300
+逊克县	300
+通化县	300
+通川区	300
+道里区	300
+邵东市	300
+邹平市	300
+郧阳区	300
+郫都区	300
+郸城县	300
+都安瑶族自治县	300
+都昌县	300
+鄂温克族自治旗	300
+鄠邑区	300
+鄱阳县	300
+金坛区	300
+金林区	300	jin lin qu
+金秀瑶族自治县	300
+钦南区	300
+钱塘区	300
+铁门关市	300
+铜官区	300
+铜梁区	300
+银州区	300
+错那市	300	cuo na shi
+镇安县	300
+镇江新区	300
+镇赉县	300
+镇雄县	300
+长乐区	300
+长垣市	300
+长泰区	300	chang tai qu
+长清区	300
+阜康市	300
+阳东区	300
+阳信县	300
+阳新县	300
+阳高县	300
+阿拉山口市	300
+陇川县	300
+陕州区	300
+陵城区	300
+隆子县	300
+隆安县	300
+隆昌市	300
+隆林各族自治县	300
+雨山区	300
+霍尔果斯市	300
+青山湖区	300
+靖西市	300
+靖边县	300
+静海区	300
+革吉县	300
+顺德区	300
+顺河回族区	300
+香格里拉市	300
+香洲区	300
+马尔康市	300
+马龙区	300
+驿城区	300
+高昌区	300
+高港区	300
+高要区	300
+高陵区	300
+鱼台县	300
+鲅鱼圈区	300
+鹤庆县	300
+鹿寨县	300
+鹿泉区	300
+麦积区	300
+麻山区	300
+黔西市	300
+龙南市	300
+龙口市	300
+龙圩区	300
+龙子湖区	300
+龙安区	300
+龙川县	300
+龙江县	300
+龙海区	300
+龙港市	300
+龙胜各族自治县	300
+
+# ── 乡级(乡镇、街道)· 简称(846 行)──
+万新	3000	wan xin
+元和	3000	yuan he
+前海	3000
+厚街	3000	hou jie
+后所	3000	hou suo
+山塘	3000	shan tang
+建新	3000	jian xin
+新竹	3000	xin zhu
+黄兴	3000	huang xing
+朱仙	2870	zhu xian
+观澜	2809	guan lan
+田头	2775	tian tou
+大港	2770
+石岩	2729	shi yan
+下沙	2694	xia sha
+布吉	2590	bu ji
+华大	2573
+华泰	2417
+后湖	2254
+粤海	2127
+丁蜀	2115	ding shu
+坂田	2018
+西溪	1985
+横岗	1973	heng gang
+湾仔	1947
+大良	1911	da liang
+和林	1895	he lin
+新中	1740	xin zhong
+小寨	1737
+容桂	1720	rong gui
+黄家	1712
+南汇	1692
+成山	1685	cheng shan
+横沥	1675	heng li
+江浦	1626
+江桥	1588	jiang qiao
+中街	1548
+华新	1455	hua xin
+新厂	1451
+江湾	1445
+沙湖	1368
+西丽	1342	xi li
+莘庄	1326
+北滘	1312	bei jiao
+老山	1306
+凯德	1299
+石坝	1298	shi ba
+洋山	1263
+九洲	1234
+龙源	1213	long yuan
+北园	1191
+新泾	1180
+东塘	1178	dong tang
+华丰	1162	hua feng
+顾村	1147	gu cun
+华兴	1142	hua xing
+云峰	1134
+振华	1132
+车陂	1128	che bei
+里水	1101	li shui
+宝源	1091	bao yuan
+宝龙	1083	bao long
+小江	1080
+上塘	1060	shang tang
+罗阳	1031	luo yang
+高东	1014	gao dong
+三林	1003
+金海	993	jin hai
+双屿	978	shuang yu
+北新	954	bei xin
+龟山	932
+尖峰	906
+杏坛	884
+华城	865	hua cheng
+东涌	858
+罗村	839	luo cun
+棠下	828	tang xia
+东里	815	dong li
+西里	808	xi li
+东坑	803	dong keng
+吉庆	780	ji qing
+金都	767
+中港	765	zhong gang
+东陵	760	dong ling
+坪塘	760	ping tang
+麓谷	758	lu gu
+赤岗	753
+川沙	743
+泉塘	743	quan tang
+犀浦	736	xi pu
+东联	728	dong lian
+银湖	726	yin hu
+常营	724
+李溪	723	li xi
+西塘	712	xi tang
+罗坪	692	luo ping
+漳河	691
+清湖	689	qing hu
+东苑	681	dong yuan
+三墩	678	san dun
+市桥	673	shi qiao
+观山	661	guan shan
+新湖	658	xin hu
+华苑	649	hua yuan
+新园	649	xin yuan
+长潭	628	chang tan
+十渡	619	shi du
+东园	613	dong yuan
+锦湖	613	jin hu
+横溪	611
+宝盛	606	bao sheng
+石岗	605	shi gang
+礼嘉	599	li jia
+双碑	594	shuang bei
+郑家	583
+刘庄	579
+丰溪	578	feng xi
+沁园	572
+高城	568	gao cheng
+乌山	567	wu shan
+平沙	562
+六都	559	liu du
+靖港	558	jing gang
+大滩	523	da tan
+沙坝	510
+金中	510	jin zhong
+天湖	509
+金井	508	jin jing
+丁桥	506
+灵溪	502
+华岩	496	hua yan
+回兴	496	hui xing
+东岭	488	dong ling
+北塘	488	bei tang
+苏坡	481	su po
+湖山	466	hu shan
+鑫源	464	xin yuan
+来马	461	lai ma
+同兴	458	tong xing
+徐庄	450	xu zhuang
+横沙	450	heng sha
+华峰	448	hua feng
+南里	444	nan li
+三洲	442
+东盛	438	dong sheng
+青园	433	qing yuan
+刘村	431	liu cun
+升平	431	sheng ping
+秣陵	429
+姚江	425	yao jiang
+长盛	420	chang sheng
+翠苑	418	cui yuan
+罗店	416	luo dian
+集里	416	ji li
+杉山	412	shan shan
+万丰	410	wan feng
+九溪	410	jiu xi
+龙津	403	long jin
+南林	402
+富春	399
+翠园	390	cui yuan
+林东	389	lin dong
+园岭	382	yuan ling
+新营	380	xin ying
+桂溪	378	gui xi
+宝城	376
+青峰	376	qing feng
+新浦	373
+高龙	371	gao long
+沧口	368
+全福	363	quan fu
+大岭	361	da ling
+上望	357
+金宇	356	jin yu
+塘栖	354	tang qi
+和安	353
+甲西	353	jia xi
+霍营	353
+新南	348	xin nan
+双沟	346	shuang gou
+林丰	345	lin feng
+石溪	345	shi xi
+三港	343	san gang
+彭城	343
+鲁谷	342	lu gu
+朱家尖	341
+肖村	340	xiao cun
+泉源	339
+黄阁	338	huang ge
+小坝	337	xiao ba
+白洋	334	bai yang
+福德	333	fu de
+马站	329
+东凤	327	dong feng
+石角	327	shi jiao
+荆山	321
+希里沟	320	xi li gou
+榆垡	317	yu fa
+东楼	316
+塘口	312	tang kou
+洞井	311	dong jing
+盖德	310	gai de
+窦店	309
+下江	306	xia jiang
+东田	299	dong tian
+柳市	299	liu shi
+福兴	297	fu xing
+簇桥	296
+安沙	295	an sha
+怀德	294
+石海	292
+梁园	287	liang yuan
+新明	286	xin ming
+向山	285
+尧山	283	yao shan
+金珠	282
+塘尾	280	tang wei
+官园	279	guan yuan
+飞云	277
+包谷垴	276	bao gu nao
+黎家	275	li jia
+张坊	273	zhang fang
+水西	271	shui xi
+长陵	270
+平西	268
+采育	266	cai yu
+南田	264	nan tian
+团山	264	tuan shan
+宝都	264	bao du
+华富	263	hua fu
+洪源	263	hong yuan
+灵峰	263	ling feng
+平田	261	ping tian
+洲头	261	zhou tou
+石家	259	shi jia
+五丰	256	wu feng
+享堂	256
+杨园	256	yang yuan
+碣石	256
+双合	254	shuang he
+长新	254	chang xin
+仙桥	253
+东石	252	dong shi
+南塘	252	nan tang
+广源	250	guang yuan
+洪塘	250	hong tang
+景芝	247	jing zhi
+合兴	246	he xing
+大瑶	246	da yao
+怡园	246	yi yuan
+育民	245	yu min
+新义	244	xin yi
+大峪	243	da yu
+伊敏	242	yi min
+章都	242	zhang du
+北峰	239
+板塘	238	ban tang
+樟村	237	zhang cun
+北皋	233	bei gao
+上黄	232
+玉潭	232
+金塘	230	jin tang
+双林	229
+坝河	228	ba he
+河浦	226
+建兴	225
+薛家	224	xue jia
+花石	223	hua shi
+朱桥	222	zhu qiao
+桂湖	219	gui hu
+桂山	218
+瑶溪	218	yao xi
+安良	217	an liang
+德威	217
+乐峰	216	le feng
+程桥	216	cheng qiao
+北蔡	215	bei cai
+梅村	215	mei cun
+涂山	215	tu shan
+新东	214	xin dong
+瓶窑	214	ping yao
+金新	212	jin xin
+青溪	212
+顺峰	212	shun feng
+东澳	209	dong ao
+新前	207	xin qian
+联城	207	lian cheng
+三义	203	san yi
+洪庆	202	hong qing
+盘石	202	pan shi
+东庄	200	dong zhuang
+石固	200	shi gu
+西社	200	xi she
+韭园	200	jiu yuan
+鸿畅	200	hong chang
+斗山	199	dou shan
+石埠	199	shi bu
+东汪	198	dong wang
+洋中	198	yang zhong
+乐城	197	le cheng
+段园	197	duan yuan
+石碁	197	shi qi
+凤栖	196	feng qi
+白营	196	bai ying
+香日德	196	xiang ri de
+北罗	195	bei luo
+塘底	195	tang di
+紫冢	195	zi zhong
+寺庄	194	si zhuang
+昌城	194	chang cheng
+舞泉	194	wu quan
+讲武城	194
+赤山	194
+龙浔	194
+兴泰	193	xing tai
+刁家	193	diao jia
+承安	193	cheng an
+槐阳	192	huai yang
+郄马	192	qie ma
+丁山	191
+密州	191
+汶南	191	wen nan
+遮山	191	zhe shan
+后河	190	hou he
+牛滩	190	niu tan
+金殿	190
+刘店	189	liu dian
+华江	189	hua jiang
+文亭	189	wen ting
+林山	188
+洪凝	188	hong ning
+禾丰	188	he feng
+胡襄	188	hu xiang
+高川	188	gao chuan
+禾山	187	he shan
+边院	187	bian yuan
+霁虹	187	ji hong
+吴台	186	wu tai
+大虞	186	da yu
+洪濑	186	hong lai
+陈留	186
+二道白河	185
+交河	185
+岱崮	185	dai gu
+武灵	185	wu ling
+泉沟	185	quan gou
+钢山	185	gang shan
+尚堂	184	shang tang
+石河	184	shi he
+蠡吾	184	li wu
+兼庄	183	jian zhuang
+李桥	183	li qiao
+枝城	183	zhi cheng
+梧田	183	wu tian
+瓦岗	183
+碧岭	183	bi ling
+峡山	182	xia shan
+息冢	182	xi zhong
+朱阁	182	zhu ge
+河田	182	he tian
+石莱	182	shi lai
+良庄	182	liang zhuang
+丘头	181	qiu tou
+平舒	181	ping shu
+柘溪	181	zhe xi
+院上	180
+伏山	179	fu shan
+唐村	179	tang cun
+松台	179	song tai
+沂城	179	yi cheng
+王答	179	wang da
+虞山	179
+赖店	179	lai dian
+邯邰	179	han tai
+东冶	178	dong ye
+九都	178	jiu du
+弓棚	178	gong peng
+琴江	178	qin jiang
+高塘	177	gao tang
+田横	176	tian heng
+秋渠	176	qiu qu
+路河	176	lu he
+古魏	175	gu wei
+坦埠	175	tan bu
+郓州	175	yun zhou
+安海	174	an hai
+普济	174	pu ji
+王寺	174
+埭头	173	dai tou
+旗口	173	qi kou
+赵堤	173	zhao di
+亭林	172
+前营	172	qian ying
+牛城	172	niu cheng
+直溪	172	zhi xi
+钜桥	172	ju qiao
+麻丘	172	ma qiu
+江背	171	jiang bei
+石岭	171	shi ling
+苏湾	171	su wan
+郭溪	171	guo xi
+临洺关	170	lin ming guan
+双东	170	shuang dong
+汊河	170	cha he
+河坡	170
+相州	170
+锦溪	170	jin xi
+顺店	170	shun dian
+叶邑	169	ye yi
+官山	169	guan shan
+梁北	169	liang bei
+兰沃	168	lan wo
+北郭	168	bei guo
+子位	168
+石帆	168	shi fan
+金园	168	jin yuan
+高朗	168	gao lang
+岳村	167	yue cun
+沙洼	167
+黄务	167	huang wu
+任固	166	ren gu
+石盘	166	shi pan
+韦曲	166	wei qu
+上店	165
+丹朱	165
+慈圣	165	ci sheng
+桃村	165
+登州	165
+益都	165	yi du
+盖山	165	gai shan
+华严	164	hua yan
+开安	164	kai an
+易州	164	yi zhou
+油榨	164
+羊平	164	yang ping
+阳店	164	yang dian
+兴济	163	xing ji
+李园	163	li yuan
+柳园	163	liu yuan
+祥平	163	xiang ping
+增村	162	zeng cun
+涉村	162	she cun
+良村	162	liang cun
+石良	161	shi liang
+碧鸡	161	bi ji
+褚墩	161	chu dun
+黎阳	161	li yang
+北石店	160	bei shi dian
+桑阿	160	sang a
+河桥	160
+浦锦	160	pu jin
+章缝	160	zhang feng
+米村	160	mi cun
+高行	160	gao hang
+起台	159	qi tai
+闻集	159	wen ji
+黄渡	159	huang du
+临齐	158	lin qi
+岭子	158	ling zi
+联芳	158	lian fang
+蒋峪	158	jiang yu
+乌敦套海	157	wu dun tao hai
+北孟	157	bei meng
+域城	157	yu cheng
+永乐店	157
+流口	157	liu kou
+玉湖	157
+皂市	157	zao shi
+范村	157	fan cun
+蛟川	157	jiao chuan
+贾悦	157	jia yue
+郭杜	157	guo du
+彭婆	156	peng po
+曲兴	156	qu xing
+白涧	156	bai jian
+芝田	156	zhi tian
+郭连	156	guo lian
+韩寺	156	han si
+大济	155	da ji
+彭李	155	peng li
+明化	155	ming hua
+繁城	155	fan cheng
+顶山	155	ding shan
+香鹿山	155	xiang lu shan
+后安	154	hou an
+曹镇	154	cao zhen
+螺山	154
+麻园	154	ma yuan
+吕潭	153	lv tan
+炎刘	153	yan liu
+留早	153
+盖尾	153	gai wei
+老湖	153	lao hu
+芦岗	153	lu gang
+远襄	153	yuan xiang
+北留	152	bei liu
+安寨	152	an zhai
+广海	151	guang hai
+晏家	151
+七贤	150
+元村	150	yuan cun
+柏香	149	bai xiang
+罗西	149
+贤寓	149	xian yu
+马楼	149	ma lou
+何官	148	he guan
+桃坪	148	tao ping
+浦沿	148	pu yan
+赤岭	148	chi ling
+长来	148	chang lai
+高坎	148	gao kan
+后溪	147	hou xi
+安和	147	an he
+无梁	147	wu liang
+碑廓	147	bei kuo
+鸿山	147	hong shan
+北台	146	bei tai
+华泾	146	hua jing
+南源	146	nan yuan
+梁堂	146	liang tang
+省庄	146	sheng zhuang
+双甸	145	shuang dian
+土湾	145	tu wan
+新胜	145	xin sheng
+笋岗	145
+襄陵	145
+赤石	145	chi shi
+超化	144	chao hua
+宜山	143	yi shan
+桲罗台	143
+欢口	143	huan kou
+汇龙	143	hui long
+福新	143	fu xin
+任集	142	ren ji
+蠡湖	142
+齐陵	142	qi ling
+乔庄	141	qiao zhuang
+兰阳	141	lan yang
+喜泉	141	xi quan
+望麓园	141
+桥陵	141	qiao ling
+水屯	141	shui tun
+王口	141	wang kou
+郑城	141	zheng cheng
+佘家	140
+古韩	140	gu han
+梅家	140	mei jia
+沙岗	140	sha gang
+郭里	140	guo li
+齐桥	140	qi qiao
+周山	139	zhou shan
+林埭	139	lin dai
+梁家	139
+沙浦	139	sha pu
+翟家	139	zhai jia
+古邵	138
+杜生	138	du sheng
+洋湖	138	yang hu
+琯头	138	guan tou
+英城	138	ying cheng
+南孟	137
+张市	137	zhang shi
+涝坡	137
+艾岗	137	ai gang
+车村	137	che cun
+鸠山	137	jiu shan
+云路	136
+双浦	136	shuang pu
+店集	136	dian ji
+望留	136
+江镇	136	jiang zhen
+白彦	136	bai yan
+西邵	136	xi shao
+奎聚	135
+斜店	135	xie dian
+权村	135	quan cun
+界头	135	jie tou
+福堪	135	fu kan
+鲍店	135	bao dian
+大柳塔	134
+张夏	134	zhang xia
+淞南	134	song nan
+蒲汪	134	pu wang
+高里	134	gao li
+丹竹	133	dan zhu
+井头	133	jing tou
+南旺	133	nan wang
+唐园	133	tang yuan
+孝岗	133	xiao gang
+广化	133	guang hua
+金方	133	jin fang
+莲峰	132	lian feng
+袁坊	132	yuan fang
+郊尾	132	jiao wei
+鸣皋	132	ming gao
+洇溜	131	yin liu
+白潭	131	bai tan
+皇集	131	huang ji
+锁南	131	suo nan
+东旺	130	dong wang
+刘湾	130	liu wan
+只里	130	zhi li
+张鲁	130
+海尾	130	hai wei
+芝山	130
+苍霞	130	cang xia
+下寨	129	xia zhai
+子牙	129	zi ya
+尹庄	129	yin zhuang
+席王	129	xi wang
+柳塘	129	liu tang
+陌南	129	mo nan
+饮马	129
+高崖	129	gao ya
+二堰	128	er yan
+南彰	128	nan zhang
+底阁	128	di ge
+弥河	128
+虹山	128	hong shan
+黄陈	128	huang chen
+八湖	127	ba hu
+冠英	127	guan ying
+城山	127	cheng shan
+府店	127	fu dian
+枫泾	127	feng jing
+栗山	127	li shan
+渔沟	127	yu gou
+溪山	127	xi shan
+上洋	126	shang yang
+前黄	126	qian huang
+宜沟	126	yi gou
+林家村	126
+雪宫	126	xue gong
+吴泾	125	wu jing
+大许	125	da xu
+太山	125	tai shan
+新石	125	xin shi
+玉园	125	yu yuan
+砖埠	125	zhuan bu
+老冢	125	lao zhong
+高沙	125	gao sha
+黄材	125	huang cai
+卜庄	124	bu zhuang
+夏垫	124
+宋古	124	song gu
+彭楼	124	peng lou
+望岳	124	wang yue
+汶河	124
+郫筒	124	pi tong
+三泉	123
+卢峰	123	lu feng
+敬仲	123	jing zhong
+洼里	123	wa li
+浦坝港	123	pu ba gang
+莲前	123	lian qian
+上寨	122	shang zhai
+华漕	122	hua cao
+台头	122	tai tou
+水坡	122	shui po
+赤湖	122
+金南	122	jin nan
+金砂	122	jin sha
+三兴	121	san xing
+东阁	121	dong ge
+前阳	121	qian yang
+洪桥	121	hong qiao
+范坡	121	fan po
+蒲麻	121	pu ma
+丹口	120	dan kou
+枫亭	120	feng ting
+麻塘	120	ma tang
+东孝	119	dong xiao
+康美	119	kang mei
+阿干	119	a gan
+高湖	119	gao hu
+卞庄	118	bian zhuang
+唐庄	118
+海宴	118	hai yan
+濠头	118	hao tou
+盈浦	118	ying pu
+缑氏	118	gou shi
+豫海	118	yu hai
+郑旺	118	zheng wang
+陶乐	118	tao le
+龙居	118	long ju
+东蒙	117	dong meng
+八都	117	ba du
+夏阳	117	xia yang
+大谢集	117
+朱芦	117	zhu lu
+段芦头	117	duan lu tou
+澧阳	117	li yang
+皇华	117	huang hua
+砖路	117
+童家	117	tong jia
+范湖	117	fan hu
+谭坊	117	tan fang
+北马	116	bei ma
+孙祖	116	sun zu
+徂徕	116
+汤河	116	tang he
+爱华	116	ai hua
+金村	116	jin cun
+久隆	115	jiu long
+园山	114	yuan shan
+奉母	114	feng mu
+尧化	114	yao hua
+月坛	114
+翟王	114	zhai wang
+高头	114
+三官	113
+借母溪	113
+小淀	113	xiao dian
+旧寨	113
+板岭	113	ban ling
+汤溪	113	tang xi
+神垕	113	shen hou
+荆姚	113	jing yao
+黄池	113	huang chi
+古南	112	gu nan
+叶亦克	112	ye yi ke
+垂杨	112	chui yang
+岩门	112	yan men
+杨家庄	111
+林源	111	lin yuan
+通泰街	111
+高家村	111
+闻韶	110	wen shao
+东社	109
+僧固	109
+济川	109	ji chuan
+簇锦	109	cu jin
+高都	109	gao du
+鲁庄	109
+汲冢	108	ji zhong
+洧川	108	wei chuan
+邢邑	108	xing yi
+郎岱	108	lang dai
+钱山	108	qian shan
+首山	108	shou shan
+七家	107	qi jia
+三垟	107	san yang
+于河	107	yu he
+坡胡	107	po hu
+普拉底	107	pu la di
+梁召	107	liang zhao
+袁桥	107	yuan qiao
+贾庄	107
+阜山	107	fu shan
+黄塘	107	huang tang
+华洲	106	hua zhou
+双八	106	shuang ba
+始丰	106	shi feng
+海头	106	hai tou
+道东	106	dao dong
+长福	106	chang fu
+麻步	106	ma bu
+五井	105
+位伯	105	wei bo
+古绛	105	gu jiang
+张阁	105	zhang ge
+杜曲	105	du qu
+梁村	105	liang cun
+璧泉	105	bi quan
+长港	105	chang gang
+青湖	105
+骑岭	105	qi ling
+凤林	104	feng lin
+康安	104	kang an
+龙西	104	long xi
+瑶峰	103	yao feng
+田湖	103	tian hu
+银坑	103	yin keng
+长田	103	chang tian
+佃庄	102	dian zhuang
+岳城	102	yue cheng
+新嘉	102	xin jia
+新度	102	xin du
+田柳	102
+磨街	102	mo jie
+五里堆	101
+别山	101	bie shan
+横塘	101	heng tang
+洞山	101	dong shan
+石咀	101	shi zui
+蔡店	101	cai dian
+梅田	100	mei tian
+东新	50	dong xin
+东溪	50	dong xi
+中坝	50	zhong ba
+义井	50	yi jing
+乌石	50	wu shi
+九华	50	jiu hua
+九峰	50	jiu feng
+五山	50	wu shan
+南屏	50	nan ping
+南市	50	nan shi
+双塘	50	shuang tang
+夏庄	50	xia zhuang
+大坪	50	da ping
+大源	50	da yuan
+大溪	50	da xi
+宝峰	50	bao feng
+张桥	50	zhang qiao
+张集	50	zhang ji
+恰尔巴格	50	qia er ba ge
+新合	50	xin he
+新寨	50	xin zhai
+新庄	50	xin zhuang
+新江	50	xin jiang
+新阳	50	xin yang
+新集	50	xin ji
+景阳	50	jing yang
+桃溪	50	tao xi
+梅溪	50	mei xi
+沙坪	50	sha ping
+沙头	50	sha tou
+河头	50	he tou
+清源	50	qing yuan
+潭头	50	tan tou
+狮山	50	shi shan
+田坝	50	tian ba
+田庄	50	tian zhuang
+石井	50	shi jing
+石牌	50	shi pai
+竹园	50	zhu yuan
+纸坊	50	zhi fang
+罗溪	50	luo xi
+胡集	50	hu ji
+花桥	50	hua qiao
+蟠龙	50	pan long
+西坪	50	xi ping
+西沟	50	xi gou
+赤溪	50	chi xi
+辛庄	50	xin zhuang
+金河	50	jin he
+长塘	50	chang tang
+陈店	50	chen dian
+马集	50	ma ji
+高岭	50	gao ling
+高庙	50	gao miao
+黄岗	50	huang gang
+黄村	50	huang cun
+黄柏	50	huang bai
+黄田	50	huang tian
+龙坪	50	long ping

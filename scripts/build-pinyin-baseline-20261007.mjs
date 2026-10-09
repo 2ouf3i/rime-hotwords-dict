@@ -233,7 +233,7 @@ export function builtinDictPath(path) {
  * 但那是巧合:上游哪天给 tencent 调一次权重,我们阈值的语义就变了,**而且是静默变**。
  * 所以选择写成文件白名单,让「要什么、不要什么」是显式的。
  *
- * ⚠️ 顺序即优先级(同词同读音取第一次；其他读音保留)。
+ * ⚠️ 顺序即优先级(同词只取第一次出现,与 rime 的 import 顺序一致)。
  * 原来靠 `readdirSync` 的字母序**碰巧**让 base 排在 ext 前面 —— 那不是保证,是运气。
  *
  * 排除的两个,理由:
@@ -476,9 +476,6 @@ export function applyPhraseWeights({ mainRows, autoRows, overrides }) {
   const main = mainRows.map((row) => {
     const o = byWord.get(row.word);
     if (!o) return row;
-    // 没标读音的权重只调优先来源里的主读音，不能顺手抬高恢复的其他读音。
-    // 想调另一个读音要在表里明确写拼音；保持既有调频含义与恢复读音原权重。
-    if (!o.pinyin && hitInMain.has(row.word)) return row;
     if (o.pinyin && o.pinyin !== row.pinyin) { conflicted.add(row.word); return row; }
     hit.add(row.word);
     hitInMain.add(row.word);
@@ -600,10 +597,8 @@ function main() {
     if (!present.has(f)) throw new Error(`登记的词表 ${f} 不在 ${inDir} 里 —— 上游改名了?宁可报错也不静默产出一份小词库`);
     for (const line of readFileSync(join(inDir, f), 'utf8').split('\n')) {
       const row = parseDictLine(line);
-      // 同词同读音才去重；多音词和单字的其他读音必须保留。
-      // 同一「词 + 拼音」取优先来源(base 先于 ext)，不能按词形丢掉后续读音。
-      const key = row && JSON.stringify([row.word, row.pinyin]);
-      if (row && !seen.has(key)) { seen.add(key); rows.push(row); }
+      // 同词只取第一次出现(base 先于 ext,与 rime 的 import 顺序一致)
+      if (row && !seen.has(row.word)) { seen.add(row.word); rows.push(row); }
     }
   }
   const warning = minWeightWarning(minWeight);

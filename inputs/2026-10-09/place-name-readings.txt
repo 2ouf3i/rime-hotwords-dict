@@ -1,0 +1,172 @@
+# Ninan 地名读音表 —— backend/scripts/gen-place-names.mjs 给「词库里还没有的地名」定读音时用(行政区划数据不带读音)。
+# 这份表本身不进词库构建,也不进同步镜像;它是生成 place-names.txt 的输入之一。
+#
+# 写法:一行两列,Tab 分隔。
+#   长<Tab>chang          ← 一个字:这个多音字在地名里默认读什么
+#   长子<Tab>zhang zi     ← 两个字以上:整词的读音(优先于逐字拼;也用来记默认读音的例外)
+#   某某<Tab>-            ← 两个字以上:这个名字不收(读音拿不准)
+# 读音用上游词库的写法:小写、不带声调、音节之间一个空格,ü 写成 v(绿 lv、略 lve)。
+#
+# 出处:都是字典 / 地名志上的规范读音,按常识逐条写的、写的时候逐条想过;不来自任何别家产品。
+# 没把握的字不写 —— 生成脚本遇到「有多音字、这里又没有交代」的名字会整个不收(宁可缺,不给错的读音)。
+# 生成脚本的 --report 会列出:没收的名字(skipped.tsv)、逐字拼出来与上游读音不一样的(chars-vs-upstream.tsv)、
+# 与 pinyin-pro 不一样的(reading-diffs.tsv)。往这里加字 / 加词之前先看那三份。
+
+# ── 多音字在地名里的默认读音 ──
+# (另一个读音在地名里基本不出现,或者只出现在下面「整词」里列出的例外里)
+家	jia
+大	da
+南	nan
+石	shi
+屯	tun
+阿	a
+长	chang
+都	du
+勒	le
+区	qu
+乐	le
+和	he
+洞	dong
+红	hong
+合	he
+地	di
+万	wan
+六	liu
+什	shi
+扎	zha
+谷	gu
+那	na
+卡	ka
+柏	bai
+县	xian
+广	guang
+底	di
+陶	tao
+厂	chang
+车	che
+齐	qi
+会	hui
+丁	ding
+盛	sheng
+景	jing
+许	xu
+其	qi
+召	zhao
+汤	tang
+贾	jia
+角	jiao
+盖	gai
+提	ti
+冯	feng
+佛	fo
+巷	xiang
+色	se
+伯	bo
+艾	ai
+叶	ye
+尾	wei
+沈	shen
+夹	jia
+屏	ping
+觉	jue
+卜	bu
+奇	qi
+陆	lu
+落	luo
+脚	jiao
+咀	zui
+得	de
+杉	shan
+腊	la
+乾	qian
+翟	zhai
+虹	hong
+殷	yin
+澄	cheng
+氏	shi
+育	yu
+强	qiang
+沐	mu
+宿	su
+露	lu
+敦	dun
+褚	chu
+度	du
+峒	dong
+繁	fan
+绿	lv
+革	ge
+曾	zeng
+臧	zang
+蛇	she
+省	sheng
+桔	ju
+仔	zai
+顿	dun
+骑	qi
+雀	que
+略	lve
+折	zhe
+寻	xun
+便	bian
+佃	dian
+碌	lu
+鸟	niao
+熟	shu
+栖	qi
+期	qi
+驮	tuo
+约	yue
+无	wu
+综	zong
+尺	chi
+炮	pao
+拾	shi
+俞	yu
+稽	ji
+旁	pang
+员	yuan
+颈	jing
+核	he
+莞	guan
+且	qie
+戌	xu
+属	shu
+不	bu
+绰	chuo
+浅	qian
+虾	xia
+阚	kan
+脉	mai
+宛	wan
+倘	tang
+娜	na
+莎	sha
+
+# ── 整词(默认读音的例外,和上面没有给默认读音的多音字)──
+六安	lu an
+六合	lu he
+长子	zhang zi
+洪洞	hong tong
+东阿	dong e
+大城	dai cheng
+乐清	yue qing
+乐亭	lao ting
+乐陵	lao ling
+召陵	shao ling
+崆峒	kong tong
+黄陂	huang pi
+平乐	ping le
+青石咀	qing shi zui
+长官庙	zhang guan miao
+泊头	bo tou
+尉氏	wei shi
+龙圩	long xu
+富蕴	fu yun
+车陂	che bei
+塘厦	tang xia
+莘庄	xin zhuang
+
+# ── 不收(读音拿不准)──
+大夫营子	-
+称多	-
