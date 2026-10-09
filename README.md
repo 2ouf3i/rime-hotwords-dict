@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Release 61331724 (2026-10-09)
+
+This release adds 451 reviewed word forms to 34da8ee0. The main table contains 897,589 entries; the 981,645-entry auto-reading table is unchanged. Including the legacy table, there are 1,886,191 distinct strings. Existing dictionary bytes and personal learning data are preserved. Readings were cross-checked independently and weights calibrated with full-pinyin and nine-key regression checks.
+
+Using the same fixed upstream checkout described below, run:
+
+```bash
+bash scripts/reproduce-61331724.sh "$PWD/rime-ice" "$PWD/reproduced-61331724"
+```
+
+The script reproduces 34da8ee0, appends the frozen selected input in `inputs/2026-10-09-round2`, and verifies both SHA256 hashes and byte counts. This batch was validated with librime 1.16.1 on a Mac; phone latency and installation were not measured in this batch. The `dict/lexicon-expansion.txt` input for future normal builds contains all 3,491 additions from these two expansion batches. Emoji, next-word data, and the language model are unchanged.
+
 ## Release 34da8ee0 (2026-10-09)
 
 This release adds 3,040 distinct word forms to fc34a9ed. The main table contains 897,138 entries; the 981,645-entry auto-reading table is unchanged. Main, auto-reading, and legacy tables contain 1,885,740 distinct strings in total. Existing dictionary bytes are preserved; reviewed expressions are appended with independently checked readings and assigned weights. Offline full-pinyin and nine-key conflict checks protect existing correct first candidates. Personal learning data is not included or reset.

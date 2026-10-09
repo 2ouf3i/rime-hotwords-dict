@@ -27,3 +27,7 @@ No personal user text or user learning database is included. Auxiliary generatio
 ## 2026-10-09 expansion
 
 The 3,040-entry expansion contains reviewed everyday and work vocabulary plus complete chat expressions, using user-provided local WeChat and Doubao keyboard lexical observations to identify missing word forms. It also includes 220 expressions selected from the previously downloaded Tatoeba Chinese sentence export described above. The product owner is responsible for the reference-data usage rights. The complete reference exports are not distributed. Readings were independently cross-checked; weights and conflict adjustments were assigned by Ninan, without distributing reference frequency scores, model data, or executable code. The frozen selected input is included, so exact reproduction does not require those reference exports.
+
+## 2026-10-09 second enrichment
+
+The 451-entry second enrichment reuses the local reference lexical observations described above; no new source dataset was downloaded. Independently reviewed daily, work, food, and common product/application word forms were selected. The complete reference exports are not distributed. Readings were checked against existing dictionaries and pinyin-pro, and weights were assigned and conflict-adjusted by Ninan. The frozen final selected input is included, so exact reproduction does not require reference exports or private review tools. No personal user text or learning data is included.

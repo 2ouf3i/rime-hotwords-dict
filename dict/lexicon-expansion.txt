@@ -3041,3 +3041,457 @@
 终于看完了	2000	zhong yu kan wan le
 字面意思啊	2000	zi mian yi si a
 走出来了吗	50	zou chu lai le ma
+
+# 2026-10-09 第二批：451 个经独立读音、候选、回归及学习验证的新词
+# 权重由 Ninan 标定；九宫格冲突护栏保留旧正确首选；本批最终权重为 5 / 50 / 1000 / 2000
+班课	1000	ban ke
+磅单	50	bang dan
+报课	1000	bao ke
+不堵	1000	bu du
+拆卡	50	chai ka
+长隆	50	chang long
+吃啦	50	chi la
+春款	50	chun kuan
+纯奶	50	chun nai
+大工	1000	da gong
+代班	50	dai ban
+地锅	1000	di guo
+点工	50	dian gong
+钓箱	50	diao xiang
+定妆	50	ding zhuang
+抖店	50	dou dian
+对班	50	dui ban
+儿保	50	er bao
+发膜	50	fa mo
+仿赛	50	fang sai
+方特	50	fang te
+斐乐	50	fei le
+分货	50	fen huo
+封板	50	feng ban
+副班	1000	fu ban
+赶货	1000	gan huo
+古茗	50	gu ming
+光遇	1000	guang yu
+国开	50	guo kai
+海油	1000	hai you
+核磁	1000	he ci
+盒马	50	he ma
+互关	1000	hu guan
+互赞	1000	hu zan
+换课	1000	huan ke
+换群	50	huan qun
+回吧	50	hui ba
+回关	1000	hui guan
+回啦	50	hui la
+回你	50	hui ni
+鸡架	1000	ji jia
+季卡	50	ji ka
+极兔	1000	ji tu
+姜茶	50	jiang cha
+蕉下	1000	jiao xia
+捷途	50	jie tu
+接娃	50	jie wa
+进件	1000	jin jian
+进面	50	jin mian
+镜柜	50	jing gui
+客群	50	ke qun
+客资	1000	ke zi
+跨考	50	kua kao
+连帽	1000	lian mao
+量房	1000	liang fang
+亮面	1000	liang mian
+零跑	50	ling pao
+留资	1000	liu zi
+龙膜	50	long mo
+漏保	50	lou bao
+录课	1000	lu ke
+麻薯	50	ma shu
+美业	50	mei ye
+磨课	50	mo ke
+诺如	50	nuo ru
+跑操	1000	pao cao
+品保	50	pin bao
+评课	1000	ping ke
+企微	1000	qi wei
+强险	1000	qiang xian
+清货	1000	qing huo
+去冰	1000	qu bing
+全季	1000	quan ji
+融创	50	rong chuang
+散单	1000	san dan
+三薪	50	san xin
+上麦	50	shang mai
+上票	1000	shang piao
+实车	50	shi che
+试课	1000	shi ke
+首件	1000	shou jian
+手膜	50	shou mo
+刷课	50	shua ke
+双床	50	shuang chuang
+睡呀	50	shui ya
+私单	1000	si dan
+送完	1000	song wan
+台铃	50	tai ling
+碳板	1000	tan ban
+谈单	1000	tan dan
+汤饭	50	tang fan
+特岗	50	te gang
+腾势	50	teng shi
+退卡	50	tui ka
+万豪	1000	wan hao
+完赛	50	wan sai
+尾箱	1000	wei xiang
+沃柑	1000	wo gan
+西梅	1000	xi mei
+洗鞋	1000	xi xie
+虾滑	1000	xia hua
+夏款	50	xia kuan
+先忙	50	xian mang
+先玩	1000	xian wan
+效期	1000	xiao qi
+校赛	1000	xiao sai
+新单	1000	xin dan
+醒图	50	xing tu
+星耀	1000	xing yao
+续房	1000	xu fang
+续卡	50	xu ka
+续住	1000	xu zhu
+学考	1000	xue kao
+雅迪	50	ya di
+亚朵	50	ya duo
+岩板	1000	yan ban
+怡宝	1000	yi bao
+移车	1000	yi che
+易车	1000	yi che
+银保	1000	yin bao
+永旺	50	yong wang
+鱼竿	1000	yu gan
+约考	1000	yue kao
+约课	1000	yue ke
+再弄	50	zai nong
+再睡	50	zai shui
+再约	50	zai yue
+找您	1000	zhao nin
+主班	1000	zhu ban
+主卡	50	zhu ka
+转卡	50	zhuan ka
+转奶	50	zhuan nai
+装灯	50	zhuang deng
+做货	1000	zuo huo
+爱依服	50	ai yi fu
+八佰伴	50	ba bai ban
+白夜班	50	bai ye ban
+包厢号	50	bao xiang hao
+别墨迹	50	bie mo ji
+菠萝蜜	50	bo luo mi
+不充了	50	bu chong le
+不练车	50	bu lian che
+充电款	50	chong dian kuan
+充会电	50	chong hui dian
+重新发	50	chong xin fa
+打样费	50	da yang fei
+大月卡	50	da yue ka
+带耳机	50	dai er ji
+等下课	50	deng xia ke
+发完货	50	fa wan huo
+放完假	50	fang wan jia
+费大厨	50	fei da chu
+分期乐	50	fen qi le
+分析下	50	fen xi xia
+付了吗	50	fu le ma
+干完饭	50	gan wan fan
+刚跑完	50	gang pao wan
+功夫茶	50	gong fu cha
+挂掉了	50	gua diao le
+挂上了	50	gua shang le
+过去拿	50	guo qu na
+还没起	50	hai mei qi
+喊不动	50	han bu dong
+核销码	50	he xiao ma
+恒温壶	50	heng wen hu
+换掉了	50	huan diao le
+寄件码	50	ji jian ma
+鸡脚筋	50	ji jiao jin
+鸡锁骨	50	ji suo gu
+驾意险	50	jia yi xian
+剪好了	50	jian hao le
+交完班	50	jiao wan ban
+就不打	50	jiu bu da
+就想吐	50	jiu xiang tu
+酷家乐	50	ku jia le
+来陪我	50	lai pei wo
+留点钱	50	liu dian qian
+留好了	50	liu hao le
+硫磺皂	50	liu huang zao
+录进去	50	lu jin qu
+卖了吗	50	mai le ma
+慢慢干	50	man man gan
+没耳机	50	mei er ji
+没关灯	50	mei guan deng
+没活了	50	mei huo le
+没结账	50	mei jie zhang
+美乐蒂	50	mei le di
+没信息	50	mei xin xi
+没走呢	50	mei zou ne
+茉酸奶	50	mo suan nai
+拿到证	50	na dao zheng
+能开票	50	neng kai piao
+你上线	50	ni shang xian
+粘豆包	50	nian dou bao
+弄上去	50	nong shang qu
+培训完	50	pei xun wan
+批完了	50	pi wan le
+起早了	50	qi zao le
+钱到了	50	qian dao le
+签到码	50	qian dao ma
+签一下	50	qian yi xia
+请教你	50	qing jiao ni
+请天假	50	qing tian jia
+取货码	50	qu huo ma
+取完了	50	qu wan le
+商家码	50	shang jia ma
+上楼费	50	shang lou fei
+手工单	50	shou gong dan
+收货码	50	shou huo ma
+送完货	50	song wan huo
+提前说	50	ti qian shuo
+统计下	50	tong ji xia
+拖完地	50	tuo wan di
+未打卡	50	wei da ka
+问好了	50	wen hao le
+我不回	50	wo bu hui
+我那边	50	wo na bian
+我宿舍	50	wo su she
+我歇会	50	wo xie hui
+喜德盛	50	xi de sheng
+西兰花	50	xi lan hua
+下去拿	50	xia qu na
+先准备	50	xian zhun bei
+卸完车	50	xie wan che
+卸完了	50	xie wan le
+信誉楼	50	xin yu lou
+学好了	50	xue hao le
+延时班	50	yan shi ban
+延时课	50	yan shi ke
+壹方城	50	yi fang cheng
+已好评	50	yi hao ping
+已转发	50	yi zhuan fa
+用微信	50	yong wei xin
+有单号	50	you dan hao
+有发票	50	you fa piao
+有现车	50	you xian che
+有质保	50	you zhi bao
+语音条	50	yu yin tiao
+在开机	50	zai kai ji
+在值班	50	zai zhi ban
+早回去	50	zao hui qu
+早早睡	50	zao zao shui
+住一块	50	zhu yi kuai
+装完车	50	zhuang wan che
+自己吃	50	zi ji chi
+自己住	50	zi ji zhu
+作业票	50	zuo ye piao
+爱不爱吃	2000	ai bu ai chi
+爱答不理	50	ai da bu li
+保存下来	50	bao cun xia lai
+波西米亚	50	bo xi mi ya
+不就行吗	50	bu jiu xing ma
+不客气呀	50	bu ke qi ya
+不可以吧	50	bu ke yi ba
+不说算了	50	bu shuo suan le
+不行再说	50	bu xing zai shuo
+采访一下	50	cai fang yi xia
+差点睡着	50	cha dian shui zhao
+车还没来	50	che hai mei lai
+出不出门	50	chu bu chu men
+出来干嘛	50	chu lai gan ma
+出来就行	50	chu lai jiu xing
+传达一下	50	chuan da yi xia
+穿多大码	2000	chuan duo da ma
+大家都有	50	da jia dou you
+倒是真的	50	dao shi zhen de
+等会出去	2000	deng hui chu qu
+第一次用	50	di yi ci yong
+都比较忙	50	dou bi jiao mang
+都不够花	50	dou bu gou hua
+都不熟悉	50	dou bu shu xi
+都没吃饱	50	dou mei chi bao
+都没发生	50	dou mei fa sheng
+都欺负我	50	dou qi fu wo
+都要加班	50	dou yao jia ban
+发邮件了	50	fa you jian le
+饭吃了吗	50	fan chi le ma
+粉面菜蛋	50	fen mian cai dan
+复制不了	50	fu zhi bu liao
+赶不回去	50	gan bu hui qu
+搞七搞八	2000	gao qi gao ba
+告诉我呀	50	gao su wo ya
+隔三差五	50	ge san cha wu
+给我单号	50	gei wo dan hao
+恭喜贺喜	50	gong xi he xi
+过来这边	50	guo lai zhe bian
+过去一趟	50	guo qu yi tang
+还不想吃	50	hai bu xiang chi
+还没吃好	50	hai mei chi hao
+还没工作	50	hai mei gong zuo
+还没讲完	2000	hai mei jiang wan
+还没进来	50	hai mei jin lai
+还挺严重	50	hai ting yan zhong
+还挺早的	50	hai ting zao de
+还要上学	50	hai yao shang xue
+还真不少	50	hai zhen bu shao
+好多作业	50	hao duo zuo ye
+黑乎乎的	50	hei hu hu de
+换个别的	50	huan ge bie de
+换一下吧	50	huan yi xia ba
+回忆起来	50	hui yi qi lai
+寄回来了	50	ji hui lai le
+煎饼果子	50	jian bing guo zi
+叫我起来	50	jiao wo qi lai
+结不了账	50	jie bu liao zhang
+尽量早点	50	jin liang zao dian
+就不聊了	50	jiu bu liao le
+就不能用	50	jiu bu neng yong
+就不痛了	50	jiu bu tong le
+就不同意	50	jiu bu tong yi
+就好说了	50	jiu hao shuo le
+就很厉害	50	jiu hen li hai
+就行了嘛	50	jiu xing le ma
+就这些吧	50	jiu zhe xie ba
+看了看了	50	kan le kan le
+看着挺好	50	kan zhe ting hao
+靠我自己	50	kao wo zi ji
+可高兴了	50	ke gao xing le
+可没意思	50	ke mei yi si
+可以开票	2000	ke yi kai piao
+可以玩吗	50	ke yi wan ma
+快开学了	50	kuai kai xue le
+脸都没洗	50	lian dou mei xi
+两三小时	50	liang san xiao shi
+妈妈驿站	50	ma ma yi zhan
+买这买那	50	mai zhe mai na
+忙完没有	50	mang wan mei you
+没看见他	2000	mei kan jian ta
+没拿手机	50	mei na shou ji
+没骗你吧	2000	mei pian ni ba
+没输没赢	50	mei shu mei ying
+没想出来	50	mei xiang chu lai
+没有出来	50	mei you chu lai
+没有固定	50	mei you gu ding
+没有提示	50	mei you ti shi
+没有听到	50	mei you ting dao
+没有信息	50	mei you xin xi
+密码不对	50	mi ma bu dui
+迷之自信	50	mi zhi zi xin
+磨磨唧唧	50	mo mo ji ji
+那挺不错	50	na ting bu cuo
+你别骂我	2000	ni bie ma wo
+你搞好了	50	ni gao hao le
+你看得懂	50	ni kan de dong
+你考上了	50	ni kao shang le
+你起床没	2000	ni qi chuang mei
+你上了吗	50	ni shang le ma
+你也去吧	50	ni ye qu ba
+跑哪里去	2000	pao na li qu
+跷脚牛肉	2000	qiao jiao niu rou
+切磋一下	50	qie cuo yi xia
+去不去吃	50	qu bu qu chi
+去哪找你	50	qu na zhao ni
+三花淡奶	50	san hua dan nai
+是固定的	50	shi gu ding de
+是两码事	50	shi liang ma shi
+手机不行	50	shou ji bu xing
+说就行了	50	shuo jiu xing le
+算不错了	50	suan bu cuo le
+泰兰尼斯	2000	tai lan ni si
+太期待了	50	tai qi dai le
+躺被窝里	50	tang bei wo li
+天地壹号	50	tian di yi hao
+调整过来	50	tiao zheng guo lai
+我不会买	2000	wo bu hui mai
+我刚毕业	2000	wo gang bi ye
+我刚试了	50	wo gang shi le
+我还在玩	2000	wo hai zai wan
+我很理解	50	wo hen li jie
+我回去拿	50	wo hui qu na
+我看得懂	50	wo kan de dong
+我拉黑你	2000	wo la hei ni
+我没回他	50	wo mei hui ta
+我去刷牙	50	wo qu shua ya
+我去听听	50	wo qu ting ting
+我去洗脸	50	wo qu xi lian
+我受伤了	50	wo shou shang le
+我睡会觉	50	wo shui hui jiao
+我也想走	50	wo ye xiang zou
+我用不着	50	wo yong bu zhao
+我在看书	50	wo zai kan shu
+我做任务	50	wo zuo ren wu
+吾辈楷模	2000	wu bei kai mo
+下班再说	50	xia ban zai shuo
+下午发货	2000	xia wu fa huo
+下午考试	50	xia wu kao shi
+先吃东西	50	xian chi dong xi
+现在有吗	50	xian zai you ma
+小心眼子	50	xiao xin yan zi
+需要提前	50	xu yao ti qian
+学不下去	50	xue bu xia qu
+学习到了	50	xue xi dao le
+要等好久	50	yao deng hao jiu
+要那么久	50	yao na me jiu
+要是不行	50	yao shi bu xing
+也查不到	50	ye cha bu dao
+也太慢了	5	ye tai man le
+一大早上	50	yi da zao shang
+已经打了	50	yi jing da le
+一起玩呀	50	yi qi wan ya
+一直拖着	50	yi zhi tuo zhe
+又不耽误	50	you bu dan wu
+有钱就行	50	you qian jiu xing
+有人要了	50	you ren yao le
+在家呆着	50	zai jia dai zhe
+早饭了吗	50	zao fan le ma
+早早睡了	50	zao zao shui le
+怎么回你	50	zen me hui ni
+怎么找你	50	zen me zhao ni
+涨知识了	50	zhang zhi shi le
+找不见了	50	zhao bu jian le
+这个厉害	50	zhe ge li hai
+这样理解	50	zhe yang li jie
+直接进去	50	zhi jie jin qu
+转不了账	50	zhuan bu liao zhang
+装不上去	50	zhuang bu shang qu
+做生意了	50	zuo sheng yi le
+做作业了	50	zuo zuo ye le
+被你打败了	2000	bei ni da bai le
+醋溜土豆丝	50	cu liu tu dou si
+干部履历表	2000	gan bu lv li biao
+干锅辣鸭头	2000	gan guo la ya tou
+火爆大头菜	2000	huo bao da tou cai
+科学计数法	50	ke xue ji shu fa
+留也留不住	50	liu ye liu bu zhu
+螺旋测微器	2000	luo xuan ce wei qi
+那倒也不是	2000	na dao ye bu shi
+那都不算事	50	na dou bu suan shi
+那我没办法	50	na wo mei ban fa
+你说是就是	50	ni shuo shi jiu shi
+你先打一把	2000	ni xian da yi ba
+烧饼夹里脊	2000	shao bing jia li ji
+社会实践部	50	she hui shi jian bu
+生气归生气	2000	sheng qi gui sheng qi
+时间比较紧	2000	shi jian bi jiao jin
+实验报告册	2000	shi yan bao gao ce
+睡也睡不着	50	shui ye shui bu zhao
+蒜蓉油麦菜	2000	suan rong you mai cai
+旺旺小小酥	2000	wang wang xiao xiao su
+我需要安慰	2000	wo xu yao an wei
+我也管不着	2000	wo ye guan bu zhao
+心理情景剧	2000	xin li qing jing ju
+有舍必有得	50	you she bi you de
+有事你说话	2000	you shi ni shuo hua
+又睡了一觉	50	you shui le yi jiao
+有因就有果	2000	you yin jiu you guo
+在哪里买的	2000	zai na li mai de
+那也没办法啊	2000	na ye mei ban fa a
+你一半我一半	2000	ni yi ban wo yi ban
+好心当作驴肝肺	2000	hao xin dang zuo lv gan fei
+风声鹤唳草木皆兵	2000	feng sheng he li cao mu jie bing
