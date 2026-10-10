@@ -1,0 +1,318 @@
+# 第四批离线扩词预览；未接入自动发布；权重为 Ninan 自定，不沿用来源频次
+氨酚	50	an fen
+暗装	50	an zhuang
+班型	50	ban xing
+报建	6000	bao jian
+备班	5554	bei ban
+笔数	6000	bi shu
+鼻贴	6000	bi tie
+臂围	50	bi wei
+边柜	3149	bian gui
+标品	50	biao pin
+补焊	6000	bu han
+补开	50	bu kai
+采销	1839	cai xiao
+测井	50	ce jing
+产调	1334	chan diao
+产投	50	chan tou
+次新	6000	ci xin
+大货	6000	da huo
+带钻	50	dai zuan
+党日	6000	dang ri
+挡水	50	dang shui
+等保	50	deng bao
+底布	6000	di bu
+底盖	50	di gai
+底壳	50	di ke
+店助	50	dian zhu
+叠墅	50	die shu
+对单	50	dui dan
+吨桶	50	dun tong
+多冰	50	duo bing
+粉水	50	fen shui
+封样	50	feng yang
+富硒	6000	fu xi
+膏方	6000	gao fang
+工班	6000	gong ban
+挂证	50	gua zheng
+罐区	6000	guan qu
+杭椒	50	hang jiao
+红本	50	hong ben
+换单	6000	huan dan
+回寄	6000	hui ji
+回切	50	hui qie
+渐层	50	jian ceng
+讲者	6000	jiang zhe
+交表	2544	jiao biao
+脚线	6000	jiao xian
+接岗	50	jie gang
+结钱	6000	jie qian
+戒糖	50	jie tang
+竞业	6000	jing ye
+酒单	349	jiu dan
+旧件	3332	jiu jian
+卡单	50	ka dan
+卡头	50	ka tou
+开图	1	kai tu
+科任	50	ke ren
+课设	50	ke she
+扣罚	50	kou fa
+快贷	50	kuai dai
+矿卡	50	kuang ka
+来图	50	lai tu
+留档	1574	liu dang
+留房	6000	liu fang
+盲板	50	mang ban
+密卷	50	mi juan
+模电	50	mo dian
+奶锅	50	nai guo
+欧标	50	ou biao
+盘扣	50	pan kou
+盘螺	6000	pan luo
+配队	50	pei dui
+皮冻	6000	pi dong
+品项	50	pin xiang
+品宣	50	pin xuan
+平口	50	ping kou
+平拍	50	ping pai
+破音	50	po yin
+起痘	50	qi dou
+抢券	50	qiang quan
+球机	6000	qiu ji
+圈层	50	quan ceng
+全瓷	50	quan ci
+券码	50	quan ma
+三责	332	san ze
+上量	6000	shang liang
+申根	50	shen gen
+深户	6000	shen hu
+生科	3332	sheng ke
+食安	6000	shi an
+市调	6000	shi diao
+手酸	50	shou suan
+手台	50	shou tai
+竖式	6000	shu shi
+双持	50	shuang chi
+水稳	50	shui wen
+碎屏	50	sui ping
+套卷	50	tao juan
+填单	6000	tian dan
+桶面	50	tong mian
+头层	50	tou ceng
+图斑	50	tu ban
+挖机	1829	wa ji
+外采	50	wai cai
+外开	50	wai kai
+外丝	50	wai si
+微糖	50	wei tang
+现摘	50	xian zhai
+箱单	6000	xiang dan
+消保	6000	xiao bao
+销控	6000	xiao kong
+销项	6000	xiao xiang
+卸料	1204	xie liao
+验号	6000	yan hao
+腌料	6000	yan liao
+阳角	6000	yang jiao
+异业	6000	yi ye
+院感	6000	yuan gan
+院级	6000	yuan ji
+再测	50	zai ce
+炸板	2639	zha ban
+账套	1	zhang tao
+招采	6000	zhao cai
+找货	6000	zhao huo
+蒸烤	50	zheng kao
+重车	50	zhong che
+中岛	3234	zhong dao
+中筒	6000	zhong tong
+中样	6000	zhong yang
+专包	50	zhuan bao
+转线	6000	zhuan xian
+自招	6000	zi zhao
+坐岗	50	zuo gang
+结下账	50	jie xia zhang
+没发出	50	mei fa chu
+没接通	50	mei jie tong
+密码呢	50	mi ma ne
+已打款	50	yi da kuan
+原单号	50	yuan dan hao
+再发吧	50	zai fa ba
+爱人利物	2000	ai ren li wu
+安枕而卧	2000	an zhen er wo
+百事大吉	50	bai shi da ji
+不敢掠美	50	bu gan lve mei
+不轨之徒	50	bu gui zhi tu
+不教之教	50	bu jiao zhi jiao
+不拘细节	50	bu ju xi jie
+不觉技痒	50	bu jue ji yang
+不劳而成	2000	bu lao er cheng
+不知世务	50	bu zhi shi wu
+材疏志大	50	cai shu zhi da
+藏巧于拙	50	cang qiao yu zhuo
+豺虎肆虐	50	chai hu si nve
+长颈鸟喙	50	chang jing niao hui
+长算远略	50	chang suan yuan lve
+称赏不已	50	cheng shang bu yi
+逞凶肆虐	50	cheng xiong si nve
+痴儿呆女	2000	chi er dai nv
+吃里扒外	50	chi li pa wai
+齿如含贝	2000	chi ru han bei
+唇干口燥	2000	chun gan kou zao
+辞严义正	50	ci yan yi zheng
+大车以载	50	da che yi zai
+当家立计	1	dang jia li ji
+道同契合	50	dao tong qi he
+德容言功	1	de rong yan gong
+砥节励行	50	di jie li xing
+遁迹藏名	50	dun ji cang ming
+二竖为虐	50	er shu wei nve
+发蒙解缚	2000	fa meng jie fu
+犯而勿校	2000	fan er wu xiao
+翻然悔悟	50	fan ran hui wu
+放言遣辞	50	fang yan qian ci
+蜚短流长	50	fei duan liu chang
+忿忿不平	50	fen fen bu ping
+忿世嫉俗	50	fen shi ji su
+风前月下	2000	feng qian yue xia
+丰姿绰约	50	feng zi chuo yue
+负重含污	2000	fu zhong han wu
+负重吞污	2000	fu zhong tun wu
+羹藜含糗	50	geng li han qiu
+固步自封	50	gu bu zi feng
+归根结蒂	50	gui gen jie di
+圭角不露	50	gui jiao bu lu
+归真反璞	50	gui zhen fan pu
+过甚其辞	50	guo shen qi ci
+含垢藏瑕	50	han gou cang xia
+含糊其辞	50	han hu qi ci
+好善嫉恶	50	hao shan ji e
+鹤行鸡群	50	he xing ji qun
+横眉冷眼	50	heng mei leng yan
+横无忌惮	50	heng wu ji dan
+虎据龙蟠	50	hu ju long pan
+鹄形菜色	50	hu xing cai se
+话长说短	50	hua chang shuo duan
+还珠合浦	50	huan zhu he pu
+豁然省悟	50	huo ran xing wu
+嫉恶如仇	50	ji e ru chou
+嫉恶若仇	50	ji e ruo chou
+急痛攻心	50	ji tong gong xin
+家藏户有	50	jia cang hu you
+坚韧不拔	50	jian ren bu ba
+兼收并畜	50	jian shou bing chu
+敬授人时	50	jing shou ren shi
+鸠工庀材	2000	jiu gong pi cai
+克尽厥职	50	ke jin jue zhi
+宽洪大度	50	kuan hong da du
+宽洪大量	50	kuan hong da liang
+宽洪海量	50	kuan hong hai liang
+魁梧奇伟	2000	kui wu qi wei
+困而不学	2000	kun er bu xue
+来者居上	50	lai zhe ju shang
+力小任重	50	li xiao ren zhong
+例行差事	50	li xing chai shi
+恋栈不去	50	lian zhan bu qu
+良辰媚景	50	liang chen mei jing
+了不长进	50	liao bu zhang jin
+了了可见	50	liao liao ke jian
+林寒洞肃	50	lin han dong su
+林栖谷隐	50	lin qi gu yin
+令行如流	50	ling xing ru liu
+流言飞语	50	liu yan fei yu
+戮力齐心	50	lu li qi xin
+戮力同心	50	lu li tong xin
+戮力一心	50	lu li yi xin
+轮扁斫轮	50	lun bian zhuo lun
+论长说短	50	lun chang shuo duan
+略无忌惮	50	lve wu ji dan
+貌合形离	50	mao he xing li
+磨砺以须	50	mo li yi xu
+暮景残光	50	mu jing can guang
+沐露梳风	50	mu lu shu feng
+沐露沾霜	50	mu lu zhan shuang
+囊锥露颖	2000	nang zhui lu ying
+披襟解带	50	pi jin jie dai
+批毛求疵	50	pi mao qiu ci
+披毛求瑕	50	pi mao qiu xia
+齐心戮力	50	qi xin lu li
+器宇不凡	50	qi yu bu fan
+器宇轩昂	50	qi yu xuan ang
+遣辞措意	50	qian ci cuo yi
+跷足而待	50	qiao zu er dai
+跫然足音	50	qiong ran zu yin
+跫响空谷	50	qiong xiang kong gu
+拳拳盛意	50	quan quan sheng yi
+人离乡贱	50	ren li xiang jian
+三老四少	50	san lao si shao
+三老五更	50	san lao wu geng
+山止川行	50	shan zhi chuan xing
+上交不谄	50	shang jiao bu chan
+深仇重怨	50	shen chou zhong yuan
+深根固本	50	shen gen gu ben
+声威大震	50	sheng wei da zhen
+始末原由	50	shi mo yuan you
+誓死不二	50	shi si bu er
+时移世异	50	shi yi shi yi
+时移势易	50	shi yi shi yi
+矢忠不二	1	shi zhong bu er
+束修自好	50	shu xiu zi hao
+梳云掠月	50	shu yun lve yue
+烁玉流金	1	shuo yu liu jin
+四海九州	50	si hai jiu zhou
+天地长久	50	tian di chang jiu
+通古博今	50	tong gu bo jin
+痛下针砭	2000	tong xia zhen bian
+同心戮力	50	tong xin lu li
+吞刀吐火	50	tun dao tu huo
+托公行私	50	tuo gong xing si
+委过于人	50	wei guo yu ren
+惟利是图	50	wei li shi tu
+惟命是从	50	wei ming shi cong
+惟我独尊	50	wei wo du zun
+委罪于人	50	wei zui yu ren
+我没理她	50	wo mei li ta
+污七八糟	50	wu qi ba zao
+下午满课	50	xia wu man ke
+相鼠有皮	50	xiang shu you pi
+孝悌力田	50	xiao ti li tian
+心浮气盛	50	xin fu qi sheng
+雄深雅健	50	xiong shen ya jian
+言多伤行	1	yan duo shang xing
+言方行圆	50	yan fang xing yuan
+言文行远	50	yan wen xing yuan
+养精畜锐	50	yang jing xu rui
+洋洋自得	50	yang yang zi de
+养痈贻患	50	yang yong yi huan
+一笔抹煞	50	yi bi mo sha
+意气洋洋	50	yi qi yang yang
+一闻千悟	50	yi wen qian wu
+义正辞严	50	yi zheng ci yan
+一知片解	50	yi zhi pian jie
+隐约其辞	50	yin yue qi ci
+迎刃立解	50	ying ren li jie
+悠游自得	50	you you zi de
+渊谋远略	50	yuan mou yuan lve
+原形败露	50	yuan xing bai lu
+运旺时盛	50	yun wang shi sheng
+在小区里	50	zai xiao qu li
+赞声不绝	50	zan sheng bu jue
+枕籍经史	50	zhen ji jing shi
+针头削铁	50	zhen tou xue tie
+振振有辞	50	zhen zhen you ci
+郑重其辞	50	zheng zhong qi ci
+志洁行芳	50	zhi jie xing fang
+重厚寡言	50	zhong hou gua yan
+重气轻生	50	zhong qi qing sheng
+重气徇命	50	zhong qi xun ming
+逐逐眈眈	50	zhu zhu dan dan
+卓尔独行	2000	zhuo er du xing
+捉襟露肘	50	zhuo jin lu zhou
+足音跫然	50	zu yin qiong ran
+作好作歹	50	zuo hao zuo dai
+坐失事机	1	zuo shi shi ji
+作小服低	50	zuo xiao fu di
+成也萧何败萧何	2000	cheng ye xiao he bai xiao he
+打破沙锅问到底	50	da po sha guo wen dao di
+不吃羊肉空惹一身膻	2000	bu chi yang rou kong re yi shen shan
+做一日和尚撞一天钟	2000	zuo yi ri he shang zhuang yi tian zhong

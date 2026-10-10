@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Release 3b76b062 (2026-10-11)
+
+This release adds 317 distinct word forms and adjusts 110 existing word-and-reading weights relative to 9dadeaf4. The main table contains 897,596 entries; the 981,640-entry auto-reading table is byte-for-byte unchanged. Main, auto-reading and legacy tables contain 1,886,209 distinct strings. The new vocabulary includes 175 reviewed idioms/expressions and 142 daily/work terms. Readings and candidate conflicts were checked independently; weights were assigned by Ninan. See NOTICE.md for the chinese-xinhua MIT attribution and selection boundaries.
+
+```bash
+bash scripts/reproduce-3b76b062.sh "$PWD/rime-ice" "$PWD/reproduced-3b76b062"
+```
+
+The frozen builder and `inputs/2026-10-11-round4` reproduce exact main, auto-reading and manifest bytes using the same fixed upstream commit. Current normal builds use 4,409 primary expansion entries plus the existing additional-reading input. The tested incremental preview was 63b252aa; normal construction moves one unchanged supplementary-reading row after the new additions, producing 3b76b062. All rows and weights are identical between those two versions; full-pinyin and nine-key candidate equivalence was separately checked.
+
+Quality and latency were measured with librime 1.16.1 and Octagram on a Mac, using isolated synthetic learning data. Phone latency and old-client download/compilation were not retested. Personal learning databases are neither distributed nor reset. Emoji, next-word data and the language model retain their existing OTA versions.
+
 ## Release 9dadeaf4 (2026-10-10)
 
 This release adds 601 distinct word forms and one additional reading to the live fc1dcd4d dictionary, and adjusts 47 existing word-and-reading weights. The main table contains 897,279 entries and the auto-reading table 981,640. Main, auto-reading and legacy tables contain 1,885,892 distinct strings. Both `shui` and `shei` are supported for “这个是谁的”. The fc1dcd4d baseline already removed 914 main and five auto-reading rows containing ideographs that supported device fonts cannot render, and included two reviewed additions plus one weight adjustment; this release retains those changes.
