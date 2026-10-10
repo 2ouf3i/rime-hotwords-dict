@@ -10,6 +10,8 @@ import {
   renderAutoDict,
   parseDictLine,
   filterEntries,
+  hasUnrenderableIdeograph,
+  dropUnrenderable,
   renderDict,
   manifestOf,
   builtinDictPath,
@@ -28,9 +30,39 @@ import {
   loadPhraseWeights,
   mergePhraseWeights,
   applyPhraseWeights,
+  loadAdditionalReadings,
+  applyAdditionalReadings,
   parseCreditLines,
   mergeCredits,
 } from './build-pinyin-dict.mjs';
+
+test('补充读音保留原读音与权重；上游已有读音不再覆盖；未知词拒绝', () => {
+  const mainRows = [{ word: '这个是谁的', pinyin: 'zhe ge shi shui de', weight: 50 }];
+  const extra = { word: '这个是谁的', pinyin: 'zhe ge shi shei de', weight: 50 };
+  const result = applyAdditionalReadings({ mainRows, autoRows: [], readings: [extra] });
+  assert.deepEqual(result.mainRows, [...mainRows, extra]);
+  assert.equal(mainRows.length, 1);
+  const repeated = applyAdditionalReadings({ mainRows: result.mainRows, autoRows: [], readings: [{ ...extra, weight: 6000 }] });
+  assert.deepEqual(repeated.mainRows, result.mainRows);
+  assert.equal(repeated.added.length, 0);
+  assert.throws(() => applyAdditionalReadings({ mainRows, autoRows: [], readings: [{ word: '未知词', pinyin: 'wei zhi ci', weight: 50 }] }), /不存在/);
+  assert.deepEqual(applyAdditionalReadings({ mainRows, autoRows: [], readings: [] }).mainRows, mainRows);
+});
+
+test('补充读音表支持同词多读音，但拒绝重复词音、缺读音和非法格式', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'ninan-readings-'));
+  const file = join(dir, 'readings.txt');
+  try {
+    writeFileSync(file, '谁的\t50\tshui de\n谁的\t50\tshei de\n');
+    assert.equal(loadAdditionalReadings(file).length, 2);
+    for (const [text, error] of [['谁的\t50\tshui de\n谁的\t60\tshui de', /重复读音/], ['谁的\t50', /明确写拼音/], ['谁的\t50\tshui', /音节数/]]) {
+      writeFileSync(file, text);
+      assert.throws(() => loadAdditionalReadings(file), error);
+    }
+    assert.deepEqual(loadAdditionalReadings(undefined), []);
+    assert.throws(() => loadAdditionalReadings(join(dir, 'missing.txt')), /ENOENT/);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
+});
 
 test('parseDictLine 认 rime 的三列格式,注释与残行返回 null', () => {
   assert.deepEqual(parseDictLine('基操勿六\tji cao wu liu\t6666'),
@@ -50,6 +82,53 @@ test('filterEntries 按词频截断,并剔除已内置的词', () => {
   ];
   const out = filterEntries(rows, { minWeight: 100, exclude: new Set(['你好']) });
   assert.deepEqual(out.map((e) => e.word), ['内卷']);
+});
+
+test('hasUnrenderableIdeograph 只认扩展区的汉字,不碰常用字与 emoji', () => {
+  // 真机上出事的那一条:`𪨊 song 21652`(U+2AA0A,CJK 扩展 B)。
+  // 负责人 2026-10-10 打 `song`,候选条第一格是 iOS 的缺字符号(方框加问号)。
+  assert.equal(hasUnrenderableIdeograph('𪨊'), true);
+  assert.equal(hasUnrenderableIdeograph('𠳐啷'), true, '词里只要有一个扩展区的字就整条不要');
+  assert.equal(hasUnrenderableIdeograph('斑点叉尾𫚔'), true);
+  // 常用字一个都不许误伤。
+  for (const w of ['内卷', '似乎', '我是', '什么', '耸', '龘', '〇', 'abc', '']) {
+    assert.equal(hasUnrenderableIdeograph(w), false, `误伤了常用词:${w}`);
+  }
+  // ⚠️ 判据是**码位区间**而不是「非 BMP」,就是为了这一行:emoji 也在 BMP 之外,
+  // 按「非 BMP」写的闸会把它们静默删光(现在这份表里没有 emoji,哪天有了就是事故)。
+  assert.equal(hasUnrenderableIdeograph('😀'), false, 'emoji 不该被这道闸碰到');
+  assert.equal(hasUnrenderableIdeograph('🎉庆祝'), false);
+});
+
+test('dropUnrenderable 把画不出来的字整条剔掉', () => {
+  const rows = [
+    { word: '内卷', pinyin: 'nei juan', weight: 900 },
+    { word: '𪨊', pinyin: 'song', weight: 21652 },
+    { word: '斑点叉尾𫚔', pinyin: 'ban dian cha wei hui', weight: 1226 },
+  ];
+  const out = dropUnrenderable(rows);
+  assert.deepEqual(out.kept.map((e) => e.word), ['内卷'],
+    '权重再高也不该下发 —— 它在手机上画出来是个方框加问号');
+  assert.deepEqual(out.dropped.map((e) => e.word), ['𪨊', '斑点叉尾𫚔'], '剔掉了哪些要能点名');
+});
+
+test('无注音词表也要过这道闸 —— 第一版漏了它', () => {
+  // 2026-10-10 第一版把闸写进 filterEntries,只守住主表;真跑完扫产物,
+  // hotwords_auto.dict.yaml 里还剩 6 条(𬟁 𥻗 𪟝 𩽾 …)。
+  // 无注音表只有「词 + 权重」两列,没有拼音列 —— 形状不同,所以当时整条路径被漏掉了。
+  const autoRows = [
+    { word: '内卷', weight: 900 },
+    { word: '𬟁', weight: 100 },
+    { word: '𩽾䱵', weight: 100 },
+  ];
+  const out = dropUnrenderable(autoRows);
+  assert.deepEqual(out.kept.map((e) => e.word), ['内卷']);
+  // 渲染出来的无注音表里一个扩展区的字都不许有。
+  const text = renderAutoDict(out.kept);
+  for (const ch of text) {
+    const cp = ch.codePointAt(0);
+    assert.ok(cp < 0x20000 || cp > 0x3ffff, `产物里漏了画不出来的字:${ch}`);
+  }
 });
 
 test('renderDict 产出合法的 rime 词典(带 YAML 头)', () => {

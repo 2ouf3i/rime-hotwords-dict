@@ -1,0 +1,604 @@
+# Ninan 第三批离线扩词预览；尚未接入正式构建或 OTA。
+# 来源：已授权本地对照词形与人工审核；读音独立核对，不沿用对照词频。
+# 权重经同版 Rime 全拼／九宫格实际候选标定；多读音另见本批 readings 表。
+爱尔	50	ai er
+案场	50	an chang
+安华	50	an hua
+澳龙	50	ao long
+奥普	6000	ao pu
+巴奴	50	ba nu
+百乐	6000	bai le
+百丽	6000	bai li
+搬货	6000	ban huo
+报餐	6000	bao can
+包谷	2000	bao gu
+宝能	50	bao neng
+报损	50	bao sun
+报完	6000	bao wan
+煲仔	1000	bao zai
+贝亲	50	bei qin
+杯套	50	bei tao
+泵头	50	beng tou
+编办	6000	bian ban
+边户	6000	bian hu
+编绳	6000	bian sheng
+标快	50	biao kuai
+别回	50	bie hui
+缤果	50	bin guo
+饼丝	1000	bing si
+博后	50	bo hou
+博瑞	50	bo rui
+博越	50	bo yue
+不超	6000	bu chao
+不催	50	bu cui
+不哄	50	bu hong
+不骗	6000	bu pian
+补漆	6000	bu qi
+步梯	50	bu ti
+不凶	1000	bu xiong
+不续	6000	bu xu
+不脏	6000	bu zang
+不租	6000	bu zu
+菜苔	50	cai tai
+茶台	50	cha tai
+拆车	50	chai che
+产康	50	chan kang
+超管	6000	chao guan
+成飞	50	cheng fei
+翅根	50	chi gen
+翅中	50	chi zhong
+抽绳	50	chou sheng
+床盖	50	chuang gai
+纯生	50	chun sheng
+纯玩	50	chun wan
+脆甜	50	cui tian
+存酒	50	cun jiu
+打版	6000	da ban
+大酱	6000	da jiang
+搭赠	50	da zeng
+待过	50	dai guo
+黛珂	50	dai ke
+代跑	50	dai pao
+当贝	50	dang bei
+到厂	6000	dao chang
+岛台	50	dao tai
+得宝	50	de bao
+德佑	50	de you
+灯条	50	deng tiao
+等呀	50	deng ya
+地插	50	di cha
+低消	6000	di xiao
+吊龙	50	diao long
+懂啦	50	dong la
+豆泡	50	dou pao
+对戒	50	dui jie
+蹲便	50	dun bian
+多待	50	duo dai
+嗯好	50	en hao
+发群	50	fa qun
+发尾	1000	fa wei
+饭包	6000	fan bao
+饭补	50	fan bu
+房抵	1000	fang di
+飞科	50	fei ke
+非全	50	fei quan
+副厂	50	fu chang
+复尺	50	fu chi
+肤感	6000	fu gan
+复机	6000	fu ji
+付完	6000	fu wan
+改吧	50	gai ba
+改约	50	gai yue
+干拌	6000	gan ban
+感康	50	gan kang
+高途	50	gao tu
+歌尔	1000	ge er
+公基	6000	gong ji
+工信	6000	gong xin
+工衣	6000	gong yi
+挂脖	6000	gua bo
+刮蹭	50	gua ceng
+光阳	50	guang yang
+滚针	50	gun zhen
+锅圈	50	guo quan
+国寿	2000	guo shou
+海昌	50	hai chang
+还困	6000	hai kun
+海韵	50	hai yun
+韩束	6000	han shu
+汉庭	50	han ting
+好撑	6000	hao cheng
+好穿	50	hao chuan
+好晕	6000	hao yun
+黑咖	50	hei ka
+黑巧	1000	hei qiao
+很堵	50	hen du
+恒隆	50	heng long
+恒瑞	50	heng rui
+洪恩	50	hong en
+后壳	50	hou ke
+护杠	50	hu gang
+壶铃	6000	hu ling
+护资	6000	hu zi
+滑蛋	6000	hua dan
+华帝	50	hua di
+华凌	6000	hua ling
+华图	50	hua tu
+华住	50	hua zhu
+黄喉	50	huang hou
+荟聚	6000	hui ju
+回吗	50	hui ma
+回寝	50	hui qin
+回温	2000	hui wen
+货量	6000	huo liang
+货盘	1000	huo pan
+活虾	50	huo xia
+机盖	1000	ji gai
+机加	6000	ji jia
+计科	6000	ji ke
+即热	1000	ji re
+寄样	6000	ji yang
+寄走	6000	ji zou
+佳通	50	jia tong
+见吧	50	jian ba
+建发	6000	jian fa
+建投	6000	jian tou
+角阀	6000	jiao fa
+角瓜	6000	jiao gua
+教招	6000	jiao zhao
+洁厕	50	jie ce
+芥兰	50	jie lan
+洁柔	50	jie rou
+进班	1000	jin ban
+金桔	2000	jin ju
+金科	6000	jin ke
+金锣	50	jin luo
+近吗	50	jin ma
+金枕	50	jin zhen
+景田	50	jing tian
+精洗	6000	jing xi
+京造	6000	jing zao
+军绿	6000	jun lv
+卡诗	50	ka shi
+抗敏	50	kang min
+康养	50	kang yang
+抗揍	50	kang zou
+可颂	50	ke song
+客卫	50	ke wei
+控台	50	kong tai
+蔻驰	50	kou chi
+裤长	50	ku chang
+苦菊	6000	ku ju
+快吗	50	kuai ma
+困啦	50	kun la
+困吗	50	kun ma
+扩列	6000	kuo lie
+阔腿	50	kuo tui
+拉篮	50	la lan
+岚图	50	lan tu
+捞汁	50	lao zhi
+乐刻	6000	le ke
+乐跑	50	le pao
+累吧	50	lei ba
+冷到	50	leng dao
+狸花	2000	li hua
+立讯	6000	li xun
+联排	6000	lian pai
+联塑	6000	lian su
+量尺	50	liang chi
+凉拖	50	liang tuo
+聊吗	6000	liao ma
+凌渡	6000	ling du
+隆基	1000	long ji
+轮组	6000	lun zu
+裸色	50	luo se
+马口	50	ma kou
+马牌	50	ma pai
+麻婆	50	ma po
+麦昆	50	mai kun
+买啦	50	mai la
+迈瑞	50	mai rui
+忙啦	50	mang la
+忙啥	50	mang sha
+猫舍	50	mao she
+茂业	50	mao ye
+没充	50	mei chong
+没戴	2000	mei dai
+没读	6000	mei du
+美孚	6000	mei fu
+没假	2000	mei jia
+没结	6000	mei jie
+美睫	6000	mei jie
+美居	6000	mei ju
+没量	50	mei liang
+美菱	6000	mei ling
+没录	6000	mei lu
+没忙	50	mei mang
+美年	50	mei nian
+美签	6000	mei qian
+美心	50	mei xin
+没休	6000	mei xiu
+没修	6000	mei xiu
+没赢	6000	mei ying
+美柚	50	mei you
+没雨	6000	mei yu
+没约	50	mei yue
+没转	50	mei zhuan
+梦龙	50	meng long
+眯会	50	mi hui
+蜜薯	50	mi shu
+面聊	6000	mian liao
+免押	50	mian ya
+铭瑄	1000	ming xuan
+明装	50	ming zhuang
+木方	50	mu fang
+牧原	50	mu yuan
+奶冻	50	nai dong
+奶咖	50	nai ka
+奶片	50	nai pian
+难抢	1000	nan qiang
+男寝	50	nan qin
+农信	50	nong xin
+暖宝	50	nuan bao
+女寝	50	nv qin
+哦对	50	o dui
+欧包	6000	ou bao
+欧普	1000	ou pu
+排插	50	pai cha
+拍错	50	pai cuo
+跑量	50	pao liang
+泡奶	50	pao nai
+跑山	6000	pao shan
+平层	50	ping ceng
+启辰	50	qi chen
+七猫	6000	qi mao
+启源	6000	qi yuan
+前杠	50	qian gang
+强基	6000	qiang ji
+亲喂	50	qin wei
+青芒	50	qing mang
+球头	50	qiu tou
+取号	6000	qu hao
+曲屏	6000	qu ping
+全品	50	quan pin
+全友	2000	quan you
+缺你	50	que ni
+缺啥	50	que sha
+人效	50	ren xiao
+荣放	50	rong fang
+入金	6000	ru jin
+锐捷	50	rui jie
+瑞纳	50	rui na
+润本	50	run ben
+塞纳	50	sai na
+三全	50	san quan
+纱帘	50	sha lian
+纱网	50	sha wang
+删吧	50	shan ba
+商管	1000	shang guan
+上户	50	shang hu
+上脑	50	shang nao
+苕皮	6000	shao pi
+社康	50	she kang
+试块	2000	shi kuai
+适马	50	shi ma
+世茂	1000	shi mao
+守店	50	shou dian
+手胶	6000	shou jiao
+收啦	50	shou la
+手绳	50	shou sheng
+首通	50	shou tong
+双萃	50	shuang cui
+双录	50	shuang lu
+睡呗	50	shui bei
+睡啦	50	shui la
+私行	6000	si xing
+素鸡	6000	su ji
+素圈	50	su quan
+蒜苔	50	suan tai
+算完	50	suan wan
+太二	50	tai er
+台费	50	tai fei
+胎监	2000	tai jian
+台卡	50	tai ka
+碳火	1000	tan huo
+探鱼	50	tan yu
+探岳	50	tan yue
+烫染	50	tang ran
+唐筛	50	tang shai
+藤椒	50	teng jiao
+提分	50	ti fen
+蹄花	50	ti hua
+添可	1000	tian ke
+天丝	6000	tian si
+甜虾	50	tian xia
+调机	6000	tiao ji
+停线	50	ting xian
+同程	50	tong cheng
+通威	2000	tong wei
+途锐	50	tu rui
+退库	50	tui ku
+退完	50	tui wan
+托育	50	tuo yu
+外检	6000	wai jian
+外审	50	wai shen
+万和	6000	wan he
+完活	6000	wan huo
+万斯	6000	wan si
+晚托	50	wan tuo
+晚晚	6000	wan wan
+微喇	50	wei la
+维密	50	wei mi
+唯品	50	wei pin
+微瑕	50	wei xia
+伟星	6000	wei xing
+微众	2000	wei zhong
+我困	50	wo kun
+午好	6000	wu hao
+午托	50	wu tuo
+五羊	6000	wu yang
+喜宝	6000	xi bao
+洗烘	6000	xi hong
+习酒	6000	xi jiu
+喜力	6000	xi li
+希沃	50	xi wo
+先放	6000	xian fang
+线盒	6000	xian he
+先拿	6000	xian na
+先送	1000	xian song
+线体	2000	xian ti
+箱变	2000	xiang bian
+箱规	2000	xiang gui
+斜肩	6000	xie jian
+信创	50	xin chuang
+星越	6000	xing yue
+修机	6000	xiu ji
+休完	6000	xiu wan
+炫迈	50	xuan mai
+压车	50	ya che
+鸭爪	50	ya zhua
+研二	6000	yan er
+研一	6000	yan yi
+腰凳	1000	yao deng
+窑鸡	6000	yao ji
+也堵	50	ye du
+也冷	50	ye leng
+夜爬	50	ye pa
+椰青	50	ye qing
+也热	50	ye re
+衣长	6000	yi chang
+已购	6000	yi gou
+一嗨	6000	yi hai
+已加	6000	yi jia
+已签	6000	yi qian
+已清	6000	yi qing
+已取	6000	yi qu
+意式	6000	yi shi
+已送	6000	yi song
+已填	6000	yi tian
+英朗	50	ying lang
+永利	6000	yong li
+有班	2000	you ban
+油柑	6000	you gan
+油麦	50	you mai
+油泼	50	you po
+有券	50	you quan
+宇通	50	yu tong
+鱼籽	6000	yu zi
+圆葱	50	yuan cong
+月会	1000	yue hui
+云仓	50	yun cang
+孕反	6000	yun fan
+在售	50	zai shou
+早哇	6000	zao wa
+早呀	6000	zao ya
+找活	6000	zhao huo
+至本	50	zhi ben
+职测	50	zhi ce
+直客	6000	zhi ke
+纸壳	6000	zhi ke
+直屏	6000	zhi ping
+智行	2000	zhi xing
+众安	6000	zhong an
+中百	6000	zhong bai
+中车	50	zhong che
+中公	50	zhong gong
+中核	50	zhong he
+中交	6000	zhong jiao
+中框	50	zhong kuang
+中辣	50	zhong la
+中免	50	zhong mian
+住吧	50	zhu ba
+助播	6000	zhu bo
+驻厂	6000	zhu chang
+主驾	2000	zhu jia
+住我	50	zhu wo
+抓夹	50	zhua jia
+装维	50	zhuang wei
+追觅	6000	zhui mi
+桌垫	50	zhuo dian
+桌牌	50	zhuo pai
+桌腿	50	zhuo tui
+自离	6000	zi li
+自热	1000	zi re
+自卸	6000	zi xie
+紫燕	6000	zi yan
+综评	50	zong ping
+宗申	50	zong shen
+综应	50	zong ying
+租机	6000	zu ji
+做旧	50	zuo jiu
+哎呦喂	50	ai you wei
+背不住	50	bei bu zhu
+别点了	50	bie dian le
+别写了	50	bie xie le
+不招了	50	bu zhao le
+才开门	50	cai kai men
+充不上	50	chong bu shang
+重新开	50	chong xin kai
+打字了	50	da zi le
+等我会	50	deng wo hui
+罚款了	50	fa kuan le
+饭到了	50	fan dao le
+干多久	50	gan duo jiu
+还好呢	50	hai hao ne
+还没见	50	hai mei jian
+还真没	50	hai zhen mei
+记得拿	50	ji de na
+继续吗	50	ji xu ma
+继续用	50	ji xu yong
+截个屏	50	jie ge ping
+就这事	50	jiu zhe shi
+卡掉了	50	ka diao le
+可以刷	50	ke yi shua
+快下课	50	kuai xia ke
+溜肉段	50	liu rou duan
+麻腮风	50	ma sai feng
+买药了	50	mai yao le
+慢慢弄	50	man man nong
+忙晕了	50	mang yun le
+没登录	50	mei deng lu
+没截图	50	mei jie tu
+没签到	50	mei qian dao
+没完事	50	mei wan shi
+那行啊	50	na xing a
+能完事	50	neng wan shi
+你别睡	50	ni bie shui
+哦好的	1000	o hao de
+签了吗	50	qian le ma
+清楚吗	50	qing chu ma
+渠道服	50	qu dao fu
+上报了	50	shang bao le
+是几号	50	shi ji hao
+是哪位	50	shi na wei
+睡着没	50	shui zhao mei
+说点事	50	shuo dian shi
+说晚了	50	shuo wan le
+私发我	50	si fa wo
+谈不了	50	tan bu liao
+提现了	50	ti xian le
+晚点打	50	wan dian da
+我空了	50	wo kong le
+我没课	50	wo mei ke
+我也急	50	wo ye ji
+我再发	50	wo zai fa
+我再走	50	wo zai zou
+下来拿	50	xia lai na
+续一下	50	xu yi xia
+压马路	50	ya ma lu
+要早睡	50	yao zao shui
+也不赖	50	ye bu lai
+也不缺	50	ye bu que
+也不走	50	ye bu zou
+也没拿	50	ye mei na
+有品味	50	you pin wei
+有座位	50	you zuo wei
+早安啊	2000	zao an a
+怎么付	50	zen me fu
+这么卡	50	zhe me ka
+租好了	50	zu hao le
+爱咋咋地	50	ai za za di
+不吃饭啦	50	bu chi fan la
+不上班呀	50	bu shang ban ya
+不要的话	50	bu yao de hua
+不一样嘛	50	bu yi yang ma
+穿厚一点	50	chuan hou yi dian
+带充电器	50	dai chong dian qi
+倒也没有	50	dao ye mei you
+都考不上	2000	dou kao bu shang
+都这么贵	50	dou zhe me gui
+发给别人	50	fa gei bie ren
+刚出生的	50	gang chu sheng de
+刚发过来	50	gang fa guo lai
+刚刚不是	50	gang gang bu shi
+高考完了	50	gao kao wan le
+各睡各的	50	ge shui ge de
+给别人看	2000	gei bie ren kan
+嚎啕大哭	50	hao tao da ku
+和我联系	50	he wo lian xi
+后天回来	50	hou tian hui lai
+回来的吗	50	hui lai de ma
+会注意的	50	hui zhu yi de
+几点来着	50	ji dian lai zhe
+唧唧歪歪	50	ji ji wai wai
+记起来了	50	ji qi lai le
+叫我一下	50	jiao wo yi xia
+就要上班	50	jiu yao shang ban
+可不一样	50	ke bu yi yang
+快过去了	50	kuai guo qu le
+快睡会吧	2000	kuai shui hui ba
+来就好了	50	lai jiu hao le
+来新人了	50	lai xin ren le
+老婆早安	2000	lao po zao an
+忙完了么	50	mang wan le me
+没出去过	50	mei chu qu guo
+没干嘛呢	2000	mei gan ma ne
+没有回应	50	mei you hui ying
+没在一块	50	mei zai yi kuai
+那必须的	50	na bi xu de
+哪有问题	50	na you wen ti
+你试了吗	50	ni shi le ma
+喷射战士	50	pen she zhan shi
+请不请假	50	qing bu qing jia
+去睡觉了	50	qu shui jiao le
+三到五天	50	san dao wu tian
+上一休一	50	shang yi xiu yi
+神神叨叨	50	shen shen dao dao
+是没用的	50	shi mei yong de
+是有原因	50	shi you yuan yin
+我猜一下	50	wo cai yi xia
+我都没见	50	wo dou mei jian
+我管不着	50	wo guan bu zhao
+我还没见	2000	wo hai mei jian
+我还没开	50	wo hai mei kai
+我还没拿	50	wo hai mei na
+我还没玩	2000	wo hai mei wan
+我很需要	50	wo hen xu yao
+我考上了	50	wo kao shang le
+我可以带	50	wo ke yi dai
+我可以买	50	wo ke yi mai
+我是新手	50	wo shi xin shou
+我先溜了	50	wo xian liu le
+我先起来	5	wo xian qi lai
+我也没玩	50	wo ye mei wan
+我又不打	50	wo you bu da
+我又不要	50	wo you bu yao
+我又想吃	50	wo you xiang chi
+下不了班	50	xia bu liao ban
+洋洋得意	50	yang yang de yi
+要上厕所	50	yao shang ce suo
+也来不及	50	ye lai bu ji
+也真是的	50	ye zhen shi de
+一大堆事	50	yi da dui shi
+一两小时	50	yi liang xiao shi
+一想起来	50	yi xiang qi lai
+再回来吧	50	zai hui lai ba
+早安宝贝	2000	zao an bao bei
+早安老公	2000	zao an lao gong
+早安老婆	50	zao an lao po
+找点东西	50	zhao dian dong xi
+这样说吧	50	zhe yang shuo ba
+自己解决	50	zi ji jie jue
+爱你每一天	2000	ai ni mei yi tian
+哎呦不错哦	2000	ai you bu cuo o
+等你忙完了	2000	deng ni mang wan le
+好了告诉我	2000	hao le gao su wo
+剪子包袱锤	2000	jian zi bao fu chui
+你还没睡吗	2000	ni hai mei shui ma
+你先忙你的	2000	ni xian mang ni de
+我先去吃饭	2000	wo xian qu chi fan
+我先去睡了	2000	wo xian qu shui le
+一锅炖不下	50	yi guo dun bu xia
+一愣一愣的	2000	yi leng yi leng de
+有啥不敢的	50	you sha bu gan de
+这个是谁的	50	zhe ge shi shui de
+查血	50	cha xue
+血橙	2000	xue cheng
+护长	6000	hu zhang
+降重	50	jiang chong
+舍长	6000	she zhang
+尽调	1000	jin diao
+配模	50	pei mu
+试模	6000	shi mu
+修模	6000	xiu mu
+出差去了	50	chu chai qu le

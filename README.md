@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Release 9dadeaf4 (2026-10-10)
+
+This release adds 601 distinct word forms and one additional reading to the live fc1dcd4d dictionary, and adjusts 47 existing word-and-reading weights. The main table contains 897,279 entries and the auto-reading table 981,640. Main, auto-reading and legacy tables contain 1,885,892 distinct strings. Both `shui` and `shei` are supported for “这个是谁的”. The fc1dcd4d baseline already removed 914 main and five auto-reading rows containing ideographs that supported device fonts cannot render, and included two reviewed additions plus one weight adjustment; this release retains those changes.
+
+```bash
+bash scripts/reproduce-9dadeaf4.sh "$PWD/rime-ice" "$PWD/reproduced-9dadeaf4"
+```
+
+Use the fixed upstream commit described below. The script builds from `inputs/2026-10-10-round3` using the frozen builder `build-pinyin-dict-20261010.mjs` and verifies main, auto-reading and manifest bytes against the tested snapshot. The selected new words, exact weight overrides and additional reading are included for provenance; the complete reference exports are not required or distributed. Current normal builds use 4,092 primary expansion entries and a separate additional-readings input. An existing upstream reading keeps its upstream weight rather than being duplicated or overwritten.
+
+Quality and latency were measured with librime 1.16.1 and Octagram on a Mac using isolated synthetic learning data. Phone latency and old-client download/compilation were not retested. Personal learning databases are neither included nor reset. Emoji, next-word data and the language model retain their existing OTA versions.
+
 ## Release 61331724 (2026-10-09)
 
 This release adds 451 reviewed word forms to 34da8ee0. The main table contains 897,589 entries; the 981,645-entry auto-reading table is unchanged. Including the legacy table, there are 1,886,191 distinct strings. Existing dictionary bytes and personal learning data are preserved. Readings were cross-checked independently and weights calibrated with full-pinyin and nine-key regression checks.
@@ -48,7 +60,7 @@ The final step checks both SHA256 hashes and byte counts against `inputs/2026-10
 
 `build-pinyin-dict.mjs` imports `[base, ext, 8105, others]` with source priority for duplicate **word + reading** pairs. It retains all weights; a global minimum-frequency cutoff is not used. `tencent.dict.yaml` is kept in a separate auto-reading table. `41448.dict.yaml` is excluded. Existing words are not removed merely because they occur in the bundled legacy dictionary.
 
-`--builtin`, `--hotwords`, `--ref`, and at least one `--phrase-weights` input are required. Multiple phrase inputs are accepted in priority order. `build-pinyin-emoji.mjs` and `build-next-word-table.mjs` generate separate optional resources; they are unchanged by this release.
+`--builtin`, `--hotwords`, `--ref`, and at least one `--phrase-weights` input are required. Multiple phrase inputs are accepted in priority order. Optional `--additional-readings` entries add independently reviewed pronunciations of existing words after weight application. Ideographs known to be unrenderable are filtered from both final tables. `build-pinyin-emoji.mjs` and `build-next-word-table.mjs` generate separate optional resources; they are unchanged by this release.
 
 Tests:
 

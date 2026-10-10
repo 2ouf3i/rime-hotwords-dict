@@ -31,3 +31,7 @@ The 3,040-entry expansion contains reviewed everyday and work vocabulary plus co
 ## 2026-10-09 second enrichment
 
 The 451-entry second enrichment reuses the local reference lexical observations described above; no new source dataset was downloaded. Independently reviewed daily, work, food, and common product/application word forms were selected. The complete reference exports are not distributed. Readings were checked against existing dictionaries and pinyin-pro, and weights were assigned and conflict-adjusted by Ninan. The frozen final selected input is included, so exact reproduction does not require reference exports or private review tools. No personal user text or learning data is included.
+
+## 2026-10-10 third enrichment
+
+The 601 new word forms reuse the same locally available reference lexical observations, plus manually reviewed expressions; no new source dataset was downloaded. Forty-seven existing word-and-reading weights are adjusted using Ninan's candidate regression results. One additional reading is supplied explicitly; readings were cross-checked against independent existing compound entries and manually reviewed. Reference frequency scores and full reference exports are not distributed. The frozen normal-build inputs and builder reproduce the exact release independently from the fixed rime-ice commit. No personal learning database or user text is included.
