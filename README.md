@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Next-word release 7eccc66b (2026-10-13)
+
+This release expands reviewed everyday contexts from 27 to 549, with 1,945 independently written successors. The complete table has 79,432 keys and 208,050 pairs (1,749,996 bytes), adding 253 keys and reordering 269 existing keys relative to next-word 10954335. All other keys and their successor order are unchanged. Existing personal learning records remain client-side and are not included or reset.
+
+```bash
+bash scripts/reproduce-next-word-7eccc66b.sh /path/to/fixed-rime-ice /path/to/new-output
+```
+
+The frozen inputs and builders reproduce the exact table and manifest from rime-ice commit `da1fbe602e38f26db846fa10120ee64c2b0324c0` and the included Apache-2.0 legacy dictionary. This is an independent next-word data release; the main/auto-reading dictionaries, emoji data and grammar retain their existing releases. Table format remains v1. Combining separately committed segments with prior context is a separate client-code change and cannot be enabled by this data release alone.
+
+Data regression covers 312 specified targets (201 to 312 hits), 11 quiet cases, six short continuation chains, and 549 synthetic strong personal-learning records. These are development targets, not independent user accuracy. Swift/Kotlin semantics and compilation were checked separately; phone performance was not measured for this release. See NOTICE.md for the limited reference-word clues.
+
 ## Release 3b76b062 (2026-10-11)
 
 This release adds 317 distinct word forms and adjusts 110 existing word-and-reading weights relative to 9dadeaf4. The main table contains 897,596 entries; the 981,640-entry auto-reading table is byte-for-byte unchanged. Main, auto-reading and legacy tables contain 1,886,209 distinct strings. The new vocabulary includes 175 reviewed idioms/expressions and 142 daily/work terms. Readings and candidate conflicts were checked independently; weights were assigned by Ninan. See NOTICE.md for the chinese-xinhua MIT attribution and selection boundaries.
