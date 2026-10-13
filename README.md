@@ -2,6 +2,18 @@
 
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
+## Next-word release 301154d3 (2026-10-14)
+
+Reviewed everyday contexts expand from 549 to 1,431, with 5,020 independently written successors. This data release adds 588 table keys and revises the order or contents of 327 existing keys. The full table has 80,020 keys and 209,789 pairs (1,772,069 bytes). It improves everyday conversation, care, scheduling, food, travel, shopping, work, study and common noun continuations. Common compounds remain alongside conversational choices where useful; incidental dictionary splits and unsuitable continuations are replaced only on explicitly reviewed rows.
+
+```bash
+bash scripts/reproduce-next-word-301154d3.sh /path/to/fixed-rime-ice /path/to/new-output
+```
+
+Frozen inputs and builders reproduce the exact v1 table and manifest from rime-ice commit `da1fbe602e38f26db846fa10120ee64c2b0324c0` and the included Apache-2.0 legacy dictionary. No new external corpus or personal text is used. Personal learning and client prediction algorithms retain their existing behavior. The main dictionary and other auxiliary artifacts retain their existing releases.
+
+Offline development targets, 1,000 unchanged-row guards, 15 quiet cases, eight short chains and six context-aware chains pass. All 1,431 synthetic strong learning cases retain priority. Actual Swift/Kotlin parsers accept the full and bundled tables; the bundled versions are byte-identical. Native timing was measured on a Mac only, not on phones. These checks are not independent user accuracy or adoption measurements.
+
 ## Next-word release 7eccc66b (2026-10-13)
 
 This release expands reviewed everyday contexts from 27 to 549, with 1,945 independently written successors. The complete table has 79,432 keys and 208,050 pairs (1,749,996 bytes), adding 253 keys and reordering 269 existing keys relative to next-word 10954335. All other keys and their successor order are unchanged. Existing personal learning records remain client-side and are not included or reset.
