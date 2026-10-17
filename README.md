@@ -1,5 +1,11 @@
 # Ninan Rime dictionary data
 
+## Main dictionary 1256dd19 (2026-10-17)
+
+Adds 401 reviewed word forms and updates 18 existing word-and-reading weights. The main table contains 897,997 entries and the auto-reading table 981,639 entries. One old auto-reading hotword is removed to follow the current authoritative admin list. Emoji, next-word and language-model resources are unchanged.
+
+Frozen inputs: `inputs/2026-10-17-fusion`. Run `bash scripts/reproduce-1256dd19.sh <pinned rime-ice checkout> <new output directory>` to verify exact main, auto and manifest bytes. The main table matches the reviewed 043066f7 candidate; only that admin hotword removal changes the auto table. Rankings and synthetic learning were checked with Mac librime 1.16.1 + Octagram; phone timing was not measured. Historical snapshots below remain available.
+
 Dictionary data and reproducible offline build scripts, derived from [rime-ice](https://github.com/iDvel/rime-ice) under [GPL-3.0](LICENSE). Generated files are published in [Releases](https://github.com/2ouf3i/rime-hotwords-dict/releases), separately from application binaries.
 
 ## Next-word release 301154d3 (2026-10-14)

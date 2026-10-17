@@ -4104,23 +4104,23 @@
 氨酚	50	an fen
 暗装	50	an zhuang
 班型	50	ban xing
-报建	6000	bao jian
+报建	25384	bao jian
 备班	5554	bei ban
 笔数	6000	bi shu
 鼻贴	6000	bi tie
 臂围	50	bi wei
 边柜	3149	bian gui
 标品	50	biao pin
-补焊	6000	bu han
+补焊	20000	bu han
 补开	50	bu kai
 采销	1839	cai xiao
 测井	50	ce jing
 产调	1334	chan diao
 产投	50	chan tou
 次新	6000	ci xin
-大货	6000	da huo
+大货	60000	da huo
 带钻	50	dai zuan
-党日	6000	dang ri
+党日	20000	dang ri
 挡水	50	dang shui
 等保	50	deng bao
 底布	6000	di bu
@@ -4133,7 +4133,7 @@
 多冰	50	duo bing
 粉水	50	fen shui
 封样	50	feng yang
-富硒	6000	fu xi
+富硒	60000	fu xi
 膏方	6000	gao fang
 工班	6000	gong ban
 挂证	50	gua zheng
@@ -4141,12 +4141,12 @@
 杭椒	50	hang jiao
 红本	50	hong ben
 换单	6000	huan dan
-回寄	6000	hui ji
+回寄	20000	hui ji
 回切	50	hui qie
 渐层	50	jian ceng
 讲者	6000	jiang zhe
 交表	2544	jiao biao
-脚线	6000	jiao xian
+脚线	11939	jiao xian
 接岗	50	jie gang
 结钱	6000	jie qian
 戒糖	50	jie tang
@@ -4180,7 +4180,7 @@
 破音	50	po yin
 起痘	50	qi dou
 抢券	50	qiang quan
-球机	6000	qiu ji
+球机	20000	qiu ji
 圈层	50	quan ceng
 全瓷	50	quan ci
 券码	50	quan ma
@@ -4189,7 +4189,7 @@
 申根	50	shen gen
 深户	6000	shen hu
 生科	3332	sheng ke
-食安	6000	shi an
+食安	20000	shi an
 市调	6000	shi diao
 手酸	50	shou suan
 手台	50	shou tai
@@ -4208,22 +4208,22 @@
 外丝	50	wai si
 微糖	50	wei tang
 现摘	50	xian zhai
-箱单	6000	xiang dan
-消保	6000	xiao bao
+箱单	20000	xiang dan
+消保	47039	xiao bao
 销控	6000	xiao kong
-销项	6000	xiao xiang
+销项	43114	xiao xiang
 卸料	1204	xie liao
 验号	6000	yan hao
-腌料	6000	yan liao
-阳角	6000	yang jiao
+腌料	33324	yan liao
+阳角	10664	yang jiao
 异业	6000	yi ye
 院感	6000	yuan gan
-院级	6000	yuan ji
+院级	26029	yuan ji
 再测	50	zai ce
 炸板	2639	zha ban
 账套	1	zhang tao
-招采	6000	zhao cai
-找货	6000	zhao huo
+招采	9264	zhao cai
+找货	31279	zhao huo
 蒸烤	50	zheng kao
 重车	50	zhong che
 中岛	3234	zhong dao
@@ -4231,7 +4231,7 @@
 中样	6000	zhong yang
 专包	50	zhuan bao
 转线	6000	zhuan xian
-自招	6000	zi zhao
+自招	10069	zi zhao
 坐岗	50	zuo gang
 结下账	50	jie xia zhang
 没发出	50	mei fa chu
@@ -4418,3 +4418,406 @@
 打破沙锅问到底	50	da po sha guo wen dao di
 不吃羊肉空惹一身膻	2000	bu chi yang rou kong re yi shen shan
 做一日和尚撞一天钟	2000	zuo yi ri he shang zhuang yi tian zhong
+# 第五批：日常服务与工作用语，逐条核音和全拼／九宫格回归；Ninan 自定权重
+板件	6000	ban jian
+半码	6000	ban ma
+包餐	6000	bao can
+报量	6000	bao liang
+备库	6000	bei ku
+标保	6000	biao bao
+补费	6000	bu fei
+补件	6000	bu jian
+餐单	6000	can dan
+餐票	6000	can piao
+舱单	6000	cang dan
+查单	6000	cha dan
+查货	6000	cha huo
+拆件	6000	chai jian
+串班	6000	chuan ban
+串码	6000	chuan ma
+促单	6000	cu dan
+催账	6000	cui zhang
+带量	6000	dai liang
+带票	6000	dai piao
+单款	6000	dan kuan
+单签	6000	dan qian
+倒货	6000	dao huo
+到件	6000	dao jian
+导学	6000	dao xue
+电房	6000	dian fang
+盯控	6000	ding kong
+动保	6000	dong bao
+冻库	6000	dong ku
+对货	6000	dui huo
+法审	6000	fa shen
+方量	6000	fang liang
+废标	6000	fei biao
+飞单	6000	fei dan
+费控	6000	fei kong
+非税	6000	fei shui
+分仓	6000	fen cang
+分单	6000	fen dan
+分控	6000	fen kong
+封单	6000	feng dan
+妇保	50	fu bao
+高标	6000	gao biao
+个险	6000	ge xian
+跟课	6000	gen ke
+供价	50	gong jia
+挂房	6000	gua fang
+关房	6000	guan fang
+关账	6000	guan zhang
+柜号	6000	gui hao
+过单	6000	guo dan
+国控	6000	guo kong
+过款	6000	guo kuan
+焊线	6000	han xian
+号卡	6000	hao ka
+合单	6000	he dan
+户号	6000	hu hao
+话补	6000	hua bu
+换码	6000	huan ma
+换品	6000	huan pin
+慧采	6000	hui cai
+回仓	6000	hui cang
+婚服	6000	hun fu
+寄货	6000	ji huo
+级配	6000	ji pei
+剪标	6000	jian biao
+建单	6000	jian dan
+件号	6000	jian hao
+件货	6000	jian huo
+建面	6000	jian mian
+降档	6000	jiang dang
+叫餐	6000	jiao can
+胶粉	6000	jiao fen
+借货	6000	jie huo
+进单	6000	jin dan
+卡费	6000	ka fei
+考号	6000	kao hao
+课费	6000	ke fei
+客退	6000	ke tui
+联单	6000	lian dan
+料单	6000	liao dan
+临采	6000	lin cai
+领标	6000	ling biao
+漏单	6000	lou dan
+乱价	6000	luan jia
+裸价	1	luo jia
+绿标	6000	lv biao
+美标	6000	mei biao
+蜜豆	6000	mi dou
+面价	6000	mian jia
+明档	6000	ming dang
+内件	6000	nei jian
+内账	6000	nei zhang
+农保	6000	nong bao
+农险	6000	nong xian
+拍单	49	pai dan
+派费	6000	pai fei
+配班	6000	pei ban
+批款	6000	pi kuan
+拼房	6000	pin fang
+起保	6000	qi bao
+气费	6000	qi fei
+起量	6000	qi liang
+弃票	6000	qi piao
+欠货	6000	qian huo
+切配	6000	qie pei
+轻仓	6000	qing cang
+缺件	6000	que jian
+溶豆	6000	rong dou
+入单	6000	ru dan
+商保	6000	shang bao
+商服	6000	shang fu
+苕粉	6000	shao fen
+省标	6000	sheng biao
+实单	6000	shi dan
+实货	6000	shi huo
+收档	6000	shou dang
+首购	6000	shou gou
+手签	6000	shou qian
+甩单	6000	shuai dan
+双签	6000	shuang qian
+水保	6000	shui bao
+送件	6000	song jian
+算量	6000	suan liang
+随单	6000	sui dan
+锁房	6000	suo fang
+锁价	6000	suo jia
+逃班	6000	tao ban
+特采	6000	te cai
+调仓	6000	tiao cang
+跳单	6000	tiao dan
+贴单	6000	tie dan
+停保	6000	ting bao
+停卡	6000	ting ka
+图审	6000	tu shen
+团报	6000	tuan bao
+团款	6000	tuan kuan
+退仓	6000	tui cang
+脱保	6000	tuo bao
+外仓	6000	wai cang
+外单	6000	wai dan
+完课	6000	wan ke
+网单	6000	wang dan
+位号	6000	wei hao
+雾面	6000	wu mian
+洗标	6000	xi biao
+西厨	6000	xi chu
+席卡	6000	xi ka
+线面	6000	xian mian
+鲜品	6000	xian pin
+箱货	6000	xiang huo
+镶件	6000	xiang jian
+消单	6000	xiao dan
+消控	50	xiao kong
+信保	6000	xin bao
+新仓	6000	xin cang
+续报	6000	xu bao
+续单	6000	xu dan
+续课	6000	xu ke
+询单	6000	xun dan
+压单	6000	ya dan
+研报	6000	yan bao
+油补	6000	you bu
+余票	6000	yu piao
+远控	6000	yuan kong
+约拍	6000	yue pai
+在库	6000	zai ku
+皂粉	6000	zao fen
+增购	6000	zeng gou
+增票	6000	zeng piao
+直签	6000	zhi qian
+终面	49	zhong mian
+中收	6000	zhong shou
+周卡	6000	zhou ka
+主标	6000	zhu biao
+转档	6000	zhuan dang
+转货	6000	zhuan huo
+桩号	6000	zhuang hao
+桌搭	6000	zhuo da
+桌号	6000	zhuo hao
+桌签	6000	zhuo qian
+自采	6000	zi cai
+综保	6000	zong bao
+总仓	6000	zong cang
+总厨	6000	zong chu
+走班	6000	zou ban
+候补票	6000	hou bu piao
+配货单	6000	pei huo dan
+拼单价	6000	pin dan jia
+提货码	6000	ti huo ma
+调休单	6000	tiao xiu dan
+通勤卡	6000	tong qin ka
+# 第六批：搜狗五笔、Typeless Rime 与微信／豆包交叉审词；Ninan 自定读音和权重
+业委	6000	ye wei
+业管	6000	ye guan
+业财	6000	ye cai
+专博	6000	zhuan bo
+专工	6000	zhuan gong
+中检	6000	zhong jian
+临停	6000	lin ting
+主变	6000	zhu bian
+主备	6000	zhu bei
+主险	6000	zhu xian
+义警	6000	yi jing
+久期	6000	jiu qi
+产险	6000	chan xian
+产检假	6000	chan jian jia
+保租房	6000	bao zu fang
+健保	49	jian bao
+保内	6000	bao nei
+保户	1999	bao hu
+公估	6000	gong gu
+公建	6000	gong jian
+关务	6000	guan wu
+内业	49	nei ye
+内机	6000	nei ji
+内文	6000	nei wen
+内模	6000	nei mo
+冲减	6000	chong jian
+冲回	6000	chong hui
+函证	6000	han zheng
+制证	6000	zhi zheng
+初验	6000	chu yan
+利旧	6000	li jiu
+到款	6000	dao kuan
+动卧	6000	dong wo
+免审	6000	mian shen
+代挂	6000	dai gua
+代维	6000	dai wei
+医共体	6000	yi gong ti
+医工	6000	yi gong
+卫检	6000	wei jian
+存证	6000	cun zheng
+定检	6000	ding jian
+定票	6000	ding piao
+审票	6000	shen piao
+封账	6000	feng zhang
+循证	6000	xun zheng
+微企	6000	wei qi
+房票	6000	fang piao
+技规	6000	ji gui
+投控	6000	tou kong
+拿单	6000	na dan
+按单	6000	an dan
+插单	6000	cha dan
+收运	6000	shou yun
+无税	6000	wu shui
+智控	6000	zhi kong
+核税	6000	he shui
+次贷	6000	ci dai
+派工	6000	pai gong
+流控	6000	liu kong
+灯控	6000	deng kong
+热控	6000	re kong
+电务	6000	dian wu
+电票	6000	dian piao
+留证	6000	liu zheng
+盲测	6000	mang ce
+直采	6000	zhi cai
+索证	6000	suo zheng
+绿证	6000	lv zheng
+自动续保	6000	zi dong xu bao
+虚拟仓	6000	xu ni cang
+补账	6000	bu zhang
+详单	6000	xiang dan
+调测	6000	tiao ce
+贴票	6000	tie piao
+资审	6000	zi shen
+配单	6000	pei dan
+重测	6000	chong ce
+销单	6000	xiao dan
+院务	6000	yuan wu
+预控	6000	yu kong
+频控	6000	pin kong
+平衡计分卡	6000	ping heng ji fen ka
+重要性水平	6000	zhong yao xing shui ping
+经济订货批量	6000	jing ji ding huo pi liang
+变动成本法	6000	bian dong cheng ben fa
+中性浮力	6000	zhong xing fu li
+中枢网关	6000	zhong shu wang guan
+固定连接	6000	gu ding lian jie
+单家独户	6000	dan jia du hu
+交付经理	6000	jiao fu jing li
+报行合一	6000	bao xing he yi
+可保利益	6000	ke bao li yi
+无差异曲线	6000	wu cha yi qu xian
+首屏	6000	shou ping
+侧屏	6000	ce ping
+半屏	6000	ban ping
+滑屏	6000	hua ping
+跨库	6000	kua ku
+从库	6000	cong ku
+语库	6000	yu ku
+灰模	6000	hui mo
+成端	6000	cheng duan
+报盘	6000	bao pan
+监盘	6000	jian pan
+盯盘	6000	ding pan
+步频	6000	bu pin
+踏频	6000	ta pin
+指模	6000	zhi mo
+线芯	6000	xian xin
+胶芯	6000	jiao xin
+阀芯	6000	fa xin
+鼓芯	6000	gu xin
+胶木件	6000	jiao mu jian
+塑件	6000	su jian
+复件	6000	fu jian
+外码	6000	wai ma
+提示工程	6000	ti shi gong cheng
+提示词工程	6000	ti shi ci gong cheng
+提示注入	6000	ti shi zhu ru
+上下文窗口	6000	shang xia wen chuang kou
+文生视频	6000	wen sheng shi pin
+例汤	6000	li tang
+刀工	6000	dao gong
+云柔巾	6000	yun rou jin
+冷萃壶	6000	leng cui hu
+恒温水壶	6000	heng wen shui hu
+主食罐	6000	zhu shi guan
+塔菜	6000	ta cai
+墙衣	6000	qiang yi
+底霜	6000	di shuang
+成膜	6000	cheng mo
+泪膜	6000	lei mo
+淋膜	6000	lin mo
+濑粉	6000	lai fen
+私汤	6000	si tang
+磨毛	6000	mo mao
+磨豆	6000	mo dou
+翻糖	6000	fan tang
+红心蛋	6000	hong xin dan
+腰垫	6000	yao dian
+苦茶	6000	ku cha
+谷粉	6000	gu fen
+银壶	6000	yin hu
+雪克壶	6000	xue ke hu
+颈霜	6000	jing shuang
+软壳衣	6000	ruan ke yi
+瑜伽铺巾	6000	yu jia pu jin
+佛卡夏	6000	fo ka xia
+布里欧修	6000	bu li ou xiu
+孢子甘蓝	6000	bao zi gan lan
+意式奶冻	6000	yi shi nai dong
+日式煎饺	6000	ri shi jian jiao
+桂花乌龙	6000	gui hua wu long
+漳平水仙	6000	zhang ping shui xian
+油泼扯面	6000	you po che mian
+照烧鸡排	6000	zhao shao ji pai
+脆皮五花肉	6000	cui pi wu hua rou
+冰博克	6000	bing bo ke
+司母戊	6000	si mu wu
+果奶	6000	guo nai
+塑料架	6000	su liao jia
+塑胶扣	6000	su jiao kou
+背景歌	6000	bei jing ge
+群名称	6000	qun ming cheng
+群标签	6000	qun biao qian
+来电秀	6000	lai dian xiu
+过年费	6000	guo nian fei
+不做声	6000	bu zuo sheng
+做声	6000	zuo sheng
+作伴	6000	zuo ban
+一份子	6000	yi fen zi
+没指望了	6000	mei zhi wang le
+劝分不劝和	6000	quan fen bu quan he
+新年新打算	6000	xin nian xin da suan
+解决这个问题	6000	jie jue zhe ge wen ti
+乙流	6000	yi liu
+九价	6000	jiu jia
+儿药	6000	er yao
+侧切牙	6000	ce qie ya
+克罗恩	6000	ke luo en
+胆息肉	6000	dan xi rou
+帆状胎盘	6000	fan zhuang tai pan
+思维奔逸	6000	si wei ben yi
+物质依赖	6000	wu zhi yi lai
+喷射状呕吐	6000	pen she zhuang ou tu
+开放性气胸	6000	kai fang xing qi xiong
+巴氏腺囊肿	6000	ba shi xian nang zhong
+范可尼贫血	6000	fan ke ni pin xue
+浸润性导管癌	6000	jin run xing dao guan ai
+狭窄性腱鞘炎	6000	xia zhai xing jian qiao yan
+颈动脉彩超	6000	jing dong mai cai chao
+手性分子	6000	shou xing fen zi
+泰勒展开	6000	tai le zhan kai
+均值定理	6000	jun zhi ding li
+欧拉函数	6000	ou la han shu
+能斯特方程	6000	neng si te fang cheng
+德布罗意波	6000	de bu luo yi bo
+气压梯度力	6000	qi ya ti du li
+达朗贝尔原理	6000	da lang bei er yuan li
+二恶烷	6000	er e wan
+刺猬效应	6000	ci wei xiao ying
+南风效应	6000	nan feng xiao ying
+卡林巴	6000	ka lin ba
+卡坦岛	6000	ka tan dao
+史密斯机	6000	shi mi si ji
+普拉提圈	6000	pu la ti quan
+电光火石	6000	dian guang huo shi
+发奋图强	6000	fa fen tu qiang
+恹恹欲睡	6000	yan yan yu shui
+百事亨通	6000	bai shi heng tong
