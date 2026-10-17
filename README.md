@@ -1,5 +1,19 @@
 # Ninan Rime dictionary data
 
+## Main dictionary 890b3f6b and next-word ad8c9c82 (2026-10-17)
+
+Adds 98 reviewed daily/work word forms and adjusts 10 existing word-and-reading weights relative to 1256dd19. The main table has 898,095 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,886,707 distinct word forms. Final normal-build inputs contain 4,908 expansion entries. Readings and collision caps are reviewed independently using the existing local reference observations; source scores and complete exports are not distributed.
+
+The independent next-word release applies two additions to the existing public-default continuation blocklist. It removes exactly one key/successor row; every other row and its order is byte-for-byte unchanged. The complete v1 table has 80,019 keys, 209,788 pairs and 1,772,058 bytes. Normal pinyin composition and personal learning retain their existing behavior. Filtering is performed by the offline table builder, with no new client per-key checks. App-bundled fallback tables are unchanged.
+
+```bash
+bash scripts/reproduce-890b3f6b.sh /path/to/pinned-rime-ice /path/to/new-main-output
+bash scripts/reproduce-next-word-ad8c9c82.sh /path/to/pinned-rime-ice /path/to/new-nextword-output
+```
+
+Frozen inputs, builders and expected manifests reproduce exact table bytes from the pinned upstream commit. The main table was checked with 60,791 full-pinyin and 47,087 nine-key inputs, synthetic learning and Mac engine timing; no measured old target lost its first choice or top-eight inclusion, while three within-top-eight ranks moved down. These are development/regression results, not user accuracy estimates or phone timing. Related offline checks passed. No phone installation or client loading was verified. Emoji and simplified/traditional language-model resources retain their previous releases.
+
+
 ## Main dictionary 1256dd19 (2026-10-17)
 
 Adds 401 reviewed word forms and updates 18 existing word-and-reading weights. The main table contains 897,997 entries and the auto-reading table 981,639 entries. One old auto-reading hotword is removed to follow the current authoritative admin list. Emoji, next-word and language-model resources are unchanged.

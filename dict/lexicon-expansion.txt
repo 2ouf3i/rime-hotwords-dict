@@ -4426,7 +4426,7 @@
 备库	6000	bei ku
 标保	6000	biao bao
 补费	6000	bu fei
-补件	6000	bu jian
+补件	20000	bu jian
 餐单	6000	can dan
 餐票	6000	can piao
 舱单	6000	cang dan
@@ -4442,7 +4442,7 @@
 单款	6000	dan kuan
 单签	6000	dan qian
 倒货	6000	dao huo
-到件	6000	dao jian
+到件	20000	dao jian
 导学	6000	dao xue
 电房	6000	dian fang
 盯控	6000	ding kong
@@ -4474,7 +4474,7 @@
 焊线	6000	han xian
 号卡	6000	hao ka
 合单	6000	he dan
-户号	6000	hu hao
+户号	20000	hu hao
 话补	6000	hua bu
 换码	6000	huan ma
 换品	6000	huan pin
@@ -4497,8 +4497,8 @@
 考号	6000	kao hao
 课费	6000	ke fei
 客退	6000	ke tui
-联单	6000	lian dan
-料单	6000	liao dan
+联单	20000	lian dan
+料单	20000	liao dan
 临采	6000	lin cai
 领标	6000	ling biao
 漏单	6000	lou dan
@@ -4563,7 +4563,7 @@
 网单	6000	wang dan
 位号	6000	wei hao
 雾面	6000	wu mian
-洗标	6000	xi biao
+洗标	20000	xi biao
 西厨	6000	xi chu
 席卡	6000	xi ka
 线面	6000	xian mian
@@ -4576,12 +4576,12 @@
 新仓	6000	xin cang
 续报	6000	xu bao
 续单	6000	xu dan
-续课	6000	xu ke
+续课	20000	xu ke
 询单	6000	xun dan
 压单	6000	ya dan
-研报	6000	yan bao
+研报	20000	yan bao
 油补	6000	you bu
-余票	6000	yu piao
+余票	20000	yu piao
 远控	6000	yuan kong
 约拍	6000	yue pai
 在库	6000	zai ku
@@ -4682,7 +4682,7 @@
 自动续保	6000	zi dong xu bao
 虚拟仓	6000	xu ni cang
 补账	6000	bu zhang
-详单	6000	xiang dan
+详单	20000	xiang dan
 调测	6000	tiao ce
 贴票	6000	tie piao
 资审	6000	zi shen
@@ -4821,3 +4821,102 @@
 发奋图强	6000	fa fen tu qiang
 恹恹欲睡	6000	yan yan yu shui
 百事亨通	6000	bai shi heng tong
+# 2026-10-17 第七批：98 个审核新词，旧词调权经全拼／九宫格回归。
+传图	6000	chuan tu
+做表	6000	zuo biao
+刑诉	20000	xing su
+加粉	6000	jia fen
+单聊	20000	dan liao
+固废	6000	gu fei
+图式	6000	tu shi
+图稿	2000	tu gao
+备机	6000	bei ji
+存好	20000	cun hao
+安瓶	6000	an ping
+对侧	6000	dui ce
+带图	6000	dai tu
+往期	20000	wang qi
+慢聊	20000	man liao
+拼酒	6000	pin jiu
+按天	6000	an tian
+排程	6000	pai cheng
+收付	6000	shou fu
+收图	2000	shou tu
+数电	6000	shu dian
+暂估	20000	zan gu
+有号	20000	you hao
+本义	6000	ben yi
+机试	20000	ji shi
+样表	6000	yang biao
+没票	6000	mei piao
+法援	20000	fa yuan
+流油	6000	liu you
+百天	6000	bai tian
+直投	6000	zhi tou
+私隐	6000	si yin
+签入	6000	qian ru
+签认	6000	qian ren
+简版	6000	jian ban
+算钱	6000	suan qian
+缓考	6000	huan kao
+蓝紫	6000	lan zi
+词藻	6000	ci zao
+财商	6000	cai shang
+账龄	6000	zhang ling
+读图	6000	du tu
+阅示	6000	yue shi
+随堂	6000	sui tang
+随大流	49	sui da liu
+奶泡机	6000	nai pao ji
+七味粉	6000	qi wei fen
+导爆管	1	dao bao guan
+应聘书	6000	ying pin shu
+投研部	6000	tou yan bu
+损耗费	6000	sun hao fei
+占地费	6000	zhan di fei
+打磨器	6000	da mo qi
+政论文	6000	zheng lun wen
+红菜苔	49	hong cai tai
+葫芦巴	49	hu lu ba
+龙利鱼	10	long li yu
+馥芮白	6000	fu rui bai
+烤布蕾	6000	kao bu lei
+照烧鸡	6000	zhao shao ji
+茶歇区	6000	cha xie qu
+波速球	6000	bo su qiu
+运维组	6000	yun wei zu
+职业锚	6000	zhi ye mao
+起动机	49	qi dong ji
+泊松比	6000	bo song bi
+拇外翻	6000	mu wai fan
+深覆合	6000	shen fu he
+脑钠肽	6000	nao na tai
+费米能级	6000	fei mi neng ji
+血脂四项	6000	xue zhi si xiang
+根管充填	6000	gen guan chong tian
+翼状肩胛	6000	yi zhuang jian jia
+错颌畸形	6000	cuo he ji xing
+泛娱乐化	6000	fan yu le hua
+我来付	6000	wo lai fu
+没得选	6000	mei de xuan
+没成想	49	mei cheng xiang
+熬大夜	6000	ao da ye
+赶不回	6000	gan bu hui
+暖呼呼	49	nuan hu hu
+好几十个	6000	hao ji shi ge
+好几百个	6000	hao ji bai ge
+充实自己	6000	chong shi zi ji
+访客码	6000	fang ke ma
+退库单	6000	tui ku dan
+返修单	6000	fan xiu dan
+报修单	49	bao xiu dan
+工时表	49	gong shi biao
+到货单	6000	dao huo dan
+会议链接	10	hui yi lian jie
+账龄分析	6000	zhang ling fen xi
+电子回执	6000	dian zi hui zhi
+墙固	1999	qiang gu
+地固	6000	di gu
+别太累了	6000	bie tai lei le
+等你回复	6000	deng ni hui fu
+方便的时候	6000	fang bian de shi hou
