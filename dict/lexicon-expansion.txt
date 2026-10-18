@@ -4850,11 +4850,11 @@
 样表	6000	yang biao
 没票	6000	mei piao
 法援	20000	fa yuan
-流油	6000	liu you
+流油	15000	liu you
 百天	6000	bai tian
 直投	6000	zhi tou
 私隐	20000	si yin
-签入	20000	qian ru
+签入	30000	qian ru
 签认	20000	qian ren
 简版	20000	jian ban
 算钱	6000	suan qian
@@ -4925,10 +4925,10 @@
 三花	6000	san hua
 买电	6000	mai dian
 买股	1000	mai gu
-信度	6000	xin du
+信度	15000	xin du
 假票	6000	jia piao
-公汽	6000	gong qi
-前脸	6000	qian lian
+公汽	15000	gong qi
+前脸	15000	qian lian
 剪力	6000	jian li
 回聊	6000	hui liao
 圈梁	1000	quan liang
@@ -4936,14 +4936,14 @@
 大假	6000	da jia
 子机	6000	zi ji
 实图	6000	shi tu
-岩性	6000	yan xing
+岩性	15000	yan xing
 开群	6000	kai qun
 待久	6000	dai jiu
 忘光	6000	wang guang
 托业	6000	tuo ye
 掉包	1000	diao bao
 旗鱼	6000	qi yu
-用机	6000	yong ji
+用机	15000	yong ji
 破位	6000	po wei
 补满	6000	bu man
 走法	1000	zou fa
@@ -4954,7 +4954,7 @@
 两卫	6000	liang wei
 上庭	1000	shang ting
 上柜	6000	shang gui
-下客	6000	xia ke
+下客	15000	xia ke
 个护	1000	ge hu
 个贷	1000	ge dai
 中腰	6000	zhong yao
@@ -4988,7 +4988,7 @@
 尾款单	6000	wei kuan dan
 调账单	6000	tiao zhang dan
 运费单	6000	yun fei dan
-删单	6000	shan dan
+删单	15000	shan dan
 冲单	6000	chong dan
 退回件	6000	tui hui jian
 跟岗	6000	gen gang
@@ -5022,3 +5022,977 @@
 四十多个	6000	si shi duo ge
 劈里啪啦	6000	pi li pa la
 啰啰嗦嗦	6000	luo luo suo suo
+# 2026-10-19 第九批：973 个多来源审核词形；权重由 Ninan 独立指定，保留常用同音词优先
+中封袋	1000	zhong feng dai
+中长袜	1000	zhong chang wa
+乳酸奶	1000	ru suan nai
+亚光膜	1000	ya guang mo
+亮肤水	1000	liang fu shui
+亮肤液	1000	liang fu ye
+亲肌水	1000	qin ji shui
+仪器柜	1000	yi qi gui
+低筋面	1000	di jin mian
+作动器	1000	zuo dong qi
+修护露	1000	xiu hu lu
+修磨机	50	xiu mo ji
+倒酒器	50	dao jiu qi
+健身机	1000	jian shen ji
+储纬器	50	chu wei qi
+儿童杯	1000	er tong bei
+充氧机	1000	chong yang ji
+光纤盒	1000	guang xian he
+全加器	1000	quan jia qi
+全蛋面	1000	quan dan mian
+关窗器	1000	guan chuang qi
+写真布	1000	xie zhen bu
+冰棒机	1000	bing bang ji
+冲水器	1000	chong shui qi
+净颜膏	1000	jing yan gao
+凡立水	1000	fan li shui
+出水霜	1000	chu shui shuang
+出票机	1000	chu piao ji
+刀具架	1000	dao ju jia
+分光机	50	fen guang ji
+分油机	1000	fen you ji
+切板机	1000	qie ban ji
+切砖机	1000	qie zhuan ji
+切蛋器	1000	qie dan qi
+划线器	50	hua xian qi
+刮舌器	1000	gua she qi
+制冰器	1000	zhi bing qi
+制卡机	1000	zhi ka ji
+刷碗布	1000	shua wan bu
+刻磨机	1000	ke mo ji
+剁椒鱼	1000	duo jiao yu
+剃毛机	1000	ti mao ji
+前置机	50	qian zhi ji
+剥离机	50	bo li ji
+剪辑器	1000	jian ji qi
+加捻机	50	jia nian ji
+加长管	1000	jia chang guan
+包谷饭	1000	bao gu fan
+包边布	1000	bao bian bu
+升窗器	1000	sheng chuang qi
+半加器	1000	ban jia qi
+单冻机	1000	dan dong ji
+卫衣布	1000	wei yi bu
+卸料机	50	xie liao ji
+卸载器	1000	xie zai qi
+压力球	1000	ya li qiu
+压水器	1000	ya shui qi
+压片糖	1000	ya pian tang
+压线机	50	ya xian ji
+去毛器	1000	qu mao qi
+双头灯	1000	shuang tou deng
+双色机	1000	shuang se ji
+发泡轮	1000	fa pao lun
+发牌机	50	fa pai ji
+取出器	1000	qu chu qi
+口红盘	1000	kou hong pan
+叫号器	1000	jiao hao qi
+号码贴	1000	hao ma tie
+同视机	1000	tong shi ji
+吸塑门	1000	xi su men
+吸墨器	1000	xi mo qi
+吸蚊器	1000	xi wen qi
+呼救器	1000	hu jiu qi
+咬咬袋	1000	yao yao dai
+售后机	1000	shou hou ji
+啫喱霜	1000	zhe li shuang
+喂鸟器	1000	wei niao qi
+喷砂管	1000	pen sha guan
+回火器	1000	hui huo qi
+土家菜	1000	tu jia cai
+地下管	1000	di xia guan
+地埋管	1000	di mai guan
+地标线	1000	di biao xian
+地毯机	1000	di tan ji
+垃圾夹	1000	la ji jia
+塞拉门	1000	sai la men
+夏枯球	1000	xia ku qiu
+外挂机	1000	wai gua ji
+大肚杯	1000	da du bei
+大阴线	50	da yin xian
+天井机	1000	tian jing ji
+夹板门	1000	jia ban men
+套结机	1000	tao jie ji
+奶瓶夹	1000	nai ping jia
+安康鱼	1000	an kang yu
+定向轮	1000	ding xiang lun
+定妆水	1000	ding zhuang shui
+定画液	1000	ding hua ye
+室管膜	1000	shi guan mo
+密码盒	1000	mi ma he
+对接机	1000	dui jie ji
+对讲器	1000	dui jiang qi
+导入液	1000	dao ru ye
+导尿包	50	dao niao bao
+射线机	50	she xian ji
+屏风柜	1000	ping feng gui
+干姜水	1000	gan jiang shui
+干拌粉	50	gan ban fen
+干锅鱼	1000	gan guo yu
+平衡露	1000	ping heng lu
+床护垫	1000	chuang hu dian
+延伸器	1000	yan shen qi
+开夜床	1000	kai ye chuang
+开袋机	1000	kai dai ji
+开酒器	1000	kai jiu qi
+开闭器	1000	kai bi qi
+弹跳器	1000	tan tiao qi
+彩铝门	1000	cai lv men
+恐龙鱼	1000	kong long yu
+情人果	1000	qing ren guo
+感冒贴	1000	gan mao tie
+感温线	50	gan wen xian
+户内门	1000	hu nei men
+扁顶针	1000	bian ding zhen
+手足膜	1000	shou zu mo
+扎啤杯	1000	zha pi bei
+打线机	1000	da xian ji
+扩容器	1000	kuo rong qi
+扩肛器	1000	kuo gang qi
+找平器	1000	zhao ping qi
+护头枕	1000	hu tou zhen
+护理贴	1000	hu li tie
+护线管	1000	hu xian guan
+报站器	1000	bao zhan qi
+披肩帽	1000	pi jian mao
+披萨饼	0	pi sa bing
+抹机水	1000	mo ji shui
+抽油器	1000	chou you qi
+拉幅机	1000	la fu ji
+拉边袋	1000	la bian dai
+拉饵盘	1000	la er pan
+拳击袋	1000	quan ji dai
+拾便器	1000	shi bian qi
+按摩轮	1000	an mo lun
+挑高球	1000	tiao gao qiu
+排线器	1000	pai xian qi
+排骨粉	1000	pai gu fen
+接入器	1000	jie ru qi
+接合器	1000	jie he qi
+插板门	1000	cha ban men
+搅蛋器	50	jiao dan qi
+摇窗机	1000	yao chuang ji
+摘果机	1000	zhai guo ji
+擦镜布	1000	ca jing bu
+擦鞋布	1000	ca xie bu
+收板机	50	shou ban ji
+收缩管	1000	shou suo guan
+收银柜	1000	shou yin gui
+改正液	1000	gai zheng ye
+整流机	1000	zheng liu ji
+断布机	1000	duan bu ji
+无尘衣	1000	wu chen yi
+无尘鞋	1000	wu chen xie
+无菌袋	1000	wu jun dai
+无骨鱼	50	wu gu yu
+日夜霜	1000	ri ye shuang
+时序器	1000	shi xu qi
+时装裤	1000	shi zhuang ku
+易碎贴	1000	yi sui tie
+暖风器	1000	nuan feng qi
+木头床	1000	mu tou chuang
+机油壶	1000	ji you hu
+杀猪粉	1000	sha zhu fen
+杏仁霜	1000	xing ren shuang
+松肉粉	1000	song rou fen
+柔肤乳	50	rou fu ru
+柔肤液	1000	rou fu ye
+柜子锁	50	gui zi suo
+样品盒	1000	yang pin he
+样板机	1000	yang ban ji
+桂皮粉	1000	gui pi fen
+框绞机	1000	kuang jiao ji
+梭织裤	1000	suo zhi ku
+梳打饼	1000	shu da bing
+检测门	1000	jian ce men
+毛巾柜	1000	mao jin gui
+毛绒布	1000	mao rong bu
+氮气机	1000	dan qi ji
+水光乳	1000	shui guang ru
+水光膜	1000	shui guang mo
+水光霜	1000	shui guang shuang
+水凝露	1000	shui ning lu
+水润霜	1000	shui run shuang
+水疗机	1000	shui liao ji
+水雾机	1000	shui wu ji
+沐浴器	1000	mu yu qi
+治疗盘	1000	zhi liao pan
+泡泡液	1000	pao pao ye
+洁容霜	1000	jie rong shuang
+洁肤露	1000	jie fu lu
+洁颜乳	50	jie yan ru
+洁颜膏	1000	jie yan gao
+洋芋饭	1000	yang yu fan
+洗头帽	1000	xi tou mao
+洗头液	1000	xi tou ye
+洗眉机	50	xi mei ji
+洗脚机	1000	xi jiao ji
+洗颜乳	50	xi yan ru
+流出液	1000	liu chu ye
+流量器	1000	liu liang qi
+海白虾	1000	hai bai xia
+消痛贴	1000	xiao tong tie
+消食贴	1000	xiao shi tie
+液压器	1000	ye ya qi
+淘米器	1000	tao mi qi
+清明果	1000	qing ming guo
+清汤粉	1000	qing tang fen
+清渣机	1000	qing zha ji
+滤芯器	50	lv xin qi
+滴水管	1000	di shui guan
+漂渍液	1000	piao zi ye
+潜水袜	1000	qian shui wa
+灌注机	1000	guan zhu ji
+灭茬机	1000	mie cha ji
+灭鼠器	1000	mie shu qi
+灶台鱼	1000	zao tai yu
+炒谷芽	1000	chao gu ya
+炝锅鱼	1000	qiang guo yu
+点心面	1000	dian xin mian
+烙馅饼	1000	lao xian bing
+烫衣机	50	tang yi ji
+热痱粉	1000	re fei fen
+热饮机	1000	re yin ji
+焕颜霜	1000	huan yan shuang
+牛轧饼	1000	niu zha bing
+特润霜	1000	te run shuang
+猪心汤	1000	zhu xin tang
+猪梅肉	1000	zhu mei rou
+猴耳环	1000	hou er huan
+獾子油	1000	huan zi you
+玫瑰膏	1000	mei gui gao
+环冷机	1000	huan leng ji
+珠地布	1000	zhu di bu
+琼锅糖	1000	qiong guo tang
+瑞士轮	1000	rui shi lun
+瓦块鱼	1000	wa kuai yu
+瓦楞盒	1000	wa leng he
+瓦煲饭	1000	wa bao fan
+电控门	1000	dian kong men
+电焊帽	1000	dian han mao
+电胶布	1000	dian jiao bu
+电脑架	1000	dian nao jia
+番茄粉	1000	fan qie fen
+眼唇霜	1000	yan chun shuang
+砂浆机	1000	sha jiang ji
+砖胎膜	1000	zhuan tai mo
+磁化器	1000	ci hua qi
+磁化杯	1000	ci hua bei
+磨米机	1000	mo mi ji
+祛斑膏	1000	qu ban gao
+祛痘水	1000	qu dou shui
+离合线	50	li he xian
+移门柜	1000	yi men gui
+空白盘	1000	kong bai pan
+穿线机	1000	chuan xian ji
+签到机	1000	qian dao ji
+签约机	1000	qian yue ji
+管支架	1000	guan zhi jia
+篦冷机	1000	bi leng ji
+粉凝霜	1000	fen ning shuang
+粉刺露	1000	fen ci lu
+粉浆饭	1000	fen jiang fan
+精磨机	1000	jing mo ji
+紧致液	1000	jin zhi ye
+紫椰菜	1000	zi ye cai
+红书包	1000	hong shu bao
+红枣粉	1000	hong zao fen
+红毛蟹	1000	hong mao xie
+红皮鞋	1000	hong pi xie
+红茶粉	1000	hong cha fen
+红黄线	1000	hong huang xian
+纸货架	1000	zhi huo jia
+组立机	1000	zu li ji
+维修机	1000	wei xiu ji
+缝合器	50	feng he qi
+缴费机	1000	jiao fei ji
+网眼袜	1000	wang yan wa
+羊脂膏	1000	yang zhi gao
+美容机	50	mei rong ji
+美白液	1000	mei bai ye
+美白粉	1000	mei bai fen
+美目贴	1000	mei mu tie
+美睫线	1000	mei jie xian
+美肌乳	1000	mei ji ru
+美肌液	1000	mei ji ye
+美颜膏	50	mei yan gao
+老公饼	1000	lao gong bing
+肉饼汤	1000	rou bing tang
+肚丝汤	1000	du si tang
+肤感膜	1000	fu gan mo
+背提包	1000	bei ti bao
+腋中线	1000	ye zhong xian
+臀先露	1000	tun xian lu
+自贡菜	50	zi gong cai
+自选菜	1000	zi xuan cai
+舒缓水	1000	shu huan shui
+艾米果	1000	ai mi guo
+艾草贴	1000	ai cao tie
+芝士包	50	zhi shi bao
+芝士饭	1000	zhi shi fan
+芦荟粉	1000	lu hui fen
+芦荟茶	1000	lu hui cha
+花生球	1000	hua sheng qiu
+芹菜粉	1000	qin cai fen
+苇茎汤	1000	wei jing tang
+苹果茶	1000	ping guo cha
+茄丁面	1000	qie ding mian
+茄汁面	1000	qie zhi mian
+菜肉包	1000	cai rou bao
+葱爆肉	1000	cong bao rou
+蓝光膜	1000	lan guang mo
+藤椒鱼	1000	teng jiao yu
+虎掌菌	1000	hu zhang jun
+蚊怕水	1000	wen pa shui
+蚊香器	50	wen xiang qi
+蛋白水	1000	dan bai shui
+补墙膏	50	bu qiang gao
+补水乳	1000	bu shui ru
+补水液	1000	bu shui ye
+裁板机	50	cai ban ji
+西青果	50	xi qing guo
+解酒糖	50	jie jiu tang
+解锁器	50	jie suo qi
+触摸机	1000	chu mo ji
+触摸灯	1000	chu mo deng
+计分器	50	ji fen qi
+调压柜	1000	tiao ya gui
+调理露	1000	tiao li lu
+调色机	50	tiao se ji
+调表器	1000	tiao biao qi
+调酒器	1000	tiao jiu qi
+豆豆毯	1000	dou dou tan
+起道机	1000	qi dao ji
+足浴液	1000	zu yu ye
+辅食盒	1000	fu shi he
+输液针	1000	shu ye zhen
+选号机	1000	xuan hao ji
+速叠杯	1000	su die bei
+造瘘管	1000	zao lou guan
+遥控门	50	yao kong men
+遮蔽膜	1000	zhe bi mo
+酒心糖	1000	jiu xin tang
+酱驴肉	50	jiang lv rou
+酱骨架	1000	jiang gu jia
+醋溜鱼	1000	cu liu yu
+醒肤水	1000	xing fu shui
+采暖管	1000	cai nuan guan
+采样包	50	cai yang bao
+采样机	1000	cai yang ji
+钛金门	1000	tai jin men
+铁锅鱼	1000	tie guo yu
+镭射机	1000	lei she ji
+闭锁器	50	bi suo qi
+防护霜	1000	fang hu shuang
+防晒膏	1000	fang shai gao
+防水机	1000	fang shui ji
+防水油	1000	fang shui you
+防水衣	1000	fang shui yi
+防狼器	1000	fang lang qi
+防蚊器	50	fang wen qi
+防雾膜	1000	fang wu mo
+阻燃线	1000	zu ran xian
+阿胶膏	1	e jiao gao
+限电器	50	xian dian qi
+除疤膏	1000	chu ba gao
+随手贴	1000	sui shou tie
+集成器	50	ji cheng qi
+雪米饼	1000	xue mi bing
+零食盒	1000	ling shi he
+青梗菜	1000	qing geng cai
+静电鞋	1000	jing dian xie
+预览器	1000	yu lan qi
+领航灯	1000	ling hang deng
+食品夹	1000	shi pin jia
+餐台椅	1000	can tai yi
+饼卷肉	1000	bing juan rou
+马桶贴	1000	ma tong tie
+驱蚊膏	1000	qu wen gao
+骑马机	1000	qi ma ji
+高光膏	1000	gao guang gao
+鮟鱇鱼	1000	an kang yu
+鲍鱼果	1000	bao yu guo
+鲍鱼汤	1000	bao yu tang
+鸡油饭	1000	ji you fan
+麻辣肉	1000	ma la rou
+麻辣虾	1000	ma la xia
+黄油机	1000	huang you ji
+黄瓜鱼	50	huang gua yu
+黄翅鱼	1000	huang chi yu
+黄腊管	1000	huang la guan
+黄苹果	1000	huang ping guo
+黄药水	1000	huang yao shui
+鼻毛器	1000	bi mao qi
+刀削面机	1000	dao xiao mian ji
+勾手发球	1000	gou shou fa qiu
+协和客机	1000	xie he ke ji
+右肾积水	1000	you shen ji shui
+吹风机架	1000	chui feng ji jia
+咖喱大虾	1000	ga li da xia
+咖喱炒饭	1000	ga li chao fan
+孜然炒肉	1000	zi ran chao rou
+差速器油	1000	cha su qi you
+干锅包菜	1000	gan guo bao cai
+延吉冷面	1000	yan ji leng mian
+方向机油	1000	fang xiang ji you
+无水奶油	1000	wu shui nai you
+松鼠桂鱼	1000	song shu gui yu
+果仁菠菜	1000	guo ren bo cai
+榴莲薄饼	1000	liu lian bao bing
+法式薄饼	1000	fa shi bao bing
+液体胶水	1000	ye ti jiao shui
+清蒸桂鱼	1000	qing zheng gui yu
+盐水河虾	1000	yan shui he xia
+糖葱薄饼	1000	tang cong bao bing
+紫叶生菜	1000	zi ye sheng cai
+缝纫机针	1000	feng ren ji zhen
+羚羊角粉	1000	ling yang jiao fen
+老厨白菜	1000	lao chu bai cai
+老妈米线	1000	lao ma mi xian
+腐竹炒肉	1000	fu zhu chao rou
+莴笋炒肉	1000	wo sun chao rou
+萝卜丝汤	1000	luo bo si tang
+虎纹鲨鱼	1000	hu wen sha yu
+蜂蜜绿茶	1000	feng mi lv cha
+软兜长鱼	1000	ruan dou chang yu
+醋溜白菜	1000	cu liu bai cai
+里脊肉饼	1000	li ji rou bing
+进气软管	1000	jin qi ruan guan
+静电手环	1000	jing dian shou huan
+鱼籽福袋	1000	yu zi fu dai
+黄瓜籽粉	1000	huang gua zi fen
+流量加油包	1000	liu liang jia you bao
+白灼基围虾	1000	bai zhuo ji wei xia
+碱式滴定管	1000	jian shi di ding guan
+语音计算器	1000	yu yin ji suan qi
+业务号	1000	ye wu hao
+交接表	50	jiao jie biao
+交易码	1000	jiao yi ma
+交班费	1000	jiao ban fei
+人员表	1000	ren yuan biao
+从业证	1000	cong ye zheng
+仓库号	1000	cang ku hao
+代用券	1000	dai yong quan
+代谢期	50	dai xie qi
+价内税	1000	jia nei shui
+住宿券	1000	zhu su quan
+体锻课	1000	ti duan ke
+作废票	1000	zuo fei piao
+供货单	1000	gong huo dan
+便民卡	1000	bian min ka
+促销单	50	cu xiao dan
+俄语课	1000	e yu ke
+保修点	1000	bao xiu dian
+保安岗	1000	bao an gang
+保障费	50	bao zhang fei
+信息单	1000	xin xi dan
+倍润型	1000	bei run xing
+偏离表	1000	pian li biao
+催缴单	1000	cui jiao dan
+元素表	1000	yuan su biao
+充值码	1000	chong zhi ma
+光纤卡	1000	guang xian ka
+公杂费	1000	gong za fei
+公证号	1000	gong zheng hao
+兵役证	1000	bing yi zheng
+内容表	1000	nei rong biao
+内测码	1000	nei ce ma
+内部卡	1000	nei bu ka
+农村户	1000	nong cun hu
+冲孔模	1000	chong kong mo
+净保费	1000	jing bao fei
+出仓单	1000	chu cang dan
+出成率	1000	chu cheng lv
+出房率	1000	chu fang lv
+出租费	1000	chu zu fei
+出纳岗	1000	chu na gang
+出门单	1000	chu men dan
+分配图	1000	fen pei tu
+分配款	1000	fen pei kuan
+刑法课	1000	xing fa ke
+制造费	1000	zhi zao fei
+副人格	1000	fu ren ge
+加班表	1000	jia ban biao
+动态表	1000	dong tai biao
+动火证	1000	dong huo zheng
+助工证	1000	zhu gong zheng
+助理岗	1000	zhu li gang
+助记码	50	zhu ji ma
+劳保费	1000	lao bao fei
+包房费	1000	bao fang fei
+包装数	1000	bao zhuang shu
+单网卡	1000	dan wang ka
+单证号	1000	dan zheng hao
+单证费	1000	dan zheng fei
+占位费	50	zhan wei fei
+印花费	1000	yin hua fei
+原卡号	1000	yuan ka hao
+原厂款	1000	yuan chang kuan
+参会费	1000	can hui fei
+双语课	1000	shuang yu ke
+发料单	1000	fa liao dan
+发烧药	1000	fa shao yao
+发货价	50	fa huo jia
+合约号	1000	he yue hao
+合约版	1000	he yue ban
+合规岗	1000	he gui gang
+听说课	50	ting shuo ke
+呈批件	50	cheng pi jian
+员工表	1000	yuan gong biao
+哑变量	1000	ya bian liang
+商业贷	1000	shang ye dai
+商户贷	1000	shang hu dai
+园艺工	1000	yuan yi gong
+土增税	1000	tu zeng shui
+地址表	1000	di zhi biao
+场租费	1000	chang zu fei
+坐标表	1000	zuo biao biao
+培训岗	1000	pei xun gang
+培训表	1000	pei xun biao
+基金表	1000	ji jin biao
+堆头费	1000	dui tou fei
+堆存费	1000	dui cun fei
+境外卡	1000	jing wai ka
+声母表	1000	sheng mu biao
+外出单	50	wai chu dan
+外包队	1000	wai bao dui
+外用工	1000	wai yong gong
+外管证	1000	wai guan zheng
+外经证	1000	wai jing zheng
+外送费	1000	wai song fei
+大产证	1000	da chan zheng
+大门岗	1000	da men gang
+天车工	1000	tian che gong
+存货单	1000	cun huo dan
+存车费	1000	cun che fei
+季度卡	50	ji du ka
+季报表	1000	ji bao biao
+季节病	1000	ji jie bing
+学分卡	1000	xue fen ka
+学员卡	1000	xue yuan ka
+学费单	1000	xue fei dan
+安全证	1000	an quan zheng
+定义表	1000	ding yi biao
+定价表	1000	ding jia biao
+定制单	1000	ding zhi dan
+实习表	50	shi xi biao
+实名卡	1000	shi ming ka
+实操题	1000	shi cao ti
+实践表	1000	shi jian biao
+室内课	1000	shi nei ke
+室外课	1000	shi wai ke
+对唱版	1000	dui chang ban
+对应表	50	dui ying biao
+对账函	1000	dui zhang han
+对线期	50	dui xian qi
+展业费	1000	zhan ye fei
+岗位证	1000	gang wei zheng
+年历表	1000	nian li biao
+年审费	1000	nian shen fei
+库存价	1000	ku cun jia
+应聘表	1000	ying pin biao
+延时费	1000	yan shi fei
+开动率	1000	kai dong lv
+开发岗	1000	kai fa gang
+开工证	1000	kai gong zheng
+异位症	1000	yi wei zheng
+彩平图	1000	cai ping tu
+待业证	1000	dai ye zheng
+循环图	1000	xun huan tu
+循环码	1000	xun huan ma
+总账户	1000	zong zhang hu
+总货款	1000	zong huo kuan
+成员表	1000	cheng yuan biao
+成本表	1000	cheng ben biao
+战绩表	1000	zhan ji biao
+房间费	50	fang jian fei
+打折价	1000	da zhe jia
+批单号	1000	pi dan hao
+承租期	50	cheng zu qi
+技术费	1000	ji shu fei
+护士表	50	hu shi biao
+报名卡	1000	bao ming ka
+报损单	1000	bao sun dan
+报账单	1000	bao zhang dan
+抵值券	1000	di zhi quan
+押金单	50	ya jin dan
+拉丁课	1000	la ding ke
+拔河队	1000	ba he dui
+招聘费	1000	zhao pin fei
+拜访量	1000	bai fang liang
+拦标价	1000	lan biao jia
+拼音表	1000	pin yin biao
+授权证	1000	shou quan zheng
+排球服	1000	pai qiu fu
+排球课	1000	pai qiu ke
+接入码	1000	jie ru ma
+推进表	1000	tui jin biao
+提货价	1000	ti huo jia
+提车单	1000	ti che dan
+摊销费	1000	tan xiao fei
+播音课	50	bo yin ke
+操作岗	1000	cao zuo gang
+操作课	50	cao zuo ke
+支出单	1000	zhi chu dan
+支票号	1000	zhi piao hao
+收入表	1000	shou ru biao
+收养证	1000	shou yang zheng
+收料单	1000	shou liao dan
+改单费	1000	gai dan fei
+放热量	1000	fang re liang
+放行单	1000	fang xing dan
+整改函	50	zheng gai han
+文明岗	1000	wen ming gang
+文生图	1000	wen sheng tu
+文言词	1000	wen yan ci
+旅馆费	1000	lv guan fei
+星座表	50	xing zuo biao
+标清版	50	biao qing ban
+核算表	1000	he suan biao
+档案表	1000	dang an biao
+模考题	1000	mo kao ti
+正厂件	50	zheng chang jian
+正经货	1000	zheng jing huo
+正股级	1000	zheng gu ji
+正营职	1000	zheng ying zhi
+水暖件	1000	shui nuan jian
+水润型	1000	shui run xing
+水育馆	1000	shui yu guan
+求职表	50	qiu zhi biao
+污水费	1000	wu shui fei
+汽修班	1000	qi xiu ban
+汽油格	1000	qi you ge
+油料费	1000	you liao fei
+法人卡	1000	fa ren ka
+法务岗	1000	fa wu gang
+派遣函	1000	pai qian han
+流转表	1000	liu zhuan biao
+测温表	1000	ce wen biao
+测量费	1000	ce liang fei
+消失模	50	xiao shi mo
+混合贷	1000	hun he dai
+清润型	1000	qing run xing
+清理费	1000	qing li fei
+港口费	1000	gang kou fei
+港杂费	1000	gang za fei
+滞留票	1000	zhi liu piao
+演员证	1000	yan yuan zheng
+漫游卡	1000	man you ka
+漫游号	1000	man you hao
+灰熔点	1000	hui rong dian
+点检表	1000	dian jian biao
+烤火费	1000	kao huo fei
+熟人价	1000	shu ren jia
+特困证	1000	te kun zheng
+班车点	1000	ban che dian
+理论题	1000	li lun ti
+琵琶课	1000	pi pa ke
+瑜伽卡	1000	yu jia ka
+生活课	1000	sheng huo ke
+申诉表	1000	shen su biao
+申领表	1000	shen ling biao
+电放费	1000	dian fang fei
+电源屏	1000	dian yuan ping
+电话表	1000	dian hua biao
+留位费	1000	liu wei fei
+登山证	1000	deng shan zheng
+登轮证	1000	deng lun zheng
+监理证	1000	jian li zheng
+监管费	1000	jian guan fei
+监考费	1000	jian kao fei
+盖章版	1000	gai zhang ban
+盘存表	1000	pan cun biao
+目录价	50	mu lu jia
+直管房	1000	zhi guan fang
+看护费	1000	kan hu fei
+知会函	50	zhi hui han
+石墨件	1000	shi mo jian
+硅胶模	1000	gui jiao mo
+硬件码	50	ying jian ma
+硬皮症	1000	ying pi zheng
+礼宾服	1000	li bin fu
+票据号	1000	piao ju hao
+离职表	1000	li zhi biao
+程序号	1000	cheng xu hao
+程序图	1000	cheng xu tu
+立法学	1000	li fa xue
+答辩题	50	da bian ti
+策划费	1000	ce hua fei
+签证表	1000	qian zheng biao
+简况表	1000	jian kuang biao
+箱封号	1000	xiang feng hao
+粽子券	50	zong zi quan
+系统价	1000	xi tong jia
+系统号	1000	xi tong hao
+素斋馆	1000	su zhai guan
+索赔款	1000	suo pei kuan
+纸质档	1000	zhi zhi dang
+线稿图	1000	xian gao tu
+细目表	1000	xi mu biao
+终端号	1000	zhong duan hao
+经纪费	1000	jing ji fei
+经营证	1000	jing ying zheng
+结构表	1000	jie gou biao
+结算费	1000	jie suan fei
+统计课	50	tong ji ke
+绣花工	1000	xiu hua gong
+羊毛工	1000	yang mao gong
+美容课	50	mei rong ke
+美白型	1000	mei bai xing
+群邮件	1000	qun you jian
+翻译课	50	fan yi ke
+考研课	1000	kao yan ke
+考籍号	1000	kao ji hao
+考评表	1000	kao ping biao
+胃肠型	1000	wei chang xing
+脓皮症	1000	nong pi zheng
+自制件	50	zi zhi jian
+自荐表	50	zi jian biao
+船员证	1000	chuan yuan zheng
+船模型	1000	chuan mo xing
+舾装件	1000	xi zhuang jian
+节日费	1000	jie ri fei
+节点号	1000	jie dian hao
+营运期	50	ying yun qi
+薪酬表	1000	xin chou biao
+蛋糕模	1000	dan gao mo
+街舞课	1000	jie wu ke
+补货单	50	bu huo dan
+裁剪工	1000	cai jian gong
+装货单	1000	zhuang huo dan
+裸机价	1000	luo ji jia
+观察表	1000	guan cha biao
+视唱课	50	shi chang ke
+警体课	1000	jing ti ke
+警告单	1000	jing gao dan
+计时卡	1000	ji shi ka
+计次卡	1000	ji ci ka
+认知卡	1000	ren zhi ka
+认购单	1000	ren gou dan
+设备表	1000	she bei biao
+评议表	50	ping yi biao
+诊查费	50	zhen cha fei
+调查单	50	diao cha dan
+调研表	1000	diao yan biao
+调研费	1000	diao yan fei
+财务表	1000	cai wu biao
+财务费	1000	cai wu fei
+购买证	1000	gou mai zheng
+购物税	1000	gou wu shui
+贷款证	1000	dai kuan zheng
+资费表	1000	zi fei biao
+走读证	1000	zou du zheng
+走货量	1000	zou huo liang
+超期费	1000	chao qi fei
+路桥票	1000	lu qiao piao
+车次表	1000	che ci biao
+转换卡	1000	zhuan huan ka
+转租费	1000	zhuan zu fei
+轮滑课	1000	lun hua ke
+软件课	1000	ruan jian ke
+载药量	1000	zai yao liang
+辅助岗	1000	fu zhu gang
+辞职单	1000	ci zhi dan
+运费价	1000	yun fei jia
+运费表	1000	yun fei biao
+近效期	50	jin xiao qi
+进口表	1000	jin kou biao
+连续模	1000	lian xu mo
+退料单	50	tui liao dan
+退货仓	1000	tui huo cang
+通用课	1000	tong yong ke
+邮资费	1000	you zi fei
+配色表	1000	pei se biao
+采购岗	1000	cai gou gang
+采购表	1000	cai gou biao
+采购费	1000	cai gou fei
+重修课	1000	chong xiu ke
+重置版	50	chong zhi ban
+量化表	1000	liang hua biao
+铅封号	1000	qian feng hao
+防串货	1000	fang chuan huo
+防暑药	1000	fang shu yao
+防水款	50	fang shui kuan
+零售单	1000	ling shou dan
+零工费	1000	ling gong fei
+面试课	50	mian shi ke
+韩语课	50	han yu ke
+韵母表	1000	yun mu biao
+顶手费	1000	ding shou fei
+预计量	1000	yu ji liang
+防疫局	1000	fang yi ju
+亲子年票	1000	qin zi nian piao
+人头录音	1000	ren tou lu yin
+使役动词	50	shi yi dong ci
+保留整数	1000	bao liu zheng shu
+压实系数	1000	ya shi xi shu
+取整函数	1000	qu zheng han shu
+受控文件	1000	shou kong wen jian
+存货盘点	1000	cun huo pan dian
+实时话费	1000	shi shi hua fei
+常数函数	1000	chang shu han shu
+平翘舌音	1000	ping qiao she yin
+平衡系数	1000	ping heng xi shu
+引力模型	50	yin li mo xing
+提货单号	1000	ti huo dan hao
+支出凭单	1000	zhi chu ping dan
+放坡系数	1000	fang po xi shu
+服务代码	1000	fu wu dai ma
+独立主格	1000	du li zhu ge
+电放保函	1000	dian fang bao han
+自来水费	1000	zi lai shui fei
+蛛网模型	1000	zhu wang mo xing
+见费出单	1000	jian fei chu dan
+设备台账	1000	she bei tai zhang
+贷记凭证	1000	dai ji ping zheng
+转移定价	1000	zhuan yi ding jia
+降雨概率	1000	jiang yu gai lv
+高斯函数	1000	gao si han shu
+付款通知单	1000	fu kuan tong zhi dan
+即期信用证	1000	ji qi xin yong zheng
+受理通知单	1000	shou li tong zhi dan
+干部任免表	1000	gan bu ren mian biao
+报验申请表	1000	bao yan shen qing biao
+螺柱	300	luo zhu
+核损	300	he sun
+透传	300	tou chuan
+发债	300	fa zhai
+贴反	300	tie fan
+盘亏	300	pan kui
+叠纸	300	die zhi
+眼胶	300	yan jiao
+副管	300	fu guan
+首诊	300	shou zhen
+线径	300	xian jing
+正股	300	zheng gu
+报停	300	bao ting
+跳接	300	tiao jie
+周结	50	zhou jie
+入刑	300	ru xing
+审签	300	shen qian
+续重	300	xu zhong
+银浆	300	yin jiang
+雌伏	300	ci fu
+漆料	300	qi liao
+龋坏	300	qu huai
+治法	300	zhi fa
+双待	300	shuang dai
+货基	300	huo ji
+普适	300	pu shi
+侧弯	300	ce wan
+手算	300	shou suan
+布标	300	bu biao
+逼空	300	bi kong
+内号	300	nei hao
+铁穹	300	tie qiong
+笋盘	300	sun pan
+站酷	300	zhan ku
+废铝	300	fei lv
+抢楼	300	qiang lou
+评教	300	ping jiao
+缠花	300	chan hua
+炫光	300	xuan guang
+散瞳	300	san tong
+粗剪	300	cu jian
+年线	300	nian xian
+补数	300	bu shu
+细支	300	xi zhi
+代充	300	dai chong
+骨量	300	gu liang
+浮盈	300	fu ying
+跑法	300	pao fa
+米数	300	mi shu
+仔裤	300	zai ku
+二稿	300	er gao
+班导	300	ban dao
+带扣	300	dai kou
+无药	300	wu yao
+促活	300	cu huo
+定增	300	ding zeng
+文印	300	wen yin
+门封	300	men feng
+甲油	300	jia you
+贰万	300	er wan
+配筋	300	pei jin
+消火	300	xiao huo
+底阀	300	di fa
+引气	300	yin qi
+免贵	300	mian gui
+净度	300	jing du
+款物	300	kuan wu
+色环	300	se huan
+新游	300	xin you
+新友	300	xin you
+副宠	300	fu chong
+护颈	300	hu jing
+粉体	300	fen ti
+地贴	300	di tie
+智造	300	zhi zao
+版署	300	ban shu
+机控	300	ji kong
+侧踢	300	ce ti
+碗篮	300	wan lan
+纸本	300	zhi ben
+收寄	300	shou ji
+多囊	300	duo nang
+脱焊	300	tuo han
+加总	300	jia zong
+油位	300	you wei
+合院	300	he yuan
+屏显	300	ping xian
+甲供	300	jia gong
+单重	300	dan zhong
+抽痛	300	chou tong
+总泵	300	zong beng
+导联	50	dao lian
+限重	50	xian zhong
+居合	300	ju he
+胶底	300	jiao di
+快拆	300	kuai chai
+导则	300	dao ze
+减除	300	jian chu
+内雕	300	nei diao
+心劲	300	xin jin
+转关	300	zhuan guan
+介导	300	jie dao
+卸装	300	xie zhuang
+原力	300	yuan li
+陆基	300	lu ji
+染剂	300	ran ji
+腰封	300	yao feng
+闷痘	300	men dou
+锁舞	300	suo wu
+薤白	300	xie bai
+开环	300	kai huan
+纯债	300	chun zhai
+吸猫	300	xi mao
+财金	300	cai jin
+磨坏	300	mo huai
+律协	300	lv xie
+达产	300	da chan
+盐帮	300	yan bang
+桩长	300	zhuang chang
+胶佬	300	jiao lao
+唯粉	300	wei fen
+男德	300	nan de
+厨余	300	chu yu
+租好	300	zu hao
+脑暴	300	nao bao
+外裤	300	wai ku
+钢棒	50	gang bang
+梭织	300	suo zhi
+牛熊	50	niu xiong
+血钾	300	xue jia
+涨奶	300	zhang nai
+冲红	300	chong hong
+错账	300	cuo zhang
+补提	300	bu ti
+拷到	300	kao dao
+捣腾	300	dao teng
+得瑟	300	de se
+监查	300	jian cha
+抢鲜	300	qiang xian
+窝家	300	wo jia

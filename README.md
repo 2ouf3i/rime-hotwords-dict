@@ -1,5 +1,16 @@
 # Ninan Rime dictionary data
 
+## Main dictionary 070245a7 (2026-10-19)
+
+Adds 973 reviewed word forms covering everyday items, food, care, work documents and equipment, and raises 9 existing word-and-reading weights relative to e448d8f1. These include specialist terms, not a claim that every addition is high frequency. The main table has 899,169 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,887,781 distinct word forms. Normal build inputs now contain 5,982 expansion entries.
+
+```bash
+bash scripts/reproduce-070245a7.sh /path/to/pinned-rime-ice /path/to/new-main-output
+```
+
+Frozen inputs, the frozen builder and expected manifest reproduce exact main/auto table bytes from the pinned upstream commit. Existing local reference observations were curated for coverage; readings, weights and collision caps were independently reviewed. No reference scores or complete exports are distributed. Native Mac engine checks used 65,203 full-pinyin and 50,043 nine-key inputs with the same current schemas, emoji and language model on both sides. New targets appeared within the first eight in 959/973 and 905/973 cases respectively, and all were within the first fifty. Explicit common same-code first choices were preserved; some fallback first choices and within-top-eight positions changed. Learning checks and 55 related tests passed. Fixed-sentence mean engine changes were +3.582 and +8.254 microseconds per key; the number of keys over 16ms did not increase in these samples. These are development/regression samples and computer measurements, not user accuracy or phone timing. No phone installation or client loading was verified. Public next-word, emoji and language-model resources retain their previous releases.
+
+
 ## Main dictionary e448d8f1 (2026-10-18)
 
 Adds 101 reviewed daily/work word forms and updates 12 existing word-and-reading weights relative to 890b3f6b. The main table has 898,196 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,886,808 distinct word forms. Normal build inputs now contain 5,009 expansion entries. Readings and collision caps are reviewed independently; reference-source scores and complete exports are not distributed.

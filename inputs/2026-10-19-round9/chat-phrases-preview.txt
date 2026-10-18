@@ -1,0 +1,863 @@
+# Ninan 日常聊天短语表 · 2026-10-09 · 已接入正常词库构建
+# 849 条完整常用表达，已完成两端私人装机试用；不是整份对标词库的复制。
+# 来源：用户提供的豆包输入法 iOS 1.5.6 安装包中的主词表 991bca749d55。
+# 源文件 SHA256：27fb41523d0d8e9bdd3c475ff21756d32d1d8ecb80921785094251a16d2b4df0
+# 独立格式解析：backend/scripts/inspect-competitor-lexicons.mjs。
+# 读音：Ninan 既有词库切词与 pinyin-pro 分别定音；对方音节仅作核对旁证。
+# 只取完整日常表达；去掉半截话、自指误句、人名、专名和读音有争议的词。
+# 权重由 Ninan 自定：与现有全拼词共享简拼的 507 条用 50，其余 342 条用 2000。
+# 不采用对方的词频、排名、语言模型、联想表、纠错规则或代码。
+# 写法：词<Tab>权重<Tab>拼音。原始文件、完整导出和筛选过程保留在忽略目录。
+# 私人试验重建：build-pinyin-preview.mjs --baseline <现用快照> --table <此表> --out <忽略目录>。
+# 试用版仅追加新词，原词与动态热词不变；正式构建和发布镜像已接入此表。
+# 评测：docs/handoff/2026-10-09-overnight-review-and-lexicon.md；不据生成数量宣称用户体验已改善。
+
+不懂吧	50	bu dong ba
+不懂吗	50	bu dong ma
+不看完	50	bu kan wan
+不去吧	50	bu qu ba
+不去呢	50	bu qu ne
+出发吗	50	chu fa ma
+出发呢	50	chu fa ne
+出门吧	50	chu men ba
+出门呢	50	chu men ne
+到了呢	50	dao le ne
+等你吗	50	deng ni ma
+等我了	50	deng wo le
+等我呢	50	deng wo ne
+等下吧	50	deng xia ba
+等下哈	50	deng xia ha
+都吃饭	50	dou chi fan
+都吃完	50	dou chi wan
+都出门	50	dou chu men
+都等你	50	dou deng ni
+都开会	50	dou kai hui
+都看完	50	dou kan wan
+都买过	50	dou mai guo
+都上班	50	dou shang ban
+都上课	50	dou shang ke
+发下吧	50	fa xia ba
+方便吧	50	fang bian ba
+刚吃饱	50	gang chi bao
+刚到了	50	gang dao le
+刚开会	50	gang kai hui
+刚考试	50	gang kao shi
+刚上课	50	gang shang ke
+刚洗澡	50	gang xi zao
+刚在忙	50	gang zai mang
+刚走了	50	gang zou le
+过去呢	50	guo qu ne
+还吃饭	50	hai chi fan
+还出门	50	hai chu men
+还等你	50	hai deng ni
+还等我	50	hai deng wo
+还加班	50	hai jia ban
+还考试	50	hai kao shi
+还买过	50	hai mai guo
+还睡觉	50	hai shui jiao
+还在忙	50	hai zai mang
+好困哦	50	hao kun o
+好困呀	50	hao kun ya
+好冷了	50	hao leng le
+好忙呀	50	hao mang ya
+很忙了	50	hen mang le
+很忙呀	50	hen mang ya
+很难了	50	hen nan le
+回去呢	50	hui qu ne
+加班吧	50	jia ban ba
+加班呢	50	jia ban ne
+开会吧	50	kai hui ba
+开会吗	50	kai hui ma
+开会呢	50	kai hui ne
+看下哈	50	kan xia ha
+看下呢	50	kan xia ne
+看下哦	50	kan xia o
+考试了	50	kao shi le
+考试呢	50	kao shi ne
+买过吗	50	mai guo ma
+忙完吗	50	mang wan ma
+忙完没	50	mang wan mei
+没法发	50	mei fa fa
+你吃饱	50	ni chi bao
+你过去	50	ni guo qu
+你开会	50	ni kai hui
+你买过	50	ni mai guo
+你睡醒	50	ni shui xing
+您到了	50	nin dao le
+您回来	50	nin hui lai
+起床吗	50	qi chuang ma
+起床呢	50	qi chuang ne
+睡醒没	50	shui xing mei
+他不去	50	ta bu qu
+他吃饭	50	ta chi fan
+他出门	50	ta chu men
+他到了	50	ta dao le
+他回去	50	ta hui qu
+他加班	50	ta jia ban
+他上班	50	ta shang ban
+他上课	50	ta shang ke
+他下班	50	ta xia ban
+他在忙	50	ta zai mang
+我出发	50	wo chu fa
+我到家	50	wo dao jia
+我加班	50	wo jia ban
+我开会	50	wo kai hui
+我买过	50	wo mai guo
+我睡觉	50	wo shui jiao
+我睡醒	50	wo shui xing
+洗澡呢	50	xi zao ne
+下班吧	50	xia ban ba
+下班吗	50	xia ban ma
+下班呢	50	xia ban ne
+先不去	50	xian bu qu
+先出门	50	xian chu men
+先到了	50	xian dao le
+先等下	50	xian deng xia
+先开会	50	xian kai hui
+先上班	50	xian shang ban
+先上课	50	xian shang ke
+先下班	50	xian xia ban
+也等你	50	ye deng ni
+也加班	50	ye jia ban
+也考试	50	ye kao shi
+也上课	50	ye shang ke
+也睡觉	50	ye shui jiao
+也下班	50	ye xia ban
+也在忙	50	ye zai mang
+有点饿	50	you dian e
+再发下	50	zai fa xia
+在忙吧	50	zai mang ba
+在忙了	50	zai mang le
+在忙呢	50	zai mang ne
+真的忙	50	zhen de mang
+走了呢	50	zou le ne
+帮忙安排	2000	bang mang an pai
+帮忙看下	2000	bang mang kan xia
+帮忙确认	2000	bang mang que ren
+帮忙提供	50	bang mang ti gong
+帮忙问下	50	bang mang wen xia
+表格发我	50	biao ge fa wo
+不吃饭了	2000	bu chi fan le
+不吃饭呢	2000	bu chi fan ne
+不出门了	50	bu chu men le
+不打了吧	50	bu da le ba
+不打了吗	50	bu da le ma
+不等你了	50	bu deng ni le
+不发给你	50	bu fa gei ni
+不回来吗	50	bu hui lai ma
+不回去吗	50	bu hui qu ma
+不考试了	50	bu kao shi le
+不上班吧	50	bu shang ban ba
+不上课吗	2000	bu shang ke ma
+不舒服呢	50	bu shu fu ne
+不要回去	50	bu yao hui qu
+不要上课	50	bu yao shang ke
+不用回来	50	bu yong hui lai
+不用回去	50	bu yong hui qu
+不在单位	50	bu zai dan wei
+查一下吧	50	cha yi xia ba
+吃饱没有	2000	chi bao mei you
+吃饭没呀	50	chi fan mei ya
+吃完了吧	50	chi wan le ba
+吃完了没	50	chi wan le mei
+出发了吧	50	chu fa le ba
+出发了没	50	chu fa le mei
+出门了吗	50	chu men le ma
+出门了没	50	chu men le mei
+到公司了	50	dao gong si le
+等会过去	50	deng hui guo qu
+等会回来	50	deng hui hui lai
+等下再说	50	deng xia zai shuo
+等一下哈	50	deng yi xia ha
+地址发我	50	di zhi fa wo
+都不去了	50	dou bu qu le
+都不舒服	50	dou bu shu fu
+都吃饱了	50	dou chi bao le
+都吃好了	50	dou chi hao le
+都到了吗	50	dou dao le ma
+都等你呢	50	dou deng ni ne
+都发给你	50	dou fa gei ni
+都发给我	2000	dou fa gei wo
+都记住了	50	dou ji zhu le
+都看不懂	50	dou kan bu dong
+都没收到	50	dou mei shou dao
+都上班了	50	dou shang ban le
+都上课了	50	dou shang ke le
+都睡觉了	50	dou shui jiao le
+都睡觉呢	50	dou shui jiao ne
+都忘记了	50	dou wang ji le
+都下班了	50	dou xia ban le
+都写完了	50	dou xie wan le
+都在吃饭	50	dou zai chi fan
+都在公司	50	dou zai gong si
+都在加班	50	dou zai jia ban
+都在路上	50	dou zai lu shang
+都在上班	50	dou zai shang ban
+都在上课	50	dou zai shang ke
+发给你吗	50	fa gei ni ma
+发给我了	50	fa gei wo le
+发给我呢	2000	fa gei wo ne
+刚吃饭了	50	gang chi fan le
+刚发给你	50	gang fa gei ni
+刚发给我	2000	gang fa gei wo
+刚刚吃饭	50	gang gang chi fan
+刚刚吃完	50	gang gang chi wan
+刚刚到家	50	gang gang dao jia
+刚刚开会	50	gang gang kai hui
+刚刚看完	50	gang gang kan wan
+刚刚在忙	50	gang gang zai mang
+刚回来了	50	gang hui lai le
+刚看到了	50	gang kan dao le
+给你发吧	2000	gei ni fa ba
+给你发了	50	gei ni fa le
+给我发吧	2000	gei wo fa ba
+过去了吧	50	guo qu le ba
+过去了没	50	guo qu le mei
+还不懂吗	2000	hai bu dong ma
+还不舒服	50	hai bu shu fu
+还吃饭吗	50	hai chi fan ma
+还发给我	2000	hai fa gei wo
+还给我发	2000	hai gei wo fa
+还回家吗	50	hai hui jia ma
+还加班吗	50	hai jia ban ma
+还看不懂	50	hai kan bu dong
+还看到了	50	hai kan dao le
+还没吃完	2000	hai mei chi wan
+还没出发	50	hai mei chu fa
+还没出门	50	hai mei chu men
+还没过去	50	hai mei guo qu
+还没回去	2000	hai mei hui qu
+还没看完	50	hai mei kan wan
+还没起床	50	hai mei qi chuang
+还没上课	2000	hai mei shang ke
+还没下班	2000	hai mei xia ban
+还上班了	50	hai shang ban le
+还上班吗	2000	hai shang ban ma
+还上班呢	50	hai shang ban ne
+还上课呢	2000	hai shang ke ne
+还在吃饭	2000	hai zai chi fan
+还在公司	50	hai zai gong si
+还在忙吗	50	hai zai mang ma
+还在上课	50	hai zai shang ke
+好不舒服	50	hao bu shu fu
+好的明白	50	hao de ming bai
+好的收到	50	hao de shou dao
+回家了吧	50	hui jia le ba
+回家了没	50	hui jia le mei
+回家没有	50	hui jia mei you
+回来没有	50	hui lai mei you
+回去了吧	2000	hui qu le ba
+回去了没	50	hui qu le mei
+加班了吗	50	jia ban le ma
+截图发我	50	jie tu fa wo
+今天不去	2000	jin tian bu qu
+今天吃饭	50	jin tian chi fan
+今天到了	50	jin tian dao le
+开会了吗	50	kai hui le ma
+看不懂吗	50	kan bu dong ma
+看完了没	50	kan wan le mei
+看完没有	2000	kan wan mei you
+看下这个	2000	kan xia zhe ge
+看一下吧	50	kan yi xia ba
+看一下哈	50	kan yi xia ha
+看一下呢	2000	kan yi xia ne
+看一下哦	2000	kan yi xia o
+可以看下	50	ke yi kan xia
+来得及吧	50	lai de ji ba
+链接发我	50	lian jie fa wo
+麻烦安排	2000	ma fan an pai
+麻烦处理	50	ma fan chu li
+麻烦发我	50	ma fan fa wo
+麻烦发下	50	ma fan fa xia
+麻烦核对	50	ma fan he dui
+麻烦看下	50	ma fan kan xia
+麻烦联系	50	ma fan lian xi
+麻烦确认	2000	ma fan que ren
+麻烦提供	50	ma fan ti gong
+马上吃完	2000	ma shang chi wan
+马上过去	50	ma shang guo qu
+马上开会	50	ma shang kai hui
+马上考试	50	ma shang kao shi
+马上上课	2000	ma shang shang ke
+忙完了吧	50	mang wan le ba
+忙完了没	50	mang wan le mei
+没时间吗	50	mei shi jian ma
+没收到吗	50	mei shou dao ma
+没问题了	50	mei wen ti le
+没问题吗	50	mei wen ti ma
+明天回去	2000	ming tian hui qu
+明天联系	50	ming tian lian xi
+明天下班	50	ming tian xia ban
+那你睡吧	50	na ni shui ba
+那我去吧	2000	na wo qu ba
+那我睡了	50	na wo shui le
+那我先睡	50	na wo xian shui
+你不吃饭	2000	ni bu chi fan
+你不打了	50	ni bu da le
+你不等我	50	ni bu deng wo
+你不懂吗	50	ni bu dong ma
+你不回去	50	ni bu hui qu
+你不加班	2000	ni bu jia ban
+你不去了	50	ni bu qu le
+你不上班	50	ni bu shang ban
+你不睡觉	50	ni bu shui jiao
+你不洗澡	50	ni bu xi zao
+你不下班	2000	ni bu xia ban
+你不走了	50	ni bu zou le
+你吃饱了	50	ni chi bao le
+你吃饭吧	50	ni chi fan ba
+你吃了吧	50	ni chi le ba
+你吃完了	2000	ni chi wan le
+你出发了	50	ni chu fa le
+你出门了	50	ni chu men le
+你到家没	50	ni dao jia mei
+你到了啊	2000	ni dao le a
+你到了吧	50	ni dao le ba
+你到了没	50	ni dao le mei
+你等我吧	2000	ni deng wo ba
+你都不去	50	ni dou bu qu
+你都到了	50	ni dou dao le
+你都走了	50	ni dou zou le
+你刚回来	50	ni gang hui lai
+你刚起床	2000	ni gang qi chuang
+你刚睡醒	2000	ni gang shui xing
+你刚下班	2000	ni gang xia ban
+你给我发	2000	ni gei wo fa
+你过去了	50	ni guo qu le
+你还吃饭	2000	ni hai chi fan
+你还回家	50	ni hai hui jia
+你还回来	50	ni hai hui lai
+你还回去	2000	ni hai hui qu
+你还上班	50	ni hai shang ban
+你还上课	50	ni hai shang ke
+你还在忙	50	ni hai zai mang
+你回家吗	2000	ni hui jia ma
+你回家没	2000	ni hui jia mei
+你回去了	50	ni hui qu le
+你记住了	50	ni ji zhu le
+你看到了	50	ni kan dao le
+你看完了	2000	ni kan wan le
+你没收到	50	ni mei shou dao
+你们不去	2000	ni men bu qu
+你们到了	50	ni men dao le
+你们回去	50	ni men hui qu
+你们开会	50	ni men kai hui
+你们上班	50	ni men shang ban
+你们上课	2000	ni men shang ke
+你们下班	2000	ni men xia ban
+你起床吧	2000	ni qi chuang ba
+你起床了	50	ni qi chuang le
+你去不去	2000	ni qu bu qu
+你上班吧	2000	ni shang ban ba
+你上班没	50	ni shang ban mei
+你上班呢	2000	ni shang ban ne
+你上课吧	2000	ni shang ke ba
+你上课了	50	ni shang ke le
+你上课呢	2000	ni shang ke ne
+你收到了	50	ni shou dao le
+你睡觉了	50	ni shui jiao le
+你睡觉吗	2000	ni shui jiao ma
+你睡了没	50	ni shui le mei
+你睡醒了	50	ni shui xing le
+你洗澡了	2000	ni xi zao le
+你下班没	2000	ni xia ban mei
+你先吃饭	2000	ni xian chi fan
+你先过去	2000	ni xian guo qu
+你先回家	50	ni xian hui jia
+你先回来	50	ni xian hui lai
+你先回去	2000	ni xian hui qu
+你先上班	50	ni xian shang ban
+你先上课	50	ni xian shang ke
+你先睡觉	50	ni xian shui jiao
+你先洗澡	50	ni xian xi zao
+你写完了	50	ni xie wan le
+你要出门	50	ni yao chu men
+你要过去	2000	ni yao guo qu
+你要回去	2000	ni yao hui qu
+你要加班	2000	ni yao jia ban
+你要考试	50	ni yao kao shi
+你要上班	50	ni yao shang ban
+你要上课	50	ni yao shang ke
+你要睡觉	50	ni yao shui jiao
+你要洗澡	50	ni yao xi zao
+你要下班	2000	ni yao xia ban
+你也回家	50	ni ye hui jia
+你也回去	2000	ni ye hui qu
+你也睡觉	50	ni ye shui jiao
+你有空没	2000	ni you kong mei
+你在吃饭	2000	ni zai chi fan
+你在单位	50	ni zai dan wei
+你在公司	50	ni zai gong si
+你在开会	50	ni zai kai hui
+你在路上	50	ni zai lu shang
+你在上班	50	ni zai shang ban
+你在上课	2000	ni zai shang ke
+你在睡觉	50	ni zai shui jiao
+您发给我	50	nin fa gei wo
+您收到了	50	nin shou dao le
+您有时间	50	nin you shi jian
+请回复我	2000	qing hui fu wo
+请联系我	50	qing lian xi wo
+请确认下	2000	qing que ren xia
+上班了吧	50	shang ban le ba
+上班了没	50	shang ban le mei
+上班没有	50	shang ban mei you
+上课了吧	50	shang ke le ba
+收到谢谢	50	shou dao xie xie
+睡了没有	50	shui le mei you
+睡醒了没	50	shui xing le mei
+他不回家	50	ta bu hui jia
+他不回来	50	ta bu hui lai
+他不上班	50	ta bu shang ban
+他不舒服	50	ta bu shu fu
+他不睡觉	50	ta bu shui jiao
+他发给我	50	ta fa gei wo
+他刚回来	50	ta gang hui lai
+他给我发	2000	ta gei wo fa
+他还不懂	50	ta hai bu dong
+他看到了	50	ta kan dao le
+他睡觉呢	50	ta shui jiao ne
+他下班了	50	ta xia ban le
+他要睡觉	50	ta yao shui jiao
+他也不去	50	ta ye bu qu
+他有时间	50	ta you shi jian
+他在吃饭	50	ta zai chi fan
+他在家里	50	ta zai jia li
+他在上班	50	ta zai shang ban
+他在上课	50	ta zai shang ke
+他在睡觉	50	ta zai shui jiao
+他走了吗	50	ta zou le ma
+太不舒服	50	tai bu shu fu
+太好喝了	50	tai hao he le
+图片发我	2000	tu pian fa wo
+忘记了吗	2000	wang ji le ma
+文件发我	50	wen jian fa wo
+问一下吧	2000	wen yi xia ba
+问一下哈	50	wen yi xia ha
+我不吃饭	2000	wo bu chi fan
+我不出门	2000	wo bu chu men
+我不打了	50	wo bu da le
+我不等你	50	wo bu deng ni
+我不懂了	50	wo bu dong le
+我不过去	50	wo bu guo qu
+我不回家	50	wo bu hui jia
+我不回来	50	wo bu hui lai
+我不加班	50	wo bu jia ban
+我不上课	50	wo bu shang ke
+我不洗澡	50	wo bu xi zao
+我吃饭啊	2000	wo chi fan a
+我吃好了	2000	wo chi hao le
+我出门了	2000	wo chu men le
+我到家了	50	wo dao jia le
+我等你吧	2000	wo deng ni ba
+我等你呢	50	wo deng ni ne
+我都不去	50	wo dou bu qu
+我都到了	50	wo dou dao le
+我都等你	50	wo dou deng ni
+我都走了	50	wo dou zou le
+我改好了	50	wo gai hao le
+我刚吃饱	2000	wo gang chi bao
+我刚吃饭	50	wo gang chi fan
+我刚吃完	50	wo gang chi wan
+我刚出发	50	wo gang chu fa
+我刚出门	2000	wo gang chu men
+我刚过去	50	wo gang guo qu
+我刚回家	2000	wo gang hui jia
+我刚回去	50	wo gang hui qu
+我刚看完	50	wo gang kan wan
+我刚起床	50	wo gang qi chuang
+我刚上班	50	wo gang shang ban
+我刚睡醒	2000	wo gang shui xing
+我刚洗澡	50	wo gang xi zao
+我刚写完	50	wo gang xie wan
+我刚在忙	50	wo gang zai mang
+我还不懂	50	wo hai bu dong
+我还等你	2000	wo hai deng ni
+我还回去	50	wo hai hui qu
+我还上班	50	wo hai shang ban
+我还上课	2000	wo hai shang ke
+我还在忙	50	wo hai zai mang
+我好无聊	50	wo hao wu liao
+我回去吧	50	wo hui qu ba
+我开会呢	50	wo kai hui ne
+我看完了	50	wo kan wan le
+我考试了	50	wo kao shi le
+我没收到	50	wo mei shou dao
+我没问题	2000	wo mei wen ti
+我们吃饭	2000	wo men chi fan
+我们出发	2000	wo men chu fa
+我们过去	50	wo men guo qu
+我们回来	50	wo men hui lai
+我们考试	50	wo men kao shi
+我们上班	50	wo men shang ban
+我们上课	2000	wo men shang ke
+我们下班	50	wo men xia ban
+我们走了	2000	wo men zou le
+我起床了	50	wo qi chuang le
+我上班呢	50	wo shang ban ne
+我上课了	50	wo shang ke le
+我上课呢	2000	wo shang ke ne
+我收到了	50	wo shou dao le
+我睡觉呢	50	wo shui jiao ne
+我睡醒了	50	wo shui xing le
+我洗澡呢	50	wo xi zao ne
+我先不去	50	wo xian bu qu
+我先吃饭	50	wo xian chi fan
+我先出门	50	wo xian chu men
+我先过去	50	wo xian guo qu
+我先回家	2000	wo xian hui jia
+我先开会	50	wo xian kai hui
+我先上班	50	wo xian shang ban
+我先洗澡	50	wo xian xi zao
+我要出门	50	wo yao chu men
+我要到了	50	wo yao dao le
+我要等你	50	wo yao deng ni
+我要过去	50	wo yao guo qu
+我要回去	50	wo yao hui qu
+我要加班	50	wo yao jia ban
+我要开会	2000	wo yao kai hui
+我要考试	50	wo yao kao shi
+我要起床	50	wo yao qi chuang
+我要上班	50	wo yao shang ban
+我要上课	50	wo yao shang ke
+我要下班	2000	wo yao xia ban
+我也吃饭	2000	wo ye chi fan
+我也出发	2000	wo ye chu fa
+我也出门	50	wo ye chu men
+我也到家	50	wo ye dao jia
+我也到了	50	wo ye dao le
+我也过去	50	wo ye guo qu
+我也回家	50	wo ye hui jia
+我也回来	50	wo ye hui lai
+我也回去	50	wo ye hui qu
+我也买过	50	wo ye mai guo
+我也上班	50	wo ye shang ban
+我也上课	50	wo ye shang ke
+我也睡觉	50	wo ye shui jiao
+我也洗澡	50	wo ye xi zao
+我也下班	2000	wo ye xia ban
+我也在忙	50	wo ye zai mang
+我有时间	50	wo you shi jian
+我在吃饭	50	wo zai chi fan
+我在单位	50	wo zai dan wei
+我在加班	50	wo zai jia ban
+我在上课	50	wo zai shang ke
+洗澡了没	50	xi zao le mei
+先不打了	50	xian bu da le
+先吃饭了	50	xian chi fan le
+先回家了	50	xian hui jia le
+先回去了	50	xian hui qu le
+先看一下	50	xian kan yi xia
+现在不去	2000	xian zai bu qu
+现在出门	50	xian zai chu men
+现在到了	50	xian zai dao le
+现在过去	2000	xian zai guo qu
+现在回来	50	xian zai hui lai
+现在回去	50	xian zai hui qu
+现在起床	50	xian zai qi chuang
+现在上班	50	xian zai shang ban
+现在在忙	50	xian zai zai mang
+写完了没	50	xie wan le mei
+也不去了	50	ye bu qu le
+也吃饭了	50	ye chi fan le
+也到家了	50	ye dao jia le
+也发给你	50	ye fa gei ni
+也发给我	2000	ye fa gei wo
+也过去了	50	ye guo qu le
+也好无聊	50	ye hao wu liao
+也回家了	50	ye hui jia le
+也回去了	50	ye hui qu le
+也看到了	50	ye kan dao le
+也看完了	50	ye kan wan le
+也忘记了	50	ye wang ji le
+也下班了	50	ye xia ban le
+也写完了	50	ye xie wan le
+也有时间	50	ye you shi jian
+一会过去	50	yi hui guo qu
+一会回去	50	yi hui hui qu
+一会联系	50	yi hui lian xi
+一会上班	50	yi hui shang ban
+一会上课	50	yi hui shang ke
+一会洗澡	50	yi hui xi zao
+已经下班	50	yi jing xia ban
+有点好看	50	you dian hao kan
+有点开心	50	you dian kai xin
+有点困了	50	you dian kun le
+有空了吗	50	you kong le ma
+有空没有	2000	you kong mei you
+有时间吧	50	you shi jian ba
+再查一下	50	zai cha yi xia
+在吃饭了	50	zai chi fan le
+在单位呢	2000	zai dan wei ne
+在公司吗	50	zai gong si ma
+在家里了	50	zai jia li le
+在上班了	50	zai shang ban le
+在上班呢	50	zai shang ban ne
+在上课吗	50	zai shang ke ma
+照片发我	50	zhao pian fa wo
+真不舒服	50	zhen bu shu fu
+真的无聊	50	zhen de wu liao
+走了没有	50	zou le mei you
+帮忙安排下	2000	bang mang an pai xia
+帮忙处理下	2000	bang mang chu li xia
+帮忙看一下	2000	bang mang kan yi xia
+帮忙确认下	2000	bang mang que ren xia
+帮忙问一下	2000	bang mang wen yi xia
+不吃饭了吗	2000	bu chi fan le ma
+不给你发了	2000	bu gei ni fa le
+不回来了吧	2000	bu hui lai le ba
+不回去了吧	2000	bu hui qu le ba
+不上班了吗	2000	bu shang ban le ma
+不要出门了	2000	bu yao chu men le
+不要回来了	2000	bu yao hui lai le
+不要忘记了	2000	bu yao wang ji le
+不用回来了	2000	bu yong hui lai le
+不用上班了	2000	bu yong shang ban le
+查一下这个	2000	cha yi xia zhe ge
+吃完了没有	2000	chi wan le mei you
+到公司了吗	2000	dao gong si le ma
+到家说一声	2000	dao jia shuo yi sheng
+到了说一声	2000	dao le shuo yi sheng
+地址发给我	2000	di zhi fa gei wo
+都不知道吗	2000	dou bu zhi dao ma
+都不知道呢	2000	dou bu zhi dao ne
+都吃饭了吗	2000	dou chi fan le ma
+都发给你了	2000	dou fa gei ni le
+都没时间了	2000	dou mei shi jian le
+都写完了吗	2000	dou xie wan le ma
+发给你了吗	2000	fa gei ni le ma
+刚刚在吃饭	2000	gang gang zai chi fan
+给你发了吗	2000	gei ni fa le ma
+还没吃饭吗	2000	hai mei chi fan ma
+还没吃完吗	2000	hai mei chi wan ma
+还没吃完呢	2000	hai mei chi wan ne
+还没到家吗	2000	hai mei dao jia ma
+还没发给我	2000	hai mei fa gei wo
+还没回家吗	2000	hai mei hui jia ma
+还没回去吗	2000	hai mei hui qu ma
+还没看完呢	2000	hai mei kan wan ne
+还没起床吗	2000	hai mei qi chuang ma
+还没上班呢	2000	hai mei shang ban ne
+还没睡醒呢	2000	hai mei shui xing ne
+还没洗澡呢	2000	hai mei xi zao ne
+还没写完呢	2000	hai mei xie wan ne
+还有时间吗	2000	hai you shi jian ma
+截图发给我	2000	jie tu fa gei wo
+今天不知道	2000	jin tian bu zhi dao
+今天回来了	2000	jin tian hui lai le
+今天回来吗	2000	jin tian hui lai ma
+今天上班了	2000	jin tian shang ban le
+今天上班吗	2000	jin tian shang ban ma
+今天有时间	2000	jin tian you shi jian
+今天在公司	50	jin tian zai gong si
+看一下这个	2000	kan yi xia zhe ge
+可以发一下	2000	ke yi fa yi xia
+麻烦安排下	2000	ma fan an pai xia
+麻烦发一下	2000	ma fan fa yi xia
+麻烦看一下	2000	ma fan kan yi xia
+麻烦确认下	2000	ma fan que ren xia
+麻烦提供下	2000	ma fan ti gong xia
+麻烦问一下	2000	ma fan wen yi xia
+马上回来了	2000	ma shang hui lai le
+明天不去了	2000	ming tian bu qu le
+明天给你发	2000	ming tian gei ni fa
+那你回去吧	2000	na ni hui qu ba
+那你先吃饭	2000	na ni xian chi fan
+那我先吃饭	2000	na wo xian chi fan
+你不吃饭了	2000	ni bu chi fan le
+你不吃饭吗	2000	ni bu chi fan ma
+你不打了吗	2000	ni bu da le ma
+你不给我发	2000	ni bu gei wo fa
+你不回家了	2000	ni bu hui jia le
+你不回家吗	2000	ni bu hui jia ma
+你不回来了	2000	ni bu hui lai le
+你不回来吗	50	ni bu hui lai ma
+你不回去了	2000	ni bu hui qu le
+你不上班了	2000	ni bu shang ban le
+你不上课吗	2000	ni bu shang ke ma
+你不睡觉啊	2000	ni bu shui jiao a
+你不睡觉了	2000	ni bu shui jiao le
+你不用上班	50	ni bu yong shang ban
+你吃饭了吧	2000	ni chi fan le ba
+你吃好了吗	2000	ni chi hao le ma
+你吃完了没	50	ni chi wan le mei
+你到家了吧	2000	ni dao jia le ba
+你到家了没	50	ni dao jia le mei
+你到家没有	50	ni dao jia mei you
+你到了没有	2000	ni dao le mei you
+你都吃完了	2000	ni dou chi wan le
+你都没时间	2000	ni dou mei shi jian
+你都写完了	2000	ni dou xie wan le
+你发给我吧	2000	ni fa gei wo ba
+你给我发了	2000	ni gei wo fa le
+你还没吃饭	2000	ni hai mei chi fan
+你还没吃完	2000	ni hai mei chi wan
+你还没出门	2000	ni hai mei chu men
+你还没到家	2000	ni hai mei dao jia
+你还没回家	2000	ni hai mei hui jia
+你还没回来	2000	ni hai mei hui lai
+你还没回去	2000	ni hai mei hui qu
+你还没起床	2000	ni hai mei qi chuang
+你还没上班	2000	ni hai mei shang ban
+你还没睡觉	2000	ni hai mei shui jiao
+你还没睡醒	2000	ni hai mei shui xing
+你还没下班	2000	ni hai mei xia ban
+你还没写完	2000	ni hai mei xie wan
+你还在上班	2000	ni hai zai shang ban
+你还在睡觉	2000	ni hai zai shui jiao
+你回家了吧	2000	ni hui jia le ba
+你回家了没	50	ni hui jia le mei
+你回家没有	2000	ni hui jia mei you
+你今天上班	2000	ni jin tian shang ban
+你看到了吧	50	ni kan dao le ba
+你忙完了没	50	ni mang wan le mei
+你们不上课	2000	ni men bu shang ke
+你们吃饭了	2000	ni men chi fan le
+你们到了吗	2000	ni men dao le ma
+你们都走了	2000	ni men dou zou le
+你们回来了	50	ni men hui lai le
+你们回去了	2000	ni men hui qu le
+你们去不去	2000	ni men qu bu qu
+你们走了吗	2000	ni men zou le ma
+你明天回来	2000	ni ming tian hui lai
+你明天上班	2000	ni ming tian shang ban
+你上班了吧	2000	ni shang ban le ba
+你上班了没	50	ni shang ban le mei
+你睡醒了吗	2000	ni shui xing le ma
+你下班了吧	2000	ni xia ban le ba
+你下班了没	50	ni xia ban le mei
+你下班没有	2000	ni xia ban mei you
+你先发给我	2000	ni xian fa gei wo
+你先回家吧	2000	ni xian hui jia ba
+你先上课吧	2000	ni xian shang ke ba
+你先睡觉吧	2000	ni xian shui jiao ba
+你要回来了	2000	ni yao hui lai le
+你要睡觉了	2000	ni yao shui jiao le
+你要睡觉吗	50	ni yao shui jiao ma
+你也看到了	2000	ni ye kan dao le
+你也没时间	2000	ni ye mei shi jian
+你也睡觉吧	2000	ni ye shui jiao ba
+你有没有空	2000	ni you mei you kong
+你有时间了	2000	ni you shi jian le
+你在吃饭吗	2000	ni zai chi fan ma
+您吃饭了吗	50	nin chi fan le ma
+请确认一下	2000	qing que ren yi xia
+请提供一下	2000	qing ti gong yi xia
+确认一下吧	2000	que ren yi xia ba
+他都不知道	2000	ta dou bu zhi dao
+他给我发了	2000	ta gei wo fa le
+他还不知道	2000	ta hai bu zhi dao
+太不舒服了	2000	tai bu shu fu le
+问一下这个	2000	wen yi xia zhe ge
+我不吃饭了	2000	wo bu chi fan le
+我不出门了	2000	wo bu chu men le
+我不等你了	2000	wo bu deng ni le
+我不给你发	2000	wo bu gei ni fa
+我不回来了	2000	wo bu hui lai le
+我不去了吧	2000	wo bu qu le ba
+我不上班了	2000	wo bu shang ban le
+我到公司了	2000	wo dao gong si le
+我到门口了	2000	wo dao men kou le
+我都不去了	2000	wo dou bu qu le
+我都吃好了	2000	wo dou chi hao le
+我都出门了	2000	wo dou chu men le
+我都回去了	2000	wo dou hui qu le
+我都看不懂	2000	wo dou kan bu dong
+我都看到了	2000	wo dou kan dao le
+我都看完了	50	wo dou kan wan le
+我都没时间	2000	wo dou mei shi jian
+我都没收到	2000	wo dou mei shou dao
+我都上班了	2000	wo dou shang ban le
+我都睡觉了	50	wo dou shui jiao le
+我都睡醒了	2000	wo dou shui xing le
+我都忘记了	2000	wo dou wang ji le
+我都下班了	2000	wo dou xia ban le
+我都写完了	2000	wo dou xie wan le
+我都有时间	2000	wo dou you shi jian
+我刚刚吃完	2000	wo gang gang chi wan
+我刚刚到家	2000	wo gang gang dao jia
+我刚刚回来	2000	wo gang gang hui lai
+我刚刚睡醒	2000	wo gang gang shui xing
+我刚看到了	2000	wo gang kan dao le
+我还看到了	2000	wo hai kan dao le
+我还没出发	50	wo hai mei chu fa
+我还没出门	2000	wo hai mei chu men
+我还没过去	2000	wo hai mei guo qu
+我还没回来	2000	wo hai mei hui lai
+我还没看完	50	wo hai mei kan wan
+我还没上班	2000	wo hai mei shang ban
+我还没收到	50	wo hai mei shou dao
+我还没睡觉	2000	wo hai mei shui jiao
+我还没睡醒	50	wo hai mei shui xing
+我还没洗澡	2000	wo hai mei xi zao
+我还没写完	2000	wo hai mei xie wan
+我还在吃饭	2000	wo hai zai chi fan
+我还在加班	2000	wo hai zai jia ban
+我还在家里	2000	wo hai zai jia li
+我还在开会	2000	wo hai zai kai hui
+我还在路上	2000	wo hai zai lu shang
+我还在睡觉	2000	wo hai zai shui jiao
+我今天回来	2000	wo jin tian hui lai
+我今天下班	2000	wo jin tian xia ban
+我来不及了	50	wo lai bu ji le
+我马上到家	2000	wo ma shang dao jia
+我马上回来	50	wo ma shang hui lai
+我们吃饭了	50	wo men chi fan le
+我们到家了	2000	wo men dao jia le
+我们都到了	2000	wo men dou dao le
+我们在吃饭	2000	wo men zai chi fan
+我明天不去	2000	wo ming tian bu qu
+我明天上班	2000	wo ming tian shang ban
+我先不打了	2000	wo xian bu da le
+我先发给你	2000	wo xian fa gei ni
+我先回家了	50	wo xian hui jia le
+我先起床了	2000	wo xian qi chuang le
+我先上班了	2000	wo xian shang ban le
+我现在出发	2000	wo xian zai chu fa
+我现在出门	2000	wo xian zai chu men
+我现在回家	2000	wo xian zai hui jia
+我现在回去	2000	wo xian zai hui qu
+我要出发了	50	wo yao chu fa le
+我要出门了	2000	wo yao chu men le
+我要考试了	2000	wo yao kao shi le
+我也不打了	2000	wo ye bu da le
+我也不懂啊	2000	wo ye bu dong a
+我也不舒服	2000	wo ye bu shu fu
+我也吃饱了	2000	wo ye chi bao le
+我也吃饭了	50	wo ye chi fan le
+我也吃好了	2000	wo ye chi hao le
+我也出门了	2000	wo ye chu men le
+我也好无聊	2000	wo ye hao wu liao
+我也没时间	2000	wo ye mei shi jian
+我也没收到	2000	wo ye mei shou dao
+我也起床了	50	wo ye qi chuang le
+我也收到了	2000	wo ye shou dao le
+我也忘记了	2000	wo ye wang ji le
+我也下班了	50	wo ye xia ban le
+我也写完了	2000	wo ye xie wan le
+我也在吃饭	2000	wo ye zai chi fan
+我也在上班	2000	wo ye zai shang ban
+我一会回家	2000	wo yi hui hui jia
+我在吃饭了	2000	wo zai chi fan le
+我准备出门	2000	wo zhun bei chu men
+我准备睡觉	2000	wo zhun bei shui jiao
+我准备走了	2000	wo zhun bei zou le
+先确认一下	2000	xian que ren yi xia
+现在方便吗	2000	xian zai fang bian ma
+现在回来了	2000	xian zai hui lai le
+现在回去了	2000	xian zai hui qu le
+现在没时间	2000	xian zai mei shi jian
+现在有空吗	2000	xian zai you kong ma
+现在有时间	2000	xian zai you shi jian
+现在在吃饭	2000	xian zai zai chi fan
+现在在家里	2000	xian zai zai jia li
+也给我发了	2000	ye gei wo fa le
+一会发给你	2000	yi hui fa gei ni
+一会给你发	2000	yi hui gei ni fa
+已经吃完了	2000	yi jing chi wan le
+已经改好了	2000	yi jing gai hao le
+再等一会吧	2000	zai deng yi hui ba
+再核对一下	2000	zai he dui yi xia
+再确认一下	2000	zai que ren yi xia
+照片发给我	2000	zhao pian fa gei wo
+资料发给我	2000	zi liao fa gei wo
