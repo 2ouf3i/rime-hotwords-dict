@@ -1,5 +1,16 @@
 # Ninan Rime dictionary data
 
+## Main dictionary e448d8f1 (2026-10-18)
+
+Adds 101 reviewed daily/work word forms and updates 12 existing word-and-reading weights relative to 890b3f6b. The main table has 898,196 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,886,808 distinct word forms. Normal build inputs now contain 5,009 expansion entries. Readings and collision caps are reviewed independently; reference-source scores and complete exports are not distributed.
+
+```bash
+bash scripts/reproduce-e448d8f1.sh /path/to/pinned-rime-ice /path/to/new-main-output
+```
+
+Frozen inputs, the frozen builder and expected manifest reproduce exact main/auto table bytes from the pinned upstream commit. Native Mac engine checks used 60,821 full-pinyin and 47,100 nine-key inputs with the same current schemas and emoji on both sides. None of the measured old targets lost first-choice or top-eight inclusion; one full-pinyin and seven nine-key targets moved down within the top eight. Learning and related offline checks passed. Fixed-sentence mean engine changes were -3.202 and +0.566 microseconds per key respectively. These are development/regression samples and computer measurements, not user accuracy or phone timing. No phone installation or client loading was verified. Public next-word, emoji and language-model resources retain their previous releases.
+
+
 ## Main dictionary 890b3f6b and next-word ad8c9c82 (2026-10-17)
 
 Adds 98 reviewed daily/work word forms and adjusts 10 existing word-and-reading weights relative to 1256dd19. The main table has 898,095 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,886,707 distinct word forms. Final normal-build inputs contain 4,908 expansion entries. Readings and collision caps are reviewed independently using the existing local reference observations; source scores and complete exports are not distributed.
