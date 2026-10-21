@@ -1,0 +1,13 @@
+# Reviewed selected input; final normal-build input is lexicon-expansion.txt.
+补班	1000	bu ban
+加购	1000	jia gou
+客诉	1000	ke su
+群规	1000	qun gui
+微课	1000	wei ke
+尿垫	1000	niao dian
+猫草	1000	mao cao
+路亚	1000	lu ya
+公屏	1000	gong ping
+升糖	1000	sheng tang
+粘人	1000	nian ren
+冰皮	500	bing pi

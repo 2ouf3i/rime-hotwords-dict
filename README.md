@@ -1,5 +1,15 @@
 # Ninan Rime dictionary data
 
+## Main dictionary 268d6127 (2026-10-22)
+
+Adds 1,014 reviewed word forms and everyday expressions, and adjusts 12 existing word-and-reading weights relative to 56e65d82. Coverage focuses on conversational coordination, travel and parcels, and work/document confirmations. The main table has 900,730 entries; the auto-reading table remains byte-for-byte unchanged at 981,641 entries. Including the legacy dictionary, there are 1,889,344 distinct word forms and 7,543 formal expansion entries.
+
+```bash
+bash scripts/reproduce-268d6127.sh /path/to/pinned-rime-ice /path/to/new-output
+```
+
+Frozen inputs and the existing frozen builder reproduce exact main/auto/manifest bytes. Of 1,030 curated forms, 2 reading and 14 context/completeness cases were held; Ninan assigned the final weights and 46 collision caps independently. Native Mac engine regression used 68,390 full-pinyin and 53,619 nine-key inputs, identical schemas, emoji and Octagram resources, and isolated synthetic learning data. All 1,014 new targets appear within eight candidates in both schemas. No tested existing first-choice/top-eight/top-fifty target was lost; one within-top-eight position moved down in each schema. These are development/regression targets, not independent user accuracy. Existing learning survives table replacement/recompilation and new-word learning survives process restart. Fixed-sentence mean changes were +2.498 and -9.797 microseconds per key; the nine-key count over 16ms changed from 127 to 128 out of 2,672 measured keys. These are computer measurements, not phone timing. No new client queries or algorithms are introduced. Next-word ad8c9c82, emoji and language models retain their previous releases; no phone installation or loading is claimed.
+
 ## Main dictionary 56e65d82 (2026-10-22)
 
 Adds 547 reviewed everyday expressions relative to the last reproducible public release 070245a7, retaining all its word/readings and weights. The main table has 899,716 entries; the auto-reading table also includes two newly accepted public admin hotwords, reaching 981,641 entries. Including the legacy dictionary there are 1,888,330 distinct word forms, with 6,529 formal expansion entries.

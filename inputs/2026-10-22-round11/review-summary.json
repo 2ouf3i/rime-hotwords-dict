@@ -1,0 +1,163 @@
+{
+  "baseline": "56e65d82",
+  "candidate": "268d6127",
+  "newWordForms": 1014,
+  "changedExistingReadings": 12,
+  "phoneMeasured": false,
+  "clientPipelineMeasured": false,
+  "newRuntimeQueries": 0,
+  "scope": "Identical current Mac librime schemas, emoji and Octagram; isolated synthetic userdb; development/regression cases, not independent user accuracy. Files reproduced exactly from frozen inputs for release 268d6127.",
+  "quality": {
+    "full": {
+      "inputs": 68390,
+      "new": {
+        "before": {
+          "count": 1014,
+          "top1": 841,
+          "top3": 841,
+          "top8": 841,
+          "top50": 841
+        },
+        "after": {
+          "count": 1014,
+          "top1": 997,
+          "top3": 1011,
+          "top8": 1014,
+          "top50": 1014
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 157,
+        "top8RankWorse": 0
+      },
+      "weights": {
+        "before": {
+          "count": 12,
+          "top1": 0,
+          "top3": 4,
+          "top8": 12,
+          "top50": 12
+        },
+        "after": {
+          "count": 12,
+          "top1": 1,
+          "top3": 8,
+          "top8": 12,
+          "top50": 12
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 1,
+        "top8RankWorse": 0
+      },
+      "oldLosses": {
+        "first": [],
+        "top8": [],
+        "top50": [],
+        "withinTop8": [
+          {
+            "word": "宽洪海量",
+            "input": "khhl",
+            "group": "newAbbreviations",
+            "query": "khhl",
+            "beforeRank": 3,
+            "afterRank": 4
+          }
+        ]
+      },
+      "canonicalSameCodeFirstGuards": {
+        "before": {
+          "count": 16,
+          "top1": 16,
+          "top3": 16,
+          "top8": 16,
+          "top50": 16
+        },
+        "after": {
+          "count": 16,
+          "top1": 16,
+          "top3": 16,
+          "top8": 16,
+          "top50": 16
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 0,
+        "top8RankWorse": 0
+      }
+    },
+    "t9": {
+      "inputs": 53619,
+      "new": {
+        "before": {
+          "count": 1014,
+          "top1": 597,
+          "top3": 597,
+          "top8": 597,
+          "top50": 597
+        },
+        "after": {
+          "count": 1014,
+          "top1": 969,
+          "top3": 1011,
+          "top8": 1014,
+          "top50": 1014
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 373,
+        "top8RankWorse": 0
+      },
+      "weights": {
+        "before": {
+          "count": 12,
+          "top1": 0,
+          "top3": 0,
+          "top8": 0,
+          "top50": 12
+        },
+        "after": {
+          "count": 12,
+          "top1": 0,
+          "top3": 0,
+          "top8": 3,
+          "top50": 12
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 0,
+        "top8RankWorse": 0
+      },
+      "oldLosses": {
+        "first": [],
+        "top8": [],
+        "top50": [],
+        "withinTop8": [
+          {
+            "word": "早点休息吧",
+            "input": "zdxxb",
+            "layer": "base",
+            "group": "abbreviations",
+            "query": "93992",
+            "beforeRank": 6,
+            "afterRank": 7
+          }
+        ]
+      },
+      "canonicalSameCodeFirstGuards": {
+        "before": {
+          "count": 54,
+          "top1": 54,
+          "top3": 54,
+          "top8": 54,
+          "top50": 54
+        },
+        "after": {
+          "count": 54,
+          "top1": 54,
+          "top3": 54,
+          "top8": 54,
+          "top50": 54
+        },
+        "expectedFirstLost": 0,
+        "firstChanged": 0,
+        "top8RankWorse": 0
+      }
+    }
+  }
+}
