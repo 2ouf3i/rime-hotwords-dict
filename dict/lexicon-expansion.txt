@@ -5996,3 +5996,551 @@
 监查	300	jian cha
 抢鲜	300	qiang xian
 窝家	300	wo jia
+# 2026-10-22 第十批：547 条完整日常表达；人工核音，29 项同码／简拼冲突降权保护
+一起进去	1000	yi qi jin qu
+一起出去	1000	yi qi chu qu
+一起学车	1000	yi qi xue che
+一起过去	1000	yi qi guo qu
+一起回家吧	1000	yi qi hui jia ba
+一起跳舞吧	1000	yi qi tiao wu ba
+不太在行	1000	bu tai zai hang
+不太想看	1000	bu tai xiang kan
+不太行了	1000	bu tai xing le
+不太清楚了	1000	bu tai qing chu le
+不太记得了	1000	bu tai ji de le
+不用交钱	1000	bu yong jiao qian
+不用加了	1000	bu yong jia le
+不用我去	1000	bu yong wo qu
+不用买了	1000	bu yong mai le
+不用交了	1000	bu yong jiao le
+不用做了	1000	bu yong zuo le
+不用写了	1000	bu yong xie le
+不用出去	1000	bu yong chu qu
+不用发了	1	bu yong fa le
+不用吃了	1000	bu yong chi le
+不用太早	1000	bu yong tai zao
+不用带了	1000	bu yong dai le
+不用感谢	1000	bu yong gan xie
+不用拍了	1000	bu yong pai le
+不用拿了	1000	bu yong na le
+不用改了	1000	bu yong gai le
+不用来了	1000	bu yong lai le
+不用看了	1000	bu yong kan le
+不用给了	1000	bu yong gei le
+不用试了	1000	bu yong shi le
+不用过来	1000	bu yong guo lai
+不用送了	1000	bu yong song le
+不用问了	1000	bu yong wen le
+不用回我了	1000	bu yong hui wo le
+不用跟我说	1000	bu yong gen wo shuo
+不用过来了	1000	bu yong guo lai le
+中午不行	1000	zhong wu bu xing
+中午出去	1000	zhong wu chu qu
+中午回去	1000	zhong wu hui qu
+中午好呀	1000	zhong wu hao ya
+中午没吃	1000	zhong wu mei chi
+中午过去	1000	zhong wu guo qu
+中午过来	1000	zhong wu guo lai
+中午不吃饭	1000	zhong wu bu chi fan
+中午吃啥了	1000	zhong wu chi sha le
+中午吃啥呀	1000	zhong wu chi sha ya
+中午没吃饭	1000	zhong wu mei chi fan
+中午没睡觉	1000	zhong wu mei shui jiao
+买了一些	1000	mai le yi xie
+买了点药	1000	mai le dian yao
+买了点菜	1000	mai le dian cai
+买点别的	1000	mai dian bie de
+买了个车	1000	mai le ge che
+今天不来	1000	jin tian bu lai
+今天买了	1000	jin tian mai le
+今天出去	1000	jin tian chu qu
+今天出来	1000	jin tian chu lai
+今天去了	1000	jin tian qu le
+今天发吗	1000	jin tian fa ma
+今天吃了	1000	jin tian chi le
+今天好早	1000	jin tian hao zao
+今天好饿	1000	jin tian hao e
+今天收到	1000	jin tian shou dao
+今天晚班	1000	jin tian wan ban
+今天有空	1000	jin tian you kong
+今天来了	1000	jin tian lai le
+今天来吗	1000	jin tian lai ma
+今天没事	1000	jin tian mei shi
+今天没去	1000	jin tian mei qu
+今天没来	1000	jin tian mei lai
+今天累了	1000	jin tian lei le
+今天能到	1000	jin tian neng dao
+今天还好	1000	jin tian hai hao
+今天发货吗	1000	jin tian fa huo ma
+今天太晚了	1000	jin tian tai wan le
+今天太累了	1000	jin tian tai lei le
+今天忙不忙	1000	jin tian mang bu mang
+今天有点事	1000	jin tian you dian shi
+今天有点忙	1000	jin tian you dian mang
+今天没回家	1000	jin tian mei hui jia
+今天请假了	1000	jin tian qing jia le
+今天这么早	1000	jin tian zhe me zao
+先去忙了	1000	xian qu mang le
+先去我家	1000	xian qu wo jia
+先去洗澡	1000	xian qu xi zao
+先去洗漱	1000	xian qu xi shu
+先去吃饭了	1000	xian qu chi fan le
+先去吃饭吧	1000	xian qu chi fan ba
+先去洗澡了	1	xian qu xi zao le
+出门回来	1000	chu men hui lai
+出门晚了	1000	chu men wan le
+刚刚洗澡	1000	gang gang xi zao
+刚刚出去	1000	gang gang chu qu
+刚刚出门	1000	gang gang chu men
+刚刚吃过	1000	gang gang chi guo
+刚刚忙完	1000	gang gang mang wan
+刚刚有事	1000	gang gang you shi
+刚刚看见	1000	gang gang kan jian
+刚刚起来	1000	gang gang qi lai
+刚刚过来	1000	gang gang guo lai
+刚刚醒来	1000	gang gang xing lai
+刚刚在洗澡	1000	gang gang zai xi zao
+刚刚打错了	1000	gang gang da cuo le
+刚刚有点事	1000	gang gang you dian shi
+刚刚没看到	1000	gang gang mei kan dao
+刚刚没看见	1000	gang gang mei kan jian
+刚刚洗完澡	1000	gang gang xi wan zao
+刚刚睡着了	1000	gang gang shui zhao le
+别忘了去	1	bie wang le qu
+别忘了吃	1000	bie wang le chi
+别忘了拿	1000	bie wang le na
+别忘喝水	1000	bie wang he shui
+到家了呀	1000	dao jia le ya
+到家就好	1000	dao jia jiu hao
+发错图了	1000	fa cuo tu le
+发错地方	1000	fa cuo di fang
+发错了吗	1	fa cuo le ma
+发错群了	1000	fa cuo qun le
+发错地方了	1000	fa cuo di fang le
+吃完了呀	1000	chi wan le ya
+吃完了呢	1	chi wan le ne
+吃完再来	1000	chi wan zai lai
+吃完再说	1000	chi wan zai shuo
+吃完回去	1000	chi wan hui qu
+吃完回来	1	chi wan hui lai
+吃完就去	1000	chi wan jiu qu
+吃完睡觉	1000	chi wan shui jiao
+吃完饭了	1	chi wan fan le
+吃点好吃	1000	chi dian hao chi
+回家吃吗	1000	hui jia chi ma
+回家看吧	1000	hui jia kan ba
+回家了呀	1000	hui jia le ya
+回家去了	1000	hui jia qu le
+回家来了	1000	hui jia lai le
+回家再说吧	1000	hui jia zai shuo ba
+回家吃饭了	1000	hui jia chi fan le
+回来了哈	1000	hui lai le ha
+回来再吃	1000	hui lai zai chi
+回来再看	1000	hui lai zai kan
+回来吃吗	1000	hui lai chi ma
+回来吃吧	1000	hui lai chi ba
+回来没呢	1000	hui lai mei ne
+回来睡觉	1000	hui lai shui jiao
+回来吃饭了	1000	hui lai chi fan le
+回来吃饭吗	1000	hui lai chi fan ma
+回来和你说	1000	hui lai he ni shuo
+周末不加班	1000	zhou mo bu jia ban
+好好玩呀	1000	hao hao wan ya
+好好练琴	1000	hao hao lian qin
+好好过节	1000	hao hao guo jie
+好好修车	1000	hao hao xiu che
+好好写吧	1000	hao hao xie ba
+好好吃吧	1000	hao hao chi ba
+好好回去	1000	hao hao hui qu
+好好睡会	1000	hao hao shui hui
+好好练车	1000	hao hao lian che
+好好骑车	1000	hao hao qi che
+好好养着吧	1000	hao hao yang zhe ba
+好好开车吧	1000	hao hao kai che ba
+已经做完	1000	yi jing zuo wan
+已经弄好	1000	yi jing nong hao
+已经很好	1000	yi jing hen hao
+已经交了	1000	yi jing jiao le
+已经付了	1000	yi jing fu le
+已经做了	1000	yi jing zuo le
+已经催了	1000	yi jing cui le
+已经出来	1000	yi jing chu lai
+已经删了	1000	yi jing shan le
+已经填好	1000	yi jing tian hao
+已经够了	1000	yi jing gou le
+已经定了	1000	yi jing ding le
+已经忘了	1	yi jing wang le
+已经报了	1000	yi jing bao le
+已经拍了	1000	yi jing pai le
+已经拍完	1000	yi jing pai wan
+已经改了	1000	yi jing gai le
+已经来了	1	yi jing lai le
+已经满了	1000	yi jing man le
+已经看了	1	yi jing kan le
+已经签了	1000	yi jing qian le
+已经说了	1000	yi jing shuo le
+已经走完	1000	yi jing zou wan
+已经超过	1000	yi jing chao guo
+已经退了	1000	yi jing tui le
+已经问了	1000	yi jing wen le
+已经下单了	1000	yi jing xia dan le
+已经下班了	1000	yi jing xia ban le
+已经不玩了	1000	yi jing bu wan le
+已经做好了	1000	yi jing zuo hao le
+已经准备好	1000	yi jing zhun bei hao
+已经出发了	1000	yi jing chu fa le
+已经发货了	1000	yi jing fa huo le
+已经和好了	1000	yi jing he hao le
+已经处理了	1000	yi jing chu li le
+已经处理好	1000	yi jing chu li hao
+已经安排了	1000	yi jing an pai le
+已经安排好	1000	yi jing an pai hao
+已经实现了	1	yi jing shi xian le
+已经很好了	1000	yi jing hen hao le
+已经提交了	1000	yi jing ti jiao le
+已经收到了	1000	yi jing shou dao le
+已经没事了	1000	yi jing mei shi le
+已经申请了	1000	yi jing shen qing le
+已经确认了	1000	yi jing que ren le
+已经离职了	1000	yi jing li zhi le
+已经私信了	1000	yi jing si xin le
+已经签收了	1000	yi jing qian shou le
+已经补上了	1000	yi jing bu shang le
+已经补充了	1000	yi jing bu chong le
+已经达到了	1000	yi jing da dao le
+已经过期了	1000	yi jing guo qi le
+已经通过了	1000	yi jing tong guo le
+已经很不错了	1000	yi jing hen bu cuo le
+已经走出来了	1000	yi jing zou chu lai le
+慢慢就好	1000	man man jiu hao
+慢慢写吧	1000	man man xie ba
+慢慢吃吧	1000	man man chi ba
+慢慢想吧	1000	man man xiang ba
+慢慢攒钱	1000	man man zan qian
+慢慢改吧	1000	man man gai ba
+慢慢看吧	1000	man man kan ba
+慢慢走吧	1000	man man zou ba
+慢点骑车	1000	man dian qi che
+慢点说	1000	man dian shuo
+慢慢来就好	1000	man man lai jiu hao
+慢慢来比较快	1000	man man lai bi jiao kuai
+找到人了	1000	zhao dao ren le
+找到他了	1000	zhao dao ta le
+找到就好	1000	zhao dao jiu hao
+找到我了	1000	zhao dao wo le
+早点写完	1000	zao dian xie wan
+早点出去	1000	zao dian chu qu
+早点出门	1000	zao dian chu men
+早点去吧	1000	zao dian qu ba
+早点吃饭	1000	zao dian chi fan
+早点睡呀	1000	zao dian shui ya
+早点睡哈	1000	zao dian shui ha
+早点睡哦	1000	zao dian shui o
+早点起来	1000	zao dian qi lai
+早点休息哦	1000	zao dian xiu xi o
+早上吃了	1000	zao shang chi le
+早上就去	1000	zao shang jiu qu
+明天不行	1000	ming tian bu xing
+明天再去	1000	ming tian zai qu
+明天出去	1000	ming tian chu qu
+明天出来	1000	ming tian chu lai
+明天到了	1000	ming tian dao le
+明天去吗	1	ming tian qu ma
+明天去吧	1000	ming tian qu ba
+明天去拿	1	ming tian qu na
+明天就去	1000	ming tian jiu qu
+明天有空	1000	ming tian you kong
+明天来吧	1000	ming tian lai ba
+明天看吧	1000	ming tian kan ba
+明天看看	1000	ming tian kan kan
+明天要去	1000	ming tian yao qu
+明天说吧	1000	ming tian shuo ba
+明天请早	1000	ming tian qing zao
+明天上午去	1000	ming tian shang wu qu
+明天下午去	1000	ming tian xia wu qu
+明天下午吧	1000	ming tian xia wu ba
+明天再玩吧	1000	ming tian zai wan ba
+明天再看吧	1000	ming tian zai kan ba
+明天几点去	1000	ming tian ji dian qu
+明天去不去	1000	ming tian qu bu qu
+明天去你家	1000	ming tian qu ni jia
+明天去看看	1000	ming tian qu kan kan
+明天可以吗	1000	ming tian ke yi ma
+明天开学了	1000	ming tian kai xue le
+明天早上去	1000	ming tian zao shang qu
+明天来我家	1000	ming tian lai wo jia
+明天看看吧	1000	ming tian kan kan ba
+明天起不来	1000	ming tian qi bu lai
+明天还上班	1000	ming tian hai shang ban
+晚上再聊	1000	wan shang zai liao
+晚上去吃	1000	wan shang qu chi
+晚上吃吧	1000	wan shang chi ba
+晚上上班	1000	wan shang shang ban
+晚上不行	1000	wan shang bu xing
+晚上再说	1000	wan shang zai shuo
+晚上出去	1000	wan shang chu qu
+晚上去看	1000	wan shang qu kan
+晚上吃了	1000	wan shang chi le
+晚上就去	1000	wan shang jiu qu
+晚上打球	1000	wan shang da qiu
+晚上有空	1000	wan shang you kong
+晚上看看	1000	wan shang kan kan
+晚上过来	1000	wan shang guo lai
+晚上不吃了	1000	wan shang bu chi le
+晚上没吃饭	1000	wan shang mei chi fan
+晚上跟你说	1000	wan shang gen ni shuo
+晚点也行	1000	wan dian ye xing
+晚点出去	1000	wan dian chu qu
+晚点去拿	1000	wan dian qu na
+晚点吃饭	1000	wan dian chi fan
+晚点见	1	wan dian jian
+最近上班	1000	zui jin shang ban
+最近在家	1000	zui jin zai jia
+最近在忙	1000	zui jin zai mang
+最近在看	1000	zui jin zai kan
+最近没见	1000	zui jin mei jian
+最近较忙	1000	zui jin jiao mang
+最近太忙了	1000	zui jin tai mang le
+有点尬	1000	you dian ga
+有点懒	1	you dian lan
+有点肿	1000	you dian zhong
+有点饱	1	you dian bao
+有点不懂	1000	you dian bu dong
+有点久了	1000	you dian jiu le
+有点冷了	1000	you dian leng le
+有点多了	1000	you dian duo le
+有点大了	1000	you dian da le
+有点小了	1	you dian xiao le
+有点少了	1000	you dian shao le
+有点忘了	1000	you dian wang le
+有点想去	1000	you dian xiang qu
+有点想吃	1000	you dian xiang chi
+有点晕车	1000	you dian yun che
+有点贵了	1000	you dian gui le
+有点远了	1000	you dian yuan le
+有点长了	1000	you dian chang le
+有点难过	1000	you dian nan guo
+有点不太好	1000	you dian bu tai hao
+有点不想去	1000	you dian bu xiang qu
+有点受不了	1000	you dian shou bu liao
+有点看不懂	1000	you dian kan bu dong
+有点睡不着	1000	you dian shui bu zhao
+有点过分了	1000	you dian guo fen le
+等下次吧	1000	deng xia ci ba
+等下回去	1000	deng xia hui qu
+等下回来	1000	deng xia hui lai
+等下就去	1000	deng xia jiu qu
+等下看看	1000	deng xia kan kan
+等下过去	1000	deng xia guo qu
+等下过来	1000	deng xia guo lai
+等会一起	1000	deng hui yi qi
+等会儿吧	1000	deng hui er ba
+等会再看	1000	deng hui zai kan
+等会我去	1000	deng hui wo qu
+等会看看	1000	deng hui kan kan
+等会过来	1000	deng hui guo lai
+等会再说吧	1000	deng hui zai shuo ba
+等会我看看	1000	deng hui wo kan kan
+等会跟你说	1000	deng hui gen ni shuo
+记得喝水	1000	ji de he shui
+记得吃早饭	1000	ji de chi zao fan
+谢谢了哈	1000	xie xie le ha
+谢谢你哈	1000	xie xie ni ha
+谢谢您哦	1000	xie xie nin o
+谢谢关心哦	1000	xie xie guan xin o
+谢谢提醒哦	1000	xie xie ti xing o
+谢谢老师了	1000	xie xie lao shi le
+谢谢你的意见	1000	xie xie ni de yi jian
+起床了吧	1000	qi chuang le ba
+起床吃饭了	1000	qi chuang chi fan le
+辛苦您了	1000	xin ku nin le
+辛苦你们了	1000	xin ku ni men le
+辛苦老师了	1000	xin ku lao shi le
+还没办完	1	hai mei ban wan
+还没听到	1000	hai mei ting dao
+还没听说	1000	hai mei ting shuo
+还没上完	1000	hai mei shang wan
+还没上来	1000	hai mei shang lai
+还没上车	1000	hai mei shang che
+还没下去	1000	hai mei xia qu
+还没下车	1000	hai mei xia che
+还没买到	1000	hai mei mai dao
+还没买呢	1000	hai mei mai ne
+还没做过	1000	hai mei zuo guo
+还没做饭	1000	hai mei zuo fan
+还没关门	1000	hai mei guan men
+还没写好	1000	hai mei xie hao
+还没出去	1000	hai mei chu qu
+还没到呀	1000	hai mei dao ya
+还没到呢	1000	hai mei dao ne
+还没去呢	1000	hai mei qu ne
+还没去看	1000	hai mei qu kan
+还没发车	1000	hai mei fa che
+还没吃呢	1	hai mei chi ne
+还没吃过	1000	hai mei chi guo
+还没听完	1000	hai mei ting wan
+还没和好	1000	hai mei he hao
+还没喝完	1000	hai mei he wan
+还没好呀	1000	hai mei hao ya
+还没好呢	1	hai mei hao ne
+还没学会	1000	hai mei xue hui
+还没学完	1000	hai mei xue wan
+还没定好	1000	hai mei ding hao
+还没干完	1	hai mei gan wan
+还没开完	1000	hai mei kai wan
+还没开门	1000	hai mei kai men
+还没开饭	1000	hai mei kai fan
+还没弄好	1000	hai mei nong hao
+还没弄完	1000	hai mei nong wan
+还没打完	1000	hai mei da wan
+还没抢到	1000	hai mei qiang dao
+还没拿到	1000	hai mei na dao
+还没接到	1000	hai mei jie dao
+还没整完	1000	hai mei zheng wan
+还没有吃	1000	hai mei you chi
+还没有好	1000	hai mei you hao
+还没有来	1000	hai mei you lai
+还没有看	1000	hai mei you kan
+还没有说	1000	hai mei you shuo
+还没机会	1000	hai mei ji hui
+还没来呢	1	hai mei lai ne
+还没洗好	1000	hai mei xi hao
+还没玩完	1000	hai mei wan wan
+还没玩过	1000	hai mei wan guo
+还没用呢	1000	hai mei yong ne
+还没用完	1000	hai mei yong wan
+还没画完	1000	hai mei hua wan
+还没看到	1000	hai mei kan dao
+还没看呢	1	hai mei kan ne
+还没看见	1000	hai mei kan jian
+还没看过	1000	hai mei kan guo
+还没睡吗	1000	hai mei shui ma
+还没睡吧	1000	hai mei shui ba
+还没睡好	1000	hai mei shui hao
+还没等到	1000	hai mei deng dao
+还没给钱	1000	hai mei gei qian
+还没试过	1000	hai mei shi guo
+还没说呢	1000	hai mei shuo ne
+还没说好	1000	hai mei shuo hao
+还没达到	1	hai mei da dao
+还没还钱	1000	hai mei huan qian
+还没进去	1000	hai mei jin qu
+还没送到	1000	hai mei song dao
+还没送来	1000	hai mei song lai
+还没通过	1000	hai mei tong guo
+还没醒呢	1000	hai mei xing ne
+还没问呢	1000	hai mei wen ne
+还没下课吗	1000	hai mei xia ke ma
+还没做好呢	1000	hai mei zuo hao ne
+还没出来吗	1000	hai mei chu lai ma
+还没出来呢	1000	hai mei chu lai ne
+还没去过呢	1000	hai mei qu guo ne
+还没发过去	1000	hai mei fa guo qu
+还没发过来	1000	hai mei fa guo lai
+还没回来呀	1000	hai mei hui lai ya
+还没在一起	1000	hai mei zai yi qi
+还没定下来	1000	hai mei ding xia lai
+还没收拾完	1000	hai mei shou shi wan
+还没放假呢	1000	hai mei fang jia ne
+还没有下班	1000	hai mei you xia ban
+还没有吃饭	1000	hai mei you chi fan
+还没有回来	1000	hai mei you hui lai
+还没有收到	1000	hai mei you shou dao
+还没看出来	1000	hai mei kan chu lai
+还没睡着呢	1000	hai mei shui zhao ne
+还没睡觉吗	1000	hai mei shui jiao ma
+还没结束吗	1000	hai mei jie shu ma
+还没结束呢	1000	hai mei jie shu ne
+还没缓过来	1000	hai mei huan guo lai
+还没起来吗	1000	hai mei qi lai ma
+还没那么快	1000	hai mei na me kuai
+还没反应过来	1000	hai mei fan ying guo lai
+马上下去	1000	ma shang xia qu
+马上出去	1000	ma shang chu qu
+马上好了	1000	ma shang hao le
+马上完事	1000	ma shang wan shi
+马上就去	1000	ma shang jiu qu
+马上弄完	1000	ma shang nong wan
+马上打完	1000	ma shang da wan
+马上来了	1	ma shang lai le
+马上看完	1000	ma shang kan wan
+马上睡了	1000	ma shang shui le
+马上走了	1000	ma shang zou le
+马上起来	1000	ma shang qi lai
+马上下班了	1000	ma shang xia ban le
+马上下课了	1000	ma shang xia ke le
+马上到家了	1000	ma shang dao jia le
+马上吃饭了	1000	ma shang chi fan le
+马上回去了	1000	ma shang hui qu le
+马上结束了	1000	ma shang jie shu le
+马上就回来了	1000	ma shang jiu hui lai le
+麻烦一下	1000	ma fan yi xia
+麻烦帮忙	1000	ma fan bang mang
+麻烦看看	1000	ma fan kan kan
+麻烦你个事	1000	ma fan ni ge shi
+麻烦你们了	1000	ma fan ni men le
+麻烦你看看	1000	ma fan ni kan kan
+麻烦帮忙看	1000	ma fan bang mang kan
+麻烦开下门	1000	ma fan kai xia men
+麻烦您帮忙	1000	ma fan nin bang mang
+麻烦查一下	1000	ma fan cha yi xia
+麻烦老师了	1000	ma fan lao shi le
+麻烦安排一下	1000	ma fan an pai yi xia
+麻烦审核一下	1000	ma fan shen he yi xia
+麻烦帮忙看看	1000	ma fan bang mang kan kan
+麻烦提供一下	1000	ma fan ti gong yi xia
+麻烦核实一下	1000	ma fan he shi yi xia
+麻烦核对一下	1000	ma fan he dui yi xia
+麻烦确认一下	1000	ma fan que ren yi xia
+保鲜盖	1000	bao xian gai
+加班党	1000	jia ban dang
+吃药没	1	chi yao mei
+吃药没有	1000	chi yao mei you
+在发烧	1	zai fa shao
+收款额	1000	shou kuan e
+猫砂铲	1000	mao sha chan
+行李框	1000	xing li kuang
+帮我请假	1000	bang wo qing jia
+明天体检	1000	ming tian ti jian
+需要签字	1000	xu yao qian zi
+在哪下车	1000	zai na xia che
+有充电器	1000	you chong dian qi
+不准请假	1000	bu zhun qing jia
+不是开会	1000	bu shi kai hui
+准备开会	1000	zhun bei kai hui
+午餐愉快	1000	wu can yu kuai
+我去吃药	1000	wo qu chi yao
+在下载	1000	zai xia zai
+做文件	1000	zuo wen jian
+加密码	1000	jia mi ma
+客服群	1000	ke fu qun
+总掉线	1000	zong diao xian
+找耳机	1000	zhao er ji
+老掉线	1	lao diao xian
+不带耳机	1000	bu dai er ji
+什么文件	1000	shen me wen jian
+刚才掉线	1000	gang cai diao xian
+卡号密码	1000	ka hao mi ma
+发邮箱里	1000	fa you xiang li
+就掉线了	1000	jiu diao xian le
+就没信号	1000	jiu mei xin hao
+老是掉线	1000	lao shi diao xian
+网络标识	1000	wang luo biao shi
+都没通知	1000	dou mei tong zhi
+通知我们	1000	tong zhi wo men
+带上伞	1000	dai shang san
+有点哑	1000	you dian ya
+慢慢攒	1000	man man zan
+你先到	1000	ni xian dao
+我先到	1000	wo xian dao
+我先拿	1000	wo xian na
+我先洗	1	wo xian xi
+我去睡	1000	wo qu shui
+帮我寄	1000	bang wo ji
+帮我换	1000	bang wo huan
+先去吃	1000	xian qu chi
+有点爽	1000	you dian shuang
+吃点粥	1000	chi dian zhou
+喝点奶	1000	he dian nai
+我来写	1000	wo lai xie
+我来改	1000	wo lai gai

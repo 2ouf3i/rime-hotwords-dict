@@ -1,5 +1,16 @@
 # Ninan Rime dictionary data
 
+## Main dictionary 56e65d82 (2026-10-22)
+
+Adds 547 reviewed everyday expressions relative to the last reproducible public release 070245a7, retaining all its word/readings and weights. The main table has 899,716 entries; the auto-reading table also includes two newly accepted public admin hotwords, reaching 981,641 entries. Including the legacy dictionary there are 1,888,330 distinct word forms, with 6,529 formal expansion entries.
+
+```bash
+bash scripts/reproduce-56e65d82.sh /path/to/pinned-rime-ice /path/to/new-output
+```
+
+The 550 manually selected expressions were checked against existing locally decoded reference observations; 3 reading disagreements were held. Final weights are independently assigned, with 29 collision caps preserving existing first choices. Native engine regression used 64,735 full-pinyin and 50,567 nine-key inputs with identical current schemas and emoji/Octagram resources. All 547 new targets appear within eight candidates in both schemas. Tested existing first choices and top-eight/top-fifty targets were retained; two within-top-eight positions changed in each schema. These are development/regression targets, not independent user accuracy. Existing learning survives the update, and new-word learning survives process restart in isolated synthetic databases. No client algorithm or phone installation is included. Public next-word uses the already published ad8c9c82 release; emoji and language models retain their prior releases.
+
+
 ## Main dictionary 070245a7 (2026-10-19)
 
 Adds 973 reviewed word forms covering everyday items, food, care, work documents and equipment, and raises 9 existing word-and-reading weights relative to e448d8f1. These include specialist terms, not a claim that every addition is high frequency. The main table has 899,169 entries; the auto-reading table stays byte-for-byte identical at 981,639 entries. Including the legacy dictionary, there are 1,887,781 distinct word forms. Normal build inputs now contain 5,982 expansion entries.
