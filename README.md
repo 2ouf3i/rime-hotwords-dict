@@ -174,3 +174,7 @@ See [NOTICE.md](NOTICE.md) for upstream data, attribution, and input provenance.
 ## 2026-11-01 release snapshots
 
 Chinese `02f00398`: 237 reviewed forms, frozen inputs under `inputs/2026-11-01-round12`; run `scripts/reproduce-02f00398.sh` with the pinned upstream. The separate eight-resource multilingual snapshot, per-resource attribution and exact-copy verification are under `multilingual/2026-11-01`. These snapshots do not imply any individual device has loaded them.
+
+## 2026-11-01 second data publication
+
+Chinese `9e926c40`: 701 reviewed new forms/readings, frozen inputs `inputs/2026-11-01-round13`, reproduce with `scripts/reproduce-9e926c40.sh`. Multilingual round 2 contains seven independently hashed resources and a complete baseline-plus-curation reproducer under `multilingual/2026-11-01-round2`; Vietnamese syllable data remains unchanged. Data published here does not imply any individual device has loaded it.

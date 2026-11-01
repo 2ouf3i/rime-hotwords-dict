@@ -1,0 +1,61 @@
+{
+  "expectedRevision": 1,
+  "resources": {
+    "english": {
+      "url": "https://dl.ninan.cloud/dict/english-a43ae612d24b319837d801d41318c356938d937a35c0f491576791285fe2e7d8.txt",
+      "sha256": "a43ae612d24b319837d801d41318c356938d937a35c0f491576791285fe2e7d8",
+      "bytes": 1639957,
+      "entries": 131129,
+      "formatVersion": 1,
+      "source": "AOSP LatinIME (Apache-2.0) + Ninan original modern words"
+    },
+    "englishInPinyin": {
+      "url": "https://dl.ninan.cloud/dict/englishInPinyin-72186e4b495abb4d63ceb97befca44b0a0de37a8d9daffb1ffbd72b1e1918733.txt",
+      "sha256": "72186e4b495abb4d63ceb97befca44b0a0de37a8d9daffb1ffbd72b1e1918733",
+      "bytes": 338454,
+      "entries": 23919,
+      "formatVersion": 1,
+      "source": "AOSP LatinIME (Apache-2.0) + Ninan original selection"
+    },
+    "zhuyin": {
+      "url": "https://dl.ninan.cloud/dict/zhuyin-bfd3abe8c30b88ee0ee1a57f64dc07b1ddcc8dfb20ab6e30f7d457f26ffd2da5.dict.yaml",
+      "sha256": "bfd3abe8c30b88ee0ee1a57f64dc07b1ddcc8dfb20ab6e30f7d457f26ffd2da5",
+      "bytes": 6899540,
+      "entries": 172192,
+      "formatVersion": 1,
+      "source": "McBopomofo be6564acad6c (MIT) / libtabe (BSD) + Ninan original phrases"
+    },
+    "japaneseNext": {
+      "url": "https://dl.ninan.cloud/dict/japaneseNext-f4de41f3c6d8494dea8cfe37bd46b2b3cdbd4c19e22d3340cbf057c248f86410.txt",
+      "sha256": "f4de41f3c6d8494dea8cfe37bd46b2b3cdbd4c19e22d3340cbf057c248f86410",
+      "bytes": 1231761,
+      "entries": 40301,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org), Mozc BSD/IPAdic + Ninan reviewed phrases"
+    },
+    "korean": {
+      "url": "https://dl.ninan.cloud/dict/korean-5d812d4f8dc0c074508a49cb6809513c2709e2f6c235844844e7107d470d3e12.txt",
+      "sha256": "5d812d4f8dc0c074508a49cb6809513c2709e2f6c235844844e7107d470d3e12",
+      "bytes": 410404,
+      "entries": 30036,
+      "formatVersion": 1,
+      "source": "FrequencyWords 525f9b5, Hermit Dave (CC BY-SA 4.0) + Ninan original words"
+    },
+    "koreanNext": {
+      "url": "https://dl.ninan.cloud/dict/koreanNext-cdf257f6990c486301e0a240ab65211bb6cef1d644e709852ac8c7232b5c2b5d.txt",
+      "sha256": "cdf257f6990c486301e0a240ab65211bb6cef1d644e709852ac8c7232b5c2b5d",
+      "bytes": 507215,
+      "entries": 13857,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org) + Ninan reviewed phrases"
+    },
+    "vietnameseNext": {
+      "url": "https://dl.ninan.cloud/dict/vietnameseNext-a89965b0442b438a7476c4ef00483cf654e2b1cadde3c4bc29fde29a1adde929.txt",
+      "sha256": "a89965b0442b438a7476c4ef00483cf654e2b1cadde3c4bc29fde29a1adde929",
+      "bytes": 187682,
+      "entries": 4871,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org) + Ninan reviewed phrases"
+    }
+  }
+}

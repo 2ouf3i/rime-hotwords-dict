@@ -7797,3 +7797,705 @@
 我再完善一下	1000	wo zai wan shan yi xia
 我补好发给你	1000	wo bu hao fa gei ni
 我补齐发给你	1000	wo bu qi fa gei ni
+# 第十三批：700 项日常表达／词形 + 1 项同音守卫；编辑权重 1／2，不是来源频次；2026-11-01 离线验证，尚未 OTA。
+我抽空看一下	1	wo chou kong kan yi xia
+我晚点仔细看	1	wo wan dian zi xi kan
+我先看完再说	1	wo xian kan wan zai shuo
+我看完再答复	1	wo kan wan zai da fu
+我看完给你回	1	wo kan wan gei ni hui
+我忙完给你回	1	wo mang wan gei ni hui
+我等会联系你	1	wo deng hui lian xi ni
+我晚些联系你	1	wo wan xie lian xi ni
+我刚看到消息	1	wo gang kan dao xiao xi
+我刚看到信息	1	wo gang kan dao xin xi
+我没注意消息	1	wo mei zhu yi xiao xi
+消息没提醒我	1	xiao xi mei ti xing wo
+我这边没提醒	1	wo zhe bian mei ti xing
+刚才没看手机	1	gang cai mei kan shou ji
+我先充会电	1	wo xian chong hui dian
+我去充一下电	1	wo qu chong yi xia dian
+我现在不方便	1	wo xian zai bu fang bian
+我这边不方便	1	wo zhe bian bu fang bian
+我过会再打给你	1	wo guo hui zai da gei ni
+我等会打给你	1	wo deng hui da gei ni
+我回头打给你	1	wo hui tou da gei ni
+我到了再打给你	1	wo dao le zai da gei ni
+现在方便接吗	1	xian zai fang bian jie ma
+现在能接电话吗	1	xian zai neng jie dian hua ma
+你忙完回个话	1	ni mang wan hui ge hua
+看到后回我一下	1	kan dao hou hui wo yi xia
+看到消息回我	1	kan dao xiao xi hui wo
+有空了回个话	1	you kong le hui ge hua
+方便的话回我	1	fang bian de hua hui wo
+我有事找你说	1	wo you shi zhao ni shuo
+我发个消息问问	1	wo fa ge xiao xi wen wen
+我打个电话问问	1	wo da ge dian hua wen wen
+我找时间问问	1	wo zhao shi jian wen wen
+我再问问清楚	1	wo zai wen wen qing chu
+我问清楚告诉你	1	wo wen qing chu gao su ni
+我了解后告诉你	1	wo liao jie hou gao su ni
+这事我记着呢	1	zhe shi wo ji zhe ne
+我记在备忘录了	1	wo ji zai bei wang lu le
+我设置个提醒	1	wo she zhi ge ti xing
+我怕我又忘了	1	wo pa wo you wang le
+你到时提醒我	1	ni dao shi ti xing wo
+到时再提醒我	1	dao shi zai ti xing wo
+麻烦到时提醒我	1	ma fan dao shi ti xing wo
+我说得不太清楚	1	wo shuo de bu tai qing chu
+我重新说一遍	1	wo chong xin shuo yi bian
+我换个说法吧	1	wo huan ge shuo fa ba
+我没表达清楚	1	wo mei biao da qing chu
+我再解释一下	1	wo zai jie shi yi xia
+我大概明白了	1	wo da gai ming bai le
+我理解你的意思	1	wo li jie ni de yi si
+我懂你的意思了	1	wo dong ni de yi si le
+刚才打错字了	1	gang cai da cuo zi le
+刚才发错人了	1	gang cai fa cuo ren le
+我重新发一遍	1	wo chong xin fa yi bian
+我再补充一点	1	wo zai bu chong yi dian
+我补充说明一下	1	wo bu chong shuo ming yi xia
+我可能理解错了	1	wo ke neng li jie cuo le
+我再仔细看看	1	wo zai zi xi kan kan
+咱们再约时间	1	zan men zai yue shi jian
+咱们约个时间	1	zan men yue ge shi jian
+找个时间见面	1	zhao ge shi jian jian mian
+我们改天见吧	1	wo men gai tian jian ba
+我们下次再约	1	wo men xia ci zai yue
+我们另约时间	1	wo men ling yue shi jian
+时间再商量吧	1	shi jian zai shang liang ba
+具体时间再定	1	ju ti shi jian zai ding
+你哪天比较方便	1	ni na tian bi jiao fang bian
+你几点比较方便	1	ni ji dian bi jiao fang bian
+哪天方便都行	1	na tian fang bian dou xing
+我这几天都行	1	wo zhe ji tian dou xing
+我周末有安排	1	wo zhou mo you an pai
+我明天有安排	1	wo ming tian you an pai
+我那天有安排	1	wo na tian you an pai
+我看看时间表	1	wo kan kan shi jian biao
+我调整一下时间	1	wo tiao zheng yi xia shi jian
+我提前安排好	1	wo ti qian an pai hao
+我尽量早点到	1	wo jin liang zao dian dao
+我可能会晚一点	1	wo ke neng hui wan yi dian
+我大概晚到一会	1	wo da gai wan dao yi hui
+我尽量不迟到	1	wo jin liang bu chi dao
+我提前告诉你	1	wo ti qian gao su ni
+我提前跟你说	1	wo ti qian gen ni shuo
+咱们提前联系	1	zan men ti qian lian xi
+咱们到时联系	1	zan men dao shi lian xi
+到时看具体情况	1	dao shi kan ju ti qing kuang
+我们到时再看	1	wo men dao shi zai kan
+我先看看安排	1	wo xian kan kan an pai
+你确定了告诉我	1	ni que ding le gao su wo
+时间定了告诉我	1	shi jian ding le gao su wo
+地点定了告诉我	1	di dian ding le gao su wo
+我把地址发你	1	wo ba di zhi fa ni
+我发你具体地址	1	wo fa ni ju ti di zhi
+我把定位发你	1	wo ba ding wei fa ni
+你把定位发我	1	ni ba ding wei fa wo
+具体地址发我	1	ju ti di zhi fa wo
+你到了发消息	1	ni dao le fa xiao xi
+到了给我消息	1	dao le gei wo xiao xi
+你到了叫我一下	1	ni dao le jiao wo yi xia
+你快到了说一声	1	ni kuai dao le shuo yi sheng
+你出发了告诉我	1	ni chu fa le gao su wo
+我出发前告诉你	1	wo chu fa qian gao su ni
+我到了发消息	1	wo dao le fa xiao xi
+我快到了再说	1	wo kuai dao le zai shuo
+我下楼接你吧	1	wo xia lou jie ni ba
+我到门口接你	1	wo dao men kou jie ni
+我过去找你吧	1	wo guo qu zhao ni ba
+你过来找我吧	1	ni guo lai zhao wo ba
+咱们门口碰头	1	zan men men kou peng tou
+咱们楼下碰头	1	zan men lou xia peng tou
+咱们地铁口见	1	zan men di tie kou jian
+我在出口等你	1	wo zai chu kou deng ni
+我在大厅等你	1	wo zai da ting deng ni
+我在前台等你	1	wo zai qian tai deng ni
+不用特意等我	1	bu yong te yi deng wo
+你们不用等我	1	ni men bu yong deng wo
+你们先安排吧	1	ni men xian an pai ba
+你们先开始吧	1	ni men xian kai shi ba
+你们先进去吧	1	ni men xian jin qu ba
+你们先坐一下	1	ni men xian zuo yi xia
+我一会就过来	1	wo yi hui jiu guo lai
+我马上下楼了	1	wo ma shang xia lou le
+我刚上出租车	1	wo gang shang chu zu che
+我刚坐上地铁	1	wo gang zuo shang di tie
+我还在等地铁	1	wo hai zai deng di tie
+我还在等公交	1	wo hai zai deng gong jiao
+我刚赶上地铁	1	wo gang gan shang di tie
+我没赶上地铁	1	wo mei gan shang di tie
+我坐反方向了	1	wo zuo fan fang xiang le
+我下错站了	1	wo xia cuo zhan le
+我刚出地铁站	1	wo gang chu di tie zhan
+我到地铁口了	1	wo dao di tie kou le
+我还要转一次	1	wo hai yao zhuan yi ci
+我还要换乘呢	1	wo hai yao huan cheng ne
+我在换乘路上	1	wo zai huan cheng lu shang
+我下站就到了	1	wo xia zhan jiu dao le
+再过两站就到	1	zai guo liang zhan jiu dao
+我马上到站了	1	wo ma shang dao zhan le
+我在等红绿灯	1	wo zai deng hong lv deng
+我这边有点堵	1	wo zhe bian you dian du
+前面有点堵车	1	qian mian you dian du che
+我找个地方停车	1	wo zhao ge di fang ting che
+我先把车停好	1	wo xian ba che ting hao
+我停好车就来	1	wo ting hao che jiu lai
+我还在找车位	1	wo hai zai zhao che wei
+我把车停楼下	1	wo ba che ting lou xia
+我停在地下了	1	wo ting zai di xia le
+我到停车场了	1	wo dao ting che chang le
+我忘了停哪了	1	wo wang le ting na le
+停车费我付了	1	ting che fei wo fu le
+我已经叫好车	1	wo yi jing jiao hao che
+我叫的车到了	1	wo jiao de che dao le
+司机还没到呢	1	si ji hai mei dao ne
+我先看下路线	1	wo xian kan xia lu xian
+我查一下路线	1	wo cha yi xia lu xian
+我发你乘车码	1	wo fa ni cheng che ma
+我打开导航了	1	wo da kai dao hang le
+我跟着导航走	1	wo gen zhe dao hang zou
+这边不太好找	1	zhe bian bu tai hao zhao
+我绕了一圈了	1	wo rao le yi quan le
+我找不到入口	1	wo zhao bu dao ru kou
+你从哪个门进	1	ni cong na ge men jin
+你在几号出口	1	ni zai ji hao chu kou
+你走到哪个门	1	ni zou dao na ge men
+你在哪个路口	1	ni zai na ge lu kou
+你别走错出口	1	ni bie zou cuo chu kou
+我走到正门了	1	wo zou dao zheng men le
+我到侧门了	1	wo dao ce men le
+我在地下入口	1	wo zai di xia ru kou
+高铁票改签了	1	gao tie piao gai qian le
+我把票退了吧	1	wo ba piao tui le ba
+我还没买到票	1	wo hai mei mai dao piao
+我订好车票了	1	wo ding hao che piao le
+我已经进站了	1	wo yi jing jin zhan le
+我正在候车呢	1	wo zheng zai hou che ne
+我快到检票口	1	wo kuai dao jian piao kou
+我准备检票了	1	wo zhun bei jian piao le
+航班延误了	1	hang ban yan wu le
+我正在过安检	1	wo zheng zai guo an jian
+我刚过完安检	1	wo gang guo wan an jian
+我还在等行李	1	wo hai zai deng xing li
+我拿到行李了	1	wo na dao xing li le
+我已经落地了	1	wo yi jing luo di le
+我刚到出发层	1	wo gang dao chu fa ceng
+我在到达层等你	1	wo zai dao da ceng deng ni
+停车优惠券	1	ting che you hui quan
+临停区	1	lin ting qu
+网约车上车点	1	wang yue che shang che dian
+高铁换乘	1	gao tie huan cheng
+跨站换乘	1	kua zhan huan cheng
+我把单号发你	1	wo ba dan hao fa ni
+我发你快递单号	1	wo fa ni kuai di dan hao
+我查一下物流	1	wo cha yi xia wu liu
+我查到物流了	1	wo cha dao wu liu le
+物流还没更新	1	wu liu hai mei geng xin
+物流更新了	1	wu liu geng xin le
+物流一直没动	1	wu liu yi zhi mei dong
+我问一下快递员	1	wo wen yi xia kuai di yuan
+快递在驿站了	1	kuai di zai yi zhan le
+快递放驿站了	1	kuai di fang yi zhan le
+快递放门卫了	1	kuai di fang men wei le
+快递放柜子了	1	kuai di fang gui zi le
+快递被退回了	1	kuai di bei tui hui le
+快递还在路上	1	kuai di hai zai lu shang
+快递已经签收	1	kuai di yi jing qian shou
+你收一下快递	1	ni shou yi xia kuai di
+麻烦代收快递	1	ma fan dai shou kuai di
+我去取个快递	1	wo qu qu ge kuai di
+我帮你取快递	1	wo bang ni qu kuai di
+取件码发我吧	1	qu jian ma fa wo ba
+我把取件码发你	1	wo ba qu jian ma fa ni
+我忘了取件码	1	wo wang le qu jian ma
+我取完快递就来	1	wo qu wan kuai di jiu lai
+包裹破损了	1	bao guo po sun le
+包装有点破损	1	bao zhuang you dian po sun
+包装完好无损	1	bao zhuang wan hao wu sun
+我拍个照片给你	1	wo pai ge zhao pian gei ni
+我拍下给你看	1	wo pai xia gei ni kan
+我开箱看一下	1	wo kai xiang kan yi xia
+我拆开检查一下	1	wo chai kai jian cha yi xia
+我收货后检查	1	wo shou huo hou jian cha
+我申请换货了	1	wo shen qing huan huo le
+换货还没寄出	1	huan huo hai mei ji chu
+换货已经寄出	1	huan huo yi jing ji chu
+退货寄出去了	1	tui huo ji chu qu le
+退货还没退款	1	tui huo hai mei tui kuan
+退款多久到账	1	tui kuan duo jiu dao zhang
+退款还没到账	1	tui kuan hai mei dao zhang
+我联系售后了	1	wo lian xi shou hou le
+我问过客服了	1	wo wen guo ke fu le
+客服还没回复	1	ke fu hai mei hui fu
+客服已经回复	1	ke fu yi jing hui fu
+我催一下客服	1	wo cui yi xia ke fu
+我再联系客服	1	wo zai lian xi ke fu
+我提交售后了	1	wo ti jiao shou hou le
+售后还没处理	1	shou hou hai mei chu li
+麻烦改下地址	1	ma fan gai xia di zhi
+我把地址改了	1	wo ba di zhi gai le
+我填错地址了	1	wo tian cuo di zhi le
+我把电话改了	1	wo ba dian hua gai le
+电话号码填错了	1	dian hua hao ma tian cuo le
+收件人填错了	1	shou jian ren tian cuo le
+能改收件人吗	1	neng gai shou jian ren ma
+我补个差价吧	1	wo bu ge cha jia ba
+运费我来付吧	1	yun fei wo lai fu ba
+我申请运费险	1	wo shen qing yun fei xian
+我查下运费险	1	wo cha xia yun fei xian
+运费险到账了	1	yun fei xian dao zhang le
+商家还没发货	1	shang jia hai mei fa huo
+我催一下商家	1	wo cui yi xia shang jia
+我取消订单了	1	wo qu xiao ding dan le
+取件口令	1	qu jian kou ling
+取件通知	1	qu jian tong zhi
+派送通知	1	pai song tong zhi
+拒收退款	1	ju shou tui kuan
+退款凭证	1	tui kuan ping zheng
+退件单号	1	tui jian dan hao
+退货面单	1	tui huo mian dan
+换货单号	1	huan huo dan hao
+补发单号	1	bu fa dan hao
+售后凭证	1	shou hou ping zheng
+我先看看菜单	1	wo xian kan kan cai dan
+我发你菜单吧	1	wo fa ni cai dan ba
+你有忌口吗	1	ni you ji kou ma
+你有没有忌口	1	ni you mei you ji kou
+我不太能吃辣	1	wo bu tai neng chi la
+我少放一点辣	1	wo shao fang yi dian la
+我就要微辣吧	1	wo jiu yao wei la ba
+不要放太多辣	1	bu yao fang tai duo la
+我点好外卖了	1	wo dian hao wai mai le
+我还在选外卖	1	wo hai zai xuan wai mai
+我看下配送时间	1	wo kan xia pei song shi jian
+我催一下骑手	1	wo cui yi xia qi shou
+骑手已经到了	1	qi shou yi jing dao le
+骑手还没取餐	1	qi shou hai mei qu can
+我去楼下取餐	1	wo qu lou xia qu can
+我取完餐上来	1	wo qu wan can shang lai
+外卖放门口吧	1	wai mai fang men kou ba
+外卖放前台吧	1	wai mai fang qian tai ba
+外卖放楼下吧	1	wai mai fang lou xia ba
+外卖送错地址了	1	wai mai song cuo di zhi le
+我把备注写上	1	wo ba bei zhu xie shang
+麻烦分开装吧	1	ma fan fen kai zhuang ba
+帮我多拿双筷子	1	bang wo duo na shuang kuai zi
+我先点几个菜	1	wo xian dian ji ge cai
+我再加一个菜	1	wo zai jia yi ge cai
+我再点一份吧	1	wo zai dian yi fen ba
+我们分着吃吧	1	wo men fen zhe chi ba
+我留一份给你	1	wo liu yi fen gei ni
+我给你留饭了	1	wo gei ni liu fan le
+我给你打包了	1	wo gei ni da bao le
+我打包带回去	1	wo da bao dai hui qu
+要不要带点吃的	1	yao bu yao dai dian chi de
+要不要带杯咖啡	1	yao bu yao dai bei ka fei
+我帮你带一杯	1	wo bang ni dai yi bei
+我请你喝咖啡	1	wo qing ni he ka fei
+我请你吃顿饭	1	wo qing ni chi dun fan
+这顿我来请吧	1	zhe dun wo lai qing ba
+我把钱转给你	1	wo ba qian zhuan gei ni
+我扫你收款码	1	wo sao ni shou kuan ma
+我把优惠券用了	1	wo ba you hui quan yong le
+我用了优惠券	1	wo yong le you hui quan
+我看下团购券	1	wo kan xia tuan gou quan
+我买好团购券了	1	wo mai hao tuan gou quan le
+我预约到店了	1	wo yu yue dao dian le
+我还没核销呢	1	wo hai mei he xiao ne
+核销码发我吧	1	he xiao ma fa wo ba
+我把小票留着	1	wo ba xiao piao liu zhe
+去冰少糖	1	qu bing shao tang
+常温少糖	1	chang wen shao tang
+少冰无糖	1	shao bing wu tang
+少糖少冰	1	shao tang shao bing
+去冰无糖	1	qu bing wu tang
+去冰三分糖	1	qu bing san fen tang
+糖浆另放	1	tang jiang ling fang
+酱料另放	1	jiang liao ling fang
+辣椒另放	1	la jiao ling fang
+分装打包	1	fen zhuang da bao
+堂食打包	1	tang shi da bao
+取餐口令	1	qu can kou ling
+配送备注	1	pei song bei zhu
+预约配送	1	yu yue pei song
+到店核销	1	dao dian he xiao
+加料区	1	jia liao qu
+自助取餐	1	zi zhu qu can
+取餐提醒	1	qu can ti xing
+我同步一下进度	1	wo tong bu yi xia jin du
+我整理好发给你	1	wo zheng li hao fa gei ni
+我整理完发群里	1	wo zheng li wan fa qun li
+我整理成文档	1	wo zheng li cheng wen dang
+我更新一下进度	1	wo geng xin yi xia jin du
+我更新一下文档	1	wo geng xin yi xia wen dang
+我补一下说明	1	wo bu yi xia shuo ming
+我把重点列出来	1	wo ba zhong dian lie chu lai
+我把问题列一下	1	wo ba wen ti lie yi xia
+我汇总一下问题	1	wo hui zong yi xia wen ti
+我们逐项确认	1	wo men zhu xiang que ren
+咱们逐项核对	1	zan men zhu xiang he dui
+我再梳理一下	1	wo zai shu li yi xia
+我们重新梳理	1	wo men chong xin shu li
+我梳理清楚再说	1	wo shu li qing chu zai shuo
+我先对齐一下	1	wo xian dui qi yi xia
+我们对齐一下	1	wo men dui qi yi xia
+我们先对下需求	1	wo men xian dui xia xu qiu
+我再确认需求	1	wo zai que ren xu qiu
+需求还没定下来	1	xu qiu hai mei ding xia lai
+需求已经定了	1	xu qiu yi jing ding le
+我把需求补全	1	wo ba xu qiu bu quan
+我先看看需求	1	wo xian kan kan xu qiu
+我把链接发群里	1	wo ba lian jie fa qun li
+我发到群文件	1	wo fa dao qun wen jian
+我把文件传上去	1	wo ba wen jian chuan shang qu
+我共享一下文档	1	wo gong xiang yi xia wen dang
+我开个共享文档	1	wo kai ge gong xiang wen dang
+我把权限打开	1	wo ba quan xian da kai
+我开下编辑权限	1	wo kai xia bian ji quan xian
+我改下访问权限	1	wo gai xia fang wen quan xian
+我这边打不开	1	wo zhe bian da bu kai
+链接失效了吧	1	lian jie shi xiao le ba
+我重新生成链接	1	wo chong xin sheng cheng lian jie
+我发你新的链接	1	wo fa ni xin de lian jie
+你看看能打开吗	1	ni kan kan neng da kai ma
+我试着重新打开	1	wo shi zhe chong xin da kai
+我刷新后再看看	1	wo shua xin hou zai kan kan
+我换个网络试试	1	wo huan ge wang luo shi shi
+我把表格补齐	1	wo ba biao ge bu qi
+我再更新表格	1	wo zai geng xin biao ge
+我把数据补全	1	wo ba shu ju bu quan
+我把附件补上	1	wo ba fu jian bu shang
+我把截图补上	1	wo ba jie tu bu shang
+我再核对数据	1	wo zai he dui shu ju
+我把明细列一下	1	wo ba ming xi lie yi xia
+我把清单补全	1	wo ba qing dan bu quan
+我跟同事确认	1	wo gen tong shi que ren
+我找同事问问	1	wo zhao tong shi wen wen
+我请同事看下	1	wo qing tong shi kan xia
+我请他确认一下	1	wo qing ta que ren yi xia
+我请她确认一下	1	wo qing ta que ren yi xia
+我让对方确认	1	wo rang dui fang que ren
+我等对方回复	1	wo deng dui fang hui fu
+对方还没回复	1	dui fang hai mei hui fu
+我先出个初稿	1	wo xian chu ge chu gao
+我把初稿发你	1	wo ba chu gao fa ni
+我改完发给你	1	wo gai wan fa gei ni
+我根据反馈修改	1	wo gen ju fan kui xiu gai
+我再改一版吧	1	wo zai gai yi ban ba
+我发你最终版	1	wo fa ni zui zhong ban
+我把版本标清楚	1	wo ba ban ben biao qing chu
+我保留一份原稿	1	wo bao liu yi fen yuan gao
+我同步到群里	1	wo tong bu dao qun li
+我在群里说一下	1	wo zai qun li shuo yi xia
+我把结论写下来	1	wo ba jie lun xie xia lai
+我们按这个来	1	wo men an zhe ge lai
+我们照这个做	1	wo men zhao zhe ge zuo
+后续我来跟进	1	hou xu wo lai gen jin
+我继续跟进吧	1	wo ji xu gen jin ba
+有进展再同步	1	you jin zhan zai tong bu
+需求对齐	1	xu qiu dui qi
+需求澄清	1	xu qiu cheng qing
+需求拆解	1	xu qiu chai jie
+需求排期	1	xu qiu pai qi
+交付排期	1	jiao fu pai qi
+进度同步	1	jin du tong bu
+问题闭环	1	wen ti bi huan
+会议待办	1	hui yi dai ban
+协作文档	1	xie zuo wen dang
+只读链接	1	zhi du lian jie
+修改痕迹	1	xiu gai hen ji
+待办提醒	1	dai ban ti xing
+文档链接	1	wen dang lian jie
+附件清单	1	fu jian qing dan
+交付清单	1	jiao fu qing dan
+验收清单	1	yan shou qing dan
+我一会要开会	1	wo yi hui yao kai hui
+我等会有个会	1	wo deng hui you ge hui
+我正在开会呢	1	wo zheng zai kai hui ne
+我会议还没结束	1	wo hui yi hai mei jie shu
+我开完会找你	1	wo kai wan hui zhao ni
+我会后联系你	1	wo hui hou lian xi ni
+我开会前发给你	1	wo kai hui qian fa gei ni
+我开会时问一下	1	wo kai hui shi wen yi xia
+我先试一下设备	1	wo xian shi yi xia she bei
+我检查下麦克风	1	wo jian cha xia mai ke feng
+我这边能听到	1	wo zhe bian neng ting dao
+我这边听不清	1	wo zhe bian ting bu qing
+我这里没声音	1	wo zhe li mei sheng yin
+你那边有回声	1	ni na bian you hui sheng
+我把麦关一下	1	wo ba mai guan yi xia
+我共享一下屏幕	1	wo gong xiang yi xia ping mu
+我把屏幕共享了	1	wo ba ping mu gong xiang le
+我停止共享了	1	wo ting zhi gong xiang le
+我发个会议链接	1	wo fa ge hui yi lian jie
+会议链接发我	1	hui yi lian jie fa wo
+我把会议改期	1	wo ba hui yi gai qi
+我重新发个邀请	1	wo chong xin fa ge yao qing
+我取消一下会议	1	wo qu xiao yi xia hui yi
+会议时间有变	1	hui yi shi jian you bian
+会议地点有变	1	hui yi di dian you bian
+我改一下日程	1	wo gai yi xia ri cheng
+我看下会议纪要	1	wo kan xia hui yi ji yao
+我整理会议纪要	1	wo zheng li hui yi ji yao
+我补一下会议结论	1	wo bu yi xia hui yi jie lun
+咱们会后再聊	1	zan men hui hou zai liao
+咱们单独聊一下	1	zan men dan du liao yi xia
+咱们另开个会	1	zan men ling kai ge hui
+我们约个短会	1	wo men yue ge duan hui
+我先确认参会人	1	wo xian que ren can hui ren
+我确认下时间	1	wo que ren xia shi jian
+我们按时开始	1	wo men an shi kai shi
+我先发个提醒	1	wo xian fa ge ti xing
+会前提醒	1	hui qian ti xing
+会后跟进	1	hui hou gen jin
+线下参会	1	xian xia can hui
+参会链接	1	can hui lian jie
+日程冲突	1	ri cheng chong tu
+日程邀请	1	ri cheng yao qing
+日程共享	1	ri cheng gong xiang
+可用时段	1	ke yong shi duan
+我提交报销了	1	wo ti jiao bao xiao le
+报销还没批下来	1	bao xiao hai mei pi xia lai
+我问下报销进度	1	wo wen xia bao xiao jin du
+我把发票发你	1	wo ba fa piao fa ni
+我补开发票了	1	wo bu kai fa piao le
+我申请电子发票	1	wo shen qing dian zi fa piao
+我下载一下发票	1	wo xia zai yi xia fa piao
+发票还没开出来	1	fa piao hai mei kai chu lai
+发票已经开好了	1	fa piao yi jing kai hao le
+发票信息有误	1	fa piao xin xi you wu
+我把抬头发你	1	wo ba tai tou fa ni
+我把税号发你	1	wo ba shui hao fa ni
+我核对一下税号	1	wo he dui yi xia shui hao
+我补一下抬头	1	wo bu yi xia tai tou
+我补一张发票	1	wo bu yi zhang fa piao
+我把凭证补上	1	wo ba ping zheng bu shang
+我把回单发你	1	wo ba hui dan fa ni
+我找一下凭证	1	wo zhao yi xia ping zheng
+我查一下账单	1	wo cha yi xia zhang dan
+我查一下流水	1	wo cha yi xia liu shui
+我确认一下到账	1	wo que ren yi xia dao zhang
+我还没查到到账	1	wo hai mei cha dao dao zhang
+我收到转账了	1	wo shou dao zhuan zhang le
+我预约好时间	1	wo yu yue hao shi jian
+我先取个号	1	wo xian qu ge hao
+我在排队等号	1	wo zai pai dui deng hao
+我刚叫到号了	1	wo gang jiao dao hao le
+我还在等叫号	1	wo hai zai deng jiao hao
+我办完就回来	1	wo ban wan jiu hui lai
+我办完再联系你	1	wo ban wan zai lian xi ni
+我把材料补齐	1	wo ba cai liao bu qi
+我检查一下材料	1	wo jian cha yi xia cai liao
+我问下需要什么	1	wo wen xia xu yao shen me
+我带上原件吧	1	wo dai shang yuan jian ba
+我复印一份吧	1	wo fu yin yi fen ba
+我扫描后发给你	1	wo sao miao hou fa gei ni
+我把扫描件发你	1	wo ba sao miao jian fa ni
+我带上复印件	1	wo dai shang fu yin jian
+我把证明开好	1	wo ba zheng ming kai hao
+预约取号	1	yu yue qu hao
+材料补正	1	cai liao bu zheng
+原件核验	1	yuan jian he yan
+我下楼扔垃圾	1	wo xia lou reng la ji
+我去拿下东西	1	wo qu na xia dong xi
+我去拿个充电器	1	wo qu na ge chong dian qi
+我忘带充电器了	1	wo wang dai chong dian qi le
+我带了充电宝	1	wo dai le chong dian bao
+我先找下充电器	1	wo xian zhao xia chong dian qi
+我把东西收拾好	1	wo ba dong xi shou shi hao
+我收拾完就来	1	wo shou shi wan jiu lai
+我先洗个衣服	1	wo xian xi ge yi fu
+我把衣服晾了	1	wo ba yi fu liang le
+我去收一下衣服	1	wo qu shou yi xia yi fu
+我把饭热一下	1	wo ba fan re yi xia
+我先做点饭	1	wo xian zuo dian fan
+我煮点面吃吧	1	wo zhu dian mian chi ba
+我去买点菜	1	wo qu mai dian cai
+我顺路买点菜	1	wo shun lu mai dian cai
+家里还有菜吗	1	jia li hai you cai ma
+家里还有饭吗	1	jia li hai you fan ma
+家里没电了吗	1	jia li mei dian le ma
+家里停水了吗	1	jia li ting shui le ma
+我去交一下费	1	wo qu jiao yi xia fei
+我查一下水费	1	wo cha yi xia shui fei
+我查一下电费	1	wo cha yi xia dian fei
+我把物业费交了	1	wo ba wu ye fei jiao le
+我联系物业了	1	wo lian xi wu ye le
+我问一下物业	1	wo wen yi xia wu ye
+我报修一下吧	1	wo bao xiu yi xia ba
+我预约师傅了	1	wo yu yue shi fu le
+师傅还没上门	1	shi fu hai mei shang men
+师傅快到了	1	shi fu kuai dao le
+我等师傅上门	1	wo deng shi fu shang men
+我跟师傅约好了	1	wo gen shi fu yue hao le
+门禁卡没带	1	men jin ka mei dai
+我忘带门禁卡了	1	wo wang dai men jin ka le
+我忘记带钥匙	1	wo wang ji dai yao shi
+我把钥匙落家里	1	wo ba yao shi luo jia li
+我把钥匙给你	1	wo ba yao shi gei ni
+我给你开下门	1	wo gei ni kai xia men
+我按下门铃吧	1	wo an xia men ling ba
+你帮我开下门	1	ni bang wo kai xia men
+我把空调打开	1	wo ba kong tiao da kai
+我把空调关了	1	wo ba kong tiao guan le
+我把温度调高点	1	wo ba wen du tiao gao dian
+我把温度调低点	1	wo ba wen du tiao di dian
+我把窗户关好	1	wo ba chuang hu guan hao
+我把窗户打开	1	wo ba chuang hu da kai
+我出门前关好	1	wo chu men qian guan hao
+门禁权限	1	men jin quan xian
+临时门禁	1	lin shi men jin
+访客通行	1	fang ke tong xing
+维修工单	1	wei xiu gong dan
+报修进度	1	bao xiu jin du
+住户群	1	zhu hu qun
+租客群	1	zu ke qun
+你今天好点了吗	1	ni jin tian hao dian le ma
+你有没有好一点	1	ni you mei you hao yi dian
+你先量一下体温	1	ni xian liang yi xia ti wen
+我量下体温吧	1	wo liang xia ti wen ba
+我去买点药	1	wo qu mai dian yao
+我把药买好了	1	wo ba yao mai hao le
+我按时吃药了	1	wo an shi chi yao le
+我吃完药就睡	1	wo chi wan yao jiu shui
+你记得按时吃药	1	ni ji de an shi chi yao
+记得多喝点水	1	ji de duo he dian shui
+别忘了吃早饭	1	bie wang le chi zao fan
+你先吃点东西	1	ni xian chi dian dong xi
+别空着肚子吃药	1	bie kong zhe du zi chi yao
+你多睡一会吧	1	ni duo shui yi hui ba
+你先好好休息	1	ni xian hao hao xiu xi
+我陪你去看医生	1	wo pei ni qu kan yi sheng
+我预约好门诊了	1	wo yu yue hao men zhen le
+我挂到号了	1	wo gua dao hao le
+我还没挂到号	1	wo hai mei gua dao hao
+我去取一下药	1	wo qu qu yi xia yao
+我在等检查结果	1	wo zai deng jian cha jie guo
+报告还没出来	1	bao gao hai mei chu lai
+报告已经出来了	1	bao gao yi jing chu lai le
+我拿到报告了	1	wo na dao bao gao le
+我去复查一下	1	wo qu fu cha yi xia
+我先问问医生	1	wo xian wen wen yi sheng
+医生让我休息	1	yi sheng rang wo xiu xi
+医生让我复查	1	yi sheng rang wo fu cha
+我把报告发你	1	wo ba bao gao fa ni
+我先看看报告	1	wo xian kan kan bao gao
+我看完医生就回	1	wo kan wan yi sheng jiu hui
+我回来再联系你	1	wo hui lai zai lian xi ni
+你路上慢一点	1	ni lu shang man yi dian
+你不用太着急	1	ni bu yong tai zhao ji
+你忙归忙记得吃饭	1	ni mang gui mang ji de chi fan
+你到了报个平安	1	ni dao le bao ge ping an
+我到家就告诉你	1	wo dao jia jiu gao su ni
+我平安到家了	1	wo ping an dao jia le
+我陪你待一会	1	wo pei ni dai yi hui
+你先缓一缓吧	1	ni xian huan yi huan ba
+慢慢来不着急	1	man man lai bu zhao ji
+我听你说完	1	wo ting ni shuo wan
+你想说我就听	1	ni xiang shuo wo jiu ting
+我们慢慢商量	1	wo men man man shang liang
+你别有太大压力	1	ni bie you tai da ya li
+有事随时找我吧	1	you shi sui shi zhao wo ba
+我有空就来陪你	1	wo you kong jiu lai pei ni
+复诊预约	1	fu zhen yu yue
+取药窗口	1	qu yao chuang kou
+就诊记录	1	jiu zhen ji lu
+用药提醒	1	yong yao ti xing
+我把照片传给你	1	wo ba zhao pian chuan gei ni
+我把原图发你	1	wo ba yuan tu fa ni
+我发你高清图	1	wo fa ni gao qing tu
+我找一下原图	1	wo zhao yi xia yuan tu
+我压缩后发给你	1	wo ya suo hou fa gei ni
+我把视频传上去	1	wo ba shi pin chuan shang qu
+我截张图给你	1	wo jie zhang tu gei ni
+我录屏给你看	1	wo lu ping gei ni kan
+我把截图发你	1	wo ba jie tu fa ni
+我再截一次图	1	wo zai jie yi ci tu
+我把文件导出来	1	wo ba wen jian dao chu lai
+我导出后发给你	1	wo dao chu hou fa gei ni
+我存到相册了	1	wo cun dao xiang ce le
+我保存到本地了	1	wo bao cun dao ben di le
+我备份到云盘了	1	wo bei fen dao yun pan le
+我更新完再试	1	wo geng xin wan zai shi
+我重启后再试	1	wo chong qi hou zai shi
+我重新登录一下	1	wo chong xin deng lu yi xia
+我退出再进一下	1	wo tui chu zai jin yi xia
+我清一下缓存	1	wo qing yi xia huan cun
+我换个浏览器	1	wo huan ge liu lan qi
+我切换下网络	1	wo qie huan xia wang luo
+我连接一下蓝牙	1	wo lian jie yi xia lan ya
+我把蓝牙关掉	1	wo ba lan ya guan diao
+我重新配对一下	1	wo chong xin pei dui yi xia
+我看下设备列表	1	wo kan xia she bei lie biao
+我切回扬声器	1	wo qie hui yang sheng qi
+我戴上耳机了	1	wo dai shang er ji le
+我把耳机摘了	1	wo ba er ji zhai le
+我把音量调小	1	wo ba yin liang tiao xiao
+我打开权限了	1	wo da kai quan xian le
+我开下麦克风	1	wo kai xia mai ke feng
+我开下定位权限	1	wo kai xia ding wei quan xian
+我关掉通知了	1	wo guan diao tong zhi le
+我把提醒打开	1	wo ba ti xing da kai
+我开下免打扰	1	wo kai xia mian da rao
+我取消免打扰	1	wo qu xiao mian da rao
+共享相册	1	gong xiang xiang ce
+共享图库	1	gong xiang tu ku
+相册权限	1	xiang ce quan xian
+照片权限	1	zhao pian quan xian
+原图传输	1	yuan tu chuan shu
+无损画质	1	wu sun hua zhi
+备份记录	1	bei fen ji lu
+同步进度	1	tong bu jin du
+自适应降噪	1	zi shi ying jiang zao
+多设备切换	1	duo she bei qie huan
+充电上限	1	chong dian shang xian
+低电量提醒	1	di dian liang ti xing
+我先加购物车	1	wo xian jia gou wu che
+我加到购物车了	1	wo jia dao gou wu che le
+我等降价再买	1	wo deng jiang jia zai mai
+我等活动再买	1	wo deng huo dong zai mai
+我比一下价格	1	wo bi yi xia jia ge
+我看下历史价格	1	wo kan xia li shi jia ge
+我看看买家评价	1	wo kan kan mai jia ping jia
+我问一下尺寸	1	wo wen yi xia chi cun
+我确认一下尺码	1	wo que ren yi xia chi ma
+我换个尺码吧	1	wo huan ge chi ma ba
+我看下尺码表	1	wo kan xia chi ma biao
+我再量下尺寸	1	wo zai liang xia chi cun
+我下单前问问	1	wo xia dan qian wen wen
+我先买一个试试	1	wo xian mai yi ge shi shi
+我用完再回购	1	wo yong wan zai hui gou
+我觉得还挺好用	1	wo jue de hai ting hao yong
+我等补货再买	1	wo deng bu huo zai mai
+我看下有没有货	1	wo kan xia you mei you huo
+我问问什么时候补	1	wo wen wen shen me shi hou bu
+我到货了告诉你	1	wo dao huo le gao su ni
+你买到了告诉我	1	ni mai dao le gao su wo
+我找一下同款	1	wo zhao yi xia tong kuan
+我把链接发你看	1	wo ba lian jie fa ni kan
+我发你同款链接	1	wo fa ni tong kuan lian jie
+我先收藏一下	1	wo xian shou cang yi xia
+我加个收藏吧	1	wo jia ge shou cang ba
+我存个书签吧	1	wo cun ge shu qian ba
+我把笔记存下来	1	wo ba bi ji cun xia lai
+我发你那篇笔记	1	wo fa ni na pian bi ji
+我找一下那篇	1	wo zhao yi xia na pian
+我回头认真看看	1	wo hui tou ren zhen kan kan
+我先做个标记	1	wo xian zuo ge biao ji
+我看完这集再说	1	wo kan wan zhe ji zai shuo
+我听完这首歌	1	wo ting wan zhe shou ge
+我把歌单发你	1	wo ba ge dan fa ni
+我发你这首歌	1	wo fa ni zhe shou ge
+我给你推荐一本	1	wo gei ni tui jian yi ben
+我把书名发你	1	wo ba shu ming fa ni
+我看了一下简介	1	wo kan le yi xia jian jie
+尺码建议	1	chi ma jian yi
+尺码对照	1	chi ma dui zhao
+试穿体验	1	shi chuan ti yan
+到货提醒	1	dao huo ti xing
+补货提醒	1	bu huo ti xing
+回购清单	1	hui gou qing dan
+收藏清单	1	shou cang qing dan
+售后记录	1	shou hou ji lu
+不要放太多啦	2	bu yao fang tai duo la

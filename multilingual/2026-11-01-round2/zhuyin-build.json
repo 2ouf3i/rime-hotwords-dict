@@ -1,0 +1,65 @@
+{
+  "name": "ninan_zhuyin",
+  "upstream": {
+    "repo": "openvanilla/McBopomofo",
+    "commit": "be6564acad6c4d3265c34a2e1a872d80f9db6068",
+    "files": {
+      "BPMFMappings.txt": {
+        "bytes": 5019395,
+        "sha256": "394f3946754ebdd9d5e503f0f94c6977e5e19bd7cab21b4b18a6ea0167e00171"
+      },
+      "BPMFBase.txt": {
+        "bytes": 720832,
+        "sha256": "46e64a53dc9c6baa2cbe6e0b1af572f8ef6aafb50597178b5fd53df804316ce7"
+      },
+      "phrase.occ": {
+        "bytes": 1768276,
+        "sha256": "dcd11597090b2bef88fb385bdd567e235ccd916728c84b8d0d3f8069ccfc7b8d"
+      },
+      "heterophony1.list": {
+        "bytes": 6980,
+        "sha256": "7fddbb6a66022b1809181484c7627d79dee4231849cb2d3c8c8cd4578b3d22cb"
+      },
+      "heterophony2.list": {
+        "bytes": 866,
+        "sha256": "4afd69a2702ae3af533cd01b755f81d77a430ace91311a8229319334aec24e37"
+      },
+      "heterophony3.list": {
+        "bytes": 225,
+        "sha256": "8be3f37fe419744c3792df1bdfc67a0abdb215dbbb759c92204d4f8d68a32cd9"
+      },
+      "exclusion.txt": {
+        "bytes": 33600,
+        "sha256": "d0d72eb220d31d5800658de8d788a9e2531b504e9f05ffe633fb11d43d217a3d"
+      }
+    }
+  },
+  "options": {
+    "fscale": 2.7,
+    "scale": 100000000
+  },
+  "reviewed": {
+    "addedWordForms": 165,
+    "addedReadings": 165,
+    "skippedReadings": 6,
+    "sha256": "b77dd2594a61ac95920a000daf201a038f2a5bb4abe1537a6efc8766f6156f5b",
+    "weight": 100
+  },
+  "stats": {
+    "characters": 21745,
+    "characterReadings": 26494,
+    "phrases": 140113,
+    "phraseReadings": 145698,
+    "unseen": 54538,
+    "minorReadings": 620,
+    "variantsDropped": 70,
+    "variantsRewritten": 9,
+    "norm": 40074220.73656606,
+    "entries": 172192,
+    "totalWeight": 108781329.19589613
+  },
+  "output": {
+    "bytes": 6899540,
+    "sha256": "bfd3abe8c30b88ee0ee1a57f64dc07b1ddcc8dfb20ab6e30f7d457f26ffd2da5"
+  }
+}

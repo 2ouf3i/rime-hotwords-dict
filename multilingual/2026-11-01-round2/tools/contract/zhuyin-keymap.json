@@ -1,0 +1,123 @@
+{
+  "name": "zhuyin-keymap",
+  "_note": "注音键盘(繁體中文 · 大千式)的键位:37 个注音符号和 4 个声调键各喂给拼音引擎哪个键码、手机上四排怎么排、引擎方案与词典叫什么。大千式就是把注音符号表照 PC 键盘的「数字排 / Q 排 / A 排 / Z 排」原样摆,喂给引擎的就是那些 PC 键盘上的字符;一声是空格。设计与评测:docs/superpowers/specs/2026-10-05-zhuyin-keyboard-design.md。方案生成、词典构建、评测脚本(scripts/zhuyin/keymap.mjs)也从这份读,别另写一份。",
+  "version": 1,
+  "requireSymbols": true,
+  "values": {
+    "schemaId": "ninan_zhuyin",
+    "dictName": "ninan_zhuyin",
+    "symbols": "ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦ",
+    "symbolKeys": "1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/-",
+    "toneMarks": "ˊˇˋ˙",
+    "toneKeys": "6347",
+    "firstToneKey": " ",
+    "firstToneDisplay": "ˉ"
+  },
+  "valueScopes": {
+    "schemaId": "clients",
+    "dictName": "clients",
+    "symbols": "clients",
+    "symbolKeys": "clients",
+    "toneMarks": "clients",
+    "toneKeys": "clients",
+    "firstToneKey": "clients",
+    "firstToneDisplay": "clients"
+  },
+  "_why_strings_not_tables": "symbols 与 symbolKeys 是两条逐位对应的串(第 i 个符号按第 i 个键码),toneMarks 与 toneKeys 同理(二声、三声、四声、轻声)。写成两条串而不是一张表,是为了让检查器能按「符号 = 字面量」逐端比对;两条串等长、互不重复由各端单测钉住。",
+  "_note_rows": "手机上四排符号键(第一排 11 个,其余各 10 个;声调键夹在第一排里)。不是数值契约的一部分(--contract 只比 values),两端单测逐条核对本表。排列与 iPhone 系统注音键盘「標準」配置相同 —— 2026-10-05 在 iOS 27.0 模拟器上截图量过(第 4 排 10 个符号键之后是删除键,见 zhuyin-keypad.json)。",
+  "rows": [
+    [
+      "ㄅ",
+      "ㄉ",
+      "ˇ",
+      "ˋ",
+      "ㄓ",
+      "ˊ",
+      "˙",
+      "ㄚ",
+      "ㄞ",
+      "ㄢ",
+      "ㄦ"
+    ],
+    [
+      "ㄆ",
+      "ㄊ",
+      "ㄍ",
+      "ㄐ",
+      "ㄔ",
+      "ㄗ",
+      "ㄧ",
+      "ㄛ",
+      "ㄟ",
+      "ㄣ"
+    ],
+    [
+      "ㄇ",
+      "ㄋ",
+      "ㄎ",
+      "ㄑ",
+      "ㄕ",
+      "ㄘ",
+      "ㄨ",
+      "ㄜ",
+      "ㄠ",
+      "ㄤ"
+    ],
+    [
+      "ㄈ",
+      "ㄌ",
+      "ㄏ",
+      "ㄒ",
+      "ㄖ",
+      "ㄙ",
+      "ㄩ",
+      "ㄝ",
+      "ㄡ",
+      "ㄥ"
+    ]
+  ],
+  "_note_assets": "随包的引擎资产(方案 + 词典),两份都是生成物:方案 = `node scripts/zhuyin/gen-zhuyin-schema.mjs --grammar <grammarName>` 的输出原样;词典 = `node scripts/zhuyin/build-zhuyin-dict.mjs` 用小麦注音(MIT)提交 upstreamCommit 的词库生成的。`node --test scripts/zhuyin/*.test.mjs` 盯着「仓库里的方案 == 现在生成的」「词典的大小与校验和 == 这里登记的」。它们**不在**随包的拼音资产清单里(`RimeAssetSync.bundledAssetFileNames`),放在单独的目录、按需铺设:只有加了「繁體中文」键盘的人,工作区里才有它们(设计文档 5.6)。方案里写着语言模型的名字 grammarName,模型文件不在时照常出字(模型以后走 OTA)。",
+  "assets": {
+    "schemaFile": "ninan_zhuyin.schema.yaml",
+    "dictFile": "ninan_zhuyin.dict.yaml",
+    "dictBytes": 6893724,
+    "dictSha256": "bfd3abe8c30b88ee0ee1a57f64dc07b1ddcc8dfb20ab6e30f7d457f26ffd2da5",
+    "upstreamCommit": "be6564acad6c4d3265c34a2e1a872d80f9db6068",
+    "grammarName": "ninan_grammar_hant",
+    "registrationFile": "default.custom.yaml",
+    "appleDir": "apps/apple/NinanKeyboard/RimeZhuyin"
+  },
+  "consumers": [
+    {
+      "platform": "apple",
+      "path": "apps/apple/Shared/ZhuyinKeymap.swift",
+      "status": "已建",
+      "symbols": {
+        "schemaId": "schemaId",
+        "dictName": "dictName",
+        "symbols": "symbols",
+        "symbolKeys": "symbolKeys",
+        "toneMarks": "toneMarks",
+        "toneKeys": "toneKeys",
+        "firstToneKey": "firstToneKey",
+        "firstToneDisplay": "firstToneDisplay"
+      }
+    },
+    {
+      "platform": "android",
+      "path": "apps/android/app/src/main/java/ai/ninan/android/keyboard/ZhuyinKeymap.kt",
+      "status": "已建",
+      "test": "apps/android/app/src/test/java/ai/ninan/android/ZhuyinKeymapTest.kt",
+      "symbols": {
+        "schemaId": "SCHEMA_ID",
+        "dictName": "DICT_NAME",
+        "symbols": "SYMBOLS",
+        "symbolKeys": "SYMBOL_KEYS",
+        "toneMarks": "TONE_MARKS",
+        "toneKeys": "TONE_KEYS",
+        "firstToneKey": "FIRST_TONE_KEY",
+        "firstToneDisplay": "FIRST_TONE_DISPLAY"
+      }
+    }
+  ]
+}
