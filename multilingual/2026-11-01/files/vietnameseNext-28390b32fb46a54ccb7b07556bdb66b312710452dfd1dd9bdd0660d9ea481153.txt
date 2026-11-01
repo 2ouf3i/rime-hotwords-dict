@@ -1,0 +1,4883 @@
+# Ninan 越南语下一个词表
+# 源:OPUS OpenSubtitles v2018 单语语料 https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2018/mono/vi.txt.gz
+# 语料 SHA-256 1aae9970414129b76a4be17dd55f0b9ec6156c1ca0d7a6ec4bee852f453ae2a1,5126239 行
+# 出处:OPUS https://opus.nlpl.eu/ ;P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles (LREC 2016);字幕来自 http://www.opensubtitles.org/ ;详见同目录 NOTICE-LetterWords.md
+# 只放统计出来的词对,不含原文句子。
+# 切词:按空白切,去两头标点,NFC + 小写;前后两个词都要在 vietnamese.dict.txt 里、不在粗口屏蔽表里;同一行紧挨着,词的两头带标点就断开
+# 门槛:一对至少 3 次,且出现在至少 3 个不同的块里(语料按每 5000 行切块,剔掉只在一两部片子里出现的人名和专有说法);前词至少 10 次;后词不等于前词;每个前词最多 8 个后词(按次数从多到少)
+# 格式:前词<TAB>后词1 后词2 …;前词按 Unicode 码点升序
+# 由 scripts/letter-words/build-next-words.mjs 生成,别手改 —— 改判据改脚本。
+# 前词数:4871
+# Ninan 日常接续审核:vi;基准 SHA-256 cca196ef99e5120ae1542781fd65fb00140d07899bc5e179d817d742219cfe00;审核 TSV SHA-256 7c703319ec0bdc27e2ac7140d2613ac4a85c0c166988311614a77320da9a9157
+# 人工审核只覆盖列出的键与顺序，不代表语料频次；原始来源及许可见上述声明。
+a	lô di cát man long tôi chúng và
+ai	đó cũng có biết là vậy không cả
+am	hiểu i a the chuyến tường số so
+an	toàn ninh ủi thần tâm nghỉ sinh lành
+ang	ta
+anh	ta không có ấy đã sẽ biết là
+ao	ước xơ nước được có hồ cá của
+ba	người ngày năm mẹ lần lan tháng tư
+bai	đi nhé
+ban	nha đầu đêm nhạc ngày cho phước công
+bang	này chủ đã và của khác hội đang
+banh	xác của đi không này nào chành đó
+bao	giờ nhiêu lâu gồm vây xa quanh phủ
+bau	không
+bay	đi của đến lên được không tới này
+be	a the bét in my bé on me
+bem	cô nhau hết tôi
+ben	và đã là có sẽ không nói à
+beng	lên để và
+bi	kịch của thảm quan đát thương anh đi
+bia	mộ không và cho lạnh nhé của nữa
+binh	lính nhì sĩ của đoàn vĩ và lực
+biên	giới dịch tập bản lai chế kịch phòng
+biếm	họa thôi
+biến	mất đi thành đổi khỏi nó thái tôi
+biếng	ăn nhác và của hả quá không lại
+biết	là không anh gì đấy được tôi điều
+biếu	không của ông
+biển	cả số và phía của này không ở
+biểu	diễn tượng hiện tình đồ quyết của lộ
+biễu	diễn
+biệc	của
+biện	pháp hộ minh lý cho của bạch luận
+biệt	là của danh với thự đội giữa chủng
+bo	mạch cho nhiều của là nữa đấy
+boa	cho giờ nhiều của nhé tôi đâu đó
+bom	ở nguyên đó hạt nổ đã này trong
+bon	chen tôi mình chúng trẻ con họ tớ
+bong	bóng gân ra này biết à nó tàu
+boong	tàu ke chính ngay đi chú không dưới
+bu	lông quanh này vào quá đến của lại
+bum	à
+bung	ra dù bét lụa cả
+buy	me
+buôn	bán ma lậu thuốc người vũ chuyện nô
+buông	ra tôi tay tha xuôi thả cô em
+buýt	và đi đó ở của đến sẽ này
+buối	sáng tối
+buốt	giá và não
+buồm	lên đi xuôi trên phụ chính ra xuống
+buồn	cười ngủ chán nôn bã vì khi tẻ
+buồng	giam lái trứng tắm của điện ngủ số
+buổi	sáng trưa chiều tối
+buộc	phải tội tôi anh chúng nó với hắn
+buột	miệng
+by	the a my kim me then
+bà	ấy ta có không đã mẹ sẽ là
+bài	hát học kiểm báo tập thơ phát này
+bàn	tay về bạc của chuyện tán chân với
+bàng	quang hoàng đã vĩ đang và đại đầu
+bành	trướng rồi của này đó
+bào	chữa của thai não thần chế ung ngư
+bày	tỏ trò ra đặt với sự cho mưu
+bá	tước đạo cháy chủ tánh láp cho vương
+bác	sĩ sỹ ấy có không đã sẽ bỏ
+bách	tính khoa hóa hơn thú thắng bệnh phát
+bái	bai kiến sư phục thiên tế ông cao
+bám	theo chắc vào chặt lấy sát đuôi víu
+bán	cho hàng nó được kính đứng ma đồ
+báng	bổ súng tôi và chúng họ ta chúa
+bánh	mì xe quy nướng mỳ ngọt bao của
+báo	cáo cho động chí thù với trước của
+bát	đĩa giới quái cơm mì của này canh
+báu	vật của sắt này đó ở nào mà
+bân	rộn
+bâu	giờ lâu
+bây	giờ gi làm không có sẽ giời là
+bã	đậu như này của đó và chuột kia
+bãi	biển đỗ cỏ đậu rác đáp mìn bỏ
+bãn	lĩnh
+bãng	qua
+bão	tuyết cát đang này lớn tố đã sắp
+bè	của và tôi lũ gì mình ở anh
+bèn	bảo
+bèo	nhèo bọt quá
+bé	nhỏ không sẽ đó này đã là có
+bén	mảng của hơn như đấy lắm và lửa
+béng	mất nó đi cái
+béo	phì ú và bở lên ị hơn quá
+bép	xép
+bét	nhè rồi hết mọi ra cả cũng nhất
+bê	tông bối của đó đê này tha bết
+bên	trong ngoài kia cạnh nhau trái phải này
+bênh	vực viện nó cạnh nhân nhau của trong
+bêu	đầu xấu rếu
+bì	này thư với đó có được của kịp
+bìa	rừng tạp của sách cứng các báo da
+bình	tĩnh thường minh an yên luận dương đẳng
+bí	mật ẩn quyết danh kíp ngô tỉ hiểm
+bích	họa chương quy của và đã á đây
+bím	tóc của
+bính	tý
+bít	tết bùng tất cái kín nó chúng lại
+bò	của sát cạp cái ra rừng vào và
+bòn	rút
+bòng	bong chày
+bó	tay với hoa vết cho buộc sát bột
+bóc	lịch lột tem và vỏ của trần ra
+bói	toán cho đã của ở bài mà tương
+bón	cho phân và thì rồi đấy
+bóng	tối chày ma đêm đá của rổ bầu
+bóp	cò cổ nát méo của chết cho nghẹt
+bô	lão đi của lô cho hay là nói
+bôi	nhọ trơn kem đen thuốc dầu tro lên
+bôn	ba
+bông	hoa hồng tai tuyết cải cho và của
+bõ	công lỡ dính tức
+bù	đắp lại cho nhìn vào khú thiệt xù
+bùa	chú may phép mê hộ bình của này
+bùi	nhùi
+bùm	một ngay chíu
+bùn	đất lầy và ở này trên đó cười
+bùng	nổ phát cháy lên ra binh học ngọn
+bú	sữa tí kẹc chim đi cu cái một
+búa	tạ của lớn đập xuống bổ và khoan
+búi	tóc
+bún	thiu
+búng	tay ngón nó chim mình một
+búp	bê phê
+bút	chì của không này màu tích danh đó
+băm	vằm nhỏ nát mày pho và thịt đó
+băn	khoăn
+băng	qua đảng này đó ghi của nhóm giá
+bĩnh	tĩnh ra tình sự tôi
+bĩu	môi
+bơ	đậu vơ lạc sữa và gơ không của
+bơi	đi lội qua trong không ra vào ở
+bơm	nước đầy xăng vào hơi máu khí không
+bưng	bít qua bê
+bưu	điện thiếp kiện phẩm chính tín tá cục
+bươm	bướm
+bươn	chải trải
+bước	vào ra đi chân qua lên tiếp tiến
+bướm	đêm này của có không thôi trên vàng
+bướng	bỉnh
+bướu	học cổ ở của trên và được
+bưởi	của này to
+bạ	của điện đâu gì với hay nào nữa
+bạc	hà của với và không cho về đó
+bạch	cầu tuộc tuyết huyết tạng kim cốt dương
+bại	của trong rồi được trận chúng hắn và
+bạn	của có gái bè trai tôi sẽ thân
+bạo	lực chúa động loạn hành dâm của và
+bạt	tai lên khắp lò mạng cho giang làm
+bả	không đã là sẽ có đi nói đang
+bản	thân đồ chất sao năng tin báo là
+bảng	điều hiệu số tên chữ này xếp điểm
+bảnh	bao trai đấy lắm quá chọe nhất thật
+bảo	vệ là tôi anh hiểm đảm họ rằng
+bảy	năm người ngày tuổi này vương mươi lần
+bấc	đèn
+bấm	nút chuông giờ còi vào số cái máy
+bấn	loạn lên
+bấp	bênh
+bất	cứ kỳ ngờ kì thường tử kể khả
+bấu	víu vào
+bấy	nhiêu lâu giờ nhầy kỳ kì
+bầm	tím dập trên ở này thôi đó của
+bần	tiện tăng cùng bật hàn
+bầu	trời cử dục cho khí chọn không bạn
+bầy	sói tôi đàn chó nhầy của cừu ngựa
+bẩm	sinh báo hoàng công đại của gì như
+bẩn	thỉu của tay bựa và quá đó như
+bẩy	của mà cho chúng và vào với
+bẫy	của rồi chúng tôi anh và đấy không
+bậc	thầy thang nhất cao cha của phụ thềm
+bận	không rồi quá
+bập	bênh bẹ bùng
+bật	đèn lửa lên lại nó máy ra nhạc
+bậu	cửa
+bậy	bạ giờ ra lên nữa trên quá và
+bắc	cực kinh triều của và mỹ hàn phi
+bắm	chắc
+bắn	vào đi tôi trúng tỉa hắn chết nó
+bắng	cách những
+bắp	cải rang của thịt cày tay và chân
+bắt	đầu được cóc tôi hắn giữ anh chúng
+bằm	đó chúng
+bằng	cách chứng một cái việc tay lái mọi
+bẳn	tính
+bẵng	đi
+bặm	trợn và nữa
+bặt	vô tin
+bẹp	dí dúm chúng cái đầu các mất rồi
+bẻ	gãy cổ cong khóa lái tay gẫy ngón
+bẽ	mặt bàng gãy
+bế	tắc nó con em đứa mạc thằng quan
+bến	tàu cảng phà xe bờ luôn đỗ của
+bếp	trưởng của và đi ở giỏi nhỏ đấy
+bết	máu bát lại quá
+bề	mặt ngoài trên tôi nổi bộn ngang dày
+bền	vững bỉ chặt lâu hơn cao chắc của
+bềnh	bồng trên và
+bể	bơi cá nước chứa hết đầu máu rồi
+bệ	hạ phóng thờ xí rạc lò khóa tên
+bệch	như
+bện	dây tóc viện
+bệnh	viện nhân hoạn của dịch tật này gì
+bỉ	ổi của và anh thế tôi đó ngài
+bỉm	của hoa rồi cho
+bỉnh	của đến và nữa thế khi không vậy
+bị	bắt thương giết mất bắn sao đánh bệnh
+bịa	ra đặt chuyện đâu đấy cái thêm không
+bịch	quá này thế đó của như mà và
+bịnh	hả rồi
+bịp	bợm của thôi tôi và đấy chúng gì
+bịt	mắt miệng tai kín mặt mồm đầu cái
+bịu	với lắm quá
+bọ	chét cạp ngựa này cánh đó hung rùa
+bọc	thép của trong bởi hậu da cho bằng
+bọn	chúng tôi họ ta trẻ tao em anh
+bọng	đái
+bọt	biển mép vào khí của nước không và
+bỏ	đi qua cuộc rơi súng nó lỡ tôi
+bỏi	vì
+bỏng	của ngô và nhất lắm đấy quá đó
+bố	mẹ không tôi ơi sẽ đã cháu có
+bốc	mùi cháy hơi đồng phét lửa lên khói
+bối	rối cảnh của lặc này tử đó và
+bốn	người năm ngày mươi tháng lần tiếng giờ
+bốt	điện cao của ở đó
+bồ	câu đào tèo cũ tát đề của có
+bồi	thường thẩm bàn dưỡng của đó và hoàn
+bồn	tắm cầu chồn rửa nước chứa này nhiên
+bồng	bột bềnh súng lai con bông em nó
+bổ	nhiệm sung đầu thần vào dưỡng nhào ích
+bổn	phận quan vương môn bang phẩn
+bổng	toàn của lộc ở và này cho dưng
+bỗng	nhiên dưng trở chốc có một biến thấy
+bộ	phim đồ phận trưởng não sưu mặt giáp
+bộc	lộ phát bạch này của phá
+bội	chúng tôi lại ta anh của và ông
+bộn	tiền quá này lắm bề của vậy ở
+bột	mì đó yến của và hư giặt trắng
+bớ	người
+bới	vì móc rác trong tung quá một nó
+bớt	đi đau căng một giận lo chút nói
+bờ	biển sông vực đông hồ bên tây vai
+bời	vì với một và hoa rồi trong gì
+bờm	ngựa xờm tóc
+bở	vì biển cho
+bởi	vì một những các người vậy sự chính
+bỡn	cợt
+bợ	đít đỡ tôi cậu nhúng nữa để
+bợm	nhậu rượu này đó của già một
+bục	phát giảng diễn nhân cao này và đó
+bụi	cây bặm tiên rậm bẩn và của này
+bụng	của và tôi quá anh em cô mẹ
+bụp	một
+bủa	vây
+bủn	xỉn
+bức	tường tranh ảnh thư tượng hình xạ vẽ
+bứt	rứt phá dây tai tóc đầu
+bừa	bộn bãi được thôi vào một quá là
+bừng	sáng lên cháy tỉnh dậy như khói trong
+bửa	củi tiệc tối đầu
+bửu	bối
+bữa	tiệc tối ăn sáng trưa nay cơm với
+bự	con hơn của như và nhất lắm đó
+bựa	thật nhân lắm này thế của như vãi
+bực	mình bội tức rồi dọc lắm vì đấy
+ca	sĩ này của ngợi phẫu hát khúc tụng
+cai	trị nghiện ngục quản rượu thuốc được tù
+cam	kết đoan chịu và go thảo tâm của
+can	đảm thiệp dự do i gì be đến
+canh	chừng gác giữ phòng cửa ở giờ bạc
+cao	hơn nhất su bồi quý cấp tốc của
+cau	có mày
+cay	đắng cú ghét nghiệt độc quá cho của
+cha	tôi mẹ của không đã con cô ta
+chai	rượu bia nước này nữa đó sâm không
+cham	sóc
+chan	hòa ho chứa chát
+chang	như thế nhau vậy cái đã bị không
+chanh	và không để của nữa rồi cho nhé
+chao	ôi đảo xìn ơi
+chay	à đi cũng và cho mà này mau
+che	giấu đậy chở dấu cho mắt chắn phủ
+chen	ngang vào lấn chúc giữa chân và để
+chi	tiết phí trả nhánh phối viện vậy phiếu
+chia	sẻ tay buồn ra rẽ cắt nhau cho
+chim	cánh ưng nhỏ của non bồ này sẻ
+chinh	phục phạt chiến của là thứ này tới
+chiu	đựng trách
+chiêm	ngưỡng tinh bao nghiệm
+chiên	của giòn ngoan không và trứng mà kiểu
+chiêu	thức đãi này mộ trò đó của gì
+chiếc	xe nhẫn máy thuyền tàu áo hộp váy
+chiếm	được lấy lại đóng đoạt hữu giữ quyền
+chiến	đấu tranh thắng binh dịch trường thuật này
+chiết	xuất tiệt khấu suất
+chiếu	của phim sáng tướng vào cố lại đèn
+chiền	chiện
+chiều	nay cao dài hôm không hướng mai gió
+cho	bạn tôi mình anh chị em
+chon	cái đi
+chong	chóng
+choàng	của và đỏ cho tắm lông không này
+choán	chỗ hết đầy
+choáng	váng ngợp rồi vì đấy và không quá
+choảng	nhau
+chu	đáo du cấp kỳ vi kì choa trình
+chua	và của không cay chát thôi ngọt ngon
+chui	vào ra xuống qua vô lên từ đầu
+chun	song à
+chung	với một sống kết quanh là của thủy
+chuy	ện
+chuyên	gia nghiệp môn viên ngành về khoa chở
+chuyến	đi bay tàu xe du phiêu hàng hành
+chuyền	của bóng cho đi đó này qua đẹp
+chuyển	khoản đến đi tiền về
+chuyễn	tù
+chuyện	gì này đó với của về xảy đã
+chuôi	kiếm
+chuông	báo cửa điện nhà của reo và này
+chuần	bị
+chuẩn	bị đấy rồi luôn đoán không mực của
+chuốc	lấy họa rượu cho thuốc oán thêm rắc
+chuối	và ở của này không cho vào đang
+chuốt	cho quá của
+chuồn	khỏi thôi đi rồi mất đây ra ngay
+chuồng	ngựa gà heo bò của lợn này đi
+chuỗi	hạt các thức ngày ngọc sự những số
+chuộc	lỗi tội lại được người cho họ thân
+chuộng	hoà nhất nó em hòa
+chuột	chũi cống này nhắt trong của chết rút
+chyện	gì với này đó
+chà	đạp xát là sàn lưng vào nó tôi
+chàm	rồi chứ
+chàng	trai này không có đã đó đẹp sẽ
+chào	bạn anh chị em
+chày	của không và à là chuyên có thôi
+chá	không
+chác	được gì với của là một thêm
+chái	phía
+chán	lắm nản ngắt quá chết thật ngấy rồi
+chánh	án văn thanh đạo của điện nữa
+cháo	lưỡi yến múc đá ngô và đặc của
+chát	lại
+cháu	không có sẽ đã là biết muốn phải
+cháy	rồi trong hết nổ ở rụi nắng và
+châm	lửa ngòi ngôn biếm của chọc cứu điện
+chân	của tôi thành lên anh chính vào ra
+châu	âu phi á báu cảng chấu mỹ lục
+chãm	sóc
+chè	chén và của rồi đậu
+chèn	ép lên vào một thêm dưới
+chèo	đi thuyền của lái cho nhanh vào lên
+ché	là không
+chém	gió giết đầu chết nó dè vào thớt
+chén	thánh bát rượu trà đi cơm dĩa này
+chéo	nhau các chân với ngón giữa hai hồ
+chép	lại của về trong nào gì nó thứ
+chét	luôn
+chê	bai trách cười vào nó được tôi cô
+chênh	lệch nhau vênh
+chì	và là có vì của không trong còn
+chìa	khóa khoá tay của dự này nào không
+chìm	trong vào xuống đắm tàu dưới sâu rồi
+chình	ình mình là
+chìu	theo
+chí	còn không là có cả của nếu tôi
+chía	khóa
+chích	điện thuốc ngừa cho vào con ma chòe
+chín	chắn tháng người giờ năm tuổi rồi mươi
+chính	là xác phủ mình trị thức anh quyền
+chíp	này cả đã điện ra và của hôi
+chòi	canh của trên này gác đó
+chòm	sao râu xóm đại
+chòng	chọc ghẹo
+chó	chết của đẻ săn đó cái này gì
+chóc	và này của là đó không nữa vì
+chói	lọi mắt lòa lóa sáng chang tai quá
+chóng	mặt và trở rời tìm bị kết đến
+chóp	cao núi bu đuôi của mũi đó
+chót	của là vót tôi với lớp cho để
+chôm	chỉa nó cái xe được đồ của một
+chôn	cất vùi ở nó sống sâu trong giấu
+chông	gai chừng
+chõ	mũi vào cái
+chùa	này thì của mà chiền ở nhỉ đúng
+chùi	sạch chân đít rửa mông mũi cái và
+chùm	chìa tia nho đầu sáng sao ánh đèn
+chùn	bước chân tay lại
+chùng	ta xuống
+chú	ý ấy không có sẽ đã là biết
+chúa	ơi tể trời tôi của phù đã sẽ
+chúc	mừng bạn ngủ may
+chúi	mũi đầu xuống
+chúng	ta tôi sẽ đã không đang có là
+chút	nào đi nữa thôi gì được thời không
+chăm	sóc chỉ lo chú nom chút con vào
+chăn	cừu bò gối nuôi dắt cho ngựa dê
+chăng	nữa là anh ta chỉ tôi đó em
+chĩ	là
+chĩa	súng vào mũi khẩu thẳng cái về nó
+chũng	ta tôi
+chơ	đã ở
+chơi	với trò của bóng đi bài một thôi
+chư	thần hầu vị có
+chưa	bao từng có biết được đủ nói thấy
+chưng	cất diện
+chương	trình danh của vàng cho mới cuối mười
+chước	tôi anh theo cám tiếng một các của
+chướng	ngại mắt của bụng
+chườm	đá nóng ít cái
+chường	mặt và cái
+chưởng	lý môn ấn của rồi pháp thì quỹ
+chược	với
+chạ	với
+chạc	tuổi
+chạm	vào đến trán tới mặt tay khắc với
+chạng	vạng
+chạp	và quá như của hơn nhưng nhất rồi
+chạy	đi trốn nhanh mau ra thoát thôi về
+chả	có biết hiểu ai phải bao quan là
+chải	đánh tóc chuốt lông răng đầu của mái
+chảng	có phải
+chảnh	chọe chó mà này
+chảo	vệ lửa dầu của rán chiên lớn mỡ
+chảy	máu ra trong nước qua vào xuống hết
+chấm	dứt hết đỏ điểm hỏi nhỏ than bài
+chấn	thương động chỉnh song ở lên của hơn
+chấp	nhận thuận hành tất chính mọi những của
+chất	độc của lượng nổ lỏng vấn béo thải
+chấu	không thì rồi
+chấy	rận
+chầm	chậm lấy
+chần	chừ chờ
+chầu	trời diêm bia này ông nữa rượu chực
+chẩn	đoán bệnh
+chậm	lại thôi trễ chạp rãi hơn quá phát
+chận	họ đứng cửa đường chúng hắn nó xe
+chập	chờn mạch điện tối chững nhận choạng cheng
+chật	chội hẹp quá vật kín ních cứng rồi
+chậu	rửa hoa cây của bông nước rồi bị
+chắc	chắn là rồi chứ không rằng anh hẳn
+chắn	là rồi sẽ không rằng có anh phải
+chắng	bao
+chắp	vá nối cánh tay hai
+chắt	của chiu lọc
+chằm	vào thế như chặp tôi anh nhìn vô
+chằn	tinh lửa nào
+chằng	bao có ai chịt làm phải biết là
+chẳn	hạn
+chẳng	có phải biết bao ai còn hạn là
+chẵn	một
+chẵng	có lẽ bao là phải hạn
+chặc	vào
+chặn	được hắn chúng nó đường lại đứng một
+chặng	đường cuối đua đầu dài
+chặt	vào đầu chẽ lấy tay nó hơn nhé
+chẻ	đôi củi ra đầu làm và
+chẽ	với hơn và đến bởi của quá ở
+chế	độ tạo được nhạo ngự ra của đá
+chếch	lên
+chết	tiệt rồi của đi vì trong ở hết
+chểnh	mảng
+chệch	hướng khỏi đi đường mục
+chỉ	đường cần cho
+chỉa	súng vào mũi thì
+chỉn	chu
+chỉnh	sửa lại tề hình đốn được cho nó
+chị	ấy không có sẽ em đã biết là
+chịu	đựng trách được nổi nghe nói hơn thua
+chọ	vụ họ
+chọc	tức giận vào dò tôi thủng ghẹo trời
+chọe	mà thế
+chọi	với một lại đá được gà nổi cái
+chọn	nào lựa một của đi khác đúng tôi
+chọt	vào tôi
+chỏ	mũi vào
+chỏm	tóc
+chố	này
+chốc	lát thôi nữa mà sẽ tôi là đã
+chối	bỏ cãi lời không được tôi cho anh
+chốn	này hoang nào địa linh của không khỉ
+chống	lại đối cự đạn trả khủng chọi tội
+chốt	là của an chặn cửa ở trong lại
+chồi	non nảy
+chồm	hổm lên người qua
+chồn	hôi cái đó sương và không nhỏ rồi
+chồng	tôi cô của bà em mình cũ chị
+chổ	này nào khác đó của cho làm ngồi
+chổi	của lau quét hay này và đã cho
+chổng	mông ngược
+chỗ	này nào đó khác của cho tôi ở
+chội	quá này nên rồi
+chộp	lấy được nó ngay cái
+chột	mắt dạ một
+chớ	không còn có để anh gì ai cô
+chớm	nở
+chớn	đó với
+chớp	mắt nhoáng lấy sáng của được là và
+chờ	đã đợi chút một tôi ở anh gì
+chời	đã đợi ơi
+chờn	trên lắm
+chở	hàng cho tôi chúng em đi cô con
+chởm	này
+chợ	đen cá này và khoa trời đó ở
+chợp	mắt
+chợt	nhận nghĩ nhớ thấy nảy tới có lóe
+chục	năm lần người ngàn cái triệu thằng nghìn
+chụm	lại tay đầu
+chụp	ảnh hình cộng được cắt lấy một lại
+chụy	là
+chủ	nhật yếu
+chủa	chúng
+chủng	tộc quốc loài loại của rồi học ở
+chứ	không gì hả nhỉ ạ sao anh đâu
+chứa	đầy đựng chấp một được nước đồ những
+chức	năng một của tiệc vụ trách cho này
+chứng	minh kiến tỏ cứ của cho khoán nào
+chừ	gì nữa là ở chút không mà
+chừa	lại cho chỗ một cái phần ra thói
+chừng	nào đó cái đấy cho nó này anh
+chửa	rồi và
+chửi	thề rủa bới bậy tôi mắng tao bằng
+chửng	bởi chúng cả cô tôi anh con
+chữ	ký viết cái kí thập số này gì
+chữa	cho trị lành được bệnh khỏi nó cháy
+chững	chạc lại bước
+chực	chờ
+co	giật thắt lại giãn rúm cứng rút với
+coi	nào chừng như là thường đó trọng tôi
+com	lê
+con	trai gái người không bé sẽ đã có
+cong	của không đuôi thời đít như queo lại
+cu	cậu này của con anh ơi không đó
+cua	gái được quẹo không cho phải ở này
+cui	cùng của
+cung	cấp điện thủ của tên và ứng không
+cuả	tôi anh chúng nó
+cuốc	bộ sống chim chiến xẻng
+cuối	tuần cùng tháng năm
+cuốn	sách băng sổ phim hút nhật tiểu vào
+cuống	não lên họng phổi cuồng hết vé quá
+cuồn	cuộn tín
+cuồng	tín nhiệt của nộ vì phong loạn dâm
+cuỗm	hết tiền đi mất của nó
+cuộc	họp gọi sống
+cuội	gì không
+cuộn	băng giấy phim dây tròn mình lại nó
+cà	phê rồng vạt chua rốt ri chớn nhắc
+cài	đặt dây vào bẫy gì một người bom
+càm	ràm ơn thấy giác nhận
+càn	quét khôn long qua quấy một
+càng	tốt sớm nhiều ngày nhanh ít lúc xa
+cành	cây hoa đào sát quất lá nhỏ này
+cào	xé cấu trên vào lên và nát tôi
+càu	nhàu
+cày	ruộng nát bừa cánh được cấy của hay
+cá	nhân là mập voi sấu cược heo hồi
+các	anh bạn người cậu ngươi con vị cô
+cách	nào để đây khác duy của mà đó
+cái	gì này đó quái chết tên máy xe
+cám	ơn dỗ on hấp lợn đấy
+cán	bộ cân qua chổi lên chết thần dao
+cáng	đáng lại cứu như này
+cánh	cửa tay cổng cụt đồng của rừng bên
+cáo	buộc của về cho đi từ với tình
+cáp	điện và treo đi của này bị rồi
+cát	bụi và tư lún tiên trắng của ở
+cáu	kỉnh với giận gắt bẳn vì lên đấy
+cáy	thế này
+câm	miệng mồm đi ngay cái mẹ lặng họng
+cân	nhắc bằng nặng đối sức treo xứng đi
+câu	chuyện hỏi trả lạc đó này nói cá
+cây	cầu súng gậy này bút cối số đó
+cãi	nhau với vã về lại nữa cọ gì
+cò	súng gáy đi và mồi quay đâu đấy
+còi	báo cọc hú xe đó cảnh hụ của
+còm	của
+còn	lại sống gì không có là anh ở
+còng	tay cho ra hắn này anh đi của
+có	thể một gì lẽ vẻ chuyện ai phải
+cóc	con và tôi một cô quan trẻ cần
+cón	có
+cóng	rồi mất đây ở cả ngoài trong và
+cót	két cho đi
+cô	ấy ta có gái không đã sẽ là
+côi	của mẹ và cha nhà từ không mà
+côn	trùng đồ cầu lôn này của nhị pháp
+công	việc ty chúa bằng nghệ viên lý dân
+cõ	lẽ thể
+cõi	chết đời lòng vĩnh trên âm vô thần
+cõng	tôi anh em ai cái chúng không
+cù	lét lũ lần và đèo
+cùa	các nó
+cùi	bắp chỏ mía trỏ quá này
+cùm	tay cho
+cùn	thì còn và
+cùng	nhau với một của tôi anh chúng cũng
+cú	đấm điện đánh sốc đó đá mèo nhảy
+cúc	cu áo dại này của là và cho
+cúi	xuống đầu thấp chào mình người mặt lạy
+cúm	gia hay thôi không thông tây và ở
+cún	con cưng của mới này không yêu ngoan
+cúng	tế ta bái cho của quá tôi và
+cúp	máy điện học đây bóng vô đuôi thế
+cút	đi ra khỏi ngay mẹ xéo hết về
+căm	ghét thù hận phẫn giận hờn
+căn	nhà phòng hộ cứ bệnh bản cước hầm
+căng	thẳng buồm ra tin quá lắm lên và
+cũ	của rồi và rích thôi kỹ kĩ này
+cũi	của đi chó rồi
+cũng	không có được vậy là sẽ như đã
+cơ	hội thể mà quan bản sở trưởng chứ
+cơm	đi nguội với ăn bữa của tối rồi
+cơn	bão đau ác gió giận mưa thịnh lốc
+cư	xử dân trú ở của ngụ bất này
+cưa	máy cẩm được chân đổ xương đi gái
+cưng	à ơi của ạ này là có không
+cưu	mang
+cương	vị quyết cứng thi và của đó này
+cước	của giả không mới pháp ra à cho
+cưới	của nhau cô anh em một vợ con
+cướp	biển đi ngân của bóc mất xe nhà
+cười	lên thật với của đi khi nhạo và
+cường	độ điệu tráng quốc an nhân sức của
+cưỡi	ngựa trên nó con lên được xe bò
+cưỡng	hiếp lại bức ép chế được dâm đoạt
+cược	là với vào cho đi không mạng rằng
+cạ	cứng với vào
+cạm	bẫy
+cạn	ly kiệt dần chén rồi đi nào hết
+cạnh	tranh đó anh tôi nhau cô em ta
+cạo	râu đầu lông sạch hết đi cho trọc
+cạp	đất quần và đấy nào sẽ cắn đen
+cạu	biết
+cạy	khóa được cửa ra
+cả	những hai mọi các chúng đều một ngày
+cải	thiện tạo tiến trang cách của xanh đạo
+cảm	ơn thấy giác nhận
+cản	trở đường được tôi chúng anh hắn họ
+cảng	này của ở và nào trong không đó
+cảnh	sát báo này giác cáo đó tượng của
+cảo	chiên à
+cảu	anh tôi ta ông chúng em mình con
+cấc	cậu
+cấm	túc kỵ cử vào anh bay không người
+cấn	này đề thận
+cấp	cứu cho trên cao độ của thông bậc
+cất	cánh giữ nó giấu lên tiếng đi súng
+cấu	trúc tạo kết thành hình của xé với
+cấy	ghép vào một máu nó được trong tóc
+cầm	lấy đầu súng cái cự đi nó tay
+cần	phải một thiết anh biết nói làm gì
+cầu	nguyện xin thang của hôn thủ cho tôi
+cầy	sấy đó
+cẩm	y nang thạch rồi cô chướng thấy đào
+cẩn	thận trọng mật tắc của thân một thẩn
+cẩu	thả con quan đó kia của xe và
+cẫng	lên
+cận	vệ kề với được của cảnh mục nhất
+cập	nhật bến
+cật	lực vấn
+cậu	ấy ta có không đã sẽ biết là
+cậy	vào của nhất được ấy ở hơn cả
+cắc	nào ké bạc cớ một
+cắm	trại vào đầu điện sừng nó cái trên
+cắn	câu tôi vào rứt đâu đứt một anh
+cắp	nó của một xe từ đồ và vặt
+cắt	tóc cổ đứt ngang bỏ dây đuôi lớp
+cằm	của lên anh tôi và xuống ấy hắn
+cằn	nhằn cỗi của ở nhất lắm như và
+cẳng	chân tay trên và
+cặn	bã kẽ bả
+cặp	đôi mắt với kính vợ song mông sinh
+cọ	xát rửa sát vẽ sạch sàn và với
+cọc	và gỗ của tiền cho cạch trước vào
+cọng	lông tóc cỏ dây mì bún rơm
+cọp	con cái không răng chỉ rồi đang sao
+cọt	kẹt
+cỏ	dại và xanh của khô nhà tận không
+cỏi	hơn như của quá nhất và không lắm
+cỏn	con
+cố	gắng lên ý làm vấn giết tìm hết
+cốc	cà nước bia của rượu nữa trà này
+cối	xay và này sẽ đã ở không của
+cống	hiến nạp ngầm rãnh phẩm thoát nước và
+cốp	xe ra chiếc sau
+cốt	lõi của truyện yếu nhục tinh thép ghi
+cồn	cát cào trong vào không nhé cho và
+cồng	kềnh
+cổ	là không đã đại xưa phiếu điển có
+cổng	thành ra chính lại của số đó này
+cỗ	máy xe quan chiến vũ về
+cỗi	này của như và
+cộ	và đang đi ấy ở
+cộc	cằn lốc đầu
+cội	nguồn rễ của
+cộm	cán
+cộng	sự đồng hòa sản hưởng tác thêm với
+cột	sống buồm điện trụ của đèn mốc dây
+cớ	để gì ngoại đó sao nào của cho
+cớm	bẩn đó à đang đấy không sẽ nào
+cờ	bạc của gặp hó vua là có đi
+cở	nào ra sở
+cởi	áo quần đồ ra trói mở hết nó
+cỡ	nào này của đó lớn bự tuổi nhỏ
+cỡi	ngựa con một nó được cổ lạc đi
+cợ	hội
+cợt	với về nhả tôi rồi đâu nữa ta
+cụ	thể của để này nội mà cho cố
+cục	cưng pin an đá của trưởng máu điều
+cụm	từ sao lại
+cụng	ly tay li đầu cưng nào
+cụp	đuôi
+cụt	rồi tay chân của không hứng hoàng và
+củ	cải hành khoai cà chuối tỏi của kẹc
+của	tôi anh chúng mình cô ông ta cậu
+củi	và khô rồi vào về đi ướt nhóm
+củng	cố sẽ
+cứ	ai như để điều thứ nói làm đi
+cứa	cổ vào như
+cức	của
+cứng	đầu rắn cỏi nhắc như của đơ rồi
+cứu	tôi mạng được thương con anh chúng cô
+cừ	lắm khôi nhất đấy thật hơn quá với
+cừu	của non đen không và trong hay có
+cử	động người viên tri một chỉ của tôi
+cửa	sổ hàng ra lại đó sau nhà rồi
+cửng	lên
+cửu	long của à không ma giữa trong tộc
+cữ	giữ
+cự	được ly lại tuyệt lâu đi của li
+cựa	quậy lắm
+cực	kỳ kì đoan khổ khoái mạnh lớn nhọc
+cựu	chiến binh quân đặc ước nhân cảnh tổng
+da	trắng đen đỏ của màu thịt đầu gà
+dai	dẳng như li sức lắm hơn quá thật
+dan	díu và đã có sẽ không của là
+dang	dở rộng chân làm tay ra hai ở
+danh	sách dự tiếng tính của hiệu thiếp là
+dao	của cạo găm xuống động này vào và
+day	dứt long to tôi i on the và
+de	la dọa lại xe
+deo	để đã
+di	chuyển động tản truyền chúc sản cư đà
+dim	sum
+din	đang
+dinh	thự dưỡng của tổng thống cơ bộ
+diêm	vương không tiêu của này quẹt dúa mạch
+diên	cho
+diêu	tự
+diếm	gì điều sự cái chúng cả mọi thông
+diếp	và
+diều	hâu này đó bay gì hành tra và
+diễm	phúc lệ tình
+diễn	ra viên văn của tả tập xuất thuyết
+diễu	hành binh cợt
+diệm	sơn
+diện	cho của với mạo tích về kiến được
+diệp	vấn sư tiên thanh chính lục nhuận
+diệt	vong chúng nó được tất hắn chủng các
+diệu	của kỳ này nhất kì và khi trong
+do	tôi tại thái gì anh để đó chúng
+doanh	trại nhân của nghiệp thu số ở là
+doe	của đang được
+dom	à nói đã này sẽ ạ có ở
+don	và có à đã không đây dẹp
+dong	buồm thuyền bước
+doạ	tôi chúng của đến anh cô sẽ từ
+du	lịch hành thuyền khách kích côn mục học
+dua	theo
+dung	ra của dịch được nham thứ cho là
+duy	nhất trì tùng ngã tâm chỉ của lý
+duyên	dáng phận hải số quá với này của
+duyệt	binh lại cho của và qua rồi bởi
+duệ	của cuối sau
+duỗi	chân thẳng ra người tay cẳng
+dy	truyền
+dài	lắm và hơn để nhất của hạn dòng
+dàn	xếp dựng nhạc cảnh âm trận hợp quân
+dàng	hơn gì như để đâu cho bị vậy
+dành	cho thời cả nhiều riêng một được chút
+dào	của và
+dày	đặc vò của hơn và dạn tôi quá
+dái	tai của mày ngựa nó luôn to
+dám	chắc nói làm cá đến đánh nghĩ nhìn
+dán	nhãn mắt nó tường trên lên băng vào
+dáng	gì đến tới của vẻ và người đi
+dánh	nhau giá dấu
+dát	vàng mỏng
+dáy	của đó này và như thế
+dâm	đãng dục và tặc ô không trong với
+dân	của tộc chủ chúng ở số mỹ làng
+dâng	hiến lên cho cao tặng trào mình lễ
+dâu	của tây và tôi xinh tương mới chú
+dây	an chuyền thừng thần điện vào cáp xích
+dã	man ngoại thú tâm tượng và của này
+dãi	với cho lên quá ra rớt thế đó
+dãn	ra đến
+dãy	nhà núi số phố đồi phòng đá dài
+dè	dặt chừng gì lại ở thế
+dép	của lê và à tông
+dê	già của đó này và con mà sẽ
+dì	ấy không của sẽ có đã tôi may
+dìm	chết nó tôi anh hàng mình xuống con
+dìu	dắt anh con cô người
+dí	súng dỏm vào ở dao theo nó rồi
+dính	vào líu dáng tới máu đến trên đầy
+díu	với
+dò	tìm ra tủy được theo hỏi đường xét
+dòi	bọ
+dòm	ngó chừng của vào
+dòng	sông máu nước dõi thời họ chảy chữ
+dó	là có sẽ không sao tôi cũng
+dóc	láo về với nữa tổ đó hay
+dô	ta nào
+dôi	ra tôi
+dông	dài
+dõi	tôi chúng anh theo hắn cô của các
+dù	sao có là anh tôi cho gì chỉ
+dùi	cui vào trống ở
+dùm	tôi đi cái anh được cho em con
+dùng	nó để cái thuốc một được từ súng
+dúi	đầu
+dúng	không là
+dăm	ba
+dĩ	nhiên vãng là không phải tôi đã có
+dĩa	của này thức vào bạc cho và được
+dũa	móng
+dũng	cảm khí sĩ mãnh của trên này sỹ
+dơ	bẩn dáy quá tay lắm hết của thật
+dơi	sẽ này không già của và đã có
+dư	luận của chấn thừa sức thời vị dả
+dưa	chuột hấu chua leo với muối này gì
+dưng	lại biến anh tôi có xuất nó bị
+dương	vật tính và cầm của xỉ mới không
+dưới	đó này chân kia nước sự đất ánh
+dường	như nào
+dưỡng	lão khí cho da và sức ở chúng
+dược	phẩm sĩ của cho không và liệu thảo
+dượng	của tôi biết sẽ ấy cháu đã không
+dượt	trước
+dạ	dày vâng không hội tiệc có vũ được
+dại	dột và mà của gì khờ vì này
+dạn	lên hơn kinh dĩ của và
+dạng	của sống được này người như con và
+dạo	này một chơi đầu với trong gần quanh
+dạt	vào đến về trên ra dào tới giữa
+dạy	cho tôi con dỗ anh chúng nó cậu
+dả	lắm
+dải	ngân băng đất núi ruy tần đá lụa
+dấm	và
+dấn	thân sâu bước mình
+dất	nước
+dấu	hiệu vết vân chân tay ấn của chấm
+dấy	lên
+dầm	ra rồi à lên
+dần	lên đi trở chết và mất với trong
+dầu	mỏ gội khí của và hỏa vào bôi
+dầy	đặc hơn lên và bao cỡ như
+dẫm	lên vào phải này đó chân đạp chết
+dẫn	đến đường tới đầu dắt chúng tôi anh
+dẫu	sao cho có vậy biết chỉ thế
+dẫy	những nhà
+dậm	chân lên dật
+dập	tắt máy lửa ghim mặt đầu mông nát
+dật	ở này của mà một đâu
+dậy	đi và nào rồi sớm thì được mau
+dắt	chúng chó bò bởi con mũi nó tôi
+dằn	vặt mặt xé lắm nhất xóc như hơn
+dằng	dặc dai
+dẳng	của đó hơn
+dặm	về nữa một từ đường phía để trong
+dặn	tôi dò là anh con không cậu cô
+dặt	dẹo hơn
+dẹp	đi cái hết đống chỗ bỏ mẹ chuyện
+dẻ	của mà trong rồi đấy
+dẻo	dai và miệng mỏ của hơn mồm rồi
+dẽ	dàng
+dế	kêu của rồi
+dề	của vào
+dể	dàng thương bị chịu hiểu
+dễ	dàng thương chịu bị hơn thôi hiểu như
+dệt	nên may chuyện lên
+dị	ứng nhân giáo biệt hợm thường của biến
+dịch	vụ bởi chuyển phụ của bệnh này với
+dịp	đặc cuối giáng này gì khác lễ nào
+dịu	dàng nỗi đi cơn lại bớt tình xuống
+dọ	thám
+dọa	tôi sẽ được chúng cho anh của đến
+dọc	theo đường bờ con sông hành xuống đại
+dọn	dẹp sạch đồ đi đến phòng đường nhà
+dỏm	của và đó
+dốc	hết sức toàn không đứng hơn này từ
+dối	trá tôi về em anh đấy với cô
+dốt	nát của và này mà đặc là lắm
+dồi	dào kiến
+dồn	vào hết ép về dập chúng nén hắn
+dồng	ý
+dỗ	nó tôi con dành của bởi cô ngọt
+dỗi	nữa vì à thì đó
+dội	bom lắm hơn nước và của nhất lại
+dột	vậy của là và đấy như thế rồi
+dớ	dẩn
+dời	đi nó lại khỏi qua cái đến lịch
+dở	hơi tệ ẹc quá lắm trò người dang
+dỡ	bỏ hàng đồ lên nó xuống cái nhà
+dợt	lại
+dụ	như dỗ chúng được hắn cho về thôi
+dục	của và vọng là không với tốt có
+dụm	được tiền để ít đủ
+dụng	cụ nó của với gì một phụ những
+dụt	bỏ ra
+dứa	và trẻ à
+dứng	dậy của
+dứt	khoát rồi chuyện điểm cuộc việc sự ở
+dừa	không này và đấy cột của ra lên
+dừng	lại xe tay ở việc nó ngay được
+dửng	dưng
+dữ	liệu dội vậy lắm của dằn tợn và
+dự	án đoán định luật phòng của tiệc trữ
+dựa	vào trên theo dẫm vô lưng cả của
+dựng	một lên lại nên nó chuyện trại được
+e	là rằng ngại sợ hèm dè thẹn không
+em	không sẽ có đã biết là muốn đang
+en	sẽ đã
+eo	biển ôi ơi của hẹp tôi
+ga	tàu đi xe ra và rồi trung tự
+gai	ốc trong nhọn của góc mà ở đó
+gan	dạ của thì để lắm và lì mới
+gang	tấc bang
+ganh	tị đua tỵ ghét
+gao	nhất hơn đã cho có
+gay	gắt go cấn à không đấy rồi mà
+ghen	tị tỵ tuông với à tức đấy ghét
+ghi	lại chép nhớ âm hình nhận chú là
+ghim	vào một cài của đầu ngay ra trong
+ghiếc	đó này của và kia
+ghiền	thuốc
+ghé	qua thăm vào lại ngang chơi vô nhà
+ghém	đồ hành
+ghép	lại tim gan hình của tủy nối đôi
+ghét	phải anh tôi cái nó những em chúng
+ghê	tởm gớm quá lắm rợn thật ha sợ
+ghì	chặt anh
+ghìm	chặt
+ghẹo	tôi anh cậu đâu
+ghẻ	lở lạnh của đó kia này
+ghế	của này ngồi đó sau trước dài đi
+ghềnh	đá thác
+ghệ	của này
+gi	thế vậy đó cho có không chứ em
+gia	đình nhập vào tộc cư cùng tăng của
+giai	đoạn điệu cấp nhân thoại quá đấy ơi
+giam	giữ cầm trong ở của tôi hắn anh
+gian	để của cho dài đâu này và rồi
+giang	hồ mai không nam sơn tay đến được
+giao	hàng dịch tiếp
+gien	của di gốc là đột tốt để
+gieo	rắc hạt gió nhân trồng lúa một vào
+gii	phóng
+gin	và không cho phải đâu
+giong	buồm
+giun	trong đất xoắn và sán đó
+giuộc	với
+già	đi rồi đó hơn này và của để
+giàn	khoan giáo xếp thiêu hỏa máy đồng dựng
+giàng	ơi
+giành	được lại chiến lấy cho quyền giải giật
+giàu	có nhất rồi sang hơn to và lắm
+giày	của này ra cao đó mới cho vò
+giá	trị cao của cho mà thấp hơn như
+giác	như của đó quan là thế thật gì
+giái	quyết
+giám	sát đốc hộ mục định thị khảo ngục
+gián	điệp đoạn tiếp của trong rồi nào đó
+giáng	sinh xuống chức trần cấp cho đòn một
+giáo	sư viên hoàng dục sĩ chủ hội của
+giáp	của này mặt và đó cho không sắt
+giây	phút nữa thôi để trước lát sau nào
+giã	từ rượu thuốc cõi biệt chúng mày
+giãi	bày mã
+giãn	đi và nào ra một chút thôi nở
+giãy	giụa chết
+giê	su ri
+giêng	năm
+giò	heo lên đẹp ngon đó của cho thì
+giòi	bọ ăn đó
+giòn	tan và kim
+giòng	máu
+gió	thổi và của mạnh xoáy đông nào nhẹ
+gióng	chuông
+giông	bão tố như này
+giùm	tôi đi anh cái em cho chúng ông
+giúp	tôi mình bạn em
+giăm	bông
+giăng	bẫy lưới buồm tơ ra
+giũ	bỏ sạch và nó cho hết
+giũa	móng
+giơ	tay lên hai cao súng ngón chân nó
+giương	cung buồm mắt cao cờ súng đông lên
+giường	của với ngủ đi và này cho tôi
+giạt	vào
+giả	vờ thuyết sử mạo bộ của thiết dối
+giải	thích quyết cứu thoát phóng pháp tán trí
+giảm	đau giá xuống cân bớt tốc đi thiểu
+giản	là thôi như hơn chỉ thế vậy mà
+giảng	dạy đạo viên của hòa cho bài về
+giảo	hoạt tỏa nghiệm
+giấc	mơ ngủ mộng đi không rồi ở mợ
+giấm	à và
+giấu	nó trong giếm diếm cái ở gì mặt
+giấy	tờ phép này chứng mời vệ đó của
+giầu	có
+giầy	của ra đi này cao cho mới vào
+giẫm	lên đạp phải vào chân chết nát
+giậm	chân
+giận	dữ vì với anh tôi của và giữ
+giật	mình dây gân mạnh điện cả không lấy
+giằng	xé co
+giặc	ngoài ngoại kia
+giặt	đồ ủi là khô giũ quần của cho
+giẻ	rách lau cùi vào này
+giếm	gì điều thứ chuyện cái
+giếng	của này nước dầu sâu đó ở cũ
+giết	người tôi anh hắn chết cô chúng nó
+giềng	của thân này
+giễu	cợt tôi bọn chúng anh ta
+giọng	nói của anh điệu đó hát cô tôi
+giọt	nước máu lệ mồ cuối nào rượu sương
+giỏ	của đó quà xách này trái và đồ
+giỏi	nhất lắm hơn đấy trong thật như việc
+giống	như nhau một hệt anh với người tôi
+giỗ	của
+giớ	này
+giới	thiệu này hạn của bên sẽ tính đang
+giờ	thì tôi là anh chúng có làm ta
+giời	ơi ạ đất là này tôi thiệu cậu
+giở	trò chứng cái giọng chiêu quẻ thói đủ
+giỡ	trò
+giỡn	mặt với chơi hả nữa sao thôi đâu
+giục	tôi anh họ em các người ông nổi
+giử	nó chặt ông
+giữ	nó cho lấy được bí lại chặt lời
+giữa	chúng hai các những tôi anh đêm một
+giựt	mình dây mạnh súng gân khỏi
+go	to on in nhất the có này và
+goi	cho là cảnh tôi
+gom	hết đủ đồ lại chúng góp tất tiền
+goá	phụ
+gu	của thẩm âm chọn thời
+guy	in đang đâu
+guốc	trong này đó của
+guồng	quay máy rồi
+gà	tây rán của mên mái trống không con
+gài	bẫy tôi anh bom vào nút chúng số
+gàn	dở
+gàng	hơn và đấy sạch ngăn rồi
+gào	thét lên khóc tên to rú của gì
+gác	mái máy ở của cửa cổng kiếm đêm
+gái	của tôi anh đó này mình ông như
+gán	cho tội ghép biệt là lại nó vào
+gánh	nặng chịu xiếc vác lấy trách hết tội
+gáo	nước
+gáp	như thế quá
+gáy	này của tôi đấy như anh hắn mình
+gân	cốt và cổ lắm kheo chân của giãn
+gây	ra rắc sự ấn mê nguy rối chuyện
+gã	này đó người kia nào đã đàn ở
+gãi	ngứa lưng nữa mũi cho vào mông đầu
+gãy	xương chân cổ tay rồi mũi cái răng
+gì	vậy thế đó cả không ở với đây
+gìn	giữ sức nó cẩn sự trật nhé con
+gí	súng đèn
+gò	bó má đất mộ đó ốm cương kia
+gòn	đã vào trong
+góa	phụ vợ của chồng bụa
+góc	đường độ nhìn phố của kia này đó
+gói	hàng đồ ghém lại thuốc quà nó kẹo
+góp	phần ý cho của một tiền sức vốn
+gót	chân giày và giầy nhọn
+gô	cổ trong
+gôn	cầu của ở không rất với gầu rồi
+gông	cùm cổ
+gõ	cửa vào lại đi cái kiến bàn lên
+gù	về đã cả
+gúp	đỡ tôi
+gút	đó
+găm	vào của một đó đạn đầy và cho
+găng	tay tơ vào này ra sẽ cho của
+gũi	với hơn nhất nhau như và cô hắn
+gươm	của này đó giáo và đao đã trong
+gương	mặt mẫu cho và của thần đi này
+gượm	đã
+gượng	dậy ép gạo được lên
+gạ	gẫm
+gạc	lại nai được này và đi
+gạch	tên bỏ và đá vụn đập ngang mà
+gạo	và của đây này rồi không sao để
+gạt	bỏ tôi ta tàn anh chúng được em
+gả	cho con cô em vào người tôi đi
+gải	thích
+gảy	đàn
+gấp	đôi ba rút gáp lắm vậy hai trăm
+gấu	trúc bông con bắc mẹ đó ở xám
+gầm	gừ giường bàn cầu xe lên của thét
+gần	đây như hơn gũi nhất đến nhau đó
+gầu	bò mà
+gầy	dựng gò đi còm nhom quá hơn guộc
+gẫm	trẻ tôi
+gẫu	với thôi một của thì
+gẫy	cổ chân răng rồi tay lưng vụn cái
+gập	lại ghềnh người không ông một nó vật
+gật	đầu trong rồi trên gù à đấy ở
+gậy	của bóng này đánh ông đó sắt đi
+gắn	bó kết liền vào nó với lại máy
+gắng	để hết làm tìm lên giúp giữ cứu
+gắp	đồ
+gắt	gao gỏng với và quá hơn không khi
+gặm	nhấm cỏ nhắm cái nát xương
+gặp	lại bạn nhau ở
+gặt	hái bão quả lúa nấy
+gỉ	sét mũi sắt này rồi vậy đó ở
+gọi	cho là tôi lại điện nó anh cảnh
+gọn	gàng thôi là và trong lại nhẹ hơn
+gọng	kìm sừng kính
+gọt	bút khoai vỏ hay
+gỏi	cá
+gỏng	với có
+gốc	của cây từ phi rễ là gác tây
+gối	của trước xuống và tôi này lên anh
+gốm	sứ và của ở
+gồ	ghề
+gồm	cả những có các một việc nhiều tất
+gồng	mình
+gổ	với ở
+gỗ	và của này sồi ở trong đó trên
+gội	đầu cho của và
+gộp	lại chung vào
+gột	rửa sạch
+gới	thiệu
+gớm	quá ghiếc lắm hơn thật đâu như nhất
+gờ	tường đá cửa
+gờm	đấy và nhất
+gở	đó thế mà mồm này đấy
+gởi	cho lời một đến tới tiền trả thư
+gỡ	nó bỏ ra bom cái được những ai
+gợi	ý cảm lại nhớ cho tình nhắc lên
+gợn	sóng
+gục	ngã rồi hắn xuống anh được chúng một
+gừ	với
+gừng	càng này và
+gửi	cho lại bạn tôi tin
+ha	đất
+hai	người đứa ta chúng lần anh ngày năm
+ham	muốn mê vui học hố tiền ăn sống
+han	gì là và về có rỉ gỉ
+hang	động ổ của này thỏ đó đá cọp
+hanh	phúc được khô
+hao	mòn tổn hụt tiền hết nhau năng sinh
+hay	là không lắm đấy gì sao hơn quá
+he	can do
+hen	suyễn của và hò rỉ
+heo	rừng này và đất con của không mập
+hi	vọng sinh lạp hương vong hữu
+him	to a in go on the do so
+hiu	quạnh
+hiên	ngang nhà và của tại ra sau trên
+hiếm	khi có hoi gặp thấy đấy lắm và
+hiến	tế pháp binh tặng dâng cho máu cả
+hiếp	dâm tôi và cô con người chị một
+hiếu	khách chiến kỳ kì động thảo của thắng
+hiềm	khích
+hiền	lành triết hòa ạ của dịu hậu lắm
+hiều	lầm
+hiểm	cho lắm nhất của hơn và đấy nguy
+hiển	nhiên thị vi linh hách hiện lộ
+hiểu	rồi không được chứ chưa rõ ý sao
+hiễm	lắm
+hiễu	không lầm
+hiện	ra tại trường giờ bởi đại một ở
+hiệp	sĩ ước hội định với quốc sỹ đầu
+hiệu	quả của trưởng hóa chỉnh cho lực ứng
+ho	gì cò hơn của lắm ra không cho
+hoa	kỳ hồng của quả kì cho và này
+hoan	hô nghênh hỉ lạc phim hỷ chào thôi
+hoang	dã tưởng mang đường dại của vu tàn
+hoay	với ở
+hoe	không
+hoen	ố rỉ
+hoi	mà của đấy tôi nhé để ở
+hon	này của đó ở có à trong xuất
+hong	khô
+hoà	bình thượng nhạc nhập hợp giải thuận với
+hoài	nghi vậy bão an cổ niệm không mà
+hoàn	toàn hảo thành tất cảnh thiện chỉnh mỹ
+hoàng	tử hậu đế thượng gia của hôn tộc
+hoành	tráng hành tá thành thánh của ngang giang
+hoá	ra đơn học chất thạch của trang thành
+hoán	đổi cải chuyển vị
+hoãn	lại việc cuộc đám nó được chuyến thêm
+hoạ	sĩ này của khác với đã cho chứ
+hoạc	của
+hoạch	của là gì cho này để rồi đó
+hoại	cuộc tử đời nó gia cả anh những
+hoạn	đồ nạn quá đó và của quan này
+hoạt	động náo hình nó hệ vũ và một
+hoả	lực tiễn hoạn thiêu và táng đi đến
+hoản	hảo loạn sợ
+hoảng	sợ loạn hốt lên này quá thế kinh
+hoắc	nguyên sư long hương hổ
+hoặc	là có không tôi một anh bị chúng
+hu	ra
+hun	khói
+hung	thủ dữ hăng khí bạo tợn ác hãn
+huy	của hiệu chương hoàng động trưởng quân đội
+huynh	đệ ấy không có đã sẽ là nói
+huyên	thuyên náo tâm với
+huyết	áp thanh thống quản của trong và mạch
+huyền	thoại bí ảo diệu trang của chương như
+huyễn	hoặc
+huyệt	của cho đạo bí mộ ở trong và
+huân	chương tước
+huênh	hoang
+huýt	sáo gió sao
+huấn	luyện của luận thị thi tôi quân và
+huề	nhé nhau rồi
+huệ	cho của nhé lớn đi cuối nào này
+huống	này khẩn khó đó như nào nguy xấu
+huỳnh	quang và
+huỵch	toẹt
+huỷ	diệt hoại nó bỏ nhiệm rồi buổi toàn
+hy	vọng sinh lạp vong làm
+hà	lan mã của này khắc và nội không
+hài	lòng hước thật kịch cốt hòa của nhi
+hàm	răng lượng của ý hồ tôi trên anh
+hàn	quốc gắn long lâm đại huyên dân đã
+hàng	đã đến về mới
+hành	động tinh vi lang trình khách lý hạ
+hào	về phóng hứng vì của quang lắm nhoáng
+hàu	của không và
+há	miệng mồm hốc cảo ra mõm to
+hách	dịch biết
+hái	hoa ra lên lượm quả thuốc những được
+hám	lợi của này tiền và danh
+hán	gian này thành đã có cũng là thất
+háng	ra của tôi
+háo	hức sắc thắng ăn
+hát	của cho bài này đi đó một hay
+háu	ăn đá
+hâm	mộ nóng à hấp dở đó lại này
+hân	hạnh hoan hanh hạn
+hâu	đen và đưa gãy
+hây	tập da để
+hãi	và của không khi nữa là vào rồi
+hãm	hiếp hại lại tài phanh nó và thành
+hãn	vĩ của không và hốt đã sẽ có
+hãng	hàng phim xe luật sản bảo của nào
+hãnh	diện của và trong để là nhất nào
+hão	huyền mà thế
+hãy	để nói cho đi nhìn làm nhớ nghe
+hè	này năm của ở và mà đó thì
+hèn	nhát hạ chi mọn gì và nhất kém
+hé	răng lộ môi ra nửa một mở miệng
+héo	úa mòn hon tàn và đi hắt khô
+hét	lên vào của như to và nữa toáng
+hê	vì à trong trước tất
+hên	xui là của đấy lắm cho thôi quá
+hình	ảnh như thức
+hí	với viện hửng không trong vang
+hít	thở vào sâu một phải thật đất khói
+hò	với à hét của được đầu gì hẹn
+hòa	bình nhập hợp thượng nhạc giải thuận với
+hòan	hảo tòan thành toàn
+hòang	gia hậu
+hòi	như với
+hòm	thư đó này giao đồ đi của ở
+hòn	đảo đá bi dái ngọc của làm sỏi
+hòng	chạy tôi nghĩ có thoát đi động lấy
+hó	hé này ạ
+hóa	ra đơn học trang chất của trị thành
+hóc	búa môn ở chết trong
+hói	đầu của không mà thì và nữa
+hóm	hỉnh
+hóng	gió chuyện mát hớt rồi được
+hót	như của cho líu phân ở cái lắm
+hô	hấp hào với biến nữ to anh lên
+hôi	thối hám quá của như và đó lắm
+hôm	nay qua đó sau trước nọ thứ này
+hôn	nhân với mê em của cô nhau tôi
+hông	của tôi đi phải có không đó kia
+hù	dọa doạ tôi anh được cho cô em
+hùa	theo với vào
+hùm	cho và đỏ rất
+hùn	vốn tiền
+hùng	của mạnh vĩ trong không thực chiến thật
+hú	hí hồn lên còi của hu họa vía
+húc	vào đầu đổ ngã ta
+húng	nhại quế ta
+hút	thuốc máu bụi sự hết bởi một vào
+hý	trường
+hăm	dọa hở doạ bơ
+hăn	ta không là
+hăng	hái say máu quá và lên nhất tiết
+hĩnh	cho và của hơn đó
+hũ	mật mứt chìm nút vàng mắm nếp ở
+hơi	thở bị quá khó lạ nhiều khác lo
+hơn	là nữa cả thế nhiều một rồi tôi
+hư	hỏng hại rồi không cấu quá vô đốn
+hưng	phấn thịnh không nó của
+hưu	rồi trí của và sớm trong mà thì
+hương	vị của mình thơm tôi và thảo chúng
+hươu	cao đực cái đó nai và chạy mà
+hước	đấy của thật lắm là và gì hơn
+hướng	dẫn về này tây bắc tới đó đông
+hường	đó
+hưởng	đến từ tới thụ của gì bởi cuộc
+hượm	đã
+hạ	cánh gục được sĩ hắn chúng xuống nó
+hạc	giấy hay và của song
+hạch	bạch của hạnh và đen ở không là
+hại	cô gì cho người ai tôi anh đến
+hạm	đội trưởng của thuyền đi tàu và lớn
+hạn	chế của như rồi hán cho chót hẹp
+hạng	nhất nặng người sang vũ cân a ba
+hạnh	phúc được của nhân khi gặp cho giới
+hạp	với
+hạt	nhân giống đậu dẻ bụi này cát tiêu
+hả	mẹ con anh thằng trời bố nhóc hê
+hải	quân tặc cẩu lý đăng quan sản cảng
+hảo	cho để của hạng nhất rồi tâm và
+hảy	để nhớ
+hấn	gì với của trước và
+hấp	dẫn hối thụ tấp thu nhân diêm cho
+hất	chúng cẳng tung ngã văng các nó
+hấu	và
+hầm	mộ mỏ của này trú đó rượu và
+hầu	hết như của cận gái hạ bàn tòa
+hầy	này quá
+hận	thù vì về không đấy đâu và đó
+hậu	quả của duệ môn hĩnh trường thuẫn cần
+hắc	ám thành long thủy sơn thạch ín ngư
+hắn	ta đã là sẽ không có đang đi
+hắng	ta đang
+hắt	hơi xì hủi rắm vào
+hằn	học cá trên gì với sâu là của
+hằng	ngày đêm mong mơ năm trăm ao triệu
+hẳn	là phải đã rồi sẽ thế anh vậy
+hẳng	đi nói
+hẵn	vậy đã là sẽ
+hẵng	nói còn tính đi quay giết hay mở
+hẹn	gặp hò giờ mai
+hẹp	phạm quá lại và hòi danh của này
+hẻm	núi này xéo đó gin phía tối ở
+hẻo	lánh
+hẽm	núi tối
+hế	lô thống
+hến	thế
+hết	rồi sức mọi những cả các đi thời
+hề	có biết muốn nói nghĩ bị làm tồn
+hển	và như
+hễ	có ai nâng mỗi nói
+hệ	thống với của giữa tình gì nào này
+hệt	như nhau mẹ với cái anh cha những
+hỉ	mũi
+hỉnh	ảnh
+họ	sẽ đã không có đang là nói muốn
+họa	sĩ này cho của lớn tiết sỹ vào
+họach	này
+họat	động
+học	được sinh cách ở của hỏi và đại
+họi	nói gọi
+họng	của tôi anh súng cô và lại bị
+họp	lúc xong vào
+hỏa	quốc lực hoạn tiễn vương táng thiêu ngục
+hỏi	anh tôi cô về là gì ông của
+hỏng	rồi hết nó mọi việc chuyện cuộc cả
+hố	đen sâu xí đó này phân chôn bom
+hốc	mắt mồm hác tường như này của nào
+hối	hận tiếc lộ lỗi thúc hả cải mới
+hống	hách
+hốt	hoảng tất rác tiền xác được hết bạc
+hồ	sơ bơi của nước này đó và ly
+hồi	phục sinh đó giáo hộp còn nào nãy
+hồn	của ma tôi con mình anh và đó
+hồng	y ngoại quân cầu của sư ngọc tâm
+hổ	thẹn khi vì quá về lốn mang trợ
+hổi	đây là và về đấy nhất tối
+hổn	hển loạn độn hợp
+hổng	trong có ở đó an lớn đã của
+hỗ	trợ thẹn
+hỗn	loạn độn hợp xược tạp láo mang chiến
+hộ	của tống chiếu cho tôi anh vệ chúng
+hộc	tủ đựng
+hội	đồng để nghị của cuối nào này duy
+hộp	đêm thư sọ đó này đen đựng của
+hột	xoàn đậu xí
+hớ	hênh
+hớn	hở
+hớp	hồn đi không rượu một
+hớt	tóc lẻo tay
+hờ	thôi hững của
+hời	hợt đấy rồi cho để lớn lắm nhất
+hờn	dỗi của
+hở	hang của ra ngực nào trong nhỏ và
+hỡi	các những người anh dân đức thần vị
+hợm	hĩnh này của kia đó
+hợp	với tác đồng pháp lý này của nhất
+hợt	và
+hụ	còi
+hục	hặc như
+hụt	rồi mất hẫng hơi và được hẫn năng
+hủ	bại của quá lậu lắm rượu thế như
+hủi	và
+hủy	diệt hoại bỏ nó mọi cuộc toàn tất
+hứa	với sẽ là đấy hẹn của rồi không
+hức	được quá khi chờ lắm muốn để mong
+hứng	thú cho chịu tình với của khởi quá
+hừng	đông hực sáng
+hửng	sáng
+hữa	sẽ với
+hững	với
+hữu	ích dụng của một cơ nó nghị hiệu
+hực	lửa
+hỷ	phát không
+i	can am do là go tôi không di
+im	lặng đi miệng mồm nào ngay mẹ cái
+in	the my a me ra trên nó tiền
+inh	ỏi
+iu	cậu
+ià	người một bạn gì không anh sao
+ke	đây trong
+kem	chống đánh dưỡng không và dâu của lạnh
+ken	không là à đã nói
+keo	kiệt dán xịt dính này cá và lên
+kha	khá
+khai	thác ra hỏa của quật trương báo sinh
+kham	nổi khổ
+khan	hiếm đang có là đã hàng và quá
+khang	trang khác
+khanh	có gia
+khao	khát của được về một và quyền trong
+khay	bạc đựng đồ bánh cho xuống đi được
+khe	núi hở với nứt cửa này khẽ về
+khen	ngợi thưởng tôi của đó cho anh đâu
+khi	tôi nào anh chúng cô có ta nó
+khinh	thường bỉ khí miệt suất rẻ công khủng
+khiêm	tốn nhường
+khiên	chắn của lên sồi bảo và đỡ không
+khiêng	cái nó lên anh đồ tôi cô hắn
+khiêu	vũ dâm khích chiến gợi
+khiếm	nhã khuyết thị
+khiến	tôi anh chúng cho cô em cậu ta
+khiếp	sợ quá của nhất này đó lắm thật
+khiết	nhất của và hơn như trong đến để
+khiếu	nại hài thẩm đấy của làm bẩm kiện
+khiển	được từ nó của trách bằng bởi mọi
+kho	báu vũ của thóc hàng lưu bạc ở
+khoa	học của trương ung nhi cấp sản này
+khoai	tây lang chiên luộc to nghiền của này
+khoan	đã dung nhượng hồng nào dầu vào đi
+khoang	hạng đã lái tàu chứa dưới hàng về
+khoanh	tay vùng tròn
+khoe	khoang mẽ hàng với ngực của ra cái
+khom	lưng người xuống nữa
+khong	phải thể có biết
+khoá	cửa của rồi cho xe ở lại học
+khoác	của lác ra cho lên và áo đẹp
+khoái	lạc cảm khẩu lắm mấy chí cái của
+khoán	và của không đi ở đang hay hiện
+khoáng	chất sản thạch hậu và vật mà
+khoát	là không với lên phải của rồi và
+khoé	của mắt
+khoét	một lỗ mắt chúng
+khoăn	không về liệu là sao khi điều của
+khoả	thân
+khoản	tiền vay phí
+khoảng	thời cách một trống nửa không hai khắc
+khoảnh	khắc khác đất
+khoắn	lắm
+khoắng	sạch
+khoẻ	không mạnh chứ hơn của lắm lại mà
+khu	vực rừng nhà phố này ổ vườn trung
+khua	môi tay khoắng
+khui	một bia chai thùng nắp hộp ra rượu
+khung	cảnh cửa hình xương thời ảnh thành gầm
+khuy	áo thiên măng này
+khuya	rồi khoắt quá thế hôm lắm để mới
+khuynh	hướng quốc thành diệp gia đảo
+khuyên	của anh cô ông cậu tôi tai nào
+khuyến	khích mãi cáo mại nghị quân
+khuyết	điểm tật trong và của về một đó
+khuân	vác mặt hành hết
+khuây	khỏa khoả cho
+khuê	tú phòng
+khuôn	mặt viên mẫu khổ phép đúc mặc và
+khuất	phục mắt tầm mặt sau bóng ở bởi
+khuấy	động đảo lên mất đều nó đi
+khuẩn	này trong tụ gây đó ở nào cầu
+khuếch	đại trương tán
+khuỷu	tay
+khàn	của
+khá	hơn là nhiều lắm tốt lâu chắc đấy
+khác	nhau biệt đi nữa không để gì thì
+khách	sạn hàng của mời sáo quan du đến
+khái	niệm là vậy thế như quát tôi đã
+khám	phá nghiệm xét cho nhà bệnh bác ở
+khán	giả đài phòng thính
+kháng	chiến sinh cự thể lại cáo án khuẩn
+khánh	thành kiệt tiết mà mỹ
+khát	máu khao nước vọng được của không và
+kháu	khỉnh quá lắm
+khâm	phục sai liệm phạm thử
+khâu	lại vết cho nó vá và của vài
+khéo	léo tay hơn đấy lắm lại đùa quá
+khép	lại kín chặt mình chân vào lòng miệng
+khét	tiếng rồi lẹt vậy
+khêu	gợi
+khí	của xuống quyển trong hậu và hạt cho
+khía	cạnh
+khích	lệ quá khi tôi anh vì với động
+khít	như với hơn luôn lắm
+khò	khè
+khó	khăn chịu để mà tin hiểu xử có
+khóa	cửa của rồi cho xe để học chặt
+khóc	lóc nữa khi như vì than thương đấy
+khóe	của để mắt là ảo thôi gì miệng
+khói	và thuốc bốc lửa của đi không từ
+khô	ráo cằn và rồi héo khan cạn hạn
+khôi	phục hài ngô của nhất này
+khôn	ngoan khéo hơn lường lỏi ra lớn hồn
+không	phải có thể biết muốn được sao cần
+khõi	đây
+khù	khờ
+khùng	lên của rồi quá này đó điên nào
+khú	đế với
+khúc	côn gỗ khích gôn xương cua mắc quanh
+khúm	núm
+khăm	tôi của thôi chúng
+khăn	hơn cho với lắm để khi nhất tắm
+khăng	đòi rằng muốn là khít bắt nói làm
+khơi	mào dậy lại gợi xa ra chuyện rồi
+khư	giữ ôm
+khước	từ
+khướt	rồi
+khạc	nhổ ra lửa vào
+khạo	và vậy
+khả	năng thi hãn nghi chiến quan xâm dĩ
+khải	huyền hoàn cho thị
+khản	cổ giả
+khảo	cổ sát ý hắn bản tôi chúng nghiệm
+khấm	khá
+khấn	nguyện
+khất	nợ thực
+khấu	của và đi đầu này trừ là rồi
+khẩm	hơn gì
+khẩn	cấp trương cầu của thiết khoản từ cho
+khẩu	súng hiệu vị phần đại của pháo này
+khập	khiễng khiểng
+khắc	nghiệt này của đó phục trên mà tên
+khắm	bựa như lọ
+khắn	tắm với cho lắm
+khắp	nơi mọi thế các thành người đất cả
+khắt	khe
+khẳng	định khiu
+khẽ	thôi nào khàng hơn chạm
+khế	ước
+khệnh	khạng
+khỉ	thật gì gió đột đó này ho con
+khị	tôi
+khịt	mũi
+khọm	già
+khỏ	bị xử
+khỏa	thân của lấp
+khỏang	thời cách
+khỏe	không mạnh hơn
+khỏi	đây đó nhà xe cái chỗ nơi phòng
+khố	của rách hoa sẽ có và
+khốc	liệt nhất và đến của như này đó
+khối	u lập lượng băng đá năng thời nhà
+khốn	kiếp nạn đó này khổ thật khiếp nào
+khống	chế cổ cho biết
+khổ	sở của và vì này đau như lắm
+khổng	lồ minh tử thể lổ
+khớp	với nối của rồi không hoàn trong và
+khờ	khạo dại quá như lắm này đó mà
+khởi	động đầu hành xướng tố điểm nguồn nghiệp
+khủng	bố khiếp long hoảng quá lắm nhất hơn
+khứ	của và rồi đã được là không hồi
+khứa	sẽ đó của đến
+khứu	giác
+khử	trùng hắn mùi rung nhiễm tôi được nó
+khựa	đó
+khựng	lại
+ki	bo tô min lô
+kia	kìa là rồi không có đi và mà
+kim	cương loại tự bài tiêm đồng của sơn
+kinh	khủng nghiệm doanh ngạc tế thánh hoàng tởm
+kiêm	nhà luôn quản vệ cả nhiệm tra diễn
+kiên	nhẫn định trì cường quyết cố trung nhân
+kiêng	khem à của cử cữ cho không rượu
+kiêu	hãnh ngạo căng kỳ sa hùng như quá
+kiếc	gì
+kiếm	được tiền một của cho cái sống ra
+kiến	của thức trúc gì hay tạo nghị một
+kiếng	đó của vỡ sẽ vào
+kiếp	này sau đó thật của trước mày anh
+kiết	xác lỵ lị
+kiềm	chế hãm chân nén được giữ tra
+kiều	nương diễm trang gì của
+kiểm	tra soát chứng toán
+kiểu	như gì đó này người tóc của thế
+kiễm	tra
+kiễu	gì
+kiệm	được thời tiền đạn cho của lời năng
+kiện	này của hàng cho để gì đó lớn
+kiệt	sức tác quệ xuất rồi có còn năng
+kiệu	của
+ky	binh
+kè	với hoa đê bên thù và
+kèm	theo với một thêm cặp của cho lời
+kèn	cho túi của đồng trận và lên đi
+kèo	với của này rồi mới đó là nào
+ké	hoạch một thôi với
+kém	cỏi hơn quá lắm may gì nhất và
+kén	chọn ngủ của cá này cứu và
+kéo	dài nó tôi lên đi anh cái cô
+kép	cho này ở
+két	sắt an của tiền đó ra ở và
+kê	đơn khai cho toa của những thuốc ở
+kên	với
+kênh	truyền liên tin đào này số nào khác
+kêu	gọi tôi anh họ cứu lên hắn ca
+kì	lạ ai diệu nghỉ quặc cục thứ điều
+kìa	anh bố mẹ các con em chúng là
+kìm	nén hãm chế chân kẹp lại được cắt
+kình	địch thưa
+kí	ức vào của sinh hiệu túc tên giấy
+kích	hoạt thích động thước cỡ nổ vì của
+kín	đáo chuyện tiếng của trong nó miệng bí
+kính	trọng thưa của thiên chào râm hiển đó
+kíp	nổ quả võ là về cho của
+ký	ức của vào tên hợp hiệu sinh túc
+kĩ	thuật năng sư đi hơn càng vào lưỡng
+kẹ	sẽ là đang
+kẹc	gì này ấy
+kẹo	cao dẻo bạc ngọt đồng của bông mút
+kẹp	thịt tóc giấy và chặt vào nó của
+kẹt	ở trong rồi với xe lại trên giữa
+kẻ	thù đã giết nào xấu khác phản đó
+kẻo	bị không tôi họ muộn ngã bọn chết
+kẽ	hở tay tóc nứt và răng
+kẽm	gai đó và
+kế	hoạch tiếp bên toán của để thừa vị
+kếch	xù sù
+kếp	không à nữa của hợp và
+kết	thúc quả hôn nối hợp luận cục liễu
+kề	bên cái vai cổ dao cận với rồi
+kềm	chế cắt chân giữ hãm
+kền	đang đây ăn đó
+kềnh	càng quá
+kể	từ cho cả với chuyện về lại tôi
+kệ	mẹ nó đi anh hắn họ tôi sách
+kệch	cỡm
+kỉ	niệm lục nguyên luật trước rồi này của
+kỉnh	như thế của hơn và
+kị	sĩ binh sỹ của với
+kịch	bản của này tính liệt câm hay ở
+kịp	lúc thời đâu chúng rồi giờ nữa không
+kỳ	lạ ai diệu nghỉ cục quặc thứ quái
+kỵ	sĩ binh mã sỹ của cao với
+kỷ	niệm lục luật nguyên trước qua rồi của
+kỹ	thuật năng sư đi càng lưỡng hơn vào
+la	mã hét bàn lên của và lối mắng
+lai	của sẽ không tươi mà cho lịch đó
+lam	của và quá đã gì thế làm thắng
+lan	truyền rộng ra tràn can khắp đến và
+lang	thang và băm phía này bạt đó là
+lanh	lợi lẹ quanh như của tanh quá trí
+lao	động vào xuống của công hơn này đầu
+lau	chùi dọn sạch khô nhà cho sàn mặt
+lay	chuyển động lắt rồi lất lắm
+le	lói với
+len	lỏi của vào màu và mà này cho
+leng	keng
+leo	lên núi thang xuống qua trèo cây ra
+li	dị hôn rượu của ti đi không đã
+lia	máy lịa
+lim	của này đó không và với đâu bên
+lin	đã có sẽ
+linh	hồn mục cảm tinh dương thiêng hoạt giá
+liêm	sỉ chính khiết động
+liên	hệ lạc quan tục
+liêng	của này nhất hơn với là và về
+liêu	đông anh của này và ta đã
+liếc	mắt qua nhìn trộm gì một
+liếm	nó giày mông mặt vết đít sạch tay
+liếng	của
+liếu	đến
+liềm	bí
+liền	với đi đây rồi nhau cho lại và
+liều	lĩnh mạng thuốc lượng mình cao thôi chết
+liễu	hắn chúng đời nó mình cuộc quá anh
+liệm	cho của
+liệng	nó
+liệt	kê và hơn nhất vào giường của rồi
+liệu	có của tôi anh chúng đó cô pháp
+lo	lắng cho về được chuyện sợ liệu việc
+loa	ngoài kèn cho lên của thôi và đi
+loan	tin báo truyền bị đã không ra
+loang	lổ
+loanh	quanh
+loay	hoay
+loi	choi đó
+lon	bia nước này đó của sữa thiếc có
+long	đại trọng thất vương đã lanh mẫu không
+loài	người chim động vật thú hoa cá của
+loáng	thoáng như cái và
+loãng	máu xương sơn không
+loé	sáng lên
+loét	dạ miệng do
+loăng	quăng
+loại	bỏ người thuốc thế trừ như nào này
+loạn	của và tâm này ở lên trí thần
+loạng	choạng
+loạt	các những phim vụ ở người không đạn
+loẹt	quá và
+lu	mờ bù bu
+lui	lại ra về tới đi quân khỏi xuống
+lum	hết rồi
+lun	á đi
+lung	tung lay linh lạc
+luyên	thuyên
+luyến	ái tiếc một quá
+luyện	tập viên để cho võ của ngục thành
+luân	đôn phiên chuyển hồi lý của xa thường
+luôn	có là đi muốn nói ở nghĩ làm
+luẩn	quẩn
+luận	về của với gì là rằng án văn
+luật	sư pháp lệ của chơi này nào đó
+luống	hoa tuổi
+luồn	lách ống qua vào cúi tay cái dây
+luồng	gió điện khí sáng không năng sức hơi
+luộc	nó chín hết đồ khoai cho cái trứng
+luộm	thuộm
+ly	dị rượu hôn nữa nước nào không bia
+là	một người gì ai anh tôi không những
+làm	ơn việc sao gì
+làn	da sóng gió khói nước đạn sương đường
+làng	của này nhỏ mạc đó chúng tôi ở
+lành	cho mạnh lặn lại rồi vết nhé gì
+làu	bàu kiếm
+lá	thư bài cờ chắn gan cây của lách
+lác	của thôi về mắt với nữa
+lách	luật cách qua của và trộn một khoai
+lái	xe đi chiếc được nó một máy tàu
+lán	trại đó rồng
+láng	giềng bóng như hơn và đi mịn nhất
+lánh	này mặt nạn đi như ở em mọi
+láo	toét xược với lếu quá đâu đấy của
+lát	nữa thôi được nhé đi không nào tôi
+láu	cá lỉnh
+láy	xe
+lâm	tự nguy vào sàng trận chung thứ ly
+lân	cận biển của bằng là và bảy này
+lâu	rồi đài lắm nữa hơn đâu quá để
+lây	nhiễm lan bệnh qua truyền cho từ sang
+lã	cậu người vậy với
+lãi	suất nhãi của nữa là cao cho nhất
+lãm	của này tranh nghệ ở sẽ lớn và
+lãng	phí mạn quên mạng tử nhân tai nhách
+lãnh	đạo chúa thổ địa tụ sự cho vực
+lão	già ta gia sẽ ấy không đã là
+lè	lưỡi vậy nhè
+lèm	bèm
+lèo	lái nhèo tèo
+lém	lỉnh
+lén	lút đưa điện theo vào sau được lấy
+léng	phéng
+léo	của và để hơn ở khi một như
+lép	của vế kẹp như
+lét	tới vậy cho của nè như nào
+lê	cái mông ra thê lết minh dương đi
+lên	nào đi xe đây trên đường và kế
+lênh	đênh láng cho của
+lêu	lổng nghêu
+lì	xì lợm trong và như của lắm thật
+lìa	khỏi đời đôi chúng xa nhau trần được
+lình	xuất tôi anh có thôi như và
+lí	do của gì lịch được thuyết tưởng lẽ
+lính	của gác canh mới đánh cứu thủy đức
+lít	nước máu xăng sữa và dầu rượu bia
+líu	đến tới vào gì với vô của lo
+lò	phản sưởi nướng mổ xo vi rèn lửa
+lòa	và
+lòai	người
+lòe	loẹt thiên
+lòi	ra ruột cả mắt cái mặt kèn phèo
+lòng	tin trung với đất thương tốt tự vòng
+ló	mặt dạng rạng đầu ra cái
+lóa	mắt
+lóc	và như cái thảm cũng trên thịt van
+lóe	lên sáng ra
+lói	như
+lóng	ngóng lánh của tay
+lót	của cho và bằng phụ ra nữa đường
+lô	hàng của đất tô cốt số nhà hội
+lôi	kéo cuốn tôi nó ra anh hắn cô
+lôn	khỏi
+lông	mày lá của vũ cừu thú chim hồng
+lõa	với trong của lồ thể và
+lõi	của năng trái là con hành rồi sẽ
+lõm	trên và
+lõng	em và thế ở quá trên
+lù	khù đù đến ở ra
+lùa	chúng bò con đàn bọn hắn vào đi
+lùi	lại ra về bước xe chúng xa một
+lùm	cây xùm
+lùn	ở tịt hơn này đó và trong của
+lùng	sục chúng và anh tôi bắt hắn ra
+lú	lẫn
+lúa	mì mạch mới và gạo
+lúc	nào này đó tôi nãy trước đầu rồi
+lúm	đồng
+lún	sâu quá xuống ở càng đến
+lúng	túng
+lút	sau làm vào như trong của theo với
+lý	do của tưởng thuyết gì được lịch lẽ
+lăm	phút năm xu giây phần dặm khẩu rồi
+lăn	lộn ra tăn đi xuống bánh lóc nó
+lăng	mạ mộ nhăng của loàn xăng nhục quăng
+lĩnh	vực của hội để và thì đa đấy
+lũ	trẻ khốn chó người ngốc nhóc quái chim
+lũng	lớn này của bóng đó ẩn và đoạn
+lũy	của được tiến này thừa đủ kinh mà
+lơ	lửng là đãng đễnh mơ đi anh nó
+lơi	lỏng là ích
+lơn	và
+lư	cái theo quá và
+lưa	chọn chon thưa
+lưng	lại tôi anh của với cho ngựa và
+lưu	trữ ý lại niệm manh giữ thông của
+lươn	lẹo điện biển
+lương	tâm thực thiện của cho hưu cao để
+lưới	của điện bảo này an lên đó tình
+lướt	qua sóng ván trên đi gió nhẹ thôi
+lười	biếng nhác quá như sao không nhớt để
+lường	trước được gạt hết lắm của đó
+lưỡi	kiếm dao của gươm liềm câu lê ra
+lưỡng	lự tính cực nan cư và đảng hơn
+lược	của gia này quân cho đi và mới
+lượm	được lặt lên nó tiền đi những cái
+lượn	lờ đi qua quanh vòng trên thôi là
+lượng	của lớn đặc với tử cảnh cho và
+lượt	anh tôi cậu của cô em mày ta
+lạ	thật lùng quá lắm khi là mặt không
+lạc	với bộ hướng quan lối được của mất
+lạch	bạch cạch này
+lại	đây đi không cho là với làm có
+lạm	dụng phát sát quyền
+lạng	bạc lách quạng và qua
+lạnh	quá lùng lẽo cóng lắm và như đấy
+lạo	xạo
+lạp	cổ đã và sẽ không đang của có
+lạt	ma
+lạy	chúa cha đức trời hồn thánh mẹ giời
+lả	lướt lơi rồi tả và mà một như
+lải	nhải nhãi
+lảm	nhảm
+lảng	vảng tránh đi nữa
+lảnh	đạo
+lảo	đảo
+lấm	lem lét la tay bẩn
+lấn	át vào áp sang tới chiếm cấn nhau
+lấp	lánh đầy chỗ liếm ló khoảng nó cái
+lấy	nó được lại đi cái một tiền cho
+lầm	của rồi lớn khi đó lẫn nào và
+lần	nữa đầu này cuối sau trước rồi thứ
+lầu	năm và đi rồi xanh không có với
+lầy	của và ở này chết trong lội không
+lẩm	bẩm cẩm nhẩm
+lẩn	trốn tránh quẩn thẩn vào khuất như đi
+lẫm	với khi lắm đối gì như
+lẫn	nhau lộn đêm gì vào rồi với tinh
+lẫy	lừng quá của khóa nhất và này hơn
+lận	đó trong đấy mà và của thuế ở
+lập	tức trình dị một lại gia phương ra
+lật	đổ tẩy ngược bài lại mặt nó trang
+lậu	ma vũ thuốc và ở vé súng trong
+lậy	chúa
+lắc	lư đầu mông đi hông cái nó nào
+lắm	rồi đấy đâu đó sao hả đây à
+lắng	nghe về cho gì quá không xuống cả
+lắp	đặt ráp bắp lại vào ghép tên đầy
+lắt	léo cũng
+lằn	ranh đó khổng có nhằn của trên đạn
+lằng	nhằng nghe
+lẳng	lơ lặng trên ở như
+lặn	xuống lội sâu rồi và đi mất trong
+lặng	nào đi lẽ và của trong như một
+lặp	lại đi thời tức thế
+lặt	vặt đồ
+lẹ	lên đi nào thôi hơn quá tay và
+lẹo	của
+lẻ	ra loi không tẻ nào anh này là
+lẻn	vào ra đi vô qua lên tới trốn
+lẻo	mép với biết về như
+lẽ	ra là tôi anh chúng cô không ta
+lẽo	và đẽo của nhất này như quá thế
+lếch	thếch
+lết	cái mông xác được về tới đi lên
+lếu	láo
+lề	đường mề gì đi thói và ngay của
+lềnh	bềnh gì
+lều	của gỗ trại này đó và với đi
+lể	về với như
+lễ	hội cưới tạ tang của phục tốt tân
+lệ	của cho và thuộc nào này ở mà
+lệch	lạc hướng khỏi múi về một quá đi
+lệnh	của cho bắt từ tôi cấm là khám
+lỉnh	kỉnh ra đi đấy
+lịch	sử sự trình của thiệp hẹn làm cho
+lịm	đi và dần
+lọ	thuốc lem này muối nào mứt cho nước
+lọc	nước ra dầu khí không và tự lại
+lọi	đồ trong phòng hồ xung của mọi nhà
+lọn	tóc
+lọng	quanh cho ở của trên tôi vào đi
+lọt	vào ra qua khe được vô khỏi lòng
+lỏi	vào con đó qua này
+lỏm	được họ
+lỏng	ra lẻo đi tay dây cơ và đó
+lố	bịch lăng rồi quá nhố thế
+lốc	xoáy đường bia cuốn là đó thế với
+lối	này thoát ra vào đi đó nào sống
+lốn	này
+lốp	xe của mới đi bốp cho dày này
+lốt	người cừu giả sói
+lồ	của này ở đang đó trong không và
+lồi	lõm ra
+lồng	ngực này chim lên đèn của đó sắt
+lổ	hổng hỏng
+lổi	của vì
+lỗ	hổng đít tai trên thông đen thủng mãng
+lỗi	của vì cho nhé đã về anh lầm
+lộ	ra trình diện bình cho mặt liễu bí
+lộc	gì của bay cho minh nào trên là
+lội	tới nước đến bộ qua từ ngược trong
+lộn	xộn với ngược hết trong để giữa rồi
+lộng	lẫy hành gió ngôn
+lộp	bộp độp
+lột	da đồ mặt trần ra quần bỏ sạch
+lới	của hứa khuyên nói
+lớn	lên nhất hơn của rồi đấy và lao
+lớp	học của vỏ băng da này bảo đi
+lờ	đi nó mờ tôi anh ở cô những
+lời	khuyên nói hứa tôi nhắn của nguyền đi
+lờn	với
+lở	đất loét tuyết lần của ra rồi ở
+lởm	chởm hơn lắm quá này
+lởn	vởn
+lỡ	mất như cơ gì một nó chuyến buổi
+lợi	dụng ích thế nhuận cho hại gì phẩm
+lợm	thật của này nào
+lợn	rừng con lòi này đó của muối và
+lợp	mái
+lụa	đó và là à của này trắng chọn
+lục	soát địa chiến lọi tung của quân mới
+lụi	tàn bại dần của
+lụm	lại
+lụn	bại
+lụt	nghề ở hay đến này và
+lụy	đến tới mọi anh bởi người tôi vào
+lủi	thủi vào đi trong ở ra
+lủng	lẳng sọ một lỗ phổi rồi
+lứa	tuổi với đôi
+lừa	dối đảo gạt tôi được anh chúng bịp
+lừng	danh lẫy của
+lử	rồi
+lửa	của và đi không đã đó sẽ lên
+lửng	trên ở trong huyền như và giữa nữa
+lữ	khách đoàn hành quán
+lự	không nữa thế
+lựa	chọn nào của một giữa đi chon cho
+lực	lượng của và để nhất cho không ở
+lựu	đạn cho đấy
+lỳ	lợm trong
+ma	túy cà thuật quỷ tuý trận bắt của
+mai	gặp nhé tôi bạn
+man	rợ tộc di on và của in không
+mang	theo nó đến lại cho thai cái về
+manh	mối động của như nhất này hơn lắm
+mao	mạch chủ trạch
+mau	lên đi ra chóng nào chạy đến đưa
+may	mắn là cho mà của đấy quá ra
+me	to a the in on be go so
+men	theo và rượu gan in răng của say
+meng	em
+meo	rồi đây
+mi	đã sẽ không là có biết muốn làm
+mia	đã và à đi ở sẽ không nhé
+minh	của hơn được cho ra đấy và điều
+miên	tôi để một người anh cô man và
+miêu	tả tử nữ là
+miến	điện
+miếng	thịt bánh đất dán vải đi nhỏ thôi
+miết	gì
+miếu	thờ nhỏ
+miền	nam tây bắc đông quê đất trung viễn
+miễn	phí là dịch cưỡng nhiễm trừ thuế sao
+miện	của cho lên đây và đó trên hoàng
+miệng	lại đi của ra và anh tôi nói
+miệt	mài thị chúng của và
+moe	không
+moi	ruột được tim thứ thông ra móc gan
+mon	men
+mong	đợi muốn là chờ được anh rằng manh
+moóc	của
+mu	bàn cô
+mua	cho một sắm nó được cái đồ chuộc
+mui	xe trần rời tàu kín
+mun	và
+muôn	năm đời dân loài tâu người nơi thuở
+muông	thú
+muối	và vào này của không đi để biển
+muốn	nói làm biết gì tôi anh đi có
+muồi	để
+muỗi	cắn đốt cũng thì đó ở nữa thôi
+muỗng	đường của nhỏ cà và bạc nĩa nữa
+muội	không đã sẽ biết có đi của là
+muộn	rồi gì mất quá để thế đấy cho
+my	gun son day song mum no
+mà	không tôi anh chúng là cô thôi ông
+mài	sắc dũa sắt giũa nó mòn đít bén
+màn	hình đêm trình diễn kịch biểu ảnh ảo
+màng	não đến phổi tới cứng nhĩ của ngoài
+mành	treo
+mào	chiến cuộc một thế chuyện nó của trước
+màu	xanh đỏ đen sắc vàng trắng hồng nâu
+mày	có không sẽ là đã biết muốn làm
+má	ơi mày của nó tôi con này đó
+mác	của một giá và
+mách	bảo lẻo mẹ nước cha với bố cho
+mái	nhà tóc đi hơn với khi ấm chèo
+máng	nước xối trượt cỏ lợn nhớ
+mánh	khóe lới khoé rồi của đó cũ nào
+mát	của xa mẻ và lớn hơn quá gì
+máu	của và lạnh trên trong ở không me
+máy	bay tính quay móc phát đi của này
+mâm	xôi
+mân	mê
+mâu	thuẫn thuẩn
+mây	mưa khói đen đỏ và của mù tro
+mã	hóa số của được không là phóng và
+mãi	được là không về như thế trong ở
+mãn	với nguyện tính châu chưa của hạn được
+mãng	xà
+mãnh	liệt hổ thú như sư của nhất mẽ
+mãy	sẽ
+mè	nheo của gì một quá đó
+mèm	rồi và đó
+mèn	ơi
+mèo	con của hoang này đó mập không rừng
+mé	sông
+méc	mẹ
+mém	chút chết tí
+méo	mó gì nó mọi sự và
+mép	của nước vực này mà như đó được
+mét	nữa vuông và rưỡi khối trên đấy về
+mê	cung hoặc tín của sảng mẩn muội man
+mênh	mông lệnh của
+mì	nướng và ống của kẹp này cho ý
+mìn	ở của và nổ không rồi đấy đã
+mình	không sẽ có đã là đang đi phải
+mí	mắt
+mía	đường
+mích	gì với lòng giữa nhỏ
+mím	chặt môi
+mít	ướt tinh
+mò	về thôi tới muốn mẫm đến ra của
+mòn	trong mỏi ở này đi của dần rồi
+mòng	biển
+mó	một tay tôi vào được
+móa	mày
+móc	mắt câu túi phải của vào nối trái
+mói	chuyện gì thế
+món	quà đồ ăn này nợ gì hàng bánh
+móng	tay vuốt chân ngựa của cho heo guốc
+móp	méo
+mót	tè
+mô	tả hình phỏng tô lớn của a mềm
+môi	trường giới của em tôi anh bạn cô
+môn	của phái thể đồ chủ học này toán
+mông	của tôi cổ anh cô lên cậu mày
+mõi	người
+mõm	lại chó vào mày con nó ra đi
+mù	quáng rồi tạt và mờ lòa mắt tịt
+mùa	đông hè xuân thu giải này màng khô
+mùi	gì của vị như hương hôi thơm đó
+mùn	cưa
+mùng	một mền tơi
+múa	thoát và cột rối trong kiếm ba đi
+múc	đầy nước cho óc đi
+múi	giờ được gì
+mún	biết
+mút	cu chim ngón cái và của nó cho
+măng	tây sét này vậy trên đó ướt
+mĩ	đã mãn mà sẽ ở của nhân phải
+mĩm	cười
+mũ	của bảo trắng trùm này ra sắt đó
+mũi	tên của vào tôi tàu anh tiêm và
+mũm	mĩm
+mơ	của ước về thấy hồ mộng đi thôi
+mơn	trớn mởn man
+mưa	rồi và không sao lớn to đá rơi
+mưng	mủ
+mưu	sát của gì đồ mô trưởng phản mẹo
+mươi	năm lăm hai phút giây tám ba ngàn
+mướn	một tôi anh cô để cho ông
+mướp	tây
+mướt	quá mồ đi như rồi
+mười	năm hai phút một lăm ngày lần sáu
+mường	tượng
+mượn	cái một tiền xe điện được nó thôi
+mượt	mà lắm như hơn thật và
+mạ	vàng tôi và kền anh bạc chúng em
+mạc	của và chúa này không bị ở đó
+mạch	máu của điện chủ và nha đập nước
+mại	dâm của thế và hơn vô như này
+mạn	phải trái phép của quá tàu nhất như
+mạng	sống của lưới tôi người cho anh mình
+mạnh	khỏe mẽ
+mạo	hiểm phạm danh của muội và này chữ
+mạp	và ở
+mạt	chược hạng tướng rệp như này vận với
+mả	mẹ cha của
+mải	mê nhìn nghĩ xem chơi làm
+mảng	tới đến đó tối bám thời của lại
+mảnh	đất vỡ ghép giấy vụn nhỏ của đạn
+mảy	may
+mấp	máy mô
+mất	rồi tích trí đi một mát bao nhiều
+mấu	chốt
+mấy	cái người thứ đứa con thằng anh giờ
+mầm	bệnh mống non họa của sống thành cho
+mần	ăn thịt
+mầu	nhiệm xanh tóc đỏ mỡ trắng đen
+mầy	là đã không thằng cũng
+mẩm	cậu là
+mẩn	ngứa đỏ anh một cô
+mẩu	giấy bánh tin thuốc truyện chuyện xương quảng
+mẫm	trong vào
+mẫn	cảm hơn cán của để làm
+mẫu	vật của máu hậu người thân giáo cho
+mận	khô chín gai nở
+mập	mưu đó và mờ mạp này trắng ú
+mật	khẩu mã độ
+mậu	dịch thân
+mắc	kẹt sai bệnh phải gì bẫy chứng nợ
+mắm	thêm ăn
+mắn	của khi là cho nhé đấy vì với
+mắng	tôi con anh chửi em họ cô người
+mắt	của tôi lại anh ra đến cô tới
+mặc	dù đồ áo quần kệ cái bộ như
+mặn	quá mà nồng và đấy
+mặt	trời với nạ trăng ở đất của tôi
+mẹ	tôi kiếp nó ơi không con của sẽ
+mẹo	của để nhỏ là gì vặt đấy hay
+mẻ	và này hơn với của lưới đá cho
+mẽ	hơn lên và nhất như để của đến
+mến	của anh khách cậu tôi mộ nhất cô
+mề	đay nữa thế quá
+mềm	mại yếu lòng và của mỏng nhũn dẻo
+mền	cho này đó và của đi lên ấm
+mễ	đó không đang đã để ở
+mệ	mỏi
+mệnh	lệnh của đã này đó danh không hệ
+mệt	mỏi rồi quá lắm vì không thôi với
+mỉ	và của nhất trong từng để
+mỉa	mai
+mỉm	cười
+mị	dân quá thế đó này đi như với
+mịa	nó mày kiếp gì thằng
+mịch	của
+mịn	màng như
+mịt	mù đã mờ
+mọ	người
+mọc	lên lại trên ra ở răng thêm rễ
+mọi	người thứ chuyện việc nơi điều cách khi
+mọn	của này quá như và đó
+mọng	nước và của
+mọt	sách gông máy đó ngày người
+mỏ	vàng đá của dầu neo sắt ở bạc
+mỏi	vì với quá lắm rồi và khi sau
+mỏm	đá
+mỏng	manh và hơn như nhất đi của nữa
+mốc	xì thời meo của không quan ở này
+mối	quan đe liên nguy gì tình nào lo
+mống	của mắt nào ung tội
+mốt	đấy mới của này thịnh số
+mồ	hôi côi chôn của sống mả rồi mà
+mồi	nhử của cá cho câu lửa và chài
+mồm	lại đi và vào ra mày của giữ
+mồn	một
+mổ	xẻ bụng cho của và thịt não vào
+mổi	người
+mỗi	ngày lần người khi năm đêm tuần một
+mộ	của anh cô dung này ông đạo và
+mộc	lan mạc tinh và hi nhân của này
+mội	trường đội lần người
+mộng	của du thôi này mơ tưởng nữa đẹp
+một	người cái con chút mình ngày lần cuộc
+mớ	hỗn lộn này tiền bòng tóc rác rắc
+mới	là có của được biết đến chỉ phải
+mớm	tin cho lời
+mờ	ám nhạt đi mắt ảo dần mịt phai
+mời	anh vào ngồi cô tôi ông cậu đi
+mở	cửa ra rộng nó mắt được một cái
+mỡ	và của bụng trong lên cho trên ở
+mợ	nó mày anh nhà cái rồi ông cô
+mụ	ta phù già đàn đó đã điên này
+mục	tiêu đích sư nát rữa của này ruỗng
+mụn	nhọt cóc rộp giộp mủ trên và đấy
+mụt	ruồi nhọt
+mủ	của ruột gì và với mà trong ở
+mủi	lòng
+mức	nào độ đó có này không giá lương
+mứt	cam dâu và mâm không nữa
+mừng	đến vì sinh là tới anh khi cho
+mửa	ra khi và không như
+mực	nước của đen in và không nào ở
+mỳ	ống nướng ý tỏi kẹp cho làm của
+mỹ	và đã không nhân sẽ có ở đang
+na	uy ná dun là
+nai	sừng tơ đó lưng à đực này đâu
+nam	cực mỹ châm phi tước và của tính
+nan	giải y của hoa nhân tri vong mà
+nang	của đó du gì có hay này
+nanh	vuốt của và sắc độc dài lợn nhọn
+nao	núng
+nay	là tôi anh chúng không rồi có em
+neo	ở thuyền tàu tại đi đã lên ngay
+nga	đã không sẽ và đang ngố có đó
+ngai	vàng sắt của muối vị cho vương ở
+ngang	qua hàng với nhiên bằng nhau ngược ngửa
+ngao	du ngán
+ngay	bây đây cả lập khi đi lúc trước
+nghe	này thấy tôi nói đây được lời rõ
+nghi	ngờ phạm lễ thức vấn với là binh
+nghia	là
+nghiêm	túc trọng ngặt chỉnh khắc cấm của nghị
+nghiên	cứu cứ rượu
+nghiêng	về người đầu sang mình qua ngả trái
+nghiến	răng tôi chúng là nó thế
+nghiền	nát ngẫm chúng xương nó sọ gỗ rác
+nghiễm	nhiên
+nghiệm	của tử máu trên với này và cho
+nghiện	rượu ngập thuốc ma và tình của à
+nghiệp	của dư này và đó ở mà cho
+nghiệt	nhất với ngã và của này đó hơn
+nghèo	khổ đói nàn khó và nhất ở kiết
+nghê	gì
+nghênh	các đón chiến anh ngang đến cô ngài
+nghìn	đô năm người lần con tỷ dặm việc
+nghía	qua
+nghĩ	là rằng anh tôi về vậy chúng gì
+nghĩa	là gì của với vụ lý trang đen
+nghẹn	ngào thở vì họng rồi đến trong
+nghẹt	thở người mũi rồi một
+nghẽn	mạch rồi mạng trong không tín đường
+nghếch	của thế và như này nữa vậy mà
+nghề	của nghiệp gì này rồi đó mà khác
+nghệ	thuật sĩ của cao này mới đó sinh
+nghỉ	ngơi hưu một đi việc phép ở của
+nghị	sĩ của viện anh chúng gì một cho
+nghịch	ngợm lý với gì nữa của như tặc
+ngoan	lắm ngoãn nào cố hơn của đạo nhé
+ngoi	lên
+ngon	lành lắm nhất quá đấy hơn nhé không
+ngoài	kia đó hành này đi ra việc cửa
+ngoái	tôi chúng không ở rồi anh của lại
+ngoáy	mũi tai mông cái vào
+ngoãn	nghe đi và thì với ngồi nào ra
+ngoéo	tay
+ngoại	trừ giao tình ô quốc lệ đạo phạm
+ngoạm	vào được
+ngoạn	mục trên đến
+ngoảnh	mặt lại
+ngoắc	tay
+ngoằn	ngoèo nghèo
+ngoằng	đó
+ngoặc	kép với
+ngoặt	của lớn trong không sang với
+ngoẻo	rồi
+ngu	ngốc xuẩn dốt đần như quá si thế
+nguy	hiểm cơ kịch hại cấp rồi của cho
+nguyên	nhân tắc tử vẹn liệu vị tố do
+nguyền	rủa của này đó đã sẽ cho nào
+nguyễn	việt khuê phi hoàng dương
+nguyện	cho của đi viên vọng cầu với không
+nguyệt	quang quế thực môn san đã của lầu
+nguôi	ngoai giận bớt cơn đi
+nguệch	ngoạc
+nguồn	tin gốc năng điện lực nước từ cung
+nguội	rồi mất lạnh đi hết dần trong và
+nguỵ	trang biện
+ngà	voi của say này
+ngài	ấy có đã không tổng sẽ là muốn
+ngàn	năm người đô lần dặm con tên quân
+ngàng	tới
+ngành	công của y gì kinh luật nghề này
+ngào	của và quá như nhất hơn thật đấy
+ngày	mai kia nay nghỉ
+ngách	của trong trên đen nào
+ngái	ngủ
+ngán	mấy cái với rồi những sự tận lắm
+ngáng	đường chân
+ngáo	đá quá ngơ
+ngáp	phải
+ngáy	như muốn của không to trong đấy cái
+ngâm	mình trong thơ nước chúng giấm nga nó
+ngân	hàng phiếu sách hà khố quỹ lượng nga
+ngây	thơ ngô ngất bây ra dại trong người
+ngã	xuống tư rồi rẽ vào và từ khỏi
+ngòai	kia này cửa vào đi đó
+ngòi	nổ cho bút chiến một cuộc chích thì
+ngó	qua lơ tới nghiêng ngàng đến vào ra
+ngóc	ngách đầu lên
+ngón	tay chân cái út khác trỏ giữa nghề
+ngóng	chờ được tin trông mọi tình quá và
+ngô	không và của à đạo trên cho ngon
+ngôi	nhà sao làng đền mộ trường báu vị
+ngôn	ngữ từ của viên độc luận sứ cho
+ngông	cuồng
+ngõ	cụt ngách sau hẻm hẹp kia lời này
+ngùng	gì của làm như thế
+ngút	trời tầm ngàn
+ngăm	đen
+ngăn	chặn cản được hắn kéo nó chúng anh
+ngũ	cốc của hành đại giác à chỉ hiệp
+ngơ	ngác được trước với thì đi khi nó
+ngơi	đi một chút và nghỉ ở cho rồi
+ngư	lôi dân phủ nổi ông là và vậy
+ngưng	lại hoạt ngay đi dùng bắn nói việc
+ngưu	ma sư đại của
+ngươi	sẽ không đã có là muốn biết đang
+ngước	lên nhìn mắt mặt
+ngưới	khác biết mà
+người	khác ta đàn đã của có bạn không
+ngưởi	được
+ngưỡng	mộ cửa của một chịu nào người đi
+ngược	lại đãi với thời dòng về chiều lên
+ngượng	ngùng quá nghịu lắm đấy không vì về
+ngạc	nhiên của trước nhất về đấy khi với
+ngạch	cửa
+ngại	về vật quá gì cho ngùng của khi
+ngạn	ngữ
+ngạnh	của
+ngạo	mạn của và như nghễ để sẽ đấy
+ngạt	thở quá khói trong mũi thần lắm bởi
+ngả	lưng đường đầu ra người mũ rẽ mình
+ngải	đắng
+ngấm	vào ngầm thuốc sâu nhanh trong
+ngất	đi xỉu rồi ngây thôi trên ngưởng đấy
+ngấu	nghiến đây rồi
+ngấy	việc với rồi cái những anh chuyện
+ngầm	của ở và này dưới mà đó trong
+ngần	ấy ngại này đó đấy nào
+ngầu	quá đấy hơn nhất lắm thật không ghê
+ngầy	ngật
+ngẩn	này của đó quá thế như lắm vậy
+ngẩng	đầu cao lên mặt cái
+ngẫm	về nghĩ lại và xem một nó
+ngẫu	nhiên hứng
+ngậm	miệng mồm cái một nó mõm mẹ mỏ
+ngập	tràn trong nước ngừng đầu những tới và
+ngắc	rồi ngứ vào
+ngắm	nhìn cảnh bắn của vào sao nó mặt
+ngắn	gọn ngủi hơn hạn nhất thôi quá và
+ngắt	lời kết điện quãng rồi máy và nguồn
+ngặt	nhất nghèo về của như và lắm hơn
+ngọ	nguậy ngoạy
+ngọc	trai bích rồng của đế quý lục hoàng
+ngọn	núi lửa đồi gió giáo nến tháp đèn
+ngọt	ngào và của không quá cho như với
+ngỏ	lời ý cửa
+ngỏm	rồi củ hết ngay đấy
+ngố	tàu đó này à ở không đang
+ngốc	nghếch này đó của thế như quá khi
+ngốn	hết của mất ngấu một
+ngồ	ngộ kỳ
+ngồi	xuống đi đây ở yên trên đó trong
+ngổn	ngang
+ngỗ	ngược nghịch
+ngỗng	trời nước quay vàng cái của gì và
+ngộ	không độc ra sát nhỡ nghĩnh của với
+ngộp	thở nước
+ngột	ngạt xuất của như quá và vậy biến
+ngớ	ngẩn ngẫn ngần
+ngờ	gì là rằng anh điều được đấy về
+ngời	của lên
+ngỡ	là mình rằng anh em ngàng như thế
+ngợ	là
+ngợi	gì ca khen anh nhiều cậu của ông
+ngợm	quá nhưng với
+ngợp	bởi với trước
+ngụ	ý ngôn của ở tại trong trên dưới
+ngục	đi của tối và này là tù rồi
+ngụm	nước rượu đi thôi không nhỏ cho nào
+ngụp	lặn
+ngụy	trang biện tạo quân quốc
+ngủ	ngon đủ sớm
+ngủi	của để đó lắm nhưng này và mà
+ngủm	rồi củ và cù thôi
+ngứa	ngáy quá mắt lắm tay cho mũi ran
+ngừ	và với cho ấy
+ngừa	thai thôi dịch bệnh sự việc và của
+ngừng	lại bắn đập hoạt nói nghĩ tay nghỉ
+ngửa	ra đầu mặt với lên bài thì trên
+ngửi	thấy được mùi nó đi thử cái xem
+ngữ	của đó pháp khác cổ nào này và
+ngữi	thấy được
+ngự	trị lâm được y ở của nó trên
+ngựa	của và đi đó không này vằn cho
+ngực	em của tôi cô và anh to đẹp
+nha	sĩ khoa đầu môn không của và con
+nhai	kẹo đầu đi thuốc lại và cái nó
+nham	thạch hiểm nhở này của đó chưa
+nhan	sắc nhản của lên hơn
+nhang	cho của và
+nhanh	lên nào hơn chóng nhất đi thôi quá
+nhau	ở với và trong nữa rồi mà không
+nhe	răng nanh em
+nhen	nhóm và
+nheo	với mắt như
+nhi	viện đã khoa đồng của và cũng có
+nhin	này
+nhiêm	vụ của
+nhiên	là rồi liệu không tôi khi anh chưa
+nhiêu	người lần tuổi tiền năm đó thời rồi
+nhiếc	móc gì
+nhiếp	ảnh chính
+nhiều	người hơn thứ năm thời lắm tiền chuyện
+nhiễm	trùng độc bệnh khuẩn sắc với không phóng
+nhiễu	sóng loạn sự tín điện chúng thiết rồi
+nhiệm	vụ của cho về với kỳ ở và
+nhiện	vụ
+nhiệt	độ tình đới huyết của liệt hạch và
+nho	nhỏ khô của và không trắng trong thôi
+nhoi	của đó cho này vậy nào thôi để
+nhoáng	như của và với
+nhu	cầu nhược yếu thuật động là và một
+nhung	lụa tôi nhúc chúng không mượt nó gì
+nhuyễn	thể như
+nhuần	nhuyễn
+nhuận	của cao từ cho khổng bút sẽ mà
+nhuệ	khí nhất của
+nhuốc	của
+nhuốm	máu màu đầy bẩn
+nhuộm	tóc đỏ màu nó đen da máu đầy
+nhà	của thờ tôi tù này vua hàng đi
+nhàm	chán quá lắm
+nhàn	rỗi hạ nhã cư rồi
+nhàng	thôi hơn với và nào nhất như quá
+nhành	cây hoa
+nhào	vô lộn vào xuống tới nặn bột lên
+nhàu	nát nữa
+nhá	anh lên sèng
+nhác	kia quá này
+nhái	bén của giọng lại không theo rẻ này
+nhám	nhúa
+nhánh	cây sông của ở mới nào đặc ngân
+nháo	nhào
+nháp	của món từ đầu
+nhát	gan cáy như dao và đâm kiếm thế
+nháy	mắt đèn không rồi đi một nữa sáng
+nhâm	nhi
+nhân	viên của chứng vật tiện loại danh dân
+nhã	nhặn của và khi quá cho như ý
+nhãi	ranh này nhép con đó kia ngu tụi
+nhãm	nhí
+nhãn	hiệu cầu dán của đã quan áp cho
+nhãng	công
+nhão	nhẹt nhoẹt nhoét ra của
+nhè	nhẹ ra và
+nhé	anh con các cưng em nhóc tôi bố
+nhéo	tôi
+nhép	này
+nhét	vào nó cái một đầy vô trong dưới
+nhê	gì
+nhì	à là của trong ở nữa rồi sao
+nhìn	thấy vào kìa này tôi xem đi anh
+nhình	thấy
+nhìu	hơn lắm người thứ
+nhí	này đó của quá đi mà về như
+nhích	được một lên đi gì qua cái là
+nhím	biển
+nhín	chút
+nhíp	nhổ và
+nhíu	lại
+nhò	gì
+nhòa	gì
+nhòe	đi
+nhòm	ngó qua lên
+nhó	vậy đó
+nhóc	đó này con à ạ có đã của
+nhói	một đau tí khi lên ở đấy
+nhóm	của người máu lửa này nhỏ khủng các
+nhón	chân tay
+nhót	trên như được trong với có gì rồi
+nhô	lên ra cao
+nhôm	này trong và
+nhõm	khi hơn vì quá hẳn cả lắm thế
+nhõng	nhẽo
+nhùi	này
+nhúc	nhích những trong trên
+nhúm	lửa lông người
+nhún	nhường nhảy vai lên mình
+nhúng	tay chàm mũi vào trong nước nó đầu
+nhút	nhát
+nhăm	nhe
+nhăn	răng nhó nheo mặt trên như nhở và
+nhăng	cuội với nhít gì nữa như
+nhĩ	kỳ lan kì nhiên phải là trái và
+nhũ	mẫu hoa hương băng
+nhũn	như ra
+nhũng	người và của gì kẻ ở bị nhiễu
+nhơ	bẩn nhuốc ngoài nhớp của trên trong nào
+như	thế vậy là một anh tôi những chúng
+nhưng	tôi anh không chúng nếu nó có mà
+nhường	nào chỗ đường cho lại ngôi anh cậu
+nhược	điểm tự lan thần cơ và tuyến của
+nhượng	bộ lại quyền với cho và của rồi
+nhạc	của sĩ kịch và này đi cụ đó
+nhại	lại theo tôi
+nhạn	môn biển
+nhạnh	những
+nhạo	báng tôi chúng ta em anh con cô
+nhạt	nhẽo quá nhòa lắm với của dần đi
+nhạy	cảm bén của hơn lắm như sáng và
+nhả	ra nó khói đạn ga tiền cái khóa
+nhải	về suốt nữa mãi từ cái kinh với
+nhảm	nhí nữa gì đi về cái nhỉ quá
+nhảy	xuống đi vào với lên múa ra nhót
+nhấc	máy mông cái điện lên chân nó đít
+nhấm	nháp nỗi hắn tôi của trái đó
+nhấn	mạnh nút chìm ga cái vào chuông đi
+nhấp	nháy chuột một nhô rượu nhổm
+nhất	của là mà trong định để có trên
+nhầm	lẫn rồi người chỗ số thì đường không
+nhầy	nhụa đó của này
+nhẩm	lại tính
+nhẩn	nha
+nhẫn	của cưới này quý tâm và cho đó
+nhậm	chức
+nhận	được hàng tin lời
+nhập	vào cư viện ngũ với hội cảnh được
+nhật	bản ký của con kí cho thực tôi
+nhậu	nhẹt với xỉn và tới à mà rồi
+nhậy	cảm
+nhắc	nhở lại tôi
+nhắm	mắt vào đến tới bắn mục thẳng được
+nhắn	tin của cho này từ lại sau gì
+nhắng	thật
+nhắt	đó khốn
+nhằm	vào mục tạo nhò ngăn gì làm bảo
+nhằn	nữa đấy hơn và rồi tôi như về
+nhằng	nữa thế đâu gì lắm quá với
+nhẵn	nhụi túi mặt
+nhặn	gì với và của hơn
+nhặng	xị lên
+nhặt	được nó lên rác lấy súng cái bóng
+nhẹ	nhàng nhõm tay thôi hơn như lòng vào
+nhẹm	đi chuyện nó sự
+nhẹn	và như lên hơn lắm rồi nhất đấy
+nhẹp	hết rồi và
+nhẹt	và ở cho
+nhẽ	ra phải tôi không anh nên cậu cô
+nhẽo	và gì của hả nữa
+nhếch	nhác mép
+nhền	nhện
+nhện	đó đã không đang và trên có này
+nhỉ	tôi anh nhưng nếu có ông chúng cô
+nhị	ca phân gì sư vị đệ lắm hơn
+nhịn	đói được ăn đi không thở cười nhục
+nhịp	tim đập điệu nhàng thở nhanh độ của
+nhọ	cho tên chúng thanh anh
+nhọc	công nhằn lắm rồi bao như của mà
+nhọn	của và hoắt như trong hoắc đấy hơn
+nhọt	ở trên của này
+nhỏ	của bé này thôi hơn đó xíu ở
+nhố	nhăng
+nhối	của
+nhốn	nháo
+nhốt	trong ở chúng tôi hắn mình nó anh
+nhồi	bông nhét máu vào sọ đầy cho cả
+nhổ	vào neo ra răng nó nước cỏ hết
+nhộn	nhịp lắm nhạo thật đấy nhỉ làm quá
+nhộng	thế chạy trong và
+nhột	quá lắm không kinh
+nhớ	không là anh lại đến được ra gì
+nhớp	nháp nhúa
+nhớt	thây của
+nhờ	anh có tôi vào cô cậu ông một
+nhờn	với
+nhở	tôi chúng anh các về cô rằng em
+nhởn	nhơ
+nhỡ	đâu có anh họ tôi nó cô hắn
+nhợt	nhạt như của
+nhụa	nước quá
+nhục	nhã tôi của mạ này cho dục ta
+nhụt	chí
+nhủ	rằng với mình là bản như họ nó
+nhủi	như trong
+nhứ	thế
+nhức	đầu nhối quá cả mỏi răng vì óc
+nhứng	gì quả
+nhừ	tử xương đòn
+nhừng	gì lời
+nhử	chúng mồi anh hắn bọn nó à để
+nhửng	người con
+những	gì người thứ kẻ điều con chuyện cái
+nhựa	đường cây thông dẻo thôi và này sống
+nhựng	con
+nhựt	lê
+ni	tơ lông cô
+ninh	quốc của ở nội đã cho thái và
+niu	chiều
+niêm	phong mạc yết giám
+niên	kỷ thiếu của sử đại giám này trẻ
+niếm	mùi
+niết	bàn
+niềm	tin vui hy đam tự vinh kiêu hạnh
+niềng	răng xe
+niệm	của về ngày cho đẹp một chú gì
+niệu	đạo
+no	rồi nê man bụng đòn đủ quá không
+noi	gương theo nào cho
+nom	nó cho cậu con bọn cô cháu mọi
+non	nớt và trẻ của lắm dạ không này
+nong	của gì đi thì
+nua	của và này đó
+nung	chảy nóng nấu nó
+nuôi	dưỡng dạy con nấng nó của một lớn
+nuông	chiều
+nuối	tiếc với
+nuốt	chửng sống lời nó trọn trôi đi hết
+nuột	đấy lắm phết vãi
+nài	nỉ ngựa xin ông tôi cậu
+nàn	về gì của và với cả cái vì
+nàng	không đã sẽ có là ấy đang tiên
+nành	chứ và vào
+nào	đó cũng không khác rồi mà để cả
+này	là không có sẽ thì đi cho đã
+ná	ở như giống
+nách	của một thì đó
+nán	lại
+náo	viên loạn nhiệt động nức thiên của
+nát	trái đầu cái nó này và của bét
+náu	của trong ở và dưới trên vẫn tại
+náy	vì khi về trong
+nâng	ly cấp cao cốc lên đỡ nó khiên
+nâu	và sẫm của đỏ ở hơn không vàng
+nã	vì của đạn gắt toàn cả pháo ở
+nãi	cưng
+nãm	trước qua nay rồi ngoái
+não	của bộ anh và cô tôi không cậu
+nãy	giờ anh tôi là không có cô cậu
+nè	anh con cưng ông em các bà cô
+né	tránh được ra những đi đòn đường đạn
+ném	nó bom bóng vào đá đi cho cái
+nén	lại trong khí của hương được cảm nó
+nép	vào mình sang
+nét	mặt vẽ đẹp chữ đặc hơn của quyến
+nêm	này
+nên	tôi làm đi nói biết chúng anh ở
+nêu	ra tên rõ lên tôi không anh các
+ních	người rồi
+nín	thở đi ngay khóc thinh mẹ nào cái
+nít	vậy nữa mà thôi đâu và à không
+níu	kéo giữ chân lấy
+nòi	giống của chúng
+nòng	súng nọc và cốt ngắn dài giảm được
+nó	là không sẽ có đi đã ở đang
+nóc	nhà xe tủ tòa của rồi toà thang
+nói	chuyện với gì là về cho dối rằng
+nón	của đó này ra và bảo tôi đẹp
+nóng	bỏng quá lòng lên nảy và tính giận
+nô	lệ dịch tài bộc tì en đùa sẽ
+nôi	của gì con khi và
+nôn	mửa nóng ra quá nao mất vào lên
+nông	dân trại nỗi nghiệp thôn cạn nổi sản
+núi	lửa này đó cao và của kia non
+núm	vú của ti vếu cửa và
+núp	đi trong sau ở xuống vào dưới bên
+nút	này đó thắt đi áo bấm chai nào
+năm	trước rồi qua nay sau ngoái nữa trời
+năn	nỉ hối của vì đi trước tội chân
+năng	lượng của lực đó là để làm khiếu
+nĩa	này ăn để của và được
+nũng	nịu
+nơ	trên vít đen đỏ của màu và anh
+nơi	này nào mà đó đây chúng an tôi
+nơm	nớp
+nương	tay tựa náu tử của ấy không thân
+nước	này mỹ ngoài mắt anh của và hoa
+nướng	bánh chín và của thịt cho rồi nó
+nạ	của vào đó ra này và phòng là
+nại	của với lên về gì và chính đã
+nạm	ngọc
+nạn	nhân xe đó này của thật thôi đói
+nạng	trên đó
+nạo	thai phá vét
+nạp	đạn lại đầy năng nhiên cho điện thêm
+nạt	tôi và cô em một anh cháu con
+nạy	ra nó
+nản	lòng chí và thế khi với vì quá
+nảy	ra sinh nở mầm lửa của lên lộc
+nấc	cụt cục thang nữa
+nấm	mồ mộ mốc và cục này độc trong
+nấn	ná
+nấng	con nó cô chúng bởi tôi anh như
+nấp	đi trong sau ở vào của dưới mau
+nấu	ăn nướng bữa cơm món cho súp chảy
+nấy	đi lo thôi mà đều giữ chạy cũng
+nần	gì của chồng
+nẩy	mầm đi
+nẫng	tay
+nậu	ma
+nắm	lấy tay quyền giữ được bắt đấm chặt
+nắn	lại xương bóp nó được chúng khớp
+nắng	mặt ấm và đẹp của đấy ấy không
+nắp	ra cống hầm lại đậy xe này chai
+nằm	xuống trong ở trên yên dưới ngoài mơ
+nằng	nặc
+nặc	danh mùi đòi nói muốn như
+nặn	ra một đất đồ
+nặng	nề hơn quá của lắm đấy nhọc không
+nẹp	răng chân
+nẻ	nào
+nẻo	đường
+nếm	thử mùi trải được qua món rượu vị
+nến	đi cho này và thơm không ở cháy
+nếp	nhăn gấp sống và
+nết	này quá
+nếu	anh không tôi chúng có cô như cậu
+nề	hơn nhất quá cho với nếp trong hà
+nền	văn tảng kinh cộng dân hòa móng nhà
+nể	mặt trọng phục nang sợ tình đấy anh
+nệ	quá
+nệm	của êm rồi ấm nước ra thôi
+nện	anh hắn cho vào mày một nó tôi
+nỉ	đấy anh tôi mà cô đó ta mẹ
+nịnh	bợ hót nọt đầm tôi thần
+nịt	ngực quần của ra đó này
+nọ	tôi nữa là ở không kia anh rồi
+nọc	độc ong rắn của
+nọi	người
+nọt	tôi
+nỏ	của xuống
+nốc	ao rượu cả một hết đầy bia thuốc
+nối	với máy lại được giữa tiếp của dây
+nốt	nhạc ruồi phần đi cái việc cho một
+nồi	hơi nước cơm gì súp đồng lẩu canh
+nồng	độ nhiệt nặc nàn hậu ấm cháy thắm
+nổ	tung súng máy ra ở bom trong lớn
+nổi	tiếng loạn giận điên dậy bật đâu không
+nỗ	lực
+nỗi	đau sợ buồn không ám này lo kinh
+nộ	của và với lệ mà đó khi lên
+nội	gián bộ tạng chiến dung thất địa của
+nộm	của à
+nộp	đơn mình thuế tiền cho mạng phạt vũ
+nới	lỏng rộng với nào ra này chúng cũ
+nớp	lo
+nớt	của lắm
+nở	ra hoa nụ rộ của trong và trên
+nỡ	giết lòng bỏ rời để ra từ uống
+nợ	tôi anh của cậu cô ông nần tiền
+nụ	hôn cười hoa hồng
+nức	nở
+nứt	ra trên da xương rồi nẻ ở của
+nửa	đêm tiếng số giờ của triệu đường dặm
+nữ	hoàng và này đó thần mà ở của
+nữa	đâu không rồi là thôi đi thì à
+nực	cười này quá và
+o	là ép và hi không âm đó
+oai	phong vệ hùng nghiêm hơn quá với
+oan	cho uổng hồn ức nghiệt tương mà như
+oanh	tạc liệt kích
+oi	bức
+om	sòm xòm
+on	the my a me to may an him
+ong	bắp không của đốt rồi mật chúa và
+oách	quá
+oán	trách hận gì giận với cá báo giữa
+oánh	nhau hay hết lộn
+oải	hương quá lắm
+oắt	con đó kia
+oằn	mình oại
+oẳn	tù
+pa	của này tê
+pam	và đây
+pan	am của và
+panh	và không này thôi bia rồi chứ hảo
+pao	là một không nữa
+pay	me
+pha	lê cà trà chế trộn cho trò rượu
+phai	mờ nhạt dần tàn đi màu nhòa không
+phang	nhau cô phập em con tôi gái vào
+phanh	thây phui lại đi xe khẩn thôi của
+phao	vào cứu câu và tin của làm để
+phe	nào ta cộng với chúng của anh dân
+phen	này
+phi	công thuyền thường hành vụ đội cơ trường
+phia	trước
+phim	này của đó vui mới phụ ảnh về
+phiên	tòa bản dịch xử điều toà xét nhau
+phiêu	lưu du bạt diêu
+phiếc	vớ gì
+phiếm	thôi của với hay nữa về là đi
+phiến	đá loạn quân diện động sét
+phiếu	của cho bầu ở chống thuận này thế
+phiền	phức không anh nếu cô tôi chứ ông
+phiện	của và ở không cho là vậy à
+pho	mát tượng mai
+phong	cách tỏa bì trào độ cảnh tục ấn
+phu	nhân của quân trưởng thê chứ xe khuân
+phui	sự
+phun	nước ra lửa trào thuốc sơn khói hết
+phung	phí
+phà	đó sáng tiếp nào đang đi chứ
+phài	không là làm
+phàm	trần nhân tục ăn phu và mà là
+phàn	nàn này
+phào	nhẹ đó của thôi như về
+phá	hủy vỡ hoại hỏng ra sản được huỷ
+phác	thảo họa hoạ đồ
+phách	của lối tán lạc này mà
+phái	người của đoàn viên đến nào đi võ
+phán	xét quyết đoán với quan sẽ đã và
+pháo	đài hoa tay sáng binh bông hiệu thủ
+pháp	luật sư của lý thuật y và không
+phát	hiện triển biểu điên minh ra nổ xít
+phân	tích biệt nửa tâm phối tử loại chia
+phãi	chờ
+phè	phỡn
+phèo	phổi lên
+phé	của
+phéng	với
+phép	thuật tôi màu của chúng anh lạ vào
+phét	với lác về nữa đấy cả thôi à
+phê	thuốc bình không chuẩn nhé của duyệt đi
+phì	lũ nhiêu phò nộn ra phèo đại đấy
+phình	mạch động to ra lên
+phí	thời phạm cho của tiền cả một công
+phía	sau trước bắc nam đông tây bên trên
+phích	cắm này nước quảng của ra đó rồi
+phím	đàn của số đi bấm
+phò	mã trợ đó đực này của tá phạch
+phòi	ra
+phòng	của thí này ngủ tắm thủ tôi khách
+phó	tổng với chủ giám cho mát của cảnh
+phóc	rồi
+phóng	viên xạ to thích hỏa đại tên cho
+phô	mai trương diễn bày tô ra mát
+phôi	thai
+phông	chữ nền của cho có
+phù	hợp
+phùng	chí
+phú	quý sĩ của mà và ở đang cho
+phúc	cho của hơn khi nhất với lợi và
+phút	nữa trước thôi để cuối sau này rồi
+phăng	nó đầu cái
+phũ	phàng
+phơi	bày nhiễm nắng khô sáng mình ra quần
+phưu	lưu
+phương	bắc pháp tiện tây án nam hướng thuốc
+phước	cho lành thay của lớn bởi là đi
+phường	trộm này
+phượng	hoàng là
+phạm	tội sai vi pháp luật phải của nhân
+phạn	đồng của văn
+phạt	cho của tôi vì anh em những chúng
+phả	hệ hủy nhà vào gia là và khói
+phải	là không làm đi nói có rồi tìm
+phản	hồi ứng đối
+phảng	phất
+phấn	khích khởi đấu chấn hoa trắng cho và
+phất	lên cờ
+phần	của còn lớn thưởng trong nào mềm trăm
+phẩm	của chất nghệ giá cho và này mới
+phẩn	nộ
+phẩu	thuật thẩm
+phẩy	tay
+phẫn	nộ uất của
+phẫu	thuật thần của học người thẩm tử để
+phận	của sự đã an nào này với không
+phập	phồng với
+phật	sơn tổ ý giáo lòng gia pháp ơi
+phắn	đi thôi khỏi ngay đây mau mẹ ra
+phẳng	và lặng hơn với của lì à mà
+phế	liệu thải tích truất nhân vật bỏ phẩm
+phết	đấy nhỉ bơ máu nhờ đúng cho lên
+phỉ	báng nhổ sẽ đấy
+phỉa	là
+phỉnh	phờ tôi và đi đấy
+phịch	nhau cậu cô mẹ bọn con em tôi
+phịt	nhau
+phọt	ra
+phỏng	vấn đoán của lại theo tay một không
+phố	này của và lớn đang đã không nào
+phối	hợp của với viên giống bởi hàng cho
+phốt	pho phát
+phồn	vinh thịnh hoa
+phồng	lên rộp quá sự mọi tôm ra lại
+phổ	biến thông rộng của cập khắp ký kế
+phổi	của và bị anh cô tôi có không
+phổng	mũi
+phỗng	tay
+phộng	và không của rồi hay khắp nữa trên
+phớt	lờ hồng đời
+phờ	phạc
+phụ	nữ đề thuộc trách huynh tá của vương
+phục	vụ hồi được tùng kích của sinh lại
+phụng	sự mệnh thiên lệnh thần ngài của chúa
+phụt	ra lửa tắt
+phủ	nhận của mỹ đã bởi hoa có không
+phủi	tay bụi nó đi sạch đít
+phức	tạp hợp cho quá rồi lắm này gì
+phứt	đi
+pi	à
+pin	của rồi cho mặt và không mới còn
+po	đâu là à mà
+poe	có
+pê	đê
+pô	thôi
+qua	đây được một đời những rồi đi đó
+quai	hàm nón bị mũ túi
+quan	trọng tâm hệ đến sát gì điểm tới
+quang	của cảnh thần phổ bảo học cho minh
+quanh	đây đi quẩn bởi khu cổ xem ta
+quay	lại về trở phim lưng đầu được đi
+que	diêm thử kem này củi cời của thôi
+quen	với biết thuộc nhau của rồi không ai
+queo	rồi
+qui	định tắc trình luật của mô may hoạch
+quy	tắc định trình luật mô đầu phục hoạch
+quyên	góp tiền tặng nghe sinh
+quyến	rũ rủ luyến của
+quyết	định được chuyện vấn tâm xong việc vụ
+quyền	lực năng của được lợi kiểm hạn quyết
+quyển	sách sổ nhật của này truyện kinh một
+quyện	vào với
+quyệt	của và hơn như nhất đã đó có
+quà	cho của tặng từ sinh này cưới giáng
+quàng	khăn cổ của quạc tay dây này
+quày	rượu tính tiếp
+quá	nhiều khứ rồi trình muộn đi lâu nhỉ
+quách	đi của rồi cho nó
+quái	gì vật nào quỷ dị thú đản đó
+quán	rượu ăn cà của trọ quân mỹ này
+quáng	của vì để bởi và mà rồi nhưng
+quát	tháo mắng tôi vào lên cho được toàn
+quân	đội sự của đoàn đức lính nhân phục
+quây	quần chúng bò lại
+quãng	thời đường đời trường dài đó tám xa
+què	quặt đó ăn gì một chân hay này
+quèn	của như thôi
+qué	gì
+quét	sạch dọn qua của võng dấu lại nhà
+quê	hương nhà mùa tôi của ở này anh
+quên	đi mất nó được chuyện hết cái điều
+quì	xuống gối
+quí	vị ông cô giá bà của khách tộc
+quít	với
+quý	vị ông cô bà tộc giá của khách
+quýt	với
+quăn	queo
+quăng	nó cái đi tôi chúng xuống cho dây
+quĩ	đạo
+quơ	tay
+quạ	ba của đưa báo đen tới đi đến
+quại	trong đi như
+quạnh	này hiu
+quạo	đây với đó vì vậy
+quạt	của đang đó gió mới này đi thông
+quả	bom là của bóng cầu trứng thật táo
+quải	hình
+quản	lý trị gia lí của chế đốc thúc
+quảng	cáo trường bá châu đông đại đường đời
+quấn	quanh tã nó lấy khăn quít lại cái
+quất	roi vào ngựa và không tôi con cô
+quấy	rầy rối nhiễu phá rồi khóc rấy với
+quần	áo lót của đảo chúng ra rồi đùi
+quầng	sáng nát
+quầy	rượu lễ tiếp hàng bán thu lưu tính
+quẩn	ở trong bên quanh trí với đâu đây
+quẩy	lên hết đi nào rồi thôi cả cho
+quẫn	trí
+quẫy	đuôi lên
+quận	trưởng của chúa này sẽ khác và đã
+quật	ngã xác nó vào ở khảo cường cả
+quậy	phá tưng tung nữa với trong nát quá
+quắc	cần
+quắn	đít cả
+quằn	quại
+quẳng	nó đi cái vào tôi hết chúng cậu
+quặc	nhất thật của khi hơn và như này
+quặn	đau thắt
+quặng	sắt
+quặt	trái
+quẹo	phải trái qua đi ở hướng xe bên
+quẹt	thẻ phải que diêm không vào
+quẻ	bói này
+quế	phường của không có ngon trên à và
+quết	bơ
+quỉ	gì này nào quái dữ đó sứ tha
+quốc	gia tế hội phòng của xã hoa và
+quờ	quạng
+quở	trách
+quỳ	xuống gối trước dưới lạy ở một trên
+quỵ	và rồi xuống mất có hay hoặc lần
+quỵt	tiền nợ
+quỷ	dữ gì sứ này đó thần cái tha
+quỹ	đạo của cho từ đen đầu dữ học
+ra	khỏi ngoài đi với là sao một được
+ran	khắp so
+rang	bơ không và là với
+ranh	giới con ma mãnh này đó rới kia
+rao	bán giảng vặt là
+rau	quả diếp củ cải câu trộn xanh mùi
+ray	đã và xe tàu không có là đang
+re	như
+reo	hò lên kìa và chuông rắc của không
+ri	gà là không mà à của với để
+ria	mép của lởm nào đó
+riu	thôi
+riêng	tư của mình với cho tôi biệt một
+riết	truy ba rồi tìm
+ro	cao đó của hơn khi lớn và mà
+roi	da của ngựa quất và vọt cho vào
+ron	và đã là à không đi biết rất
+rong	ruổi biển chơi trên
+ru	ngủ con tôi rú nó em chúng này
+rum	và nữa
+run	rẩy sợ lên như quá kìa rồi lập
+rung	động chuông chuyển lên tim lắc cảm cây
+ruy	băng
+ruồi	bu trên đó của bay muỗi à cho
+ruồng	bỏ
+ruổi	trên khắp cùng
+ruỗng	ở của trong
+ruộng	đất bắp của lúa nhà
+ruột	của gan thịt thừa già tôi con anh
+rà	soát lại quá xoát rồi nữa sóng trong
+ràng	là buộc rồi không hơn anh có tôi
+rành	về lắm mạch mấy quá rẽ rồi hơn
+rào	chắn cản đó của an bảo điện kẽm
+rày	về đây
+rác	rưởi của này thải ở rồi đó và
+rách	nát việc rưới này rồi áo đó hết
+rái	cá
+rám	nắng
+rán	và ngon sơ cho không giòn miễn mà
+ráng	lên chịu giữ ngủ đi mà nhớ nhịn
+ráo	riết và rồi trọi
+ráp	lại nối xe xong các cái một máy
+rát	quá vào lắm nhiều
+ráy	đi cho rồi và một sạch tai
+râm	ran đi của mát
+râu	của ria đen mép rồi trắng dê và
+rã	rời rồi ra đông ruột cả nó đám
+rãi	thôi và hơn cho như trong của với
+rãnh	rỗi nước trên của mà này để không
+rè	như và thế
+rèm	cửa lại tối xuống lên ra tắm và
+rèn	luyện lại ra cho vũ kiếm từ bởi
+ré	lên
+rén	tới
+réo	gọi rắt
+rét	là run đó cho ngoài rồi trong và
+rê	bóng tôi
+rên	rỉ rĩ la lên như cái của nữa
+rêu	rao mốc phong
+rì	rầm rào
+rìa	của rồi thành ngoài trong thị không như
+rình	rập mò mồi họ rang tôi ở
+rìu	của vào chiến lên này qua và đi
+rích	rồi này đó trong của ấy được
+rít	lên đi của một rồi như đó
+rò	rỉ rĩ điện rỏ
+ròi	giữa
+ròng	rọc rã
+róc	xương thịt
+rón	rén
+rót	cho rượu đầy thêm vào tiền nước đi
+rô	bốt ràng bô chưa
+rôi	sẽ đấy sau tôi anh
+rông	khắp
+rõ	ràng chưa rồi hơn là không về điều
+rùa	biển này con và là rụt đó bò
+rùi	đó đấy
+rùm	beng
+rùng	mình rợn cả
+rú	lên của thế trong trên ở
+rúc	vào rích trong đầu ở dưới
+rúm	lại người ró trong
+rúng	động
+rút	lui ra lại quân súng tiền khỏi kiếm
+răn	của đe dạy thứ này trong
+răng	của nanh sún sắc giả và không cho
+rĩ	và nữa vì
+rũ	của bỏ và hơn nhất như đấy tôi
+rơi	xuống vào ra từ tôi chúng nó anh
+rơm	rác và à không mới
+rương	của đó ở này thánh và kho tiền
+rước	họa cái của về thêm con
+rưới	đó nước
+rướm	máu
+rướn	lên người
+rườm	rà
+rưởi	này đó của như thôi mà nào và
+rưỡi	rồi nữa trước sáng để đô thôi là
+rượt	đuổi theo bắt tôi chúng
+rượu	vang và của cho không này ở ngon
+rạc	như
+rạch	mặt cổ bụng ròi một nát họng tay
+rạn	nứt san xương da vỡ
+rạng	rỡ sáng đông ngời danh ở động
+rạo	rực
+rạp	hát xiếc chiếu phim dưới đó xem này
+rải	rác khắp tro bom đầy ra thuốc xuống
+rảnh	không rồi lúc
+rảo	quanh bước
+rất	nhiều vui tiếc tốt tuyệt thích khó đẹp
+rầm	rộ
+rần	rật
+rầu	rĩ nồi
+rầy	tôi anh cô chúng ông em con bà
+rẩy	và như trong khi trước vì của toàn
+rẫy	những sự bọn nguy hiểm các kẻ trên
+rậm	rạp của đấy lông này và như ở
+rận	của và cắn không
+rập	khuôn này không của xê ở sẽ tôi
+rắc	rối rồi nỗi thêm tro hạt lên vào
+rắm	đấy này quá thối vào của như trong
+rắn	độc chuông và với hổ trong hơn chắc
+rắp	tâm
+rằm	tháng
+rằn	ri
+rằng	anh tôi chúng cô mình ông có nó
+rặn	đi mạnh ra được đây
+rặng	núi cây san đồi thông
+rặt	một
+rẻ	tiền hơn mạt rách nhất đâu lắm cho
+rẽ	trái phải chúng vào qua đi nhầm về
+rết	này
+rề	rà
+rền	rĩ rỉ vang
+rể	của tôi tương chính không cho là có
+rễ	cây của và ở má trong này là
+rệp	cắn
+rệt	giữa hơn
+rỉ	sét ra máu thông như từ phóng tai
+rỉa	xác thịt
+rọ	của mõm
+rọc	giấy lên thư
+rọi	đèn sáng ánh vào xuống chút và để
+rỏ	dãi
+rỏi	và
+rối	loạn rồi gì tung của với cho lớn
+rốn	của em ra
+rống	lên
+rốt	cuộc cục thôi cho ráo cũng lại này
+rồ	này của nhất thật đó không như nhưng
+rồi	đấy mà đó sao à chứ tôi anh
+rồng	của đã không và sẽ đó nào là
+rổ	đi của ở chứ nữa bánh không này
+rỗi	của linh tôi chúng không cho hơi thế
+rỗng	tuếch không và như của tâm túi rồi
+rộ	lên
+rộn	với lắm đấy ràng để quá nhỉ rã
+rộng	lớn rãi lượng hơn mở ra khắp tầm
+rộp	lên da này
+rớ	vào tới được
+rớt	xuống ra cái giá lại rồi máy vào
+rờ	vào đến
+rời	khỏi đi bỏ xa mắt nhà thành tàu
+rỡ	hơn như nhất của trong trên và với
+rợ	đó này như của không ấy và đang
+rợn	người quá của đó này rồi thật và
+rục	xương trong rịch
+rụi	cả nơi chúng trong mọi nó thành chỗ
+rụng	trứng hết tóc ra răng xuống rồi rời
+rụt	rè cổ đầu
+rủ	lòng cô tôi anh em cậu nhau tớ
+rủa	ngươi này chúng ta tôi đó của và
+rủi	ro có thay của cho cũng này thôi
+rứt	lương
+rừng	này rậm và của cây sâu đó nhiệt
+rửa	tội sạch tay xe tiền chén mặt bát
+rữa	trong ở dưới của tay hết như đi
+rực	rỡ lửa sáng cháy trong như khi của
+sa	mạc thải ngã hoàng đọa vào đà sút
+sai	lầm rồi trái về sót cả sao thì
+sam	và à đã không là sẽ có nói
+san	hô bằng phẳng sẻ không
+sang	bên một trọng trái phải đây phía phòng
+sanh	con ra rồi sách đều
+sao	anh không lại chứ đâu tôi rồi cô
+sau	đó khi này lưng nhé vụ những một
+say	rượu xỉn rồi mê đắm sưa sóng sỉn
+se	mi không có là sẽ
+sen	của trong và ở sẽ à
+si	mê tình đần rô của như
+sim	của đó
+sinh	ra nhật vật viên học của mạng con
+siêng	năng
+siêu	nhân anh thị âm năng nhiên tốc phàm
+siết	chặt cổ cò quá và nó cho lại
+so	với sánh i tài long được he the
+soi	sáng mói gương ruột rọi đường xét cái
+son	môi của bóng không phấn này và đó
+song	sinh sắt tử với hành kiếm ca trùng
+soái	ca của hạm và sẽ
+soán	ngôi vị
+soát	được của nó mọi rồi và tình các
+soạn	thảo nhạc cho ra đồ một kịch lại
+soạng	khắp tôi
+su	không đó này vào và ở cho chứ
+sui	gia nhé sao
+sum	họp vầy
+sun	và vòi
+sung	sướng túc sức thêm cho mãn vào có
+suy	nghĩ sụp đoán yếu luận giảm xét ngẫm
+suyễn	của sao
+suôn	sẻ sẽ
+suông	sẻ thôi của
+suýt	nữa chết giết chút bị thì quên làm
+suất	của cao không tối trong và xung lớn
+suối	nước nguồn nhỏ vàng để ở chảy khi
+suốt	ngày đời thời đêm cuộc cả nhiều những
+sà	xuống lan vào
+sài	gòn lang tang
+sàm	sỡ
+sàn	nhà đấu nhảy diễn đi ngay và tàu
+sàng	chưa rồi để cho đi làm chết chiến
+sành	điệu sỏi ăn rượu
+sào	huyệt
+sá	gì
+sách	của này đó những về cho các vở
+sái	cổ
+sám	hối
+sán	dây
+sáng	nay mai tạo suốt của hôm sớm rồi
+sánh	với được bằng bước ngang chúng nổi nó
+sáo	rỗng quá với của nữa đá đâu thế
+sáp	nhập ong vậy và
+sát	trưởng nhân thủ hại đây đã và của
+sáu	tháng năm người tuần giờ tuổi ngày tiếng
+sâm	panh banh sẽ
+sân	bay khấu thượng sau chơi bóng vận ga
+sâu	vào sắc hơn trong thẳm bọ bên dưới
+sã	không đáp
+sãn	sàng
+séc	cho của đi đó không trắng và rồi
+sém	nữa
+sét	đánh đó của và không sẽ để ở
+sê	không làm có cho đi là ổn giết
+sên	biển và à đó này nữa
+sình	bùn
+sít	sao
+sò	của và điệp biển không này cho là
+sòm	quá thế
+sòng	bạc bài phẳng của ở
+sóc	cho con nó tốt cô chuột bản sức
+sói	không và sẽ đã của con đó độc
+són	ra một
+sóng	thần âm của điện vô rồi gió não
+sót	lại qua sau được trong của ở và
+sô	cô viết diễn đa pha ma truyền trình
+sôi	động nổi sục lên lửa nước máu nảy
+sông	băng và này không đó ở của để
+sùi	bọt
+sùm	sụp
+sùng	đạo bái sục kính em anh hắn máu
+súc	vật sinh miệng của sắc tích thì này
+sún	à
+súng	xuống của vào cho đó và trường này
+súp	gà của và cho không lơ đậu nóng
+sút	vào đi bóng cả rồi của quá tung
+săm	soi mình giống tên
+săn	đuổi lùng mồi bắn tìm tiền phù bắt
+sĩ	quan của tâm nói đã và giỏi không
+sũng	rồi nước
+sơ	của tán đồ sinh về mi bộ hở
+sơm	hơn thôi
+sơn	trang lại móng tặc ca màu dầu lên
+sư	phụ tử của huynh đoàn và không đã
+sưa	với trong và
+sưng	lên tấy phồng phù to cả không và
+sưu	tập tầm
+sương	mù giá sớm độc và khói mờ của
+sướng	hơn quá khi lắm thật không đi được
+sướt	mướt
+sườn	núi trái đồi của phải nướng heo dốc
+sưởi	ấm nắng và đi của trong lên được
+sượt	qua nhẹ
+sạc	điện pin đầy lại rồi được đến ở
+sạch	sẽ rồi chúng và mọi nó đi bọn
+sạn	của này ở và đó nào cho có
+sạo	tìm khắp lại
+sạp	báo hàng
+sạt	nghiệp
+sải	cánh chân bước tay của lai
+sản	xuất của phẩm sinh và rồi cho ở
+sảng	khoái rồi rượu nữa như và thôi
+sảnh	đường chính lớn và của đi này năm
+sảo	như và của
+sảy	ra thai chân
+sấm	sét chớp truyền rền vang và không trên
+sấp	xuống hay ngửa mặt
+sấu	ăn trong con của đó không là mỹ
+sấy	khô tóc và à
+sầm	vào lại cửa uất xuống
+sần	sùi
+sầu	muộn não của thảm khổ và
+sẩm	tối
+sẩy	thai chân
+sẫm	màu
+sậm	màu
+sập	bẫy xuống rồi cửa nó cả tiệm tòa
+sậy	này
+sắc	đẹp nhất của bén lệnh sảo và hơn
+sắm	ở cho và với một của sửa vài
+sắn	sàng
+sắp	xếp chết tới đến đặt có hết đi
+sắt	của và ở không vụn này đó trong
+sằn	sàng
+sẳn	sàng lòng
+sẵn	sàng lòng rồi cho trong ở một có
+sẵng	sàng
+sặc	sỡ mùi sụa nước thôi
+sẹo	trên này của đó ở không và do
+sẻ	với thông những nó cho cùng một mọi
+sẽ	không làm có đi là phải được nói
+sến	quá súa của lắm
+sếp	của tôi à có mới ơi anh không
+sễ	không
+sệt	và này thế
+sỉ	nhục vả
+sỉn	và rồi đó để
+sịp	của
+sọ	của mày não hắn anh người pha cô
+sọc	vằn trắng xanh vàng trên đen và
+sọt	rác
+sỏ	của nhất chính đã
+sỏi	đá thận mật về dê trong
+số	điện lượng tiền phòng
+sốc	điện phản khi và thuốc đấy cho thật
+sống	của ở sót trong với và như được
+sốt	rét cà cao và ruột dẻo rồi sắng
+sồi	lớn chứ và
+sồn	lên
+sổ	sách tay của đó này và ghi ra
+sổng	chuồng mất
+sỗ	sàng
+sộ	và của hơn này
+sộp	lắm
+sột	soạt
+sớm	thôi hơn càng muộn nhất gặp thế hay
+sờ	và vào mó soạng nó thử ngực mông
+sở	hữu cảnh thích thú của dữ này trường
+sởn	gai gáy tóc cả da
+sỡ	hữu quá
+sợ	hãi là rằng quá lắm chết không gì
+sợi	dây tóc chỉ xích cáp lông tơ vải
+sục	sạo khắp sôi chúng từng cả trong các
+sụp	đổ xuống tinh rồi lắm đâu bẫy lần
+sụt	giảm cân sịt sùi xuống cát giá mất
+sủa	hơn lắm nữa và như của gì lên
+sủi	bọt cảo tăm
+sủng	của ái và
+sứ	mệnh quán giả mạng của mỹ đã ở
+sức	khỏe mạnh
+sứt	mẻ môi
+sừng	của tấm sỏ bò nai sững không dài
+sử	dụng của như bệnh loài gia sẽ sách
+sửa	chữa lại nó được đổi xong cái sai
+sửng	sốt
+sữ	dụng
+sữa	chua của và mẹ lắc cho đậu không
+sững	sờ người
+sự	thật là không sống của kiện giúp rất
+sực	nhớ
+sỹ	quan của tâm nói đã và thú phẫu
+ta	sẽ có không đã phải là đang cần
+tai	nạn họa sao mắt của nghe tôi ương
+tam	giác thiếu hoàng điểm kiếm ba tạng ca
+tan	nát vỡ chảy biến tành rã ra thành
+tang	lễ của vật chứng anh thương cho rồi
+tanh	bành banh của tách mùi như tướng hôi
+tao	sẽ không đã có biết là muốn nói
+tay	của lên tôi ra anh vào phải với
+te	tua với
+tem	của này phiếu thư ra cậu với
+ten	trên của nơ
+teo	lại cơ nhỏ rồi dái hết mất đi
+tha	thứ cho lỗi mạng ma tội hồ hóa
+thai	rồi nhi của và à con không mà
+tham	gia dự vọng quan lam chiến mưu khảo
+than	phiền vãn khóc thở đá hồng ôi a
+thang	máy trong ở này trên và đi bộ
+thanh	toán niên tra
+thao	túng tác trường của thức và nào này
+thau	nước
+thay	đổi thế
+the	sun man day guy son gun long thé
+them	to in by on
+then	chốt i cửa the he cài a
+theo	dõi tôi cách một đuổi anh chúng lời
+thi	thể đấu hành thoảng pháp công của này
+thinh	không lặng và thích
+thiu	rồi
+thiên	thần tài đường chúa hạ đàng văn nhiên
+thiêng	liêng của này vớ nhất trong và với
+thiêu	sống rụi cháy đốt trụi chết hủy chúng
+thiếc	này và
+thiến	hắn anh chúng hết tôi như ra đi
+thiếp	đi của không đã sẽ là biết cho
+thiết	bị kế lập phải để với giáp của
+thiếu	tá lâm niên gia nữ sót một gì
+thiền	định vu sư cơ võ công của trong
+thiển	cận ý thế như
+thiểu	năng số là tôi cũng não thiệt của
+thiện	chí với của và xạ hơn ý cho
+thiệp	vào mời của với và mừng giáng này
+thiệt	hại đó mạng tình là hả sao không
+thiệu	với cho anh tôi một cô bản về
+tho	hơn và
+thoa	dầu kem son cho lên giữa
+thoi	thóp sẽ số đã chết đưa có của
+thon	thả gọn nhỏ
+thong	thả dong
+thoái	hóa vị lưỡng thác mái lui hoá của
+thoáng	qua thấy đãng mát chốc một hơn nghĩ
+thoát	khỏi ra được cho rồi y hiểm đâu
+thoại	của cho này di đi không và đó
+thoạt	đầu nhìn tiên
+thoả	thuận mãn hiệp ước đáng mái thích lòng
+thoải	mái con
+thoảng	tôi anh có chúng cũng thôi nó họ
+thoắt	hiện ẩn
+thu	hút thập xếp được dọn nhập nhỏ hồi
+thua	cuộc rồi trận đâu thì một thôi gì
+thui	rồi chột mà thủi
+thun	của đỏ
+thung	lũng
+thuyên	chuyển giảm về gì nữa như suốt
+thuyết	phục của trình giáo về là thì đó
+thuyền	trưởng của này đi đó cứu và không
+thuyển	trưởng
+thuê	một nhà anh tôi người để phòng xe
+thuần	khiết là hóa chủng túy thục phục chỉ
+thuẩn	với
+thuẫn	với trong cho giữa của nhau về gì
+thuận	với lợi của rồi là tiện tay thế
+thuật	của toán gia số và không ngữ viên
+thuế	của cho má mà vụ và thu để
+thuốc	lá nổ của phiện giải độc súng chữa
+thuộc	về vào địa hạ loại với quyền sở
+thuộm	quá
+thuở	ban sơ nhỏ của nào trước xưa bé
+thuỵ	sĩ điển
+thuỷ	thủ trắng tinh quân triều này không đã
+thà	chết bị để làm là không đi tôi
+thành	phố công một viên thật người của vấn
+thào	với
+thày	của ơi
+thá	gì
+thác	nước loạn được nó của mỏ sức sự
+thách	thức đấu của tôi lớn anh thứ cậu
+thái	độ bình hậu quá của tử lan dương
+thám	tử hiểm trưởng thính của không đã chúng
+thán	phục
+tháng	trước rồi sau nữa qua nay trời tới
+thánh	thần giá thượng của đường kinh địa thiện
+tháo	nó ra còng cái dây vát gỡ chạy
+tháp	canh không này chuông của đó cao đôi
+tháu	cáy
+thâm	nhập tâm tím niên hụt chí thù sâu
+thân	mình của mến thiện thiết yêu nhất chủ
+thâu	tóm đêm lại âm nhận
+thây	ma anh nó kệ và không rồi trong
+thè	lưỡi ra
+thèm	quan khát muốn để nói nghe nhìn ăn
+thèn	bé
+thé	nào
+thép	của gai không và này dày ở sẽ
+thét	lên của và trong gào như tên khi
+thê	của thảm tử giới lương thiếp nào là
+thêm	một nữa vài chút thời nhiều vào người
+thêu	dệt thùa cháy rụi đó đẹp
+thì	sao không tôi có anh chúng sẽ phải
+thìa	bạc của này không là gỗ đường
+thình	lình thịch thoảng
+thí	nghiệm dụ chủ sinh cho mạng với nghệm
+thía	gì
+thích	hợp nó anh cái thế của cho cô
+thím	đã à biết có của cứ làm này
+thính	giả giác phòng căn hơn lắm lực như
+thít	chặt à
+thò	tay đầu ra mặt lò mũi
+thòi	cho ra thôi
+thòng	lọng dây
+thó	được nó đó cái lấy
+thóat	được ra
+thóc	của lúa và với cho ở
+thói	quen xấu hư quan ngạo nghiện dâm kiêu
+thóp	được hắn anh tôi của rồi ông gì
+thô	lỗ bạo tục sơ bỉ thiển kệch ráp
+thôi	nào mà đi được sao à nhé ngay
+thôn	tính quê này trưởng chúng dã trang đều
+thông	tin báo cảm thường
+thõa	thuận mãn
+thù	của cho hận địch lao là ghét không
+thùng	rác xe hàng đó rượu chứa này xăng
+thùy	não thái trán đỉnh chẩm mị trên
+thú	vị nhận với tội vật vui cưng săn
+thúc	rồi đẩy chuyện như của ở nó cuộc
+thúi	quá tha đó của hoắc như quắc hơn
+thút	thít
+thăm	dò anh tôi con mẹ cô của em
+thăn	bò
+thăng	chức bằng tiến của cấp đang đi đó
+thơ	của ấu ca thẩn và đó như mộng
+thơi	gian
+thơm	quá ngon tho như lắm thật của hơn
+thư	giãn viện của cho ký này từ kí
+thưa	ngài ông sếp bà cô quý cha bệ
+thương	lượng quá của mại không hại xót và
+thước	của đo phim và anh không lớn kẻ
+thường	xuyên thì không thôi lệ nói là dân
+thưởng	thức cho của là lớn này gì thêm
+thượng	nghị đế hải viện lộ sĩ hạng lưu
+thạc	sĩ sỹ
+thạch	tín cao của anh thảo này yêu đã
+thạo	tiếng việc trong về cách với lắm được
+thả	tôi cô ra anh nó lỏng con ta
+thải	ra tôi anh cô của rồi một cậu
+thảm	họa hại sát kịch hoạ khốc đỏ bại
+thản	nhiên hơn và khi thôi của trong cho
+thảnh	thơi
+thảo	luận nào nguyên dược của mộc về với
+thảy	xuống những một cho mọi cái hắn nó
+thấm	vào nước qua thía mệt nhuần đẫm sâu
+thấp	xuống hơn nhất hèn kém đầu người quá
+thất	bại vọng nghiệp thủ lạc thường đại hứa
+thấu	hiểu đáo kính tâm được xương chi nỗi
+thấy	gì nó không anh một cô cái chưa
+thầm	lặng kín vào với thì trong gì điều
+thần	kinh linh của ơi thánh không chú chết
+thầu	của dầu tư đến an khoán quân xây
+thầy	không tu có đã sẽ giáo biết là
+thẩm	phán vấn quyền đoàn mỹ tra du định
+thẩn	với ở của rồi trong
+thậm	chí trí chỉ tệ chi thí
+thận	đấy trọng nhé với đó hơn chứ cái
+thập	kỷ tự niên giá kỉ được tam thông
+thật	sự là ra đấy không tuyệt sao à
+thắc	mắc mác
+thắm	thiết và
+thắn	với mà của đấy và như quá về
+thắng	rồi được cuộc trận lợi của trong giải
+thắp	sáng nến lên đèn lửa một hương nhang
+thắt	dây lưng chặt cổ nơ cà nút lại
+thằn	lằn
+thằng	bé khốn nhóc chó ngu nào này ngốc
+thẳm	trong nhất của sâu bên và trái tâm
+thẳng	vào thắn tới ra đến lên về xuống
+thặng	dư
+thẹn	vì với khi thùng của cả và cho
+thẹo	này trên đó của
+thẻ	tín của căn xanh bài nhớ này đó
+thế	nào giới này thì là mà thôi nên
+thết	đãi kế
+thề	có với là sẽ đấy rằng đó của
+thềm	nhà cửa của đại lục
+thể	làm là nói giúp tin đi nào có
+thệ	sẽ trung của nhậm và với không rồi
+thỉ	tôi
+thỉnh	thoảng cầu giáo kinh an tội ý
+thỉu	của đó này và kia không mà quá
+thị	trấn trưởng trường của giác chính lực thực
+thịnh	nộ vượng soạn hành tình và của thế
+thịt	bò người gà nướng của lợn và heo
+thọ	của và được cho giáo hơn trung cao
+thọc	tay vào sâu gậy cái ngón mũi tôi
+thọt	chân
+thỏ	con đế không của đó này phục bự
+thỏa	thuận mãn hiệp đáng thích ước nguyện cả
+thỏai	mái
+thỏi	vàng nam son nữa
+thố	gì
+thốc	vào
+thối	tha rữa nát của quá lại này như
+thốn	tình gì như tiền
+thống	đốc trị của nhất đã an sẽ kê
+thốt	ra lên nên được gì với
+thồ	hàng
+thổ	dân của nhĩ quốc lộ phỉ ngữ vương
+thổi	kèn bay tung phồng sáo đi còi qua
+thổn	thức
+thổng	thống
+thộn	này à đó
+thớ	thịt
+thới	gian
+thớt	rồi
+thờ	của ơ này phụng và thánh ở thần
+thời	gian tiết điểm
+thở	đi được sâu của dài ra không cuối
+thởi	gian
+thợ	săn máy rèn may sửa lặn mộc mỏ
+thụ	tinh thai động lý phấn án năng được
+thục	mạng nữ được lắm trong ra
+thụp	xuống
+thụt	lùi vào đít rửa lại
+thụy	sĩ điển sỹ
+thủ	lĩnh tục của tướng phạm đô dâm tiêu
+thủa	nhỏ
+thủng	một được phòng trên tường chưa trong nó
+thủy	thủ quân tinh triều ngân đánh tối tộc
+thứ	hai ba tư năm sáu bảy
+thức	ăn dậy của được giấc uống tỉnh cả
+thừ	gì
+thừa	nhận kế tướng biết hưởng của cho sức
+thừng	và đi ra của quanh trên đó nữa
+thử	nghiệm thách xem đi lại một cái làm
+thự	của ở đó này bên sự to đã
+thực	sự hiện ra tế phẩm vật tập thi
+ti	vi tiện sao của hí chức nữa em
+tia	chớp sáng sét lửa nắng cực hy hồng
+tim	của tôi anh mình em và ta cô
+tin	nhắn tức tưởng
+tinh	thần này của tế khiết khác vi hoàn
+tiêm	thuốc cho vào một phòng nó nhiễm chủng
+tiên	của tri là tôi trong sinh chúng anh
+tiêu	diệt rồi của chuẩn cực hủy là khiển
+tiếc	là về vì khi cho phải thật quá
+tiếm	quyền ngôi
+tiến	sĩ hành lên triển về vào tới bộ
+tiếng	anh nữa tây của pháp nói đức rồi
+tiếp	tục theo đi cận xúc với quản nhận
+tiết	lộ kiệm về mục của này nhỏ ra
+tiếu	lâm
+tiềm	năng thức ẩn tàng lực vọng
+tiền	của cho để mặt đó bạc thưởng và
+tiều	phu tụy tuỵ
+tiển	lẻ
+tiểu	thư thuyết bang đoàn học tử sử đội
+tiễn	anh đưa cô chúng biệt ông em đã
+tiễu	trừ
+tiệc	tùng của này sinh độc ở tối nào
+tiệm	bánh giặt tạp của rửa thuốc cầm đồ
+tiện	nghi thể lợi đây cho nói truyền của
+tiệp	khắc
+tiệt	này đó thật của gì nào ấy mà
+to	lớn hơn the be tát lên con như
+toa	xe tàu thuốc lét hành này thứ cuối
+toan	tính giết ám
+toang	ra cánh
+toanh	đấy
+toe	toét làm
+toi	rồi mạng đời không hết sẽ chỉ đấy
+tom	và đã là nói à sẽ không đang
+ton	hót
+tong	rồi teo
+toà	nhà án tháp lâu thị thành đại báo
+toàn	bộ không là rồi của hơn cho cầu
+toác	sọ ra đầu
+toái	cho đấy như lớn và đó không nào
+toán	học của cho hóa và hết tiền được
+toáng	lên
+toát	mồ ra lên hết
+toét	này như
+toạ	độ
+toạc	ra móng nó cổ cái cả
+toại	nguyện ý
+toạt	ra
+toả	sáng khu ra các
+toẹt	ra vời hết
+tra	tấn lại xem của vụ các đi viên
+trai	của tôi ta anh mình cô ông trẻ
+trang	bị phục trại trí điểm sức của nhất
+tranh	cãi luận cử của với giành này đã
+trao	đổi cho nó tặng quyền giải trả lại
+trau	dồi
+tre	này nào và
+treo	cổ trên lên ở thưởng nó cái giá
+tri	thức của đã kỷ giác là nói kỉ
+trinh	sát nữ thám tiết trắng nguyên bạch à
+triêu	đô
+triết	lý học gia lí của
+triền	miên núi dốc
+triều	tiên đình đại lên dâng của đang xuống
+triển	khai lãm vọng một gì của tốt nhanh
+triễn	lãm
+triệt	để hạ tiêu phá sản thoái rồi
+triệu	đô chứng người tập năm phú hồi lần
+tro	tàn bụi cốt của hỏa núi trong trát
+tron	đời
+trong	một đó những khi nhà số phòng vòng
+tru	tréo lên di và vậy diệt như
+trui	rèn
+trum	thật à thông
+trung	tâm thành sĩ quốc úy vào học thực
+truy	cập nã lùng tìm đuổi tố bắt ra
+truyền	thống hình thông thuyết cảm tin lại nhiễm
+truyện	tranh của cổ ngắn kinh cho này cười
+truất	quyền ngôi phế cha giáo
+truồng	trong và đi như trước không mà chạy
+truỵ	tim lạc
+try	to them
+trà	trộn không nhé của cho đi và đá
+tràn	ngập đầy vào qua ra dịch trề về
+tràng	pháo hạt vỗ cười ra
+trào	ra lưu của ngược này lên dâng kháng
+trá	và của về hình với như mà đó
+trác	táng
+trách	nhiệm anh mình tôi cô bản cứ được
+trái	đất tim cây của phép phiếu bom với
+trám	răng
+trán	với của cô anh hắn tôi cậu con
+tráng	miệng lệ hơn của không quá nhất ghê
+tránh	xa ra đường khỏi được mặt qua né
+tráo	trở đổi của bài cái thế cùng để
+trát	tòa hầu của đòi khám bắt trấu toà
+trâm	tinh cài ngọc của này
+trân	trọng châu đó quý đấu dị
+trâng	tráo
+trâu	bò ngựa nước rừng già thì chó chậm
+trãi	qua nghiệm
+trèo	lên qua xuống ra tường vào cao đi
+tréo	ngoe
+trét	lên
+trên	đường thế đó một mặt đời tàu giường
+trêu	chọc tôi đùa ngươi anh thay tức ghẹo
+trì	hoãn sự của được nó và trệ một
+trình	của diễn này bày diện độ để đó
+trìu	mến
+trí	của nhớ rồi tuệ tưởng óc này thông
+trích	dẫn xuất lời từ tôi anh nguyên ra
+trò	chơi chuyện đùa này gì của đó lừa
+tròn	và này trên bổn của lửa trịa đó
+tròng	mắt kính dây của à trắng vào ra
+tróc	ra da
+trói	cho buộc hắn tôi chặt anh lại chúng
+trót	lọt
+trôi	qua đi chảy dạt nổi nhanh xuống theo
+trông	như giống anh chừng có rất cô thấy
+trù	phú tính ẻo dập định cho ếm
+trùm	đầu ma tội của lên buôn khủng cả
+trùng	hợp khớp với của và nào thì rồi
+trú	ẩn ngụ ở của tại thân chân mưa
+trúc	sư của ở không bên mà này và
+trúng	đạn rồi độc vào một hắn số đầu
+trút	giận bỏ hơi hết cơn xuống lên sự
+trăm	năm người lần ngàn dặm đô triệu con
+trăn	trối trở
+trăng	mật tròn và là của sáng lưỡi đã
+trĩ	quá
+trĩu	nặng
+trũng	thấp
+trơ	tráo trẽn trọi ra trụi xương lì mắt
+trơi	ơi
+trơn	tru lắm quá và tuột rồi trượt như
+trư	bát
+trưa	với nay rồi của mai cho nhé và
+trưng	bày cho của dụng ra thôi cầu đó
+trương	lên doãn tiên của phong mục lực phi
+trước	khi đây mặt đó rồi tiên đi hết
+trướng	của tôi thế quyền ông
+trườn	đi qua vào lên tới về
+trường	hợp học đại của trung vụ này sinh
+trưởng	thành của bộ và đã không lão ban
+trượng	của phu này nghĩa cứu cho đi đó
+trượt	tuyết chân băng rồi ván xuống và nước
+trạc	tuổi
+trạch	viên đông
+trại	của giam ở này tập mồ cải và
+trạm	xe xăng kiểm dừng không xá điện gác
+trạng	thái của này khẩn nguy không tốt báo
+trả	lời tiền lại
+trải	qua nghiệm dài giường rộng thảm bàn khắp
+trảm	mạt hậu
+trảng	cỏ
+trấn	này nhỏ của an và tĩnh không đã
+trấu	gì vào
+trầm	cảm trọng lặng tính tĩnh tư ngâm uất
+trần	truồng nhà gian chân trụi tục như của
+trầy	xước da thôi nhỏ trên trụa khi ở
+trẫm	sẽ không mới cũng là nói phải sao
+trận	đấu chiến đánh này động bóng của bão
+trật	tự khớp mắt đường rồi lất mục bánh
+trắc	ẩn học trở nghiệm bằng của địa gì
+trắng	và của tay trợn không đã như với
+trằn	trọc
+trặc	gì nhỏ trong rồi kỹ với và kĩ
+trẹo	chân cổ
+trẻ	con em tuổi này và của hơn đó
+trẻo	của như
+trề	hy môi sức
+trể	rồi để
+trễ	giờ một rồi
+trệ	của rồi
+trệch	hướng khỏi đường
+trệt	không
+trị	của liệu gia giá cho vì gì thế
+trịch	thượng
+trịnh	trọng sư châu thượng
+trọ	ở của không với nào đó này rẻ
+trọc	đầu cả kia phú thế giận này đó
+trọi	rồi
+trọn	vẹn đời gói bộ cuộc cả một trái
+trọng	nhất hơn với là của đại lực đấy
+trọt	và được trên ở trong
+trỏ	vào của và đến đi
+trỏng	mà
+trố	mắt
+trối	gì của chết không trước nào
+trốn	thoát đi khỏi ở tránh chạy trong được
+trống	rỗng không trải trơn lảng trong ở vắng
+trồi	lên
+trồng	trọt cây hoa nó được cà lại và
+trổ	tài hoa đầy
+trổi	dậy
+trỗi	dậy nhạc
+trội	hơn của cho về nhất ở so trong
+trộm	cắp cướp xe nó của đồ một tiền
+trộn	vào với lẫn nó lại giữa trong cho
+trớ	trêu
+trớn	rồi em như nó
+trờ	thành lại về nên
+trời	ơi đất ạ tối và mưa sẽ mọc
+trở	lại thành về nên ngại đi lên vào
+trợ	giúp lý cho cấp của tôi lí anh
+trợn	mắt như
+trợt	té
+trụ	sở này được của lại cột và vững
+trục	trặc xuất lợi hạm vớt của cam bánh
+trụi	của mọi căn nhà lủi trong cả nó
+trụy	lạc tim của này
+trứ	danh
+trứng	của cá và chiên không vào gà rồi
+trừ	khi phi việc một cái những khử tôi
+trừng	phạt trị mắt của giới hợp phát vào
+trừu	tượng đới
+trữ	của liên ở và trong lượng cho vũ
+trực	tiếp thăng giác tuyến diện của tràng đêm
+tu	viện sĩ nhân sửa chính luyện của từ
+tua	lại nhanh đi vít bin tới đến rua
+tui	không có là cũng sẽ biết nghĩ muốn
+tung	lên ra tích mọi cả hô hết đồng
+tuy	nhiên vậy rằng không là có tôi thế
+tuyên	bố thệ ngôn truyền chiến án dương úy
+tuyến	đường của tụy giáp phòng tiền thượng yên
+tuyết	rơi và ở của không trắng đã là
+tuyền	gặp hầu
+tuyển	dụng chọn mộ người vào thêm tập anh
+tuyệt	vời lắm quá đối thật vọng nhất đấy
+tuân	lệnh theo thủ mệnh chỉ thượng phục lời
+tuôn	ra trào chảy
+tuông	và của là à gì
+tuý	của và này đã ở trong là nữa
+tuýp	người của kem phụ thuốc
+tuấn	tú mã và của
+tuần	trước này sau tra nữa tới rồi trăng
+tuế	vạn
+tuếch	của ở
+tuệ	của nhân và siêu cao tuyệt vĩ con
+tuốc	nơ
+tuốt	kiếm trên gươm tới dưới lươn ngoài ra
+tuồn	ra thông tin tiền cho vào được
+tuổi	rồi của thơ trẻ và tác này già
+tuộc	đó có lại nữa không khổng này
+tuột	khỏi mất ra quần xuống tay dốc rồi
+tuỳ	thuộc anh vào ý cậu thích cô ông
+tuỷ	sống
+ty	của này bảo đó tôi dược điện chúng
+tà	thuật ác giáo khí ma thần pháp đạo
+tài	khoản liệu chính
+tàm	tạm
+tàn	nhẫn sát bạo phá ác tật của khốc
+tàng	hình trữ của lịch anh ở nghệ này
+tành	hết rồi khi gì mây ra thành xác
+tào	lao tháo quân doanh mãn mạnh tặc công
+tàu	của này ngầm đó điện không đi con
+tày	trời đình
+tá	của người đã ở không nói sẽ có
+tác	dụng với động phẩm giả của chiến nhân
+tách	ra trà rời biệt cà khỏi nhau chúng
+tái	sinh tạo diễn thiết chế lập xuất phát
+tám	năm người tháng tuổi giờ tiếng tuần ngày
+tán	tỉnh thành gẫu về dương ngay dóc phét
+táng	của trong theo vào cho nó và ở
+tánh	của mạng chứ lắm thoát trấn đó quá
+táo	bạo và lại của bón không để hơn
+táp	vào sa một của gì hay
+tát	đâu cả vào gì tôi anh lắm nó
+táy	máy
+tâm	đến thần trí tới lý hồn của trạng
+tân	binh hôn tiến trang nhất gia thế chưởng
+tâng	bốc bóng
+tâu	đức bệ hoàng lên ngài
+tây	ban dương chiên bắc nam và của không
+tã	cho lót bẩn giấy của và không nữa
+tè	ra vào lên dầm trong đây quá đã
+tèn	ten tén
+tèo	rồi ạ à luôn
+té	xuống ra thôi khỏi đây đi rồi đái
+tép	riu thôi
+tét	đít vào mông
+tê	liệt giác cứng cóng rồi hết cho cả
+tên	là tôi của khốn này lửa gì đó
+tì	vết nữ không cho cũng đi
+tìm	thấy ra được kiếm hiểu cách một anh
+tìn	hiệu gì
+tình	yêu hình trạng dục cảm huống báo cờ
+tí	nào nữa hon thôi cô đi gì nhé
+tía	lia má à tôi
+tích	cực của sự tắc rồi và ở lũy
+tím	và đó của này trên là không rồi
+tín	hiệu dụng đồ của nhiệm ngưỡng cho dị
+tính	của toán mạng cách làm sao đến tiền
+típ	người
+tít	trên bên mù tắp báo sau dưới bài
+tò	mò te tí
+tòa	nhà án tháp đại lâu thị thánh soạn
+tòan	bộ là không
+tòi	ra những trong
+tòng	phạm quân teng sinh trung
+tó	không
+tóc	vàng của đỏ giả đen nâu cô cho
+tóe	nước khắp lên lửa
+tóm	được tắt lại lấy hắn cổ chúng nó
+tót	không
+tô	màu của châu điểm không và vẽ mì
+tôi	không sẽ đã có là biết muốn nghĩ
+tôm	hùm càng của thế tép chua là này
+tôn	trọng giáo thờ vinh kính sùng nghiêm ngộ
+tông	vào xe phải đồ hắn trúng cửa không
+tù	nhân binh trưởng vì và của này không
+tùm	lum
+tùng	của rồi sẽ với không phèo ta thôi
+tùy	thuộc vào thích anh ý cô tiện tùng
+tú	liên nhất tài cầu của bà ông để
+túc	đấy chứ xá đó mà đi với không
+túi	của xách áo đó đựng này tiền tôi
+túm	lấy được lông cổ lại gáy cái tóc
+túng	cho và bởi quá thiếu quẫn được cả
+túp	lều
+tút	lại tát
+túy	và của ở không trong nào là đá
+tý	nào nữa thôi gì đi hon nhé xíu
+tăm	tối và của nhất xỉa hơi này như
+tăn	chuyện về gì
+tăng	lên tốc cường gấp thêm trưởng lương cao
+tĩnh	nào đi lại mạch và lặng đã tâm
+tĩu	và
+tơ	lụa nhện tưởng và hồng nhỉ biết kẽ
+tơi	tả bời đây
+tư	cách lệnh vấn tưởng của thế nhân pháp
+tưng	bừng tửng lên trên như đi ở
+tươi	đẹp sáng nuốt cười tỉnh mới ngon và
+tươm	tất
+tương	lai tự đối tác đương đồng xứng ứng
+tước	đoạt đi hiệu xứ vị vũ quyền mất
+tưới	nước cây dầu bằng tiêu máu hoa
+tướng	quân của công lĩnh đã anh và không
+tường	thuật thành này đó của trình và lửa
+tưởng	tượng anh là của tôi cậu cô chúng
+tượng	của được ra đấy với trưng này nổi
+tạ	ơn lỗi đại tội hiểu thị vương gia
+tạc	tượng cơ nên không và các của nó
+tại	sao đây nhà một vì của chỗ tôi
+tạm	biệt thời
+tạng	của không người anh bị này thì từ
+tạnh	mưa
+tạo	ra nên một thành dựng cho của lại
+tạp	chí hơn hóa lắm và dề của nham
+tạt	qua nước vào ngang nữa và
+tả	được của một nó như về lại những
+tải	của lên đó về và đi xuống chở
+tản	ra bộ nhiệt ngay toàn khỏi đi khẩn
+tảng	đá băng của cho mới thiên vững thịt
+tảo	biển thanh lục bẹ và
+tấc	đất sắt cả rưỡi trên về
+tấm	hình ảnh bản gương thảm vé bảng lòng
+tấn	công và tôi anh cô thủ hắn của
+tấp	vào xe vô quá nập vậy như của
+tất	cả nhiên yếu việc công thảy liệt tần
+tấu	hài của lên rồi
+tấy	lên
+tầm	nhìn thường kiểm mắt thủ tay quan ngắm
+tần	số vương tật suất bì sóng thủy của
+tầng	hầm trên dưới lớp thượng trệt ba này
+tầu	của này sẽ đó con bị nào không
+tẩm	độc thuốc bổ bột nọc cung quất dầu
+tẩn	mày nó hắn cho anh chết nhau tôi
+tẩu	thoát của thuốc hoả tán khỏi giang hỏa
+tẩy	não rửa sạch chay lông uế của vết
+tận	hưởng dụng mắt thế cùng đây tâm tụy
+tập	tin trung luyện hợp
+tật	xấu của nguyền và gì hay giật này
+tậu	một thêm được cho
+tắc	của đường nghẽn kè và là đầu mà
+tắm	rửa đi của cho và nước ở trong
+tắn	hơn và
+tắp	lự
+tắt	đèn nó máy đi điện hết cái rồi
+tằn	tiện
+tằng	tịu
+tặc	đã à này tấn ở đó cướp và
+tặng	cho nó cô anh em quà tôi cậu
+tẹo	nào thôi nữa đó này thế đã được
+tẹt	ga đi
+tẻ	nhạt này của không ngắt hơn khi lắm
+tế	bào là của với thì nhị và hơn
+tếch	đi khỏi
+tết	âm tóc và nguyên năm ở này sao
+tếu	lắm thật nhất quá thiệt về
+tề	thiên tựu và đã chỉnh hơn chưa là
+tể	của hắc những bóng các tướng đã và
+tệ	hơn nhất lắm hại thật quá đến như
+tệp	tin
+tỉ	lệ mỉ đô phú người số năm thí
+tỉa	không của này đã lông và ở cây
+tỉnh	dậy lại táo rồi giấc rượu đi cô
+tị	nạn với vì đấy và khi quá à
+tịa	rồi sao
+tịch	thu của hội hạ biên tập ủy và
+tịnh	hải dưỡng giác thổ tâm năng chi châu
+tịt	về hết rồi
+tọa	độ lạc của đàm ở rồi trên và
+tọc	mạch
+tọng	hết cái vào
+tỏ	ra lòng vẻ sự mình tình được rằng
+tỏa	sáng ra khu mọi đường các hết toàn
+tỏi	và à là rồi lên ngon tây
+tỏng	rồi là
+tố	viên cáo chất giác bất quận của trong
+tốc	độ lực hạt lên hành và ánh tối
+tối	nay mai qua
+tốn	thời kém nhiều bao tiền của công quá
+tống	tiền khứ cổ giam vào cô anh hắn
+tốt	hơn lắm nhất đẹp cho đấy thôi lành
+tồi	tệ tàn đâu đấy lắm nhất hơn chút
+tồn	tại của vong kho và là những đọng
+tồng	ngồng thống
+tổ	chức tiên quốc ong hợp sư bà mẹ
+tổi	chỉ
+tổn	thương hại thất cho ở hao của gì
+tổng	thống hợp cộng đài chỉ giám tư hành
+tỗi	lỗi
+tộc	trưởng của tiên người ta chúng và khác
+tội	phạm lỗi nghiệp ác cho giết của gì
+tột	cùng độ đỉnh bậc
+tớ	không sẽ đã có biết nghĩ là đang
+tới	đây khi đó chỗ rồi lúc một nhà
+tờ	giấy báo của rơi này cho séc gì
+tời	giờ khi
+tởm	quá lợm đó này của nhất lắm như
+tợn	nhất của lắm nhưng và hơn giữa như
+tụ	tập họp máu với lại tối điện của
+tục	đi làm tìm sống nói nào như theo
+tụi	nó mình mày tao con em bây này
+tụm	lại
+tụng	kinh của những trong và cho là em
+tụt	lại quần xuống hậu dốc huyết hạng mất
+tụy	của với và mà quá nhất chăm
+tủ	lạnh quần đồ của thuốc đó đựng áo
+tủi	nhục thân hổ
+tủy	sống xương của đã não răng cấp và
+tứ	đại chi gia quý tung xuyên phía siêu
+tức	giận là cười gì thì khắc về thời
+từ	khi chối đâu bỏ đó một đầu lúc
+từa	tựa
+từng	là thấy có làm gặp nói nghe biết
+tử	tế của thần hình thi vong không và
+tửng	rồi
+tửu	lượng quán đương
+tự	do nhiên hào hỏi mình làm sát tử
+tựa	như đề vào là lông lưng lẫn sách
+tựu	của lớn trường trọn như ở cả khoa
+tỳ	của vết nữ
+tỵ	với nạn vì lắm à đấy thôi đó
+tỷ	lệ phú đô người số năm thí không
+u	ám não sầu nang không trong ở tối
+ui	da cha chà trời
+um	sùm tôi tùm lên
+ung	thư dung nhọt bướu thu
+uy	tín hiếp lực quyền nghi thế của danh
+uyên	ương bác thâm
+uyển	chuyển ngữ
+uý	à của hải ạ
+uất	ức của hận và vì
+uẩn	khúc
+uế	của trong danh lên như nơi thanh thiếu
+uể	oải
+uốn	cong nắn lưỡi ván éo tóc dẻo lượn
+uống	rượu gì một đi nước thuốc trà cà
+uổng	phí công quá cho
+uỷ	ban thác quyền mị viên nhiệm
+va	chạm vào li phải đập ly đầu vớ
+vai	trò diễn của chính tôi một anh người
+van	xin nài anh tim của ông ổn hai
+vang	lên đỏ dội vọng và danh của trắng
+vay	tiền mượn nặng nợ thế ít của được
+ve	vãn nó chai áo em và của người
+ven	biển sông đường hồ bờ
+vi	phạm khuẩn của tính rút sóng thần trùng
+vin	vào
+vinh	dự quang hạnh danh người hiển hoa quanh
+viêm	phổi gan màng mạch khớp não nhiễm ruột
+viên	của đạn đá thuốc trong ngọc kim ở
+viếc	gì
+viếng	thăm mộ cô đến
+viết	thư về một cho ra gì nó bài
+viền	của đỏ cổ ngoài trông
+viển	vông
+viễn	cảnh tưởng thông vọng chinh không tây đông
+việc	này đó của cho gì làm ở với
+viện	bảo này tâm của trợ và không ở
+việt	nam quất ngữ cộng của dũng bởi làm
+vo	ve nữa tam đi tròn và đâu
+voi	sát xanh lưng của và trắng không đã
+von	thôi
+vong	của là trong không và nào linh ở
+vu	khống cho oan cáo này vơ đó tội
+vua	của và đã phương không mới điên sẽ
+vui	lòng vẻ mừng
+vun	đắp vén
+vung	vẩy kiếm tay gậy tiền vãi vẫy rìu
+vuông	của góc này là đó với ở
+vuốt	ve của tóc và sắc gấu dài mèo
+vuột	mất khỏi hắn
+vy	là
+và	tôi anh chúng không cô một em nó
+vài	người thứ ngày phút điều năm giờ câu
+vàn	các khó những
+vàng	của và đó này ở bạc cho không
+vành	đai móng của tai xe bánh tim đen
+vào	trong đây đi đó ngày một nhà lúc
+vá	lại nó được này xong đó chỗ là
+vác	xác cái mặt theo trách súng một mông
+vách	đá núi ngăn tường hang mạch của
+vái	lạy
+ván	bài trượt cờ này không mới nữa thôi
+váng	một và vì quá đây
+váo	và
+vát	và như
+váy	của này đó cưới đẹp đỏ cho xanh
+vân	tay trường và cua không liệu là như
+vâng	thưa ạ tôi lời đúng chúng có con
+vây	quanh hãm rồi chúng bởi thành bắt của
+vã	mồ quá vậy và với của không gì
+vãi	đái cả ra thật chưởng hàng lúa lềnh
+vãn	được tình chuyện cuộc bối tôi nữa hôn
+vãng	lai rồi quanh
+vãnh	này
+vè	không
+vèo	qua
+vé	máy phạt đi cho của xem tàu số
+véc	tơ
+vén	lên áo tấm màn tóc bức
+véo	tai má ti
+vét	sạch của máng đen hết cho đến đó
+vê	lờ nó cho
+vênh	váo vang mặt
+vì	tôi anh đã sao vậy thế chúng nó
+ví	dụ của tiền như và ra tôi cho
+vít	không vào nào để
+víu	vào lấy quá này
+vò	đầu vẽ bản nát ta mình rượu vì
+vòi	nước phun hoa sen rồng tắm trứng tiền
+vòm	họng miệng trời ở của đó
+vòng	tròn quanh tay một cổ qua lại ra
+vó	ngựa mạnh
+vóc	dáng của người và
+vói	một tường đứa
+vón	cục
+vô	cùng tội dụng địch nghĩa ích lý hiệu
+vôi	hóa trắng và
+vông	quá
+võ	sĩ công thuật quán lâm đường đang đài
+võng	mạc
+vù	và
+vùi	trong dập lấp dưới nó đầu ở chúng
+vùng	đất này biển nước núi ngoại quê trung
+vú	em của nuôi anh cô không mẹ thứ
+vút	lên trên
+văn	phòng minh hóa học bản của chương hoá
+văng	ra tục vẳng khắp khỏi cả cái lên
+vĩ	đại cầm độ nhân tuyến mô nhất sao
+vĩnh	viễn biệt hằng cửu xuân thành cữu
+vũ	khí trụ trang công hội lực nữ với
+vũng	nước máu bùn lầy sình
+vơ	vét thôi hắn vào đũa lấy tôi anh
+vơi	đi anh bớt tôi một tư
+vươn	lên tới cao ra đến vai xa tay
+vương	quốc miện đô gia triều của đã sẽ
+vướng	vào bận mắc chân phải víu tay trong
+vườn	của thú địa nhà cây hoa này không
+vưởng	ngoài lang
+vượn	cáo người này và
+vượng	tài chung của cho giác từ và không
+vượt	qua quá ngục xa lên trội ra biên
+vạ	lây vật
+vạc	dầu
+vạch	trần ra đích mặt xuất kế sẵn rõ
+vại	bia tùy nữa à
+vạm	vỡ
+vạn	tuế vật quân người lý lần tên năng
+vạt	của này áo đẹp đó đen và ra
+vả	lại rồi lắm để cho cả vào quá
+vải	lanh liệm và của này đó bông bạt
+vảng	ở quanh gần ngoài trong xung trên đâu
+vảy	rồng xám của nến
+vấn	đề của cho anh về này để với
+vấp	ngã phải vào té chân váp và
+vất	vả vưởng đi vã bỏ nó ra cái
+vấy	bẩn máu trên đầy lên tay
+vần	với đề thơ điệu từ chữ được tên
+vầng	trăng hào dương thái
+vầy	không nè thì là được mà nữa hả
+vẩn	này đó của gì thật ấy nữa thôi
+vẩy	tay cái mấy nước
+vẫn	còn chưa đang là không có ổn ở
+vẫy	tay gọi cờ chào đuôi vùng cái súng
+vận	chuyển tải động
+vật	này của lý thể đó chất có trong
+vậy	thì là sao mà anh nên thôi không
+vắc	xin
+vắn	tắt
+vắng	mặt vẻ nhà bóng quá tanh rồi người
+vắt	sữa kiệt chéo chanh mũi chân óc giò
+vằn	thắn và vện này của đi
+vẳng	trong bên lặng
+vặn	nhỏ cổ vẹo to nó cái chìa nhạc
+vặt	thôi của vãnh cho nữa ở trong như
+vẹn	của trong toàn và là không chứ một
+vẹo	gì của cổ cột
+vẹt	đuôi của trong lông này được
+vẻ	như không là đẹp rất nhé hơi ngoài
+vẽ	một tranh nó ra của cái được lại
+vế	sau thứ thương trước đầu
+vết	thương sẹo của bầm máu nứt gì cắn
+vếu	cô em của to
+về	nhà chuyện việc những phía cái anh nó
+vể	nhà
+vểnh	tai
+vệ	sinh tinh con cô của cho sĩ chúng
+vệt	sáng đỏ mờ máu dài trên màu sao
+vỉ	nướng đập thuốc
+vỉa	hè
+vị	trí thần vua khách của đấy có đã
+vịnh	xuân hắc nô san nhỏ đó xám ba
+vịt	con quay trời của không này và đi
+vọc	cái máy
+vọng	là anh của rằng cô sẽ thế ông
+vọt	lên của ra qua trong về đi
+vỏ	bọc sò đạn não cây tàu ốc xe
+vố	đau lớn rồi
+vốn	dĩ là đã không có đầu từ cho
+vồ	lấy mồi được chúng
+vồng	và kìa rồi ấy
+vỗ	tay cánh mông vào béo về vai nhẹ
+vộ	dụng tội
+vội	vàng vã thế gì lắm quá đâu mà
+vớ	vẩn vẫn được của lấy chân va phải
+với	tôi anh cô một em những nhau chúng
+vớt	được nó linh những chúng lên vát xác
+vờ	như là làm không rằng nữa mình thôi
+vời	nhất của này khi đấy và hơn cho
+vờn	chuột con nhau
+vở	kịch diễn nhạc của này hài và ra
+vởn	trong quanh ở ngoài
+vỡ	ra sọ nó đầu cái rồi mặt của
+vợ	tôi anh của chồng ông mình và con
+vợt	của đó
+vụ	này của án nổ đó giết cho cướp
+vụn	bánh vặt ra này của rồi không trên
+vụng	về trộm dại bánh như đến
+vụt	tắt qua bay mất
+vứt	bỏ đi nó cái hết vào chúng súng
+vừa	mới nói rồi làm có nhận bị được
+vừng	ơi
+vửa	mới rồi
+vữa	động
+vững	chắc vàng mạnh hàng vị nhé lập chãi
+vựa	cỏ
+vực	này của đó cấm thẳm an bầu sâu
+vỹ	đại
+xa	hơn khỏi tôi lạ xôi rồi lắm lộ
+xanh	lá và dương của đó xao là tươi
+xao	nhãng lãng quá động xuyến và lắm cả
+xay	gió ra lúa thịt sinh xỉn của những
+xe	của đi tải buýt này lửa đó tăng
+xem	nào xét này cái có phim nó ai
+xen	vào ngang kẽ vô giữa lẫn
+xi	măng nhê lanh nhan đánh rô và
+xin	chào lỗi phép mời
+xinh	đẹp xắn quá lắm đấy hơn tươi thật
+xiêm	y
+xiên	que nướng thịt cho vào hắn con mày
+xiêu	lòng
+xiếc	của quái này ở gì mặt với ấy
+xiết	chặt cổ nợ bao lại
+xiềng	xích
+xo	hay mất
+xoa	bóp dịu đầu dầu lên bụng lưng tay
+xoang	bệnh mũi của hang
+xoay	sở xở chuyển vòng quanh người lại tròn
+xoi	mói
+xom	lươn
+xong	rồi việc chưa chuyện đâu hết đi thì
+xoong	chảo nồi
+xoàng	xĩnh thôi đâu
+xoá	bỏ sạch sổ hết đi nó tên trí
+xoáy	và nước vào của ở trong đó cấp
+xoăn	của như màu và
+xoắn	ốc lại hết khuẩn quẩy cả tít và
+xu	hướng nào một cho đó của dính lẻ
+xua	đuổi tan đi đàn chúng con được nó
+xui	xẻo khiến quá cho lắm rủi rồi thôi
+xung	quanh đột phong điện động lực trận kích
+xuyên	qua hơn thủng suốt không thời tạc tường
+xuyến	của tay đó
+xuân	quyền năm của ở đến và là này
+xuôi	dòng rồi theo gió hết cả tay và
+xuýt	nữa chút
+xuất	hiện sắc phát bản huyết viện thân chúng
+xuẩn	của ngốc nhất đó này và như gì
+xuống	đi đây dưới và đó ngay đất địa
+xuồng	cứu của với đi lớn máy này về
+xy	ra
+xà	phòng lim lách bông beng quyền lỏn lan
+xài	được hết cái tiền súng nó máy một
+xàm	xí ngôn xỡ nữa đi với xở
+xào	gà nấu xạc về bài bàn bọn
+xày	ra
+xá	tội cho của xị rồi thì và đi
+xác	nhận định
+xách	tay của túi cái đít cho hành hộ
+xám	là xịt của và chi to thôi đã
+xáo	trộn động bài đi
+xáp	lại lá
+xát	giữa vào muối cây thôi ở
+xâm	nhập phạm lược chiếm lăng hại lấn mình
+xâu	xé chuỗi chìa xa
+xây	dựng một nên nhà lại cho đường cái
+xã	hội giao luận à tôi tắc của đã
+xãy	ra
+xé	xác nát toạc ra tan rách nó lẫn
+xém	chút nữa chết tí giết bị quên mất
+xén	lông cỏ gọn bớt
+xéo	đi khỏi ra ngay mau về chúng hết
+xép	của gì ở
+xét	nghiệm xử lại việc của về cho kỹ
+xê	ra dịch út cái
+xì	trum gà hơi ke phé dách xào ra
+xí	của này và nghiệp ngầu trước đó nhất
+xía	vô vào mũi
+xích	mích lại đu đạo hà của ra cho
+xít	đức khốn ở lại chó của này trong
+xíu	thôi nữa của này nào đi đó được
+xòe	tay ra
+xó	xỉnh nào này chợ nhà nó
+xóa	bỏ sổ sạch đi hết nó ký dấu
+xóc	lọ đấy lên một lắm
+xói	mòn tôi
+xóm	của đã mới này nói sẽ tốt nhà
+xót	thương cho của linh lại và chúng xa
+xô	viết đẩy xát nước đã ngã đó vào
+xôi	nhất này của nào hẻo như và đến
+xôn	xao
+xông	vào lên khói ra tới hơi pha thẳng
+xõa	đi tóc
+xù	của xì lông này
+xùm	đó
+xùy	tiền
+xúc	phạm của động xích với tu xắc tác
+xúi	giục quẩy dại bẩy tôi
+xăm	của hình này trên mình đó lên trổ
+xăng	rồi dầu và ở không của để cho
+xơ	cứng rải gan hóa thần múi xác của
+xơi	tái nước đi hết rồi kẹo một nó
+xưa	nữa rồi nay của có cũ như ở
+xưng	tội là hô tên danh mình như bá
+xương	sườn sống của rồng bằng và cốt sọ
+xước	trên da nhỏ thôi gì nào rồi và
+xướng	tên chiến chuyện ngôn ở
+xưởng	đóng của gỗ này chế công giặt làm
+xược	của này với đó cao quá và
+xạ	thủ trị của từ sẽ không ở trong
+xạo	đấy đó đâu ke quá sự với vừa
+xả	hơi súng nước thân láng ra đạn hết
+xảo	quyệt trá của và ngôn nhé thôi mà
+xảy	ra đến tới thai ta nếu với xa
+xấc	láo xược
+xấp	xỉ bài ngửa tài
+xấu	hổ xa xí đi tính là nhất về
+xầm	xì về
+xẩu	của hổ
+xẩy	ra đó
+xập	xệ xình
+xắc	đi và
+xắn	tay của này và nữa ở quá với
+xắp	xếp sếp
+xắt	nó ra
+xằng	bậy
+xẹp	phổi lại xuống bánh
+xẹt	qua
+xẻ	thịt đôi một nó tôi người ra nghé
+xẻng	và của không để đi ở ra
+xẻo	cho quá thay thịt lắm trong của khi
+xế	của xe đã chiều cho giỏi hộp đó
+xếp	hàng cho lại một hình được mọi hạng
+xệ	xuống
+xỉ	nhục vả đó mà với linh của đấy
+xỉa	răng gì xói đến
+xỉn	rồi và của ở không quắc à quá
+xỉnh	nào này của
+xỉu	rồi và khi trong đấy trước luôn mất
+xị	lên mà
+xịn	nhất đấy hơn thật lắm luôn quá và
+xịt	hơi nước thuốc tóc lốp sơn vào côn
+xỏ	tôi mũi lá lỗ khuyên được chân rồi
+xốc	lại
+xối	xả
+xốp	này của kem
+xốt	cà và
+xồm	xoàm
+xổ	số vào ra
+xổm	lên xuống
+xổng	chuồng mất ra hắn mục
+xộ	khám
+xộc	vào xệch
+xộn	này quá ở lắm với của trong và
+xới	tung đất cả
+xở	được để với tốt ra của rất thế
+xứ	sở này của từ và không lý thần
+xức	dầu nước cho
+xứng	đáng với đôi tầm để đang là được
+xừ	nó ra
+xử	lý với như lí tử tốt của hắn
+xửa	ngày chữa
+xực	được
+y	tá như tế học hệt khoa chang vệ
+yên	đó lặng tâm tĩnh bình đây nào nghỉ
+yêu	cầu em anh của quý con thương cô
+yếm	nhau em thế và với anh của không
+yến	mạch đại tiệc xích thập này của trong
+yết	kiến hầu
+yếu	đuối tố của là ớt đi hơn lắm
+yểm	trợ bùa hộ một
+yểu	điệu mệnh đó
+à	không vâng thì mà phải ừ tôi này
+àm	việc
+ào	quá và nữa thế hơn này đó vậy
+á	rập thần hả phiện à đù và châu
+ác	mộng quỷ của độc nhân và mà ý
+ách	nô tắc nào thống bích
+ái	chà nhĩ của tình quốc với da và
+ám	ảnh sát chỉ hiệu của hại thị ở
+án	mạng của này tử binh cho đó mà
+áng	thơ văn chừng
+ánh	sáng mắt mặt đèn nắng trăng dương lửa
+áo	khoác của choàng giáp này cho ra vào
+áp	lực suất dụng đảo đặt bức của giải
+át	chủ của và đi bởi khi lý anh
+áy	náy
+âm	thanh mưu nhạc tính đạo thầm của lại
+ân	huệ xá hận ái điển cần oán nhân
+âu	yếm và của không cũng sẽ lo trong
+ây	da dà không bị sẽ đã chà có
+ãn	của cắp
+ém	nhẹm quân ở
+éo	gì nào quan có biết le đi phải
+ép	buộc tôi anh chúng cô con nó cậu
+ê	này mày thằng nhóc anh cu bồ chề
+êm	ái đẹp xuôi dịu đềm thấm ả ấm
+ì	ra ạch xèo
+í	mà nhỉ
+ích	gì kỷ của cho kỉ lợi thôi đấy
+ín	và lên
+ít	nhất ra hơn tiền người thời nước phút
+ò	e
+òa	khóc
+ó	là đâm ở không đen thể sẽ
+óc	của tôi anh chó hài nó mình hắn
+ói	ra mửa rồi mất không quá đây của
+óng	ánh ả
+ô	tô nhục nhiễm uế danh cửa chữ không
+ôi	chúa trời không lạy mẹ con chao chết
+ôm	em lấy ấp chặt tôi con anh hôn
+ôn	gì hòa lại con dịch này bài đó
+ông	ấy ta có không đã là sẽ biết
+õng	ẹo
+ù	tai lì rồi
+ùa	về đến vào ra
+ùn	tắc
+ùng	ục
+ú	òa của ù ra và ồ
+úa	tàn
+úc	và đã đến cũng là sẽ à có
+úi	chà da giời trời cha
+úm	ba
+úng	không
+úp	mặt xuống mở sọt tay thìa vào cát
+út	của là và không nhà trong
+úy	của à ạ đi không sẽ đã mỹ
+ý	tôi anh tưởng nghĩa kiến của em hay
+ăn	tối cắp thịt đi trưa mừng gì trộm
+ăng	ten ẳng
+đa	số tạ phần dạng nghi cảm là nhân
+đai	của an và cho này đen vô ở
+đam	mê
+đan	mạch rổ len xen vào móc cho xong
+đang	đến trên làm
+đanh	đá thép
+đao	phủ của kiếm này to pháp và thương
+đau	đớn khổ quá lòng không đầu buồn lắm
+đay	nghiến là của đi không
+đe	dọa doạ của những đọa
+đem	lại theo nó đến cái cho về tới
+đen	tối và của đó là không này ở
+đeo	mặt kính nó cái nhẫn một vào găng
+đi	thôi đâu nào với cùng rồi theo tìm
+đia	ngục chỉ
+đinh	huy vào ba đóng ninh hương trên lên
+điên	rồ rồi khùng lên à cuồng thật không
+điêu	khắc luyện tàn này quá toa đó đâu
+điếc	à hả rồi không tai hay đâu và
+điếm	của đó bẩn này và thúi ở mà
+điếng	người
+điếu	thuốc xì văn không đó được này nào
+điềm	báo tĩnh xấu lành gở tốt đạm may
+điền	vào kinh trang tên đầy hết đơn một
+điều	đó gì này tra khiển mà tôi hành
+điểm	của này yếu chung đó cho khác nào
+điển	hình trai của đấy và mà tiếng vậy
+điểu	khiển đó học cáng này
+điện	thoại tử
+điệp	viên của vụ cho này từ khúc đó
+điệu	nhảy của đó bộ này nhạc và nghệ
+đo	ván được lường đạc từ của nhiệt độ
+đoan	với là chắc rằng trang sẽ của ở
+đom	đóm
+đong	đưa đếm đầy trong
+đoàn	kết của tụ tàu xe quân hộ duy
+đoá	hoa
+đoái	hoài thương
+đoán	là xem được vậy thế trước của rằng
+đoạn	phim băng cuối đường này đầu mã kết
+đoạt	lấy giải được lại nó mệnh số mạng
+đoản	kiếm mệnh mạch đao
+đu	quay dây đủ đưa của lên trên và
+đua	xe với ngựa tử này của cho thuyền
+đui	mù mắt rồi sao
+đun	nước sôi nóng nó ít
+đung	đưa
+đuôi	của tàu chúng được tôi ngựa nó dài
+đuốc	lên của lại và đi
+đuối	và của như trong rồi quá để thế
+đuổi	theo việc kịp tôi chúng anh khỏi bắt
+đà	phật điểu nẵng này rồi không vào của
+đài	của chỉ loan phát này truyền và bắc
+đàm	phán của đạo thoại tiếu với cho và
+đàn	ông bà em bò áp của cá gia
+đàng	hoàng kia điếm sau của hay và nào
+đành	phải vậy chịu lòng bó chấp để làm
+đào	tạo nha tẩu bới ngũ thoát sâu mộ
+đàu	tiên
+đày	đọa ải xuống đến đi của ta tớ
+đá	đít vào này và của quý đó bóng
+đái	ra vào dầm thật đường trong cái lên
+đám	cưới đông tang người mây bạn cháy con
+đán	ông
+đáng	lẽ yêu sợ giá được tiếc tin để
+đánh	giá nhau bại thức cắp dấu bom mất
+đáo	quá của hơn để và nhất cho đấy
+đáp	ứng lại xuống trả án lời cho lễ
+đát	rồi thế
+đáy	biển lòng đại của hồ bể sông rồi
+đâm	vào đầu sau chết xuyên xe tôi thủng
+đâu	rồi có vậy đó phải thế không cả
+đây	là không rồi để có nào này và
+đã	làm nói có bị được không chết từng
+đãi	với anh tôi cô của một chúng các
+đãng	trí của và lẽ đó như nhất này
+đãu	rồi
+đãy	là
+đè	lên bẹp nặng nát nén nó hắn chặt
+đèn	đi đỏ xanh lên pin sáng lồng hiệu
+đèo	rắn mẹ rồi lội
+đén	một đây
+đét	đít mông có vào ơi
+đê	tiện hèn mê bảo này tôi chắn bị
+đêm	nay qua đó hôm trước ở mà của
+đên	đây nay bệnh đâu bây giờ lượt
+đênh	trên
+đình	tôi của mình anh này chỉ ta cô
+đích	của thực thân là gì duy đến cao
+đính	hôn ước kèm chính nó cái gì bởi
+đít	mày tôi anh của hắn tao lên nó
+đíu	gì
+đò	của là và
+đòi	hỏi lại tiền nợ được thêm đi quyền
+đòn	bẩy tấn roi này đi của và đánh
+đó	là không có sẽ đã đi chỉ mà
+đóa	hoa hồng lên
+đóan	là xem
+đói	không rồi quá lắm bụng khát và nữa
+đóm	ấy
+đón	nhận con tiếp anh tôi cô em chúng
+đóng	cửa băng vai góp lại đinh gói dấu
+đô	đốc la cho thành một của để đấy
+đôi	khi mắt lúc giày tay chân cánh bàn
+đôn	để và không là rồi với chạy có
+đông	nam bắc người lạnh quá của và máu
+đù	má mẹ này
+đùa	thôi à với tôi đấy đâu giỡn sao
+đùi	của gà tôi và em cô đi cừu
+đùn	đẩy
+đùng	một ra rồi có của là trong lo
+đú	đởn
+đúa	trẻ
+đúc	tiền kết bằng và hơn nhất từ những
+đúm	với suốt
+đúng	giờ rồi vậy
+đúp	nhé và
+đút	lót vào cho cái tiền đầu nó tay
+đăng	nhập ký lên
+đĩa	của này nhạc bay đó hát cho và
+đũa	phép thần của cho này chưa lại không
+đũng	quần
+đơ	rồi ra luôn như mặt người
+đơi	đã chút
+đơm	hoa đặt
+đơn	giản hàng vị thuốc
+đưa	tôi ra anh cho nó cô chúng em
+đưng	có làm yên
+đương	nhiên đầu với đại kim nhiệm thời nổi
+đười	ươi
+đường	đi này phố hầm dây đến cho tới
+được	rồi không chứ gì thôi gặp một đâu
+đạ	bị
+đạc	của và đi trong cá rồi cho ở
+đại	tá úy học ca diện nhân sứ loại
+đạm	và quá của hơn ở bạc nhất này
+đạn	rồi vào dược của không và trong hạt
+đạo	đức của diễn quân luật sinh lý và
+đạp	xe lên của đổ cửa thắng ga đi
+đạt	được đến tới cực mức điểm mục tốc
+đả	thương đảo kích động với ở trong thông
+đảm	bảo là để với lên nhận của rằng
+đản	này quá của thật nhất lắm ở
+đảng	cộng dân của viên phái và quốc người
+đảo	này ngược lộn của đó chính và sắt
+đấm	vào bốc của bóp vỡ thẳng mạnh tôi
+đấng	cứu sáng tối toàn tạo thần quyền nam
+đất	nước của này liền ơi đai và ở
+đấu	với tranh vì trường cho giá sĩ của
+đấy	chứ à là nhé không hả thôi nhỉ
+đầm	lầy của này đìa bích muối đó ấm
+đần	độn này đó thối của kia nào à
+đầu	tiên của với hàng từ tôi tư óc
+đầy	đủ những tớ rẫy máu sức người một
+đẩu	vân tận không
+đẩy	tôi nó đi lùi chúng nhanh anh cô
+đẫm	máu mồ nước lệ rồi cả
+đẫn	của
+đẫy	đà bụng
+đậm	chất đà hơn đặc với và như của
+đập	vỡ vào đầu tay nó nát nhanh tan
+đậu	xe phộng má nành ở mùa thần hũ
+đậy	nó sự cho cái vụ đi dấu là
+đắc	cử lực tội dĩ chí tiền thắng ý
+đắm	tàu chìm trong mình đuối say vào và
+đắn	đo cho phải và của đi đấy nhất
+đắng	cay trong của quá là lòng như nhất
+đắp	cho lại chăn được mặt cái một vào
+đắt	tiền đỏ giá lắm nhất hơn quá thế
+đằng	kia sau này nào trước đó khác ấy
+đẳng	cấp trong của và cộng giới như đó
+đặc	biệt vụ nhiệm ân quyền điểm trưng tính
+đặn	như hơn
+đặng	lệ
+đặt	hàng vé phòng bàn lịch xe tên
+đẹp	quá lắm trai đấy hơn nhất của đẽ
+đẻ	của ra trứng đó con này được cái
+đẽ	của này và nhất gì như đó hơn
+đẽo	theo gọt đi
+đế	chế quốc đã của vương không sẽ và
+đếch	gì quan biết có cần phải thèm nào
+đếm	đến ngược tới được số đi từng xỉa
+đến	nơi rồi lúc
+đếu	gì nào có quan thể
+đề	nghị gì là của cập này về với
+đềm	và của
+đền	bù đáp thờ tội của này cho thánh
+đều	là có biết đã được bị không ổn
+để	tôi làm cho anh lại xem nói chúng
+đểu	cáng giả thật tôi anh này à đấy
+đễ	giữ tôi dàng làm
+đễnh	quá
+đệ	tử nhất của không nhị đã có tam
+đệch	mẹ mợ gì cái nó con nhau
+đệm	của cho lò khí không và ghế là
+đệt	mợ mẹ gì con mày nó một chúng
+đỉ	điếm
+đỉa	ấy
+đỉnh	núi cao của điểm nhất đồi đầu tháp
+địa	chỉ điểm phương
+địch	của nhân thế đang ở đã thủ có
+định	làm đi của nói sẽ mệnh vị được
+đọ	súng sức kiếm được
+đọa	đày của mình và bản trong
+đọc	được sách nó đi báo cho cái về
+đọng	lại trên ở
+đỏ	và là của đó mặt ở không đã
+đỏi	hỏi
+đỏm	dáng
+đỏng	đảnh
+đố	kỵ chữ kị của vui này không anh
+đốc	điều của công đã bang giáo trại muốn
+đối	với mặt xử thủ tượng đầu phó diện
+đốm	sáng lửa của nhỏ đen màu đỏ đó
+đốn	mạt lại ngã củi cây hạ gỗ hắn
+đống	tiền này rác đồ phân đổ lửa lộn
+đốt	cháy lửa nó hết nhà trụi chúng đi
+đồ	khốn ăn của chơi đạc ngu ngốc chó
+đồi	bại trụy này kia và đó núi cát
+đồn	cảnh là về rằng đại điền trú đó
+đồng	ý nghiệp thời
+đổ	lỗi máu bộ tội nát mồ đầy vỡ
+đổi	lịch vé giờ
+đỗ	xe ở lại rồi vào lỗi quyên bên
+đỗi	tự tầm vui
+độ	cao của tuổi và này đó sâu nào
+độc	thân ác lập nhất đáo quyền tài tố
+đội	của quân trưởng hình bóng mũ đặc ngũ
+độn	này của thổ đó và như nhất kia
+động	cơ của vật vào như viên đất lực
+đột	nhập nhiên biến ngột kích quỵ phá xuất
+đới	với nào và đề của ấy
+đớn	và của hơn lắm nhất gì như cho
+đớp	lấy cái
+đờ	đẫn mờ ra người như
+đời	tôi nào mình của này anh còn sống
+đỡ	của hơn được anh đầu tôi cô cho
+đợi	đã chút ở một tôi anh đến được
+đợt	tấn sóng đầu bùng này hạn kiểm tuyển
+đục	thủng lỗ một thả khoét đẽo ngầu như
+đụn	cát
+đụng	vào đến tới độ chạm phải vô xe
+đụt	mưa
+đủ	rồi để tiền cho lâu thời sức thứ
+đủi	cho của
+đứ	đừ
+đứa	trẻ con bé nào nhỏ nhóc em khác
+đức	vua tin mẹ cha chúa giả ông đã
+đứng	dậy lên yên lại đầu đó ở đây
+đứt	tay rồi dây quan động gãy với lìa
+đừng	có lo làm nói để bao đi quên
+đực	rựa ra đầu có và đang của lớn
+đựng	được nổi những của một sự trong thêm
+đựơc	không rồi
+ĩ	lên thế như nữa trên và quá về
+ơ	với đây kìa cái nào không này thế
+ơi	là tôi con anh nhìn mở bố cứu
+ơn	anh vì đi cô ông chúa đã cậu
+ư	là tôi con
+ưa	thích gì tôi nhìn anh nổi chuộng ông
+ưng	ý thuận trảo không rồi của thư và
+ưu	tiên tú thế ái đãi điểm việt của
+ương	ngạnh của bướng này bất sẽ và hoa
+ước	gì mơ của là mình rằng có tính
+ướp	xác lạnh đá hương muối của được thịt
+ướt	hết át nhẹp đẫm sũng rồi như quá
+ưỡn	ngực ẹo
+ạ	và nhưng ta tôi anh con không thì
+ạnh	ấy
+ạt	tiến
+ả	rập ta là đã sẽ đó có không
+ải	của này mỹ
+ảm	đạm ảnh
+ảnh	chụp hưởng của
+ảo	thuật giác tưởng ảnh mộng của trong và
+ấm	áp cúng hơn lên trà của cho và
+ấn	tượng độ nút của bản định vào nó
+ấp	trứng cây của úng nhau nó em và
+ất	ơ không
+ấu	trĩ của dâm trùng dè thơ không mà
+ấy	đã không là sẽ có đang nói đi
+ầm	ĩ lên cả trên vào
+ẩm	ướt thực thấp của mốc trong quá từ
+ẩn	náu dụ mình nấp của danh chứa dật
+ẩu	đả tả
+ập	đến vào tới xuống lên
+ắc	quy qui
+ắn	cắp
+ắng	quá cả một thế
+ắp	những
+ắt	hẳn phải có là sẽ đã
+ẳm	nó em một cổ
+ẵm	nó con em ngửa được
+ẹc	đó
+ẹp	này
+ẻm	không đi ở nào này
+ẻo	lả hả lã
+ếch	có và đó của ngồi mà này đã
+ếm	bùa lên
+ếu	có như
+ện	này gì với đó
+ỉa	ra vào đái đùn chảy lên mà một
+ỉm	đi
+ị	ra đùn lên trong vào một không bậy
+ọe	ra
+ọp	ẹp
+ỏi	còn của như mà và
+ố	ồ ô de vàng là rồi ở
+ốc	sên đảo vít này tai và của ở
+ối	giời trời chà chúa của mẹ rồi cha
+ốm	yếu rồi vì và đau à nặng quá
+ống	nước dẫn thông kính khói tiêm này hút
+ốp	la tường lết
+ồ	không phải vậy vâng tôi thế đúng có
+ồn	ào quá đó và nữa gì lắm thế
+ồng	ộc
+ổ	chuột cứng khóa đĩa của bánh đạn cắm
+ổi	của
+ổn	chứ thôi rồi mà cả định không đấy
+ổng	đã không sẽ là có nói đi đang
+ới	ời
+ớn	lạnh quá rồi lắm lại thật vậy
+ớt	bột và của như này đỏ ngọt nhất
+ờ	thì phải được đúng nhỉ hớ rồi có
+ở	đây đâu đó trong lại nhà bên trên
+ợ	chua nóng hơi hắt một ra
+ợt	ấy
+ụ	súng đất
+ục	ịch
+ủa	mà
+ủi	tôi của cô cho anh và được ở
+ủng	hộ của này
+ủy	ban viên quyền mị thác nhiệm của
+ức	của về chế cốt hiếp đó này anh
+ứng	với cử viên của dụng biến lại thế
+ừ	thì nhỉ đúng phải tôi hứ nhưng anh
+ừa	thì
+ừm	hứ thì anh không tôi và nếu
+ừng	ực
+ửng	hồng lên đỏ

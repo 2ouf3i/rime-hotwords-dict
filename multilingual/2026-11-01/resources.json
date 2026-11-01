@@ -1,0 +1,69 @@
+{
+  "formatVersion": 1,
+  "resources": {
+    "english": {
+      "url": "https://dl.ninan.cloud/dict/english-e6d5f6d8ed2cb791979c29a270328fabebe7db640d5d4cf6686ec7da3689926f.txt",
+      "sha256": "e6d5f6d8ed2cb791979c29a270328fabebe7db640d5d4cf6686ec7da3689926f",
+      "bytes": 1639533,
+      "entries": 131101,
+      "formatVersion": 1,
+      "source": "AOSP LatinIME (Apache-2.0) + Ninan original modern words"
+    },
+    "englishInPinyin": {
+      "url": "https://dl.ninan.cloud/dict/englishInPinyin-97fc0ba2e8b4ef8558f4ac74126c755fd67114e98f933086cba941b35cfffd2d.txt",
+      "sha256": "97fc0ba2e8b4ef8558f4ac74126c755fd67114e98f933086cba941b35cfffd2d",
+      "bytes": 336876,
+      "entries": 23816,
+      "formatVersion": 1,
+      "source": "AOSP LatinIME (Apache-2.0) + Ninan original selection"
+    },
+    "zhuyin": {
+      "url": "https://dl.ninan.cloud/dict/zhuyin-a2ff98dbda2cac268659f70295c662cdc0fab0e636842b88bbd79676a259fd62.dict.yaml",
+      "sha256": "a2ff98dbda2cac268659f70295c662cdc0fab0e636842b88bbd79676a259fd62",
+      "bytes": 6893724,
+      "entries": 172087,
+      "formatVersion": 1,
+      "source": "McBopomofo be6564acad6c (MIT) / libtabe (BSD) + Ninan original phrases"
+    },
+    "japaneseNext": {
+      "url": "https://dl.ninan.cloud/dict/japaneseNext-a3216bb7fd2f2339806d00ac7cbd670be5591c3c480d5ed6ab2b871908a71f69.txt",
+      "sha256": "a3216bb7fd2f2339806d00ac7cbd670be5591c3c480d5ed6ab2b871908a71f69",
+      "bytes": 1229947,
+      "entries": 40294,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org), Mozc BSD/IPAdic + Ninan reviewed phrases"
+    },
+    "korean": {
+      "url": "https://dl.ninan.cloud/dict/korean-c82b660eeb2a71f77f837736b62a65497fa2fadc1c821e2dae24011986383fc8.txt",
+      "sha256": "c82b660eeb2a71f77f837736b62a65497fa2fadc1c821e2dae24011986383fc8",
+      "bytes": 409698,
+      "entries": 30000,
+      "formatVersion": 1,
+      "source": "FrequencyWords 525f9b5, Hermit Dave (CC BY-SA 4.0)"
+    },
+    "koreanNext": {
+      "url": "https://dl.ninan.cloud/dict/koreanNext-eb7ef5820380df481316c3f0b65b8f2ffba4d28000ac89463314103bb600dd4b.txt",
+      "sha256": "eb7ef5820380df481316c3f0b65b8f2ffba4d28000ac89463314103bb600dd4b",
+      "bytes": 506124,
+      "entries": 13834,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org) + Ninan reviewed phrases"
+    },
+    "vietnamese": {
+      "url": "https://dl.ninan.cloud/dict/vietnamese-b59770a3b3f4c5feb918e321cd7f31e791e78c410c60290cca45496383350378.txt",
+      "sha256": "b59770a3b3f4c5feb918e321cd7f31e791e78c410c60290cca45496383350378",
+      "bytes": 68392,
+      "entries": 7111,
+      "formatVersion": 1,
+      "source": "FrequencyWords 525f9b5, Hermit Dave (CC BY-SA 4.0), Vietnamese syllable filter"
+    },
+    "vietnameseNext": {
+      "url": "https://dl.ninan.cloud/dict/vietnameseNext-28390b32fb46a54ccb7b07556bdb66b312710452dfd1dd9bdd0660d9ea481153.txt",
+      "sha256": "28390b32fb46a54ccb7b07556bdb66b312710452dfd1dd9bdd0660d9ea481153",
+      "bytes": 188336,
+      "entries": 4871,
+      "formatVersion": 1,
+      "source": "OPUS OpenSubtitles 2018 (Lison & Tiedemann, 2016; opensubtitles.org) + Ninan reviewed phrases"
+    }
+  }
+}

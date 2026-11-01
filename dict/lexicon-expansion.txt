@@ -7558,3 +7558,242 @@
 跟您确认	1000	gen nin que ren
 通宵值班	1000	tong xiao zhi ban
 通过审批	1000	tong guo shen pi
+
+# 第十二批：2026-11-01，237 个已复核新增词音；证据见 docs/handoff/2026-11-01-multilingual-lexicon.md。
+我再想想办法	1000	wo zai xiang xiang ban fa
+我备注一下	1000	wo bei zhu yi xia
+帮我再确认一下	1000	bang wo zai que ren yi xia
+麻烦再确认一下	1000	ma fan zai que ren yi xia
+我再核对一遍	1000	wo zai he dui yi bian
+我再确认一遍	1000	wo zai que ren yi bian
+我再检查一遍	1000	wo zai jian cha yi bian
+我先核对一下	1000	wo xian he dui yi xia
+我先检查一下	1000	wo xian jian cha yi xia
+我先确认一下	1000	wo xian que ren yi xia
+晚点给你答复	1000	wan dian gei ni da fu
+晚点给你回复	1000	wan dian gei ni hui fu
+稍后给你回复	1000	shao hou gei ni hui fu
+稍后再回复你	1000	shao hou zai hui fu ni
+我看到就回复	1000	wo kan dao jiu hui fu
+我忙完回复你	1000	wo mang wan hui fu ni
+方便了联系我	1000	fang bian le lian xi wo
+方便了回复我	1000	fang bian le hui fu wo
+有空回我一下	1000	you kong hui wo yi xia
+麻烦重新发一下	1000	ma fan chong xin fa yi xia
+麻烦再发一遍	1000	ma fan zai fa yi bian
+你再发我一次	1000	ni zai fa wo yi ci
+你再发我一下	1000	ni zai fa wo yi xia
+我重新发给你	1000	wo chong xin fa gei ni
+我再发给你一遍	1000	wo zai fa gei ni yi bian
+我把地址发给你	1000	wo ba di zhi fa gei ni
+我把定位发给你	1000	wo ba ding wei fa gei ni
+我把文件发给你	1000	wo ba wen jian fa gei ni
+请确认一下地址	1000	qing que ren yi xia di zhi
+请核对一下地址	1000	qing he dui yi xia di zhi
+麻烦核对地址	1000	ma fan he dui di zhi
+帮我核对地址	1000	bang wo he dui di zhi
+地址发错了	1000	di zhi fa cuo le
+地址写错了	1000	di zhi xie cuo le
+地址改过来了	1000	di zhi gai guo lai le
+联系方式没变	1000	lian xi fang shi mei bian
+收件地址没变	1000	shou jian di zhi mei bian
+收件电话	1000	shou jian dian hua
+核对地址	1000	he dui di zhi
+联系收货人	1000	lian xi shou huo ren
+联系寄件人	1000	lian xi ji jian ren
+寄件信息	1000	ji jian xin xi
+包裹寄出了	1000	bao guo ji chu le
+包裹收到了	1000	bao guo shou dao le
+快递寄出了	1000	kuai di ji chu le
+快递已经到了	1000	kuai di yi jing dao le
+我去取一下快递	1000	wo qu qu yi xia kuai di
+我还没取快递	1000	wo hai mei qu kuai di
+我已经取到了	1000	wo yi jing qu dao le
+麻烦代收一下	1000	ma fan dai shou yi xia
+帮我代收一下	1000	bang wo dai shou yi xia
+快递放门口了	1000	kuai di fang men kou le
+快递放前台了	1000	kuai di fang qian tai le
+放在前台就行	1000	fang zai qian tai jiu xing
+放在门口就行	1000	fang zai men kou jiu xing
+我让同事拿一下	1000	wo rang tong shi na yi xia
+麻烦先帮我放着	1000	ma fan xian bang wo fang zhe
+到了给我电话	1000	dao le gei wo dian hua
+到了给我打电话	1000	dao le gei wo da dian hua
+签收照片	1000	qian shou zhao pian
+寄件记录	1000	ji jian ji lu
+物流明细	1000	wu liu ming xi
+物流轨迹	1000	wu liu gui ji
+运单详情	1000	yun dan xiang qing
+收货备注	1000	shou huo bei zhu
+售后进度	1	shou hou jin du
+退款进度	1000	tui kuan jin du
+换货运费	1000	huan huo yun fei
+补寄地址	1000	bu ji di zhi
+退回地址	1000	tui hui di zhi
+退款已到账	1000	tui kuan yi dao zhang
+退款还没到	1000	tui kuan hai mei dao
+换货寄出了	1000	huan huo ji chu le
+补发已寄出	1000	bu fa yi ji chu
+麻烦尽快补发	1000	ma fan jin kuai bu fa
+麻烦尽快退款	1000	ma fan jin kuai tui kuan
+我先申请退款	1000	wo xian shen qing tui kuan
+我申请退货了	1000	wo shen qing tui huo le
+我把单号发给你	1000	wo ba dan hao fa gei ni
+我刚到地铁站	1000	wo gang dao di tie zhan
+我已经上地铁了	1000	wo yi jing shang di tie le
+我刚上地铁	1000	wo gang shang di tie
+我已经下地铁了	1000	wo yi jing xia di tie le
+我已经上车了	1000	wo yi jing shang che le
+我先叫个车	1000	wo xian jiao ge che
+我先打个车	1000	wo xian da ge che
+我刚打到车	1000	wo gang da dao che
+我还没打到车	1000	wo hai mei da dao che
+我快到公司了	1000	wo kuai dao gong si le
+我快到你家了	1000	wo kuai dao ni jia le
+我快到楼下了	1000	wo kuai dao lou xia le
+我已经到楼下了	1000	wo yi jing dao lou xia le
+我已经到门口了	1000	wo yi jing dao men kou le
+我到门口等你	1000	wo dao men kou deng ni
+我到楼下等你	1000	wo dao lou xia deng ni
+我在楼下等你	1000	wo zai lou xia deng ni
+我先过去等你	1000	wo xian guo qu deng ni
+我先进去等你	1000	wo xian jin qu deng ni
+我先进去看看	1000	wo xian jin qu kan kan
+我先去找个位置	1000	wo xian qu zhao ge wei zhi
+帮我留个位置	1000	bang wo liu ge wei zhi
+给我留个位置	1000	gei wo liu ge wei zhi
+到了发我消息	1000	dao le fa wo xiao xi
+到了发个消息	1000	dao le fa ge xiao xi
+到家发个消息	1000	dao jia fa ge xiao xi
+我出门跟你说	1000	wo chu men gen ni shuo
+我到了跟你说	1000	wo dao le gen ni shuo
+我到家跟你说	1000	wo dao jia gen ni shuo
+我到了告诉你	1000	wo dao le gao su ni
+你到家告诉我	1000	ni dao jia gao su wo
+你出发告诉我	1000	ni chu fa gao su wo
+出发前跟我说	1000	chu fa qian gen wo shuo
+到家记得说一声	1000	dao jia ji de shuo yi sheng
+路上稍微有点堵	1000	lu shang shao wei you dian du
+路上有些堵车	1000	lu shang you xie du che
+可能稍微晚点	1000	ke neng shao wei wan dian
+可能晚到一会	1000	ke neng wan dao yi hui
+我会晚到一会	1000	wo hui wan dao yi hui
+我大概晚十分钟	1000	wo da gai wan shi fen zhong
+我大概晚五分钟	1000	wo da gai wan wu fen zhong
+我马上到楼下	1000	wo ma shang dao lou xia
+等我换个衣服	1000	deng wo huan ge yi fu
+等我收拾一下	1000	deng wo shou shi yi xia
+等我洗漱一下	1000	deng wo xi shu yi xia
+等我吃点东西	1000	deng wo chi dian dong xi
+我先吃点东西	1000	wo xian chi dian dong xi
+我先喝口水	1000	wo xian he kou shui
+我先休息一下	1000	wo xian xiu xi yi xia
+我先缓一缓	1000	wo xian huan yi huan
+我先处理一下	1000	wo xian chu li yi xia
+我忙完跟你说	1000	wo mang wan gen ni shuo
+我忙完联系你	1000	wo mang wan lian xi ni
+我忙完找你	1000	wo mang wan zhao ni
+我处理完找你	1000	wo chu li wan zhao ni
+我弄好了告诉你	1000	wo nong hao le gao su ni
+我确认好告诉你	1000	wo que ren hao gao su ni
+我问一下再说	1000	wo wen yi xia zai shuo
+我问完告诉你	1000	wo wen wan gao su ni
+明天再跟你说	1000	ming tian zai gen ni shuo
+晚上再跟你说	1000	wan shang zai gen ni shuo
+下班再跟你说	1000	xia ban zai gen ni shuo
+等见面再说	1000	deng jian mian zai shuo
+等你有空再说	1000	deng ni you kong zai shuo
+等你忙完再说	1000	deng ni mang wan zai shuo
+有消息告诉我	1000	you xiao xi gao su wo
+有结果告诉我	1000	you jie guo gao su wo
+有进展告诉我	1000	you jin zhan gao su wo
+我再找找看	1000	wo zai zhao zhao kan
+我再问问看	1000	wo zai wen wen kan
+我再试试看	1000	wo zai shi shi kan
+我再研究一下	1000	wo zai yan jiu yi xia
+我先了解一下	1000	wo xian liao jie yi xia
+我先问问情况	1000	wo xian wen wen qing kuang
+我先看下情况	1000	wo xian kan xia qing kuang
+确认会议时间	1000	que ren hui yi shi jian
+确认开会时间	1000	que ren kai hui shi jian
+确认参会人员	1000	que ren can hui ren yuan
+确认会议室	1000	que ren hui yi shi
+会议改时间了	1000	hui yi gai shi jian le
+会议提前了	1000	hui yi ti qian le
+会议推迟了	1000	hui yi tui chi le
+会议取消了	1000	hui yi qu xiao le
+会议结束了	1000	hui yi jie shu le
+会议纪要发我	1000	hui yi ji yao fa wo
+会议记录发我	1000	hui yi ji lu fa wo
+我把纪要发你	1000	wo ba ji yao fa ni
+我先整理纪要	1000	wo xian zheng li ji yao
+整理会议记录	1000	zheng li hui yi ji lu
+整理会议纪要	1000	zheng li hui yi ji yao
+会议室预订	1000	hui yi shi yu ding
+明天方便开会吗	1000	ming tian fang bian kai hui ma
+下午方便开会吗	1000	xia wu fang bian kai hui ma
+方便语音聊吗	1000	fang bian yu yin liao ma
+方便电话聊吗	1000	fang bian dian hua liao ma
+方便聊几分钟吗	1000	fang bian liao ji fen zhong ma
+有空聊几分钟吗	1000	you kong liao ji fen zhong ma
+麻烦看一下邮件	1000	ma fan kan yi xia you jian
+麻烦查收附件	1000	ma fan cha shou fu jian
+附件已上传	1000	fu jian yi shang chuan
+附件发错了	1000	fu jian fa cuo le
+附件打不开	1000	fu jian da bu kai
+附件下载不了	1000	fu jian xia zai bu liao
+链接已过期	1000	lian jie yi guo qi
+链接失效了	1000	lian jie shi xiao le
+链接重新发我	1000	lian jie chong xin fa wo
+文件打不开了	1000	wen jian da bu kai le
+文件重新发我	1000	wen jian chong xin fa wo
+文件发错了	1000	wen jian fa cuo le
+文件已更新	1000	wen jian yi geng xin
+表格已更新	1000	biao ge yi geng xin
+资料已更新	1000	zi liao yi geng xin
+我改好发给你	1000	wo gai hao fa gei ni
+我修改后发你	1000	wo xiu gai hou fa ni
+我整理后发你	1000	wo zheng li hou fa ni
+我确认后发你	1000	wo que ren hou fa ni
+麻烦核对金额	1000	ma fan he dui jin e
+麻烦核对数量	1000	ma fan he dui shu liang
+麻烦确认数量	1000	ma fan que ren shu liang
+麻烦确认金额	1000	ma fan que ren jin e
+麻烦确认日期	1000	ma fan que ren ri qi
+麻烦确认时间	1000	ma fan que ren shi jian
+帮我确认时间	1000	bang wo que ren shi jian
+帮我确认日期	1000	bang wo que ren ri qi
+我补充一下	1000	wo bu chong yi xia
+我更新一下	1000	wo geng xin yi xia
+我调整一下	1000	wo tiao zheng yi xia
+我记录一下	1000	wo ji lu yi xia
+我登记一下	1000	wo deng ji yi xia
+我催一下进度	1000	wo cui yi xia jin du
+我跟进一下	1000	wo gen jin yi xia
+签收回执	1000	qian shou hui zhi
+付款回执	1000	fu kuan hui zhi
+转账回执	1000	zhuan zhang hui zhi
+汇款回执	1000	hui kuan hui zhi
+申请回执	1000	shen qing hui zhi
+审批回执	1000	shen pi hui zhi
+报销明细	1000	bao xiao ming xi
+开票明细	1000	kai piao ming xi
+付款明细	1000	fu kuan ming xi
+收款明细	1000	shou kuan ming xi
+报销材料	1000	bao xiao cai liao
+报销附件	1000	bao xiao fu jian
+报销凭据	1000	bao xiao ping ju
+费用凭据	1000	fei yong ping ju
+付款凭据	1000	fu kuan ping ju
+收款凭据	1000	shou kuan ping ju
+转账凭据	1000	zhuan zhang ping ju
+汇款凭据	1000	hui kuan ping ju
+支付截图	1000	zhi fu jie tu
+我核对好再发	1000	wo he dui hao zai fa
+我检查好再发	1000	wo jian cha hao zai fa
+我确认好再发	1000	wo que ren hao zai fa
+我再改一下	1000	wo zai gai yi xia
+我再调整一下	1000	wo zai tiao zheng yi xia
+我再完善一下	1000	wo zai wan shan yi xia
+我补好发给你	1000	wo bu hao fa gei ni
+我补齐发给你	1000	wo bu qi fa gei ni

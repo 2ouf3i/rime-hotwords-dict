@@ -170,3 +170,7 @@ node --test scripts/build-pinyin-dict.test.mjs scripts/build-pinyin-readings-pre
 ## Sources and licenses
 
 See [NOTICE.md](NOTICE.md) for upstream data, attribution, and input provenance. The application and its source code are not part of this data repository.
+
+## 2026-11-01 release snapshots
+
+Chinese `02f00398`: 237 reviewed forms, frozen inputs under `inputs/2026-11-01-round12`; run `scripts/reproduce-02f00398.sh` with the pinned upstream. The separate eight-resource multilingual snapshot, per-resource attribution and exact-copy verification are under `multilingual/2026-11-01`. These snapshots do not imply any individual device has loaded them.
