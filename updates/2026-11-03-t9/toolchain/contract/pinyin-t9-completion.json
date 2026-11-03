@@ -1,0 +1,13 @@
+{
+  "values": {
+    "minInputLength": 3,
+    "maxInputLength": 20,
+    "maxSuggestions": 7,
+    "schemaId": "ninan_t9",
+    "leadRatio": 2,
+    "maxStoredChoices": 128
+  },
+  "buildValues": {
+    "maxWords": 16000
+  }
+}

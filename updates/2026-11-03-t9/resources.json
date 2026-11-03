@@ -1,0 +1,15 @@
+{
+  "mainSourceRelease": "https://github.com/2ouf3i/rime-hotwords-dict/releases/tag/dict-9e926c40",
+  "mainSHA256": "25bc6eb04b4fdee7f53f314bbb3800cfd10b6d2a15f9256806f664c00c33d2ce",
+  "upstreamRef": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
+  "files": {
+    "next_word.tsv": {
+      "sha256": "e046a42eb61b812668563648070b5780ac3340d834f1f8013c9a55485997c692",
+      "bytes": 1647764
+    },
+    "t9_completions.tsv": {
+      "sha256": "80222e64651180182b0e243c2a3eb9dfc5cdad7ce2b04ef7957aa9929d2a2c5f",
+      "bytes": 1280527
+    }
+  }
+}
