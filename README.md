@@ -187,3 +187,7 @@ Chinese `9e926c40`: 701 reviewed new forms/readings, frozen inputs `inputs/2026-
 ## 2026-11-13 Chinese and T9 paired update
 
 Chinese 08ec8f18 adds 165 forms (including one homophone guard) and 47 existing-word explicit readings. Exact main inputs and the builder are in inputs/2026-11-13-t9-round2 and scripts/reproduce-08ec8f18.sh. The paired T9 source, original review rows, exact build toolchain and independent weights are in updates/2026-11-13-t9-round2; all prior lexemes/forms/weights and numeric keys are retained. Public data availability does not imply any device has loaded it.
+
+## 2026-11-13 conversational ranking update
+
+Chinese 8ce298b0 retunes existing conversational readings; paired T9 retains full prior coverage and makes room for initials recall. Exact frozen inputs and reproduction are under inputs/2026-11-13-t9-homocode, scripts/reproduce-8ce298b0.sh and updates/2026-11-13-t9-homocode. No new corpus or personal data.

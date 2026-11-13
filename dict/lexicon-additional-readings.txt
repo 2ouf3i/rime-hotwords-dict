@@ -5,7 +5,7 @@
 # 2026-11-13 九宫格日常短语第二批：人工复核明确读音，沿用副表原有权重，不重算旧值。
 中午好	60000	zhong wu hao
 在忙吗	60000	zai mang ma
-可以呀	100	ke yi ya
+可以呀	20000	ke yi ya
 周五晚上	100	zhou wu wan shang
 周六下午	100	zhou liu xia wu
 改天再约	100	gai tian zai yue
@@ -29,9 +29,9 @@
 剩余电量	100	sheng yu dian liang
 语音转文字	100	yu yin zhuan wen zi
 按时吃药	100	an shi chi yao
-预约挂号	100	yu yue gua hao
+预约挂号	20000	yu yue gua hao
 复查时间	100	fu cha shi jian
-接孩子	100	jie hai zi
+接孩子	20000	jie hai zi
 放学以后	100	fang xue yi hou
 爸妈放心	100	ba ma fang xin
 想吃点啥	100	xiang chi dian sha

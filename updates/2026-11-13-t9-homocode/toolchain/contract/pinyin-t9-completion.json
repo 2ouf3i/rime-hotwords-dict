@@ -1,0 +1,665 @@
+{
+  "name": "pinyin-t9-completion",
+  "version": 6,
+  "requireSymbols": true,
+  "_note": "九宫格有界v3共享词元索引：完整码比较频次、末音节补全、简拼及复用原生页的尾部组句共用数据。无新增逐键引擎、宿主或IO调用。原生未知组句用低置信度回落，显式个人选择优先；全拼双拼不变。v5(2026-11-13):单字/单音节首选保护——原生首选是单字且读音正好是整个输入时补全不抢首选;输入正好是一个完整音节而首选是原生多字切分时,读音吻合的第一个原生单字提到首位(只读同一页原生注解,先查音节码集合)。选词偏好可另存选中候选的读音(可选字段,旧记录照常读),补全索引外的词也能召回前缀;字形与当前输出不同不召回;前缀召回仍从3位起,2位数字不在范围内。 v6(2026-11-13):整词声母简拼与末音节补全分别保留召回渠道；最强拼音补全仍在前，一个简拼可提前至第二补全位。原生首选／单音节与个人选择保护不变，最多7项内存操作。",
+  "_scope": "保持明确选音约束；基础查键3–20位，长句只复用最多8个原生候选中的最多3个有效前缀，每个取最多3个尾词，最终最多7项。无确认汉字、光标在末尾时可用；不在打字中更新索引。",
+  "_source": "scripts/gen-t9-completions.mjs；随包Apache核心、原创审核短语及聊天常用词「索引外词表」backend/dict/t9-chat-words.txt（编辑权重，绕过词频截断）。--dictionary --out 绑定同一审核后主词库快照、只核对词表词形与读音，2026-11-13 起不再用它重算词频（11-03 的几何均值把权重整体抬高约10倍、单字与前缀首选变差），独立表与随包表同一权重刻度，产物独立数据OTA；不将完整GPL词库打进App。v3共享词元ID，繁体预转换，v1/v2读兼容。；保留基础频次的前6个稳定召回位置，再融合一个更新频次来源，避免频次更新删除常用候选。 同日同码调序：第七槽可给不弱于正常回落词权重的最佳整词简拼，保留所选词元元数据，避免桶换位丢读音／繁体或个人召回。",
+  "values": {
+    "minInputLength": 3,
+    "maxInputLength": 20,
+    "maxSuggestions": 7,
+    "schemaId": "ninan_t9",
+    "leadRatio": 2,
+    "maxStoredChoices": 128
+  },
+  "consumers": [
+    {
+      "platform": "apple",
+      "path": "apps/apple/Shared/PinyinSecondOpinion.swift",
+      "symbol": "PinyinT9CompletionIndex",
+      "status": "已建",
+      "symbols": {
+        "minInputLength": "minInputLength",
+        "maxInputLength": "maxInputLength",
+        "maxSuggestions": "maxSuggestions",
+        "schemaId": "schemaId",
+        "leadRatio": "leadRatio",
+        "maxStoredChoices": "maxStoredChoices"
+      }
+    },
+    {
+      "platform": "android",
+      "path": "apps/android/app/src/main/java/ai/ninan/android/features/pinyin/PinyinSecondOpinion.kt",
+      "symbol": "PinyinT9CompletionIndex",
+      "status": "已建",
+      "symbols": {
+        "minInputLength": "MIN_INPUT_LENGTH",
+        "maxInputLength": "MAX_INPUT_LENGTH",
+        "maxSuggestions": "MAX_SUGGESTIONS",
+        "schemaId": "SCHEMA_ID",
+        "leadRatio": "LEAD_RATIO",
+        "maxStoredChoices": "MAX_STORED_CHOICES"
+      }
+    }
+  ],
+  "rankingCases": [
+    {
+      "name": "未完成高频词可成为首选",
+      "input": "5468",
+      "main": [
+        "妓女",
+        "奇偶",
+        "积木"
+      ],
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        },
+        {
+          "main": 2
+        }
+      ]
+    },
+    {
+      "name": "高频词已在原生页里也保留真实下标",
+      "input": "74366",
+      "main": [
+        "切莫",
+        "什么",
+        "启动"
+      ],
+      "expect": [
+        {
+          "main": 1
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 2
+        }
+      ]
+    },
+    {
+      "name": "用户主动选择原完整词优先",
+      "input": "5468",
+      "main": [
+        "妓女",
+        "奇偶"
+      ],
+      "preferred": "妓女",
+      "expect": [
+        {
+          "main": 0
+        },
+        {
+          "probe": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "持久化偏好不在候选里不插造词",
+      "input": "5468",
+      "main": [
+        "妓女",
+        "奇偶"
+      ],
+      "preferred": "别的输入",
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "未知组句不压住明确高频补全",
+      "input": "5468",
+      "main": [
+        "用户自造词",
+        "妓女"
+      ],
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "原生已经选中另一补全时尊重引擎上下文",
+      "input": "2848",
+      "main": [
+        "不会",
+        "不顾"
+      ],
+      "expect": [
+        {
+          "main": 0
+        },
+        {
+          "probe": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "无首选也能提供补全",
+      "input": "5468",
+      "main": [],
+      "expect": [
+        {
+          "probe": 0
+        }
+      ]
+    },
+    {
+      "name": "明确选音不混入别的首音节",
+      "input": "lin'8",
+      "main": [
+        "林涛"
+      ],
+      "expect": [
+        {
+          "main": 0
+        }
+      ]
+    },
+    {
+      "name": "完整码不改原生排序",
+      "input": "5468426",
+      "main": [
+        "今天",
+        "金田"
+      ],
+      "expect": [
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "繁体词频与简体一致",
+      "input": "5468",
+      "main": [
+        "妓女",
+        "奇偶"
+      ],
+      "traditional": true,
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    },
+    {
+      "name": "原生单字读音拼满输入时补全不抢首选",
+      "input": "244",
+      "main": [
+        "吃",
+        "持",
+        "池"
+      ],
+      "comments": [
+        "chi",
+        "chi",
+        "chi"
+      ],
+      "expect": [
+        {
+          "main": 0
+        },
+        {
+          "probe": 0
+        },
+        {
+          "main": 1
+        },
+        {
+          "main": 2
+        }
+      ]
+    },
+    {
+      "name": "没有读音注解时照旧按词频领先",
+      "input": "244",
+      "main": [
+        "吃",
+        "持",
+        "池"
+      ],
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        },
+        {
+          "main": 2
+        }
+      ]
+    },
+    {
+      "name": "单音节输入的多字切分让位给读音吻合的单字",
+      "input": "8426",
+      "main": [
+        "提案",
+        "天",
+        "条"
+      ],
+      "comments": [
+        "ti'an",
+        "tian",
+        "tiao"
+      ],
+      "expect": [
+        {
+          "main": 1
+        },
+        {
+          "main": 0
+        },
+        {
+          "probe": 0
+        },
+        {
+          "main": 2
+        }
+      ]
+    },
+    {
+      "name": "不是单音节输入时多字首选不动",
+      "input": "5468",
+      "main": [
+        "妓女",
+        "奇偶"
+      ],
+      "comments": [
+        "ji'nv",
+        "ji'ou"
+      ],
+      "expect": [
+        {
+          "probe": 0
+        },
+        {
+          "main": 0
+        },
+        {
+          "main": 1
+        }
+      ]
+    }
+  ],
+  "readingCases": [
+    {
+      "input": "5468",
+      "probe": "jin'tian",
+      "expect": "jin't"
+    },
+    {
+      "input": "jin'8",
+      "probe": "jin'tian",
+      "expect": "jin't"
+    },
+    {
+      "input": "54684",
+      "probe": "jin'tian",
+      "expect": "jin'ti"
+    },
+    {
+      "input": "546842",
+      "probe": "jin'tian",
+      "expect": "jin'tia"
+    },
+    {
+      "input": "965468",
+      "probe": "wo'jin'tian",
+      "expect": "wo'jin't"
+    },
+    {
+      "input": "jue'3",
+      "probe": "jue'de",
+      "expect": "jue'd"
+    }
+  ],
+  "rankingLexicon": "#t9-completion v2\n#weight\t不会\t不會\t68739\n#weight\t不过\t不過\t103577\n#weight\t不顾\t不顧\t1901\n#weight\t什么\t什麼\t295403\n#weight\t今天\t今天\t109961\n#weight\t切莫\t切莫\t129\n#weight\t启动\t啟動\t10251\n#weight\t妓女\t妓女\t1218\n#weight\t积木\t積木\t169\n#weight\t爱好\t愛好\t50000\n#weight\t天气\t天氣\t400\n2848\tbu'guo\t不过\t不過\t28486\n2848\tbu'hui\t不会\t不會\t28484\n5468\tjin'tian\t今天\t今天\t5468426\n74366\tshen'me\t什么\t什麼\t743663\n74366\tqi'dong\t启动\t啟動\t743664\n244\tai'hao\t爱好\t愛好\t24426\n8426\ttian'qi\t天气\t天氣\t84267\n",
+  "buildValues": {
+    "maxWords": 16000
+  },
+  "displayCases": [
+    {
+      "name": "两键推荐只显示首字母",
+      "preedit": "8'5",
+      "comment": "tui'jian",
+      "expect": "t'j"
+    },
+    {
+      "name": "个人提交首选同样不展开",
+      "preedit": "8'5",
+      "comment": "ti'jiao",
+      "expect": "t'j"
+    },
+    {
+      "name": "无分隔符的两键",
+      "preedit": "85",
+      "comment": "tui'jian",
+      "expect": "t'j"
+    },
+    {
+      "name": "全拼接简拼",
+      "preedit": "884'5",
+      "comment": "tui'jian",
+      "expect": "tui'j"
+    },
+    {
+      "name": "完整输入显示全拼",
+      "preedit": "884'5426",
+      "comment": "tui'jian",
+      "expect": "tui'jian"
+    },
+    {
+      "name": "退格不带出尚未输入的末字母",
+      "preedit": "884'542",
+      "comment": "tui'jian",
+      "expect": "tui'jia"
+    },
+    {
+      "name": "简拼接全拼",
+      "preedit": "6426",
+      "comment": "ni'hao",
+      "expect": "n'hao"
+    },
+    {
+      "name": "新索引纠正原生分段",
+      "preedit": "54'68",
+      "comment": "jin't",
+      "expect": "jin't"
+    },
+    {
+      "name": "新索引完整读音仍需截短",
+      "preedit": "54'68",
+      "comment": "jin'tian",
+      "expect": "jin't"
+    },
+    {
+      "name": "已选汉字保留",
+      "preedit": "你8'5",
+      "comment": "tui'jian",
+      "expect": "你t'j"
+    },
+    {
+      "name": "已确认的拼音不重复",
+      "preedit": "ni'85",
+      "comment": "ni'tui'jian",
+      "expect": "ni't'j"
+    },
+    {
+      "name": "候选有未开始的音节也不显示",
+      "preedit": "ni426",
+      "comment": "ni'gan'ma",
+      "expect": "ni'gan"
+    },
+    {
+      "name": "空格注解统一分隔",
+      "preedit": "8'5",
+      "comment": "tui jian",
+      "expect": "t'j"
+    },
+    {
+      "name": "标点注解不注入宿主",
+      "preedit": "85",
+      "comment": "※",
+      "expect": "85"
+    },
+    {
+      "name": "不匹配的注解保持原显示",
+      "preedit": "85",
+      "comment": "ni'hao",
+      "expect": "85"
+    },
+    {
+      "name": "纯字母全拼原样",
+      "preedit": "tuijian",
+      "comment": "tui'jian",
+      "expect": "tuijian"
+    }
+  ],
+  "_display": "显示按实际按键匹配当前读音的已输入前缀：85→t'j，8845→tui'j；简拼／全拼可混输，保留已选汉字与已确认字母，不展开未输入的尾音节。不可匹配时保留原显示。仅显示规则，词频／学习／索引与其限额不变。",
+  "learningLexicon": "#t9-completion v3\nW\t0\tjin'tian\t今天\t今天\t109961\nK\t5468\t0\n",
+  "learningCases": [
+    {
+      "name": "补全索引外的词按选词读音召回前缀",
+      "record": [
+        {
+          "input": "943943",
+          "word": "谢谢",
+          "reading": "xie'xie"
+        }
+      ],
+      "input": "9439",
+      "main": [
+        "这样",
+        "五个亿",
+        "这些"
+      ],
+      "comments": [
+        "zhe'yang",
+        "wu'ge'yi",
+        "zhe'xie"
+      ],
+      "expectTexts": [
+        "谢谢",
+        "这样",
+        "五个亿",
+        "这些"
+      ]
+    },
+    {
+      "name": "明确选音的输入也能记读音",
+      "record": [
+        {
+          "input": "xie'94",
+          "word": "谢谢",
+          "reading": "xie'xie"
+        }
+      ],
+      "input": "94394",
+      "main": [
+        "这一",
+        "协议"
+      ],
+      "comments": [
+        "zhe'yi",
+        "xie'yi"
+      ],
+      "expectTexts": [
+        "谢谢",
+        "这一",
+        "协议"
+      ]
+    },
+    {
+      "name": "繁体记下的只在出繁体时召回",
+      "record": [
+        {
+          "input": "943943",
+          "word": "謝謝",
+          "reading": "xie'xie",
+          "traditional": true
+        }
+      ],
+      "input": "94394",
+      "traditional": true,
+      "main": [
+        "這一",
+        "協議"
+      ],
+      "comments": [
+        "zhe'yi",
+        "xie'yi"
+      ],
+      "expectTexts": [
+        "謝謝",
+        "這一",
+        "協議"
+      ]
+    },
+    {
+      "name": "字形对不上当前输出不召回",
+      "record": [
+        {
+          "input": "943943",
+          "word": "謝謝",
+          "reading": "xie'xie",
+          "traditional": true
+        }
+      ],
+      "input": "94394",
+      "main": [
+        "这一",
+        "协议"
+      ],
+      "comments": [
+        "zhe'yi",
+        "xie'yi"
+      ],
+      "expectTexts": [
+        "这一",
+        "协议"
+      ]
+    },
+    {
+      "name": "读音与输入对不上不记",
+      "record": [
+        {
+          "input": "5468",
+          "word": "谢谢",
+          "reading": "xie'xie"
+        }
+      ],
+      "input": "9439",
+      "main": [
+        "这样",
+        "五个亿"
+      ],
+      "comments": [
+        "zhe'yang",
+        "wu'ge'yi"
+      ],
+      "expectTexts": [
+        "这样",
+        "五个亿"
+      ]
+    },
+    {
+      "name": "两位数字不在前缀召回范围",
+      "record": [
+        {
+          "input": "943943",
+          "word": "谢谢",
+          "reading": "xie'xie"
+        }
+      ],
+      "input": "99",
+      "main": [
+        "只为",
+        "微信"
+      ],
+      "comments": [
+        "zhi'wei",
+        "wei'xin"
+      ],
+      "expectTexts": [
+        "只为",
+        "微信"
+      ]
+    }
+  ],
+  "_learning": "learningCases:用 learningLexicon 建索引、新建偏好,逐条 learnedChoice + record(traditional 缺省 false)后存盘重载,再以 input 取补全(含 preferred / preferredReading)并 merge(含 comments),比较前若干条的文字。",
+  "initialsLexicon": "#t9-completion v3\nW\t0\tji'xu\t继续\t繼續\t37700\nW\t1\tji'yi\t记忆\t記憶\t6384\nW\t2\tjie'hai'zi\t接孩子\t接孩子\t1000\nK\t549\t0 1 2/j'h'z\n",
+  "initialsCases": [
+    {
+      "input": "549",
+      "expect": [
+        "继续",
+        "接孩子",
+        "记忆"
+      ]
+    },
+    {
+      "input": "ji'9",
+      "expect": [
+        "继续",
+        "记忆"
+      ]
+    },
+    {
+      "input": "549",
+      "preferred": "记忆",
+      "expect": [
+        "记忆",
+        "继续",
+        "接孩子"
+      ]
+    },
+    {
+      "input": "549",
+      "traditional": true,
+      "expect": [
+        "繼續",
+        "接孩子",
+        "記憶"
+      ]
+    },
+    {
+      "input": "96549",
+      "main": [
+        "我"
+      ],
+      "comments": [
+        "wo"
+      ],
+      "expect": [
+        "我继续",
+        "我记忆",
+        "我接孩子"
+      ]
+    }
+  ]
+}

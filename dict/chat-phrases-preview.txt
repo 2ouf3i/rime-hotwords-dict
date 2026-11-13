@@ -861,3 +861,30 @@
 再确认一下	2000	zai que ren yi xia
 照片发给我	2000	zhao pian fa gei wo
 资料发给我	2000	zi liao fa gei wo
+
+# 2026-11-13 日常问句／应答同码调序：已有词提高至编辑权重20000（不是语料统计频次）。
+帮我看看	20000	bang wo kan kan
+吃过了吗	20000	chi guo le ma
+待会见	20000	dai hui jian
+改好了吗	20000	gai hao le ma
+好饿	20000	hao e
+好烦	20000	hao fan
+好累	20000	hao lei
+好嘞	20000	hao lei
+回来了吗	20000	hui lai le ma
+看到了吗	20000	kan dao le ma
+忙完了吗	20000	mang wan le ma
+你先忙吧	20000	ni xian mang ba
+你在哪儿	20000	ni zai na er
+弄好了吗	20000	nong hao le ma
+去哪了	20000	qu na le
+收到没有	20000	shou dao mei you
+太热了	20000	tai re le
+下班了吗	20000	xia ban le ma
+知道了吗	20000	zhi dao le ma
+帮我一下	20000	bang wo yi xia
+吃饭吗	20000	chi fan ma
+可以呀	20000	ke yi ya
+预约挂号	20000	yu yue gua hao
+接孩子	20000	jie hai zi
+发你了	20000	fa ni le

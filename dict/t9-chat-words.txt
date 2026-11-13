@@ -1,4 +1,4 @@
-# Ninan 九宫格补全「索引外词表」：聊天常用词（2026-11-13 第二批，3377 词）
+# Ninan 九宫格补全「索引外词表」：聊天常用词（2026-11-13 同码／简拼调序，3384 词）
 # 用途：scripts/gen-t9-completions.mjs 把这些词直接收进九宫格补全索引（不受「按词频取前 1.6 万」限制），
 #       随包表与独立 OTA 表都用；只影响九宫格未打完时的补全召回与排序，不进主拼音词库、不改全拼。
 # 为什么（2026-11-13 九宫格自查）：少打最后一键找不到目标，约 65% 是补全索引里没有这个词（主词库里有）；
@@ -2810,15 +2810,15 @@
 你睡了没	500	ni shui le mei	all	nw-join	公共联想组合
 你先吃饭	500	ni xian chi fan	all	nw-join	公共联想组合
 你先看看	500	ni xian kan kan	all	nw-join	公共联想组合
-你先忙吧	500	ni xian mang ba	all	nw-join	公共联想组合
+你先忙吧	1000	ni xian mang ba	all	nw-join	公共联想组合
 你先休息	500	ni xian xiu xi	all	nw-join	公共联想组合
 你有事吗	500	ni you shi ma	all	nw-join	公共联想组合
 你在家吗	500	ni zai jia ma	all	nw-join	公共联想组合
 你在忙吗	500	ni zai mang ma	all	nw-join	公共联想组合
-你在哪儿	500	ni zai na er	all	nw-join	公共联想组合
+你在哪儿	1000	ni zai na er	all	nw-join	公共联想组合
 你在哪呢	500	ni zai na ne	all	nw-join	公共联想组合
 你怎么了	500	ni zen me le	all	nw-join	公共联想组合
-弄好了吗	500	nong hao le ma	all	nw-join	公共联想组合
+弄好了吗	1000	nong hao le ma	all	nw-join	公共联想组合
 弄完了吗	500	nong wan le ma	all	nw-join	公共联想组合
 跑步机	500	pao bu ji	all	nw-join	公共联想组合
 跑步去	500	pao bu qu	all	nw-join	公共联想组合
@@ -2955,7 +2955,7 @@
 喜欢看书	500	xi huan kan shu	all	nw-join	公共联想组合
 喜欢这个	500	xi huan zhe ge	all	nw-join	公共联想组合
 系统更新	500	xi tong geng xin	all	nw-join	公共联想组合
-下班了吗	500	xia ban le ma	all	nw-join	公共联想组合
+下班了吗	1000	xia ban le ma	all	nw-join	公共联想组合
 下班了呀	500	xia ban le ya	all	nw-join	公共联想组合
 下车了	500	xia che le	all	nw-join	公共联想组合
 下车吗	500	xia che ma	all	nw-join	公共联想组合
@@ -3079,8 +3079,8 @@
 # 还没收到货=hai mei shou dao huo；退出重进=tui chu chong jin；关掉重开=guan diao chong kai。
 中午好	300	zhong wu hao	all	ninan-original-20261113-round2	寒暄应答
 在忙吗	300	zai mang ma	all	ninan-original-20261113-round2	寒暄应答
-忙完了吗	300	mang wan le ma	all	ninan-original-20261113-round2	寒暄应答
-可以呀	300	ke yi ya	all	ninan-original-20261113-round2	寒暄应答
+忙完了吗	1000	mang wan le ma	all	ninan-original-20261113-round2	寒暄应答
+可以呀	1000	ke yi ya	all	ninan-original-20261113-round2	寒暄应答
 当然可以	300	dang ran ke yi	all	ninan-original-20261113-round2	寒暄应答
 请稍等	300	qing shao deng	all	ninan-original-20261113-round2	寒暄应答
 蚌埠住了	300	beng bu zhu le	all	ninan-original-20261113-round2	聊天情绪
@@ -3190,10 +3190,10 @@
 去医院了	300	qu yi yuan le	all	ninan-original-20261113-round2	家人健康
 已经吃药	300	yi jing chi yao	all	ninan-original-20261113-round2	家人健康
 按时吃药	300	an shi chi yao	all	ninan-original-20261113-round2	家人健康
-预约挂号	300	yu yue gua hao	all	ninan-original-20261113-round2	家人健康
+预约挂号	1000	yu yue gua hao	all	ninan-original-20261113-round2	家人健康
 检查结果	300	jian cha jie guo	all	ninan-original-20261113-round2	家人健康
 复查时间	300	fu cha shi jian	all	ninan-original-20261113-round2	家人健康
-接孩子	300	jie hai zi	all	ninan-original-20261113-round2	家人健康
+接孩子	1000	jie hai zi	all	ninan-original-20261113-round2	家人健康
 放学以后	300	fang xue yi hou	all	ninan-original-20261113-round2	家人健康
 今天接你	300	jin tian jie ni	all	ninan-original-20261113-round2	家人健康
 周末回去	300	zhou mo hui qu	all	ninan-original-20261113-round2	家人健康
@@ -3213,7 +3213,7 @@
 先去忙了	300	xian qu mang le	all	ninan-original-20261113-round2	应答关心
 收到再说	300	shou dao zai shuo	all	ninan-original-20261113-round2	应答关心
 收到告诉我	300	shou dao gao su wo	all	ninan-original-20261113-round2	应答关心
-看到了吗	300	kan dao le ma	all	ninan-original-20261113-round2	应答关心
+看到了吗	1000	kan dao le ma	all	ninan-original-20261113-round2	应答关心
 看到了吧	300	kan dao le ba	all	ninan-original-20261113-round2	应答关心
 看到回我	300	kan dao hui wo	all	ninan-original-20261113-round2	应答关心
 看到回复	300	kan dao hui fu	all	ninan-original-20261113-round2	应答关心
@@ -3410,3 +3410,13 @@
 
 # 原生合法同音组句守卫：保留「又被笑到」，不以新词「有被笑到」屏蔽旧写法。
 又被笑到	300	you bei xiao dao	all	ninan-original-20261113-round2	同音守卫
+
+# 2026-11-13 同码／简拼调序：补7个主库已有词进索引，低权重审核项提升至1000。
+# 这层是独立编辑权重；主词库25个词另在chat-phrases-preview.txt调序，不混用两种刻度。
+吃过了吗	1000	chi guo le ma	all	ninan-original-20261113-homocode	日常问句与应答
+改好了吗	1000	gai hao le ma	all	ninan-original-20261113-homocode	日常问句与应答
+去哪了	1000	qu na le	all	ninan-original-20261113-homocode	日常问句与应答
+收到没有	1000	shou dao mei you	all	ninan-original-20261113-homocode	日常问句与应答
+知道了吗	1000	zhi dao le ma	all	ninan-original-20261113-homocode	日常问句与应答
+帮我一下	1000	bang wo yi xia	all	ninan-original-20261113-homocode	日常问句与应答
+吃饭吗	1000	chi fan ma	all	ninan-original-20261113-homocode	日常问句与应答
