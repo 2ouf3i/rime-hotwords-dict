@@ -1,0 +1,52 @@
+# Ninan 补充读音：同词的其他读音；词形须已存在于装配后的主表或副表。
+# 权重不覆盖已有读音；上游已收录同词同读音时沿用上游权重。
+这个是谁的	50	zhe ge shi shei de
+
+# 2026-11-13 九宫格日常短语第二批：人工复核明确读音，沿用副表原有权重，不重算旧值。
+中午好	60000	zhong wu hao
+在忙吗	60000	zai mang ma
+可以呀	100	ke yi ya
+周五晚上	100	zhou wu wan shang
+周六下午	100	zhou liu xia wu
+改天再约	100	gai tian zai yue
+赶高铁	100	gan gao tie
+不要香菜	100	bu yao xiang cai
+不要葱	100	bu yao cong
+少放点盐	100	shao fang dian yan
+随便吃点	100	sui bian chi dian
+今天之内	100	jin tian zhi nei
+整理好了	100	zheng li hao le
+换个颜色	100	huan ge yan se
+预计明天	100	yu ji ming tian
+上门取件	100	shang men qu jian
+订单截图	100	ding dan jie tu
+售后客服	100	shou hou ke fu
+到货通知	100	dao huo tong zhi
+开热点	100	kai re dian
+关闭通知	100	guan bi tong zhi
+打开定位	100	da kai ding wei
+手机静音	100	shou ji jing yin
+剩余电量	100	sheng yu dian liang
+语音转文字	100	yu yin zhuan wen zi
+按时吃药	100	an shi chi yao
+预约挂号	100	yu yue gua hao
+复查时间	100	fu cha shi jian
+接孩子	100	jie hai zi
+放学以后	100	fang xue yi hou
+爸妈放心	100	ba ma fang xin
+想吃点啥	100	xiang chi dian sha
+那就这样	100	na jiu zhe yang
+有消息吗	100	you xiao xi ma
+马上下来	100	ma shang xia lai
+楼下等你	100	lou xia deng ni
+不放辣椒	100	bu fang la jiao
+先去吃饭	100	xian qu chi fan
+退货申请	100	tui huo shen qing
+多喝点水	100	duo he dian shui
+喝点热水	100	he dian re shui
+你先睡吧	100	ni xian shui ba
+先这样吧	100	xian zhe yang ba
+真的不错	100	zhen de bu cuo
+听起来不错	100	ting qi lai bu cuo
+看起来不错	100	kan qi lai bu cuo
+确实有道理	100	que shi you dao li

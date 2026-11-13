@@ -1,0 +1,18 @@
+{
+  "mainVersion": "08ec8f18",
+  "mainSHA256": "0ace42e4ce04d4e03820cb6ea3a241b6a1f4d1cdbc41c1d152c1061c33bf5beb",
+  "upstreamRef": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
+  "resources": {
+    "t9Completions": {
+      "url": "https://dl.ninan.cloud/dict/t9Completions-d63a2d1d58cfc6064c7495db0d5e54c77f01453747d4b078261f31b84492ee71.txt",
+      "sha256": "d63a2d1d58cfc6064c7495db0d5e54c77f01453747d4b078261f31b84492ee71",
+      "bytes": 1246439,
+      "entries": 24116,
+      "formatVersion": 1,
+      "source": "Ninan T9 v3, Apache-2.0 base + Ninan reviewed phrases and chat words, checked against Chinese dictionary 0ace42e4ce04d4e03820cb6ea3a241b6a1f4d1cdbc41c1d152c1061c33bf5beb (GPL-3.0)"
+    }
+  },
+  "keys": 16566,
+  "originalAddedIndexRows": 331,
+  "originalIndexRowsTotal": 3377
+}

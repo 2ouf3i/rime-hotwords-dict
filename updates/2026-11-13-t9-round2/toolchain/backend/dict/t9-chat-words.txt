@@ -1,0 +1,3412 @@
+# Ninan 九宫格补全「索引外词表」：聊天常用词（2026-11-13 第二批，3377 词）
+# 用途：scripts/gen-t9-completions.mjs 把这些词直接收进九宫格补全索引（不受「按词频取前 1.6 万」限制），
+#       随包表与独立 OTA 表都用；只影响九宫格未打完时的补全召回与排序，不进主拼音词库、不改全拼。
+# 为什么（2026-11-13 九宫格自查）：少打最后一键找不到目标，约 65% 是补全索引里没有这个词（主词库里有）；
+#       按主词库权重整批加 3 万词的原型只补上三分之一、完整码还变差，所以改成这份按聊天口径挑过的词表。
+#
+# 写法（与 phrase-weights.txt 同序）：词<Tab>权重<Tab>拼音<Tab>范围<Tab>来源<Tab>类别
+#   权重：编辑值，不是语料频次，刻度同随包基础词库（基础表词频中位约 270、前 10% 约 1,800、前 1% 约 1.7 万）；
+#   拼音：小写、音节间一个空格，与本批配套审核主词库里该词的读音一致（版本见交接及独立表绑定注释）；
+#   范围：all = 随包表与 OTA 表都收；ota = 只进独立 OTA 表（来源许可不能随包时用；本版没有）；
+#   来源：s2 = agent 按类别自拟的聊天常用词（常识，无外部数据）；nw-key / nw-succ / nw-join =
+#         backend/dict/next-word-everyday.txt（Ninan 原创公共联想，Apache-2.0）的前文 / 后继 / 前文+后继拼成的 2–4 字短语。
+#   权重规则（按来源分三档，2026-11-13 用 agent 自写的调参用例比过 500～16000 几档后定的）：s2 → 4000（1346 词），
+#         联想前文或后继 → 1000（1153 词），只来自前文+后继拼接 → 500（547 词）。档位再高，当前客户端里单音节输入的单字首选
+#         会多被抢走几个（要等合并层的单字保护）；再低，词进不了补全桶。
+#
+# 许可：词形是常用汉语词，来源都是 Ninan 自己写的（上面两类），可以随包（Apache-2.0）。主词库（GPL-3.0）只用来核对
+#       「这个词在词库里、读音一致」，权重不取自主词库；不收对标输入法词表派生的短语（common-phrases.txt、
+#       chat-phrases-preview.txt 这类，要收得标 ota 并在这里写明来源）。不收任何用户输入或个人数据。
+# 挑选规则（机械）：2–6 个汉字（日常整句片段）；在审核主词库里（权重大于 0）且读音与 pinyin-pro（MIT）注音一致（不一致而词库只有一个读音时取词库的）；
+#       多读音对不上的不收；以「的 / 了 / 着 / 吗 / 呢 / 吧 / 啊 / 嘛」作助词开头的不收；带「她」的不收（同 everyday-phrases.txt 的规矩）。
+# 人工审核（2026-11-13，只删不加）：删去 129 条 —— 联想前文里的半截状态（一起出、下午有、把文件…）、
+#       半截后继（你一下、到你、重一点…）、不自然的（热的、坨了…）、非聊天用语（信函、方案实施…）；清单见
+#       build/t9-chat-words.nosync/2026-11-13/review-drops.txt（随交接存证据）。对标词表派生的 2,580 条这一版整批不收。
+# 维护：加词照上面的规则，读音先查主词库；改完跑 node scripts/gen-t9-completions.mjs（重写两端随包表）和
+#       node --test scripts/gen-t9-completions.test.mjs；独立 OTA 表另用 --dictionary 生成（见 docs/handoff/2026-11-03-t9-system-optimization.md）。
+#       别对着某一份测试集挑词；评测用的冻结测试集不要拿来补词。
+# 类别分布：公共联想键 714，公共联想组合 547，公共联想后继 439，寒暄应答 147，社交与App 131，情绪与网络口语 125，时间 114，工作学习 107，常用代词副词 94，称呼 81，日常活动 79，生活消费 78，出行 75，饮食 68，生活杂项 54，健康 45，学校 45，娱乐运动 43，情感关系 38，天气 22
+阿姨	4000	a yi	all	s2	称呼
+爱豆	4000	ai dou	all	s2	娱乐运动
+爱你	4000	ai ni	all	s2	情绪与网络口语
+爱你哦	4000	ai ni o	all	s2	情感关系
+爱情	4000	ai qing	all	s2	情感关系
+艾特	4000	ai te	all	s2	社交与App
+哎呀	4000	ai ya	all	s2	情绪与网络口语
+暗恋	4000	an lian	all	s2	情感关系
+安排	4000	an pai	all	nw-key+nw-succ+s2	情绪与网络口语
+安装	4000	an zhuang	all	s2	社交与App
+熬夜	4000	ao ye	all	nw-succ+s2	健康
+爸爸	4000	ba ba	all	nw-key+s2	称呼
+八点	4000	ba dian	all	s2	生活杂项
+罢了	4000	ba le	all	s2	常用代词副词
+爸妈	4000	ba ma	all	nw-key+nw-succ+s2	称呼
+拜拜	4000	bai bai	all	s2	寒暄应答
+百度	4000	bai du	all	s2	社交与App
+百度一下	4000	bai du yi xia	all	s2	社交与App
+摆烂	4000	bai lan	all	s2	情绪与网络口语
+白天	4000	bai tian	all	s2	时间
+版本	4000	ban ben	all	nw-succ+s2	工作学习
+班级	4000	ban ji	all	s2	学校
+搬家	4000	ban jia	all	s2	生活消费
+半年	4000	ban nian	all	s2	生活杂项
+半天	4000	ban tian	all	s2	生活杂项
+半小时	4000	ban xiao shi	all	s2	时间
+半夜	4000	ban ye	all	s2	时间
+班长	4000	ban zhang	all	s2	学校
+班主任	4000	ban zhu ren	all	s2	学校
+帮个忙	4000	bang ge mang	all	nw-succ+s2	工作学习
+帮忙	4000	bang mang	all	nw-succ+s2	工作学习
+傍晚	4000	bang wan	all	s2	时间
+帮我	4000	bang wo	all	nw-key+s2	工作学习
+帮我看看	4000	bang wo kan kan	all	nw-join+nw-key+nw-succ+s2	工作学习
+包包	4000	bao bao	all	s2	生活消费
+宝宝	4000	bao bao	all	s2	称呼
+抱抱	4000	bao bao	all	s2	情绪与网络口语
+宝贝	4000	bao bei	all	s2	称呼
+宝贝儿	4000	bao bei er	all	s2	情感关系
+包裹	4000	bao guo	all	s2	生活消费
+抱歉	4000	bao qian	all	nw-key+nw-succ+s2	寒暄应答
+报销	4000	bao xiao	all	nw-key+s2	工作学习
+包邮	4000	bao you	all	nw-key+s2	生活消费
+保重	4000	bao zhong	all	s2	寒暄应答
+保重身体	4000	bao zhong shen ti	all	s2	健康
+包子	4000	bao zi	all	nw-succ+s2	饮食
+宝子	4000	bao zi	all	s2	称呼
+备忘录	4000	bei wang lu	all	s2	生活杂项
+本来	4000	ben lai	all	s2	常用代词副词
+本来就	4000	ben lai jiu	all	s2	常用代词副词
+本周	4000	ben zhou	all	s2	时间
+蹦迪	4000	beng di	all	s2	娱乐运动
+崩溃	4000	beng kui	all	s2	情绪与网络口语
+笔记	4000	bi ji	all	s2	学校
+笔记本	4000	bi ji ben	all	s2	工作学习
+比赛	4000	bi sai	all	s2	娱乐运动
+鼻塞	4000	bi sai	all	s2	健康
+必须的	4000	bi xu de	all	s2	日常活动
+毕业	4000	bi ye	all	s2	工作学习
+毕业了	4000	bi ye le	all	s2	学校
+便利店	4000	bian li dian	all	s2	生活消费
+表白	4000	biao bai	all	s2	情感关系
+表弟	4000	biao di	all	s2	称呼
+表哥	4000	biao ge	all	s2	称呼
+表格	4000	biao ge	all	nw-key+s2	工作学习
+表姐	4000	biao jie	all	s2	称呼
+表妹	4000	biao mei	all	s2	称呼
+表情	4000	biao qing	all	s2	社交与App
+表情包	4000	biao qing bao	all	s2	社交与App
+别担心	4000	bie dan xin	all	nw-key+s2	寒暄应答
+别急	4000	bie ji	all	s2	寒暄应答
+别闹	4000	bie nao	all	s2	情绪与网络口语
+别人	4000	bie ren	all	s2	常用代词副词
+别忘了	4000	bie wang le	all	nw-join+nw-key+s2	日常活动
+冰淇淋	4000	bing qi lin	all	s2	饮食
+伯伯	4000	bo bo	all	s2	称呼
+博主	4000	bo zhu	all	s2	娱乐运动
+不错	4000	bu cuo	all	nw-succ+s2	情绪与网络口语
+不过	4000	bu guo	all	nw-key+s2	日常活动
+不好意思	4000	bu hao yi si	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+不会吧	4000	bu hui ba	all	s2	日常活动
+不开心	4000	bu kai xin	all	s2	情绪与网络口语
+补考	4000	bu kao	all	s2	学校
+补课	4000	bu ke	all	s2	工作学习
+不客气	4000	bu ke qi	all	nw-key+s2	寒暄应答
+不明白	4000	bu ming bai	all	s2	寒暄应答
+不清楚	4000	bu qing chu	all	nw-succ+s2	寒暄应答
+不确定	4000	bu que ding	all	s2	寒暄应答
+不少	4000	bu shao	all	nw-succ+s2	常用代词副词
+不是吧	4000	bu shi ba	all	s2	日常活动
+不舒服	4000	bu shu fu	all	nw-key+nw-succ+s2	情绪与网络口语
+不太懂	4000	bu tai dong	all	nw-key+nw-succ+s2	寒暄应答
+不一定	4000	bu yi ding	all	s2	寒暄应答
+不用了	4000	bu yong le	all	nw-join+nw-succ+s2	寒暄应答
+不用谢	4000	bu yong xie	all	nw-key+s2	寒暄应答
+不知道	4000	bu zhi dao	all	s2	寒暄应答
+才不	4000	cai bu	all	s2	日常活动
+菜市场	4000	cai shi chang	all	s2	生活消费
+操场	4000	cao chang	all	s2	学校
+草莓	4000	cao mei	all	s2	饮食
+测试	4000	ce shi	all	nw-key+s2	工作学习
+差不多	4000	cha bu duo	all	nw-key+s2	常用代词副词
+插座	4000	cha zuo	all	s2	工作学习
+铲屎官	4000	chan shi guan	all	s2	日常活动
+唱歌	4000	chang ge	all	s2	日常活动
+炒菜	4000	chao cai	all	s2	饮食
+超级	4000	chao ji	all	s2	常用代词副词
+吵架	4000	chao jia	all	s2	情感关系
+超市	4000	chao shi	all	nw-key+s2	生活消费
+撤回	4000	che hui	all	s2	社交与App
+车票	4000	che piao	all	nw-key+s2	出行
+车站	4000	che zhan	all	s2	出行
+成绩	4000	cheng ji	all	nw-key+nw-succ+s2	工作学习
+橙子	4000	cheng zi	all	s2	饮食
+吃饱了	4000	chi bao le	all	s2	饮食
+吃醋	4000	chi cu	all	s2	情感关系
+迟到	4000	chi dao	all	nw-key+s2	出行
+吃点	4000	chi dian	all	nw-key+s2	饮食
+吃饭	4000	chi fan	all	nw-key+nw-succ+s2	饮食
+吃饭了吗	4000	chi fan le ma	all	nw-join+nw-succ+s2	饮食
+吃瓜	4000	chi gua	all	s2	情绪与网络口语
+吃鸡	4000	chi ji	all	s2	社交与App
+吃了吗	4000	chi le ma	all	nw-join+nw-succ+s2	寒暄应答
+吃啥	4000	chi sha	all	s2	饮食
+吃什么	4000	chi shen me	all	nw-key+nw-succ+s2	饮食
+吃药	4000	chi yao	all	s2	健康
+充电	4000	chong dian	all	nw-key+nw-succ+s2	生活消费
+充电宝	4000	chong dian bao	all	s2	生活消费
+充电器	4000	chong dian qi	all	nw-join+nw-key+nw-succ+s2	工作学习
+宠物	4000	chong wu	all	s2	日常活动
+冲鸭	4000	chong ya	all	s2	情绪与网络口语
+充值	4000	chong zhi	all	s2	社交与App
+抽奖	4000	chou jiang	all	s2	娱乐运动
+出差	4000	chu chai	all	nw-key+s2	工作学习
+出发	4000	chu fa	all	nw-key+nw-succ+s2	出行
+出发了	4000	chu fa le	all	nw-join+s2	出行
+处理	4000	chu li	all	nw-key+nw-succ+s2	工作学习
+出门	4000	chu men	all	nw-key+nw-succ+s2	出行
+出去	4000	chu qu	all	nw-key+s2	出行
+出去玩	4000	chu qu wan	all	nw-join+nw-key+nw-succ+s2	日常活动
+出院	4000	chu yuan	all	s2	健康
+串串	4000	chuan chuan	all	s2	饮食
+穿衣服	4000	chuan yi fu	all	s2	天气
+春节	4000	chun jie	all	s2	时间
+春节快乐	4000	chun jie kuai le	all	s2	寒暄应答
+辞职	4000	ci zhi	all	s2	工作学习
+存钱	4000	cun qian	all	s2	生活消费
+答辩	4000	da bian	all	s2	工作学习
+大伯	4000	da bo	all	s2	称呼
+打车	4000	da che	all	nw-key+s2	出行
+打电话	4000	da dian hua	all	s2	社交与App
+大概	4000	da gai	all	nw-key+s2	常用代词副词
+打个车	4000	da ge che	all	nw-key+s2	出行
+打个电话	4000	da ge dian hua	all	s2	日常活动
+打工人	4000	da gong ren	all	s2	情绪与网络口语
+大后天	4000	da hou tian	all	s2	时间
+大家	4000	da jia	all	nw-succ+s2	称呼
+大家伙	4000	da jia huo	all	s2	常用代词副词
+打卡	4000	da ka	all	s2	工作学习
+打牌	4000	da pai	all	s2	娱乐运动
+打球	4000	da qiu	all	s2	娱乐运动
+打扰了	4000	da rao le	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+打扫	4000	da sao	all	nw-key+s2	生活消费
+打印	4000	da yin	all	s2	工作学习
+打游戏	4000	da you xi	all	s2	社交与App
+打折	4000	da zhe	all	nw-key+s2	生活消费
+打针	4000	da zhen	all	s2	健康
+待会	4000	dai hui	all	nw-key+s2	时间
+待会儿	4000	dai hui er	all	nw-key+s2	时间
+带伞	4000	dai san	all	nw-key+nw-succ+s2	天气
+带娃	4000	dai wa	all	s2	日常活动
+蛋糕	4000	dan gao	all	nw-key+nw-succ+s2	饮食
+弹幕	4000	dan mu	all	s2	娱乐运动
+但是	4000	dan shi	all	nw-key+s2	日常活动
+担心	4000	dan xin	all	nw-succ+s2	情绪与网络口语
+当然	4000	dang ran	all	s2	寒暄应答
+当然了	4000	dang ran le	all	s2	日常活动
+导航	4000	dao hang	all	s2	出行
+到货	4000	dao huo	all	s2	生活消费
+到家	4000	dao jia	all	nw-key+nw-succ+s2	出行
+到家了	4000	dao jia le	all	nw-join+nw-key+nw-succ+s2	出行
+倒垃圾	4000	dao la ji	all	s2	生活杂项
+到了	4000	dao le	all	nw-key+nw-succ+s2	出行
+到哪了	4000	dao na le	all	nw-join+nw-succ+s2	出行
+道歉	4000	dao qian	all	s2	情感关系
+到时候	4000	dao shi hou	all	nw-key+nw-succ+s2	常用代词副词
+等等	4000	deng deng	all	s2	寒暄应答
+等会	4000	deng hui	all	nw-key+s2	时间
+等会儿	4000	deng hui er	all	s2	时间
+登录	4000	deng lu	all	nw-key+s2	社交与App
+等你	4000	deng ni	all	nw-key+nw-succ+s2	出行
+等我	4000	deng wo	all	nw-key+s2	出行
+等一下	4000	deng yi xia	all	nw-key+nw-succ+s2	寒暄应答
+弟弟	4000	di di	all	s2	称呼
+滴滴	4000	di di	all	s2	社交与App
+地理	4000	di li	all	s2	学校
+地铁	4000	di tie	all	nw-key+s2	出行
+地址	4000	di zhi	all	nw-key+nw-succ+s2	出行
+点菜	4000	dian cai	all	s2	饮食
+电动车	4000	dian dong che	all	s2	出行
+电费	4000	dian fei	all	s2	生活消费
+电话	4000	dian hua	all	nw-succ+s2	社交与App
+电脑	4000	dian nao	all	s2	工作学习
+电视剧	4000	dian shi ju	all	s2	社交与App
+点外卖	4000	dian wai mai	all	nw-key+s2	生活消费
+电影	4000	dian ying	all	nw-key+nw-succ+s2	社交与App
+点赞	4000	dian zan	all	s2	社交与App
+钓鱼	4000	diao yu	all	s2	娱乐运动
+叮咚	4000	ding dong	all	s2	生活杂项
+订婚	4000	ding hun	all	s2	情感关系
+定位	4000	ding wei	all	nw-key+s2	社交与App
+动车	4000	dong che	all	s2	出行
+动漫	4000	dong man	all	s2	娱乐运动
+斗地主	4000	dou di zhu	all	s2	娱乐运动
+豆浆	4000	dou jiang	all	nw-succ+s2	饮食
+都可以	4000	dou ke yi	all	nw-succ+s2	寒暄应答
+逗你玩	4000	dou ni wan	all	s2	情绪与网络口语
+都行	4000	dou xing	all	nw-succ+s2	寒暄应答
+抖音	4000	dou yin	all	s2	社交与App
+堵车	4000	du che	all	nw-key+s2	出行
+读书	4000	du shu	all	s2	娱乐运动
+肚子疼	4000	du zi teng	all	s2	健康
+锻炼	4000	duan lian	all	s2	健康
+断网	4000	duan wang	all	s2	生活杂项
+端午	4000	duan wu	all	s2	时间
+端午节	4000	duan wu jie	all	s2	时间
+短信	4000	duan xin	all	s2	社交与App
+对啊	4000	dui a	all	s2	寒暄应答
+对不对	4000	dui bu dui	all	nw-succ+s2	寒暄应答
+对不起	4000	dui bu qi	all	nw-key+s2	寒暄应答
+对的	4000	dui de	all	s2	寒暄应答
+对接	4000	dui jie	all	nw-key+s2	工作学习
+对象	4000	dui xiang	all	s2	称呼
+多喝水	4000	duo he shui	all	nw-join+nw-key+nw-succ+s2	健康
+多久	4000	duo jiu	all	nw-succ+s2	寒暄应答
+多少	4000	duo shao	all	nw-succ+s2	寒暄应答
+多少钱	4000	duo shao qian	all	nw-key+nw-succ+s2	寒暄应答
+多谢	4000	duo xie	all	nw-key+s2	寒暄应答
+饿了	4000	e le	all	s2	情绪与网络口语
+饿了么	4000	e le me	all	s2	社交与App
+饿死了	4000	e si le	all	s2	饮食
+嗯嗯	4000	en en	all	s2	寒暄应答
+耳机	4000	er ji	all	nw-key+nw-succ+s2	生活消费
+而且	4000	er qie	all	s2	日常活动
+二维码	4000	er wei ma	all	s2	社交与App
+而已	4000	er yi	all	s2	常用代词副词
+儿子	4000	er zi	all	s2	称呼
+发布	4000	fa bu	all	s2	工作学习
+发个位置	4000	fa ge wei zhi	all	s2	日常活动
+发红包	4000	fa hong bao	all	s2	社交与App
+发货	4000	fa huo	all	nw-key+nw-succ+s2	生活消费
+发你	4000	fa ni	all	nw-key+nw-succ+s2	日常活动
+发朋友圈	4000	fa peng you quan	all	s2	社交与App
+发票	4000	fa piao	all	nw-key+s2	工作学习
+发烧	4000	fa shao	all	s2	健康
+发视频	4000	fa shi pin	all	s2	社交与App
+发图	4000	fa tu	all	s2	社交与App
+发我	4000	fa wo	all	nw-key+nw-succ+s2	日常活动
+发炎	4000	fa yan	all	s2	健康
+发一下	4000	fa yi xia	all	nw-succ+s2	工作学习
+发语音	4000	fa yu yin	all	s2	社交与App
+凡尔赛	4000	fan er sai	all	s2	情绪与网络口语
+反馈	4000	fan kui	all	nw-key+nw-succ+s2	工作学习
+烦人	4000	fan ren	all	s2	情绪与网络口语
+烦死	4000	fan si	all	s2	情绪与网络口语
+烦死了	4000	fan si le	all	s2	情绪与网络口语
+反正	4000	fan zheng	all	s2	日常活动
+方案	4000	fang an	all	nw-key+nw-succ+s2	工作学习
+方便吗	4000	fang bian ma	all	nw-join+nw-succ+s2	寒暄应答
+房东	4000	fang dong	all	s2	称呼
+放假	4000	fang jia	all	nw-key+s2	时间
+放假了	4000	fang jia le	all	nw-join+nw-key+s2	学校
+放心	4000	fang xin	all	nw-succ+s2	寒暄应答
+放学	4000	fang xue	all	nw-key+s2	工作学习
+房租	4000	fang zu	all	s2	生活消费
+非常	4000	fei chang	all	s2	常用代词副词
+飞机	4000	fei ji	all	nw-key+s2	出行
+飞猪	4000	fei zhu	all	s2	生活杂项
+分手	4000	fen shou	all	s2	情感关系
+分数	4000	fen shu	all	s2	工作学习
+粉丝	4000	fen si	all	s2	社交与App
+分享	4000	fen xiang	all	s2	社交与App
+复合	4000	fu he	all	s2	情感关系
+附近	4000	fu jin	all	s2	出行
+付款	4000	fu kuan	all	nw-key+s2	社交与App
+服了	4000	fu le	all	s2	情绪与网络口语
+复习	4000	fu xi	all	nw-key+s2	工作学习
+复印	4000	fu yin	all	s2	工作学习
+改天	4000	gai tian	all	nw-key+s2	寒暄应答
+改一下	4000	gai yi xia	all	nw-key+nw-succ+s2	工作学习
+盖章	4000	gai zhang	all	s2	工作学习
+感动	4000	gan dong	all	s2	情绪与网络口语
+干饭	4000	gan fan	all	s2	情绪与网络口语
+干饭人	4000	gan fan ren	all	s2	情绪与网络口语
+尴尬	4000	gan ga	all	s2	情绪与网络口语
+赶紧	4000	gan jin	all	s2	常用代词副词
+感觉	4000	gan jue	all	nw-key+s2	日常活动
+赶快	4000	gan kuai	all	s2	常用代词副词
+干嘛	4000	gan ma	all	nw-key+nw-succ+s2	寒暄应答
+感冒	4000	gan mao	all	s2	健康
+干啥	4000	gan sha	all	s2	常用代词副词
+干什么	4000	gan shen me	all	nw-key+s2	寒暄应答
+感谢	4000	gan xie	all	nw-key+s2	寒暄应答
+刚才	4000	gang cai	all	nw-key+s2	时间
+刚刚	4000	gang gang	all	nw-key+s2	时间
+刚好	4000	gang hao	all	nw-key+nw-succ+s2	常用代词副词
+高德	4000	gao de	all	s2	社交与App
+搞定	4000	gao ding	all	s2	工作学习
+搞定了	4000	gao ding le	all	s2	工作学习
+高考	4000	gao kao	all	s2	学校
+高速	4000	gao su	all	s2	出行
+告诉你	4000	gao su ni	all	nw-succ+s2	日常活动
+告诉我	4000	gao su wo	all	nw-succ+s2	日常活动
+高铁	4000	gao tie	all	nw-key+s2	出行
+搞笑	4000	gao xiao	all	s2	情绪与网络口语
+高兴	4000	gao xing	all	s2	情绪与网络口语
+哥哥	4000	ge ge	all	s2	称呼
+哥们	4000	ge men	all	s2	称呼
+各位	4000	ge wei	all	s2	称呼
+给你	4000	gei ni	all	nw-succ+s2	日常活动
+给我	4000	gei wo	all	nw-succ+s2	日常活动
+根本	4000	gen ben	all	s2	常用代词副词
+跟进	4000	gen jin	all	s2	工作学习
+跟你说	4000	gen ni shuo	all	nw-key+nw-succ+s2	日常活动
+更新	4000	geng xin	all	nw-key+nw-succ+s2	社交与App
+公告	4000	gong gao	all	s2	工作学习
+公交	4000	gong jiao	all	s2	出行
+公交车	4000	gong jiao che	all	s2	出行
+公司	4000	gong si	all	nw-key+nw-succ+s2	出行
+恭喜	4000	gong xi	all	s2	寒暄应答
+公众号	4000	gong zhong hao	all	nw-succ+s2	社交与App
+工资	4000	gong zi	all	nw-key+s2	工作学习
+狗狗	4000	gou gou	all	s2	日常活动
+够了	4000	gou le	all	s2	寒暄应答
+购物车	4000	gou wu che	all	s2	生活消费
+姑父	4000	gu fu	all	s2	称呼
+姑姑	4000	gu gu	all	s2	称呼
+估计	4000	gu ji	all	s2	寒暄应答
+刮风	4000	gua feng	all	s2	天气
+挂号	4000	gua hao	all	s2	健康
+挂科	4000	gua ke	all	s2	学校
+乖乖	4000	guai guai	all	s2	情感关系
+关注	4000	guan zhu	all	s2	社交与App
+逛街	4000	guang jie	all	s2	生活消费
+闺蜜	4000	gui mi	all	s2	称呼
+闺女	4000	gui nv	all	s2	称呼
+过来	4000	guo lai	all	nw-succ+s2	出行
+过敏	4000	guo min	all	s2	健康
+过年	4000	guo nian	all	s2	时间
+国庆	4000	guo qing	all	s2	时间
+国庆节	4000	guo qing jie	all	s2	时间
+过去	4000	guo qu	all	nw-key+nw-succ+s2	出行
+果然	4000	guo ran	all	s2	常用代词副词
+哈哈	4000	ha ha	all	s2	情绪与网络口语
+哈哈哈	4000	ha ha ha	all	s2	情绪与网络口语
+还好	4000	hai hao	all	nw-succ+s2	情绪与网络口语
+害怕	4000	hai pa	all	s2	情绪与网络口语
+还是	4000	hai shi	all	nw-key+s2	日常活动
+还行	4000	hai xing	all	s2	情绪与网络口语
+孩子	4000	hai zi	all	nw-key+nw-succ+s2	称呼
+汉堡	4000	han bao	all	s2	饮食
+寒假	4000	han jia	all	s2	时间
+航班	4000	hang ban	all	nw-key+s2	出行
+好啊	4000	hao a	all	s2	寒暄应答
+好吧	4000	hao ba	all	s2	寒暄应答
+好吧好吧	4000	hao ba hao ba	all	s2	情绪与网络口语
+好棒	4000	hao bang	all	s2	情绪与网络口语
+好不好	4000	hao bu hao	all	nw-succ+s2	寒暄应答
+好吃	4000	hao chi	all	nw-key+nw-succ+s2	饮食
+好的	4000	hao de	all	nw-key+nw-succ+s2	寒暄应答
+好滴	4000	hao di	all	s2	寒暄应答
+好多	4000	hao duo	all	nw-key+s2	常用代词副词
+好饿	4000	hao e	all	s2	情绪与网络口语
+好烦	4000	hao fan	all	s2	情绪与网络口语
+好好休息	4000	hao hao xiu xi	all	nw-join+nw-key+nw-succ+s2	健康
+好几个	4000	hao ji ge	all	s2	常用代词副词
+好家伙	4000	hao jia huo	all	s2	情绪与网络口语
+好久不见	4000	hao jiu bu jian	all	nw-join+nw-key+s2	寒暄应答
+好开心	4000	hao kai xin	all	nw-key+s2	情绪与网络口语
+好看	4000	hao kan	all	nw-key+nw-succ+s2	情绪与网络口语
+好可爱	4000	hao ke ai	all	s2	情绪与网络口语
+好困	4000	hao kun	all	s2	情绪与网络口语
+好了	4000	hao le	all	nw-succ+s2	寒暄应答
+好嘞	4000	hao lei	all	s2	寒暄应答
+好累	4000	hao lei	all	s2	情绪与网络口语
+好冷	4000	hao leng	all	s2	天气
+好厉害	4000	hao li hai	all	s2	情绪与网络口语
+好美	4000	hao mei	all	s2	情绪与网络口语
+好朋友	4000	hao peng you	all	s2	称呼
+好热	4000	hao re	all	s2	天气
+好帅	4000	hao shuai	all	s2	情绪与网络口语
+好无聊	4000	hao wu liao	all	s2	情绪与网络口语
+好像	4000	hao xiang	all	nw-key+s2	日常活动
+好像是	4000	hao xiang shi	all	nw-join+s2	常用代词副词
+好笑	4000	hao xiao	all	s2	情绪与网络口语
+好呀	4000	hao ya	all	s2	寒暄应答
+好友	4000	hao you	all	s2	社交与App
+核对	4000	he dui	all	nw-key+s2	工作学习
+和好	4000	he hao	all	s2	情感关系
+呵呵	4000	he he	all	s2	情绪与网络口语
+喝酒	4000	he jiu	all	s2	饮食
+盒马	4000	he ma	all	s2	生活杂项
+喝热水	4000	he re shui	all	s2	健康
+喝水	4000	he shui	all	s2	饮食
+合同	4000	he tong	all	nw-key+s2	工作学习
+合影	4000	he ying	all	s2	社交与App
+嘿嘿	4000	hei hei	all	s2	情绪与网络口语
+很多	4000	hen duo	all	nw-succ+s2	常用代词副词
+很好	4000	hen hao	all	nw-succ+s2	情绪与网络口语
+红包	4000	hong bao	all	s2	社交与App
+哄哄	4000	hong hong	all	s2	情感关系
+红绿灯	4000	hong lv deng	all	s2	出行
+哄你	4000	hong ni	all	s2	情感关系
+后悔	4000	hou hui	all	s2	情绪与网络口语
+后天	4000	hou tian	all	nw-key+s2	时间
+护肤品	4000	hu fu pin	all	s2	生活消费
+花呗	4000	hua bei	all	s2	生活消费
+花钱	4000	hua qian	all	s2	生活消费
+划算	4000	hua suan	all	s2	生活消费
+化学	4000	hua xue	all	s2	学校
+滑雪	4000	hua xue	all	s2	娱乐运动
+化妆品	4000	hua zhuang pin	all	s2	生活消费
+换货	4000	huan huo	all	nw-key+s2	生活消费
+还款	4000	huan kuan	all	s2	生活消费
+换手机	4000	huan shou ji	all	s2	生活杂项
+汇报	4000	hui bao	all	nw-key+s2	工作学习
+回复	4000	hui fu	all	nw-succ+s2	社交与App
+回个电话	4000	hui ge dian hua	all	s2	日常活动
+回家	4000	hui jia	all	nw-key+nw-succ+s2	出行
+回见	4000	hui jian	all	s2	寒暄应答
+回来	4000	hui lai	all	nw-key+nw-succ+s2	出行
+回头	4000	hui tou	all	nw-key+s2	寒暄应答
+回头见	4000	hui tou jian	all	nw-key+s2	常用代词副词
+回头聊	4000	hui tou liao	all	nw-join+s2	寒暄应答
+回消息	4000	hui xiao xi	all	nw-succ+s2	社交与App
+会议	4000	hui yi	all	nw-key+nw-succ+s2	工作学习
+会员	4000	hui yuan	all	s2	社交与App
+婚礼	4000	hun li	all	s2	情感关系
+火车	4000	huo che	all	nw-key+s2	出行
+火车站	4000	huo che zhan	all	nw-join+nw-key+s2	出行
+火锅	4000	huo guo	all	nw-key+nw-succ+s2	饮食
+或者	4000	huo zhe	all	s2	日常活动
+机场	4000	ji chang	all	nw-key+s2	出行
+鸡蛋	4000	ji dan	all	s2	饮食
+记得	4000	ji de	all	nw-key+s2	寒暄应答
+记得吃饭	4000	ji de chi fan	all	nw-join+s2	日常活动
+几点	4000	ji dian	all	nw-key+nw-succ+s2	寒暄应答
+绩点	4000	ji dian	all	s2	学校
+几点钟	4000	ji dian zhong	all	nw-key+s2	时间
+激动	4000	ji dong	all	s2	情绪与网络口语
+嫉妒	4000	ji du	all	s2	情绪与网络口语
+几分钟	4000	ji fen zhong	all	nw-succ+s2	生活杂项
+几个	4000	ji ge	all	s2	寒暄应答
+几号	4000	ji hao	all	s2	时间
+几乎	4000	ji hu	all	s2	常用代词副词
+纪念日	4000	ji nian ri	all	s2	时间
+机票	4000	ji piao	all	nw-key+s2	出行
+几天	4000	ji tian	all	nw-succ+s2	时间
+绩效	4000	ji xiao	all	s2	工作学习
+几月	4000	ji yue	all	s2	时间
+记账	4000	ji zhang	all	s2	生活消费
+记住	4000	ji zhu	all	s2	寒暄应答
+加班	4000	jia ban	all	nw-key+nw-succ+s2	工作学习
+加好友	4000	jia hao you	all	s2	社交与App
+家里人	4000	jia li ren	all	nw-key+nw-succ+s2	称呼
+假期	4000	jia qi	all	s2	时间
+家人	4000	jia ren	all	nw-succ+s2	称呼
+加油	4000	jia you	all	nw-key+nw-succ+s2	寒暄应答
+加油站	4000	jia you zhan	all	s2	出行
+家长会	4000	jia zhang hui	all	s2	日常活动
+减肥	4000	jian fei	all	s2	健康
+减肥餐	4000	jian fei can	all	s2	饮食
+简历	4000	jian li	all	s2	工作学习
+见面	4000	jian mian	all	nw-key+nw-succ+s2	日常活动
+键盘	4000	jian pan	all	nw-key+s2	工作学习
+建群	4000	jian qun	all	s2	社交与App
+健身	4000	jian shen	all	nw-key+s2	健康
+健身房	4000	jian shen fang	all	nw-join+s2	娱乐运动
+简直	4000	jian zhi	all	s2	常用代词副词
+奖金	4000	jiang jin	all	s2	工作学习
+降温	4000	jiang wen	all	s2	天气
+奖学金	4000	jiang xue jin	all	s2	学校
+叫车	4000	jiao che	all	s2	出行
+交付	4000	jiao fu	all	s2	工作学习
+教室	4000	jiao shi	all	s2	学校
+饺子	4000	jiao zi	all	s2	饮食
+结婚	4000	jie hun	all	s2	情感关系
+姐姐	4000	jie jie	all	s2	称呼
+姐妹	4000	jie mei	all	s2	称呼
+接你	4000	jie ni	all	nw-key+s2	出行
+截屏	4000	jie ping	all	s2	社交与App
+节日	4000	jie ri	all	nw-key+s2	时间
+节日快乐	4000	jie ri kuai le	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+截图	4000	jie tu	all	nw-succ+s2	社交与App
+结账	4000	jie zhang	all	s2	生活消费
+截止	4000	jie zhi	all	nw-key+nw-succ+s2	工作学习
+进度	4000	jin du	all	nw-key+nw-succ+s2	工作学习
+进来	4000	jin lai	all	s2	出行
+今年	4000	jin nian	all	s2	时间
+今天	4000	jin tian	all	nw-key+nw-succ+s2	时间
+今晚	4000	jin wan	all	nw-key+s2	时间
+今早	4000	jin zao	all	s2	时间
+紧张	4000	jin zhang	all	s2	情绪与网络口语
+经常	4000	jing chang	all	s2	时间
+京东	4000	jing dong	all	s2	社交与App
+经理	4000	jing li	all	s2	称呼
+竟然	4000	jing ran	all	s2	常用代词副词
+惊喜	4000	jing xi	all	s2	情绪与网络口语
+静音	4000	jing yin	all	s2	社交与App
+酒吧	4000	jiu ba	all	s2	娱乐运动
+九点	4000	jiu dian	all	s2	生活杂项
+酒店	4000	jiu dian	all	nw-key+nw-succ+s2	出行
+就好	4000	jiu hao	all	nw-succ+s2	常用代词副词
+舅舅	4000	jiu jiu	all	s2	称呼
+舅妈	4000	jiu ma	all	s2	称呼
+就是	4000	jiu shi	all	s2	日常活动
+就是了	4000	jiu shi le	all	s2	常用代词副词
+就是说	4000	jiu shi shuo	all	s2	日常活动
+就行	4000	jiu xing	all	s2	常用代词副词
+剧本杀	4000	ju ben sha	all	s2	娱乐运动
+聚餐	4000	ju can	all	s2	饮食
+聚会	4000	ju hui	all	nw-succ+s2	日常活动
+居然	4000	ju ran	all	s2	常用代词副词
+聚一聚	4000	ju yi ju	all	s2	日常活动
+觉得	4000	jue de	all	s2	日常活动
+绝对	4000	jue dui	all	s2	日常活动
+绝绝子	4000	jue jue zi	all	s2	情绪与网络口语
+绝了	4000	jue le	all	s2	情绪与网络口语
+军训	4000	jun xun	all	s2	学校
+咖啡	4000	ka fei	all	nw-key+nw-succ+s2	饮食
+开车	4000	kai che	all	nw-key+s2	出行
+开黑	4000	kai hei	all	s2	社交与App
+开会	4000	kai hui	all	nw-key+nw-succ+s2	工作学习
+开玩笑	4000	kai wan xiao	all	s2	情绪与网络口语
+开心	4000	kai xin	all	nw-key+nw-succ+s2	情绪与网络口语
+开学	4000	kai xue	all	s2	工作学习
+开学了	4000	kai xue le	all	s2	学校
+看病	4000	kan bing	all	s2	健康
+看电影	4000	kan dian ying	all	nw-key+s2	日常活动
+砍价	4000	kan jia	all	s2	生活消费
+看剧	4000	kan ju	all	s2	社交与App
+看书	4000	kan shu	all	nw-succ+s2	娱乐运动
+看一下	4000	kan yi xia	all	nw-key+nw-succ+s2	工作学习
+考公	4000	kao gong	all	s2	工作学习
+考勤	4000	kao qin	all	s2	工作学习
+烤肉	4000	kao rou	all	s2	饮食
+考试	4000	kao shi	all	nw-key+s2	工作学习
+考研	4000	kao yan	all	s2	工作学习
+可爱	4000	ke ai	all	s2	情绪与网络口语
+课本	4000	ke ben	all	s2	学校
+课表	4000	ke biao	all	s2	学校
+可不可以	4000	ke bu ke yi	all	nw-key+s2	寒暄应答
+课程	4000	ke cheng	all	s2	工作学习
+客服	4000	ke fu	all	nw-succ+s2	生活消费
+客户	4000	ke hu	all	s2	工作学习
+可能	4000	ke neng	all	nw-key+s2	寒暄应答
+可能是	4000	ke neng shi	all	nw-join+s2	常用代词副词
+咳嗽	4000	ke sou	all	s2	健康
+可惜	4000	ke xi	all	s2	情绪与网络口语
+可以	4000	ke yi	all	nw-key+nw-succ+s2	寒暄应答
+可以的	4000	ke yi de	all	nw-join+nw-succ+s2	寒暄应答
+肯定	4000	ken ding	all	s2	日常活动
+肯定是	4000	ken ding shi	all	s2	常用代词副词
+口红	4000	kou hong	all	s2	生活消费
+口渴	4000	kou ke	all	s2	饮食
+口罩	4000	kou zhao	all	s2	健康
+哭死	4000	ku si	all	s2	情绪与网络口语
+裤子	4000	ku zi	all	s2	生活消费
+快到了	4000	kuai dao le	all	nw-join+nw-key+nw-succ+s2	出行
+快递	4000	kuai di	all	nw-key+nw-succ+s2	生活消费
+快点	4000	kuai dian	all	s2	常用代词副词
+快乐	4000	kuai le	all	nw-succ+s2	情绪与网络口语
+快没电了	4000	kuai mei dian le	all	s2	生活杂项
+快手	4000	kuai shou	all	s2	社交与App
+困了	4000	kun le	all	nw-key+s2	情绪与网络口语
+拉肚子	4000	la du zi	all	s2	健康
+拉黑	4000	la hei	all	s2	社交与App
+垃圾	4000	la ji	all	s2	生活杂项
+垃圾分类	4000	la ji fen lei	all	s2	生活杂项
+拉面	4000	la mian	all	s2	饮食
+拉群	4000	la qun	all	s2	社交与App
+来了	4000	lai le	all	nw-succ+s2	寒暄应答
+篮球	4000	lan qiu	all	s2	娱乐运动
+蓝牙	4000	lan ya	all	nw-key+s2	生活杂项
+老爸	4000	lao ba	all	s2	称呼
+老板	4000	lao ban	all	s2	称呼
+劳动节	4000	lao dong jie	all	s2	时间
+老公	4000	lao gong	all	s2	称呼
+姥姥	4000	lao lao	all	s2	称呼
+老妈	4000	lao ma	all	s2	称呼
+老婆	4000	lao po	all	s2	称呼
+老人	4000	lao ren	all	s2	称呼
+老师	4000	lao shi	all	nw-key+s2	称呼
+老师好	4000	lao shi hao	all	s2	学校
+老铁	4000	lao tie	all	s2	称呼
+姥爷	4000	lao ye	all	s2	称呼
+累了	4000	lei le	all	nw-key+nw-succ+s2	情绪与网络口语
+累死了	4000	lei si le	all	s2	情绪与网络口语
+冷死了	4000	leng si le	all	s2	天气
+礼拜天	4000	li bai tian	all	s2	时间
+厉害	4000	li hai	all	nw-key+s2	情绪与网络口语
+离婚	4000	li hun	all	s2	情感关系
+立刻	4000	li ke	all	s2	时间
+离谱	4000	li pu	all	s2	情绪与网络口语
+历史	4000	li shi	all	s2	学校
+离职	4000	li zhi	all	s2	工作学习
+恋爱	4000	lian ai	all	s2	情感关系
+链接	4000	lian jie	all	nw-key+nw-succ+s2	社交与App
+联系方式	4000	lian xi fang shi	all	nw-key+nw-succ+s2	社交与App
+两点	4000	liang dian	all	s2	生活杂项
+量体温	4000	liang ti wen	all	s2	健康
+两天	4000	liang tian	all	s2	生活杂项
+了解	4000	liao jie	all	s2	寒暄应答
+裂开	4000	lie kai	all	s2	情绪与网络口语
+邻居	4000	lin ju	all	s2	称呼
+凌晨	4000	ling chen	all	s2	时间
+领导	4000	ling dao	all	s2	称呼
+零钱	4000	ling qian	all	s2	生活消费
+零食	4000	ling shi	all	nw-succ+s2	饮食
+六点	4000	liu dian	all	s2	生活杂项
+遛狗	4000	liu gou	all	s2	日常活动
+浏览器	4000	liu lan qi	all	s2	社交与App
+流量	4000	liu liang	all	s2	社交与App
+楼上	4000	lou shang	all	s2	出行
+楼下	4000	lou xia	all	s2	出行
+录屏	4000	lu ping	all	s2	社交与App
+路上	4000	lu shang	all	nw-key+nw-succ+s2	出行
+露营	4000	lu ying	all	s2	娱乐运动
+论文	4000	lun wen	all	s2	工作学习
+螺蛳粉	4000	luo si fen	all	s2	饮食
+旅游	4000	lv you	all	nw-key+s2	出行
+麻烦了	4000	ma fan le	all	nw-succ+s2	寒暄应答
+麻烦你	4000	ma fan ni	all	nw-key+s2	寒暄应答
+麻将	4000	ma jiang	all	s2	娱乐运动
+麻辣烫	4000	ma la tang	all	s2	饮食
+妈妈	4000	ma ma	all	nw-key+nw-succ+s2	称呼
+马上	4000	ma shang	all	nw-key+s2	时间
+马上到	4000	ma shang dao	all	nw-join+nw-key+nw-succ+s2	出行
+买菜	4000	mai cai	all	nw-key+s2	生活消费
+买单	4000	mai dan	all	s2	生活消费
+买东西	4000	mai dong xi	all	nw-succ+s2	生活消费
+买了	4000	mai le	all	s2	生活消费
+慢点	4000	man dian	all	nw-key+nw-succ+s2	常用代词副词
+漫画	4000	man hua	all	s2	娱乐运动
+馒头	4000	man tou	all	s2	饮食
+盲盒	4000	mang he	all	s2	娱乐运动
+忙吗	4000	mang ma	all	nw-succ+s2	寒暄应答
+猫咪	4000	mao mi	all	s2	日常活动
+么么	4000	me me	all	s2	情感关系
+么么哒	4000	me me da	all	s2	情绪与网络口语
+没错	4000	mei cuo	all	s2	寒暄应答
+没电了	4000	mei dian le	all	nw-succ+s2	生活杂项
+没关系	4000	mei guan xi	all	nw-key+nw-succ+s2	寒暄应答
+妹妹	4000	mei mei	all	s2	称呼
+美女	4000	mei nv	all	s2	称呼
+没事	4000	mei shi	all	nw-key+nw-succ+s2	寒暄应答
+没事吧	4000	mei shi ba	all	nw-join+s2	寒暄应答
+每天	4000	mei tian	all	s2	时间
+美团	4000	mei tuan	all	s2	社交与App
+没网	4000	mei wang	all	s2	生活杂项
+没问题	4000	mei wen ti	all	nw-succ+s2	寒暄应答
+没意思	4000	mei yi si	all	s2	情绪与网络口语
+门口	4000	men kou	all	s2	出行
+门票	4000	men piao	all	s2	出行
+米饭	4000	mi fan	all	s2	饮食
+迷路	4000	mi lu	all	s2	出行
+密码	4000	mi ma	all	nw-key+s2	社交与App
+密室	4000	mi shi	all	s2	娱乐运动
+米线	4000	mi xian	all	s2	饮食
+面包	4000	mian bao	all	s2	饮食
+面试	4000	mian shi	all	nw-key+s2	工作学习
+面条	4000	mian tiao	all	nw-key+s2	饮食
+秒杀	4000	miao sha	all	s2	生活消费
+民宿	4000	min su	all	s2	出行
+明白	4000	ming bai	all	nw-succ+s2	寒暄应答
+明白了	4000	ming bai le	all	s2	寒暄应答
+明年	4000	ming nian	all	s2	时间
+明天	4000	ming tian	all	nw-key+nw-succ+s2	时间
+明天见	4000	ming tian jian	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+明晚	4000	ming wan	all	s2	时间
+明星	4000	ming xing	all	s2	娱乐运动
+明早	4000	ming zao	all	s2	时间
+摸鱼	4000	mo yu	all	s2	情绪与网络口语
+目前	4000	mu qian	all	nw-key+s2	时间
+那边	4000	na bian	all	nw-succ+s2	出行
+那当然	4000	na dang ran	all	s2	日常活动
+哪儿	4000	na er	all	nw-key+nw-succ+s2	寒暄应答
+哪个	4000	na ge	all	nw-succ+s2	常用代词副词
+那个	4000	na ge	all	nw-succ+s2	常用代词副词
+那好	4000	na hao	all	s2	寒暄应答
+哪里	4000	na li	all	nw-key+nw-succ+s2	寒暄应答
+那么	4000	na me	all	s2	常用代词副词
+哪怕	4000	na pa	all	s2	日常活动
+那些	4000	na xie	all	s2	常用代词副词
+那样	4000	na yang	all	s2	常用代词副词
+哪有	4000	na you	all	s2	日常活动
+奶茶	4000	nai cha	all	nw-key+nw-succ+s2	饮食
+奶奶	4000	nai nai	all	s2	称呼
+难吃	4000	nan chi	all	s2	饮食
+难过	4000	nan guo	all	s2	情绪与网络口语
+男朋友	4000	nan peng you	all	s2	称呼
+难受	4000	nan shou	all	s2	情绪与网络口语
+男友	4000	nan you	all	s2	称呼
+闹钟	4000	nao zhong	all	s2	生活杂项
+内卷	4000	nei juan	all	s2	情绪与网络口语
+昵称	4000	ni cheng	all	s2	社交与App
+你好	4000	ni hao	all	nw-key+nw-succ+s2	寒暄应答
+你觉得	4000	ni jue de	all	nw-key+s2	日常活动
+你们	4000	ni men	all	s2	常用代词副词
+你知道吗	4000	ni zhi dao ma	all	s2	日常活动
+年初	4000	nian chu	all	s2	时间
+年底	4000	nian di	all	s2	时间
+年级	4000	nian ji	all	s2	学校
+年终奖	4000	nian zhong jiang	all	s2	工作学习
+您好	4000	nin hao	all	s2	寒暄应答
+牛啊	4000	niu a	all	s2	情绪与网络口语
+牛奶	4000	niu nai	all	s2	饮食
+弄好了	4000	nong hao le	all	nw-join+nw-key+s2	工作学习
+女儿	4000	nv er	all	s2	称呼
+女朋友	4000	nv peng you	all	s2	称呼
+女友	4000	nv you	all	s2	称呼
+偶尔	4000	ou er	all	s2	时间
+偶像	4000	ou xiang	all	s2	娱乐运动
+爬山	4000	pa shan	all	s2	娱乐运动
+拍照	4000	pai zhao	all	nw-key+s2	社交与App
+跑步	4000	pao bu	all	nw-key+s2	健康
+陪伴	4000	pei ban	all	s2	情感关系
+佩服	4000	pei fu	all	s2	情绪与网络口语
+陪你	4000	pei ni	all	s2	日常活动
+培训	4000	pei xun	all	s2	工作学习
+朋友	4000	peng you	all	nw-key+nw-succ+s2	称呼
+朋友圈	4000	peng you quan	all	nw-join+nw-succ+s2	社交与App
+啤酒	4000	pi jiu	all	s2	饮食
+骗你的	4000	pian ni de	all	s2	情绪与网络口语
+骗人	4000	pian ren	all	s2	日常活动
+便宜	4000	pian yi	all	nw-key+s2	生活消费
+拼单	4000	pin dan	all	s2	生活消费
+拼多多	4000	pin duo duo	all	s2	社交与App
+平安	4000	ping an	all	nw-succ+s2	寒暄应答
+屏蔽	4000	ping bi	all	s2	社交与App
+苹果	4000	ping guo	all	s2	饮食
+评论	4000	ping lun	all	s2	社交与App
+评论区	4000	ping lun qu	all	s2	社交与App
+屏幕	4000	ping mu	all	s2	生活杂项
+乒乓球	4000	ping pang qiu	all	s2	娱乐运动
+平时	4000	ping shi	all	s2	时间
+破防	4000	po fang	all	s2	情绪与网络口语
+葡萄	4000	pu tao	all	s2	饮食
+骑车	4000	qi che	all	s2	出行
+起床	4000	qi chuang	all	nw-key+s2	健康
+七点	4000	qi dian	all	s2	生活杂项
+奇怪	4000	qi guai	all	s2	情绪与网络口语
+期末	4000	qi mo	all	s2	工作学习
+期末考试	4000	qi mo kao shi	all	s2	学校
+其实	4000	qi shi	all	nw-key+s2	日常活动
+其实是	4000	qi shi shi	all	s2	常用代词副词
+气温	4000	qi wen	all	s2	天气
+七夕	4000	qi xi	all	s2	时间
+骑行	4000	qi xing	all	s2	娱乐运动
+期中	4000	qi zhong	all	s2	工作学习
+恰好	4000	qia hao	all	s2	常用代词副词
+钱包	4000	qian bao	all	s2	生活消费
+签名	4000	qian ming	all	s2	社交与App
+前任	4000	qian ren	all	s2	称呼
+签收	4000	qian shou	all	s2	生活消费
+前天	4000	qian tian	all	s2	时间
+千万	4000	qian wan	all	s2	日常活动
+签字	4000	qian zi	all	s2	工作学习
+抢购	4000	qiang gou	all	s2	生活消费
+抢红包	4000	qiang hong bao	all	s2	社交与App
+亲爱的	4000	qin ai de	all	s2	称呼
+亲们	4000	qin men	all	s2	称呼
+亲戚	4000	qin qi	all	s2	称呼
+请假	4000	qing jia	all	nw-key+s2	工作学习
+请客	4000	qing ke	all	s2	饮食
+清明	4000	qing ming	all	s2	时间
+清明节	4000	qing ming jie	all	s2	时间
+情人节	4000	qing ren jie	all	s2	时间
+晴天	4000	qing tian	all	s2	天气
+求婚	4000	qiu hun	all	s2	情感关系
+球赛	4000	qiu sai	all	s2	娱乐运动
+取关	4000	qu guan	all	s2	社交与App
+取件	4000	qu jian	all	s2	生活消费
+取快递	4000	qu kuai di	all	s2	生活消费
+去哪	4000	qu na	all	nw-key+nw-succ+s2	常用代词副词
+去哪儿	4000	qu na er	all	s2	常用代词副词
+去哪里	4000	qu na li	all	nw-join+nw-key+s2	常用代词副词
+去年	4000	qu nian	all	s2	时间
+确认	4000	que ren	all	nw-key+nw-succ+s2	工作学习
+确实	4000	que shi	all	nw-key+s2	寒暄应答
+群公告	4000	qun gong gao	all	s2	工作学习
+群里	4000	qun li	all	s2	社交与App
+群聊	4000	qun liao	all	s2	社交与App
+群主	4000	qun zhu	all	s2	社交与App
+然后	4000	ran hou	all	nw-key+s2	日常活动
+热死了	4000	re si le	all	s2	天气
+人家	4000	ren jia	all	s2	常用代词副词
+认真的	4000	ren zhen de	all	s2	情绪与网络口语
+日报	4000	ri bao	all	s2	工作学习
+日历	4000	ri li	all	s2	生活杂项
+如果	4000	ru guo	all	nw-key+s2	日常活动
+入职	4000	ru zhi	all	s2	工作学习
+软件	4000	ruan jian	all	nw-key+s2	社交与App
+撒娇	4000	sa jiao	all	s2	情感关系
+散步	4000	san bu	all	nw-key+nw-succ+s2	出行
+三点	4000	san dian	all	s2	生活杂项
+三天	4000	san tian	all	s2	生活杂项
+嗓子疼	4000	sang zi teng	all	s2	健康
+扫码	4000	sao ma	all	s2	社交与App
+扫描	4000	sao miao	all	s2	工作学习
+扫一扫	4000	sao yi sao	all	s2	社交与App
+啥事	4000	sha shi	all	s2	常用代词副词
+上班	4000	shang ban	all	nw-key+nw-succ+s2	工作学习
+商场	4000	shang chang	all	s2	生活消费
+上车	4000	shang che	all	nw-key+s2	出行
+上传	4000	shang chuan	all	s2	社交与App
+上分	4000	shang fen	all	s2	社交与App
+上个月	4000	shang ge yue	all	s2	时间
+上课	4000	shang ke	all	nw-key+s2	工作学习
+上头	4000	shang tou	all	s2	情绪与网络口语
+上午	4000	shang wu	all	nw-key+s2	时间
+上线	4000	shang xian	all	s2	工作学习
+伤心	4000	shang xin	all	s2	情绪与网络口语
+上周	4000	shang zhou	all	s2	时间
+上自习	4000	shang zi xi	all	s2	学校
+稍等	4000	shao deng	all	nw-key+s2	寒暄应答
+稍后	4000	shao hou	all	s2	时间
+烧烤	4000	shao kao	all	nw-key+nw-succ+s2	饮食
+稍微	4000	shao wei	all	s2	常用代词副词
+舍不得	4000	she bu de	all	s2	情感关系
+社死	4000	she si	all	s2	情绪与网络口语
+社团	4000	she tuan	all	s2	学校
+摄像头	4000	she xiang tou	all	s2	生活杂项
+舍友	4000	she you	all	s2	称呼
+什么	4000	shen me	all	nw-succ+s2	常用代词副词
+什么情况	4000	shen me qing kuang	all	nw-key+nw-succ+s2	日常活动
+什么事	4000	shen me shi	all	s2	寒暄应答
+审批	4000	shen pi	all	nw-key+s2	工作学习
+神奇	4000	shen qi	all	s2	情绪与网络口语
+婶婶	4000	shen shen	all	s2	称呼
+身体	4000	shen ti	all	nw-key+nw-succ+s2	健康
+生病	4000	sheng bing	all	s2	健康
+圣诞	4000	sheng dan	all	s2	时间
+圣诞节	4000	sheng dan jie	all	s2	时间
+生闷气	4000	sheng men qi	all	s2	情感关系
+生气	4000	sheng qi	all	s2	情绪与网络口语
+省钱	4000	sheng qian	all	nw-succ+s2	生活消费
+生日	4000	sheng ri	all	nw-key+s2	时间
+生日快乐	4000	sheng ri kuai le	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+升温	4000	sheng wen	all	s2	天气
+生物	4000	sheng wu	all	s2	学校
+声音	4000	sheng yin	all	s2	生活杂项
+是不是	4000	shi bu shi	all	s2	寒暄应答
+是的	4000	shi de	all	s2	寒暄应答
+十点	4000	shi dian	all	s2	生活杂项
+十二点	4000	shi er dian	all	s2	生活杂项
+十分钟	4000	shi fen zhong	all	s2	生活杂项
+师傅	4000	shi fu	all	s2	称呼
+师父	4000	shi fu	all	s2	称呼
+时间	4000	shi jian	all	nw-key+nw-succ+s2	时间
+世界杯	4000	shi jie bei	all	s2	娱乐运动
+是吗	4000	shi ma	all	s2	寒暄应答
+失眠	4000	shi mian	all	s2	健康
+视频	4000	shi pin	all	nw-key+nw-succ+s2	社交与App
+视频聊天	4000	shi pin liao tian	all	s2	社交与App
+视频通话	4000	shi pin tong hua	all	s2	社交与App
+是谁	4000	shi shui	all	nw-succ+s2	常用代词副词
+食堂	4000	shi tang	all	s2	学校
+失望	4000	shi wang	all	s2	情绪与网络口语
+实习	4000	shi xi	all	s2	工作学习
+十一点	4000	shi yi dian	all	s2	生活杂项
+室友	4000	shi you	all	s2	称呼
+实在	4000	shi zai	all	s2	常用代词副词
+手办	4000	shou ban	all	s2	娱乐运动
+收藏	4000	shou cang	all	s2	社交与App
+收到	4000	shou dao	all	nw-key+nw-succ+s2	寒暄应答
+收到了	4000	shou dao le	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+售后	4000	shou hou	all	nw-key+s2	生活消费
+手机	4000	shou ji	all	nw-key+s2	生活消费
+手机号	4000	shou ji hao	all	nw-key+s2	社交与App
+手机没电	4000	shou ji mei dian	all	nw-key+s2	生活杂项
+收款	4000	shou kuan	all	nw-key+s2	社交与App
+收拾	4000	shou shi	all	nw-key+s2	生活消费
+寿司	4000	shou si	all	s2	饮食
+鼠标	4000	shu biao	all	s2	工作学习
+舒服	4000	shu fu	all	nw-succ+s2	情绪与网络口语
+暑假	4000	shu jia	all	s2	时间
+数据线	4000	shu ju xian	all	s2	工作学习
+叔叔	4000	shu shu	all	s2	称呼
+数学	4000	shu xue	all	s2	学校
+刷抖音	4000	shua dou yin	all	s2	社交与App
+刷手机	4000	shua shou ji	all	s2	社交与App
+帅哥	4000	shuai ge	all	s2	称呼
+谁啊	4000	shui a	all	s2	常用代词副词
+水电费	4000	shui dian fei	all	s2	生活消费
+水费	4000	shui fei	all	s2	生活消费
+水果	4000	shui guo	all	nw-key+nw-succ+s2	饮食
+睡觉	4000	shui jiao	all	nw-key+nw-succ+s2	健康
+睡了吗	4000	shui le ma	all	nw-join+nw-succ+s2	寒暄应答
+顺便	4000	shun bian	all	nw-key+s2	常用代词副词
+顺利	4000	shun li	all	nw-succ+s2	寒暄应答
+四点	4000	si dian	all	s2	生活杂项
+私聊	4000	si liao	all	s2	社交与App
+四六级	4000	si liu ji	all	s2	学校
+思念	4000	si nian	all	s2	情感关系
+私信	4000	si xin	all	s2	社交与App
+送孩子	4000	song hai zi	all	s2	日常活动
+送你	4000	song ni	all	nw-key+s2	出行
+搜索	4000	sou suo	all	s2	社交与App
+搜一下	4000	sou yi xia	all	s2	社交与App
+宿舍	4000	su she	all	s2	学校
+酸辣粉	4000	suan la fen	all	s2	饮食
+算了	4000	suan le	all	s2	寒暄应答
+酸奶	4000	suan nai	all	s2	饮食
+算是	4000	suan shi	all	s2	常用代词副词
+随便	4000	sui bian	all	s2	寒暄应答
+虽然	4000	sui ran	all	s2	日常活动
+随时	4000	sui shi	all	s2	常用代词副词
+所以	4000	suo yi	all	nw-key+s2	日常活动
+他们	4000	ta men	all	s2	常用代词副词
+太棒了	4000	tai bang le	all	nw-join+nw-key+s2	情绪与网络口语
+太多	4000	tai duo	all	s2	常用代词副词
+台风	4000	tai feng	all	s2	天气
+太贵了	4000	tai gui le	all	nw-join+nw-key+s2	生活消费
+太好了	4000	tai hao le	all	nw-key+s2	情绪与网络口语
+太开心了	4000	tai kai xin le	all	s2	情绪与网络口语
+太离谱了	4000	tai li pu le	all	s2	情绪与网络口语
+太强了	4000	tai qiang le	all	s2	情绪与网络口语
+太热了	4000	tai re le	all	nw-join+s2	天气
+谈恋爱	4000	tan lian ai	all	s2	情感关系
+堂哥	4000	tang ge	all	s2	称呼
+堂姐	4000	tang jie	all	s2	称呼
+躺平	4000	tang ping	all	s2	情绪与网络口语
+淘宝	4000	tao bao	all	s2	社交与App
+讨厌	4000	tao yan	all	s2	情绪与网络口语
+特别	4000	te bie	all	s2	常用代词副词
+体检	4000	ti jian	all	s2	健康
+提交	4000	ti jiao	all	s2	工作学习
+提前	4000	ti qian	all	nw-key+s2	时间
+体温	4000	ti wen	all	s2	健康
+提醒	4000	ti xing	all	s2	生活杂项
+天啊	4000	tian a	all	s2	情绪与网络口语
+天猫	4000	tian mao	all	s2	生活杂项
+甜蜜	4000	tian mi	all	s2	情感关系
+天哪	4000	tian na	all	s2	情绪与网络口语
+甜品	4000	tian pin	all	s2	饮食
+天气	4000	tian qi	all	nw-key+s2	天气
+天气预报	4000	tian qi yu bao	all	nw-key+s2	天气
+天天	4000	tian tian	all	s2	时间
+跳槽	4000	tiao cao	all	s2	工作学习
+调休	4000	tiao xiu	all	s2	工作学习
+停车	4000	ting che	all	nw-key+s2	出行
+停车场	4000	ting che chang	all	nw-join+nw-key+s2	出行
+停电	4000	ting dian	all	s2	生活杂项
+听歌	4000	ting ge	all	nw-key+s2	社交与App
+挺好	4000	ting hao	all	nw-key+s2	情绪与网络口语
+听话	4000	ting hua	all	s2	情感关系
+停水	4000	ting shui	all	s2	生活杂项
+听说	4000	ting shuo	all	s2	日常活动
+同步	4000	tong bu	all	nw-key+s2	工作学习
+同事	4000	tong shi	all	nw-key+nw-succ+s2	称呼
+同学	4000	tong xue	all	nw-key+s2	称呼
+同学们	4000	tong xue men	all	nw-join+s2	学校
+通讯录	4000	tong xun lu	all	s2	社交与App
+同意	4000	tong yi	all	s2	寒暄应答
+通知	4000	tong zhi	all	nw-key+s2	工作学习
+头大	4000	tou da	all	s2	情绪与网络口语
+头疼	4000	tou teng	all	s2	健康
+头痛	4000	tou tong	all	s2	健康
+头像	4000	tou xiang	all	s2	社交与App
+徒步	4000	tu bu	all	s2	娱乐运动
+吐槽	4000	tu cao	all	s2	情绪与网络口语
+突然	4000	tu ran	all	s2	常用代词副词
+图书馆	4000	tu shu guan	all	s2	学校
+推迟	4000	tui chi	all	s2	时间
+退货	4000	tui huo	all	nw-key+s2	生活消费
+退款	4000	tui kuan	all	nw-key+nw-succ+s2	生活消费
+外公	4000	wai gong	all	s2	称呼
+外卖	4000	wai mai	all	nw-key+nw-succ+s2	生活消费
+外卖到了	4000	wai mai dao le	all	nw-key+s2	饮食
+外婆	4000	wai po	all	s2	称呼
+晚安	4000	wan an	all	nw-key+nw-succ+s2	寒暄应答
+晚餐	4000	wan can	all	nw-key+s2	饮食
+完成	4000	wan cheng	all	nw-key+nw-succ+s2	工作学习
+晚点	4000	wan dian	all	nw-key+s2	寒暄应答
+晚饭	4000	wan fan	all	nw-key+s2	饮食
+完了	4000	wan le	all	nw-succ+s2	寒暄应答
+完全	4000	wan quan	all	s2	常用代词副词
+晚上	4000	wan shang	all	nw-key+nw-succ+s2	时间
+晚上好	4000	wan shang hao	all	nw-join+nw-key+s2	寒暄应答
+玩游戏	4000	wan you xi	all	s2	社交与App
+晚自习	4000	wan zi xi	all	s2	学校
+网购	4000	wang gou	all	s2	生活消费
+网红	4000	wang hong	all	s2	娱乐运动
+网课	4000	wang ke	all	s2	工作学习
+忘了	4000	wang le	all	nw-succ+s2	寒暄应答
+网盘	4000	wang pan	all	s2	社交与App
+网球	4000	wang qiu	all	s2	娱乐运动
+网速	4000	wang su	all	s2	社交与App
+网页	4000	wang ye	all	s2	社交与App
+网友	4000	wang you	all	s2	称呼
+网约车	4000	wang yue che	all	s2	出行
+王者	4000	wang zhe	all	s2	社交与App
+微博	4000	wei bo	all	s2	社交与App
+未读	4000	wei du	all	s2	社交与App
+委屈	4000	wei qu	all	s2	情绪与网络口语
+为啥	4000	wei sha	all	s2	常用代词副词
+为什么	4000	wei shen me	all	nw-succ+s2	寒暄应答
+胃疼	4000	wei teng	all	s2	健康
+微信	4000	wei xin	all	nw-key+s2	社交与App
+微信群	4000	wei xin qun	all	s2	社交与App
+位置	4000	wei zhi	all	nw-key+s2	出行
+文档	4000	wen dang	all	nw-key+nw-succ+s2	工作学习
+温度	4000	wen du	all	s2	天气
+文件	4000	wen jian	all	nw-key+nw-succ+s2	社交与App
+问题	4000	wen ti	all	nw-key+nw-succ+s2	工作学习
+我爱你	4000	wo ai ni	all	s2	情感关系
+我的天	4000	wo de tian	all	s2	情绪与网络口语
+我跟你说	4000	wo gen ni shuo	all	s2	日常活动
+我觉得	4000	wo jue de	all	nw-key+nw-succ+s2	日常活动
+我们	4000	wo men	all	nw-key+s2	常用代词副词
+午安	4000	wu an	all	nw-key+s2	寒暄应答
+午餐	4000	wu can	all	nw-key+s2	饮食
+五点	4000	wu dian	all	s2	生活杂项
+午饭	4000	wu fan	all	nw-key+s2	饮食
+五分钟	4000	wu fen zhong	all	s2	生活杂项
+物理	4000	wu li	all	s2	学校
+无聊	4000	wu liao	all	s2	情绪与网络口语
+雾霾	4000	wu mai	all	s2	天气
+午睡	4000	wu shui	all	s2	健康
+无所谓	4000	wu suo wei	all	s2	寒暄应答
+呜呜	4000	wu wu	all	s2	情绪与网络口语
+物业	4000	wu ye	all	nw-succ+s2	生活消费
+五一	4000	wu yi	all	s2	时间
+无语	4000	wu yu	all	s2	情绪与网络口语
+洗发水	4000	xi fa shui	all	s2	生活消费
+媳妇	4000	xi fu	all	s2	称呼
+西瓜	4000	xi gua	all	s2	饮食
+喜欢	4000	xi huan	all	nw-key+nw-succ+s2	情感关系
+喜欢你	4000	xi huan ni	all	nw-join+nw-key+s2	情绪与网络口语
+系统	4000	xi tong	all	nw-key+s2	工作学习
+洗碗	4000	xi wan	all	nw-key+s2	生活消费
+嘻嘻	4000	xi xi	all	s2	情绪与网络口语
+洗衣服	4000	xi yi fu	all	nw-key+s2	生活消费
+洗澡	4000	xi zao	all	s2	健康
+下班	4000	xia ban	all	nw-key+nw-succ+s2	工作学习
+下车	4000	xia che	all	nw-key+s2	出行
+下次	4000	xia ci	all	nw-key+s2	寒暄应答
+下次见	4000	xia ci jian	all	nw-join+nw-key+s2	寒暄应答
+下单	4000	xia dan	all	nw-key+s2	生活消费
+下个月	4000	xia ge yue	all	s2	时间
+下馆子	4000	xia guan zi	all	s2	饮食
+下课	4000	xia ke	all	nw-key+s2	工作学习
+下午	4000	xia wu	all	nw-key+nw-succ+s2	时间
+下午好	4000	xia wu hao	all	nw-join+s2	寒暄应答
+下雪	4000	xia xue	all	nw-key+s2	天气
+下雨	4000	xia yu	all	nw-key+s2	天气
+下雨了	4000	xia yu le	all	nw-join+nw-key+nw-succ+s2	天气
+下载	4000	xia zai	all	s2	社交与App
+下周	4000	xia zhou	all	nw-key+nw-succ+s2	时间
+现金	4000	xian jin	all	s2	生活消费
+羡慕	4000	xian mu	all	s2	情绪与网络口语
+显示器	4000	xian shi qi	all	s2	工作学习
+闲鱼	4000	xian yu	all	s2	生活杂项
+现在	4000	xian zai	all	nw-key+s2	时间
+相册	4000	xiang ce	all	s2	社交与App
+想多了	4000	xiang duo le	all	s2	情绪与网络口语
+想见你	4000	xiang jian ni	all	nw-join+nw-key+s2	日常活动
+香蕉	4000	xiang jiao	all	s2	饮食
+项目	4000	xiang mu	all	s2	工作学习
+想你	4000	xiang ni	all	nw-key+s2	情绪与网络口语
+想你了	4000	xiang ni le	all	nw-join+s2	情感关系
+想念	4000	xiang nian	all	nw-key+s2	情感关系
+相亲	4000	xiang qin	all	s2	情感关系
+小程序	4000	xiao cheng xu	all	s2	社交与App
+小哥哥	4000	xiao ge ge	all	s2	称呼
+小孩	4000	xiao hai	all	s2	称呼
+小红书	4000	xiao hong shu	all	s2	社交与App
+小姐姐	4000	xiao jie jie	all	s2	称呼
+小龙虾	4000	xiao long xia	all	s2	饮食
+小区	4000	xiao qu	all	nw-key+s2	出行
+小说	4000	xiao shuo	all	s2	娱乐运动
+笑死	4000	xiao si	all	s2	情绪与网络口语
+笑死我了	4000	xiao si wo le	all	s2	情绪与网络口语
+消息	4000	xiao xi	all	nw-succ+s2	社交与App
+小心点	4000	xiao xin dian	all	s2	常用代词副词
+宵夜	4000	xiao ye	all	s2	饮食
+校园	4000	xiao yuan	all	s2	学校
+携程	4000	xie cheng	all	s2	生活杂项
+写完了	4000	xie wan le	all	s2	工作学习
+谢谢	4000	xie xie	all	nw-key+nw-succ+s2	寒暄应答
+谢谢你	4000	xie xie ni	all	nw-join+nw-key+s2	寒暄应答
+谢谢您	4000	xie xie nin	all	nw-join+s2	寒暄应答
+卸载	4000	xie zai	all	s2	社交与App
+鞋子	4000	xie zi	all	s2	生活消费
+心动	4000	xin dong	all	s2	情感关系
+信号	4000	xin hao	all	nw-succ+s2	社交与App
+辛苦了	4000	xin ku le	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+心累	4000	xin lei	all	s2	情绪与网络口语
+新年快乐	4000	xin nian kuai le	all	nw-join+nw-key+s2	寒暄应答
+心情	4000	xin qing	all	s2	情绪与网络口语
+心情不好	4000	xin qing bu hao	all	s2	情绪与网络口语
+心软	4000	xin ruan	all	s2	情感关系
+新手机	4000	xin shou ji	all	s2	生活杂项
+心疼	4000	xin teng	all	s2	情绪与网络口语
+信用卡	4000	xin yong ka	all	s2	生活消费
+行啊	4000	xing a	all	s2	寒暄应答
+行吧	4000	xing ba	all	s2	寒暄应答
+行不行	4000	xing bu xing	all	s2	寒暄应答
+行的	4000	xing de	all	s2	寒暄应答
+行了	4000	xing le	all	s2	寒暄应答
+星期二	4000	xing qi er	all	s2	时间
+星期六	4000	xing qi liu	all	nw-key+s2	时间
+星期日	4000	xing qi ri	all	s2	时间
+星期三	4000	xing qi san	all	s2	时间
+星期四	4000	xing qi si	all	s2	时间
+星期天	4000	xing qi tian	all	nw-key+s2	时间
+星期五	4000	xing qi wu	all	nw-key+s2	时间
+星期一	4000	xing qi yi	all	nw-key+s2	时间
+兄弟	4000	xiong di	all	s2	称呼
+修改	4000	xiu gai	all	nw-key+nw-succ+s2	工作学习
+休假	4000	xiu jia	all	nw-key+s2	工作学习
+需求	4000	xu qiu	all	nw-key+s2	工作学习
+选课	4000	xuan ke	all	s2	学校
+学分	4000	xue fen	all	s2	学校
+学生会	4000	xue sheng hui	all	s2	学校
+学生证	4000	xue sheng zheng	all	s2	学校
+学校	4000	xue xiao	all	nw-key+s2	出行
+牙疼	4000	ya teng	all	s2	健康
+演唱会	4000	yan chang hui	all	s2	娱乐运动
+延期	4000	yan qi	all	s2	时间
+验证码	4000	yan zheng ma	all	s2	社交与App
+养狗	4000	yang gou	all	s2	日常活动
+养猫	4000	yang mao	all	s2	日常活动
+要不要	4000	yao bu yao	all	s2	寒暄应答
+药店	4000	yao dian	all	s2	健康
+要么	4000	yao me	all	s2	日常活动
+钥匙	4000	yao shi	all	s2	生活消费
+夜里	4000	ye li	all	s2	时间
+夜宵	4000	ye xiao	all	s2	饮食
+也许	4000	ye xu	all	s2	寒暄应答
+爷爷	4000	ye ye	all	s2	称呼
+一般	4000	yi ban	all	s2	情绪与网络口语
+一点	4000	yi dian	all	nw-succ+s2	常用代词副词
+一点半	4000	yi dian ban	all	s2	生活杂项
+一定	4000	yi ding	all	nw-key+s2	日常活动
+已读	4000	yi du	all	s2	社交与App
+一分钟	4000	yi fen zhong	all	s2	生活杂项
+衣服	4000	yi fu	all	nw-key+nw-succ+s2	生活消费
+一个月	4000	yi ge yue	all	s2	生活杂项
+遗憾	4000	yi han	all	s2	情绪与网络口语
+以后	4000	yi hou	all	s2	时间
+一会	4000	yi hui	all	nw-key+s2	常用代词副词
+一会儿	4000	yi hui er	all	nw-key+nw-succ+s2	时间
+一会见	4000	yi hui jian	all	nw-join+nw-key+s2	寒暄应答
+已经	4000	yi jing	all	s2	常用代词副词
+一路平安	4000	yi lu ping an	all	nw-join+nw-succ+s2	寒暄应答
+一路顺风	4000	yi lu shun feng	all	nw-join+nw-key+s2	寒暄应答
+疫苗	4000	yi miao	all	s2	健康
+一年	4000	yi nian	all	s2	生活杂项
+一起	4000	yi qi	all	nw-key+nw-succ+s2	常用代词副词
+一起吃饭	4000	yi qi chi fan	all	nw-join+nw-key+nw-succ+s2	日常活动
+一起去	4000	yi qi qu	all	nw-join+nw-key+nw-succ+s2	日常活动
+一起玩	4000	yi qi wan	all	nw-join+nw-key+nw-succ+s2	日常活动
+以前	4000	yi qian	all	nw-succ+s2	时间
+一上午	4000	yi shang wu	all	s2	生活杂项
+意外	4000	yi wai	all	s2	情绪与网络口语
+一晚上	4000	yi wan shang	all	s2	生活杂项
+一下	4000	yi xia	all	nw-succ+s2	常用代词副词
+一下午	4000	yi xia wu	all	s2	生活杂项
+一小时	4000	yi xiao shi	all	nw-succ+s2	时间
+一些	4000	yi xie	all	nw-succ+s2	常用代词副词
+医院	4000	yi yuan	all	s2	出行
+驿站	4000	yi zhan	all	s2	生活消费
+一整天	4000	yi zheng tian	all	s2	时间
+一直	4000	yi zhi	all	s2	时间
+一周	4000	yi zhou	all	s2	生活杂项
+银行卡	4000	yin hang ka	all	s2	生活消费
+音量	4000	yin liang	all	s2	生活杂项
+饮料	4000	yin liao	all	s2	饮食
+阴天	4000	yin tian	all	s2	天气
+因为	4000	yin wei	all	nw-key+s2	日常活动
+音乐	4000	yin yue	all	nw-key+nw-succ+s2	社交与App
+应该	4000	ying gai	all	nw-key+s2	寒暄应答
+应该是	4000	ying gai shi	all	nw-join+nw-succ+s2	常用代词副词
+应用	4000	ying yong	all	s2	社交与App
+英语	4000	ying yu	all	s2	学校
+有点	4000	you dian	all	nw-key+s2	常用代词副词
+有点儿	4000	you dian er	all	s2	常用代词副词
+优惠	4000	you hui	all	nw-key+s2	生活消费
+优惠券	4000	you hui quan	all	nw-join+nw-key+s2	生活消费
+邮件	4000	you jian	all	nw-key+nw-succ+s2	工作学习
+有空吗	4000	you kong ma	all	nw-join+nw-succ+s2	寒暄应答
+有没有	4000	you mei you	all	nw-key+nw-succ+s2	寒暄应答
+尤其	4000	you qi	all	s2	常用代词副词
+有趣	4000	you qu	all	s2	情绪与网络口语
+有时候	4000	you shi hou	all	s2	时间
+游戏	4000	you xi	all	s2	社交与App
+邮箱	4000	you xiang	all	s2	社交与App
+有意思	4000	you yi si	all	s2	情绪与网络口语
+游泳	4000	you yong	all	s2	娱乐运动
+瑜伽	4000	yu jia	all	s2	健康
+羽毛球	4000	yu mao qiu	all	s2	娱乐运动
+郁闷	4000	yu men	all	s2	情绪与网络口语
+雨伞	4000	yu san	all	s2	生活消费
+雨天	4000	yu tian	all	s2	天气
+语文	4000	yu wen	all	s2	学校
+预习	4000	yu xi	all	s2	工作学习
+语音	4000	yu yin	all	s2	社交与App
+元旦	4000	yuan dan	all	s2	时间
+原来	4000	yuan lai	all	nw-key+s2	常用代词副词
+原谅	4000	yuan liang	all	s2	情感关系
+原神	4000	yuan shen	all	s2	社交与App
+月报	4000	yue bao	all	s2	工作学习
+月初	4000	yue chu	all	s2	时间
+月底	4000	yue di	all	s2	时间
+约饭	4000	yue fan	all	s2	饮食
+约会	4000	yue hui	all	s2	日常活动
+运动	4000	yun dong	all	nw-key+s2	健康
+运费	4000	yun fei	all	nw-key+s2	生活消费
+咋办	4000	za ban	all	s2	常用代词副词
+咋了	4000	za le	all	s2	常用代词副词
+咋样	4000	za yang	all	s2	常用代词副词
+在的	4000	zai de	all	s2	寒暄应答
+在干嘛	4000	zai gan ma	all	nw-key+nw-succ+s2	寒暄应答
+在家	4000	zai jia	all	nw-key+nw-succ+s2	日常活动
+再见	4000	zai jian	all	nw-succ+s2	寒暄应答
+再聊	4000	zai liao	all	nw-key+nw-succ+s2	寒暄应答
+在路上	4000	zai lu shang	all	nw-key+nw-succ+s2	出行
+在吗	4000	zai ma	all	nw-succ+s2	寒暄应答
+在哪	4000	zai na	all	nw-key+nw-succ+s2	出行
+在哪儿	4000	zai na er	all	s2	出行
+在哪里	4000	zai na li	all	nw-join+nw-key+nw-succ+s2	出行
+在呢	4000	zai ne	all	s2	寒暄应答
+在一起	4000	zai yi qi	all	s2	情感关系
+咱们	4000	zan men	all	s2	常用代词副词
+赞同	4000	zan tong	all	s2	寒暄应答
+早安	4000	zao an	all	nw-key+nw-succ+s2	寒暄应答
+早八	4000	zao ba	all	s2	生活杂项
+早餐	4000	zao can	all	nw-key+nw-succ+s2	饮食
+早到	4000	zao dao	all	s2	出行
+早点	4000	zao dian	all	nw-key+nw-succ+s2	时间
+早点睡	4000	zao dian shui	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+早点休息	4000	zao dian xiu xi	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+早饭	4000	zao fan	all	nw-key+nw-succ+s2	饮食
+早就	4000	zao jiu	all	s2	常用代词副词
+早上	4000	zao shang	all	nw-key+s2	时间
+早上好	4000	zao shang hao	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+早睡	4000	zao shui	all	s2	健康
+怎么	4000	zen me	all	nw-key+s2	常用代词副词
+怎么办	4000	zen me ban	all	nw-succ+s2	寒暄应答
+怎么会	4000	zen me hui	all	s2	日常活动
+怎么回事	4000	zen me hui shi	all	nw-key+nw-succ+s2	日常活动
+怎么了	4000	zen me le	all	nw-key+s2	寒暄应答
+怎么说	4000	zen me shuo	all	nw-succ+s2	日常活动
+怎么样	4000	zen me yang	all	nw-succ+s2	寒暄应答
+怎样	4000	zen yang	all	s2	常用代词副词
+炸鸡	4000	zha ji	all	s2	饮食
+宅家	4000	zhai jia	all	s2	日常活动
+账号	4000	zhang hao	all	nw-key+nw-succ+s2	社交与App
+照片	4000	zhao pian	all	nw-key+nw-succ+s2	社交与App
+这边	4000	zhe bian	all	nw-succ+s2	出行
+这个	4000	zhe ge	all	nw-succ+s2	常用代词副词
+这个月	4000	zhe ge yue	all	s2	时间
+这么	4000	zhe me	all	s2	常用代词副词
+这些	4000	zhe xie	all	s2	常用代词副词
+这样	4000	zhe yang	all	nw-succ+s2	常用代词副词
+这周	4000	zhe zhou	all	nw-key+s2	时间
+真棒	4000	zhen bang	all	nw-key+s2	情绪与网络口语
+真的	4000	zhen de	all	nw-key+nw-succ+s2	寒暄应答
+真的假的	4000	zhen de jia de	all	s2	日常活动
+真的吗	4000	zhen de ma	all	nw-join+s2	寒暄应答
+真的是	4000	zhen de shi	all	s2	常用代词副词
+真是	4000	zhen shi	all	s2	常用代词副词
+真香	4000	zhen xiang	all	s2	情绪与网络口语
+正好	4000	zheng hao	all	nw-key+s2	常用代词副词
+政治	4000	zheng zhi	all	s2	学校
+直播	4000	zhi bo	all	s2	社交与App
+直播间	4000	zhi bo jian	all	s2	社交与App
+知道啦	4000	zhi dao la	all	s2	寒暄应答
+知道了	4000	zhi dao le	all	nw-succ+s2	寒暄应答
+置顶	4000	zhi ding	all	s2	社交与App
+支付宝	4000	zhi fu bao	all	s2	社交与App
+之后	4000	zhi hou	all	nw-succ+s2	时间
+知乎	4000	zhi hu	all	s2	社交与App
+纸巾	4000	zhi jin	all	s2	生活消费
+之前	4000	zhi qian	all	nw-succ+s2	时间
+只是	4000	zhi shi	all	s2	常用代词副词
+只要	4000	zhi yao	all	s2	日常活动
+中奖	4000	zhong jiang	all	s2	娱乐运动
+中考	4000	zhong kao	all	s2	学校
+中秋	4000	zhong qiu	all	s2	时间
+中秋节	4000	zhong qiu jie	all	s2	时间
+中秋快乐	4000	zhong qiu kuai le	all	s2	寒暄应答
+中午	4000	zhong wu	all	nw-key+s2	时间
+终于	4000	zhong yu	all	nw-succ+s2	常用代词副词
+周报	4000	zhou bao	all	s2	工作学习
+周二	4000	zhou er	all	nw-key+s2	时间
+周六	4000	zhou liu	all	nw-key+s2	时间
+周末	4000	zhou mo	all	nw-key+nw-succ+s2	时间
+周年	4000	zhou nian	all	s2	时间
+周日	4000	zhou ri	all	nw-key+s2	时间
+周三	4000	zhou san	all	nw-key+s2	时间
+周四	4000	zhou si	all	nw-key+s2	时间
+周五	4000	zhou wu	all	nw-key+nw-succ+s2	时间
+周一	4000	zhou yi	all	nw-key+s2	时间
+主播	4000	zhu bo	all	s2	社交与App
+注册	4000	zhu ce	all	s2	社交与App
+祝福	4000	zhu fu	all	nw-succ+s2	寒暄应答
+主管	4000	zhu guan	all	s2	称呼
+注意安全	4000	zhu yi an quan	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+注意点	4000	zhu yi dian	all	s2	常用代词副词
+注意身体	4000	zhu yi shen ti	all	nw-join+nw-key+nw-succ+s2	健康
+住院	4000	zhu yuan	all	s2	健康
+抓狂	4000	zhua kuang	all	s2	情绪与网络口语
+转发	4000	zhuan fa	all	s2	社交与App
+转账	4000	zhuan zhang	all	nw-key+s2	社交与App
+转正	4000	zhuan zheng	all	s2	工作学习
+装修	4000	zhuang xiu	all	s2	生活消费
+追番	4000	zhui fan	all	s2	娱乐运动
+追剧	4000	zhui ju	all	s2	社交与App
+追星	4000	zhui xing	all	s2	娱乐运动
+准时	4000	zhun shi	all	s2	时间
+桌游	4000	zhuo you	all	s2	娱乐运动
+自己	4000	zi ji	all	nw-succ+s2	常用代词副词
+资料	4000	zi liao	all	nw-key+nw-succ+s2	工作学习
+自拍	4000	zi pai	all	s2	社交与App
+自习	4000	zi xi	all	s2	学校
+自助餐	4000	zi zhu can	all	s2	饮食
+总监	4000	zong jian	all	s2	称呼
+总是	4000	zong shi	all	s2	常用代词副词
+总算	4000	zong suan	all	s2	常用代词副词
+综艺	4000	zong yi	all	s2	社交与App
+走路	4000	zou lu	all	s2	出行
+足球	4000	zu qiu	all	s2	娱乐运动
+最近	4000	zui jin	all	nw-key+s2	时间
+最近好吗	4000	zui jin hao ma	all	s2	寒暄应答
+做菜	4000	zuo cai	all	s2	饮食
+坐车	4000	zuo che	all	s2	出行
+做饭	4000	zuo fan	all	nw-key+s2	生活消费
+做家务	4000	zuo jia wu	all	s2	日常活动
+昨天	4000	zuo tian	all	s2	时间
+昨晚	4000	zuo wan	all	s2	时间
+做完了	4000	zuo wan le	all	nw-join+nw-key+nw-succ+s2	工作学习
+作文	4000	zuo wen	all	s2	学校
+作业	4000	zuo ye	all	nw-key+nw-succ+s2	工作学习
+安好	1000	an hao	all	nw-succ	公共联想后继
+安静	1000	an jing	all	nw-succ	公共联想后继
+安排好了	1000	an pai hao le	all	nw-join+nw-key	公共联想键
+安全	1000	an quan	all	nw-succ	公共联想后继
+办法	1000	ban fa	all	nw-succ	公共联想后继
+帮你	1000	bang ni	all	nw-succ	公共联想后继
+帮我发	1000	bang wo fa	all	nw-key	公共联想键
+帮我看	1000	bang wo kan	all	nw-key	公共联想键
+帮我看下	1000	bang wo kan xia	all	nw-key	公共联想键
+帮我拿	1000	bang wo na	all	nw-succ	公共联想后继
+帮我确认	1000	bang wo que ren	all	nw-key	公共联想键
+保存了	1000	bao cun le	all	nw-succ	公共联想后继
+报告	1000	bao gao	all	nw-succ	公共联想后继
+报个平安	1000	bao ge ping an	all	nw-succ	公共联想后继
+报价	1000	bao jia	all	nw-key+nw-succ	公共联想键
+报价单	1000	bao jia dan	all	nw-join+nw-key	公共联想键
+报名	1000	bao ming	all	nw-key	公共联想键
+报名时间	1000	bao ming shi jian	all	nw-join+nw-key	公共联想键
+保暖	1000	bao nuan	all	nw-succ	公共联想后继
+报销单	1000	bao xiao dan	all	nw-join+nw-key	公共联想键
+保障	1000	bao zhang	all	nw-succ	公共联想后继
+比较好	1000	bi jiao hao	all	nw-succ	公共联想后继
+变了吗	1000	bian le ma	all	nw-succ	公共联想后继
+别熬夜	1000	bie ao ye	all	nw-key+nw-succ	公共联想键
+别客气	1000	bie ke qi	all	nw-key	公共联想键
+别难过	1000	bie nan guo	all	nw-key	公共联想键
+别怕	1000	bie pa	all	nw-key	公共联想键
+别太累了	1000	bie tai lei le	all	nw-join+nw-succ	公共联想后继
+别着急	1000	bie zhao ji	all	nw-key+nw-succ	公共联想键
+别着凉	1000	bie zhao liang	all	nw-succ	公共联想后继
+不对	1000	bu dui	all	nw-succ	公共联想后继
+不方便	1000	bu fang bian	all	nw-succ	公共联想后继
+不好	1000	bu hao	all	nw-key	公共联想键
+不好吃	1000	bu hao chi	all	nw-key	公共联想键
+不合适	1000	bu he shi	all	nw-succ	公共联想后继
+不划算	1000	bu hua suan	all	nw-succ	公共联想后继
+不见	1000	bu jian	all	nw-succ	公共联想后继
+不忙	1000	bu mang	all	nw-succ	公共联想后继
+不然	1000	bu ran	all	nw-key	公共联想键
+不是	1000	bu shi	all	nw-key	公共联想键
+不太	1000	bu tai	all	nw-key	公共联想键
+不太对	1000	bu tai dui	all	nw-succ	公共联想后继
+不太方便	1000	bu tai fang bian	all	nw-join+nw-key	公共联想键
+不太清楚	1000	bu tai qing chu	all	nw-join+nw-key	公共联想键
+不太舒服	1000	bu tai shu fu	all	nw-key	公共联想键
+不喜欢	1000	bu xi huan	all	nw-key	公共联想键
+不行	1000	bu xing	all	nw-succ	公共联想后继
+不要	1000	bu yao	all	nw-key	公共联想键
+不要着急	1000	bu yao zhao ji	all	nw-join+nw-key	公共联想键
+不用	1000	bu yong	all	nw-key	公共联想键
+不用担心	1000	bu yong dan xin	all	nw-join+nw-key+nw-succ	公共联想键
+不用急	1000	bu yong ji	all	nw-key	公共联想键
+不用客气	1000	bu yong ke qi	all	nw-join+nw-key	公共联想键
+不着急	1000	bu zhao ji	all	nw-key+nw-succ	公共联想键
+才看到	1000	cai kan dao	all	nw-key	公共联想键
+餐厅	1000	can ting	all	nw-key+nw-succ	公共联想键
+餐厅地址	1000	can ting di zhi	all	nw-key	公共联想键
+操作	1000	cao zuo	all	nw-succ	公共联想后继
+差不多了	1000	cha bu duo le	all	nw-key	公共联想键
+查到了	1000	cha dao le	all	nw-key	公共联想键
+查一下	1000	cha yi xia	all	nw-key+nw-succ	公共联想键
+成本	1000	cheng ben	all	nw-succ	公共联想后继
+吃不了	1000	chi bu liao	all	nw-succ	公共联想后继
+尺寸	1000	chi cun	all	nw-key+nw-succ	公共联想键
+迟到了	1000	chi dao le	all	nw-join+nw-key	公共联想键
+吃的	1000	chi de	all	nw-succ	公共联想后继
+吃点东西	1000	chi dian dong xi	all	nw-join+nw-key+nw-succ	公共联想键
+吃点什么	1000	chi dian shen me	all	nw-join+nw-key	公共联想键
+吃顿饭	1000	chi dun fan	all	nw-join+nw-key	公共联想键
+吃饭了	1000	chi fan le	all	nw-join+nw-key	公共联想键
+吃个饭	1000	chi ge fan	all	nw-join+nw-key+nw-succ	公共联想键
+吃过	1000	chi guo	all	nw-key	公共联想键
+吃过饭	1000	chi guo fan	all	nw-key	公共联想键
+吃火锅	1000	chi huo guo	all	nw-key+nw-succ	公共联想键
+吃辣	1000	chi la	all	nw-succ	公共联想后继
+吃了	1000	chi le	all	nw-key	公共联想键
+吃吗	1000	chi ma	all	nw-succ	公共联想后继
+吃烧烤	1000	chi shao kao	all	nw-key	公共联想键
+吃完	1000	chi wan	all	nw-key	公共联想键
+吃完饭	1000	chi wan fan	all	nw-join+nw-key	公共联想键
+吃晚饭	1000	chi wan fan	all	nw-key	公共联想键
+吃午饭	1000	chi wu fan	all	nw-key	公共联想键
+吃早餐	1000	chi zao can	all	nw-key	公共联想键
+吃早饭	1000	chi zao fan	all	nw-key	公共联想键
+重启	1000	chong qi	all	nw-key	公共联想键
+重启一下	1000	chong qi yi xia	all	nw-join+nw-succ	公共联想后继
+出差回来	1000	chu chai hui lai	all	nw-key	公共联想键
+出发前	1000	chu fa qian	all	nw-key	公共联想键
+出来	1000	chu lai	all	nw-key+nw-succ	公共联想键
+出来吃	1000	chu lai chi	all	nw-key	公共联想键
+出来吃饭	1000	chu lai chi fan	all	nw-join+nw-key	公共联想键
+出来了	1000	chu lai le	all	nw-succ	公共联想后继
+出来了吗	1000	chu lai le ma	all	nw-succ	公共联想后继
+出来玩	1000	chu lai wan	all	nw-join+nw-key	公共联想键
+出来走走	1000	chu lai zou zou	all	nw-join+nw-key	公共联想键
+处理好了	1000	chu li hao le	all	nw-join+nw-key	公共联想键
+处理完	1000	chu li wan	all	nw-key+nw-succ	公共联想键
+处理完了	1000	chu li wan le	all	nw-join+nw-key	公共联想键
+处理一下	1000	chu li yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+出门前	1000	chu men qian	all	nw-key	公共联想键
+出去吃	1000	chu qu chi	all	nw-key	公共联想键
+出去了	1000	chu qu le	all	nw-succ	公共联想后继
+出去走走	1000	chu qu zou zou	all	nw-join+nw-key	公共联想键
+出太阳	1000	chu tai yang	all	nw-key	公共联想键
+催一下	1000	cui yi xia	all	nw-key	公共联想键
+错了	1000	cuo le	all	nw-succ	公共联想后继
+大巴	1000	da ba	all	nw-succ	公共联想后继
+打不开	1000	da bu kai	all	nw-key+nw-succ	公共联想键
+打车过去	1000	da che guo qu	all	nw-key	公共联想键
+大概多久	1000	da gai duo jiu	all	nw-join+nw-key	公共联想键
+大概几点	1000	da gai ji dian	all	nw-join+nw-key	公共联想键
+打几折	1000	da ji zhe	all	nw-key	公共联想键
+打开	1000	da kai	all	nw-succ	公共联想后继
+打开后	1000	da kai hou	all	nw-key	公共联想键
+打款	1000	da kuan	all	nw-key	公共联想键
+大了	1000	da le	all	nw-succ	公共联想后继
+打扰	1000	da rao	all	nw-key	公共联想键
+打扰你	1000	da rao ni	all	nw-key	公共联想键
+大小	1000	da xiao	all	nw-key	公共联想键
+带点	1000	dai dian	all	nw-key	公共联想键
+带孩子	1000	dai hai zi	all	nw-key	公共联想键
+待会见	1000	dai hui jian	all	nw-join+nw-key	公共联想键
+带回去	1000	dai hui qu	all	nw-succ	公共联想后继
+带了吗	1000	dai le ma	all	nw-succ	公共联想后继
+待遇	1000	dai yu	all	nw-succ	公共联想后继
+到火车站	1000	dao huo che zhan	all	nw-key	公共联想键
+到几点	1000	dao ji dian	all	nw-succ	公共联想后继
+到家后	1000	dao jia hou	all	nw-key	公共联想键
+到酒店	1000	dao jiu dian	all	nw-key	公共联想键
+到了吗	1000	dao le ma	all	nw-join+nw-succ	公共联想后继
+道理	1000	dao li	all	nw-succ	公共联想后继
+到哪	1000	dao na	all	nw-key	公共联想键
+到哪里	1000	dao na li	all	nw-join+nw-key	公共联想键
+到那里	1000	dao na li	all	nw-succ	公共联想后继
+到时	1000	dao shi	all	nw-key	公共联想键
+到站	1000	dao zhan	all	nw-key	公共联想键
+到站了	1000	dao zhan le	all	nw-join+nw-key+nw-succ	公共联想键
+到账	1000	dao zhang	all	nw-key	公共联想键
+到账后	1000	dao zhang hou	all	nw-key	公共联想键
+到这里	1000	dao zhe li	all	nw-succ	公共联想后继
+登录不了	1000	deng lu bu liao	all	nw-join+nw-key+nw-succ	公共联想键
+等你到家	1000	deng ni dao jia	all	nw-join+nw-key	公共联想键
+等你回复	1000	deng ni hui fu	all	nw-key	公共联想键
+等你回来	1000	deng ni hui lai	all	nw-join+nw-key	公共联想键
+等你了	1000	deng ni le	all	nw-succ	公共联想后继
+等你忙完	1000	deng ni mang wan	all	nw-join+nw-key	公共联想键
+等我一下	1000	deng wo yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+等一会	1000	deng yi hui	all	nw-key	公共联想键
+地点	1000	di dian	all	nw-succ	公共联想后继
+地方	1000	di fang	all	nw-succ	公共联想后继
+地铁里	1000	di tie li	all	nw-key	公共联想键
+地址发我	1000	di zhi fa wo	all	nw-succ	公共联想后继
+电话号码	1000	dian hua hao ma	all	nw-key	公共联想键
+点了	1000	dian le	all	nw-key	公共联想键
+点什么	1000	dian shen me	all	nw-key+nw-succ	公共联想键
+点一下	1000	dian yi xia	all	nw-succ	公共联想后继
+电影票	1000	dian ying piao	all	nw-join+nw-key	公共联想键
+电子版	1000	dian zi ban	all	nw-succ	公共联想后继
+订单	1000	ding dan	all	nw-key+nw-succ	公共联想键
+订单号	1000	ding dan hao	all	nw-join+nw-key	公共联想键
+订房间	1000	ding fang jian	all	nw-key	公共联想键
+订好了	1000	ding hao le	all	nw-key+nw-succ	公共联想键
+订酒店	1000	ding jiu dian	all	nw-key	公共联想键
+订了	1000	ding le	all	nw-key	公共联想键
+订位	1000	ding wei	all	nw-key	公共联想键
+东西	1000	dong xi	all	nw-succ	公共联想后继
+都好	1000	dou hao	all	nw-succ	公共联想后继
+都会好的	1000	dou hui hao de	all	nw-succ	公共联想后继
+都开心	1000	dou kai xin	all	nw-succ	公共联想后继
+都可以问	1000	dou ke yi wen	all	nw-succ	公共联想后继
+堵车了	1000	du che le	all	nw-join+nw-key	公共联想键
+断开了	1000	duan kai le	all	nw-succ	公共联想后继
+对方	1000	dui fang	all	nw-succ	公共联想后继
+对接人	1000	dui jie ren	all	nw-join+nw-key	公共联想键
+对了	1000	dui le	all	nw-key	公共联想键
+对吗	1000	dui ma	all	nw-succ	公共联想后继
+多穿	1000	duo chuan	all	nw-key	公共联想键
+多喝	1000	duo he	all	nw-key	公共联想键
+多了	1000	duo le	all	nw-succ	公共联想后继
+多休息	1000	duo xiu xi	all	nw-succ	公共联想后继
+发不了	1000	fa bu liao	all	nw-succ	公共联想后继
+发给	1000	fa gei	all	nw-key	公共联想键
+发给你	1000	fa gei ni	all	nw-join+nw-key+nw-succ	公共联想键
+发给我	1000	fa gei wo	all	nw-join+nw-key+nw-succ	公共联想键
+发工资	1000	fa gong zi	all	nw-key	公共联想键
+发过来	1000	fa guo lai	all	nw-key	公共联想键
+发过去	1000	fa guo qu	all	nw-key	公共联想键
+发货地址	1000	fa huo di zhi	all	nw-join+nw-key	公共联想键
+发货了	1000	fa huo le	all	nw-join+nw-key	公共联想键
+发货时间	1000	fa huo shi jian	all	nw-join+nw-key	公共联想键
+发了	1000	fa le	all	nw-key+nw-succ	公共联想键
+发你看看	1000	fa ni kan kan	all	nw-join+nw-key	公共联想键
+发你了	1000	fa ni le	all	nw-join+nw-succ	公共联想后继
+发我看看	1000	fa wo kan kan	all	nw-join+nw-key	公共联想键
+发我一下	1000	fa wo yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+发邮件	1000	fa you jian	all	nw-key	公共联想键
+发张	1000	fa zhang	all	nw-key	公共联想键
+发张照片	1000	fa zhang zhao pian	all	nw-join+nw-key	公共联想键
+饭店	1000	fan dian	all	nw-key+nw-succ	公共联想键
+反馈意见	1000	fan kui yi jian	all	nw-join+nw-key	公共联想键
+反馈一下	1000	fan kui yi xia	all	nw-join+nw-key	公共联想键
+方便	1000	fang bian	all	nw-key+nw-succ	公共联想键
+方便的话	1000	fang bian de hua	all	nw-join+nw-key	公共联想键
+房间	1000	fang jian	all	nw-succ	公共联想后继
+方式	1000	fang shi	all	nw-succ	公共联想后继
+放学了	1000	fang xue le	all	nw-join+nw-key	公共联想键
+放学了吗	1000	fang xue le ma	all	nw-join+nw-succ	公共联想后继
+飞机晚点	1000	fei ji wan dian	all	nw-key	公共联想键
+风格	1000	feng ge	all	nw-succ	公共联想后继
+付过	1000	fu guo	all	nw-key	公共联想键
+附件	1000	fu jian	all	nw-key+nw-succ	公共联想键
+附件里	1000	fu jian li	all	nw-key	公共联想键
+付款方式	1000	fu kuan fang shi	all	nw-join+nw-key	公共联想键
+付了	1000	fu le	all	nw-key	公共联想键
+服务	1000	fu wu	all	nw-succ	公共联想后继
+负责	1000	fu ze	all	nw-key	公共联想键
+负责人	1000	fu ze ren	all	nw-key+nw-succ	公共联想键
+改成	1000	gai cheng	all	nw-key	公共联想键
+改到	1000	gai dao	all	nw-key	公共联想键
+改地址	1000	gai di zhi	all	nw-key	公共联想键
+改好了	1000	gai hao le	all	nw-key+nw-succ	公共联想键
+改了吗	1000	gai le ma	all	nw-succ	公共联想后继
+改天吧	1000	gai tian ba	all	nw-succ	公共联想后继
+赶不上	1000	gan bu shang	all	nw-key	公共联想键
+赶得上	1000	gan de shang	all	nw-key	公共联想键
+干净	1000	gan jing	all	nw-succ	公共联想后继
+感谢大家	1000	gan xie da jia	all	nw-join+nw-key	公共联想键
+感谢你	1000	gan xie ni	all	nw-join+nw-key	公共联想键
+刚到家	1000	gang dao jia	all	nw-succ	公共联想后继
+刚刚看到	1000	gang gang kan dao	all	nw-join+nw-key	公共联想键
+刚看到	1000	gang kan dao	all	nw-key+nw-succ	公共联想键
+高铁票	1000	gao tie piao	all	nw-key	公共联想键
+歌名	1000	ge ming	all	nw-key	公共联想键
+格式	1000	ge shi	all	nw-succ	公共联想后继
+给你发	1000	gei ni fa	all	nw-succ	公共联想后继
+给你了	1000	gei ni le	all	nw-succ	公共联想后继
+给谁	1000	gei shui	all	nw-succ	公共联想后继
+给我看看	1000	gei wo kan kan	all	nw-succ	公共联想后继
+给我消息	1000	gei wo xiao xi	all	nw-succ	公共联想后继
+更新好了	1000	geng xin hao le	all	nw-key	公共联想键
+更新了	1000	geng xin le	all	nw-succ	公共联想后继
+更新一下	1000	geng xin yi xia	all	nw-key	公共联想键
+攻略	1000	gong lue	all	nw-succ	公共联想后继
+公司地址	1000	gong si di zhi	all	nw-join+nw-key	公共联想键
+公园	1000	gong yuan	all	nw-key	公共联想键
+工作	1000	gong zuo	all	nw-key+nw-succ	公共联想键
+工作安排	1000	gong zuo an pai	all	nw-key	公共联想键
+工作进度	1000	gong zuo jin du	all	nw-join+nw-key	公共联想键
+工作日	1000	gong zuo ri	all	nw-key	公共联想键
+工作上	1000	gong zuo shang	all	nw-key	公共联想键
+工作顺利	1000	gong zuo shun li	all	nw-succ	公共联想后继
+够吗	1000	gou ma	all	nw-succ	公共联想后继
+沟通	1000	gou tong	all	nw-key	公共联想键
+沟通一下	1000	gou tong yi xia	all	nw-join+nw-key	公共联想键
+故事	1000	gu shi	all	nw-succ	公共联想后继
+逛逛	1000	guang guang	all	nw-succ	公共联想后继
+贵了	1000	gui le	all	nw-key	公共联想键
+规则	1000	gui ze	all	nw-succ	公共联想后继
+过来了吗	1000	guo lai le ma	all	nw-succ	公共联想后继
+过去了	1000	guo qu le	all	nw-succ	公共联想后继
+还不	1000	hai bu	all	nw-key	公共联想键
+还不错	1000	hai bu cuo	all	nw-key+nw-succ	公共联想键
+还不确定	1000	hai bu que ding	all	nw-join+nw-key	公共联想键
+还好吗	1000	hai hao ma	all	nw-succ	公共联想后继
+还记得	1000	hai ji de	all	nw-succ	公共联想后继
+还可以	1000	hai ke yi	all	nw-key+nw-succ	公共联想键
+还没	1000	hai mei	all	nw-key	公共联想键
+还没吃	1000	hai mei chi	all	nw-key	公共联想键
+还没吃饭	1000	hai mei chi fan	all	nw-join+nw-key	公共联想键
+还没到	1000	hai mei dao	all	nw-join+nw-key+nw-succ	公共联想键
+还没发	1000	hai mei fa	all	nw-key	公共联想键
+还没睡	1000	hai mei shui	all	nw-key	公共联想键
+还没有	1000	hai mei you	all	nw-key+nw-succ	公共联想键
+还没做	1000	hai mei zuo	all	nw-key	公共联想键
+还需要	1000	hai xu yao	all	nw-key	公共联想键
+还要多久	1000	hai yao duo jiu	all	nw-key+nw-succ	公共联想键
+还有	1000	hai you	all	nw-succ	公共联想后继
+还有多久	1000	hai you duo jiu	all	nw-key	公共联想键
+还有货	1000	hai you huo	all	nw-key	公共联想键
+还有吗	1000	hai you ma	all	nw-succ	公共联想后继
+还有这个	1000	hai you zhe ge	all	nw-succ	公共联想后继
+还在	1000	hai zai	all	nw-key	公共联想键
+还在加班	1000	hai zai jia ban	all	nw-key	公共联想键
+航班号	1000	hang ban hao	all	nw-join+nw-key	公共联想键
+好吃的	1000	hao chi de	all	nw-join+nw-key+nw-succ	公共联想键
+好吃吗	1000	hao chi ma	all	nw-join+nw-succ	公共联想后继
+好点	1000	hao dian	all	nw-key	公共联想键
+好点了	1000	hao dian le	all	nw-join+nw-key	公共联想键
+好点了吗	1000	hao dian le ma	all	nw-join+nw-succ	公共联想后继
+好多了	1000	hao duo le	all	nw-join+nw-key+nw-succ	公共联想键
+好好	1000	hao hao	all	nw-key	公共联想键
+好好吃饭	1000	hao hao chi fan	all	nw-join+nw-key	公共联想键
+好久	1000	hao jiu	all	nw-key	公共联想键
+好久没	1000	hao jiu mei	all	nw-key	公共联想键
+好久没见	1000	hao jiu mei jian	all	nw-key	公共联想键
+好久没聊	1000	hao jiu mei liao	all	nw-key	公共联想键
+好看的	1000	hao kan de	all	nw-join+nw-key	公共联想键
+好看吗	1000	hao kan ma	all	nw-join+nw-succ	公共联想后继
+好了吗	1000	hao le ma	all	nw-succ	公共联想后继
+好吗	1000	hao ma	all	nw-succ	公共联想后继
+好梦	1000	hao meng	all	nw-succ	公共联想后继
+好身体	1000	hao shen ti	all	nw-succ	公共联想后继
+好事	1000	hao shi	all	nw-succ	公共联想后继
+好天气	1000	hao tian qi	all	nw-key	公共联想键
+好听吗	1000	hao ting ma	all	nw-succ	公共联想后继
+好玩的	1000	hao wan de	all	nw-succ	公共联想后继
+好想	1000	hao xiang	all	nw-key	公共联想键
+好想你	1000	hao xiang ni	all	nw-join+nw-key	公共联想键
+好消息	1000	hao xiao xi	all	nw-key+nw-succ	公共联想键
+好一点	1000	hao yi dian	all	nw-succ	公共联想后继
+好用吗	1000	hao yong ma	all	nw-succ	公共联想后继
+喝杯茶	1000	he bei cha	all	nw-join+nw-key	公共联想键
+喝杯咖啡	1000	he bei ka fei	all	nw-join+nw-key	公共联想键
+合不合适	1000	he bu he shi	all	nw-succ	公共联想后继
+喝点	1000	he dian	all	nw-key	公共联想键
+核对好了	1000	he dui hao le	all	nw-key	公共联想键
+核对一下	1000	he dui yi xia	all	nw-join+nw-key	公共联想键
+喝咖啡	1000	he ka fei	all	nw-key	公共联想键
+合理	1000	he li	all	nw-succ	公共联想后继
+喝奶茶	1000	he nai cha	all	nw-key	公共联想键
+和你	1000	he ni	all	nw-key	公共联想键
+和你聊	1000	he ni liao	all	nw-key	公共联想键
+和你聊天	1000	he ni liao tian	all	nw-join+nw-succ	公共联想后继
+和你说	1000	he ni shuo	all	nw-succ	公共联想后继
+和你一起	1000	he ni yi qi	all	nw-join+nw-key	公共联想键
+喝什么	1000	he shen me	all	nw-key	公共联想键
+合适	1000	he shi	all	nw-succ	公共联想后继
+合适吗	1000	he shi ma	all	nw-succ	公共联想后继
+合同内容	1000	he tong nei rong	all	nw-key	公共联想键
+合照	1000	he zhao	all	nw-succ	公共联想后继
+合作	1000	he zuo	all	nw-key+nw-succ	公共联想键
+合作愉快	1000	he zuo yu kuai	all	nw-join+nw-key	公共联想键
+很方便	1000	hen fang bian	all	nw-succ	公共联想后继
+很高兴	1000	hen gao xing	all	nw-key+nw-succ	公共联想键
+很好吃	1000	hen hao chi	all	nw-key+nw-succ	公共联想键
+很好看	1000	hen hao kan	all	nw-key	公共联想键
+很久了	1000	hen jiu le	all	nw-succ	公共联想后继
+很清楚	1000	hen qing chu	all	nw-succ	公共联想后继
+很想	1000	hen xiang	all	nw-key	公共联想键
+呼吸	1000	hu xi	all	nw-succ	公共联想后继
+换个	1000	huan ge	all	nw-key	公共联想键
+换个地方	1000	huan ge di fang	all	nw-join+nw-key	公共联想键
+环境	1000	huan jing	all	nw-succ	公共联想后继
+汇报一下	1000	hui bao yi xia	all	nw-join+nw-key	公共联想键
+回复你	1000	hui fu ni	all	nw-succ	公共联想后继
+会更好	1000	hui geng hao	all	nw-succ	公共联想后继
+会好的	1000	hui hao de	all	nw-succ	公共联想后继
+回家了	1000	hui jia le	all	nw-join+nw-key	公共联想键
+回来后	1000	hui lai hou	all	nw-key	公共联想键
+回来了	1000	hui lai le	all	nw-join+nw-succ	公共联想后继
+回来了吗	1000	hui lai le ma	all	nw-succ	公共联想后继
+回你	1000	hui ni	all	nw-succ	公共联想后继
+回去	1000	hui qu	all	nw-succ	公共联想后继
+回去了	1000	hui qu le	all	nw-succ	公共联想后继
+会议纪要	1000	hui yi ji yao	all	nw-key	公共联想键
+会议链接	1000	hui yi lian jie	all	nw-key	公共联想键
+会议室	1000	hui yi shi	all	nw-key	公共联想键
+会这样	1000	hui zhe yang	all	nw-succ	公共联想后继
+火车票	1000	huo che piao	all	nw-join+nw-key	公共联想键
+活动	1000	huo dong	all	nw-succ	公共联想后继
+寄出了吗	1000	ji chu le ma	all	nw-succ	公共联想后继
+记得吃	1000	ji de chi	all	nw-key	公共联想键
+记得拿	1000	ji de na	all	nw-succ	公共联想后继
+几点到	1000	ji dian dao	all	nw-join+nw-key	公共联想键
+几点到家	1000	ji dian dao jia	all	nw-join+nw-key	公共联想键
+几点过来	1000	ji dian guo lai	all	nw-key	公共联想键
+几点结束	1000	ji dian jie shu	all	nw-join+nw-key	公共联想键
+几点开始	1000	ji dian kai shi	all	nw-join+nw-key	公共联想键
+计划	1000	ji hua	all	nw-succ	公共联想后继
+机会	1000	ji hui	all	nw-succ	公共联想后继
+继续	1000	ji xu	all	nw-succ	公共联想后继
+价格	1000	jia ge	all	nw-key+nw-succ	公共联想键
+家里	1000	jia li	all	nw-key+nw-succ	公共联想键
+家里有	1000	jia li you	all	nw-key	公共联想键
+加一下	1000	jia yi xia	all	nw-succ	公共联想后继
+检查	1000	jian cha	all	nw-key	公共联想键
+见到你	1000	jian dao ni	all	nw-succ	公共联想后继
+见个面	1000	jian ge mian	all	nw-join+nw-key+nw-succ	公共联想键
+简介	1000	jian jie	all	nw-succ	公共联想后继
+见面吧	1000	jian mian ba	all	nw-succ	公共联想后继
+见面地点	1000	jian mian di dian	all	nw-join+nw-key	公共联想键
+见面了	1000	jian mian le	all	nw-succ	公共联想后继
+见你	1000	jian ni	all	nw-succ	公共联想后继
+见你了	1000	jian ni le	all	nw-succ	公共联想后继
+建议	1000	jian yi	all	nw-succ	公共联想后继
+见一面	1000	jian yi mian	all	nw-join+nw-key+nw-succ	公共联想键
+交了吗	1000	jiao le ma	all	nw-succ	公共联想后继
+教练	1000	jiao lian	all	nw-succ	公共联想后继
+叫什么	1000	jiao shen me	all	nw-succ	公共联想后继
+交作业	1000	jiao zuo ye	all	nw-key	公共联想键
+结果	1000	jie guo	all	nw-succ	公共联想后继
+解决	1000	jie jue	all	nw-key	公共联想键
+解决了	1000	jie jue le	all	nw-join+nw-succ	公共联想后继
+借钱	1000	jie qian	all	nw-key	公共联想键
+解释一下	1000	jie shi yi xia	all	nw-key	公共联想键
+结束	1000	jie shu	all	nw-succ	公共联想后继
+结束了	1000	jie shu le	all	nw-succ	公共联想后继
+接送	1000	jie song	all	nw-succ	公共联想后继
+截止日期	1000	jie zhi ri qi	all	nw-join+nw-key	公共联想键
+截止时间	1000	jie zhi shi jian	all	nw-join+nw-key	公共联想键
+金额	1000	jin e	all	nw-key+nw-succ	公共联想键
+尽快	1000	jin kuai	all	nw-key+nw-succ	公共联想键
+尽快回复	1000	jin kuai hui fu	all	nw-join+nw-key	公共联想键
+尽快确认	1000	jin kuai que ren	all	nw-key	公共联想键
+近况	1000	jin kuang	all	nw-succ	公共联想后继
+尽量	1000	jin liang	all	nw-key	公共联想键
+今天几点	1000	jin tian ji dian	all	nw-key	公共联想键
+今天去	1000	jin tian qu	all	nw-key	公共联想键
+今天上午	1000	jin tian shang wu	all	nw-key	公共联想键
+今天晚上	1000	jin tian wan shang	all	nw-join+nw-key	公共联想键
+今天下午	1000	jin tian xia wu	all	nw-join+nw-key	公共联想键
+今天有	1000	jin tian you	all	nw-key	公共联想键
+今天有空	1000	jin tian you kong	all	nw-key	公共联想键
+进展如何	1000	jin zhan ru he	all	nw-succ	公共联想后继
+景点	1000	jing dian	all	nw-succ	公共联想后继
+经验	1000	jing yan	all	nw-succ	公共联想后继
+酒店地址	1000	jiu dian di zhi	all	nw-join+nw-key	公共联想键
+就这个	1000	jiu zhe ge	all	nw-succ	公共联想后继
+就这样	1000	jiu zhe yang	all	nw-succ	公共联想后继
+具体	1000	ju ti	all	nw-key	公共联想键
+具体时间	1000	ju ti shi jian	all	nw-join+nw-key	公共联想键
+具体要求	1000	ju ti yao qiu	all	nw-join+nw-key	公共联想键
+决定	1000	jue ding	all	nw-key	公共联想键
+开发票	1000	kai fa piao	all	nw-key	公共联想键
+开会时间	1000	kai hui shi jian	all	nw-join+nw-key	公共联想键
+开会讨论	1000	kai hui tao lun	all	nw-join+nw-key	公共联想键
+开了吗	1000	kai le ma	all	nw-succ	公共联想后继
+开始	1000	kai shi	all	nw-succ	公共联想后继
+开始了	1000	kai shi le	all	nw-succ	公共联想后继
+开完	1000	kai wan	all	nw-key	公共联想键
+开心就好	1000	kai xin jiu hao	all	nw-join+nw-key	公共联想键
+看不懂	1000	kan bu dong	all	nw-key	公共联想键
+看到	1000	kan dao	all	nw-succ	公共联想后继
+看看	1000	kan kan	all	nw-key+nw-succ	公共联想键
+看了吗	1000	kan le ma	all	nw-succ	公共联想后继
+看情况	1000	kan qing kuang	all	nw-succ	公共联想后继
+看什么	1000	kan shen me	all	nw-key	公共联想键
+看完	1000	kan wan	all	nw-key	公共联想键
+看完后	1000	kan wan hou	all	nw-key	公共联想键
+看完了	1000	kan wan le	all	nw-join+nw-key	公共联想键
+看完了吗	1000	kan wan le ma	all	nw-succ	公共联想后继
+看一下吗	1000	kan yi xia ma	all	nw-succ	公共联想后继
+看这个	1000	kan zhe ge	all	nw-succ	公共联想后继
+考得	1000	kao de	all	nw-key	公共联想键
+考虑	1000	kao lv	all	nw-key+nw-succ	公共联想键
+考虑一下	1000	kao lv yi xia	all	nw-join+nw-key	公共联想键
+考试成绩	1000	kao shi cheng ji	all	nw-join+nw-key	公共联想键
+考试结果	1000	kao shi jie guo	all	nw-key	公共联想键
+考试时间	1000	kao shi shi jian	all	nw-join+nw-key	公共联想键
+考完	1000	kao wan	all	nw-key	公共联想键
+考完试	1000	kao wan shi	all	nw-key	公共联想键
+客气	1000	ke qi	all	nw-key+nw-succ	公共联想键
+可以改	1000	ke yi gai	all	nw-key	公共联想键
+可以了	1000	ke yi le	all	nw-succ	公共联想后继
+可以吗	1000	ke yi ma	all	nw-join+nw-succ	公共联想后继
+可以问我	1000	ke yi wen wo	all	nw-succ	公共联想后继
+可以先	1000	ke yi xian	all	nw-key	公共联想键
+口味	1000	kou wei	all	nw-key	公共联想键
+库存	1000	ku cun	all	nw-key	公共联想键
+快到	1000	kuai dao	all	nw-key	公共联想键
+快递单号	1000	kuai di dan hao	all	nw-key	公共联想键
+快递到了	1000	kuai di dao le	all	nw-join+nw-key	公共联想键
+困难	1000	kun nan	all	nw-succ	公共联想后继
+辣椒	1000	la jiao	all	nw-succ	公共联想后继
+来不及	1000	lai bu ji	all	nw-key	公共联想键
+来得及	1000	lai de ji	all	nw-key	公共联想键
+来接	1000	lai jie	all	nw-key	公共联想键
+来看看	1000	lai kan kan	all	nw-succ	公共联想后继
+来晚了	1000	lai wan le	all	nw-key+nw-succ	公共联想键
+来源	1000	lai yuan	all	nw-succ	公共联想后继
+来找我	1000	lai zhao wo	all	nw-succ	公共联想后继
+懒觉	1000	lan jiao	all	nw-succ	公共联想后继
+类型	1000	lei xing	all	nw-succ	公共联想后继
+礼物	1000	li wu	all	nw-succ	公共联想后继
+理由	1000	li you	all	nw-succ	公共联想后继
+连上了	1000	lian shang le	all	nw-succ	公共联想后继
+联系	1000	lian xi	all	nw-succ	公共联想后继
+联系了	1000	lian xi le	all	nw-succ	公共联想后继
+联系你	1000	lian xi ni	all	nw-succ	公共联想后继
+联系我	1000	lian xi wo	all	nw-succ	公共联想后继
+聊聊	1000	liao liao	all	nw-succ	公共联想后继
+聊天了	1000	liao tian le	all	nw-succ	公共联想后继
+聊这个	1000	liao zhe ge	all	nw-succ	公共联想后继
+流程	1000	liu cheng	all	nw-succ	公共联想后继
+路过	1000	lu guo	all	nw-succ	公共联想后继
+路上堵	1000	lu shang du	all	nw-key	公共联想键
+路上小心	1000	lu shang xiao xin	all	nw-join+nw-key	公共联想键
+录音	1000	lu yin	all	nw-key	公共联想键
+乱了	1000	luan le	all	nw-succ	公共联想后继
+旅途愉快	1000	lv tu yu kuai	all	nw-succ	公共联想后继
+旅行	1000	lv xing	all	nw-key+nw-succ	公共联想键
+麻烦	1000	ma fan	all	nw-key	公共联想键
+麻烦你了	1000	ma fan ni le	all	nw-join+nw-key+nw-succ	公共联想键
+麻烦确认	1000	ma fan que ren	all	nw-key+nw-succ	公共联想键
+马上就	1000	ma shang jiu	all	nw-key	公共联想键
+马上来	1000	ma shang lai	all	nw-join+nw-succ	公共联想后继
+买不起	1000	mai bu qi	all	nw-succ	公共联想后继
+买点	1000	mai dian	all	nw-key	公共联想键
+买好了	1000	mai hao le	all	nw-succ	公共联想后继
+买了吗	1000	mai le ma	all	nw-succ	公共联想后继
+慢慢来	1000	man man lai	all	nw-key+nw-succ	公共联想键
+忙不忙	1000	mang bu mang	all	nw-succ	公共联想后继
+忙什么	1000	mang shen me	all	nw-succ	公共联想后继
+忙完	1000	mang wan	all	nw-key+nw-succ	公共联想键
+忙完了	1000	mang wan le	all	nw-join+nw-key+nw-succ	公共联想键
+没办法	1000	mei ban fa	all	nw-key	公共联想键
+没查到	1000	mei cha dao	all	nw-key	公共联想键
+没到	1000	mei dao	all	nw-succ	公共联想后继
+没电	1000	mei dian	all	nw-succ	公共联想后继
+没发	1000	mei fa	all	nw-succ	公共联想后继
+没发货	1000	mei fa huo	all	nw-key	公共联想键
+没反应	1000	mei fan ying	all	nw-succ	公共联想后继
+没关系的	1000	mei guan xi de	all	nw-join+nw-key	公共联想键
+没回	1000	mei hui	all	nw-key	公共联想键
+没看到	1000	mei kan dao	all	nw-key+nw-succ	公共联想键
+没看见	1000	mei kan jian	all	nw-succ	公共联想后继
+没联系	1000	mei lian xi	all	nw-succ	公共联想后继
+没声音	1000	mei sheng yin	all	nw-succ	公共联想后继
+没事的	1000	mei shi de	all	nw-join+nw-key+nw-succ	公共联想键
+没时间	1000	mei shi jian	all	nw-succ	公共联想后继
+没收到	1000	mei shou dao	all	nw-key+nw-succ	公共联想键
+没问题的	1000	mei wen ti de	all	nw-key	公共联想键
+没想到	1000	mei xiang dao	all	nw-key	公共联想键
+没想到你	1000	mei xiang dao ni	all	nw-key	公共联想键
+没信号	1000	mei xin hao	all	nw-succ	公共联想后继
+没学会	1000	mei xue hui	all	nw-key	公共联想键
+没有	1000	mei you	all	nw-succ	公共联想后继
+没有看到	1000	mei you kan dao	all	nw-key	公共联想键
+没注意	1000	mei zhu yi	all	nw-key+nw-succ	公共联想键
+没注意到	1000	mei zhu yi dao	all	nw-join+nw-key	公共联想键
+没做完	1000	mei zuo wan	all	nw-key	公共联想键
+名称	1000	ming cheng	all	nw-succ	公共联想后继
+明天吧	1000	ming tian ba	all	nw-succ	公共联想后继
+明天几点	1000	ming tian ji dian	all	nw-key	公共联想键
+明天聊	1000	ming tian liao	all	nw-succ	公共联想后继
+明天去	1000	ming tian qu	all	nw-key	公共联想键
+明天上午	1000	ming tian shang wu	all	nw-key	公共联想键
+明天晚上	1000	ming tian wan shang	all	nw-key	公共联想键
+明天下午	1000	ming tian xia wu	all	nw-key	公共联想键
+明天下雨	1000	ming tian xia yu	all	nw-key	公共联想键
+明天要	1000	ming tian yao	all	nw-key	公共联想键
+明天有空	1000	ming tian you kong	all	nw-key	公共联想键
+明天再	1000	ming tian zai	all	nw-key	公共联想键
+名字	1000	ming zi	all	nw-succ	公共联想后继
+模板	1000	mu ban	all	nw-succ	公共联想后继
+哪家	1000	na jia	all	nw-key+nw-succ	公共联想键
+哪里不对	1000	na li bu dui	all	nw-succ	公共联想后继
+哪天	1000	na tian	all	nw-key	公共联想键
+难怪	1000	nan guai	all	nw-key	公共联想键
+内容	1000	nei rong	all	nw-succ	公共联想后继
+能不能	1000	neng bu neng	all	nw-key	公共联想键
+能来	1000	neng lai	all	nw-succ	公共联想后继
+能理解	1000	neng li jie	all	nw-succ	公共联想后继
+能用吗	1000	neng yong ma	all	nw-succ	公共联想后继
+你帮忙	1000	ni bang mang	all	nw-succ	公共联想后继
+你到了	1000	ni dao le	all	nw-key	公共联想键
+你的	1000	ni de	all	nw-succ	公共联想后继
+你的意思	1000	ni de yi si	all	nw-succ	公共联想后继
+你发的	1000	ni fa de	all	nw-succ	公共联想后继
+你回来	1000	ni hui lai	all	nw-key	公共联想键
+你回来了	1000	ni hui lai le	all	nw-key	公共联想键
+你今天	1000	ni jin tian	all	nw-key	公共联想键
+你决定	1000	ni jue ding	all	nw-succ	公共联想后继
+你看看	1000	ni kan kan	all	nw-key+nw-succ	公共联想键
+你看一下	1000	ni kan yi xia	all	nw-key	公共联想键
+你聊聊	1000	ni liao liao	all	nw-succ	公共联想后继
+你明天	1000	ni ming tian	all	nw-key	公共联想键
+你上班	1000	ni shang ban	all	nw-key	公共联想键
+你试试	1000	ni shi shi	all	nw-succ	公共联想后继
+你说	1000	ni shuo	all	nw-succ	公共联想后继
+你喜欢	1000	ni xi huan	all	nw-key+nw-succ	公共联想键
+你先	1000	ni xian	all	nw-key	公共联想键
+你先忙	1000	ni xian mang	all	nw-join+nw-key+nw-succ	公共联想键
+你现在	1000	ni xian zai	all	nw-key	公共联想键
+你有	1000	ni you	all	nw-key	公共联想键
+你有没有	1000	ni you mei you	all	nw-join+nw-succ	公共联想后继
+你有什么	1000	ni you shen me	all	nw-key	公共联想键
+你在	1000	ni zai	all	nw-key	公共联想键
+你在干嘛	1000	ni zai gan ma	all	nw-join+nw-key+nw-succ	公共联想键
+你在哪	1000	ni zai na	all	nw-key	公共联想键
+你在哪里	1000	ni zai na li	all	nw-join+nw-key	公共联想键
+你怎么	1000	ni zen me	all	nw-key	公共联想键
+你怎么看	1000	ni zen me kan	all	nw-key	公共联想键
+你最近	1000	ni zui jin	all	nw-key	公共联想键
+弄不懂	1000	nong bu dong	all	nw-key	公共联想键
+弄好	1000	nong hao	all	nw-key	公共联想键
+弄完	1000	nong wan	all	nw-key	公共联想键
+弄完了	1000	nong wan le	all	nw-join+nw-key	公共联想键
+拍个照	1000	pai ge zhao	all	nw-join+nw-key	公共联想键
+拍好了	1000	pai hao le	all	nw-key+nw-succ	公共联想键
+拍张照片	1000	pai zhang zhao pian	all	nw-join+nw-key	公共联想键
+片刻	1000	pian ke	all	nw-succ	公共联想后继
+便宜点	1000	pian yi dian	all	nw-join+nw-key	公共联想键
+便宜一点	1000	pian yi yi dian	all	nw-join+nw-key	公共联想键
+漂亮	1000	piao liang	all	nw-succ	公共联想后继
+拼盘	1000	pin pan	all	nw-succ	公共联想后继
+起床了	1000	qi chuang le	all	nw-join+nw-key+nw-succ	公共联想键
+期待	1000	qi dai	all	nw-key	公共联想键
+起飞了	1000	qi fei le	all	nw-succ	公共联想后继
+起来	1000	qi lai	all	nw-key+nw-succ	公共联想键
+签合同	1000	qian he tong	all	nw-key	公共联想键
+请帮我	1000	qing bang wo	all	nw-key	公共联想键
+请查收	1000	qing cha shou	all	nw-key+nw-succ	公共联想键
+清楚	1000	qing chu	all	nw-succ	公共联想后继
+清楚吗	1000	qing chu ma	all	nw-succ	公共联想后继
+清淡	1000	qing dan	all	nw-key	公共联想键
+清淡的	1000	qing dan de	all	nw-succ	公共联想后继
+请柬	1000	qing jian	all	nw-key	公共联想键
+请教	1000	qing jiao	all	nw-key	公共联想键
+请教一下	1000	qing jiao yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+请尽快	1000	qing jin kuai	all	nw-key	公共联想键
+请看	1000	qing kan	all	nw-key	公共联想键
+情况	1000	qing kuang	all	nw-succ	公共联想后继
+请你	1000	qing ni	all	nw-succ	公共联想后继
+请确认	1000	qing que ren	all	nw-key	公共联想键
+请问	1000	qing wen	all	nw-key+nw-succ	公共联想键
+去冰	1000	qu bing	all	nw-succ	公共联想后继
+去吃	1000	qu chi	all	nw-key	公共联想键
+去吃饭	1000	qu chi fan	all	nw-join+nw-key	公共联想键
+取到了	1000	qu dao le	all	nw-succ	公共联想后继
+去接	1000	qu jie	all	nw-key+nw-succ	公共联想键
+去看电影	1000	qu kan dian ying	all	nw-key	公共联想键
+去看看	1000	qu kan kan	all	nw-succ	公共联想后继
+去了	1000	qu le	all	nw-succ	公共联想后继
+去旅行	1000	qu lv xing	all	nw-key	公共联想键
+去吗	1000	qu ma	all	nw-succ	公共联想后继
+去哪玩	1000	qu na wan	all	nw-join+nw-succ	公共联想后继
+去散步	1000	qu san bu	all	nw-key	公共联想键
+去玩	1000	qu wan	all	nw-succ	公共联想后继
+去走走	1000	qu zou zou	all	nw-succ	公共联想后继
+确定	1000	que ding	all	nw-succ	公共联想后继
+确定了	1000	que ding le	all	nw-succ	公共联想后继
+确认地址	1000	que ren di zhi	all	nw-key	公共联想键
+确认好了	1000	que ren hao le	all	nw-join+nw-key	公共联想键
+确认后	1000	que ren hou	all	nw-key	公共联想键
+确认了	1000	que ren le	all	nw-succ	公共联想后继
+确认一下	1000	que ren yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+热水	1000	re shui	all	nw-succ	公共联想后继
+任何问题	1000	ren he wen ti	all	nw-key	公共联想键
+认识你	1000	ren shi ni	all	nw-succ	公共联想后继
+任务	1000	ren wu	all	nw-key	公共联想键
+日期	1000	ri qi	all	nw-succ	公共联想后继
+如此	1000	ru ci	all	nw-succ	公共联想后继
+如果可以	1000	ru guo ke yi	all	nw-join+nw-key	公共联想键
+如何	1000	ru he	all	nw-key+nw-succ	公共联想键
+沙拉	1000	sha la	all	nw-succ	公共联想后继
+上班了	1000	shang ban le	all	nw-join+nw-key	公共联想键
+上车了	1000	shang che le	all	nw-join+nw-key	公共联想键
+上传了	1000	shang chuan le	all	nw-succ	公共联想后继
+上飞机	1000	shang fei ji	all	nw-key	公共联想键
+上课了	1000	shang ke le	all	nw-join+nw-key	公共联想键
+稍等一下	1000	shao deng yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+少糖	1000	shao tang	all	nw-succ	公共联想后继
+设计	1000	she ji	all	nw-succ	公共联想后继
+设置	1000	she zhi	all	nw-succ	公共联想后继
+身份证	1000	shen fen zheng	all	nw-succ	公共联想后继
+审核	1000	shen he	all	nw-key+nw-succ	公共联想键
+什么电影	1000	shen me dian ying	all	nw-key	公共联想键
+什么建议	1000	shen me jian yi	all	nw-key	公共联想键
+什么剧	1000	shen me ju	all	nw-succ	公共联想后继
+什么时候	1000	shen me shi hou	all	nw-key+nw-succ	公共联想键
+什么时间	1000	shen me shi jian	all	nw-key	公共联想键
+什么书	1000	shen me shu	all	nw-succ	公共联想后继
+什么问题	1000	shen me wen ti	all	nw-key	公共联想键
+申请	1000	shen qing	all	nw-succ	公共联想后继
+申请退货	1000	shen qing tui huo	all	nw-key	公共联想键
+申请退款	1000	shen qing tui kuan	all	nw-key	公共联想键
+是多少	1000	shi duo shao	all	nw-succ	公共联想后继
+是否	1000	shi fou	all	nw-succ	公共联想后继
+时刻表	1000	shi ke biao	all	nw-succ	公共联想后继
+是哪个	1000	shi na ge	all	nw-succ	公共联想后继
+是你	1000	shi ni	all	nw-succ	公共联想后继
+事情	1000	shi qing	all	nw-succ	公共联想后继
+是什么	1000	shi shen me	all	nw-succ	公共联想后继
+试试	1000	shi shi	all	nw-succ	公共联想后继
+试一下	1000	shi yi xia	all	nw-key+nw-succ	公共联想键
+是这样	1000	shi zhe yang	all	nw-succ	公共联想后继
+收不到	1000	shou bu dao	all	nw-succ	公共联想后继
+收到后	1000	shou dao hou	all	nw-key	公共联想键
+收到啦	1000	shou dao la	all	nw-key	公共联想键
+收到了吗	1000	shou dao le ma	all	nw-succ	公共联想后继
+售后服务	1000	shou hou fu wu	all	nw-join+nw-key	公共联想键
+收货	1000	shou huo	all	nw-key	公共联想键
+收货地址	1000	shou huo di zhi	all	nw-join+nw-key	公共联想键
+手机号码	1000	shou ji hao ma	all	nw-join+nw-key	公共联想键
+收件地址	1000	shou jian di zhi	all	nw-key	公共联想键
+收件人	1000	shou jian ren	all	nw-key	公共联想键
+收入	1000	shou ru	all	nw-succ	公共联想后继
+收拾一下	1000	shou shi yi xia	all	nw-join+nw-key	公共联想键
+收尾	1000	shou wei	all	nw-succ	公共联想后继
+数据	1000	shu ju	all	nw-succ	公共联想后继
+数量	1000	shu liang	all	nw-key+nw-succ	公共联想键
+输入法	1000	shu ru fa	all	nw-succ	公共联想后继
+谁的	1000	shui de	all	nw-succ	公共联想后继
+睡了	1000	shui le	all	nw-key+nw-succ	公共联想键
+睡醒	1000	shui xing	all	nw-key	公共联想键
+睡着	1000	shui zhao	all	nw-key	公共联想键
+顺风	1000	shun feng	all	nw-succ	公共联想后继
+说法	1000	shuo fa	all	nw-succ	公共联想后继
+说了	1000	shuo le	all	nw-succ	公共联想后继
+说一声	1000	shuo yi sheng	all	nw-succ	公共联想后继
+说一下	1000	shuo yi xia	all	nw-key+nw-succ	公共联想键
+说这个	1000	shuo zhe ge	all	nw-succ	公共联想后继
+思路	1000	si lu	all	nw-succ	公共联想后继
+送到了	1000	song dao le	all	nw-succ	公共联想后继
+送你回家	1000	song ni hui jia	all	nw-join+nw-key	公共联想键
+算了吧	1000	suan le ba	all	nw-succ	公共联想后继
+太棒	1000	tai bang	all	nw-key	公共联想键
+太贵	1000	tai gui	all	nw-key	公共联想键
+太好吃	1000	tai hao chi	all	nw-key	公共联想键
+太好吃了	1000	tai hao chi le	all	nw-join+nw-key	公共联想键
+太困	1000	tai kun	all	nw-key	公共联想键
+太辣	1000	tai la	all	nw-key	公共联想键
+太累	1000	tai lei	all	nw-key	公共联想键
+太累了	1000	tai lei le	all	nw-join+nw-key+nw-succ	公共联想键
+太冷	1000	tai leng	all	nw-key	公共联想键
+太厉害	1000	tai li hai	all	nw-key	公共联想键
+太厉害了	1000	tai li hai le	all	nw-join+nw-key+nw-succ	公共联想键
+太忙	1000	tai mang	all	nw-succ	公共联想后继
+太热	1000	tai re	all	nw-key	公共联想键
+太甜	1000	tai tian	all	nw-key	公共联想键
+抬头	1000	tai tou	all	nw-succ	公共联想后继
+太咸	1000	tai xian	all	nw-key	公共联想键
+讨论	1000	tao lun	all	nw-key+nw-succ	公共联想键
+讨论一下	1000	tao lun yi xia	all	nw-join+nw-key	公共联想键
+特别喜欢	1000	te bie xi huan	all	nw-key	公共联想键
+提前说	1000	ti qian shuo	all	nw-key	公共联想键
+天冷	1000	tian leng	all	nw-key	公共联想键
+天冷了	1000	tian leng le	all	nw-join+nw-key	公共联想键
+天气不错	1000	tian qi bu cuo	all	nw-join+nw-key	公共联想键
+天气很好	1000	tian qi hen hao	all	nw-key	公共联想键
+天气冷	1000	tian qi leng	all	nw-key	公共联想键
+天气热	1000	tian qi re	all	nw-key	公共联想键
+天天开心	1000	tian tian kai xin	all	nw-succ	公共联想后继
+填一下	1000	tian yi xia	all	nw-succ	公共联想后继
+条件	1000	tiao jian	all	nw-succ	公共联想后继
+挺不错	1000	ting bu cuo	all	nw-key	公共联想键
+听不懂	1000	ting bu dong	all	nw-key	公共联想键
+停车位	1000	ting che wei	all	nw-key	公共联想键
+挺好的	1000	ting hao de	all	nw-join+nw-key+nw-succ	公共联想键
+听什么	1000	ting shen me	all	nw-key	公共联想键
+挺喜欢	1000	ting xi huan	all	nw-key	公共联想键
+同步一下	1000	tong bu yi xia	all	nw-join+nw-key	公共联想键
+通过了	1000	tong guo le	all	nw-succ	公共联想后继
+同学聚会	1000	tong xue ju hui	all	nw-join+nw-key	公共联想键
+退换	1000	tui huan	all	nw-key	公共联想键
+退换货	1000	tui huan huo	all	nw-join+nw-key	公共联想键
+退货地址	1000	tui huo di zhi	all	nw-join+nw-key	公共联想键
+推荐	1000	tui jian	all	nw-key+nw-succ	公共联想键
+推荐个	1000	tui jian ge	all	nw-key	公共联想键
+推荐一下	1000	tui jian yi xia	all	nw-join+nw-key	公共联想键
+退款进度	1000	tui kuan jin du	all	nw-join+nw-key	公共联想键
+退了吗	1000	tui le ma	all	nw-succ	公共联想后继
+外面	1000	wai mian	all	nw-succ	公共联想后继
+外套	1000	wai tao	all	nw-succ	公共联想后继
+完成后	1000	wan cheng hou	all	nw-key	公共联想键
+完成了	1000	wan cheng le	all	nw-join+nw-key+nw-succ	公共联想键
+玩的地方	1000	wan de di fang	all	nw-succ	公共联想后继
+晚点发你	1000	wan dian fa ni	all	nw-succ	公共联想后继
+晚点聊	1000	wan dian liao	all	nw-join+nw-succ	公共联想后继
+晚几分钟	1000	wan ji fen zhong	all	nw-key	公共联想键
+晚了	1000	wan le	all	nw-succ	公共联想后继
+完了吗	1000	wan le ma	all	nw-succ	公共联想后继
+晚睡	1000	wan shui	all	nw-succ	公共联想后继
+晚一点	1000	wan yi dian	all	nw-key	公共联想键
+完整	1000	wan zheng	all	nw-succ	公共联想后继
+忘了说	1000	wang le shuo	all	nw-succ	公共联想后继
+味道	1000	wei dao	all	nw-succ	公共联想后继
+卫生	1000	wei sheng	all	nw-succ	公共联想后继
+位子	1000	wei zi	all	nw-succ	公共联想后继
+文档链接	1000	wen dang lian jie	all	nw-key	公共联想键
+问个问题	1000	wen ge wen ti	all	nw-join+nw-key	公共联想键
+文件大小	1000	wen jian da xiao	all	nw-key	公共联想键
+文件发我	1000	wen jian fa wo	all	nw-succ	公共联想后继
+文件格式	1000	wen jian ge shi	all	nw-key	公共联想键
+文件名	1000	wen jian ming	all	nw-key	公共联想键
+问你	1000	wen ni	all	nw-key+nw-succ	公共联想键
+问你一下	1000	wen ni yi xia	all	nw-join+nw-key	公共联想键
+问题解决	1000	wen ti jie jue	all	nw-key	公共联想键
+问问	1000	wen wen	all	nw-succ	公共联想后继
+问我	1000	wen wo	all	nw-succ	公共联想后继
+问一下	1000	wen yi xia	all	nw-key+nw-succ	公共联想键
+我帮你	1000	wo bang ni	all	nw-key	公共联想键
+我查查	1000	wo cha cha	all	nw-succ	公共联想后继
+我查一下	1000	wo cha yi xia	all	nw-succ	公共联想后继
+我出发	1000	wo chu fa	all	nw-key	公共联想键
+我出门	1000	wo chu men	all	nw-key	公共联想键
+我打电话	1000	wo da dian hua	all	nw-succ	公共联想后继
+我到	1000	wo dao	all	nw-key	公共联想键
+我到家	1000	wo dao jia	all	nw-key	公共联想键
+我到家了	1000	wo dao jia le	all	nw-join+nw-key	公共联想键
+我到了	1000	wo dao le	all	nw-join+nw-key	公共联想键
+我的	1000	wo de	all	nw-succ	公共联想后继
+我发你	1000	wo fa ni	all	nw-key	公共联想键
+我感觉	1000	wo gan jue	all	nw-key	公共联想键
+我好想	1000	wo hao xiang	all	nw-key	公共联想键
+我回	1000	wo hui	all	nw-key	公共联想键
+我回家	1000	wo hui jia	all	nw-key	公共联想键
+我回来了	1000	wo hui lai le	all	nw-join+nw-key	公共联想键
+我今天	1000	wo jin tian	all	nw-key	公共联想键
+我看看	1000	wo kan kan	all	nw-key+nw-succ	公共联想键
+我快到了	1000	wo kuai dao le	all	nw-join+nw-key	公共联想键
+我来	1000	wo lai	all	nw-key	公共联想键
+我来处理	1000	wo lai chu li	all	nw-join+nw-key	公共联想键
+我来晚了	1000	wo lai wan le	all	nw-succ	公共联想后继
+我没看到	1000	wo mei kan dao	all	nw-succ	公共联想后继
+我明白	1000	wo ming bai	all	nw-key	公共联想键
+我明白了	1000	wo ming bai le	all	nw-join+nw-key	公共联想键
+我明天	1000	wo ming tian	all	nw-key	公共联想键
+我陪你	1000	wo pei ni	all	nw-succ	公共联想后继
+我确认下	1000	wo que ren xia	all	nw-succ	公共联想后继
+我试试	1000	wo shi shi	all	nw-succ	公共联想后继
+我问问	1000	wo wen wen	all	nw-key+nw-succ	公共联想键
+我喜欢	1000	wo xi huan	all	nw-key	公共联想键
+我先	1000	wo xian	all	nw-key	公共联想键
+我先忙	1000	wo xian mang	all	nw-key	公共联想键
+我先去	1000	wo xian qu	all	nw-key	公共联想键
+我现在	1000	wo xian zai	all	nw-key	公共联想键
+我想	1000	wo xiang	all	nw-key+nw-succ	公共联想键
+我想吃	1000	wo xiang chi	all	nw-join+nw-key	公共联想键
+我想喝	1000	wo xiang he	all	nw-key	公共联想键
+我想看看	1000	wo xiang kan kan	all	nw-join+nw-key	公共联想键
+我想买	1000	wo xiang mai	all	nw-key	公共联想键
+我想你	1000	wo xiang ni	all	nw-join+nw-key	公共联想键
+我想去	1000	wo xiang qu	all	nw-join+nw-key	公共联想键
+我想说	1000	wo xiang shuo	all	nw-join+nw-key	公共联想键
+我想知道	1000	wo xiang zhi dao	all	nw-key	公共联想键
+我有点	1000	wo you dian	all	nw-key	公共联想键
+我有事	1000	wo you shi	all	nw-key	公共联想键
+我再	1000	wo zai	all	nw-key	公共联想键
+我在	1000	wo zai	all	nw-key	公共联想键
+我在开会	1000	wo zai kai hui	all	nw-key	公共联想键
+我再看看	1000	wo zai kan kan	all	nw-join+nw-succ	公共联想后继
+我在忙	1000	wo zai mang	all	nw-key	公共联想键
+我再问问	1000	wo zai wen wen	all	nw-join+nw-succ	公共联想后继
+我找找	1000	wo zhao zhao	all	nw-succ	公共联想后继
+我知道	1000	wo zhi dao	all	nw-key	公共联想键
+我知道了	1000	wo zhi dao le	all	nw-join+nw-key	公共联想键
+我最近	1000	wo zui jin	all	nw-key	公共联想键
+午觉	1000	wu jiao	all	nw-succ	公共联想后继
+物流	1000	wu liu	all	nw-key	公共联想键
+物流信息	1000	wu liu xin xi	all	nw-join+nw-key	公共联想键
+喜欢吃	1000	xi huan chi	all	nw-key	公共联想键
+喜欢喝	1000	xi huan he	all	nw-key	公共联想键
+喜欢看	1000	xi huan kan	all	nw-key	公共联想键
+喜欢什么	1000	xi huan shen me	all	nw-key	公共联想键
+喜欢听	1000	xi huan ting	all	nw-key	公共联想键
+细节	1000	xi jie	all	nw-key+nw-succ	公共联想键
+洗了吗	1000	xi le ma	all	nw-succ	公共联想后继
+希望	1000	xi wang	all	nw-key	公共联想键
+希望大家	1000	xi wang da jia	all	nw-key	公共联想键
+希望你	1000	xi wang ni	all	nw-key	公共联想键
+下班后	1000	xia ban hou	all	nw-succ	公共联想后继
+下班了	1000	xia ban le	all	nw-join+nw-key+nw-succ	公共联想键
+下车后	1000	xia che hou	all	nw-key	公共联想键
+下次再说	1000	xia ci zai shuo	all	nw-join+nw-succ	公共联想后继
+下大雨	1000	xia da yu	all	nw-key	公共联想键
+下单了	1000	xia dan le	all	nw-join+nw-key	公共联想键
+下订单	1000	xia ding dan	all	nw-succ	公共联想后继
+下飞机	1000	xia fei ji	all	nw-key	公共联想键
+下课后	1000	xia ke hou	all	nw-key	公共联想键
+下课了	1000	xia ke le	all	nw-join+nw-key	公共联想键
+下午几点	1000	xia wu ji dian	all	nw-key	公共联想键
+下雪了	1000	xia xue le	all	nw-join+nw-key	公共联想键
+下周几	1000	xia zhou ji	all	nw-key	公共联想键
+先不去了	1000	xian bu qu le	all	nw-succ	公共联想后继
+先吃	1000	xian chi	all	nw-key	公共联想键
+现货	1000	xian huo	all	nw-key	公共联想键
+先忙	1000	xian mang	all	nw-succ	公共联想后继
+线上	1000	xian shang	all	nw-succ	公共联想后继
+先睡	1000	xian shui	all	nw-key	公共联想键
+先睡了	1000	xian shui le	all	nw-join+nw-key+nw-succ	公共联想键
+现在有	1000	xian zai you	all	nw-key	公共联想键
+现在在	1000	xian zai zai	all	nw-key	公共联想键
+先走了	1000	xian zou le	all	nw-succ	公共联想后继
+香菜	1000	xiang cai	all	nw-succ	公共联想后继
+想吃	1000	xiang chi	all	nw-key	公共联想键
+想吃什么	1000	xiang chi shen me	all	nw-join+nw-key	公共联想键
+想法	1000	xiang fa	all	nw-succ	公共联想后继
+想喝	1000	xiang he	all	nw-key	公共联想键
+想喝什么	1000	xiang he shen me	all	nw-join+nw-key	公共联想键
+想见	1000	xiang jian	all	nw-key	公共联想键
+项目计划	1000	xiang mu ji hua	all	nw-key	公共联想键
+项目进度	1000	xiang mu jin du	all	nw-key	公共联想键
+想起来了	1000	xiang qi lai le	all	nw-succ	公共联想后继
+想去	1000	xiang qu	all	nw-key	公共联想键
+想睡觉	1000	xiang shui jiao	all	nw-succ	公共联想后继
+想问	1000	xiang wen	all	nw-key	公共联想键
+详细	1000	xiang xi	all	nw-succ	公共联想后继
+想想	1000	xiang xiang	all	nw-succ	公共联想后继
+相信	1000	xiang xin	all	nw-key	公共联想键
+相信你	1000	xiang xin ni	all	nw-join+nw-key	公共联想键
+相信自己	1000	xiang xin zi ji	all	nw-join+nw-key	公共联想键
+想一下	1000	xiang yi xia	all	nw-key	公共联想键
+想一想	1000	xiang yi xiang	all	nw-key	公共联想键
+效果	1000	xiao guo	all	nw-succ	公共联想后继
+小了	1000	xiao le	all	nw-succ	公共联想后继
+小区地址	1000	xiao qu di zhi	all	nw-join+nw-key	公共联想键
+小事	1000	xiao shi	all	nw-succ	公共联想后继
+小心	1000	xiao xin	all	nw-succ	公共联想后继
+谢谢大家	1000	xie xie da jia	all	nw-join+nw-key+nw-succ	公共联想键
+谢谢啦	1000	xie xie la	all	nw-join+nw-key	公共联想键
+新的一年	1000	xin de yi nian	all	nw-key	公共联想键
+新的一天	1000	xin de yi tian	all	nw-key+nw-succ	公共联想键
+新东西	1000	xin dong xi	all	nw-succ	公共联想后继
+辛苦	1000	xin ku	all	nw-key	公共联想键
+辛苦大家	1000	xin ku da jia	all	nw-key	公共联想键
+辛苦你	1000	xin ku ni	all	nw-key	公共联想键
+辛苦你了	1000	xin ku ni le	all	nw-join+nw-succ	公共联想后继
+新年	1000	xin nian	all	nw-key	公共联想键
+信息	1000	xin xi	all	nw-succ	公共联想后继
+型号	1000	xing hao	all	nw-key	公共联想键
+醒了吗	1000	xing le ma	all	nw-succ	公共联想后继
+行李	1000	xing li	all	nw-succ	公共联想后继
+行吗	1000	xing ma	all	nw-succ	公共联想后继
+修改后	1000	xiu gai hou	all	nw-key	公共联想键
+修改意见	1000	xiu gai yi jian	all	nw-key	公共联想键
+修改一下	1000	xiu gai yi xia	all	nw-join+nw-succ	公共联想后继
+休息	1000	xiu xi	all	nw-key+nw-succ	公共联想键
+休息一下	1000	xiu xi yi xia	all	nw-join+nw-key	公共联想键
+需要	1000	xu yao	all	nw-key+nw-succ	公共联想键
+需要的话	1000	xu yao de hua	all	nw-key	公共联想键
+学会	1000	xue hui	all	nw-key	公共联想键
+学会了	1000	xue hui le	all	nw-join+nw-key	公共联想键
+学什么	1000	xue shen me	all	nw-key+nw-succ	公共联想键
+学习	1000	xue xi	all	nw-key+nw-succ	公共联想键
+学习计划	1000	xue xi ji hua	all	nw-join+nw-key	公共联想键
+学习资料	1000	xue xi zi liao	all	nw-join+nw-key	公共联想键
+学校地址	1000	xue xiao di zhi	all	nw-join+nw-key	公共联想键
+颜色	1000	yan se	all	nw-key+nw-succ	公共联想键
+要不	1000	yao bu	all	nw-key	公共联想键
+要不然	1000	yao bu ran	all	nw-key	公共联想键
+要出差	1000	yao chu chai	all	nw-succ	公共联想后继
+要处理	1000	yao chu li	all	nw-succ	公共联想后继
+要多久	1000	yao duo jiu	all	nw-succ	公共联想后继
+要加班	1000	yao jia ban	all	nw-succ	公共联想后继
+要求	1000	yao qiu	all	nw-succ	公共联想后继
+要上班	1000	yao shang ban	all	nw-succ	公共联想后继
+要是	1000	yao shi	all	nw-key	公共联想键
+要下雨	1000	yao xia yu	all	nw-key	公共联想键
+要注意	1000	yao zhu yi	all	nw-succ	公共联想后继
+也好	1000	ye hao	all	nw-succ	公共联想后继
+也喜欢	1000	ye xi huan	all	nw-succ	公共联想后继
+一半	1000	yi ban	all	nw-succ	公共联想后继
+一杯	1000	yi bei	all	nw-succ	公共联想后继
+一本书	1000	yi ben shu	all	nw-succ	公共联想后继
+已打款	1000	yi da kuan	all	nw-key	公共联想键
+一定要	1000	yi ding yao	all	nw-key	公共联想键
+一份	1000	yi fen	all	nw-succ	公共联想后继
+已付款	1000	yi fu kuan	all	nw-key	公共联想键
+一个	1000	yi ge	all	nw-succ	公共联想后继
+意见	1000	yi jian	all	nw-succ	公共联想后继
+一件事	1000	yi jian shi	all	nw-succ	公共联想后继
+已经发了	1000	yi jing fa le	all	nw-join+nw-key	公共联想键
+已经下单	1000	yi jing xia dan	all	nw-key	公共联想键
+一路	1000	yi lu	all	nw-key	公共联想键
+一面	1000	yi mian	all	nw-succ	公共联想后继
+一起出去	1000	yi qi chu qu	all	nw-join+nw-key	公共联想键
+一起吗	1000	yi qi ma	all	nw-succ	公共联想后继
+一起去吧	1000	yi qi qu ba	all	nw-join+nw-succ	公共联想后继
+一起走	1000	yi qi zou	all	nw-key+nw-succ	公共联想键
+一切	1000	yi qie	all	nw-key	公共联想键
+一切顺利	1000	yi qie shun li	all	nw-join+nw-key+nw-succ	公共联想键
+一声	1000	yi sheng	all	nw-succ	公共联想后继
+意思	1000	yi si	all	nw-succ	公共联想后继
+一趟	1000	yi tang	all	nw-succ	公共联想后继
+一天	1000	yi tian	all	nw-succ	公共联想后继
+一碗	1000	yi wan	all	nw-succ	公共联想后继
+已完成	1000	yi wan cheng	all	nw-succ	公共联想后继
+一下吧	1000	yi xia ba	all	nw-succ	公共联想后继
+一样	1000	yi yang	all	nw-succ	公共联想后继
+应该的	1000	ying gai de	all	nw-succ	公共联想后继
+应该可以	1000	ying gai ke yi	all	nw-join+nw-key	公共联想键
+应急	1000	ying ji	all	nw-succ	公共联想后继
+用了	1000	yong le	all	nw-succ	公共联想后继
+用了吗	1000	yong le ma	all	nw-succ	公共联想后继
+有道理	1000	you dao li	all	nw-succ	公共联想后继
+有点堵	1000	you dian du	all	nw-key	公共联想键
+有点贵	1000	you dian gui	all	nw-key	公共联想键
+有点辣	1000	you dian la	all	nw-key	公共联想键
+有点累	1000	you dian lei	all	nw-join+nw-key+nw-succ	公共联想键
+有点冷	1000	you dian leng	all	nw-join+nw-succ	公共联想后继
+有点慢	1000	you dian man	all	nw-succ	公共联想后继
+有点忙	1000	you dian mang	all	nw-join+nw-key+nw-succ	公共联想键
+有点难	1000	you dian nan	all	nw-join+nw-succ	公共联想后继
+有点热	1000	you dian re	all	nw-join+nw-succ	公共联想后继
+有点事	1000	you dian shi	all	nw-key	公共联想键
+有个	1000	you ge	all	nw-key	公共联想键
+有个事	1000	you ge shi	all	nw-succ	公共联想后继
+有个问题	1000	you ge wen ti	all	nw-join+nw-key	公共联想键
+优惠吗	1000	you hui ma	all	nw-succ	公共联想后继
+有货	1000	you huo	all	nw-key	公共联想键
+有机会	1000	you ji hui	all	nw-succ	公共联想后继
+有件事	1000	you jian shi	all	nw-join+nw-key	公共联想键
+有空	1000	you kong	all	nw-key+nw-succ	公共联想键
+有空的话	1000	you kong de hua	all	nw-key	公共联想键
+有空来玩	1000	you kong lai wan	all	nw-join+nw-key	公共联想键
+有空时	1000	you kong shi	all	nw-succ	公共联想后继
+有空再聊	1000	you kong zai liao	all	nw-join+nw-succ	公共联想后继
+有吗	1000	you ma	all	nw-succ	公共联想后继
+有没有货	1000	you mei you huo	all	nw-key	公共联想键
+有没有空	1000	you mei you kong	all	nw-join+nw-key	公共联想键
+有人吗	1000	you ren ma	all	nw-succ	公共联想后继
+有什么	1000	you shen me	all	nw-key	公共联想键
+有什么好	1000	you shen me hao	all	nw-key	公共联想键
+有事	1000	you shi	all	nw-succ	公共联想后继
+有时间	1000	you shi jian	all	nw-key+nw-succ	公共联想键
+有位置	1000	you wei zhi	all	nw-succ	公共联想后继
+有问题	1000	you wen ti	all	nw-key+nw-succ	公共联想键
+有我在	1000	you wo zai	all	nw-succ	公共联想后继
+有现货	1000	you xian huo	all	nw-key	公共联想键
+有些	1000	you xie	all	nw-key	公共联想键
+有需要	1000	you xu yao	all	nw-key	公共联想键
+有需要的	1000	you xu yao de	all	nw-key	公共联想键
+有优惠	1000	you you hui	all	nw-key	公共联想键
+有雨	1000	you yu	all	nw-succ	公共联想后继
+有座位	1000	you zuo wei	all	nw-succ	公共联想后继
+遇到	1000	yu dao	all	nw-key	公共联想键
+遇到问题	1000	yu dao wen ti	all	nw-join+nw-key	公共联想键
+愉快	1000	yu kuai	all	nw-succ	公共联想后继
+原来如此	1000	yuan lai ru ci	all	nw-join+nw-key	公共联想键
+原来是	1000	yuan lai shi	all	nw-key	公共联想键
+原因	1000	yuan yin	all	nw-succ	公共联想后继
+约个时间	1000	yue ge shi jian	all	nw-join+nw-key	公共联想键
+约好了	1000	yue hao le	all	nw-key	公共联想键
+越来越	1000	yue lai yue	all	nw-key	公共联想键
+越来越好	1000	yue lai yue hao	all	nw-join+nw-key+nw-succ	公共联想键
+约一下	1000	yue yi xia	all	nw-key	公共联想键
+再等等	1000	zai deng deng	all	nw-key+nw-succ	公共联想键
+再发	1000	zai fa	all	nw-succ	公共联想后继
+在附近	1000	zai fu jin	all	nw-key+nw-succ	公共联想键
+再告诉我	1000	zai gao su wo	all	nw-succ	公共联想后继
+在公司	1000	zai gong si	all	nw-key	公共联想键
+再核对	1000	zai he dui	all	nw-key	公共联想键
+再继续	1000	zai ji xu	all	nw-succ	公共联想后继
+在家吗	1000	zai jia ma	all	nw-join+nw-succ	公共联想后继
+再见面	1000	zai jian mian	all	nw-succ	公共联想后继
+再决定	1000	zai jue ding	all	nw-succ	公共联想后继
+再看看	1000	zai kan kan	all	nw-succ	公共联想后继
+再来	1000	zai lai	all	nw-key+nw-succ	公共联想键
+再联系	1000	zai lian xi	all	nw-key+nw-succ	公共联想键
+在楼下	1000	zai lou xia	all	nw-key	公共联想键
+在忙	1000	zai mang	all	nw-key+nw-succ	公共联想键
+在忙啥	1000	zai mang sha	all	nw-key+nw-succ	公共联想键
+在忙什么	1000	zai mang shen me	all	nw-join+nw-key	公共联想键
+在门口	1000	zai men kou	all	nw-key+nw-succ	公共联想键
+再试	1000	zai shi	all	nw-key	公共联想键
+再试试	1000	zai shi shi	all	nw-join+nw-succ	公共联想后继
+再试一下	1000	zai shi yi xia	all	nw-join+nw-key	公共联想键
+再说	1000	zai shuo	all	nw-key+nw-succ	公共联想键
+再想想	1000	zai xiang xiang	all	nw-succ	公共联想后继
+再约	1000	zai yue	all	nw-succ	公共联想后继
+在这里	1000	zai zhe li	all	nw-succ	公共联想后继
+暂时	1000	zan shi	all	nw-key	公共联想键
+暂时不	1000	zan shi bu	all	nw-key	公共联想键
+暂时不行	1000	zan shi bu xing	all	nw-key	公共联想键
+暂时没有	1000	zan shi mei you	all	nw-join+nw-key	公共联想键
+早点回家	1000	zao dian hui jia	all	nw-join+nw-succ	公共联想后继
+早点睡觉	1000	zao dian shui jiao	all	nw-join+nw-key	公共联想键
+怎么操作	1000	zen me cao zuo	all	nw-join+nw-key	公共联想键
+怎么处理	1000	zen me chu li	all	nw-join+nw-key+nw-succ	公共联想键
+怎么改	1000	zen me gai	all	nw-succ	公共联想后继
+怎么过去	1000	zen me guo qu	all	nw-key	公共联想键
+怎么解决	1000	zen me jie jue	all	nw-succ	公共联想后继
+怎么连	1000	zen me lian	all	nw-succ	公共联想后继
+怎么联系	1000	zen me lian xi	all	nw-succ	公共联想后继
+怎么弄	1000	zen me nong	all	nw-join+nw-key+nw-succ	公共联想键
+怎么去	1000	zen me qu	all	nw-key	公共联想键
+怎么算	1000	zen me suan	all	nw-succ	公共联想后继
+怎么写	1000	zen me xie	all	nw-succ	公共联想后继
+怎么修改	1000	zen me xiu gai	all	nw-join+nw-key	公共联想键
+怎么用	1000	zen me yong	all	nw-succ	公共联想后继
+怎么走	1000	zen me zou	all	nw-key+nw-succ	公共联想键
+怎么做	1000	zen me zuo	all	nw-succ	公共联想后继
+找到了吗	1000	zhao dao le ma	all	nw-succ	公共联想后继
+找个地方	1000	zhao ge di fang	all	nw-join+nw-key	公共联想键
+照顾	1000	zhao gu	all	nw-key	公共联想键
+照顾好	1000	zhao gu hao	all	nw-key	公共联想键
+着急	1000	zhao ji	all	nw-succ	公共联想后继
+找你	1000	zhao ni	all	nw-succ	公共联想后继
+找我	1000	zhao wo	all	nw-succ	公共联想后继
+这个方案	1000	zhe ge fang an	all	nw-key	公共联想键
+这个剧	1000	zhe ge ju	all	nw-key	公共联想键
+这个文件	1000	zhe ge wen jian	all	nw-key	公共联想键
+这个项目	1000	zhe ge xiang mu	all	nw-key	公共联想键
+这家	1000	zhe jia	all	nw-key	公共联想键
+这家店	1000	zhe jia dian	all	nw-join+nw-key	公共联想键
+这件事	1000	zhe jian shi	all	nw-succ	公共联想后继
+这里	1000	zhe li	all	nw-succ	公共联想后继
+这么回事	1000	zhe me hui shi	all	nw-succ	公共联想后继
+这么快	1000	zhe me kuai	all	nw-succ	公共联想后继
+这么忙	1000	zhe me mang	all	nw-succ	公共联想后继
+这首歌	1000	zhe shou ge	all	nw-key	公共联想键
+这样的	1000	zhe yang de	all	nw-succ	公共联想后继
+这张	1000	zhe zhang	all	nw-key	公共联想键
+这张照片	1000	zhe zhang zhao pian	all	nw-join+nw-key	公共联想键
+这种	1000	zhe zhong	all	nw-succ	公共联想后继
+这周末	1000	zhe zhou mo	all	nw-key	公共联想键
+真不错	1000	zhen bu cuo	all	nw-key+nw-succ	公共联想键
+整理	1000	zheng li	all	nw-key	公共联想键
+整理一下	1000	zheng li yi xia	all	nw-join+nw-key+nw-succ	公共联想键
+正在	1000	zheng zai	all	nw-key	公共联想键
+正在开会	1000	zheng zai kai hui	all	nw-join+nw-key	公共联想键
+正准备	1000	zheng zhun bei	all	nw-key	公共联想键
+支持	1000	zhi chi	all	nw-succ	公共联想后继
+知道	1000	zhi dao	all	nw-succ	公共联想后继
+知道的	1000	zhi dao de	all	nw-succ	公共联想后继
+支付	1000	zhi fu	all	nw-succ	公共联想后继
+之间	1000	zhi jian	all	nw-succ	公共联想后继
+直接说	1000	zhi jie shuo	all	nw-succ	公共联想后继
+质量	1000	zhi liang	all	nw-key	公共联想键
+质量问题	1000	zhi liang wen ti	all	nw-key	公共联想键
+智能	1000	zhi neng	all	nw-succ	公共联想后继
+只能这样	1000	zhi neng zhe yang	all	nw-succ	公共联想后继
+周末去	1000	zhou mo qu	all	nw-key	公共联想键
+周末愉快	1000	zhou mo yu kuai	all	nw-join+nw-key+nw-succ	公共联想键
+祝大家	1000	zhu da jia	all	nw-key	公共联想键
+住哪	1000	zhu na	all	nw-key	公共联想键
+祝你	1000	zhu ni	all	nw-key	公共联想键
+主题	1000	zhu ti	all	nw-succ	公共联想后继
+主意	1000	zhu yi	all	nw-succ	公共联想后继
+注意	1000	zhu yi	all	nw-key	公共联想键
+注意休息	1000	zhu yi xiu xi	all	nw-join+nw-succ	公共联想后继
+转给	1000	zhuan gei	all	nw-key	公共联想键
+转给你	1000	zhuan gei ni	all	nw-key	公共联想键
+专业	1000	zhuan ye	all	nw-succ	公共联想后继
+准备	1000	zhun bei	all	nw-key+nw-succ	公共联想键
+准备好	1000	zhun bei hao	all	nw-key	公共联想键
+准备去	1000	zhun bei qu	all	nw-key	公共联想键
+自己做	1000	zi ji zuo	all	nw-key	公共联想键
+自己做饭	1000	zi ji zuo fan	all	nw-join+nw-key	公共联想键
+总结	1000	zong jie	all	nw-key	公共联想键
+总之	1000	zong zhi	all	nw-key	公共联想键
+走了	1000	zou le	all	nw-succ	公共联想后继
+走起	1000	zou qi	all	nw-succ	公共联想后继
+走走	1000	zou zou	all	nw-succ	公共联想后继
+最后期限	1000	zui hou qi xian	all	nw-key	公共联想键
+最近的	1000	zui jin de	all	nw-succ	公共联想后继
+最近都	1000	zui jin dou	all	nw-key	公共联想键
+最近在看	1000	zui jin zai kan	all	nw-key	公共联想键
+最新版本	1000	zui xin ban ben	all	nw-key	公共联想键
+最新的	1000	zui xin de	all	nw-key	公共联想键
+最新情况	1000	zui xin qing kuang	all	nw-succ	公共联想后继
+坐地铁	1000	zuo di tie	all	nw-key	公共联想键
+坐高铁	1000	zuo gao tie	all	nw-key	公共联想键
+坐公交	1000	zuo gong jiao	all	nw-key	公共联想键
+做好	1000	zuo hao	all	nw-key+nw-succ	公共联想键
+做好了	1000	zuo hao le	all	nw-join+nw-key	公共联想键
+坐火车	1000	zuo huo che	all	nw-key	公共联想键
+做什么	1000	zuo shen me	all	nw-key+nw-succ	公共联想键
+做完	1000	zuo wan	all	nw-key+nw-succ	公共联想键
+做完了吗	1000	zuo wan le ma	all	nw-join+nw-succ	公共联想后继
+坐坐	1000	zuo zuo	all	nw-succ	公共联想后继
+安排工作	500	an pai gong zuo	all	nw-join	公共联想组合
+安排时间	500	an pai shi jian	all	nw-join	公共联想组合
+爸爸妈妈	500	ba ba ma ma	all	nw-join	公共联想组合
+报名方式	500	bao ming fang shi	all	nw-join	公共联想组合
+报名了吗	500	bao ming le ma	all	nw-join	公共联想组合
+别熬夜了	500	bie ao ye le	all	nw-join	公共联想组合
+别太着急	500	bie tai zhao ji	all	nw-join	公共联想组合
+别忘记	500	bie wang ji	all	nw-join	公共联想组合
+不放葱	500	bu fang cong	all	nw-join	公共联想组合
+不过还好	500	bu guo hai hao	all	nw-join	公共联想组合
+不好吃啊	500	bu hao chi a	all	nw-join	公共联想组合
+不是那个	500	bu shi na ge	all	nw-join	公共联想组合
+不是我的	500	bu shi wo de	all	nw-join	公共联想组合
+不是这个	500	bu shi zhe ge	all	nw-join	公共联想组合
+不舒服吗	500	bu shu fu ma	all	nw-join	公共联想组合
+不太明白	500	bu tai ming bai	all	nw-join	公共联想组合
+不用谢啦	500	bu yong xie la	all	nw-join	公共联想组合
+不用着急	500	bu yong zhao ji	all	nw-join	公共联想组合
+测试结果	500	ce shi jie guo	all	nw-join	公共联想组合
+超市里	500	chao shi li	all	nw-join	公共联想组合
+吃点好的	500	chi dian hao de	all	nw-join	公共联想组合
+吃顿好的	500	chi dun hao de	all	nw-join	公共联想组合
+吃饭吧	500	chi fan ba	all	nw-join	公共联想组合
+吃饭了没	500	chi fan le mei	all	nw-join	公共联想组合
+吃饭呢	500	chi fan ne	all	nw-join	公共联想组合
+吃个早饭	500	chi ge zao fan	all	nw-join	公共联想组合
+吃过了	500	chi guo le	all	nw-join	公共联想组合
+吃了没有	500	chi le mei you	all	nw-join	公共联想组合
+吃了什么	500	chi le shen me	all	nw-join	公共联想组合
+吃什么好	500	chi shen me hao	all	nw-join	公共联想组合
+吃晚饭吧	500	chi wan fan ba	all	nw-join	公共联想组合
+吃完再说	500	chi wan zai shuo	all	nw-join	公共联想组合
+充电了吗	500	chong dian le ma	all	nw-join	公共联想组合
+重启试试	500	chong qi shi shi	all	nw-join	公共联想组合
+出差了	500	chu chai le	all	nw-join	公共联想组合
+出发吗	500	chu fa ma	all	nw-join	公共联想组合
+出发时间	500	chu fa shi jian	all	nw-join	公共联想组合
+出门带伞	500	chu men dai san	all	nw-join	公共联想组合
+出门了	500	chu men le	all	nw-join	公共联想组合
+出去吃饭	500	chu qu chi fan	all	nw-join	公共联想组合
+出太阳了	500	chu tai yang le	all	nw-join	公共联想组合
+打车过来	500	da che guo lai	all	nw-join	公共联想组合
+打款了	500	da kuan le	all	nw-join	公共联想组合
+打扰你了	500	da rao ni le	all	nw-join	公共联想组合
+打扰您了	500	da rao nin le	all	nw-join	公共联想组合
+打扫房间	500	da sao fang jian	all	nw-join	公共联想组合
+打扫干净	500	da sao gan jing	all	nw-join	公共联想组合
+打扫卫生	500	da sao wei sheng	all	nw-join	公共联想组合
+带点吃的	500	dai dian chi de	all	nw-join	公共联想组合
+待会再聊	500	dai hui zai liao	all	nw-join	公共联想组合
+蛋糕店	500	dan gao dian	all	nw-join	公共联想组合
+到公司了	500	dao gong si le	all	nw-join	公共联想组合
+到机场了	500	dao ji chang le	all	nw-join	公共联想组合
+到门口了	500	dao men kou le	all	nw-join	公共联想组合
+到时候见	500	dao shi hou jian	all	nw-join	公共联想组合
+到时见	500	dao shi jian	all	nw-join	公共联想组合
+到时联系	500	dao shi lian xi	all	nw-join	公共联想组合
+到时再说	500	dao shi zai shuo	all	nw-join	公共联想组合
+到账了	500	dao zhang le	all	nw-join	公共联想组合
+等等看吧	500	deng deng kan ba	all	nw-join	公共联想组合
+等会过去	500	deng hui guo qu	all	nw-join	公共联想组合
+等会再聊	500	deng hui zai liao	all	nw-join	公共联想组合
+等会再说	500	deng hui zai shuo	all	nw-join	公共联想组合
+登录账号	500	deng lu zhang hao	all	nw-join	公共联想组合
+等我到家	500	deng wo dao jia	all	nw-join	公共联想组合
+等我回来	500	deng wo hui lai	all	nw-join	公共联想组合
+等我忙完	500	deng wo mang wan	all	nw-join	公共联想组合
+点了没有	500	dian le mei you	all	nw-join	公共联想组合
+点了外卖	500	dian le wai mai	all	nw-join	公共联想组合
+电影节	500	dian ying jie	all	nw-join	公共联想组合
+电影院	500	dian ying yuan	all	nw-join	公共联想组合
+订酒店了	500	ding jiu dian le	all	nw-join	公共联想组合
+对不起啊	500	dui bu qi a	all	nw-join	公共联想组合
+对接一下	500	dui jie yi xia	all	nw-join	公共联想组合
+多穿一点	500	duo chuan yi dian	all	nw-join	公共联想组合
+多喝热水	500	duo he re shui	all	nw-join	公共联想组合
+多少钱啊	500	duo shao qian a	all	nw-join	公共联想组合
+多谢啦	500	duo xie la	all	nw-join	公共联想组合
+发给你了	500	fa gei ni le	all	nw-join	公共联想组合
+发工资吧	500	fa gong zi ba	all	nw-join	公共联想组合
+发工资了	500	fa gong zi le	all	nw-join	公共联想组合
+发过去了	500	fa guo qu le	all	nw-join	公共联想组合
+发货了吗	500	fa huo le ma	all	nw-join	公共联想组合
+发我了	500	fa wo le	all	nw-join	公共联想组合
+发张图	500	fa zhang tu	all	nw-join	公共联想组合
+方案设计	500	fang an she ji	all	nw-join	公共联想组合
+放假了吗	500	fang jia le ma	all	nw-join	公共联想组合
+飞机场	500	fei ji chang	all	nw-join	公共联想组合
+飞机票	500	fei ji piao	all	nw-join	公共联想组合
+付过了	500	fu guo le	all	nw-join	公共联想组合
+付款了吗	500	fu kuan le ma	all	nw-join	公共联想组合
+付了吗	500	fu le ma	all	nw-join	公共联想组合
+复习计划	500	fu xi ji hua	all	nw-join	公共联想组合
+复习进度	500	fu xi jin du	all	nw-join	公共联想组合
+复习资料	500	fu xi zi liao	all	nw-join	公共联想组合
+改天见	500	gai tian jian	all	nw-join	公共联想组合
+改天再聊	500	gai tian zai liao	all	nw-join	公共联想组合
+改天再说	500	gai tian zai shuo	all	nw-join	公共联想组合
+感觉不错	500	gan jue bu cuo	all	nw-join	公共联想组合
+干嘛了	500	gan ma le	all	nw-join	公共联想组合
+干嘛呢	500	gan ma ne	all	nw-join	公共联想组合
+干嘛去	500	gan ma qu	all	nw-join	公共联想组合
+干嘛呀	500	gan ma ya	all	nw-join	公共联想组合
+干什么了	500	gan shen me le	all	nw-join	公共联想组合
+干什么呢	500	gan shen me ne	all	nw-join	公共联想组合
+干什么去	500	gan shen me qu	all	nw-join	公共联想组合
+干什么呀	500	gan shen me ya	all	nw-join	公共联想组合
+刚刚到家	500	gang gang dao jia	all	nw-join	公共联想组合
+刚开完会	500	gang kai wan hui	all	nw-join	公共联想组合
+刚看完	500	gang kan wan	all	nw-join	公共联想组合
+给点建议	500	gei dian jian yi	all	nw-join	公共联想组合
+给点意见	500	gei dian yi jian	all	nw-join	公共联想组合
+更新版本	500	geng xin ban ben	all	nw-join	公共联想组合
+公司简介	500	gong si jian jie	all	nw-join	公共联想组合
+公司名称	500	gong si ming cheng	all	nw-join	公共联想组合
+公园里	500	gong yuan li	all	nw-join	公共联想组合
+工资待遇	500	gong zi dai yu	all	nw-join	公共联想组合
+工资收入	500	gong zi shou ru	all	nw-join	公共联想组合
+工作忙吗	500	gong zuo mang ma	all	nw-join	公共联想组合
+贵了点	500	gui le dian	all	nw-join	公共联想组合
+贵了一点	500	gui le yi dian	all	nw-join	公共联想组合
+过去吧	500	guo qu ba	all	nw-join	公共联想组合
+过去看看	500	guo qu kan kan	all	nw-join	公共联想组合
+过去一趟	500	guo qu yi tang	all	nw-join	公共联想组合
+还不错啊	500	hai bu cuo a	all	nw-join	公共联想组合
+还不清楚	500	hai bu qing chu	all	nw-join	公共联想组合
+还不知道	500	hai bu zhi dao	all	nw-join	公共联想组合
+还可以吧	500	hai ke yi ba	all	nw-join	公共联想组合
+还可以的	500	hai ke yi de	all	nw-join	公共联想组合
+还没吃呢	500	hai mei chi ne	all	nw-join	公共联想组合
+还没到吗	500	hai mei dao ma	all	nw-join	公共联想组合
+还没到呢	500	hai mei dao ne	all	nw-join	公共联想组合
+还没发货	500	hai mei fa huo	all	nw-join	公共联想组合
+还没看	500	hai mei kan	all	nw-join	公共联想组合
+还没睡啊	500	hai mei shui a	all	nw-join	公共联想组合
+还没睡吗	500	hai mei shui ma	all	nw-join	公共联想组合
+还没睡呢	500	hai mei shui ne	all	nw-join	公共联想组合
+还没完成	500	hai mei wan cheng	all	nw-join	公共联想组合
+还没有到	500	hai mei you dao	all	nw-join	公共联想组合
+还没做好	500	hai mei zuo hao	all	nw-join	公共联想组合
+还没做呢	500	hai mei zuo ne	all	nw-join	公共联想组合
+还没做完	500	hai mei zuo wan	all	nw-join	公共联想组合
+还在公司	500	hai zai gong si	all	nw-join	公共联想组合
+还在开会	500	hai zai kai hui	all	nw-join	公共联想组合
+还在路上	500	hai zai lu shang	all	nw-join	公共联想组合
+还在忙吗	500	hai zai mang ma	all	nw-join	公共联想组合
+还在上班	500	hai zai shang ban	all	nw-join	公共联想组合
+好的收到	500	hao de shou dao	all	nw-join	公共联想组合
+好的谢谢	500	hao de xie xie	all	nw-join	公共联想组合
+好点没	500	hao dian mei	all	nw-join	公共联想组合
+好多事情	500	hao duo shi qing	all	nw-join	公共联想组合
+好好睡觉	500	hao hao shui jiao	all	nw-join	公共联想组合
+好好学习	500	hao hao xue xi	all	nw-join	公共联想组合
+好开心啊	500	hao kai xin a	all	nw-join	公共联想组合
+好看啊	500	hao kan a	all	nw-join	公共联想组合
+好想回家	500	hao xiang hui jia	all	nw-join	公共联想组合
+好想见你	500	hao xiang jian ni	all	nw-join	公共联想组合
+好像可以	500	hao xiang ke yi	all	nw-join	公共联想组合
+好像没有	500	hao xiang mei you	all	nw-join	公共联想组合
+好想你啊	500	hao xiang ni a	all	nw-join	公共联想组合
+好想你呀	500	hao xiang ni ya	all	nw-join	公共联想组合
+好想睡觉	500	hao xiang shui jiao	all	nw-join	公共联想组合
+喝点什么	500	he dian shen me	all	nw-join	公共联想组合
+喝点水	500	he dian shui	all	nw-join	公共联想组合
+核对地址	500	he dui di zhi	all	nw-join	公共联想组合
+喝咖啡吗	500	he ka fei ma	all	nw-join	公共联想组合
+喝奶茶吗	500	he nai cha ma	all	nw-join	公共联想组合
+和你见面	500	he ni jian mian	all	nw-join	公共联想组合
+和你聊聊	500	he ni liao liao	all	nw-join	公共联想组合
+合作方式	500	he zuo fang shi	all	nw-join	公共联想组合
+合作机会	500	he zuo ji hui	all	nw-join	公共联想组合
+很好看的	500	hen hao kan de	all	nw-join	公共联想组合
+很想见你	500	hen xiang jian ni	all	nw-join	公共联想组合
+很想你	500	hen xiang ni	all	nw-join	公共联想组合
+后天见	500	hou tian jian	all	nw-join	公共联想组合
+换个方式	500	huan ge fang shi	all	nw-join	公共联想组合
+汇报工作	500	hui bao gong zuo	all	nw-join	公共联想组合
+汇报情况	500	hui bao qing kuang	all	nw-join	公共联想组合
+回家吧	500	hui jia ba	all	nw-join	公共联想组合
+回家了吗	500	hui jia le ma	all	nw-join	公共联想组合
+回家路上	500	hui jia lu shang	all	nw-join	公共联想组合
+会开完了	500	hui kai wan le	all	nw-join	公共联想组合
+回来吧	500	hui lai ba	all	nw-join	公共联想组合
+回来吗	500	hui lai ma	all	nw-join	公共联想组合
+回来再聊	500	hui lai zai liao	all	nw-join	公共联想组合
+回来再说	500	hui lai zai shuo	all	nw-join	公共联想组合
+回头看看	500	hui tou kan kan	all	nw-join	公共联想组合
+回头再看	500	hui tou zai kan	all	nw-join	公共联想组合
+回头再聊	500	hui tou zai liao	all	nw-join	公共联想组合
+回头再说	500	hui tou zai shuo	all	nw-join	公共联想组合
+火车上	500	huo che shang	all	nw-join	公共联想组合
+机场大巴	500	ji chang da ba	all	nw-join	公共联想组合
+机场接送	500	ji chang jie song	all	nw-join	公共联想组合
+记得带伞	500	ji de dai san	all	nw-join	公共联想组合
+几天能到	500	ji tian neng dao	all	nw-join	公共联想组合
+加班了吗	500	jia ban le ma	all	nw-join	公共联想组合
+加班吗	500	jia ban ma	all	nw-join	公共联想组合
+加班呢	500	jia ban ne	all	nw-join	公共联想组合
+价格合理	500	jia ge he li	all	nw-join	公共联想组合
+加油啊	500	jia you a	all	nw-join	公共联想组合
+加油呀	500	jia you ya	all	nw-join	公共联想组合
+检查了吗	500	jian cha le ma	all	nw-join	公共联想组合
+见面再说	500	jian mian zai shuo	all	nw-join	公共联想组合
+健身教练	500	jian shen jiao lian	all	nw-join	公共联想组合
+见一次	500	jian yi ci	all	nw-join	公共联想组合
+见一下	500	jian yi xia	all	nw-join	公共联想组合
+解决办法	500	jie jue ban fa	all	nw-join	公共联想组合
+解决了吗	500	jie jue le ma	all	nw-join	公共联想组合
+解决一下	500	jie jue yi xia	all	nw-join	公共联想组合
+接你去	500	jie ni qu	all	nw-join	公共联想组合
+节日礼物	500	jie ri li wu	all	nw-join	公共联想组合
+节日祝福	500	jie ri zhu fu	all	nw-join	公共联想组合
+尽量早点	500	jin liang zao dian	all	nw-join	公共联想组合
+今晚见	500	jin wan jian	all	nw-join	公共联想组合
+具体地址	500	ju ti di zhi	all	nw-join	公共联想组合
+决定了	500	jue ding le	all	nw-join	公共联想组合
+开车慢点	500	kai che man dian	all	nw-join	公共联想组合
+开会了	500	kai hui le	all	nw-join	公共联想组合
+开完了吗	500	kai wan le ma	all	nw-join	公共联想组合
+开心的事	500	kai xin de shi	all	nw-join	公共联想组合
+开心吗	500	kai xin ma	all	nw-join	公共联想组合
+看电影吗	500	kan dian ying ma	all	nw-join	公共联想组合
+看电影去	500	kan dian ying qu	all	nw-join	公共联想组合
+看看再说	500	kan kan zai shuo	all	nw-join	公共联想组合
+看什么呢	500	kan shen me ne	all	nw-join	公共联想组合
+看什么书	500	kan shen me shu	all	nw-join	公共联想组合
+考得不错	500	kao de bu cuo	all	nw-join	公共联想组合
+考虑看看	500	kao lv kan kan	all	nw-join	公共联想组合
+考完了	500	kao wan le	all	nw-join	公共联想组合
+考完试了	500	kao wan shi le	all	nw-join	公共联想组合
+考完再说	500	kao wan zai shuo	all	nw-join	公共联想组合
+可能吧	500	ke neng ba	all	nw-join	公共联想组合
+可能不行	500	ke neng bu xing	all	nw-join	公共联想组合
+可能没有	500	ke neng mei you	all	nw-join	公共联想组合
+客气了	500	ke qi le	all	nw-join	公共联想组合
+可以啊	500	ke yi a	all	nw-join	公共联想组合
+快到家了	500	kuai dao jia le	all	nw-join	公共联想组合
+困了吗	500	kun le ma	all	nw-join	公共联想组合
+来不及了	500	lai bu ji le	all	nw-join	公共联想组合
+来得及吧	500	lai de ji ba	all	nw-join	公共联想组合
+来得及吗	500	lai de ji ma	all	nw-join	公共联想组合
+蓝牙耳机	500	lan ya er ji	all	nw-join	公共联想组合
+累了吧	500	lei le ba	all	nw-join	公共联想组合
+累了吗	500	lei le ma	all	nw-join	公共联想组合
+厉害啊	500	li hai a	all	nw-join	公共联想组合
+厉害了	500	li hai le	all	nw-join	公共联想组合
+旅行安排	500	lv xing an pai	all	nw-join	公共联想组合
+旅行攻略	500	lv xing gong lue	all	nw-join	公共联想组合
+旅行计划	500	lv xing ji hua	all	nw-join	公共联想组合
+旅行照片	500	lv xing zhao pian	all	nw-join	公共联想组合
+旅游景点	500	lv you jing dian	all	nw-join	公共联想组合
+马上过去	500	ma shang guo qu	all	nw-join	公共联想组合
+马上就到	500	ma shang jiu dao	all	nw-join	公共联想组合
+马上就好	500	ma shang jiu hao	all	nw-join	公共联想组合
+马上就来	500	ma shang jiu lai	all	nw-join	公共联想组合
+慢点吃	500	man dian chi	all	nw-join	公共联想组合
+没办法了	500	mei ban fa le	all	nw-join	公共联想组合
+没关系啊	500	mei guan xi a	all	nw-join	公共联想组合
+没关系啦	500	mei guan xi la	all	nw-join	公共联想组合
+没回你	500	mei hui ni	all	nw-join	公共联想组合
+没事啦	500	mei shi la	all	nw-join	公共联想组合
+没事了	500	mei shi le	all	nw-join	公共联想组合
+没注意看	500	mei zhu yi kan	all	nw-join	公共联想组合
+密码忘了	500	mi ma wang le	all	nw-join	公共联想组合
+面条坨了	500	mian tiao tuo le	all	nw-join	公共联想组合
+明天发货	500	ming tian fa huo	all	nw-join	公共联想组合
+明天见啊	500	ming tian jian a	all	nw-join	公共联想组合
+明天去吧	500	ming tian qu ba	all	nw-join	公共联想组合
+明天再聊	500	ming tian zai liao	all	nw-join	公共联想组合
+明天再说	500	ming tian zai shuo	all	nw-join	公共联想组合
+目前进度	500	mu qian jin du	all	nw-join	公共联想组合
+目前情况	500	mu qian qing kuang	all	nw-join	公共联想组合
+哪天有空	500	na tian you kong	all	nw-join	公共联想组合
+你吃了没	500	ni chi le mei	all	nw-join	公共联想组合
+你吃什么	500	ni chi shen me	all	nw-join	公共联想组合
+你到了吗	500	ni dao le ma	all	nw-join	公共联想组合
+你到哪了	500	ni dao na le	all	nw-join	公共联想组合
+你好啊	500	ni hao a	all	nw-join	公共联想组合
+你好呀	500	ni hao ya	all	nw-join	公共联想组合
+你觉得呢	500	ni jue de ne	all	nw-join	公共联想组合
+你上班吗	500	ni shang ban ma	all	nw-join	公共联想组合
+你睡了吗	500	ni shui le ma	all	nw-join	公共联想组合
+你睡了没	500	ni shui le mei	all	nw-join	公共联想组合
+你先吃饭	500	ni xian chi fan	all	nw-join	公共联想组合
+你先看看	500	ni xian kan kan	all	nw-join	公共联想组合
+你先忙吧	500	ni xian mang ba	all	nw-join	公共联想组合
+你先休息	500	ni xian xiu xi	all	nw-join	公共联想组合
+你有事吗	500	ni you shi ma	all	nw-join	公共联想组合
+你在家吗	500	ni zai jia ma	all	nw-join	公共联想组合
+你在忙吗	500	ni zai mang ma	all	nw-join	公共联想组合
+你在哪儿	500	ni zai na er	all	nw-join	公共联想组合
+你在哪呢	500	ni zai na ne	all	nw-join	公共联想组合
+你怎么了	500	ni zen me le	all	nw-join	公共联想组合
+弄好了吗	500	nong hao le ma	all	nw-join	公共联想组合
+弄完了吗	500	nong wan le ma	all	nw-join	公共联想组合
+跑步机	500	pao bu ji	all	nw-join	公共联想组合
+跑步去	500	pao bu qu	all	nw-join	公共联想组合
+跑步鞋	500	pao bu xie	all	nw-join	公共联想组合
+朋友家	500	peng you jia	all	nw-join	公共联想组合
+朋友聚会	500	peng you ju hui	all	nw-join	公共联想组合
+朋友们	500	peng you men	all	nw-join	公共联想组合
+朋友之间	500	peng you zhi jian	all	nw-join	公共联想组合
+便宜点吧	500	pian yi dian ba	all	nw-join	公共联想组合
+便宜些	500	pian yi xie	all	nw-join	公共联想组合
+起床吧	500	qi chuang ba	all	nw-join	公共联想组合
+起床了吗	500	qi chuang le ma	all	nw-join	公共联想组合
+起床了没	500	qi chuang le mei	all	nw-join	公共联想组合
+起床吗	500	qi chuang ma	all	nw-join	公共联想组合
+起来了	500	qi lai le	all	nw-join	公共联想组合
+其实可以	500	qi shi ke yi	all	nw-join	公共联想组合
+请假了吗	500	qing jia le ma	all	nw-join	公共联想组合
+请假理由	500	qing jia li you	all	nw-join	公共联想组合
+请问一下	500	qing wen yi xia	all	nw-join	公共联想组合
+去吃饭了	500	qu chi fan le	all	nw-join	公共联想组合
+去接孩子	500	qu jie hai zi	all	nw-join	公共联想组合
+去旅行吧	500	qu lv xing ba	all	nw-join	公共联想组合
+确实不错	500	que shi bu cuo	all	nw-join	公共联想组合
+确实是	500	que shi shi	all	nw-join	公共联想组合
+然后呢	500	ran hou ne	all	nw-join	公共联想组合
+人工成本	500	ren gong cheng ben	all	nw-join	公共联想组合
+人工审核	500	ren gong shen he	all	nw-join	公共联想组合
+人工智能	500	ren gong zhi neng	all	nw-join	公共联想组合
+任务进度	500	ren wu jin du	all	nw-join	公共联想组合
+如何操作	500	ru he cao zuo	all	nw-join	公共联想组合
+如何处理	500	ru he chu li	all	nw-join	公共联想组合
+如何修改	500	ru he xiu gai	all	nw-join	公共联想组合
+上班了吗	500	shang ban le ma	all	nw-join	公共联想组合
+上班了呀	500	shang ban le ya	all	nw-join	公共联想组合
+上班去	500	shang ban qu	all	nw-join	公共联想组合
+上班时间	500	shang ban shi jian	all	nw-join	公共联想组合
+上课吗	500	shang ke ma	all	nw-join	公共联想组合
+上课时间	500	shang ke shi jian	all	nw-join	公共联想组合
+稍等片刻	500	shao deng pian ke	all	nw-join	公共联想组合
+烧烤店	500	shao kao dian	all	nw-join	公共联想组合
+烧烤摊	500	shao kao tan	all	nw-join	公共联想组合
+审核结果	500	shen he jie guo	all	nw-join	公共联想组合
+审核一下	500	shen he yi xia	all	nw-join	公共联想组合
+审批一下	500	shen pi yi xia	all	nw-join	公共联想组合
+身体不适	500	shen ti bu shi	all	nw-join	公共联想组合
+生日蛋糕	500	sheng ri dan gao	all	nw-join	公共联想组合
+生日礼物	500	sheng ri li wu	all	nw-join	公共联想组合
+生日祝福	500	sheng ri zhu fu	all	nw-join	公共联想组合
+视频会议	500	shi pin hui yi	all	nw-join	公共联想组合
+视频文件	500	shi pin wen jian	all	nw-join	公共联想组合
+收到谢谢	500	shou dao xie xie	all	nw-join	公共联想组合
+收货人	500	shou huo ren	all	nw-join	公共联想组合
+手机充电	500	shou ji chong dian	all	nw-join	公共联想组合
+收拾东西	500	shou shi dong xi	all	nw-join	公共联想组合
+收拾行李	500	shou shi xing li	all	nw-join	公共联想组合
+睡个好觉	500	shui ge hao jiao	all	nw-join	公共联想组合
+睡个懒觉	500	shui ge lan jiao	all	nw-join	公共联想组合
+睡个午觉	500	shui ge wu jiao	all	nw-join	公共联想组合
+水果拼盘	500	shui guo pin pan	all	nw-join	公共联想组合
+水果沙拉	500	shui guo sha la	all	nw-join	公共联想组合
+睡觉吧	500	shui jiao ba	all	nw-join	公共联想组合
+睡觉了	500	shui jiao le	all	nw-join	公共联想组合
+睡觉了吗	500	shui jiao le ma	all	nw-join	公共联想组合
+睡觉去	500	shui jiao qu	all	nw-join	公共联想组合
+睡了没	500	shui le mei	all	nw-join	公共联想组合
+睡了没有	500	shui le mei you	all	nw-join	公共联想组合
+睡醒了	500	shui xing le	all	nw-join	公共联想组合
+睡醒了吗	500	shui xing le ma	all	nw-join	公共联想组合
+睡着了	500	shui zhao le	all	nw-join	公共联想组合
+睡着了吗	500	shui zhao le ma	all	nw-join	公共联想组合
+送你一程	500	song ni yi cheng	all	nw-join	公共联想组合
+太棒啦	500	tai bang la	all	nw-join	公共联想组合
+太棒了吧	500	tai bang le ba	all	nw-join	公共联想组合
+太贵了吧	500	tai gui le ba	all	nw-join	公共联想组合
+太好看了	500	tai hao kan le	all	nw-join	公共联想组合
+太困了	500	tai kun le	all	nw-join	公共联想组合
+太辣了	500	tai la le	all	nw-join	公共联想组合
+太辣了吧	500	tai la le ba	all	nw-join	公共联想组合
+太累了吧	500	tai lei le ba	all	nw-join	公共联想组合
+太冷了	500	tai leng le	all	nw-join	公共联想组合
+太甜了	500	tai tian le	all	nw-join	公共联想组合
+太甜了吧	500	tai tian le ba	all	nw-join	公共联想组合
+太咸了	500	tai xian le	all	nw-join	公共联想组合
+太咸了吧	500	tai xian le ba	all	nw-join	公共联想组合
+讨论方案	500	tao lun fang an	all	nw-join	公共联想组合
+讨论问题	500	tao lun wen ti	all	nw-join	公共联想组合
+天气冷了	500	tian qi leng le	all	nw-join	公共联想组合
+挺不错的	500	ting bu cuo de	all	nw-join	公共联想组合
+听歌呢	500	ting ge ne	all	nw-join	公共联想组合
+挺好吃	500	ting hao chi	all	nw-join	公共联想组合
+挺好看	500	ting hao kan	all	nw-join	公共联想组合
+挺好用	500	ting hao yong	all	nw-join	公共联想组合
+听什么歌	500	ting shen me ge	all	nw-join	公共联想组合
+挺喜欢的	500	ting xi huan de	all	nw-join	公共联想组合
+同步进度	500	tong bu jin du	all	nw-join	公共联想组合
+同步信息	500	tong bu xin xi	all	nw-join	公共联想组合
+同事家	500	tong shi jia	all	nw-join	公共联想组合
+同事们	500	tong shi men	all	nw-join	公共联想组合
+同事之间	500	tong shi zhi jian	all	nw-join	公共联想组合
+同学家	500	tong xue jia	all	nw-join	公共联想组合
+通知大家	500	tong zhi da jia	all	nw-join	公共联想组合
+通知我	500	tong zhi wo	all	nw-join	公共联想组合
+晚餐时间	500	wan can shi jian	all	nw-join	公共联想组合
+完成了吗	500	wan cheng le ma	all	nw-join	公共联想组合
+完成时间	500	wan cheng shi jian	all	nw-join	公共联想组合
+完成之后	500	wan cheng zhi hou	all	nw-join	公共联想组合
+晚点见	500	wan dian jian	all	nw-join	公共联想组合
+晚点再说	500	wan dian zai shuo	all	nw-join	公共联想组合
+晚上好呀	500	wan shang hao ya	all	nw-join	公共联想组合
+晚上见	500	wan shang jian	all	nw-join	公共联想组合
+微信联系	500	wei xin lian xi	all	nw-join	公共联想组合
+微信支付	500	wei xin zhi fu	all	nw-join	公共联想组合
+我出发了	500	wo chu fa le	all	nw-join	公共联想组合
+我出门了	500	wo chu men le	all	nw-join	公共联想组合
+我发给你	500	wo fa gei ni	all	nw-join	公共联想组合
+我好想你	500	wo hao xiang ni	all	nw-join	公共联想组合
+我回家了	500	wo hui jia le	all	nw-join	公共联想组合
+我回去了	500	wo hui qu le	all	nw-join	公共联想组合
+我来帮你	500	wo lai bang ni	all	nw-join	公共联想组合
+我喜欢你	500	wo xi huan ni	all	nw-join	公共联想组合
+我先看看	500	wo xian kan kan	all	nw-join	公共联想组合
+我先忙了	500	wo xian mang le	all	nw-join	公共联想组合
+我先走了	500	wo xian zou le	all	nw-join	公共联想组合
+我想你了	500	wo xiang ni le	all	nw-join	公共联想组合
+我想你们	500	wo xiang ni men	all	nw-join	公共联想组合
+我想要	500	wo xiang yao	all	nw-join	公共联想组合
+我在等你	500	wo zai deng ni	all	nw-join	公共联想组合
+我在公司	500	wo zai gong si	all	nw-join	公共联想组合
+我在家	500	wo zai jia	all	nw-join	公共联想组合
+我在外面	500	wo zai wai mian	all	nw-join	公共联想组合
+我再想想	500	wo zai xiang xiang	all	nw-join	公共联想组合
+午餐时间	500	wu can shi jian	all	nw-join	公共联想组合
+喜欢的话	500	xi huan de hua	all	nw-join	公共联想组合
+喜欢看书	500	xi huan kan shu	all	nw-join	公共联想组合
+喜欢这个	500	xi huan zhe ge	all	nw-join	公共联想组合
+系统更新	500	xi tong geng xin	all	nw-join	公共联想组合
+下班了吗	500	xia ban le ma	all	nw-join	公共联想组合
+下班了呀	500	xia ban le ya	all	nw-join	公共联想组合
+下车了	500	xia che le	all	nw-join	公共联想组合
+下车吗	500	xia che ma	all	nw-join	公共联想组合
+下次再见	500	xia ci zai jian	all	nw-join	公共联想组合
+下次再聊	500	xia ci zai liao	all	nw-join	公共联想组合
+下大雨了	500	xia da yu le	all	nw-join	公共联想组合
+下单了吗	500	xia dan le ma	all	nw-join	公共联想组合
+下飞机了	500	xia fei ji le	all	nw-join	公共联想组合
+下雪了吗	500	xia xue le ma	all	nw-join	公共联想组合
+下雨没有	500	xia yu mei you	all	nw-join	公共联想组合
+下周见	500	xia zhou jian	all	nw-join	公共联想组合
+下周再说	500	xia zhou zai shuo	all	nw-join	公共联想组合
+先不聊了	500	xian bu liao le	all	nw-join	公共联想组合
+先吃饭吧	500	xian chi fan ba	all	nw-join	公共联想组合
+先睡吧	500	xian shui ba	all	nw-join	公共联想组合
+想见你了	500	xiang jian ni le	all	nw-join	公共联想组合
+想念你	500	xiang nian ni	all	nw-join	公共联想组合
+想去看看	500	xiang qu kan kan	all	nw-join	公共联想组合
+想去旅行	500	xiang qu lv xing	all	nw-join	公共联想组合
+想问一下	500	xiang wen yi xia	all	nw-join	公共联想组合
+小区环境	500	xiao qu huan jing	all	nw-join	公共联想组合
+小区里	500	xiao qu li	all	nw-join	公共联想组合
+小区物业	500	xiao qu wu ye	all	nw-join	公共联想组合
+谢谢了	500	xie xie le	all	nw-join	公共联想组合
+辛苦啦	500	xin ku la	all	nw-join	公共联想组合
+新年礼物	500	xin nian li wu	all	nw-join	公共联想组合
+新年祝福	500	xin nian zhu fu	all	nw-join	公共联想组合
+修改方案	500	xiu gai fang an	all	nw-join	公共联想组合
+休息吧	500	xiu xi ba	all	nw-join	公共联想组合
+休息会吧	500	xiu xi hui ba	all	nw-join	公共联想组合
+需要什么	500	xu yao shen me	all	nw-join	公共联想组合
+学会了吗	500	xue hui le ma	all	nw-join	公共联想组合
+学什么好	500	xue shen me hao	all	nw-join	公共联想组合
+学习进度	500	xue xi jin du	all	nw-join	公共联想组合
+学习一下	500	xue xi yi xia	all	nw-join	公共联想组合
+学校里	500	xue xiao li	all	nw-join	公共联想组合
+要是不行	500	yao shi bu xing	all	nw-join	公共联想组合
+要下雨了	500	yao xia yu le	all	nw-join	公共联想组合
+衣服尺寸	500	yi fu chi cun	all	nw-join	公共联想组合
+一会过去	500	yi hui guo qu	all	nw-join	公共联想组合
+一会再聊	500	yi hui zai liao	all	nw-join	公共联想组合
+一起聊聊	500	yi qi liao liao	all	nw-join	公共联想组合
+一起玩吧	500	yi qi wan ba	all	nw-join	公共联想组合
+一起走吧	500	yi qi zou ba	all	nw-join	公共联想组合
+一切安好	500	yi qie an hao	all	nw-join	公共联想组合
+一切都好	500	yi qie dou hao	all	nw-join	公共联想组合
+一人一半	500	yi ren yi ban	all	nw-join	公共联想组合
+音乐会	500	yin yue hui	all	nw-join	公共联想组合
+音乐剧	500	yin yue ju	all	nw-join	公共联想组合
+音乐推荐	500	yin yue tui jian	all	nw-join	公共联想组合
+有点贵了	500	you dian gui le	all	nw-join	公共联想组合
+有点困了	500	you dian kun le	all	nw-join	公共联想组合
+有点累了	500	you dian lei le	all	nw-join	公共联想组合
+有点累呢	500	you dian lei ne	all	nw-join	公共联想组合
+优惠活动	500	you hui huo dong	all	nw-join	公共联想组合
+优惠价格	500	you hui jia ge	all	nw-join	公共联想组合
+有货了	500	you huo le	all	nw-join	公共联想组合
+有货吗	500	you huo ma	all	nw-join	公共联想组合
+有没有钱	500	you mei you qian	all	nw-join	公共联想组合
+有没有人	500	you mei you ren	all	nw-join	公共联想组合
+有时间吗	500	you shi jian ma	all	nw-join	公共联想组合
+有问题吗	500	you wen ti ma	all	nw-join	公共联想组合
+有现货吗	500	you xian huo ma	all	nw-join	公共联想组合
+有些地方	500	you xie di fang	all	nw-join	公共联想组合
+有些事情	500	you xie shi qing	all	nw-join	公共联想组合
+有些问题	500	you xie wen ti	all	nw-join	公共联想组合
+遇到困难	500	yu dao kun nan	all	nw-join	公共联想组合
+遇到了	500	yu dao le	all	nw-join	公共联想组合
+遇到什么	500	yu dao shen me	all	nw-join	公共联想组合
+原来是你	500	yuan lai shi ni	all	nw-join	公共联想组合
+运动鞋	500	yun dong xie	all	nw-join	公共联想组合
+运动员	500	yun dong yuan	all	nw-join	公共联想组合
+再等等吧	500	zai deng deng ba	all	nw-join	公共联想组合
+在干嘛啊	500	zai gan ma a	all	nw-join	公共联想组合
+在干嘛呢	500	zai gan ma ne	all	nw-join	公共联想组合
+在干嘛呀	500	zai gan ma ya	all	nw-join	公共联想组合
+在公司吗	500	zai gong si ma	all	nw-join	公共联想组合
+在家呢	500	zai jia ne	all	nw-join	公共联想组合
+在家休息	500	zai jia xiu xi	all	nw-join	公共联想组合
+再来一杯	500	zai lai yi bei	all	nw-join	公共联想组合
+再来一碗	500	zai lai yi wan	all	nw-join	公共联想组合
+再联系吧	500	zai lian xi ba	all	nw-join	公共联想组合
+再聊吧	500	zai liao ba	all	nw-join	公共联想组合
+在楼下了	500	zai lou xia le	all	nw-join	公共联想组合
+在路上了	500	zai lu shang le	all	nw-join	公共联想组合
+在路上呢	500	zai lu shang ne	all	nw-join	公共联想组合
+在忙呢	500	zai mang ne	all	nw-join	公共联想组合
+在门口了	500	zai men kou le	all	nw-join	公共联想组合
+再说吧	500	zai shuo ba	all	nw-join	公共联想组合
+早安呀	500	zao an ya	all	nw-join	公共联想组合
+怎么了吗	500	zen me le ma	all	nw-join	公共联想组合
+怎么了呢	500	zen me le ne	all	nw-join	公共联想组合
+怎么了呀	500	zen me le ya	all	nw-join	公共联想组合
+找个时间	500	zhao ge shi jian	all	nw-join	公共联想组合
+照顾一下	500	zhao gu yi xia	all	nw-join	公共联想组合
+这张图	500	zhe zhang tu	all	nw-join	公共联想组合
+真的很好	500	zhen de hen hao	all	nw-join	公共联想组合
+正在路上	500	zheng zai lu shang	all	nw-join	公共联想组合
+中午见	500	zhong wu jian	all	nw-join	公共联想组合
+周三见	500	zhou san jian	all	nw-join	公共联想组合
+住哪儿	500	zhu na er	all	nw-join	公共联想组合
+转给他	500	zhuan gei ta	all	nw-join	公共联想组合
+转给我	500	zhuan gei wo	all	nw-join	公共联想组合
+准备好了	500	zhun bei hao le	all	nw-join	公共联想组合
+资料库	500	zi liao ku	all	nw-join	公共联想组合
+资料来源	500	zi liao lai yuan	all	nw-join	公共联想组合
+总结报告	500	zong jie bao gao	all	nw-join	公共联想组合
+总结经验	500	zong jie jing yan	all	nw-join	公共联想组合
+最近忙吗	500	zui jin mang ma	all	nw-join	公共联想组合
+做点什么	500	zuo dian shen me	all	nw-join	公共联想组合
+做饭吧	500	zuo fan ba	all	nw-join	公共联想组合
+做好准备	500	zuo hao zhun bei	all	nw-join	公共联想组合
+坐火车去	500	zuo huo che qu	all	nw-join	公共联想组合
+坐什么车	500	zuo shen me che	all	nw-join	公共联想组合
+做什么好	500	zuo shen me hao	all	nw-join	公共联想组合
+做什么呢	500	zuo shen me ne	all	nw-join	公共联想组合
+
+# 2026-11-13 第二批：Ninan 自拟日常短语，人工审音；3377 = 原3046 + 新330 + 同音守卫1。
+# 来源 ninan-original-20261113-round2；主词库配套候选（见本批交接）仅核词音，不取其频次。
+# 本批编辑权重统一300；不抬高原有词元，保留当前基础池覆盖。
+# 还没收到货=hai mei shou dao huo；退出重进=tui chu chong jin；关掉重开=guan diao chong kai。
+中午好	300	zhong wu hao	all	ninan-original-20261113-round2	寒暄应答
+在忙吗	300	zai mang ma	all	ninan-original-20261113-round2	寒暄应答
+忙完了吗	300	mang wan le ma	all	ninan-original-20261113-round2	寒暄应答
+可以呀	300	ke yi ya	all	ninan-original-20261113-round2	寒暄应答
+当然可以	300	dang ran ke yi	all	ninan-original-20261113-round2	寒暄应答
+请稍等	300	qing shao deng	all	ninan-original-20261113-round2	寒暄应答
+蚌埠住了	300	beng bu zhu le	all	ninan-original-20261113-round2	聊天情绪
+我裂开了	300	wo lie kai le	all	ninan-original-20261113-round2	聊天情绪
+有被笑到	300	you bei xiao dao	all	ninan-original-20261113-round2	聊天情绪
+绷不住了	300	beng bu zhu le	all	ninan-original-20261113-round2	聊天情绪
+无语了	300	wu yu le	all	ninan-original-20261113-round2	聊天情绪
+太难了	300	tai nan le	all	ninan-original-20261113-round2	聊天情绪
+想开点	300	xiang kai dian	all	ninan-original-20261113-round2	聊天情绪
+别生气	300	bie sheng qi	all	ninan-original-20261113-round2	聊天情绪
+开心点	300	kai xin dian	all	ninan-original-20261113-round2	聊天情绪
+你说呢	300	ni shuo ne	all	ninan-original-20261113-round2	聊天情绪
+我也是	300	wo ye shi	all	ninan-original-20261113-round2	聊天情绪
+我懂了	300	wo dong le	all	ninan-original-20261113-round2	聊天情绪
+确实如此	300	que shi ru ci	all	ninan-original-20261113-round2	聊天情绪
+问题不大	300	wen ti bu da	all	ninan-original-20261113-round2	聊天情绪
+这两天	300	zhe liang tian	all	ninan-original-20261113-round2	时间约见
+过几天	300	guo ji tian	all	ninan-original-20261113-round2	时间约见
+明后天	300	ming hou tian	all	ninan-original-20261113-round2	时间约见
+下个星期	300	xia ge xing qi	all	ninan-original-20261113-round2	时间约见
+周五晚上	300	zhou wu wan shang	all	ninan-original-20261113-round2	时间约见
+周六下午	300	zhou liu xia wu	all	ninan-original-20261113-round2	时间约见
+下班以后	300	xia ban yi hou	all	ninan-original-20261113-round2	时间约见
+多久能到	300	duo jiu neng dao	all	ninan-original-20261113-round2	时间约见
+什么时候到	300	shen me shi hou dao	all	ninan-original-20261113-round2	时间约见
+你定时间	300	ni ding shi jian	all	ninan-original-20261113-round2	时间约见
+到了再说	300	dao le zai shuo	all	ninan-original-20261113-round2	时间约见
+改天再约	300	gai tian zai yue	all	ninan-original-20261113-round2	时间约见
+下次一定	300	xia ci yi ding	all	ninan-original-20261113-round2	时间约见
+路口等你	300	lu kou deng ni	all	ninan-original-20261113-round2	出行餐饮
+停在楼下	300	ting zai lou xia	all	ninan-original-20261113-round2	出行餐饮
+我在门口	300	wo zai men kou	all	ninan-original-20261113-round2	出行餐饮
+赶高铁	300	gan gao tie	all	ninan-original-20261113-round2	出行餐饮
+到了楼下	300	dao le lou xia	all	ninan-original-20261113-round2	出行餐饮
+买杯奶茶	300	mai bei nai cha	all	ninan-original-20261113-round2	出行餐饮
+少放点糖	300	shao fang dian tang	all	ninan-original-20261113-round2	出行餐饮
+多加点辣	300	duo jia dian la	all	ninan-original-20261113-round2	出行餐饮
+不要香菜	300	bu yao xiang cai	all	ninan-original-20261113-round2	出行餐饮
+不要葱	300	bu yao cong	all	ninan-original-20261113-round2	出行餐饮
+少放点盐	300	shao fang dian yan	all	ninan-original-20261113-round2	出行餐饮
+已经点了	300	yi jing dian le	all	ninan-original-20261113-round2	出行餐饮
+吃不下了	300	chi bu xia le	all	ninan-original-20261113-round2	出行餐饮
+有点饿了	300	you dian e le	all	ninan-original-20261113-round2	出行餐饮
+随便吃点	300	sui bian chi dian	all	ninan-original-20261113-round2	出行餐饮
+你先吃吧	300	ni xian chi ba	all	ninan-original-20261113-round2	出行餐饮
+这顿我请	300	zhe dun wo qing	all	ninan-original-20261113-round2	出行餐饮
+自助取餐	300	zi zhu qu can	all	ninan-original-20261113-round2	出行餐饮
+补班	300	bu ban	all	ninan-original-20261113-round2	工作学习
+改完了	300	gai wan le	all	ninan-original-20261113-round2	工作学习
+再发一遍	300	zai fa yi bian	all	ninan-original-20261113-round2	工作学习
+麻烦看下	300	ma fan kan xia	all	ninan-original-20261113-round2	工作学习
+辛苦看下	300	xin ku kan xia	all	ninan-original-20261113-round2	工作学习
+稍后回复	300	shao hou hui fu	all	ninan-original-20261113-round2	工作学习
+正在整理	300	zheng zai zheng li	all	ninan-original-20261113-round2	工作学习
+今天之内	300	jin tian zhi nei	all	ninan-original-20261113-round2	工作学习
+跟进一下	300	gen jin yi xia	all	ninan-original-20261113-round2	工作学习
+备份文件	300	bei fen wen jian	all	ninan-original-20261113-round2	工作学习
+打包发你	300	da bao fa ni	all	ninan-original-20261113-round2	工作学习
+整理好了	300	zheng li hao le	all	ninan-original-20261113-round2	工作学习
+退一下款	300	tui yi xia kuan	all	ninan-original-20261113-round2	购物售后
+退款到账	300	tui kuan dao zhang	all	ninan-original-20261113-round2	购物售后
+换个颜色	300	huan ge yan se	all	ninan-original-20261113-round2	购物售后
+换个尺码	300	huan ge chi ma	all	ninan-original-20261113-round2	购物售后
+重新下单	300	chong xin xia dan	all	ninan-original-20261113-round2	购物售后
+怎么退货	300	zen me tui huo	all	ninan-original-20261113-round2	购物售后
+收到货了	300	shou dao huo le	all	ninan-original-20261113-round2	购物售后
+漏发了	300	lou fa le	all	ninan-original-20261113-round2	购物售后
+发错了	300	fa cuo le	all	ninan-original-20261113-round2	购物售后
+地址改了	300	di zhi gai le	all	ninan-original-20261113-round2	购物售后
+补发一下	300	bu fa yi xia	all	ninan-original-20261113-round2	购物售后
+包裹丢了	300	bao guo diu le	all	ninan-original-20261113-round2	购物售后
+预计明天	300	yu ji ming tian	all	ninan-original-20261113-round2	购物售后
+配送时间	300	pei song shi jian	all	ninan-original-20261113-round2	购物售后
+上门取件	300	shang men qu jian	all	ninan-original-20261113-round2	购物售后
+保修多久	300	bao xiu duo jiu	all	ninan-original-20261113-round2	购物售后
+订单截图	300	ding dan jie tu	all	ninan-original-20261113-round2	购物售后
+售后客服	300	shou hou ke fu	all	ninan-original-20261113-round2	购物售后
+到货通知	300	dao huo tong zhi	all	ninan-original-20261113-round2	购物售后
+开张发票	300	kai zhang fa piao	all	ninan-original-20261113-round2	购物售后
+抬头信息	300	tai tou xin xi	all	ninan-original-20261113-round2	购物售后
+发票邮箱	300	fa piao you xiang	all	ninan-original-20261113-round2	购物售后
+充上电了	300	chong shang dian le	all	ninan-original-20261113-round2	手机生活
+开热点	300	kai re dian	all	ninan-original-20261113-round2	手机生活
+连不上网	300	lian bu shang wang	all	ninan-original-20261113-round2	手机生活
+网络不好	300	wang luo bu hao	all	ninan-original-20261113-round2	手机生活
+信号不好	300	xin hao bu hao	all	ninan-original-20261113-round2	手机生活
+重新登录	300	chong xin deng lu	all	ninan-original-20261113-round2	手机生活
+忘记密码	300	wang ji mi ma	all	ninan-original-20261113-round2	手机生活
+验证码呢	300	yan zheng ma ne	all	ninan-original-20261113-round2	手机生活
+截个图	300	jie ge tu	all	ninan-original-20261113-round2	手机生活
+录个屏	300	lu ge ping	all	ninan-original-20261113-round2	手机生活
+清理缓存	300	qing li huan cun	all	ninan-original-20261113-round2	手机生活
+后台刷新	300	hou tai shua xin	all	ninan-original-20261113-round2	手机生活
+关闭通知	300	guan bi tong zhi	all	ninan-original-20261113-round2	手机生活
+打开定位	300	da kai ding wei	all	ninan-original-20261113-round2	手机生活
+分享位置	300	fen xiang wei zhi	all	ninan-original-20261113-round2	手机生活
+发你定位	300	fa ni ding wei	all	ninan-original-20261113-round2	手机生活
+权限设置	300	quan xian she zhi	all	ninan-original-20261113-round2	手机生活
+备份恢复	300	bei fen hui fu	all	ninan-original-20261113-round2	手机生活
+手机静音	300	shou ji jing yin	all	ninan-original-20261113-round2	手机生活
+剩余电量	300	sheng yu dian liang	all	ninan-original-20261113-round2	手机生活
+自动保存	300	zi dong bao cun	all	ninan-original-20261113-round2	手机生活
+语音转文字	300	yu yin zhuan wen zi	all	ninan-original-20261113-round2	手机生活
+照顾好自己	300	zhao gu hao zi ji	all	ninan-original-20261113-round2	家人健康
+多穿点衣服	300	duo chuan dian yi fu	all	ninan-original-20261113-round2	家人健康
+有点发烧	300	you dian fa shao	all	ninan-original-20261113-round2	家人健康
+去医院了	300	qu yi yuan le	all	ninan-original-20261113-round2	家人健康
+已经吃药	300	yi jing chi yao	all	ninan-original-20261113-round2	家人健康
+按时吃药	300	an shi chi yao	all	ninan-original-20261113-round2	家人健康
+预约挂号	300	yu yue gua hao	all	ninan-original-20261113-round2	家人健康
+检查结果	300	jian cha jie guo	all	ninan-original-20261113-round2	家人健康
+复查时间	300	fu cha shi jian	all	ninan-original-20261113-round2	家人健康
+接孩子	300	jie hai zi	all	ninan-original-20261113-round2	家人健康
+放学以后	300	fang xue yi hou	all	ninan-original-20261113-round2	家人健康
+今天接你	300	jin tian jie ni	all	ninan-original-20261113-round2	家人健康
+周末回去	300	zhou mo hui qu	all	ninan-original-20261113-round2	家人健康
+平安到家	300	ping an dao jia	all	ninan-original-20261113-round2	家人健康
+爸妈放心	300	ba ma fang xin	all	ninan-original-20261113-round2	家人健康
+想吃点啥	300	xiang chi dian sha	all	ninan-original-20261113-round2	家人健康
+先睡一会	300	xian shui yi hui	all	ninan-original-20261113-round2	家人健康
+忙完再说	300	mang wan zai shuo	all	ninan-original-20261113-round2	应答关心
+我不着急	300	wo bu zhao ji	all	ninan-original-20261113-round2	应答关心
+慢慢来吧	300	man man lai ba	all	ninan-original-20261113-round2	应答关心
+慢慢说吧	300	man man shuo ba	all	ninan-original-20261113-round2	应答关心
+你方便吗	300	ni fang bian ma	all	ninan-original-20261113-round2	应答关心
+现在方便吗	300	xian zai fang bian ma	all	ninan-original-20261113-round2	应答关心
+晚上再聊	300	wan shang zai liao	all	ninan-original-20261113-round2	应答关心
+那就这样	300	na jiu zhe yang	all	ninan-original-20261113-round2	应答关心
+那先这样	300	na xian zhe yang	all	ninan-original-20261113-round2	应答关心
+先去忙了	300	xian qu mang le	all	ninan-original-20261113-round2	应答关心
+收到再说	300	shou dao zai shuo	all	ninan-original-20261113-round2	应答关心
+收到告诉我	300	shou dao gao su wo	all	ninan-original-20261113-round2	应答关心
+看到了吗	300	kan dao le ma	all	ninan-original-20261113-round2	应答关心
+看到了吧	300	kan dao le ba	all	ninan-original-20261113-round2	应答关心
+看到回我	300	kan dao hui wo	all	ninan-original-20261113-round2	应答关心
+看到回复	300	kan dao hui fu	all	ninan-original-20261113-round2	应答关心
+有消息吗	300	you xiao xi ma	all	ninan-original-20261113-round2	应答关心
+有消息了	300	you xiao xi le	all	ninan-original-20261113-round2	应答关心
+有消息告诉我	300	you xiao xi gao su wo	all	ninan-original-20261113-round2	应答关心
+记得回我	300	ji de hui wo	all	ninan-original-20261113-round2	应答关心
+回我一下	300	hui wo yi xia	all	ninan-original-20261113-round2	应答关心
+我等你消息	300	wo deng ni xiao xi	all	ninan-original-20261113-round2	应答关心
+今晚有空吗	300	jin wan you kong ma	all	ninan-original-20261113-round2	约会时间
+明晚有空吗	300	ming wan you kong ma	all	ninan-original-20261113-round2	约会时间
+明天有空吗	300	ming tian you kong ma	all	ninan-original-20261113-round2	约会时间
+周末有空吗	300	zhou mo you kong ma	all	ninan-original-20261113-round2	约会时间
+几点方便	300	ji dian fang bian	all	ninan-original-20261113-round2	约会时间
+什么时候方便	300	shen me shi hou fang bian	all	ninan-original-20261113-round2	约会时间
+你什么时候到	300	ni shen me shi hou dao	all	ninan-original-20261113-round2	约会时间
+你到哪里了	300	ni dao na li le	all	ninan-original-20261113-round2	约会时间
+我已经到了	300	wo yi jing dao le	all	ninan-original-20261113-round2	约会时间
+我还在路上	300	wo hai zai lu shang	all	ninan-original-20261113-round2	约会时间
+差不多到了	300	cha bu duo dao le	all	ninan-original-20261113-round2	约会时间
+马上下来	300	ma shang xia lai	all	ninan-original-20261113-round2	约会时间
+你先进去	300	ni xian jin qu	all	ninan-original-20261113-round2	约会时间
+在门口等	300	zai men kou deng	all	ninan-original-20261113-round2	约会时间
+在楼下等	300	zai lou xia deng	all	ninan-original-20261113-round2	约会时间
+楼下等你	300	lou xia deng ni	all	ninan-original-20261113-round2	约会时间
+在这等你	300	zai zhe deng ni	all	ninan-original-20261113-round2	约会时间
+我来接你	300	wo lai jie ni	all	ninan-original-20261113-round2	约会时间
+我去接你	300	wo qu jie ni	all	ninan-original-20261113-round2	约会时间
+我去找你	300	wo qu zhao ni	all	ninan-original-20261113-round2	约会时间
+到家说一声	300	dao jia shuo yi sheng	all	ninan-original-20261113-round2	约会时间
+到了说一声	300	dao le shuo yi sheng	all	ninan-original-20261113-round2	约会时间
+出发说一声	300	chu fa shuo yi sheng	all	ninan-original-20261113-round2	约会时间
+到了打电话	300	dao le da dian hua	all	ninan-original-20261113-round2	约会时间
+我在楼下等你	300	wo zai lou xia deng ni	all	ninan-original-20261113-round2	约会时间
+我先点了	300	wo xian dian le	all	ninan-original-20261113-round2	餐饮点单
+你先点吧	300	ni xian dian ba	all	ninan-original-20261113-round2	餐饮点单
+帮我点一下	300	bang wo dian yi xia	all	ninan-original-20261113-round2	餐饮点单
+帮我带一份	300	bang wo dai yi fen	all	ninan-original-20261113-round2	餐饮点单
+帮我带杯水	300	bang wo dai bei shui	all	ninan-original-20261113-round2	餐饮点单
+顺便带一份	300	shun bian dai yi fen	all	ninan-original-20261113-round2	餐饮点单
+要不要加辣	300	yao bu yao jia la	all	ninan-original-20261113-round2	餐饮点单
+要不要加冰	300	yao bu yao jia bing	all	ninan-original-20261113-round2	餐饮点单
+少加点冰	300	shao jia dian bing	all	ninan-original-20261113-round2	餐饮点单
+少放点辣	300	shao fang dian la	all	ninan-original-20261113-round2	餐饮点单
+多放点辣	300	duo fang dian la	all	ninan-original-20261113-round2	餐饮点单
+多放点菜	300	duo fang dian cai	all	ninan-original-20261113-round2	餐饮点单
+不放香菜	300	bu fang xiang cai	all	ninan-original-20261113-round2	餐饮点单
+不放葱花	300	bu fang cong hua	all	ninan-original-20261113-round2	餐饮点单
+不放辣椒	300	bu fang la jiao	all	ninan-original-20261113-round2	餐饮点单
+不加辣椒	300	bu jia la jiao	all	ninan-original-20261113-round2	餐饮点单
+不要加辣	300	bu yao jia la	all	ninan-original-20261113-round2	餐饮点单
+不要加糖	300	bu yao jia tang	all	ninan-original-20261113-round2	餐饮点单
+不要加冰	300	bu yao jia bing	all	ninan-original-20261113-round2	餐饮点单
+多加点糖	300	duo jia dian tang	all	ninan-original-20261113-round2	餐饮点单
+少加点糖	300	shao jia dian tang	all	ninan-original-20261113-round2	餐饮点单
+先吃一点	300	xian chi yi dian	all	ninan-original-20261113-round2	餐饮点单
+先吃点东西	300	xian chi dian dong xi	all	ninan-original-20261113-round2	餐饮点单
+先去吃饭	300	xian qu chi fan	all	ninan-original-20261113-round2	餐饮点单
+刚吃完饭	300	gang chi wan fan	all	ninan-original-20261113-round2	餐饮点单
+我吃好了	300	wo chi hao le	all	ninan-original-20261113-round2	餐饮点单
+你吃了吗	300	ni chi le ma	all	ninan-original-20261113-round2	餐饮点单
+这家不错	300	zhe jia bu cuo	all	ninan-original-20261113-round2	餐饮点单
+下次再来	300	xia ci zai lai	all	ninan-original-20261113-round2	餐饮点单
+你发给我	300	ni fa gei wo	all	ninan-original-20261113-round2	工作协作
+麻烦发我	300	ma fan fa wo	all	ninan-original-20261113-round2	工作协作
+帮忙看一下	300	bang mang kan yi xia	all	ninan-original-20261113-round2	工作协作
+辛苦看一下	300	xin ku kan yi xia	all	ninan-original-20261113-round2	工作协作
+有空看一下	300	you kong kan yi xia	all	ninan-original-20261113-round2	工作协作
+看一下邮件	300	kan yi xia you jian	all	ninan-original-20261113-round2	工作协作
+我确认一下	300	wo que ren yi xia	all	ninan-original-20261113-round2	工作协作
+我再确认	300	wo zai que ren	all	ninan-original-20261113-round2	工作协作
+等我确认	300	deng wo que ren	all	ninan-original-20261113-round2	工作协作
+确认后回复	300	que ren hou hui fu	all	ninan-original-20261113-round2	工作协作
+处理好了吗	300	chu li hao le ma	all	ninan-original-20261113-round2	工作协作
+我处理好了	300	wo chu li hao le	all	ninan-original-20261113-round2	工作协作
+还在处理	300	hai zai chu li	all	ninan-original-20261113-round2	工作协作
+稍后发你	300	shao hou fa ni	all	ninan-original-20261113-round2	工作协作
+一会发你	300	yi hui fa ni	all	ninan-original-20261113-round2	工作协作
+已经发你了	300	yi jing fa ni le	all	ninan-original-20261113-round2	工作协作
+我再发一遍	300	wo zai fa yi bian	all	ninan-original-20261113-round2	工作协作
+再帮我看下	300	zai bang wo kan xia	all	ninan-original-20261113-round2	工作协作
+再确认一次	300	zai que ren yi ci	all	ninan-original-20261113-round2	工作协作
+文件发你了	300	wen jian fa ni le	all	ninan-original-20261113-round2	工作协作
+附件发你了	300	fu jian fa ni le	all	ninan-original-20261113-round2	工作协作
+你查收一下	300	ni cha shou yi xia	all	ninan-original-20261113-round2	工作协作
+记得查收	300	ji de cha shou	all	ninan-original-20261113-round2	工作协作
+查收一下	300	cha shou yi xia	all	ninan-original-20261113-round2	工作协作
+查一下邮箱	300	cha yi xia you xiang	all	ninan-original-20261113-round2	工作协作
+什么时候发货	300	shen me shi hou fa huo	all	ninan-original-20261113-round2	快递售后
+今天能发吗	300	jin tian neng fa ma	all	ninan-original-20261113-round2	快递售后
+明天能到吗	300	ming tian neng dao ma	all	ninan-original-20261113-round2	快递售后
+大概多久到	300	da gai duo jiu dao	all	ninan-original-20261113-round2	快递售后
+快递到哪了	300	kuai di dao na le	all	ninan-original-20261113-round2	快递售后
+帮忙查一下	300	bang mang cha yi xia	all	ninan-original-20261113-round2	快递售后
+查一下物流	300	cha yi xia wu liu	all	ninan-original-20261113-round2	快递售后
+查一下订单	300	cha yi xia ding dan	all	ninan-original-20261113-round2	快递售后
+物流更新了	300	wu liu geng xin le	all	ninan-original-20261113-round2	快递售后
+物流没更新	300	wu liu mei geng xin	all	ninan-original-20261113-round2	快递售后
+还没收到货	300	hai mei shou dao huo	all	ninan-original-20261113-round2	快递售后
+收到包裹了	300	shou dao bao guo le	all	ninan-original-20261113-round2	快递售后
+放到门口	300	fang dao men kou	all	ninan-original-20261113-round2	快递售后
+放在前台	300	fang zai qian tai	all	ninan-original-20261113-round2	快递售后
+放在驿站	300	fang zai yi zhan	all	ninan-original-20261113-round2	快递售后
+放进快递柜	300	fang jin kuai di gui	all	ninan-original-20261113-round2	快递售后
+帮我签收	300	bang wo qian shou	all	ninan-original-20261113-round2	快递售后
+已经签收	300	yi jing qian shou	all	ninan-original-20261113-round2	快递售后
+可以退吗	300	ke yi tui ma	all	ninan-original-20261113-round2	快递售后
+可以换吗	300	ke yi huan ma	all	ninan-original-20261113-round2	快递售后
+帮我退款	300	bang wo tui kuan	all	ninan-original-20261113-round2	快递售后
+退回去了	300	tui hui qu le	all	ninan-original-20261113-round2	快递售后
+退款收到了	300	tui kuan shou dao le	all	ninan-original-20261113-round2	快递售后
+钱退回来	300	qian tui hui lai	all	ninan-original-20261113-round2	快递售后
+换货申请	300	huan huo shen qing	all	ninan-original-20261113-round2	快递售后
+退货申请	300	tui huo shen qing	all	ninan-original-20261113-round2	快递售后
+寄回地址	300	ji hui di zhi	all	ninan-original-20261113-round2	快递售后
+寄出去了吗	300	ji chu qu le ma	all	ninan-original-20261113-round2	快递售后
+帮我截个图	300	bang wo jie ge tu	all	ninan-original-20261113-round2	手机使用
+给我发个图	300	gei wo fa ge tu	all	ninan-original-20261113-round2	手机使用
+发张截图	300	fa zhang jie tu	all	ninan-original-20261113-round2	手机使用
+发个截图	300	fa ge jie tu	all	ninan-original-20261113-round2	手机使用
+截图发我	300	jie tu fa wo	all	ninan-original-20261113-round2	手机使用
+截屏发我	300	jie ping fa wo	all	ninan-original-20261113-round2	手机使用
+录屏发我	300	lu ping fa wo	all	ninan-original-20261113-round2	手机使用
+拍一下发我	300	pai yi xia fa wo	all	ninan-original-20261113-round2	手机使用
+给我发定位	300	gei wo fa ding wei	all	ninan-original-20261113-round2	手机使用
+把定位发我	300	ba ding wei fa wo	all	ninan-original-20261113-round2	手机使用
+定位发你了	300	ding wei fa ni le	all	ninan-original-20261113-round2	手机使用
+密码是什么	300	mi ma shi shen me	all	ninan-original-20261113-round2	手机使用
+密码发我	300	mi ma fa wo	all	ninan-original-20261113-round2	手机使用
+验证码发我	300	yan zheng ma fa wo	all	ninan-original-20261113-round2	手机使用
+验证码过期	300	yan zheng ma guo qi	all	ninan-original-20261113-round2	手机使用
+验证码错了	300	yan zheng ma cuo le	all	ninan-original-20261113-round2	手机使用
+手机快没电	300	shou ji kuai mei dian	all	ninan-original-20261113-round2	手机使用
+我充个电	300	wo chong ge dian	all	ninan-original-20261113-round2	手机使用
+充会儿电	300	chong hui er dian	all	ninan-original-20261113-round2	手机使用
+换个网络	300	huan ge wang luo	all	ninan-original-20261113-round2	手机使用
+网络卡了	300	wang luo ka le	all	ninan-original-20261113-round2	手机使用
+网络断了	300	wang luo duan le	all	ninan-original-20261113-round2	手机使用
+先重启一下	300	xian chong qi yi xia	all	ninan-original-20261113-round2	手机使用
+重新打开	300	chong xin da kai	all	ninan-original-20261113-round2	手机使用
+退出重进	300	tui chu chong jin	all	ninan-original-20261113-round2	手机使用
+关掉重开	300	guan diao chong kai	all	ninan-original-20261113-round2	手机使用
+刷新试试	300	shua xin shi shi	all	ninan-original-20261113-round2	手机使用
+我去接孩子	300	wo qu jie hai zi	all	ninan-original-20261113-round2	家人健康
+外面下雨了	300	wai mian xia yu le	all	ninan-original-20261113-round2	家人健康
+下雨带伞	300	xia yu dai san	all	ninan-original-20261113-round2	家人健康
+天冷多穿点	300	tian leng duo chuan dian	all	ninan-original-20261113-round2	家人健康
+多喝点水	300	duo he dian shui	all	ninan-original-20261113-round2	家人健康
+喝点热水	300	he dian re shui	all	ninan-original-20261113-round2	家人健康
+休息一会	300	xiu xi yi hui	all	ninan-original-20261113-round2	家人健康
+先休息一下	300	xian xiu xi yi xia	all	ninan-original-20261113-round2	家人健康
+别睡太晚	300	bie shui tai wan	all	ninan-original-20261113-round2	家人健康
+我先睡了	300	wo xian shui le	all	ninan-original-20261113-round2	家人健康
+你早点睡	300	ni zao dian shui	all	ninan-original-20261113-round2	家人健康
+你先睡吧	300	ni xian shui ba	all	ninan-original-20261113-round2	家人健康
+明早叫我	300	ming zao jiao wo	all	ninan-original-20261113-round2	家人健康
+有点头疼	300	you dian tou teng	all	ninan-original-20261113-round2	家人健康
+有点咳嗽	300	you dian ke sou	all	ninan-original-20261113-round2	家人健康
+好像感冒了	300	hao xiang gan mao le	all	ninan-original-20261113-round2	家人健康
+今天好点吗	300	jin tian hao dian ma	all	ninan-original-20261113-round2	家人健康
+感觉怎么样	300	gan jue zen me yang	all	ninan-original-20261113-round2	家人健康
+检查完了吗	300	jian cha wan le ma	all	ninan-original-20261113-round2	家人健康
+看完医生了	300	kan wan yi sheng le	all	ninan-original-20261113-round2	家人健康
+记得吃药	300	ji de chi yao	all	ninan-original-20261113-round2	家人健康
+药吃了吗	300	yao chi le ma	all	ninan-original-20261113-round2	家人健康
+吃完药了	300	chi wan yao le	all	ninan-original-20261113-round2	家人健康
+我去看看	300	wo qu kan kan	all	ninan-original-20261113-round2	日常聊天
+我看看先	300	wo kan kan xian	all	ninan-original-20261113-round2	日常聊天
+我看一下	300	wo kan yi xia	all	ninan-original-20261113-round2	日常聊天
+我试一下	300	wo shi yi xia	all	ninan-original-20261113-round2	日常聊天
+你试试看	300	ni shi shi kan	all	ninan-original-20261113-round2	日常聊天
+你再试试	300	ni zai shi shi	all	ninan-original-20261113-round2	日常聊天
+帮我试试	300	bang wo shi shi	all	ninan-original-20261113-round2	日常聊天
+我想想看	300	wo xiang xiang kan	all	ninan-original-20261113-round2	日常聊天
+我考虑一下	300	wo kao lv yi xia	all	ninan-original-20261113-round2	日常聊天
+再考虑一下	300	zai kao lv yi xia	all	ninan-original-20261113-round2	日常聊天
+先这样吧	300	xian zhe yang ba	all	ninan-original-20261113-round2	日常聊天
+暂时这样	300	zan shi zhe yang	all	ninan-original-20261113-round2	日常聊天
+我也觉得	300	wo ye jue de	all	ninan-original-20261113-round2	日常聊天
+我觉得可以	300	wo jue de ke yi	all	ninan-original-20261113-round2	日常聊天
+真的不错	300	zhen de bu cuo	all	ninan-original-20261113-round2	日常聊天
+听起来不错	300	ting qi lai bu cuo	all	ninan-original-20261113-round2	日常聊天
+看起来不错	300	kan qi lai bu cuo	all	ninan-original-20261113-round2	日常聊天
+还挺好的	300	hai ting hao de	all	ninan-original-20261113-round2	日常聊天
+应该没事	300	ying gai mei shi	all	ninan-original-20261113-round2	日常聊天
+应该没问题	300	ying gai mei wen ti	all	ninan-original-20261113-round2	日常聊天
+你说得对	300	ni shuo de dui	all	ninan-original-20261113-round2	日常聊天
+有道理呀	300	you dao li ya	all	ninan-original-20261113-round2	日常聊天
+确实有道理	300	que shi you dao li	all	ninan-original-20261113-round2	日常聊天
+我没意见	300	wo mei yi jian	all	ninan-original-20261113-round2	日常聊天
+都可以的	300	dou ke yi de	all	ninan-original-20261113-round2	日常聊天
+都没问题	300	dou mei wen ti	all	ninan-original-20261113-round2	日常聊天
+那就好呀	300	na jiu hao ya	all	ninan-original-20261113-round2	日常聊天
+
+# 原生合法同音组句守卫：保留「又被笑到」，不以新词「有被笑到」屏蔽旧写法。
+又被笑到	300	you bei xiao dao	all	ninan-original-20261113-round2	同音守卫

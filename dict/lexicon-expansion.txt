@@ -8499,3 +8499,170 @@
 收藏清单	1	shou cang qing dan
 售后记录	1	shou hou ji lu
 不要放太多啦	2	bu yao fang tai duo la
+
+# 2026-11-13 九宫格日常短语第二批：Ninan 自拟日常表达，164 项权重1，另1项同音守卫权重2。
+蚌埠住了	1	beng bu zhu le
+我裂开了	1	wo lie kai le
+有被笑到	1	you bei xiao dao
+多久能到	1	duo jiu neng dao
+你定时间	1	ni ding shi jian
+到了再说	1	dao le zai shuo
+路口等你	1	lu kou deng ni
+停在楼下	1	ting zai lou xia
+到了楼下	1	dao le lou xia
+买杯奶茶	1	mai bei nai cha
+少放点糖	1	shao fang dian tang
+多加点辣	1	duo jia dian la
+已经点了	1	yi jing dian le
+辛苦看下	1	xin ku kan xia
+稍后回复	1	shao hou hui fu
+正在整理	1	zheng zai zheng li
+跟进一下	1	gen jin yi xia
+打包发你	1	da bao fa ni
+退款到账	1	tui kuan dao zhang
+换个尺码	1	huan ge chi ma
+怎么退货	1	zen me tui huo
+漏发了	1	lou fa le
+地址改了	1	di zhi gai le
+补发一下	1	bu fa yi xia
+包裹丢了	1	bao guo diu le
+开张发票	1	kai zhang fa piao
+抬头信息	1	tai tou xin xi
+发票邮箱	1	fa piao you xiang
+充上电了	1	chong shang dian le
+验证码呢	1	yan zheng ma ne
+录个屏	1	lu ge ping
+分享位置	1	fen xiang wei zhi
+发你定位	1	fa ni ding wei
+有点发烧	1	you dian fa shao
+去医院了	1	qu yi yuan le
+已经吃药	1	yi jing chi yao
+今天接你	1	jin tian jie ni
+周末回去	1	zhou mo hui qu
+先睡一会	1	xian shui yi hui
+忙完再说	1	mang wan zai shuo
+慢慢说吧	1	man man shuo ba
+那先这样	1	na xian zhe yang
+收到再说	1	shou dao zai shuo
+收到告诉我	1	shou dao gao su wo
+看到回我	1	kan dao hui wo
+看到回复	1	kan dao hui fu
+记得回我	1	ji de hui wo
+回我一下	1	hui wo yi xia
+我等你消息	1	wo deng ni xiao xi
+今晚有空吗	1	jin wan you kong ma
+明晚有空吗	1	ming wan you kong ma
+周末有空吗	1	zhou mo you kong ma
+几点方便	1	ji dian fang bian
+什么时候方便	1	shen me shi hou fang bian
+差不多到了	1	cha bu duo dao le
+在门口等	1	zai men kou deng
+在楼下等	1	zai lou xia deng
+在这等你	1	zai zhe deng ni
+我来接你	1	wo lai jie ni
+出发说一声	1	chu fa shuo yi sheng
+到了打电话	1	dao le da dian hua
+我先点了	1	wo xian dian le
+你先点吧	1	ni xian dian ba
+帮我带一份	1	bang wo dai yi fen
+帮我带杯水	1	bang wo dai bei shui
+顺便带一份	1	shun bian dai yi fen
+要不要加辣	1	yao bu yao jia la
+要不要加冰	1	yao bu yao jia bing
+少加点冰	1	shao jia dian bing
+少放点辣	1	shao fang dian la
+多放点辣	1	duo fang dian la
+多放点菜	1	duo fang dian cai
+不放香菜	1	bu fang xiang cai
+不放葱花	1	bu fang cong hua
+不加辣椒	1	bu jia la jiao
+不要加辣	1	bu yao jia la
+不要加糖	1	bu yao jia tang
+不要加冰	1	bu yao jia bing
+多加点糖	1	duo jia dian tang
+少加点糖	1	shao jia dian tang
+先吃一点	1	xian chi yi dian
+这家不错	1	zhe jia bu cuo
+辛苦看一下	1	xin ku kan yi xia
+有空看一下	1	you kong kan yi xia
+看一下邮件	1	kan yi xia you jian
+等我确认	1	deng wo que ren
+确认后回复	1	que ren hou hui fu
+处理好了吗	1	chu li hao le ma
+我处理好了	1	wo chu li hao le
+还在处理	1	hai zai chu li
+稍后发你	1	shao hou fa ni
+一会发你	1	yi hui fa ni
+已经发你了	1	yi jing fa ni le
+再帮我看下	1	zai bang wo kan xia
+再确认一次	1	zai que ren yi ci
+文件发你了	1	wen jian fa ni le
+附件发你了	1	fu jian fa ni le
+你查收一下	1	ni cha shou yi xia
+记得查收	1	ji de cha shou
+查收一下	1	cha shou yi xia
+查一下邮箱	1	cha yi xia you xiang
+今天能发吗	1	jin tian neng fa ma
+明天能到吗	1	ming tian neng dao ma
+大概多久到	1	da gai duo jiu dao
+快递到哪了	1	kuai di dao na le
+帮忙查一下	1	bang mang cha yi xia
+查一下物流	1	cha yi xia wu liu
+查一下订单	1	cha yi xia ding dan
+物流没更新	1	wu liu mei geng xin
+还没收到货	1	hai mei shou dao huo
+收到包裹了	1	shou dao bao guo le
+放到门口	1	fang dao men kou
+放在前台	1	fang zai qian tai
+放在驿站	1	fang zai yi zhan
+放进快递柜	1	fang jin kuai di gui
+帮我签收	1	bang wo qian shou
+可以退吗	1	ke yi tui ma
+可以换吗	1	ke yi huan ma
+帮我退款	1	bang wo tui kuan
+退回去了	1	tui hui qu le
+退款收到了	1	tui kuan shou dao le
+钱退回来	1	qian tui hui lai
+换货申请	1	huan huo shen qing
+寄回地址	1	ji hui di zhi
+寄出去了吗	1	ji chu qu le ma
+帮我截个图	1	bang wo jie ge tu
+给我发个图	1	gei wo fa ge tu
+发张截图	1	fa zhang jie tu
+截屏发我	1	jie ping fa wo
+录屏发我	1	lu ping fa wo
+拍一下发我	1	pai yi xia fa wo
+给我发定位	1	gei wo fa ding wei
+把定位发我	1	ba ding wei fa wo
+定位发你了	1	ding wei fa ni le
+密码发我	1	mi ma fa wo
+验证码发我	1	yan zheng ma fa wo
+验证码过期	1	yan zheng ma guo qi
+验证码错了	1	yan zheng ma cuo le
+我充个电	1	wo chong ge dian
+充会儿电	1	chong hui er dian
+换个网络	1	huan ge wang luo
+网络卡了	1	wang luo ka le
+网络断了	1	wang luo duan le
+先重启一下	1	xian chong qi yi xia
+退出重进	1	tui chu chong jin
+关掉重开	1	guan diao chong kai
+刷新试试	1	shua xin shi shi
+我去接孩子	1	wo qu jie hai zi
+下雨带伞	1	xia yu dai san
+天冷多穿点	1	tian leng duo chuan dian
+先休息一下	1	xian xiu xi yi xia
+别睡太晚	1	bie shui tai wan
+明早叫我	1	ming zao jiao wo
+有点咳嗽	1	you dian ke sou
+好像感冒了	1	hao xiang gan mao le
+今天好点吗	1	jin tian hao dian ma
+检查完了吗	1	jian cha wan le ma
+看完医生了	1	kan wan yi sheng le
+吃完药了	1	chi wan yao le
+我看看先	1	wo kan kan xian
+帮我试试	1	bang wo shi shi
+我想想看	1	wo xiang xiang kan
+暂时这样	1	zan shi zhe yang
+有道理呀	1	you dao li ya
+又被笑到	2	you bei xiao dao
