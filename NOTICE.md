@@ -101,3 +101,7 @@ The Chinese update adds 164 Ninan-authored everyday expressions and one low-weig
 ## 2026-11-13 conversational homocodes and T9 initials
 
 Chinese 8ce298b0 adjusts 25 existing annotated readings and three auto entries using original editorial priorities, with corresponding supplemental readings aligned. Chinese remains independently distributed GPL-3.0 data. The separate T9 snapshot retains Apache-compatible base, original curation, Tatoeba and OpenCC notices. Its seven new review rows are already-known ordinary words; weights are independent Ninan editorial values. No source frequencies, new corpus, personal input, learning, application runtime or vendor binary is included. Exact data-only tooling and source-specific provenance: updates/2026-11-13-t9-homocode.
+
+## 2026-11-14 single-syllable calibration
+
+Chinese 59b1df3f is built from the same pinned rime-ice da1fbe60 and unchanged Ninan inputs; the builder adds a lower-only weight calibration derived from those inputs and the bundled base table already distributed here. No new source, corpus, personal input or vendor data. Chinese remains independently distributed GPL-3.0 data; the separate T9 snapshot keeps its existing resource notices. Details: updates/2026-11-14-single-syllable.

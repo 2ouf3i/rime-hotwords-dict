@@ -191,3 +191,7 @@ Chinese 08ec8f18 adds 165 forms (including one homophone guard) and 47 existing-
 ## 2026-11-13 conversational ranking update
 
 Chinese 8ce298b0 retunes existing conversational readings; paired T9 retains full prior coverage and makes room for initials recall. Exact frozen inputs and reproduction are under inputs/2026-11-13-t9-homocode, scripts/reproduce-8ce298b0.sh and updates/2026-11-13-t9-homocode. No new corpus or personal data.
+
+## 2026-11-14 single-syllable calibration
+
+Chinese 59b1df3f keeps every form and reading and lowers 366 entries so that words spelled as one syllable and readings missing from the bundled base table stop outranking common characters. Frozen inputs, the expected per-build calibration report and reproduction: inputs/2026-11-14-single-syllable, scripts/reproduce-59b1df3f.sh; paired T9 (body unchanged): updates/2026-11-14-single-syllable. No new corpus or personal data.
