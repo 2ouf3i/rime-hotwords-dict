@@ -19,7 +19,7 @@
 冰袖	50	bing xiu
 补班	1000	bu ban
 补单	50	bu dan
-补签	50	bu qian
+补签	2500	bu qian
 彩打	50	cai da
 财管	50	cai guan
 踩盘	50	cai pan
@@ -96,7 +96,7 @@
 寄付	50	ji fu
 积食	50	ji shi
 加单	50	jia dan
-加购	1000	jia gou
+加购	4800	jia gou
 甲片	50	jia pian
 家委	50	jia wei
 煎包	50	jian bao
@@ -207,7 +207,7 @@
 团餐	50	tuan can
 团单	50	tuan dan
 团险	50	tuan xian
-退单	50	tui dan
+退单	4200	tui dan
 退件	50	tui jian
 退宿	50	tui su
 托班	50	tuo ban
@@ -368,7 +368,7 @@
 等我吧	50	deng wo ba
 等我妈	50	deng wo ma
 等我哦	2000	deng wo o
-等我下	50	deng wo xia
+等我下	600	deng wo xia
 等下次	5	deng xia ci
 等着啊	50	deng zhe a
 点不到	50	dian bu dao
@@ -6998,7 +6998,7 @@
 取件号	1000	qu jian hao
 取件员	1000	qu jian yuan
 取件费	1000	qu jian fei
-取餐号	1	qu can hao
+取餐号	1800	qu can hao
 取餐码	1000	qu can ma
 签收条	1000	qian shou tiao
 签收点	1000	qian shou dian
@@ -8570,7 +8570,7 @@
 要不要加辣	1	yao bu yao jia la
 要不要加冰	1	yao bu yao jia bing
 少加点冰	1	shao jia dian bing
-少放点辣	1	shao fang dian la
+少放点辣	1600	shao fang dian la
 多放点辣	1	duo fang dian la
 多放点菜	1	duo fang dian cai
 不放香菜	1	bu fang xiang cai
@@ -8666,3 +8666,172 @@
 暂时这样	1	zan shi zhe yang
 有道理呀	1	you dao li ya
 又被笑到	2	you bei xiao dao
+
+# 2026-11-27 自拟日常表达；出行、取餐取件、家庭沟通和工作协作。编辑权重。
+从哪个口出	900	cong na ge kou chu
+出哪个口	900	chu na ge kou
+哪个出口见	900	na ge chu kou jian
+我在出站口	900	wo zai chu zhan kou
+我在进站口	900	wo zai jin zhan kou
+你到哪站了	900	ni dao na zhan le
+我还有两站	900	wo hai you liang zhan
+还有一站就到	900	hai you yi zhan jiu dao
+我在等红灯	900	wo zai deng hong deng
+我在等电梯	900	wo zai deng dian ti
+我在过马路	900	wo zai guo ma lu
+我刚下地铁	900	wo gang xia di tie
+我刚下高铁	900	wo gang xia gao tie
+到站喊我	900	dao zhan han wo
+到了喊我	900	dao le han wo
+快到了喊我	900	kuai dao le han wo
+你先往前走	900	ni xian wang qian zou
+我去找你们	900	wo qu zhao ni men
+发个定位过来	900	fa ge ding wei guo lai
+发个位置过来	900	fa ge wei zhi guo lai
+我把位置发你	900	wo ba wei zhi fa ni
+咱们门口见	900	zan men men kou jian
+在楼下等你	900	zai lou xia deng ni
+方便来接我吗	900	fang bian lai jie wo ma
+我先去停车	900	wo xian qu ting che
+车停哪儿了	900	che ting na er le
+去几号站台	900	qu ji hao zhan tai
+从几号口出	900	cong ji hao kou chu
+前面不好停车	900	qian mian bu hao ting che
+我在路口等你	900	wo zai lu kou deng ni
+晚到十分钟	900	wan dao shi fen zhong
+可能晚点到	900	ke neng wan dian dao
+我出门来接你	900	wo chu men lai jie ni
+刚打到车	900	gang da dao che
+放门口就好	900	fang men kou jiu hao
+放前台就行	900	fang qian tai jiu xing
+到了不用打电话	900	dao le bu yong da dian hua
+不用按门铃	900	bu yong an men ling
+麻烦敲下门	900	ma fan qiao xia men
+帮我带上来	900	bang wo dai shang lai
+取件码发我	900	qu jian ma fa wo
+取餐码是多少	900	qu can ma shi duo shao
+自提码	350	zi ti ma
+自提柜在哪	900	zi ti gui zai na
+送到楼下	900	song dao lou xia
+就放门口吧	900	jiu fang men kou ba
+不用放餐具	900	bu yong fang can ju
+不要放餐具	900	bu yao fang can ju
+餐具不用放	900	can ju bu yong fang
+麻烦分开装	900	ma fan fen kai zhuang
+给我分开装	900	gei wo fen kai zhuang
+酱汁分开放	900	jiang zhi fen kai fang
+帮我热一下	900	bang wo re yi xia
+少放点冰	900	shao fang dian bing
+加份米饭	900	jia fen mi fan
+加个煎蛋	900	jia ge jian dan
+米饭另外装	900	mi fan ling wai zhuang
+拆开看看	900	chai kai kan kan
+漏发了一件	900	lou fa le yi jian
+少发了一件	900	shao fa le yi jian
+收件地址变了	900	shou jian di zhi bian le
+换个收货地址	900	huan ge shou huo di zhi
+补个差价	900	bu ge cha jia
+运费怎么算	900	yun fei zen me suan
+已经寄回去了	900	yi jing ji hui qu le
+把单号发我	900	ba dan hao fa wo
+退货单号发你	900	tui huo dan hao fa ni
+退款到账了吗	900	tui kuan dao zhang le ma
+记得带钥匙	900	ji de dai yao shi
+别忘带钥匙	900	bie wang dai yao shi
+我忘带钥匙了	900	wo wang dai yao shi le
+我忘拿钥匙了	900	wo wang na yao shi le
+我下楼拿	900	wo xia lou na
+我下楼接你	900	wo xia lou jie ni
+顺路捎上我	900	shun lu shao shang wo
+顺路送过去	900	shun lu song guo qu
+快递放哪了	900	kuai di fang na le
+帮我收一下	900	bang wo shou yi xia
+帮我签收一下	900	bang wo qian shou yi xia
+帮我开下门	900	bang wo kai xia men
+帮我留个门	900	bang wo liu ge men
+晚饭吃啥	900	wan fan chi sha
+晚上想吃啥	900	wan shang xiang chi sha
+要不要带点啥	900	yao bu yao dai dian sha
+给你留了饭	900	gei ni liu le fan
+我先去做饭	900	wo xian qu zuo fan
+热一下再吃	900	re yi xia zai chi
+你先吃不用等我	900	ni xian chi bu yong deng wo
+家里还有菜	900	jia li hai you cai
+晚点回家吃	900	wan dian hui jia chi
+饭还热着呢	900	fan hai re zhe ne
+不用等我吃饭	900	bu yong deng wo chi fan
+到家再聊	900	dao jia zai liao
+等我到家说	900	deng wo dao jia shuo
+我在哄孩子	900	wo zai hong hai zi
+孩子睡着了	900	hai zi shui zhao le
+我去接娃了	900	wo qu jie wa le
+到家给你回	900	dao jia gei ni hui
+今天不开门	900	jin tian bu kai men
+我去充个电	900	wo qu chong ge dian
+刚才没信号	900	gang cai mei xin hao
+这边没信号	900	zhe bian mei xin hao
+文字发我吧	900	wen zi fa wo ba
+留个电话给我	900	liu ge dian hua gei wo
+我这边听不到	900	wo zhe bian ting bu dao
+刚才没听清	900	gang cai mei ting qing
+声音有点小	900	sheng yin you dian xiao
+麦克风没开	900	mai ke feng mei kai
+你静音了	900	ni jing yin le
+你没开麦	900	ni mei kai mai
+忘开麦了	900	wang kai mai le
+可以看到屏幕吗	900	ke yi kan dao ping mu ma
+能看到我屏幕吗	900	neng kan dao wo ping mu ma
+我重新进一下	900	wo chong xin jin yi xia
+我再进一次	900	wo zai jin yi ci
+你先说完	900	ni xian shuo wan
+刚才断网了	900	gang cai duan wang le
+会议号发我	900	hui yi hao fa wo
+我拉你进群	900	wo la ni jin qun
+我把你拉进群	900	wo ba ni la jin qun
+群里说一下	900	qun li shuo yi xia
+我在群里发了	900	wo zai qun li fa le
+文件收到了	900	wen jian shou dao le
+附件收到了	900	fu jian shou dao le
+麻烦发个原图	900	ma fan fa ge yuan tu
+发下原图	900	fa xia yuan tu
+发我原图	900	fa wo yuan tu
+可以发原图吗	900	ke yi fa yuan tu ma
+图片有点糊	900	tu pian you dian hu
+能再拍一张吗	900	neng zai pai yi zhang ma
+这个链接过期了	900	zhe ge lian jie guo qi le
+权限没开	900	quan xian mei kai
+开一下权限	900	kai yi xia quan xian
+需要访问权限	900	xu yao fang wen quan xian
+我申请权限了	900	wo shen qing quan xian le
+麻烦开下权限	900	ma fan kai xia quan xian
+改完了叫我	900	gai wan le jiao wo
+改好了发你	900	gai hao le fa ni
+改完发我	900	gai wan fa wo
+我看过再回你	900	wo kan guo zai hui ni
+明早发给你	900	ming zao fa gei ni
+最晚明天给你	900	zui wan ming tian gei ni
+晚点同步一下	900	wan dian tong bu yi xia
+这周哪天方便	900	zhe zhou na tian fang bian
+你哪天方便	900	ni na tian fang bian
+换个时间约	900	huan ge shi jian yue
+改天约个时间	900	gai tian yue ge shi jian
+今天赶不及	900	jin tian gan bu ji
+来不及过去	900	lai bu ji guo qu
+时间对得上吗	900	shi jian dui de shang ma
+我时间都可以	900	wo shi jian dou ke yi
+把时间发我	900	ba shi jian fa wo
+行程有变	900	xing cheng you bian
+催发货	350	cui fa huo
+我都行	350	wo dou xing
+
+# 2026-11-27 已有常用词候选调序，限定所列读音。
+寄件	14500	ji jian
+取件	18000	qu jian
+叫车	8500	jiao che
+到店	6500	dao dian
+改寄	1600	gai ji
+到楼下了	1000	dao lou xia le
+饭在锅里	650	fan zai guo li
+收到啦	800	shou dao la
+辛苦啦	800	xin ku la
+我来吧	800	wo lai ba

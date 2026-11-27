@@ -1,0 +1,369 @@
+# 单音节校准报告 —— build-pinyin-dict.mjs 的 calibrateSingleSyllable 每次构建现算,只降不升;不下发。
+# char = 随包底库没有的「单字 + 读音」换算到底库刻度;split = 两个字拼起来正好是一个音节的词,放回上游刻度下的名次。
+# 词	拼音	类别	原权重	新权重
+叆	ai	char	376	16
+卬	ang	char	265	13
+隩	ao	char	6	3
+薁	ao	char	5	3
+鲃	ba	char	40	5
+枹	bao	char	113	9
+棓	bei	char	6	3
+镚	beng	char	111	9
+赑	bi	char	144	10
+咇	bi	char	26	5
+鲾	bi	char	16	4
+诐	bi	char	14	4
+昪	bian	char	96	8
+趵	bo	char	341	15
+镈	bo	char	54	6
+砵	bo	char	18	4
+鲌	bo	char	14	4
+哱	bo	char	11	4
+埗	bu	char	6	3
+鸧	cang	char	18	4
+屮	cao	char	2222	36
+芔	cao	char	1111	25
+嵖	cha	char	15	4
+茝	chai	char	389	16
+镡	chan	char	141	10
+韂	chan	char	77	7
+刬	chan	char	35	5
+浐	chan	char	34	5
+镵	chan	char	10	3
+啴	chan	char	6	3
+赪	cheng	char	30	5
+憕	cheng	char	5	3
+噇	chuang	char	21	4
+倕	chui	char	17	4
+呲	ci	char	6309	78
+玼	ci	char	16	4
+缞	cui	char	12	4
+跶	da	char	550	19
+垯	da	char	33	5
+溚	da	char	32	5
+叇	dai	char	327	15
+骀	dai	char	79	7
+轪	dai	char	39	5
+丼	dan	char	9000	106
+疍	dan	char	26	5
+垱	dang	char	108	8
+筜	dang	char	8	3
+鱽	dao	char	23	4
+嘚	de	char	357	15
+窎	diao	char	12	4
+汈	diao	char	5	3
+绖	die	char	16	4
+阇	du	char	412	16
+厾	du	char	43	5
+耑	duan	char	22	4
+蹾	dun	char	224	12
+饳	duo	char	37	5
+亸	duo	char	31	5
+阏	e	char	3812	54
+姶	e	char	10	3
+蚄	fang	char	7	3
+沨	feng	char	1244	27
+赗	feng	char	7	3
+宓	fu	char	4473	60
+韨	fu	char	6	3
+玞	fu	char	5	3
+虷	gan	char	4	3
+冮	gang	char	6	3
+饹	ge	char	55	6
+粳	geng	char	344	15
+馉	gu	char	36	5
+腘	guo	char	50	6
+馃	guo	char	26	5
+龁	he	char	380	16
+饸	he	char	49	6
+鹖	he	char	33	5
+鸻	heng	char	9	3
+纮	hong	char	468	17
+唝	hong	char	15	4
+鳠	hu	char	4	3
+婳	hua	char	1640	30
+镮	huan	char	25	5
+鹮	huan	char	10	3
+锽	huang	char	10	3
+袆	hui	char	417	16
+翚	hui	char	145	10
+翙	hui	char	106	8
+浍	hui	char	92	8
+鹡	ji	char	266	13
+垍	ji	char	128	9
+耤	ji	char	4	3
+槚	jia	char	1176	26
+暕	jian	char	17	4
+鳒	jian	char	6	3
+篯	jian	char	4	3
+鳉	jiang	char	5	3
+峧	jiao	char	66	7
+燋	jiao	char	28	5
+藠	jiao	char	16	4
+璬	jiao	char	7	3
+絜	jie	char	101	8
+琎	jin	char	46	6
+猄	jing	char	36	5
+颎	jiong	char	877	23
+車	ju	char	651	20
+砠	ju	char	4	3
+葰	jun	char	41	5
+闿	kai	char	729	21
+嵁	kan	char	11	4
+㸆	kao	char	28	5
+硁	keng	char	25	5
+㧟	kuai	char	798	22
+鲙	kuai	char	16	4
+骙	kui	char	29	5
+堃	kun	char	123	9
+壸	kun	char	74	7
+鹍	kun	char	37	5
+裈	kun	char	27	5
+镴	la	char	22	4
+蝲	la	char	10	3
+俫	lai	char	64	6
+梾	lai	char	9	3
+襕	lan	char	71	7
+饹	le	char	55	6
+悝	li	char	99	8
+浰	li	char	37	5
+梿	lian	char	95	8
+莨	liang	char	98	8
+辌	liang	char	92	8
+髎	liao	char	64	6
+蹽	liao	char	43	5
+漻	liao	char	11	4
+䴕	lie	char	86	8
+镠	liu	char	360	15
+飗	liu	char	14	4
+瑬	liu	char	7	3
+眬	long	char	850	23
+昽	long	char	118	9
+漋	long	char	5	3
+箓	lu	char	962	24
+啰	luo	char	11175	128
+祃	ma	char	4	3
+牤	mang	char	118	9
+尨	mang	char	97	8
+獴	meng	char	73	7
+鹲	meng	char	9	3
+勔	mian	char	58	6
+糵	nie	char	92	8
+秾	nong	char	210	12
+傉	nu	char	95	8
+鳑	pang	char	84	7
+鲏	pi	char	84	7
+䴙	pi	char	25	5
+炁	qi	char	18920	202
+锜	qi	char	200	12
+磜	qi	char	5	3
+杄	qian	char	20	4
+鹐	qian	char	10	3
+玱	qiang	char	58	6
+硚	qiao	char	17	4
+骎	qin	char	47	6
+嵚	qin	char	8	3
+庼	qing	char	15	4
+鹙	qiu	char	30	5
+鞧	qiu	char	11	4
+鳈	quan	char	8	3
+碏	que	char	12	4
+纴	ren	char	4	3
+驲	ri	char	5	3
+潵	sa	char	60	6
+嶦	shan	char	4	3
+睄	shao	char	16	4
+阇	she	char	412	16
+谌	shen	char	1820	32
+瘆	shen	char	478	18
+棽	shen	char	300	14
+媞	shi	char	1080	25
+䴓	shi	char	5	3
+鹴	shuang	char	54	6
+骦	shuang	char	45	6
+飔	si	char	14	4
+骕	su	char	55	6
+鹔	su	char	22	4
+阘	ta	char	48	6
+镡	tan	char	141	10
+璮	tan	char	35	5
+嘡	tang	char	289	14
+镋	tang	char	23	4
+埫	tang	char	5	3
+绹	tao	char	181	11
+䲢	teng	char	14	4
+媞	ti	char	1080	25
+趯	ti	char	35	5
+遆	ti	char	29	5
+䴘	ti	char	25	5
+鳀	ti	char	13	4
+擿	ti	char	11	4
+觍	tian	char	81	7
+瑱	tian	char	65	6
+盷	tian	char	29	5
+颋	ting	char	9	3
+穜	tong	char	6	3
+鲀	tun	char	112	9
+忳	tun	char	8	3
+坬	wa	char	8	3
+塆	wan	char	12	4
+尢	wang	char	171	11
+亹	wei	char	30	5
+鳂	wei	char	8	3
+鳚	wei	char	7	3
+辒	wen	char	62	6
+榅	wen	char	9	3
+蕰	wen	char	9	3
+鹟	weng	char	32	5
+鹀	wu	char	5	3
+屃	xi	char	588	19
+釐	xi	char	223	12
+绤	xi	char	11	4
+叚	xia	char	7	3
+狝	xian	char	234	13
+挦	xian	char	17	4
+崄	xian	char	15	4
+缐	xian	char	14	4
+鸮	xiao	char	523	18
+骍	xing	char	115	9
+钘	xing	char	59	6
+铏	xing	char	14	4
+讻	xiong	char	8	3
+谞	xu	char	64	6
+媭	xu	char	39	5
+茓	xue	char	16	4
+黡	yan	char	61	6
+掞	yan	char	22	4
+飏	yang	char	742	21
+玚	yang	char	28	5
+咉	yang	char	19	4
+钖	yang	char	9	3
+馌	ye	char	6	3
+祎	yi	char	4800	63
+鹢	yi	char	22	4
+扅	yi	char	6	3
+勚	yi	char	5	3
+訚	yin	char	58	6
+骃	yin	char	11	4
+慭	yin	char	6	3
+䲟	yin	char	5	3
+珢	yin	char	5	3
+锳	ying	char	101	8
+溁	ying	char	11	4
+颙	yong	char	632	20
+鲬	yong	char	6	3
+㶲	yong	char	5	3
+栐	yong	char	4	3
+哟	you	char	59051	567
+玙	yu	char	98	8
+髃	yu	char	16	4
+滪	yu	char	14	4
+涴	yuan	char	23	4
+彟	yue	char	244	13
+缊	yun	char	37	5
+煴	yun	char	18	4
+筼	yun	char	7	3
+涢	yun	char	5	3
+臜	za	char	186	11
+酂	zan	char	12	4
+笮	ze	char	405	16
+鲊	zha	char	158	10
+馇	zha	char	99	8
+拃	zha	char	49	6
+飐	zhan	char	45	6
+鹯	zhan	char	41	5
+鳣	zhan	char	5	3
+啫	zhe	char	145	10
+詟	zhe	char	72	7
+铚	zhi	char	18	4
+锧	zhi	char	12	4
+辀	zhou	char	23	4
+赒	zhou	char	9	3
+纻	zhu	char	66	7
+僎	zhuan	char	23	4
+衠	zhun	char	10	3
+棁	zhuo	char	41	5
+䓬	zhuo	char	5	3
+叕	zhuo	char	4	3
+嗞	zi	char	975	24
+镃	zi	char	22	4
+虸	zi	char	7	3
+岞	zuo	char	6	3
+彼岸	bi an	split	53775	1793
+币安	bi an	split	8888	297
+狴犴	bi an	split	55	13
+除按	chu an	split	21570	719
+堤岸	di an	split	8725	291
+迪奥	di ao	split	2110	73
+低额	di e	split	1111	45
+帝俄	di e	split	770	45
+毒案	du an	split	1295	104
+骨癌	gu ai	split	2475	872
+固安	gu an	split	4810	269
+谷氨	gu an	split	2160	146
+古庵	gu an	split	17	13
+互爱	hu ai	split	5100	170
+湖岸	hu an	split	9265	309
+护岸	hu an	split	5920	198
+积案	ji an	split	9420	314
+几案	ji an	split	5999	200
+急案	ji an	split	1150	39
+即按	ji an	split	1111	38
+挤按	ji an	split	834	36
+吉安	ji an	split	17640	588
+集安	ji an	split	2760	92
+激昂	ji ang	split	23740	792
+吉奥	ji ao	split	170	16
+饥饿	ji e	split	63670	2123
+极恶	ji e	split	1525	51
+极饿	ji e	split	36	19
+居安	ju an	split	2275	76
+巨暗	ju an	split	222	26
+巨案	ju an	split	111	23
+巨额	ju e	split	80420	2681
+巨鳄	ju e	split	77777	2593
+苦啊	ku a	split	8545	285
+哭啊	ku a	split	7455	249
+酷爱	ku ai	split	35545	16562
+苦艾	ku ai	split	8	7
+立案	li an	split	94235	3142
+离岸	li an	split	22565	753
+李安	li an	split	2257	76
+里昂	li ang	split	111	34
+潞安	lu an	split	3610	121
+鲁安	lu an	split	32	19
+六安	lu an	split	12575	823
+谜案	mi an	split	910	31
+尼庵	ni an	split	890	134
+尼奥	ni ao	split	18050	1790
+皮袄	pi ao	split	4145	184
+起啊	qi a	split	1111	280
+奇案	qi an	split	6350	212
+起岸	qi an	split	200	24
+奇奥	qi ao	split	3880	130
+淇澳	qi ao	split	109	11
+企鹅	qi e	split	40850	1362
+去恶	qu e	split	2510	153
+熟谙	shu an	split	3305	271
+书案	shu an	split	3095	271
+诉案	su an	split	1880	452
+苏安	su an	split	43	5
+提案	ti an	split	184465	6149
+提额	ti e	split	9999	5368
+图案	tu an	split	379675	12656
+途安	tu an	split	10535	7026
+西安	xi an	split	84325	2811
+西岸	xi an	split	33570	1119
+锡安	xi an	split	3855	147
+西奥	xi ao	split	9185	307
+西岙	xi ao	split	17	7
+预案	yu an	split	110810	3694
+裕安	yu an	split	4080	136
+玉安	yu an	split	14	9
+余安	yu an	split	10	9
+余额	yu e	split	163585	5453
+主啊	zhu a	split	17480	890
+主案	zhu an	split	670	37
+祖安	zu an	split	9999	585
+组胺	zu an	split	6140	585
+都安	du an	split	1000	60

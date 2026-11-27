@@ -1,0 +1,5 @@
+# Ninan everyday pinyin, 2026-11-27
+
+This release adds 155 original everyday expressions and adjusts 16 weights compared with the live Chinese main dictionary 54b0402f. No previous word/reading was removed. The auxiliary table is byte-identical to that version. The updated Chinese main dictionary is ee249d04. The frozen inputs and upstream file checksums are in inputs/2026-11-27-everyday-pinyin. Run scripts/reproduce-ee249d04.sh with the pinned rime-ice cn_dicts directory and a new output directory. Existing Chinese GPL-3.0 attribution applies.
+
+The paired T9 v3 table uses the reviewed main dictionary and the new offline base as build inputs. Its 24,553 lexical records and prefix index match the previous standalone T9 release. The input and main-dictionary checksum lines identify the new pairing. For exact reproduction, install the locked dependencies with npm ci --ignore-scripts in toolchain/backend, then run bash reproduce.sh OUTPUT_DIR EXACT_MAIN_FILE with Node and OpenCC. Existing Tatoeba and OpenCC notices and the original base attribution apply.

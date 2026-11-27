@@ -105,3 +105,7 @@ Chinese 8ce298b0 adjusts 25 existing annotated readings and three auto entries u
 ## 2026-11-14 single-syllable calibration
 
 Chinese 59b1df3f is built from the same pinned rime-ice da1fbe60 and unchanged Ninan inputs; the builder adds a lower-only weight calibration derived from those inputs and the bundled base table already distributed here. No new source, corpus, personal input or vendor data. Chinese remains independently distributed GPL-3.0 data; the separate T9 snapshot keeps its existing resource notices. Details: updates/2026-11-14-single-syllable.
+
+## 2026-11-27 everyday pinyin
+
+Chinese ee249d04 adds 155 Ninan original everyday expressions and adjusts 16 weights from the live 54b0402f release. Pinned rime-ice 927e1cf1d3eeb9bf4be85e3f684dba4dd485b6f6. The Chinese data remains independently distributed under GPL-3.0. Frozen inputs and paired T9 sources and notices are in inputs/2026-11-27-everyday-pinyin and updates/2026-11-27-everyday-pinyin.
