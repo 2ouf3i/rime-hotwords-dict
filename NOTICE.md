@@ -109,3 +109,7 @@ Chinese 59b1df3f is built from the same pinned rime-ice da1fbe60 and unchanged N
 ## 2026-11-27 everyday pinyin
 
 Chinese ee249d04 adds 155 Ninan original everyday expressions and adjusts 16 weights from the live 54b0402f release. Pinned rime-ice 927e1cf1d3eeb9bf4be85e3f684dba4dd485b6f6. The Chinese data remains independently distributed under GPL-3.0. Frozen inputs and paired T9 sources and notices are in inputs/2026-11-27-everyday-pinyin and updates/2026-11-27-everyday-pinyin.
+
+## 2026-11-27 T9 initials ranking
+
+The independent T9 update includes Ninan original word selection and editorial weights. The existing base data, Tatoeba and OpenCC notices apply. The generator checks word forms and readings against the separately distributed GPL-3.0 ee249d04 Chinese dictionary. Frozen inputs and the generator are in updates/2026-11-27-t9-initials.

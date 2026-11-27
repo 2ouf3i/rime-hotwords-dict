@@ -199,3 +199,7 @@ Chinese 59b1df3f keeps every form and reading and lowers 366 entries so that wor
 ## 2026-11-27 everyday pinyin
 
 Chinese ee249d04 adds 155 Ninan original everyday expressions and adjusts 16 weights from the live 54b0402f release. Pinned rime-ice 927e1cf1d3eeb9bf4be85e3f684dba4dd485b6f6. The Chinese data remains independently distributed under GPL-3.0. Frozen inputs and paired T9 sources and notices are in inputs/2026-11-27-everyday-pinyin and updates/2026-11-27-everyday-pinyin.
+
+## 2026-11-27 T9 initials ranking
+
+The standalone T9 update improves initials-only rankings for 72 everyday expressions. [Frozen source and reproduction instructions](updates/2026-11-27-t9-initials/README.md).

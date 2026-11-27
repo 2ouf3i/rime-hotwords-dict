@@ -121,7 +121,7 @@
 不一定	4000	bu yi ding	all	s2	寒暄应答
 不用了	4000	bu yong le	all	nw-join+nw-succ+s2	寒暄应答
 不用谢	4000	bu yong xie	all	nw-key+s2	寒暄应答
-不知道	4000	bu zhi dao	all	s2	寒暄应答
+不知道	8000	bu zhi dao	all	s2	寒暄应答
 才不	4000	cai bu	all	s2	日常活动
 菜市场	4000	cai shi chang	all	s2	生活消费
 操场	4000	cao chang	all	s2	学校
@@ -230,7 +230,7 @@
 电话	4000	dian hua	all	nw-succ+s2	社交与App
 电脑	4000	dian nao	all	s2	工作学习
 电视剧	4000	dian shi ju	all	s2	社交与App
-点外卖	4000	dian wai mai	all	nw-key+s2	生活消费
+点外卖	8000	dian wai mai	all	nw-key+s2	生活消费
 电影	4000	dian ying	all	nw-key+nw-succ+s2	社交与App
 点赞	4000	dian zan	all	s2	社交与App
 钓鱼	4000	diao yu	all	s2	娱乐运动
@@ -259,7 +259,7 @@
 对的	4000	dui de	all	s2	寒暄应答
 对接	4000	dui jie	all	nw-key+s2	工作学习
 对象	4000	dui xiang	all	s2	称呼
-多喝水	4000	duo he shui	all	nw-join+nw-key+nw-succ+s2	健康
+多喝水	8000	duo he shui	all	nw-join+nw-key+nw-succ+s2	健康
 多久	4000	duo jiu	all	nw-succ+s2	寒暄应答
 多少	4000	duo shao	all	nw-succ+s2	寒暄应答
 多少钱	4000	duo shao qian	all	nw-key+nw-succ+s2	寒暄应答
@@ -274,7 +274,7 @@
 而已	4000	er yi	all	s2	常用代词副词
 儿子	4000	er zi	all	s2	称呼
 发布	4000	fa bu	all	s2	工作学习
-发个位置	4000	fa ge wei zhi	all	s2	日常活动
+发个位置	12000	fa ge wei zhi	all	s2	日常活动
 发红包	4000	fa hong bao	all	s2	社交与App
 发货	4000	fa huo	all	nw-key+nw-succ+s2	生活消费
 发你	4000	fa ni	all	nw-key+nw-succ+s2	日常活动
@@ -1268,7 +1268,7 @@
 早餐	4000	zao can	all	nw-key+nw-succ+s2	饮食
 早到	4000	zao dao	all	s2	出行
 早点	4000	zao dian	all	nw-key+nw-succ+s2	时间
-早点睡	4000	zao dian shui	all	nw-join+nw-key+nw-succ+s2	寒暄应答
+早点睡	12000	zao dian shui	all	nw-join+nw-key+nw-succ+s2	寒暄应答
 早点休息	4000	zao dian xiu xi	all	nw-join+nw-key+nw-succ+s2	寒暄应答
 早饭	4000	zao fan	all	nw-key+nw-succ+s2	饮食
 早就	4000	zao jiu	all	s2	常用代词副词
@@ -1276,7 +1276,7 @@
 早上好	4000	zao shang hao	all	nw-join+nw-key+nw-succ+s2	寒暄应答
 早睡	4000	zao shui	all	s2	健康
 怎么	4000	zen me	all	nw-key+s2	常用代词副词
-怎么办	4000	zen me ban	all	nw-succ+s2	寒暄应答
+怎么办	8000	zen me ban	all	nw-succ+s2	寒暄应答
 怎么会	4000	zen me hui	all	s2	日常活动
 怎么回事	4000	zen me hui shi	all	nw-key+nw-succ+s2	日常活动
 怎么了	4000	zen me le	all	nw-key+s2	寒暄应答
@@ -1508,7 +1508,7 @@
 到那里	1000	dao na li	all	nw-succ	公共联想后继
 到时	1000	dao shi	all	nw-key	公共联想键
 到站	1000	dao zhan	all	nw-key	公共联想键
-到站了	1000	dao zhan le	all	nw-join+nw-key+nw-succ	公共联想键
+到站了	4000	dao zhan le	all	nw-join+nw-key+nw-succ	公共联想键
 到账	1000	dao zhang	all	nw-key	公共联想键
 到账后	1000	dao zhang hou	all	nw-key	公共联想键
 到这里	1000	dao zhe li	all	nw-succ	公共联想后继
@@ -1554,8 +1554,8 @@
 多休息	1000	duo xiu xi	all	nw-succ	公共联想后继
 发不了	1000	fa bu liao	all	nw-succ	公共联想后继
 发给	1000	fa gei	all	nw-key	公共联想键
-发给你	1000	fa gei ni	all	nw-join+nw-key+nw-succ	公共联想键
-发给我	1000	fa gei wo	all	nw-join+nw-key+nw-succ	公共联想键
+发给你	12000	fa gei ni	all	nw-join+nw-key+nw-succ	公共联想键
+发给我	4000	fa gei wo	all	nw-join+nw-key+nw-succ	公共联想键
 发工资	1000	fa gong zi	all	nw-key	公共联想键
 发过来	1000	fa guo lai	all	nw-key	公共联想键
 发过去	1000	fa guo qu	all	nw-key	公共联想键
@@ -1600,7 +1600,7 @@
 干净	1000	gan jing	all	nw-succ	公共联想后继
 感谢大家	1000	gan xie da jia	all	nw-join+nw-key	公共联想键
 感谢你	1000	gan xie ni	all	nw-join+nw-key	公共联想键
-刚到家	1000	gang dao jia	all	nw-succ	公共联想后继
+刚到家	8000	gang dao jia	all	nw-succ	公共联想后继
 刚刚看到	1000	gang gang kan dao	all	nw-join+nw-key	公共联想键
 刚看到	1000	gang kan dao	all	nw-key+nw-succ	公共联想键
 高铁票	1000	gao tie piao	all	nw-key	公共联想键
@@ -1649,9 +1649,9 @@
 还需要	1000	hai xu yao	all	nw-key	公共联想键
 还要多久	1000	hai yao duo jiu	all	nw-key+nw-succ	公共联想键
 还有	1000	hai you	all	nw-succ	公共联想后继
-还有多久	1000	hai you duo jiu	all	nw-key	公共联想键
+还有多久	4000	hai you duo jiu	all	nw-key	公共联想键
 还有货	1000	hai you huo	all	nw-key	公共联想键
-还有吗	1000	hai you ma	all	nw-succ	公共联想后继
+还有吗	4000	hai you ma	all	nw-succ	公共联想后继
 还有这个	1000	hai you zhe ge	all	nw-succ	公共联想后继
 还在	1000	hai zai	all	nw-key	公共联想键
 还在加班	1000	hai zai jia ban	all	nw-key	公共联想键
@@ -1837,7 +1837,7 @@
 困难	1000	kun nan	all	nw-succ	公共联想后继
 辣椒	1000	la jiao	all	nw-succ	公共联想后继
 来不及	1000	lai bu ji	all	nw-key	公共联想键
-来得及	1000	lai de ji	all	nw-key	公共联想键
+来得及	8000	lai de ji	all	nw-key	公共联想键
 来接	1000	lai jie	all	nw-key	公共联想键
 来看看	1000	lai kan kan	all	nw-succ	公共联想后继
 来晚了	1000	lai wan le	all	nw-key+nw-succ	公共联想键
@@ -2051,7 +2051,7 @@
 是这样	1000	shi zhe yang	all	nw-succ	公共联想后继
 收不到	1000	shou bu dao	all	nw-succ	公共联想后继
 收到后	1000	shou dao hou	all	nw-key	公共联想键
-收到啦	1000	shou dao la	all	nw-key	公共联想键
+收到啦	4000	shou dao la	all	nw-key	公共联想键
 收到了吗	1000	shou dao le ma	all	nw-succ	公共联想后继
 售后服务	1000	shou hou fu wu	all	nw-join+nw-key	公共联想键
 收货	1000	shou huo	all	nw-key	公共联想键
@@ -2203,12 +2203,12 @@
 我有事	1000	wo you shi	all	nw-key	公共联想键
 我再	1000	wo zai	all	nw-key	公共联想键
 我在	1000	wo zai	all	nw-key	公共联想键
-我在开会	1000	wo zai kai hui	all	nw-key	公共联想键
+我在开会	4000	wo zai kai hui	all	nw-key	公共联想键
 我再看看	1000	wo zai kan kan	all	nw-join+nw-succ	公共联想后继
 我在忙	1000	wo zai mang	all	nw-key	公共联想键
 我再问问	1000	wo zai wen wen	all	nw-join+nw-succ	公共联想后继
 我找找	1000	wo zhao zhao	all	nw-succ	公共联想后继
-我知道	1000	wo zhi dao	all	nw-key	公共联想键
+我知道	4000	wo zhi dao	all	nw-key	公共联想键
 我知道了	1000	wo zhi dao le	all	nw-join+nw-key	公共联想键
 我最近	1000	wo zui jin	all	nw-key	公共联想键
 午觉	1000	wu jiao	all	nw-succ	公共联想后继
@@ -2273,7 +2273,7 @@
 小事	1000	xiao shi	all	nw-succ	公共联想后继
 小心	1000	xiao xin	all	nw-succ	公共联想后继
 谢谢大家	1000	xie xie da jia	all	nw-join+nw-key+nw-succ	公共联想键
-谢谢啦	1000	xie xie la	all	nw-join+nw-key	公共联想键
+谢谢啦	8000	xie xie la	all	nw-join+nw-key	公共联想键
 新的一年	1000	xin de yi nian	all	nw-key	公共联想键
 新的一天	1000	xin de yi tian	all	nw-key+nw-succ	公共联想键
 新东西	1000	xin dong xi	all	nw-succ	公共联想后继
@@ -2355,7 +2355,7 @@
 有点累	1000	you dian lei	all	nw-join+nw-key+nw-succ	公共联想键
 有点冷	1000	you dian leng	all	nw-join+nw-succ	公共联想后继
 有点慢	1000	you dian man	all	nw-succ	公共联想后继
-有点忙	1000	you dian mang	all	nw-join+nw-key+nw-succ	公共联想键
+有点忙	12000	you dian mang	all	nw-join+nw-key+nw-succ	公共联想键
 有点难	1000	you dian nan	all	nw-join+nw-succ	公共联想后继
 有点热	1000	you dian re	all	nw-join+nw-succ	公共联想后继
 有点事	1000	you dian shi	all	nw-key	公共联想键
@@ -2378,7 +2378,7 @@
 有什么	1000	you shen me	all	nw-key	公共联想键
 有什么好	1000	you shen me hao	all	nw-key	公共联想键
 有事	1000	you shi	all	nw-succ	公共联想后继
-有时间	1000	you shi jian	all	nw-key+nw-succ	公共联想键
+有时间	8000	you shi jian	all	nw-key+nw-succ	公共联想键
 有位置	1000	you wei zhi	all	nw-succ	公共联想后继
 有问题	1000	you wen ti	all	nw-key+nw-succ	公共联想键
 有我在	1000	you wo zai	all	nw-succ	公共联想后继
@@ -2407,12 +2407,12 @@
 在公司	1000	zai gong si	all	nw-key	公共联想键
 再核对	1000	zai he dui	all	nw-key	公共联想键
 再继续	1000	zai ji xu	all	nw-succ	公共联想后继
-在家吗	1000	zai jia ma	all	nw-join+nw-succ	公共联想后继
+在家吗	4000	zai jia ma	all	nw-join+nw-succ	公共联想后继
 再见面	1000	zai jian mian	all	nw-succ	公共联想后继
 再决定	1000	zai jue ding	all	nw-succ	公共联想后继
 再看看	1000	zai kan kan	all	nw-succ	公共联想后继
 再来	1000	zai lai	all	nw-key+nw-succ	公共联想键
-再联系	1000	zai lian xi	all	nw-key+nw-succ	公共联想键
+再联系	8000	zai lian xi	all	nw-key+nw-succ	公共联想键
 在楼下	1000	zai lou xia	all	nw-key	公共联想键
 在忙	1000	zai mang	all	nw-key+nw-succ	公共联想键
 在忙啥	1000	zai mang sha	all	nw-key+nw-succ	公共联想键
@@ -2446,7 +2446,7 @@
 怎么用	1000	zen me yong	all	nw-succ	公共联想后继
 怎么走	1000	zen me zou	all	nw-key+nw-succ	公共联想键
 怎么做	1000	zen me zuo	all	nw-succ	公共联想后继
-找到了吗	1000	zhao dao le ma	all	nw-succ	公共联想后继
+找到了吗	4000	zhao dao le ma	all	nw-succ	公共联想后继
 找个地方	1000	zhao ge di fang	all	nw-join+nw-key	公共联想键
 照顾	1000	zhao gu	all	nw-key	公共联想键
 照顾好	1000	zhao gu hao	all	nw-key	公共联想键
@@ -3080,8 +3080,8 @@
 中午好	300	zhong wu hao	all	ninan-original-20261113-round2	寒暄应答
 在忙吗	300	zai mang ma	all	ninan-original-20261113-round2	寒暄应答
 忙完了吗	1000	mang wan le ma	all	ninan-original-20261113-round2	寒暄应答
-可以呀	1000	ke yi ya	all	ninan-original-20261113-round2	寒暄应答
-当然可以	300	dang ran ke yi	all	ninan-original-20261113-round2	寒暄应答
+可以呀	4000	ke yi ya	all	ninan-original-20261113-round2	寒暄应答
+当然可以	450	dang ran ke yi	all	ninan-original-20261113-round2	寒暄应答
 请稍等	300	qing shao deng	all	ninan-original-20261113-round2	寒暄应答
 蚌埠住了	300	beng bu zhu le	all	ninan-original-20261113-round2	聊天情绪
 我裂开了	300	wo lie kai le	all	ninan-original-20261113-round2	聊天情绪
@@ -3193,7 +3193,7 @@
 预约挂号	1000	yu yue gua hao	all	ninan-original-20261113-round2	家人健康
 检查结果	300	jian cha jie guo	all	ninan-original-20261113-round2	家人健康
 复查时间	300	fu cha shi jian	all	ninan-original-20261113-round2	家人健康
-接孩子	1000	jie hai zi	all	ninan-original-20261113-round2	家人健康
+接孩子	8900	jie hai zi	all	ninan-original-20261113-round2	家人健康
 放学以后	300	fang xue yi hou	all	ninan-original-20261113-round2	家人健康
 今天接你	300	jin tian jie ni	all	ninan-original-20261113-round2	家人健康
 周末回去	300	zhou mo hui qu	all	ninan-original-20261113-round2	家人健康
@@ -3213,11 +3213,11 @@
 先去忙了	300	xian qu mang le	all	ninan-original-20261113-round2	应答关心
 收到再说	300	shou dao zai shuo	all	ninan-original-20261113-round2	应答关心
 收到告诉我	300	shou dao gao su wo	all	ninan-original-20261113-round2	应答关心
-看到了吗	1000	kan dao le ma	all	ninan-original-20261113-round2	应答关心
+看到了吗	4000	kan dao le ma	all	ninan-original-20261113-round2	应答关心
 看到了吧	300	kan dao le ba	all	ninan-original-20261113-round2	应答关心
 看到回我	300	kan dao hui wo	all	ninan-original-20261113-round2	应答关心
 看到回复	300	kan dao hui fu	all	ninan-original-20261113-round2	应答关心
-有消息吗	300	you xiao xi ma	all	ninan-original-20261113-round2	应答关心
+有消息吗	450	you xiao xi ma	all	ninan-original-20261113-round2	应答关心
 有消息了	300	you xiao xi le	all	ninan-original-20261113-round2	应答关心
 有消息告诉我	300	you xiao xi gao su wo	all	ninan-original-20261113-round2	应答关心
 记得回我	300	ji de hui wo	all	ninan-original-20261113-round2	应答关心
@@ -3416,7 +3416,52 @@
 吃过了吗	1000	chi guo le ma	all	ninan-original-20261113-homocode	日常问句与应答
 改好了吗	1000	gai hao le ma	all	ninan-original-20261113-homocode	日常问句与应答
 去哪了	1000	qu na le	all	ninan-original-20261113-homocode	日常问句与应答
-收到没有	1000	shou dao mei you	all	ninan-original-20261113-homocode	日常问句与应答
+收到没有	4000	shou dao mei you	all	ninan-original-20261113-homocode	日常问句与应答
 知道了吗	1000	zhi dao le ma	all	ninan-original-20261113-homocode	日常问句与应答
 帮我一下	1000	bang wo yi xia	all	ninan-original-20261113-homocode	日常问句与应答
-吃饭吗	1000	chi fan ma	all	ninan-original-20261113-homocode	日常问句与应答
+吃饭吗	8000	chi fan ma	all	ninan-original-20261113-homocode	日常问句与应答
+
+# 2026-11-27 九宫格声母简拼，Ninan 原创口语表达。权重为编辑值。
+一起去吗	450	yi qi qu ma	all	s2	日常沟通
+不用等我	450	bu yong deng wo	all	s2	日常沟通
+什么时候有空	450	shen me shi hou you kong	all	s2	日常沟通
+什么时候走	450	shen me shi hou zou	all	s2	日常沟通
+从几号口出	450	cong ji hao kou chu	all	s2	日常沟通
+会议号发我	450	hui yi hao fa wo	all	s2	日常沟通
+你听得到吗	450	ni ting de dao ma	all	s2	日常沟通
+你忙吗	450	ni mang ma	all	s2	日常沟通
+再试一次	450	zai shi yi ci	all	s2	日常沟通
+再说一遍	450	zai shuo yi bian	all	s2	日常沟通
+出门了吗	450	chu men le ma	all	s2	日常沟通
+到了喊我	450	dao le han wo	all	s2	日常沟通
+加个煎蛋	450	jia ge jian dan	all	s2	日常沟通
+发一下吧	450	fa yi xia ba	all	s2	日常沟通
+发不出去	450	fa bu chu qu	all	s2	日常沟通
+发我原图	450	fa wo yuan tu	all	s2	日常沟通
+取餐码	450	qu can ma	all	s2	日常沟通
+可以了吗	450	ke yi le ma	all	s2	日常沟通
+吃完了吗	450	chi wan le ma	all	s2	日常沟通
+听得到吗	450	ting de dao ma	all	s2	日常沟通
+听得见吗	450	ting de jian ma	all	s2	日常沟通
+已经到了	450	yi jing dao le	all	s2	日常沟通
+帮我拿一下	450	bang wo na yi xia	all	s2	日常沟通
+快下班了	450	kuai xia ban le	all	s2	日常沟通
+我上车了	450	wo shang che le	all	s2	日常沟通
+我下班了	450	wo xia ban le	all	s2	日常沟通
+我下车了	450	wo xia che le	all	s2	日常沟通
+我在楼下	450	wo zai lou xia	all	s2	日常沟通
+打包带走	450	da bao dai zou	all	s2	日常沟通
+收到请回复	450	shou dao qing hui fu	all	s2	日常沟通
+方便接电话吗	450	fang bian jie dian hua ma	all	s2	日常沟通
+晚饭吃什么	450	wan fan chi shen me	all	s2	日常沟通
+没事就好	450	mei shi jiu hao	all	s2	日常沟通
+没听见	450	mei ting jian	all	s2	日常沟通
+没有啊	450	mei you a	all	s2	日常沟通
+现在过去	450	xian zai guo qu	all	s2	日常沟通
+确认收货	450	que ren shou huo	all	s2	日常沟通
+等一会儿	450	deng yi hui er	all	s2	日常沟通
+等我一会	450	deng wo yi hui	all	s2	日常沟通
+等我下班	450	deng wo xia ban	all	s2	日常沟通
+给你看看	450	gei ni kan kan	all	s2	日常沟通
+记得带钥匙	450	ji de dai yao shi	all	s2	日常沟通
+跟我说一声	450	gen wo shuo yi sheng	all	s2	日常沟通
